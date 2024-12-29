@@ -7,8 +7,8 @@ website:
   description: "Homepage for STA 240 Probability for Statistical Inference, Modeling, and Data Analysis at Duke University, Spring 2025."
   site-url: "https://sta240-s25.github.io/"
 
-  repo-url: https://github.com/sta240-s25/sta240-s25.github.io/
-  repo-actions: [edit, issue]
+  #repo-url: https://github.com/sta240-s25/sta240-s25.github.io/
+  #repo-actions: [edit, issue]
 
   open-graph: true
 
