@@ -86,7 +86,7 @@ d |>
     ),
     locations = cells_body(
       columns = everything(),
-      rows = str_detect(topic, "[Ll]ab|Milestone|Final|Review") 
+      rows = str_detect(topic, "Mon") 
       # puts black line above rows where certain keywords are detected in certain columns
     )
   ) |>
