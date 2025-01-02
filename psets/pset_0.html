@@ -17,40 +17,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -234,14 +200,7 @@ window.Quarto = {
   <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
   <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
   <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
-  <li>
-<a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a>
-  <ul class="collapse">
-<li><a href="#part-b" id="toc-part-b" class="nav-link" data-scroll-target="#part-b">part b</a></li>
-  <li><a href="#part-c" id="toc-part-c" class="nav-link" data-scroll-target="#part-c">part c</a></li>
-  <li><a href="#part-d" id="toc-part-d" class="nav-link" data-scroll-target="#part-d">part d</a></li>
-  </ul>
-</li>
+  <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
   </ul></nav>
     </div>
 <!-- main -->
@@ -284,11 +243,6 @@ window.Quarto = {
 \]</span></p>
 <p>Figure <span class="citation" data-cites="silly">@silly</span> displays an example of what <span class="math inline">\(h\)</span> might look like. Treat <span class="math inline">\(-\infty&lt;\mu&lt;\infty\)</span> and <span class="math inline">\(\sigma&gt;0\)</span> as constants and compute the value(s) of <span class="math inline">\(x\)</span> at which <span class="math inline">\(h\)</span> has inflection points.</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">m</span> <span class="op">=</span> <span class="fl">1</span></span>
-<span><span class="va">s</span> <span class="op">=</span> <span class="fl">2</span></span>
-<span><span class="va">x_vals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">6</span>, <span class="fl">8</span>, length.out <span class="op">=</span> <span class="fl">500</span><span class="op">)</span></span>
-<span><span class="va">y_vals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span> <span class="op">*</span> <span class="op">(</span><span class="op">(</span><span class="va">x_vals</span> <span class="op">-</span> <span class="va">m</span><span class="op">)</span> <span class="op">/</span> <span class="va">s</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">x_vals</span>, <span class="va">y_vals</span>, type <span class="op">=</span> <span class="st">"l"</span>, xlab <span class="op">=</span> <span class="st">"x"</span>, ylab <span class="op">=</span> <span class="st">"h(x)"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure"><p><img src="pset_0_files/figure-html/silly-1.png" class="img-fluid figure-img" width="672"></p>
@@ -303,30 +257,26 @@ window.Quarto = {
 \]</span> Prove that <span class="math inline">\(\Gamma(a+1)=a\Gamma(a)\)</span>.</p>
 </section><section id="problem-5" class="level2"><h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
 <p><span class="math inline">\(f\)</span> is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: <span class="math inline">\(f(0) = 0\)</span>, <span class="math inline">\(f'(0) = 0\)</span>, <span class="math inline">\(f''(0) = 1\)</span>. Assume <span class="math inline">\(t\)</span> is a constant and compute</p>
-<pre><code>$$
-\lim_{x\to\infty} xf\left(\frac{t}{\sqrt{x}}\right)
-.
-$$</code></pre>
+<p><span class="math display">\[
+    \lim_{x\to\infty} xf\left(\frac{t}{\sqrt{x}}\right)
+    .
+\]</span></p>
 </section><section id="problem-6" class="level2"><h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
 <p>Consider this integral:</p>
 <p><span class="math display">\[
     \int_2^\infty
     \frac{1}{x(\ln x)^p}\textrm{d} x
     .
-\]</span> ### part a</p>
-<p>Show that</p>
-<p><span class="math display">\[
-        \lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0
-\]</span> for all values of <span class="math inline">\(-\infty&lt;p&lt;\infty\)</span>.</p>
-<section id="part-b" class="level3"><h3 class="anchored" data-anchor-id="part-b">part b</h3>
-<p>For what values of <span class="math inline">\(p\)</span> does the integral converge? When it does converge, what is its value?</p>
-</section><section id="part-c" class="level3"><h3 class="anchored" data-anchor-id="part-c">part c</h3>
-<p>Use a computer to create a single plot with lines graphing the integrand for <span class="math inline">\(p\)</span> equal to -2, -1.5, -1, 0, 1, 5. Make the <span class="math inline">\(x\)</span>-axis of your plot run from 2 to 15.</p>
-</section><section id="part-d" class="level3"><h3 class="anchored" data-anchor-id="part-d">part d</h3>
-<p>Explain in words why the integral converges for some values of <span class="math inline">\(p\)</span> but not others.</p>
+\]</span></p>
+<ol type="a">
+<li>Show that <span class="math inline">\(\lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0\)</span> for all values of <span class="math inline">\(-\infty&lt;p&lt;\infty\)</span>.</li>
+<li>For what values of <span class="math inline">\(p\)</span> does the integral converge? When it does converge, what is its value?</li>
+<li>Use a computer to create a single plot with lines graphing the integrand for <span class="math inline">\(p\)</span> equal to -2, -1.5, -1, 0, 1, 5. Make the <span class="math inline">\(x\)</span>-axis of your plot run from 2 to 15.</li>
+<li>Explain in words why the integral converges for some values of <span class="math inline">\(p\)</span> but not others.</li>
+</ol>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");

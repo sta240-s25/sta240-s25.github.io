@@ -191,7 +191,7 @@
     "href": "psets/pset_0.html#problem-3",
     "title": "Problem Set 0",
     "section": "Problem 3",
-    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nFigure @silly displays an example of what \\(h\\) might look like. Treat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.\n\nm = 1\ns = 2\nx_vals &lt;- seq(-6, 8, length.out = 500)\ny_vals &lt;- exp(-0.5 * ((x_vals - m) / s)^2)\nplot(x_vals, y_vals, type = \"l\", xlab = \"x\", ylab = \"h(x)\")",
+    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nFigure @silly displays an example of what \\(h\\) might look like. Treat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
@@ -213,7 +213,7 @@
     "href": "psets/pset_0.html#problem-5",
     "title": "Problem Set 0",
     "section": "Problem 5",
-    "text": "Problem 5\n\\(f\\) is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: \\(f(0) = 0\\), \\(f'(0) = 0\\), \\(f''(0) = 1\\). Assume \\(t\\) is a constant and compute\n$$\n\\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n.\n$$",
+    "text": "Problem 5\n\\(f\\) is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: \\(f(0) = 0\\), \\(f'(0) = 0\\), \\(f''(0) = 1\\). Assume \\(t\\) is a constant and compute\n\\[\n    \\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n    .\n\\]",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
@@ -224,7 +224,7 @@
     "href": "psets/pset_0.html#problem-6",
     "title": "Problem Set 0",
     "section": "Problem 6",
-    "text": "Problem 6\nConsider this integral:\n\\[\n    \\int_2^\\infty\n    \\frac{1}{x(\\ln x)^p}\\textrm{d} x\n    .\n\\] ### part a\nShow that\n\\[\n        \\lim_{x\\to\\infty}\\frac{1}{x(\\ln x)^p}=0\n\\] for all values of \\(-\\infty&lt;p&lt;\\infty\\).\npart b\nFor what values of \\(p\\) does the integral converge? When it does converge, what is its value?\npart c\nUse a computer to create a single plot with lines graphing the integrand for \\(p\\) equal to -2, -1.5, -1, 0, 1, 5. Make the \\(x\\)-axis of your plot run from 2 to 15.\npart d\nExplain in words why the integral converges for some values of \\(p\\) but not others.",
+    "text": "Problem 6\nConsider this integral:\n\\[\n    \\int_2^\\infty\n    \\frac{1}{x(\\ln x)^p}\\textrm{d} x\n    .\n\\]\n\nShow that \\(\\lim_{x\\to\\infty}\\frac{1}{x(\\ln x)^p}=0\\) for all values of \\(-\\infty&lt;p&lt;\\infty\\).\nFor what values of \\(p\\) does the integral converge? When it does converge, what is its value?\nUse a computer to create a single plot with lines graphing the integrand for \\(p\\) equal to -2, -1.5, -1, 0, 1, 5. Make the \\(x\\)-axis of your plot run from 2 to 15.\nExplain in words why the integral converges for some values of \\(p\\) but not others.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
