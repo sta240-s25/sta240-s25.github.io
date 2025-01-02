@@ -46,6 +46,7 @@ m = 1
 s = 2
 x_vals <- seq(-6, 8, length.out = 500)
 y_vals <- exp(-0.5 * ((x_vals - m) / s)^2)
+par(mar = c(4, 4, 0.1, 4))
 plot(x_vals, y_vals, type = "l", xlab = "x", ylab = "h(x)")
 ```
 
