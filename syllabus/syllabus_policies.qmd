@@ -14,11 +14,7 @@ You can ask questions anonymously on Ed. The teaching team will still know your 
 
 ## Late work and extensions
 
-No late work will be accepted for application exercises, exams, or projects. Labs may be submitted up to 3 days late. A 5% deduction will be applied for each 24-hour period during which the assignment is late.
-
-If circumstances prevent you from completing a lab by the stated due date, you may email the course coordinator, Dr. Mary Knox, before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide an explanation. This waiver may only be used once a semester, so only use it for a truly extenuating circumstance.
-
-If circumstances have a longer-term impact on your academic performance, please let your academic dean know. They can be a resource. Please let me know if you need help contacting your academic dean.
+No late work will be accepted unless you request an extension in advance by e-mailing the instructor directly (john.zito\@duke.edu). All reasonable requests will be entertained, but extensions will not be long.
 
 ## Regrade requests
 
@@ -37,11 +33,7 @@ A regrade request can result in your grade going up, staying the same, or going 
 
 ## Attendance
 
-For the most part, attendance is not strictly required. You are an adult, and you are free to live your life. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, regular lecture attendance is likely the path of least resistance toward earning full credit for the application exercises. Lastly, there are some aspects of the final project that will require you to attend your lab section so that you can convene with your teammates. 
-
-### Lecture recording request
-
-Lectures will be recorded on Panopto and will be made available to students with an excused absence upon request. Videos shared with such students will be available for a week after the lecture date. To request a particular lecture’s video, please fill out the form at the link below (!!!). Please submit the form within 24 hours of missing lecture to ensure you have sufficient time to watch the recording. Please also make sure that any official documentation, such as STINFs, Dean’s excuses, NOVAPs, and quarantine/removal from class notices from student health are also uploaded to the form.
+Attendance is not strictly required for any of the class meetings. You are all adults, and you are free to live your lives. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.
 
 ## Accommodations
 
@@ -49,28 +41,22 @@ If you need accommodations for this class, you will need to register with the St
 
 ## Collaboration
 
-Only work that is clearly assigned as teamwork should be completed collaboratively.
-
--   You may discuss lab assignments with other students; however, you may not directly share (or copy) code or write-up with other students. For team assignments, you may collaborate freely within your team. You may discuss the assignment with other teams; however, you may not directly share (or copy) code or write-up with another team. Unauthorized sharing (or copying) of the code or write-up will be considered a violation for all students involved.
--   You may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.
--   Collaboration within teams is not only allowed but encouraged for the project. Communication between teams at a high level is also allowed; however, you may not share code or project components across teams.
--   On individual assignments, you may not directly share work (including code) with another student in this class; on team assignments, you may not directly share work (including code) with another team.
-
+You are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be your own. You should not be sharing solutions or copying other people's work. This will be treated as plagiarism, and both the sharer and the recipient will be penalized equally.
 
 ## Use of outside resources, including AI
 
-You may make use of any online resources (e.g. `StackOverflow`) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
+It basically comes down to this:
 
-You should treat generative AI, such as ChatGPT, like other online resources. Two guiding principles govern how to use AI in this course:
+> Do your own math and write your own words, but write code however the hell you want.
 
-1.  *Cognitive dimension:* Working with AI should not reduce your thinking ability. We will practice using AI to facilitate—rather than hinder—learning.
+### Do your own math
 
-2.  *Ethical dimension***:** Students using AI should be transparent about their use and ensure it aligns with academic integrity.
+That is the whole point of this course. 
 
--   {{< fa check >}} **AI tools for code:** You may use the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use [these guidelines](https://guides.lib.monash.edu/c.php?g=219786&p=6972087) to cite AI-generated content. The bare minimum citation must include the AI tool you're using (e.g., ChatGPT) and your prompt. The prompt you use cannot be copied and pasted directly from the assignment; you must create a prompt yourself.
+### Write your own words
 
--   {{< fa ban >}} **AI tools for narrative:** Unless instructed otherwise, you may not use generative AI to generate a narrative that you then copy-paste verbatim into an assignment or edit and then insert into your assignment.
+If you copy-paste written text from ChatGPT or anyplace else, that will be treated as plagiarism. 
 
-In general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you. You are ultimately responsible for the work you turn in; it should reflect *your* understanding of the course content. Identifying AI-generated content is fairly straightforward. Any code identified as AI-generated but not cited as such and any narrative identified as AI-generated will be considered plagiarism and treated as such.
+### Write code however the hell you want
 
-NEED TO ADD EXAMPLE OF PROPER CITATION.
+The coding dimension of this course will be fairly basic, so hopefully you do not feel the need to seek extensive help from outside resources. Having said that, you are free to use any outside resources (`StackOverflow`, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
