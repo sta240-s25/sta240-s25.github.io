@@ -34,7 +34,7 @@ $$
     .
 $$
 
-Figure @silly displays an example of what $h$ might look like. Treat $-\infty<\mu<\infty$ and $\sigma>0$ as constants and compute the value(s) of $x$ at which $h$ has inflection points.
+An example of what $h$ might look like is displayed below. Treat $-\infty<\mu<\infty$ and $\sigma>0$ as constants and compute the value(s) of $x$ at which $h$ has inflection points.
     
 ```{r}
 #| label: silly
