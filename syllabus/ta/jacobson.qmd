@@ -1,0 +1,9 @@
+---
+title: Jacobson, Gwen
+categories:
+  - TA
+description: "TBD"
+subtitle: "🔗"
+image: headshots/jacobson.jpg
+image-alt: Headshot of TA
+---

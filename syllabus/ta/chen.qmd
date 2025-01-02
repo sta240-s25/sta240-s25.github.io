@@ -1,0 +1,9 @@
+---
+title: Zito, John
+categories:
+  - Instructor
+description: "TBD"
+subtitle: "🔗"
+image: headshots/zito.jpg
+image-alt: Headshot of TA
+---
