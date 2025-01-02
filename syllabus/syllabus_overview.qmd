@@ -4,7 +4,11 @@ title: "Course overview"
 
 ## Description
 
-Probability models, random variables with discrete and continuous distributions. Marginal, joint, and conditional distributions. Expectations, functions of random variables, central limit theorem. Estimators and sampling distributions, method of moments, and maximum likelihood estimation.
+In **probability**, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon behave. In **mathematical statistics**, we do the reverse; we start with the realizations of a random phenomenon, and then try to figure out what distribution generated them. In this course, you will:
+- learn how to model random phenomena using a probability distribution, and learn how to extract from that distribution features and summaries that describe the phenomena's "average" or "typical" behavior;
+- learn the mathematics necessary to pose and answer questions like: does this statistical procedure work? what does it mean for it to work? when does it work? how well does it work?
+- write computer simulations to demonstrate the theoretical properties of probability distributions and statistical procedures;
+- learn how to analyze small, stylized datasets.
 
 **Prerequisites:** single-variable calculus.
 
