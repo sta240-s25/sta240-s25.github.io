@@ -4,17 +4,20 @@ title: "Course materials"
 
 ## Textbooks
 
-All books are **freely available online**:
+You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:
 
-1.  `[ims]`: Mine Çetinkaya-Rundel and Jo Hardin. [Introduction to Modern Statistics](https://openintro-ims2.netlify.app/). 2nd edition. OpenIntro, 2024.
-2.  `[r4ds]`: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. [R for Data Science](https://r4ds.hadley.nz/). 2nd edition. O'Reilly, 2022.
+- `[Ross]` *A First Course in Probability* by Sheldon Ross;
+- `[HTZ]` *Probability and Statistical Inference* by Robert Hogg, Elliot Tanis, and Dale Zimmerman;
+- `[DS]` *Probability and Statistics* by Morris Degroot and Mark Schervish;
+- `[Wass]` *All of Statistics* by Larry Wasserman.
+
+In the "PREPARE" column of the [course schedule](https://sta240-s25.github.io/), I will indicate which parts of a book correspond to the lectures.
 
 ## Technology
 
-You will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described here (!!!). Armed with your trusty laptop, you must be able to access the following:
+This is primarily a pencil-and-paper mathematics course, and much of our work could be accomplished even if the power were out. That said, we will teach you a modicum of the `R` programming language, and you will need access to a device with internet so that you can stay up to date with the course logistics. In particular, that means:
 
--   [This course page](https://sta199-s25.github.io/) that you are on right now;
--   `R`/`RStudio` as provided by the [Duke Container Manager](https://cmgr.oit.duke.edu/containers);
+-   [This course page](https://sta240-s25.github.io/) that you are on right now;
 -   [Canvas](https://go.canvas.duke.edu/), through which you can access...
     -   Gradescope;
     -   Ed Discussion;
