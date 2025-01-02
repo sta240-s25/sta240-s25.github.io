@@ -1,79 +1,189 @@
 [
   {
-    "objectID": "syllabus/syllabus_conduct.html",
-    "href": "syllabus/syllabus_conduct.html",
-    "title": "Conduct violations",
+    "objectID": "syllabus/syllabus_team.html",
+    "href": "syllabus/syllabus_team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Name\nRole\nOffice Hours\n\n\n\n\n\nChen, Andy\nTA\nTBD\n\n\n\nHuang, Konnie\nTA\nTBD\n\n\n\nJacobson, Gwen\nHead TA\nTBD\n\n\n\nZito, John\nInstructor\nTue 2:00 PM - 4:00 PM\nOld Chem 207",
+    "crumbs": [
+      "Syllabus",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_policies.html",
+    "href": "syllabus/syllabus_policies.html",
+    "title": "Policies",
     "section": "",
     "text": "As a student in this course, you have agreed to uphold the Duke Community Standard and the practices specific to this course.",
     "crumbs": [
       "Syllabus",
-      "Conduct violations"
+      "Policies"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_conduct.html#violating-the-policy-on-use-of-outside-resources",
-    "href": "syllabus/syllabus_conduct.html#violating-the-policy-on-use-of-outside-resources",
-    "title": "Conduct violations",
-    "section": "Violating the policy on use of outside resources",
-    "text": "Violating the policy on use of outside resources\nIf you use outside resources (e.g. StackOverflow, ChatGPT, etc) without citing them, we treat that as plagiarism. If the grader has reasonable suspicion that outside resources were used without citation to complete some part of an assignment, they are empowered to immediately give that part a zero and leave a comment explaining why. If we make a mistake, you are welcome to submit a regrade request pleading your case.",
-    "crumbs": [
-      "Syllabus",
-      "Conduct violations"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_conduct.html#violating-the-policies-on-collaboration",
-    "href": "syllabus/syllabus_conduct.html#violating-the-policies-on-collaboration",
-    "title": "Conduct violations",
-    "section": "Violating the policies on collaboration",
-    "text": "Violating the policies on collaboration\nIf we suspect\n\n\n\n\n\n\nWarning\n\n\n\nIf a conduct violation results in a zero on a lab, that zero will not be dropped",
-    "crumbs": [
-      "Syllabus",
-      "Conduct violations"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html",
-    "href": "syllabus/syllabus_assignments.html",
-    "title": "Assignments and grading",
+    "objectID": "syllabus/syllabus_policies.html#duke-community-standard",
+    "href": "syllabus/syllabus_policies.html#duke-community-standard",
+    "title": "Policies",
     "section": "",
-    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on these thresholds:",
+    "text": "As a student in this course, you have agreed to uphold the Duke Community Standard and the practices specific to this course.",
     "crumbs": [
       "Syllabus",
-      "Assignments and grading"
+      "Policies"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_assignments.html#labs-10",
-    "href": "syllabus/syllabus_assignments.html#labs-10",
-    "title": "Assignments and grading",
-    "section": "Labs (10%)",
-    "text": "Labs (10%)\nIn lab every Thursday, you will complete a guided activity that illustrates how the latest course material can be applied to various domains of science and technology. Often this activity will also teach you how to implement some of the ideas from the course in the R programming language. Ideally you should be able to finish the activity by the end of your lab period, but in any case, you must submit your lab work by 11:59 ET PM that same day. Labs will be graded for completion on the following scale:\n\n1.0: a good faith attempt has been made at every part of the activity;\n0.5: partially complete;\n0.0: no submission, or mostly incomplete.\n\n\n\n\n\n\n\nNote\n\n\n\nYour lowest lab score will be dropped at the end of the semester.",
+    "objectID": "syllabus/syllabus_policies.html#communication",
+    "href": "syllabus/syllabus_policies.html#communication",
+    "title": "Policies",
+    "section": "Communication",
+    "text": "Communication\nIf you wish to ask content-related questions in writing, please do not do so via e-mail. Instead, please use the course discussion forum Ed Discussion. That way all members of the teaching team can see your question, and all students can benefit from the ensuing discussion. You are also encouraged to answer one another’s questions.\nIf you have questions about personal matters that may not be appropriate for the public course forum (e.g. illness, accommodations, etc), then please e-mail the instructor directly (john.zito@duke.edu).\n\n\n\n\n\n\nNote\n\n\n\nYou can ask questions anonymously on Ed. The teaching team will still know your identity, but your peers will not.",
     "crumbs": [
       "Syllabus",
-      "Assignments and grading"
+      "Policies"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_assignments.html#problem-sets-30",
-    "href": "syllabus/syllabus_assignments.html#problem-sets-30",
-    "title": "Assignments and grading",
-    "section": "Problem Sets (30%)",
-    "text": "Problem Sets (30%)\nMathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but sometimes you will be asked to do some coding. You may compose you solutions however you like (scan or photograph written work, , Quarto, handwriting capture on a tablet, etc) so long as you ultimately upload a single .pdf file to Gradescope.\n\n\n\n\n\n\nNote\n\n\n\nYour lowest problem set score will be dropped at the end of the semester.",
+    "objectID": "syllabus/syllabus_policies.html#late-work-and-extensions",
+    "href": "syllabus/syllabus_policies.html#late-work-and-extensions",
+    "title": "Policies",
+    "section": "Late work and extensions",
+    "text": "Late work and extensions\nNo late work will be accepted unless you request an extension in advance by e-mailing the instructor directly (john.zito@duke.edu). All reasonable requests will be entertained, but extensions will not be long.",
     "crumbs": [
       "Syllabus",
-      "Assignments and grading"
+      "Policies"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_assignments.html#exams-20-each",
-    "href": "syllabus/syllabus_assignments.html#exams-20-each",
-    "title": "Assignments and grading",
-    "section": "Exams (20% each)",
-    "text": "Exams (20% each)\nThese will be traditional, in-person, sit-down, written exams with no technology, and with no outside resources apart from a note sheet that you and only you have prepared (both sides of an 8.5’ x 11’ piece of paper).\n\n\n\n\n\n\nNote\n\n\n\nIf you do better on the final exam than you did on one of the midterms, we will replace your lowest midterm exam score with your final exam score.",
+    "objectID": "syllabus/syllabus_policies.html#regrade-requests",
+    "href": "syllabus/syllabus_policies.html#regrade-requests",
+    "title": "Policies",
+    "section": "Regrade requests",
+    "text": "Regrade requests\nIf you receive a graded assignment back, and you believe that some part of it was graded incorrectly, you may dispute the grade by submitting a regrade request in Gradescope. Note the following:\n\nYou have one week after you receive a grade to submit a regrade request;\nYou should submit separate regrade requests for each question you wish to dispute, not a single catch-all request;\nRequests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;\nRequests to dispute the number of points deducted for an incorrect response will not be considered;\nRegrade requests are not a mechanism for asking for clarification on feedback. Those questions should be brought to office hours;\nNo grades will be changed after the final exam has been administered on Tuesday, April 29;\n\n\n\n\n\n\n\nWarning\n\n\n\nA regrade request can result in your grade going up, staying the same, or going down if we determine that, in fact, the original grader was too lenient.",
     "crumbs": [
       "Syllabus",
-      "Assignments and grading"
+      "Policies"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_policies.html#attendance",
+    "href": "syllabus/syllabus_policies.html#attendance",
+    "title": "Policies",
+    "section": "Attendance",
+    "text": "Attendance\nAttendance is not strictly required for any of the class meetings. You are all adults, and you are free to live your lives. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.",
+    "crumbs": [
+      "Syllabus",
+      "Policies"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_policies.html#accommodations",
+    "href": "syllabus/syllabus_policies.html#accommodations",
+    "title": "Policies",
+    "section": "Accommodations",
+    "text": "Accommodations\nIf you need accommodations for this class, you will need to register with the Student Disability Access Office (SDAO) and provide them with documentation related to your needs. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: sdao@duke.edu or access.duke.edu.",
+    "crumbs": [
+      "Syllabus",
+      "Policies"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_policies.html#collaboration",
+    "href": "syllabus/syllabus_policies.html#collaboration",
+    "title": "Policies",
+    "section": "Collaboration",
+    "text": "Collaboration\nYou are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be entirely your own. You should not be sharing your solutions or copying other people’s work. This will be treated as plagiarism, and both the sharer and the recipient(s) will be penalized equally.",
+    "crumbs": [
+      "Syllabus",
+      "Policies"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_policies.html#use-of-outside-resources-including-ai",
+    "href": "syllabus/syllabus_policies.html#use-of-outside-resources-including-ai",
+    "title": "Policies",
+    "section": "Use of outside resources, including AI",
+    "text": "Use of outside resources, including AI\nIt basically comes down to this:\n\nDo your own math and write your own words, but write code however the hell you want.\n\nYou are expected to produce all mathematical reasoning, arguments, and calculations yourself, and your write-ups should be original to you. You should not use ChatGPT or anything like it to solve math problems or write words for you. When it comes to code, you are free to use any outside resources (StackOverflow, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.",
+    "crumbs": [
+      "Syllabus",
+      "Policies"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_materials.html",
+    "href": "syllabus/syllabus_materials.html",
+    "title": "Course materials",
+    "section": "",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_materials.html#textbooks",
+    "href": "syllabus/syllabus_materials.html#textbooks",
+    "title": "Course materials",
+    "section": "",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_materials.html#technology",
+    "href": "syllabus/syllabus_materials.html#technology",
+    "title": "Course materials",
+    "section": "Technology",
+    "text": "Technology\nThis is primarily a pencil-and-paper mathematics course, and much of our work could be accomplished even if the power were out. That said, we will teach you a modicum of the R programming language, and you will need access to a device with internet so that you can stay up to date with the course logistics. In particular, that means:\n\nThis course page that you are on right now;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
+    "section": "",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nWelcome!\n\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\n\n\n\n\n1\nMon, Jan 13\n\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\nPSET 0 @ 12PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "crumbs": [
+      "Syllabus",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_overview.html",
+    "href": "syllabus/syllabus_overview.html",
+    "title": "Course overview",
+    "section": "",
+    "text": "We will spend roughly two thirds of the course on probability theory, and the last third on mathematical statistics. In probability, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon behave. In statistics, we do the reverse; we start with the realizations of a random phenomenon, and then try to figure out what distribution generated them. In this course, we will:\n\nlearn how to model random phenomena using a probability distribution, and learn how to extract from that distribution features and summaries that describe the phenomena’s “average” or “typical” behavior;\nlearn the mathematics necessary to pose and answer questions like: does this statistical procedure work? what does it mean for it to work? when does it work? how well does it work?\nwrite computer simulations to demonstrate the theoretical properties of probability distributions and statistical procedures;\nlearn how to analyze small, stylized datasets.\n\nPrerequisites: single-variable calculus.",
+    "crumbs": [
+      "Syllabus",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_overview.html#description",
+    "href": "syllabus/syllabus_overview.html#description",
+    "title": "Course overview",
+    "section": "",
+    "text": "We will spend roughly two thirds of the course on probability theory, and the last third on mathematical statistics. In probability, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon behave. In statistics, we do the reverse; we start with the realizations of a random phenomenon, and then try to figure out what distribution generated them. In this course, we will:\n\nlearn how to model random phenomena using a probability distribution, and learn how to extract from that distribution features and summaries that describe the phenomena’s “average” or “typical” behavior;\nlearn the mathematics necessary to pose and answer questions like: does this statistical procedure work? what does it mean for it to work? when does it work? how well does it work?\nwrite computer simulations to demonstrate the theoretical properties of probability distributions and statistical procedures;\nlearn how to analyze small, stylized datasets.\n\nPrerequisites: single-variable calculus.",
+    "crumbs": [
+      "Syllabus",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_overview.html#meetings",
+    "href": "syllabus/syllabus_overview.html#meetings",
+    "title": "Course overview",
+    "section": "Meetings",
+    "text": "Meetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nSocial Sciences 136\nMoWe 3:05 PM - 4:20 PM\nJohn\n\n\nLab 01\nPerkins LINK 071 (Classroom 5)\nTh 1:25 PM - 2:40 PM\nGwen\n\n\nLab 02\nPerkins LINK 071 (Classroom 5)\nTh 3:05 PM - 4:20 PM\nGwen",
+    "crumbs": [
+      "Syllabus",
+      "Overview"
     ]
   },
   {
@@ -136,197 +246,54 @@
     "href": "syllabus/syllabus_resources.html#mental-health-and-well-being",
     "title": "University resources",
     "section": "Mental health and well-being",
-    "text": "Mental health and well-being\nDuke is committed to holistic student well-being, including mental, emotional, and physical health. The university offers resources to help students manage daily stress, encourage intentional self-care, and access just-in-time support. If you find you need support, your mental and/or emotional health concerns are impacting your day-to-day activities and your academic performance, or you need someone to talk to, the resources below are available to you:\n\nDukeReach: DukeReach provides comprehensive outreach services to support students in managing all aspects of well-being, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can reach the DukeReach team at dukereach@duke.edu.\nCounseling and Psychological Services (CAPS): CAPS services include individual and group counseling services, psychiatric services, and workshops. CAPS also provides referrals to off-campus resources for specialized care. You can reach CAPS at (919) 660-1000.\nTimelyCare1: TimelyCare is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling.\nBC Fellows for Healthy Relationship: The BC Fellows meet with students individually and in groups, supporting the development of healthy relationships and building meaningful community in all areas of a student’s life.\nDukeLine: Students who want to connect anonymously with a Peer Coach can text 984-230-4888 from 5 to 11 p.m. daily. DukeLine offers in-the-moment anonymous, non-emergency text support from a peer.\nDuWell: DuWell provides Moments of Mindfulness (stress management and resilience building) and meditation programming (Koru workshop) to assist students in developing a daily emotional well-being practice. All are welcome, and no experience is necessary. You can reach DuWell at (919) 681-8421.",
+    "text": "Mental health and well-being\nDuke is committed to holistic student well-being, including mental, emotional, and physical health. The university offers resources to help students manage daily stress, encourage intentional self-care, and access just-in-time support. If you find you need support, your mental and/or emotional health concerns are impacting your day-to-day activities and your academic performance, or you need someone to talk to, the resources below are available to you:\n\nDukeReach: DukeReach provides comprehensive outreach services to support students in managing all aspects of well-being, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can reach the DukeReach team at dukereach@duke.edu.\nCounseling and Psychological Services (CAPS): CAPS services include individual and group counseling services, psychiatric services, and workshops. CAPS also provides referrals to off-campus resources for specialized care. You can reach CAPS at (919) 660-1000.\nTimelyCare: TimelyCare is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling.\nBC Fellows for Healthy Relationship: The BC Fellows meet with students individually and in groups, supporting the development of healthy relationships and building meaningful community in all areas of a student’s life.\nDukeLine: Students who want to connect anonymously with a Peer Coach can text 984-230-4888 from 5 to 11 p.m. daily. DukeLine offers in-the-moment anonymous, non-emergency text support from a peer.\nDuWell: DuWell provides Moments of Mindfulness (stress management and resilience building) and meditation programming (Koru workshop) to assist students in developing a daily emotional well-being practice. All are welcome, and no experience is necessary. You can reach DuWell at (919) 681-8421.",
     "crumbs": [
       "Syllabus",
       "University resources"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_resources.html#footnotes",
-    "href": "syllabus/syllabus_resources.html#footnotes",
-    "title": "University resources",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFormerly known as Blue Devils Care.↩︎",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_overview.html",
-    "href": "syllabus/syllabus_overview.html",
-    "title": "Course overview",
+    "objectID": "syllabus/syllabus_assignments.html",
+    "href": "syllabus/syllabus_assignments.html",
+    "title": "Assignments and grading",
     "section": "",
-    "text": "We will spend roughly two thirds of the course on probability theory, and the last third on mathematical statistics. In probability, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon behave. In statistics, we do the reverse; we start with the realizations of a random phenomenon, and then try to figure out what distribution generated them. In this course, we will:\n\nlearn how to model random phenomena using a probability distribution, and learn how to extract from that distribution features and summaries that describe the phenomena’s “average” or “typical” behavior;\nlearn the mathematics necessary to pose and answer questions like: does this statistical procedure work? what does it mean for it to work? when does it work? how well does it work?\nwrite computer simulations to demonstrate the theoretical properties of probability distributions and statistical procedures;\nlearn how to analyze small, stylized datasets.\n\nPrerequisites: single-variable calculus.",
+    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on these thresholds:",
     "crumbs": [
       "Syllabus",
-      "Overview"
+      "Assignments and grading"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_overview.html#description",
-    "href": "syllabus/syllabus_overview.html#description",
-    "title": "Course overview",
-    "section": "",
-    "text": "We will spend roughly two thirds of the course on probability theory, and the last third on mathematical statistics. In probability, we describe the distribution of a random phenomenon and then study how the realizations of that phenomenon behave. In statistics, we do the reverse; we start with the realizations of a random phenomenon, and then try to figure out what distribution generated them. In this course, we will:\n\nlearn how to model random phenomena using a probability distribution, and learn how to extract from that distribution features and summaries that describe the phenomena’s “average” or “typical” behavior;\nlearn the mathematics necessary to pose and answer questions like: does this statistical procedure work? what does it mean for it to work? when does it work? how well does it work?\nwrite computer simulations to demonstrate the theoretical properties of probability distributions and statistical procedures;\nlearn how to analyze small, stylized datasets.\n\nPrerequisites: single-variable calculus.",
+    "objectID": "syllabus/syllabus_assignments.html#labs-10",
+    "href": "syllabus/syllabus_assignments.html#labs-10",
+    "title": "Assignments and grading",
+    "section": "Labs (10%)",
+    "text": "Labs (10%)\nIn lab every Thursday, you will complete a guided activity that illustrates how the latest course material can be applied to various domains of science and technology. Often this activity will also teach you how to implement some of the ideas from the course in the R programming language. Ideally you should be able to finish the activity by the end of your lab period, but in any case, you must submit your lab work by 11:59 ET PM that same day. Labs will be graded for completion on the following scale:\n\n1.0: a good faith attempt has been made at every part of the activity;\n0.5: partially complete;\n0.0: no submission, or mostly incomplete.\n\n\n\n\n\n\n\nNote\n\n\n\nYour lowest lab score will be dropped at the end of the semester.",
     "crumbs": [
       "Syllabus",
-      "Overview"
+      "Assignments and grading"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_overview.html#meetings",
-    "href": "syllabus/syllabus_overview.html#meetings",
-    "title": "Course overview",
-    "section": "Meetings",
-    "text": "Meetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nSocial Sciences 136\nMoWe 3:05 PM - 4:20 PM\nJohn\n\n\nLab 01\nPerkins LINK 071 (Classroom 5)\nTh 1:25 PM - 2:40 PM\nGwen\n\n\nLab 02\nPerkins LINK 071 (Classroom 5)\nTh 3:05 PM - 4:20 PM\nGwen",
+    "objectID": "syllabus/syllabus_assignments.html#problem-sets-30",
+    "href": "syllabus/syllabus_assignments.html#problem-sets-30",
+    "title": "Assignments and grading",
+    "section": "Problem Sets (30%)",
+    "text": "Problem Sets (30%)\nMathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but sometimes you will be asked to do some coding. You may compose you solutions however you like (scan or photograph written work, , Quarto, handwriting capture on a tablet, etc) so long as you ultimately upload a single .pdf file to Gradescope.\n\n\n\n\n\n\nNote\n\n\n\nYour lowest problem set score will be dropped at the end of the semester.",
     "crumbs": [
       "Syllabus",
-      "Overview"
+      "Assignments and grading"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
-    "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nWelcome!\n\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\n\n\n\n\n1\nMon, Jan 13\n\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\nPSET 0 @ 12PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "objectID": "syllabus/syllabus_assignments.html#exams-20-each",
+    "href": "syllabus/syllabus_assignments.html#exams-20-each",
+    "title": "Assignments and grading",
+    "section": "Exams (20% each)",
+    "text": "Exams (20% each)\nThese will be traditional, in-person, sit-down, written exams with no technology, and with no outside resources apart from a note sheet that you and only you have prepared (both sides of an 8.5’ x 11’ piece of paper).\n\n\n\n\n\n\nNote\n\n\n\nIf you do better on the final exam than you did on one of the midterms, we will replace your lowest midterm exam score with your final exam score.",
     "crumbs": [
       "Syllabus",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_materials.html",
-    "href": "syllabus/syllabus_materials.html",
-    "title": "Course materials",
-    "section": "",
-    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_materials.html#textbooks",
-    "href": "syllabus/syllabus_materials.html#textbooks",
-    "title": "Course materials",
-    "section": "",
-    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_materials.html#technology",
-    "href": "syllabus/syllabus_materials.html#technology",
-    "title": "Course materials",
-    "section": "Technology",
-    "text": "Technology\nThis is primarily a pencil-and-paper mathematics course, and much of our work could be accomplished even if the power were out. That said, we will teach you a modicum of the R programming language, and you will need access to a device with internet so that you can stay up to date with the course logistics. In particular, that means:\n\nThis course page that you are on right now;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html",
-    "href": "syllabus/syllabus_policies.html",
-    "title": "Policies",
-    "section": "",
-    "text": "If you wish to ask content-related questions in writing, please do not do so via e-mail. Instead, please use the course discussion forum Ed Discussion. That way all members of the teaching team can see your question, and all students can benefit from the ensuing discussion. You are also encouraged to answer one another’s questions.\nIf you have questions about personal matters that may not be appropriate for the public course forum (e.g. illness, accommodations, etc), then please e-mail the instructor directly (john.zito@duke.edu).\n\n\n\n\n\n\nNote\n\n\n\nYou can ask questions anonymously on Ed. The teaching team will still know your identity, but your peers will not.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#communication",
-    "href": "syllabus/syllabus_policies.html#communication",
-    "title": "Policies",
-    "section": "",
-    "text": "If you wish to ask content-related questions in writing, please do not do so via e-mail. Instead, please use the course discussion forum Ed Discussion. That way all members of the teaching team can see your question, and all students can benefit from the ensuing discussion. You are also encouraged to answer one another’s questions.\nIf you have questions about personal matters that may not be appropriate for the public course forum (e.g. illness, accommodations, etc), then please e-mail the instructor directly (john.zito@duke.edu).\n\n\n\n\n\n\nNote\n\n\n\nYou can ask questions anonymously on Ed. The teaching team will still know your identity, but your peers will not.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#late-work-and-extensions",
-    "href": "syllabus/syllabus_policies.html#late-work-and-extensions",
-    "title": "Policies",
-    "section": "Late work and extensions",
-    "text": "Late work and extensions\nNo late work will be accepted unless you request an extension in advance by e-mailing the instructor directly (john.zito@duke.edu). All reasonable requests will be entertained, but extensions will not be long.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#regrade-requests",
-    "href": "syllabus/syllabus_policies.html#regrade-requests",
-    "title": "Policies",
-    "section": "Regrade requests",
-    "text": "Regrade requests\nIf you receive a graded assignment back, and you believe that some part of it was graded incorrectly, you may dispute the grade by submitting a regrade request in Gradescope. Note the following:\n\nYou have one week after you receive a grade to submit a regrade request;\nYou should submit separate regrade requests for each question you wish to dispute, not a single catch-all request;\nRequests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;\nRequests to dispute the number of points deducted for an incorrect response will not be considered;\nRegrade requests are not a mechanism for asking for clarification on feedback. Those questions should be brought to office hours;\nNo grades will be changed after the final exam has been administered on Tuesday, April 29;\n\n\n\n\n\n\n\nWarning\n\n\n\nA regrade request can result in your grade going up, staying the same, or going down if we determine that, in fact, the original grader was too lenient.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#attendance",
-    "href": "syllabus/syllabus_policies.html#attendance",
-    "title": "Policies",
-    "section": "Attendance",
-    "text": "Attendance\nAttendance is not strictly required for any of the class meetings. You are all adults, and you are free to live your lives. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#accommodations",
-    "href": "syllabus/syllabus_policies.html#accommodations",
-    "title": "Policies",
-    "section": "Accommodations",
-    "text": "Accommodations\nIf you need accommodations for this class, you will need to register with the Student Disability Access Office (SDAO) and provide them with documentation related to your needs. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: sdao@duke.edu or access.duke.edu.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#collaboration",
-    "href": "syllabus/syllabus_policies.html#collaboration",
-    "title": "Policies",
-    "section": "Collaboration",
-    "text": "Collaboration\nYou are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be your own. You should not be sharing solutions or copying other people’s work. This will be treated as plagiarism, and both the sharer and the recipient will be penalized equally.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_policies.html#use-of-outside-resources-including-ai",
-    "href": "syllabus/syllabus_policies.html#use-of-outside-resources-including-ai",
-    "title": "Policies",
-    "section": "Use of outside resources, including AI",
-    "text": "Use of outside resources, including AI\nIt basically comes down to this:\n\nDo your own math and write your own words, but write code however the hell you want.\n\n\nDo your own math\nThat is the whole point of this course.\n\n\nWrite your own words\nIf you copy-paste written text from ChatGPT or anyplace else, that will be treated as plagiarism.\n\n\nWrite code however the hell you want\nThe coding dimension of this course will be fairly basic, so hopefully you do not feel the need to seek extensive help from outside resources. Having said that, you are free to use any outside resources (StackOverflow, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.",
-    "crumbs": [
-      "Syllabus",
-      "Policies"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_team.html",
-    "href": "syllabus/syllabus_team.html",
-    "title": "Teaching team",
-    "section": "",
-    "text": "Name\nRole\nOffice Hours\n\n\n\n\n\nChen, Andy\nTA\nTBD\n\n\n\nHuang, Konnie\nTA\nTBD\n\n\n\nJacobson, Gwen\nHead TA\nTBD\n\n\n\nZito, John\nInstructor\nTue 2:00 PM - 4:00 PM\nOld Chem 207",
-    "crumbs": [
-      "Syllabus",
-      "Teaching team"
+      "Assignments and grading"
     ]
   }
 ]

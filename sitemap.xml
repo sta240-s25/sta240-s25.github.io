@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_conduct.html</loc>
-    <lastmod>2024-12-29T20:18:35.262Z</lastmod>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_team.html</loc>
+    <lastmod>2025-01-02T03:31:02.857Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_assignments.html</loc>
-    <lastmod>2025-01-02T04:34:38.627Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_resources.html</loc>
-    <lastmod>2024-12-29T20:18:35.264Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_overview.html</loc>
-    <lastmod>2025-01-02T03:07:04.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/index.html</loc>
-    <lastmod>2025-01-02T00:47:02.748Z</lastmod>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_policies.html</loc>
+    <lastmod>2025-01-02T05:19:50.817Z</lastmod>
   </url>
   <url>
     <loc>https://sta240-s25.github.io/syllabus/syllabus_materials.html</loc>
     <lastmod>2025-01-02T04:00:01.896Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_policies.html</loc>
-    <lastmod>2025-01-02T05:00:39.195Z</lastmod>
+    <loc>https://sta240-s25.github.io/index.html</loc>
+    <lastmod>2025-01-02T00:47:02.748Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_team.html</loc>
-    <lastmod>2025-01-02T03:31:02.857Z</lastmod>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_overview.html</loc>
+    <lastmod>2025-01-02T03:07:04.478Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_resources.html</loc>
+    <lastmod>2025-01-02T05:21:11.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_assignments.html</loc>
+    <lastmod>2025-01-02T04:34:38.627Z</lastmod>
   </url>
 </urlset>
