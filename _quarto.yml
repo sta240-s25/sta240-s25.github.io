@@ -67,8 +67,6 @@ website:
             text: Assignments and grading
           - href: syllabus/syllabus_policies.qmd
             text: Policies
-          - href: syllabus/syllabus_conduct.qmd
-            text: Conduct violations
           - href: syllabus/syllabus_resources.qmd
             text: University resources
           - href: index.qmd
