@@ -39,6 +39,7 @@ An example of what $h$ might look like is displayed below. Treat $-\infty<\mu<\i
 ```{r}
 #| label: silly
 #| echo: false
+#| fig-align: center
 m = 1
 s = 2
 x_vals <- seq(-6, 8, length.out = 500)
