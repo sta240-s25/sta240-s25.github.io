@@ -5,5 +5,5 @@ categories:
 description: "TBD"
 subtitle: "🔗"
 image: headshots/zito.jpg
-image-alt: Headshot of TA
+image-alt: Headshot of Instructor
 ---
