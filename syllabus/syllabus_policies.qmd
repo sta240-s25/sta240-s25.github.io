@@ -2,7 +2,7 @@
 title: "Policies"
 ---
 
-## Duke Community Standard 
+## Duke Community Standard
 
 As a student in this course, you have agreed to uphold the [Duke Community Standard](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct) and the practices specific to this course.
 
@@ -55,6 +55,6 @@ You are encouraged to discuss and collaborate on problem sets and labs, but all 
 
 It basically comes down to this:
 
-> Do your own math and write your own words, but write code however the hell you want.
+> Do your own math and write your own words, but write code however the hell you want (as long as you cite your sources).
 
 You are expected to produce all mathematical reasoning, arguments, and calculations yourself, and your write-ups should be original to you. You should not use ChatGPT or anything like it to solve math problems or write words for you. When it comes to code, you are free to use any outside resources (`StackOverflow`, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
