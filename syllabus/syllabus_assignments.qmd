@@ -47,7 +47,7 @@ Your lowest lab score will be dropped at the end of the semester.
 
 ## Problem Sets (30%)
 
-Mathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but sometimes you will be asked to do some coding. You may compose you solutions however you like (scan or photograph written work, \LaTeX, Quarto, handwriting capture on a tablet, etc) so long as you ultimately upload a single `.pdf` file to Gradescope.
+Mathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but sometimes you will be asked to do some coding. You may compose you solutions however you like (scan or photograph written work, LaTeX, Quarto, handwriting capture on a tablet, whatever) so long as you ultimately upload a single `.pdf` file to Gradescope.
 
 ::: callout-note
 Your lowest problem set score will be dropped at the end of the semester.
