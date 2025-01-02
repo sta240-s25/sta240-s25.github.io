@@ -213,7 +213,7 @@
     "href": "psets/pset_0.html#problem-5",
     "title": "Problem Set 0",
     "section": "Problem 5",
-    "text": "Problem 5\n\\(f\\) is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: \\(f(0) = 0\\), \\(f'(0) = 0\\), \\(f''(0) = 1\\). Assume \\(t\\) is a constant and compute\n\\[\n    \\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n    .\n\\]",
+    "text": "Problem 5\nImagine \\(f\\) is some mystery function. These are the only things you know about it:\n\n\n\\(f\\) is twice continuously differentiable in a neighborhood of 0;\n\n\\(f(0) = 0\\);\n\n\\(f'(0) = 0\\);\n\n\\(f''(0) = 1\\).\n\nAssume \\(t\\) is a constant and compute\n\\[\n    \\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n    .\n\\]",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
