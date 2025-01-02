@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <link href="../syllabus/syllabus_materials.html" rel="next">
 <link href="../syllabus/syllabus_overview.html" rel="prev">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-ta-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-categories','listing-description','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-categories","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-ta-listing'] = new List('listing-ta-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="STA 240 Spring 2025 - Teaching team">
 <meta property="og:site_name" content="STA 240 Spring 2025">
@@ -256,127 +196,48 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-ta-listing" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-ta-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-ta-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title-sort" data-direction="asc">
-          Name
-        </option>
-         <option value="listing-categories" data-direction="asc">
-          Role(s)
-        </option>
-         <option value="listing-description" data-direction="asc">
-          Section(s)
-        </option>
-         <option value="listing-subtitle" data-direction="asc">
-          Office hours
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
 <thead>
-<tr>
-<th>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-categories" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Role(s)</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Section(s)</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Office hours</a>
-</th>
+<tr class="header">
+<th></th>
+<th>Name</th>
+<th>Role</th>
+<th>Office Hours</th>
 </tr>
 </thead>
-<tbody class="list">
-<tr data-index="0" data-categories="TA" data-listing-file-modified-sort="1735780495331" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Jacobson, Gwen" data-listing-filename-sort="jacobson.qmd">
-<td>
-<span class="listing-image"><img src="../syllabus/ta/headshots/jacobson.jpg" style="height: 40px;" alt="Headshot of TA"></span>
-</td>
-<td>
-<a href="../syllabus/ta/jacobson.html" class="title listing-title">Jacobson, Gwen</a>
-</td>
-<td>
-<span class="listing-categories">TA</span>
-</td>
-<td>
-<span class="listing-description">TBD</span>
-</td>
-<td>
-<span class="listing-subtitle">🔗</span>
-</td>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Chen, Andy</td>
+<td>TA</td>
+<td>TBD</td>
 </tr>
-<tr data-index="1" data-categories="Instructor" data-listing-file-modified-sort="1735778954403" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Zito, John" data-listing-filename-sort="huang.qmd">
-<td>
-<span class="listing-image"><img src="../syllabus/ta/headshots/zito.jpg" style="height: 40px;" alt="Headshot of TA"></span>
-</td>
-<td>
-<a href="../syllabus/ta/huang.html" class="title listing-title">Zito, John</a>
-</td>
-<td>
-<span class="listing-categories">Instructor</span>
-</td>
-<td>
-<span class="listing-description">TBD</span>
-</td>
-<td>
-<span class="listing-subtitle">🔗</span>
-</td>
+<tr class="even">
+<td></td>
+<td>Huang, Konnie</td>
+<td>TA</td>
+<td>TBD</td>
 </tr>
-<tr data-index="2" data-categories="Instructor" data-listing-file-modified-sort="1735779370975" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Zito, John" data-listing-filename-sort="zito.qmd">
-<td>
-<span class="listing-image"><img src="../syllabus/ta/headshots/zito.jpg" style="height: 40px;" alt="Headshot of Instructor"></span>
-</td>
-<td>
-<a href="../syllabus/ta/zito.html" class="title listing-title">Zito, John</a>
-</td>
-<td>
-<span class="listing-categories">Instructor</span>
-</td>
-<td>
-<span class="listing-description">TBD</span>
-</td>
-<td>
-<span class="listing-subtitle">🔗</span>
-</td>
+<tr class="odd">
+<td></td>
+<td>Jacobson, Gwen</td>
+<td>Head TA</td>
+<td>TBD</td>
 </tr>
-<tr data-index="3" data-categories="Instructor" data-listing-file-modified-sort="1735778953067" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Zito, John" data-listing-filename-sort="chen.qmd">
-<td>
-<span class="listing-image"><img src="../syllabus/ta/headshots/zito.jpg" style="height: 40px;" alt="Headshot of TA"></span>
-</td>
-<td>
-<a href="../syllabus/ta/chen.html" class="title listing-title">Zito, John</a>
-</td>
-<td>
-<span class="listing-categories">Instructor</span>
-</td>
-<td>
-<span class="listing-description">TBD</span>
-</td>
-<td>
-<span class="listing-subtitle">🔗</span>
-</td>
+<tr class="even">
+<td><img src="ta_headshots/zito.jpg" class="circular-portrait-mary img-fluid" style="float:right;" alt="Headshot of JZ"></td>
+<td>Zito, John</td>
+<td>Instructor</td>
+<td>Tue 2:00 PM - 4:00 PM</td>
 </tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
 
 
 

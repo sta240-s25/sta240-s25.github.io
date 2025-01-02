@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/ta/chen.html</loc>
-    <lastmod>2025-01-02T00:49:13.067Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/ta/huang.html</loc>
-    <lastmod>2025-01-02T00:49:14.403Z</lastmod>
-  </url>
-  <url>
     <loc>https://sta240-s25.github.io/syllabus/syllabus_conduct.html</loc>
     <lastmod>2024-12-29T20:18:35.262Z</lastmod>
   </url>
@@ -22,7 +14,7 @@
   </url>
   <url>
     <loc>https://sta240-s25.github.io/syllabus/syllabus_overview.html</loc>
-    <lastmod>2025-01-02T01:16:23.672Z</lastmod>
+    <lastmod>2025-01-02T02:44:28.980Z</lastmod>
   </url>
   <url>
     <loc>https://sta240-s25.github.io/index.html</loc>
@@ -38,14 +30,6 @@
   </url>
   <url>
     <loc>https://sta240-s25.github.io/syllabus/syllabus_team.html</loc>
-    <lastmod>2024-12-29T20:18:35.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/ta/jacobson.html</loc>
-    <lastmod>2025-01-02T01:14:55.331Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/ta/zito.html</loc>
-    <lastmod>2025-01-02T00:56:10.975Z</lastmod>
+    <lastmod>2025-01-02T02:58:47.281Z</lastmod>
   </url>
 </urlset>
