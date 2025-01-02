@@ -154,6 +154,83 @@
     ]
   },
   {
+    "objectID": "psets/pset_0.html",
+    "href": "psets/pset_0.html",
+    "title": "Problem Set 0",
+    "section": "",
+    "text": "This is ostensibly calculus review, but each problem is a piece of probability in disguise. Throughout the semester, I will refer to Problem Set 0 often as we illuminate those connections.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "psets/pset_0.html#problem-1",
+    "href": "psets/pset_0.html#problem-1",
+    "title": "Problem Set 0",
+    "section": "Problem 1",
+    "text": "Problem 1\nExplain why this is horrific notation:\n\\[\n    \\int_0^x f(x)\\,\\textrm{d} x.\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "psets/pset_0.html#problem-2",
+    "href": "psets/pset_0.html#problem-2",
+    "title": "Problem Set 0",
+    "section": "Problem 2",
+    "text": "Problem 2\nAssume \\(\\lambda&gt;0\\) is a constant and compute\n\\[\n    \\sum\\limits_{n=0}^\\infty n \\frac{\\lambda^n}{n!}e^{-\\lambda}\n    .\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "psets/pset_0.html#problem-3",
+    "href": "psets/pset_0.html#problem-3",
+    "title": "Problem Set 0",
+    "section": "Problem 3",
+    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nFigure @silly displays an example of what \\(h\\) might look like. Treat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.\n\nm = 1\ns = 2\nx_vals &lt;- seq(-6, 8, length.out = 500)\ny_vals &lt;- exp(-0.5 * ((x_vals - m) / s)^2)\nplot(x_vals, y_vals, type = \"l\", xlab = \"x\", ylab = \"h(x)\")",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "psets/pset_0.html#problem-4",
+    "href": "psets/pset_0.html#problem-4",
+    "title": "Problem Set 0",
+    "section": "Problem 4",
+    "text": "Problem 4\nHere is another inordinately silly function:\n\\[\n        \\Gamma(a)=\\int_0^\\infty x^{a-1}e^{-x}\\,\\textrm{d} x,\\quad a&gt;0.\n\\] Prove that \\(\\Gamma(a+1)=a\\Gamma(a)\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "psets/pset_0.html#problem-5",
+    "href": "psets/pset_0.html#problem-5",
+    "title": "Problem Set 0",
+    "section": "Problem 5",
+    "text": "Problem 5\n\\(f\\) is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: \\(f(0) = 0\\), \\(f'(0) = 0\\), \\(f''(0) = 1\\). Assume \\(t\\) is a constant and compute\n$$\n\\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n.\n$$",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "psets/pset_0.html#problem-6",
+    "href": "psets/pset_0.html#problem-6",
+    "title": "Problem Set 0",
+    "section": "Problem 6",
+    "text": "Problem 6\nConsider this integral:\n\\[\n    \\int_2^\\infty\n    \\frac{1}{x(\\ln x)^p}\\textrm{d} x\n    .\n\\] ### part a\nShow that\n\\[\n        \\lim_{x\\to\\infty}\\frac{1}{x(\\ln x)^p}=0\n\\] for all values of \\(-\\infty&lt;p&lt;\\infty\\).\npart b\nFor what values of \\(p\\) does the integral converge? When it does converge, what is its value?\npart c\nUse a computer to create a single plot with lines graphing the integrand for \\(p\\) equal to -2, -1.5, -1, 0, 1, 5. Make the \\(x\\)-axis of your plot run from 2 to 15.\npart d\nExplain in words why the integral converges for some values of \\(p\\) but not others.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 0"
+    ]
+  },
+  {
     "objectID": "syllabus/syllabus_overview.html",
     "href": "syllabus/syllabus_overview.html",
     "title": "Course overview",
