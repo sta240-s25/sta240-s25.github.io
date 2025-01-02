@@ -71,6 +71,10 @@ website:
             text: University resources
           - href: index.qmd
             text: Schedule
+      - section: "Problem Sets"
+        contents:
+          - href: psets/pset_0.qmd
+            text: Problem Set 0
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'

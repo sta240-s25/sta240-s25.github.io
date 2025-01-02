@@ -1,0 +1,94 @@
+---
+title: "Problem Set 0"
+---
+
+This is ostensibly calculus review, but each problem is a piece of probability in disguise. Throughout the semester, I will refer to Problem Set 0 often as we illuminate those connections.
+
+## Problem 1
+
+Explain why this is horrific notation:
+
+$$
+    \int_0^x f(x)\,\textrm{d} x.
+$$
+
+## Problem 2
+
+Assume $\lambda>0$ is a constant and compute 
+
+$$
+    \sum\limits_{n=0}^\infty n \frac{\lambda^n}{n!}e^{-\lambda}
+    .
+$$
+
+## Problem 3
+
+Here is a very silly function:
+
+$$
+    h(x)
+    =
+    \exp\left(-\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}\right)
+    ,\quad 
+    -\infty<x<\infty
+    .
+$$
+
+Figure @silly displays an example of what $h$ might look like. Treat $-\infty<\mu<\infty$ and $\sigma>0$ as constants and compute the value(s) of $x$ at which $h$ has inflection points.
+    
+```{r}
+#| label: silly
+m = 1
+s = 2
+x_vals <- seq(-6, 8, length.out = 500)
+y_vals <- exp(-0.5 * ((x_vals - m) / s)^2)
+plot(x_vals, y_vals, type = "l", xlab = "x", ylab = "h(x)")
+```
+
+## Problem 4
+
+Here is another inordinately silly function:
+
+$$
+        \Gamma(a)=\int_0^\infty x^{a-1}e^{-x}\,\textrm{d} x,\quad a>0.
+$$
+    Prove that $\Gamma(a+1)=a\Gamma(a)$.
+
+## Problem 5
+
+$f$ is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: $f(0) = 0$, $f'(0) = 0$, $f''(0) = 1$. Assume $t$ is a constant and compute 
+
+    $$
+    \lim_{x\to\infty} xf\left(\frac{t}{\sqrt{x}}\right)
+    .
+    $$
+
+## Problem 6
+
+Consider this integral:
+
+$$
+    \int_2^\infty 
+    \frac{1}{x(\ln x)^p}\textrm{d} x
+    .
+$$
+### part a
+
+Show that
+
+$$
+        \lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0
+$$
+for all values of $-\infty<p<\infty$.
+
+### part b
+
+For what values of $p$ does the integral converge? When it does converge, what is its value?
+
+### part c
+
+Use a computer to create a single plot with lines graphing the integrand for $p$ equal to -2, -1.5, -1, 0, 1, 5. Make the $x$-axis of your plot run from 2 to 15.
+
+### part d
+
+Explain in words why the integral converges for some values of $p$ but not others.
