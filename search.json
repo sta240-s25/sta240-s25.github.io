@@ -44,55 +44,33 @@
     ]
   },
   {
-    "objectID": "syllabus/syllabus_assignments.html#application-exercises-5",
-    "href": "syllabus/syllabus_assignments.html#application-exercises-5",
+    "objectID": "syllabus/syllabus_assignments.html#labs-10",
+    "href": "syllabus/syllabus_assignments.html#labs-10",
     "title": "Assignments and grading",
-    "section": "Application exercises (5%)",
-    "text": "Application exercises (5%)\nDuring most lectures, we will work through an application exercise (AE) together. This is essentially a guided mini-lab that shows you how to implement the concepts introduced that day. On-time completion of at least 70% of AEs will result in full credit for the AE component of the final course grade. Here is what that means:\n\nAEs are due at 2PM ET on the day they are introduced;\nSubmit an AE by pushing your work to your GitHub repo;\nAEs are graded for completion; if you make a good faith attempt at all parts of the exercisem you get the credit.",
+    "section": "Labs (10%)",
+    "text": "Labs (10%)\nIn lab every Thursday, you will complete a guided activity that illustrates how the latest course material can be applied to various domains of science and technology. Often this activity will also teach you how to implement some of the ideas from the course in the R programming language. Ideally you should be able to finish the activity by the end of your lab period, but in any case, you must submit your lab work by 11:59 ET PM that same day. Labs will be graded for completion on the following scale:\n\n1.0: a good faith attempt has been made at every part of the activity;\n0.5: partially complete;\n0.0: no submission, or mostly incomplete.\n\n\n\n\n\n\n\nNote\n\n\n\nYour lowest lab score will be dropped at the end of the semester.",
     "crumbs": [
       "Syllabus",
       "Assignments and grading"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_assignments.html#labs-15",
-    "href": "syllabus/syllabus_assignments.html#labs-15",
+    "objectID": "syllabus/syllabus_assignments.html#problem-sets-30",
+    "href": "syllabus/syllabus_assignments.html#problem-sets-30",
     "title": "Assignments and grading",
-    "section": "Labs (15%)",
-    "text": "Labs (15%)\nIn labs, you will apply what you have learned in the videos and during lectures to complete data analysis tasks. You may discuss lab assignments with other students; however, the lab should be completed and submitted individually. Lab assignments must be typed up using Quarto, all work must be pushed to your GitHub repository for the lab, and the lab’s PDF output must be submitted on Gradescope by the deadline. Labs are due at 8:30 am ET on the indicated due date (generally the Monday after the lab is first introduced).\n\n\n\n\n\n\nNote\n\n\n\nYour lowest lab score will be dropped. This policy will be applied to the gradebook at the end of the semester, after all labs have been graded/regraded, and before the final exam.",
+    "section": "Problem Sets (30%)",
+    "text": "Problem Sets (30%)\nMathematics is like everything else in life; if you practice, you improve. As such, the problem sets are really the heart of the course. They will mostly consist of pencil-and-paper math problems, but sometimes you will be asked to do some coding. You may compose you solutions however you like (scan or photograph written work, , Quarto, handwriting capture on a tablet, etc) so long as you ultimately upload a single .pdf file to Gradescope.\n\n\n\n\n\n\nNote\n\n\n\nYour lowest problem set score will be dropped at the end of the semester.",
     "crumbs": [
       "Syllabus",
       "Assignments and grading"
     ]
   },
   {
-    "objectID": "syllabus/syllabus_assignments.html#midterm-exams-20-each",
-    "href": "syllabus/syllabus_assignments.html#midterm-exams-20-each",
+    "objectID": "syllabus/syllabus_assignments.html#exams-20-each",
+    "href": "syllabus/syllabus_assignments.html#exams-20-each",
     "title": "Assignments and grading",
-    "section": "Midterm Exams (20% each)",
-    "text": "Midterm Exams (20% each)\nThere will be two midterm exams, each with two components:\n\nIn-class (70% of the grade): sit-down, in-person, “pencil-and-paper,” with no technology, and with no outside resources apart from a note sheet that you and only you have prepared (both sides of an 8.5’ x 11’ piece of paper);\nTake-home (30% of the grade): each in-class exam will end at 1:00 PM ET on a Thursday. You will then have until 8:00 AM ET the following Monday to work independently on the take-home. This will consist of a data analysis in R, and submission will be identical to our usual labs (Quarto &gt; PDF &gt; Gradescope). The take-home portion of the midterms is completely open resource, but the citation policies of the course still apply, and you are forbidden from discussing the exam with your peers in any way.\n\nUnless we indicate otherwise, you should assume that all course content and materials (videos, readings, lectures, labs, AES, etc) are testable.\n\n\n\n\n\n\nWarning\n\n\n\nSee the course schedule for dates and times of the exams. Exam dates cannot be changed and no make-up exams will be given. If you cannot take the exams on these dates, you should drop this class.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#final-exam-20",
-    "href": "syllabus/syllabus_assignments.html#final-exam-20",
-    "title": "Assignments and grading",
-    "section": "Final Exam (20%)",
-    "text": "Final Exam (20%)\nOn Tuesday April 29 we have our final exam from 9AM ET to 12PM ET. This exam will be cumulative, and it will have the same format as the in-class components of the midterm exams.\n\n\n\n\n\n\nNote\n\n\n\nIf you do better on the final exam than you did on the in-class component of a midterm, we will replace your lowest in-class midterm exam score with your final exam score.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#final-project-20",
-    "href": "syllabus/syllabus_assignments.html#final-project-20",
-    "title": "Assignments and grading",
-    "section": "Final project (20%)",
-    "text": "Final project (20%)\nSee here (!!!) for a detailed description of the final project.\nAfter the first midterm exam, we will assign you to teams of four or five within your lab section. Teams will select a dataset and conduct an original data analysis using the tools from the course. The project has various intermediate deadlines (“Milestones”) that contribute to the project grade, and on the last day of the semester (Wednesday April 23) teams will submit a final written report and a five minute video presentation summarizing the results of the analysis.\n\n\n\n\n\n\nWarning\n\n\n\nIf you do not complete the project, you will not receive a passing grade in this course.",
+    "section": "Exams (20% each)",
+    "text": "Exams (20% each)\nThese will be traditional, in-person, sit-down, written exams with no technology, and with no outside resources apart from a note sheet that you and only you have prepared (both sides of an 8.5’ x 11’ piece of paper).\n\n\n\n\n\n\nNote\n\n\n\nIf you do better on the final exam than you did on one of the midterms, we will replace your lowest midterm exam score with your final exam score.",
     "crumbs": [
       "Syllabus",
       "Assignments and grading"
@@ -224,7 +202,7 @@
     "href": "syllabus/syllabus_materials.html",
     "title": "Course materials",
     "section": "",
-    "text": "All books are freely available online:\n\n[ims]: Mine Çetinkaya-Rundel and Jo Hardin. Introduction to Modern Statistics. 2nd edition. OpenIntro, 2024.\n[r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. 2nd edition. O’Reilly, 2022.",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
     "crumbs": [
       "Syllabus",
       "Materials"
@@ -235,7 +213,7 @@
     "href": "syllabus/syllabus_materials.html#textbooks",
     "title": "Course materials",
     "section": "",
-    "text": "All books are freely available online:\n\n[ims]: Mine Çetinkaya-Rundel and Jo Hardin. Introduction to Modern Statistics. 2nd edition. OpenIntro, 2024.\n[r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. 2nd edition. O’Reilly, 2022.",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
     "crumbs": [
       "Syllabus",
       "Materials"
@@ -246,7 +224,7 @@
     "href": "syllabus/syllabus_materials.html#technology",
     "title": "Course materials",
     "section": "Technology",
-    "text": "Technology\nYou will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described here (!!!). Armed with your trusty laptop, you must be able to access the following:\n\nThis course page that you are on right now;\nR/RStudio as provided by the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "text": "Technology\nThis is primarily a pencil-and-paper mathematics course, and much of our work could be accomplished even if the power were out. That said, we will teach you a modicum of the R programming language, and you will need access to a device with internet so that you can stay up to date with the course logistics. In particular, that means:\n\nThis course page that you are on right now;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
     "crumbs": [
       "Syllabus",
       "Materials"
@@ -279,7 +257,7 @@
     "href": "syllabus/syllabus_policies.html#late-work-and-extensions",
     "title": "Policies",
     "section": "Late work and extensions",
-    "text": "Late work and extensions\nNo late work will be accepted for application exercises, exams, or projects. Labs may be submitted up to 3 days late. A 5% deduction will be applied for each 24-hour period during which the assignment is late.\nIf circumstances prevent you from completing a lab by the stated due date, you may email the course coordinator, Dr. Mary Knox, before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide an explanation. This waiver may only be used once a semester, so only use it for a truly extenuating circumstance.\nIf circumstances have a longer-term impact on your academic performance, please let your academic dean know. They can be a resource. Please let me know if you need help contacting your academic dean.",
+    "text": "Late work and extensions\nNo late work will be accepted unless you request an extension in advance by e-mailing the instructor directly (john.zito@duke.edu). All reasonable requests will be entertained, but extensions will not be long.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -301,7 +279,7 @@
     "href": "syllabus/syllabus_policies.html#attendance",
     "title": "Policies",
     "section": "Attendance",
-    "text": "Attendance\nFor the most part, attendance is not strictly required. You are an adult, and you are free to live your life. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, regular lecture attendance is likely the path of least resistance toward earning full credit for the application exercises. Lastly, there are some aspects of the final project that will require you to attend your lab section so that you can convene with your teammates.\n\nLecture recording request\nLectures will be recorded on Panopto and will be made available to students with an excused absence upon request. Videos shared with such students will be available for a week after the lecture date. To request a particular lecture’s video, please fill out the form at the link below (!!!). Please submit the form within 24 hours of missing lecture to ensure you have sufficient time to watch the recording. Please also make sure that any official documentation, such as STINFs, Dean’s excuses, NOVAPs, and quarantine/removal from class notices from student health are also uploaded to the form.",
+    "text": "Attendance\nAttendance is not strictly required for any of the class meetings. You are all adults, and you are free to live your lives. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -323,7 +301,7 @@
     "href": "syllabus/syllabus_policies.html#collaboration",
     "title": "Policies",
     "section": "Collaboration",
-    "text": "Collaboration\nOnly work that is clearly assigned as teamwork should be completed collaboratively.\n\nYou may discuss lab assignments with other students; however, you may not directly share (or copy) code or write-up with other students. For team assignments, you may collaborate freely within your team. You may discuss the assignment with other teams; however, you may not directly share (or copy) code or write-up with another team. Unauthorized sharing (or copying) of the code or write-up will be considered a violation for all students involved.\nYou may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.\nCollaboration within teams is not only allowed but encouraged for the project. Communication between teams at a high level is also allowed; however, you may not share code or project components across teams.\nOn individual assignments, you may not directly share work (including code) with another student in this class; on team assignments, you may not directly share work (including code) with another team.",
+    "text": "Collaboration\nYou are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be your own. You should not be sharing solutions or copying other people’s work. This will be treated as plagiarism, and both the sharer and the recipient will be penalized equally.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -334,7 +312,7 @@
     "href": "syllabus/syllabus_policies.html#use-of-outside-resources-including-ai",
     "title": "Policies",
     "section": "Use of outside resources, including AI",
-    "text": "Use of outside resources, including AI\nYou may make use of any online resources (e.g. StackOverflow) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\nYou should treat generative AI, such as ChatGPT, like other online resources. Two guiding principles govern how to use AI in this course:\n\nCognitive dimension: Working with AI should not reduce your thinking ability. We will practice using AI to facilitate—rather than hinder—learning.\nEthical dimension: Students using AI should be transparent about their use and ensure it aligns with academic integrity.\n\n\n AI tools for code: You may use the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines to cite AI-generated content. The bare minimum citation must include the AI tool you’re using (e.g., ChatGPT) and your prompt. The prompt you use cannot be copied and pasted directly from the assignment; you must create a prompt yourself.\n AI tools for narrative: Unless instructed otherwise, you may not use generative AI to generate a narrative that you then copy-paste verbatim into an assignment or edit and then insert into your assignment.\n\nIn general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you. You are ultimately responsible for the work you turn in; it should reflect your understanding of the course content. Identifying AI-generated content is fairly straightforward. Any code identified as AI-generated but not cited as such and any narrative identified as AI-generated will be considered plagiarism and treated as such.\nNEED TO ADD EXAMPLE OF PROPER CITATION.",
+    "text": "Use of outside resources, including AI\nIt basically comes down to this:\n\nDo your own math and write your own words, but write code however the hell you want.\n\n\nDo your own math\nThat is the whole point of this course.\n\n\nWrite your own words\nIf you copy-paste written text from ChatGPT or anyplace else, that will be treated as plagiarism.\n\n\nWrite code however the hell you want\nThe coding dimension of this course will be fairly basic, so hopefully you do not feel the need to seek extensive help from outside resources. Having said that, you are free to use any outside resources (StackOverflow, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -345,7 +323,7 @@
     "href": "syllabus/syllabus_team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "| Name           | Role          | Office Hours           |\n================+================+===============+========================+ | Chen, Andy | TA | TBD\n\n\n                     | Huang, Konnie  | TA            | TBD\n\n\n | Jacobson, Gwen | Head TA | TBD\n\n\n | Zito, John | Instructor | Tue 2:00 PM - 4:00 PM\n| | | Old Chem 207",
+    "text": "Name\nRole\nOffice Hours\n\n\n\n\n\nChen, Andy\nTA\nTBD\n\n\n\nHuang, Konnie\nTA\nTBD\n\n\n\nJacobson, Gwen\nHead TA\nTBD\n\n\n\nZito, John\nInstructor\nTue 2:00 PM - 4:00 PM\nOld Chem 207",
     "crumbs": [
       "Syllabus",
       "Teaching team"
