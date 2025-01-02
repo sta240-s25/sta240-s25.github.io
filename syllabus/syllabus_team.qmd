@@ -2,9 +2,9 @@
 title: "Teaching team"
 ---
 
-|                                                                                                   | Name           | Role       | Office Hours          |
+|                                                                                                         | Name           | Role       | Office Hours          |
 |------------------|------------------|------------------|------------------|
-|                                                                                                   | Chen, Andy     | TA         | TBD                   |
-|                                                                                                   | Huang, Konnie  | TA         | TBD                   |
-| ![](ta_headshots/jacobson.jpg){.circular-portrait-mary style="float:right;" fig-alt="Headshot of Gwen"} | Jacobson, Gwen | Head TA    | TBD                   |
-| ![](ta_headshots/zito.jpg){.circular-portrait-mary style="float:right;" fig-alt="Headshot of JZ"} | Zito, John     | Instructor | Tue 2:00 PM - 4:00 PM |
+|                                                                                                         | Chen, Andy     | TA         | TBD                   |
+|                                                                                                         | Huang, Konnie  | TA         | TBD                   |
+| ![](ta_headshots/jacobson.jpg){.circular-portrait-mary fig-alt="Headshot of Gwen"} | Jacobson, Gwen | Head TA    | TBD                   |
+| ![](ta_headshots/zito.jpg){.circular-portrait-mary fig-alt="Headshot of JZ"}       | Zito, John     | Instructor | Tue 2:00 PM - 4:00 PM |
