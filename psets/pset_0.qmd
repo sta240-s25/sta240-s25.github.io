@@ -14,7 +14,7 @@ $$
 
 ## Problem 2
 
-Assume $\lambda>0$ is a constant and compute 
+Assume $\lambda>0$ is a constant and compute
 
 $$
     \sum\limits_{n=0}^\infty n \frac{\lambda^n}{n!}e^{-\lambda}
@@ -35,7 +35,7 @@ $$
 $$
 
 An example of what $h$ might look like is displayed below. Treat $-\infty<\mu<\infty$ and $\sigma>0$ as constants and compute the value(s) of $x$ at which $h$ has inflection points.
-    
+
 ```{r}
 #| label: silly
 #| echo: false
@@ -52,20 +52,21 @@ plot(x_vals, y_vals, type = "l", xlab = "x", ylab = "h(x)")
 Here is another inordinately silly function:
 
 $$
-        \Gamma(a)=\int_0^\infty x^{a-1}e^{-x}\,\textrm{d} x,\quad a>0.
-$$
-Prove that $\Gamma(a+1)=a\Gamma(a)$.
+\Gamma(x)=\int_0^\infty y^{x-1}e^{-y}\,\textrm{d} y,\quad x>0.
+$$ 
+
+Prove that $\Gamma(x+1)=x\Gamma(x)$.
 
 ## Problem 5
 
 Imagine $f$ is some mystery function. These are the only things you know about it:
 
-- $f$ is twice continuously differentiable in a neighborhood of 0;
-- $f(0) = 0$;
-- $f'(0) = 0$;
-- $f''(0) = 1$.
+-   $f$ is twice continuously differentiable in a neighborhood of 0;
+-   $f(0) = 0$;
+-   $f'(0) = 0$;
+-   $f''(0) = 1$.
 
-Assume $t$ is a constant and compute 
+Assume $t$ is a constant and compute
 
 $$
     \lim_{x\to\infty} xf\left(\frac{t}{\sqrt{x}}\right)
@@ -82,7 +83,7 @@ $$
     .
 $$
 
-a. Show that $\lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0$ for all values of $-\infty<p<\infty$.
-b. For what values of $p$ does the integral converge? When it does converge, what is its value?
-c. Use a computer to create a single plot with lines graphing the integrand for $p$ equal to -2, -1.5, -1, 0, 1, 5. Make the $x$-axis of your plot run from 2 to 15.
-d. Explain in words why the integral converges for some values of $p$ but not others.
+a.  Show that $\lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0$ for all values of $-\infty<p<\infty$.
+b.  For what values of $p$ does the integral converge? When it does converge, what is its value?
+c.  Use a computer to create a single plot with lines graphing the integrand for $p$ equal to -2, -1.5, -1, 0, 1, 5. Make the $x$-axis of your plot run from 2 to 15.
+d.  Explain in words why the integral converges for some values of $p$ but not others.
