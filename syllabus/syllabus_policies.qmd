@@ -2,6 +2,14 @@
 title: "Policies"
 ---
 
+## Duke Community Standard 
+
+As a student in this course, you have agreed to uphold the [Duke Community Standard](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct) and the practices specific to this course.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_KN97j30ST4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
 ## Communication
 
 If you wish to ask content-related questions in writing, please do not do so via e-mail. Instead, please use the course discussion forum Ed Discussion. That way all members of the teaching team can see your question, and all students can benefit from the ensuing discussion. You are also encouraged to answer one another’s questions.
@@ -41,7 +49,7 @@ If you need accommodations for this class, you will need to register with the St
 
 ## Collaboration
 
-You are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be your own. You should not be sharing your solutions or copying other people's work. This will be treated as plagiarism, and both the sharer and the recipient(s) will be penalized equally.
+You are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be entirely your own. You should not be sharing your solutions or copying other people's work. This will be treated as plagiarism, and both the sharer and the recipient(s) will be penalized equally.
 
 ## Use of outside resources, including AI
 
