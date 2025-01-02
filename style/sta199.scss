@@ -55,6 +55,14 @@ $font-family: "Atkinson Hyperlegible", sans-serif;
   border-radius: 50%;
 } 
 
+.circ { 
+  position: relative; 
+  width: 120px; 
+  height: 120px; 
+  overflow: hidden; 
+  border-radius: 50%;
+} 
+
 .circular-portrait-mine { 
   position: relative; 
   width: 200px; 
