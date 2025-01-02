@@ -41,7 +41,7 @@ If you need accommodations for this class, you will need to register with the St
 
 ## Collaboration
 
-You are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be your own. You should not be sharing solutions or copying other people's work. This will be treated as plagiarism, and both the sharer and the recipient will be penalized equally.
+You are encouraged to discuss and collaborate on problem sets and labs, but all submitted work must be your own. You should not be sharing your solutions or copying other people's work. This will be treated as plagiarism, and both the sharer and the recipient(s) will be penalized equally.
 
 ## Use of outside resources, including AI
 
@@ -49,14 +49,4 @@ It basically comes down to this:
 
 > Do your own math and write your own words, but write code however the hell you want.
 
-### Do your own math
-
-That is the whole point of this course. 
-
-### Write your own words
-
-If you copy-paste written text from ChatGPT or anyplace else, that will be treated as plagiarism. 
-
-### Write code however the hell you want
-
-The coding dimension of this course will be fairly basic, so hopefully you do not feel the need to seek extensive help from outside resources. Having said that, you are free to use any outside resources (`StackOverflow`, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
+You are expected to produce all mathematical reasoning, arguments, and calculations yourself, and your write-ups should be original to you. You should not use ChatGPT or anything like it to solve math problems or write words for you. When it comes to code, you are free to use any outside resources (`StackOverflow`, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
