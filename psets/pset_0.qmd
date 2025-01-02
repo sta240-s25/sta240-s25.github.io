@@ -57,7 +57,14 @@ Prove that $\Gamma(a+1)=a\Gamma(a)$.
 
 ## Problem 5
 
-$f$ is a function that is twice continuously differentiable in a neighborhood of 0 and has the following: $f(0) = 0$, $f'(0) = 0$, $f''(0) = 1$. Assume $t$ is a constant and compute 
+Imagine $f$ is some mystery function. These are the only things you know about it:
+
+- $f$ is twice continuously differentiable in a neighborhood of 0;
+- $f(0) = 0$;
+- $f'(0) = 0$;
+- $f''(0) = 1$.
+
+Assume $t$ is a constant and compute 
 
 $$
     \lim_{x\to\infty} xf\left(\frac{t}{\sqrt{x}}\right)
