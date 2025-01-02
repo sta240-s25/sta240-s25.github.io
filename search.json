@@ -1,13 +1,255 @@
 [
   {
-    "objectID": "syllabus/syllabus_team.html",
-    "href": "syllabus/syllabus_team.html",
-    "title": "Teaching team",
+    "objectID": "syllabus/syllabus_conduct.html",
+    "href": "syllabus/syllabus_conduct.html",
+    "title": "Conduct violations",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Name\n        \n         \n          Role(s)\n        \n         \n          Section(s)\n        \n         \n          Office hours\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nName\n\n\nRole(s)\n\n\nSection(s)\n\n\nOffice hours\n\n\n\n\n\n\n\n\n\nZito, John\n\n\nInstructor\n\n\nTBD\n\n\n🔗\n\n\n\n\n\nNo matching items",
+    "text": "As a student in this course, you have agreed to uphold the Duke Community Standard and the practices specific to this course.",
     "crumbs": [
       "Syllabus",
-      "Teaching team"
+      "Conduct violations"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_conduct.html#violating-the-policy-on-use-of-outside-resources",
+    "href": "syllabus/syllabus_conduct.html#violating-the-policy-on-use-of-outside-resources",
+    "title": "Conduct violations",
+    "section": "Violating the policy on use of outside resources",
+    "text": "Violating the policy on use of outside resources\nIf you use outside resources (e.g. StackOverflow, ChatGPT, etc) without citing them, we treat that as plagiarism. If the grader has reasonable suspicion that outside resources were used without citation to complete some part of an assignment, they are empowered to immediately give that part a zero and leave a comment explaining why. If we make a mistake, you are welcome to submit a regrade request pleading your case.",
+    "crumbs": [
+      "Syllabus",
+      "Conduct violations"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_conduct.html#violating-the-policies-on-collaboration",
+    "href": "syllabus/syllabus_conduct.html#violating-the-policies-on-collaboration",
+    "title": "Conduct violations",
+    "section": "Violating the policies on collaboration",
+    "text": "Violating the policies on collaboration\nIf we suspect\n\n\n\n\n\n\nWarning\n\n\n\nIf a conduct violation results in a zero on a lab, that zero will not be dropped",
+    "crumbs": [
+      "Syllabus",
+      "Conduct violations"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_assignments.html",
+    "href": "syllabus/syllabus_assignments.html",
+    "title": "Assignments and grading",
+    "section": "",
+    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on these thresholds:",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_assignments.html#application-exercises-5",
+    "href": "syllabus/syllabus_assignments.html#application-exercises-5",
+    "title": "Assignments and grading",
+    "section": "Application exercises (5%)",
+    "text": "Application exercises (5%)\nDuring most lectures, we will work through an application exercise (AE) together. This is essentially a guided mini-lab that shows you how to implement the concepts introduced that day. On-time completion of at least 70% of AEs will result in full credit for the AE component of the final course grade. Here is what that means:\n\nAEs are due at 2PM ET on the day they are introduced;\nSubmit an AE by pushing your work to your GitHub repo;\nAEs are graded for completion; if you make a good faith attempt at all parts of the exercisem you get the credit.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_assignments.html#labs-15",
+    "href": "syllabus/syllabus_assignments.html#labs-15",
+    "title": "Assignments and grading",
+    "section": "Labs (15%)",
+    "text": "Labs (15%)\nIn labs, you will apply what you have learned in the videos and during lectures to complete data analysis tasks. You may discuss lab assignments with other students; however, the lab should be completed and submitted individually. Lab assignments must be typed up using Quarto, all work must be pushed to your GitHub repository for the lab, and the lab’s PDF output must be submitted on Gradescope by the deadline. Labs are due at 8:30 am ET on the indicated due date (generally the Monday after the lab is first introduced).\n\n\n\n\n\n\nNote\n\n\n\nYour lowest lab score will be dropped. This policy will be applied to the gradebook at the end of the semester, after all labs have been graded/regraded, and before the final exam.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_assignments.html#midterm-exams-20-each",
+    "href": "syllabus/syllabus_assignments.html#midterm-exams-20-each",
+    "title": "Assignments and grading",
+    "section": "Midterm Exams (20% each)",
+    "text": "Midterm Exams (20% each)\nThere will be two midterm exams, each with two components:\n\nIn-class (70% of the grade): sit-down, in-person, “pencil-and-paper,” with no technology, and with no outside resources apart from a note sheet that you and only you have prepared (both sides of an 8.5’ x 11’ piece of paper);\nTake-home (30% of the grade): each in-class exam will end at 1:00 PM ET on a Thursday. You will then have until 8:00 AM ET the following Monday to work independently on the take-home. This will consist of a data analysis in R, and submission will be identical to our usual labs (Quarto &gt; PDF &gt; Gradescope). The take-home portion of the midterms is completely open resource, but the citation policies of the course still apply, and you are forbidden from discussing the exam with your peers in any way.\n\nUnless we indicate otherwise, you should assume that all course content and materials (videos, readings, lectures, labs, AES, etc) are testable.\n\n\n\n\n\n\nWarning\n\n\n\nSee the course schedule for dates and times of the exams. Exam dates cannot be changed and no make-up exams will be given. If you cannot take the exams on these dates, you should drop this class.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_assignments.html#final-exam-20",
+    "href": "syllabus/syllabus_assignments.html#final-exam-20",
+    "title": "Assignments and grading",
+    "section": "Final Exam (20%)",
+    "text": "Final Exam (20%)\nOn Tuesday April 29 we have our final exam from 9AM ET to 12PM ET. This exam will be cumulative, and it will have the same format as the in-class components of the midterm exams.\n\n\n\n\n\n\nNote\n\n\n\nIf you do better on the final exam than you did on the in-class component of a midterm, we will replace your lowest in-class midterm exam score with your final exam score.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_assignments.html#final-project-20",
+    "href": "syllabus/syllabus_assignments.html#final-project-20",
+    "title": "Assignments and grading",
+    "section": "Final project (20%)",
+    "text": "Final project (20%)\nSee here (!!!) for a detailed description of the final project.\nAfter the first midterm exam, we will assign you to teams of four or five within your lab section. Teams will select a dataset and conduct an original data analysis using the tools from the course. The project has various intermediate deadlines (“Milestones”) that contribute to the project grade, and on the last day of the semester (Wednesday April 23) teams will submit a final written report and a five minute video presentation summarizing the results of the analysis.\n\n\n\n\n\n\nWarning\n\n\n\nIf you do not complete the project, you will not receive a passing grade in this course.",
+    "crumbs": [
+      "Syllabus",
+      "Assignments and grading"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html",
+    "href": "syllabus/syllabus_resources.html",
+    "title": "University resources",
+    "section": "",
+    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html#course-costs",
+    "href": "syllabus/syllabus_resources.html#course-costs",
+    "title": "University resources",
+    "section": "",
+    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html#tech-support",
+    "href": "syllabus/syllabus_resources.html#tech-support",
+    "title": "University resources",
+    "section": "Tech support",
+    "text": "Tech support\nContact the Duke OIT Service Desk at oit.duke.edu/help.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html#academic-support",
+    "href": "syllabus/syllabus_resources.html#academic-support",
+    "title": "University resources",
+    "section": "Academic support",
+    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The Academic Resource Center (ARC) offers free services to all students during their undergraduate careers at Duke. Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact ARC@duke.edu, 919-684-5917.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html#accessibility",
+    "href": "syllabus/syllabus_resources.html#accessibility",
+    "title": "University resources",
+    "section": "Accessibility",
+    "text": "Accessibility\nIf any portion of the course is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students can engage with their courses and related assignments. Students should contact the SDAO to request or update accommodations under these circumstances.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html#mental-health-and-well-being",
+    "href": "syllabus/syllabus_resources.html#mental-health-and-well-being",
+    "title": "University resources",
+    "section": "Mental health and well-being",
+    "text": "Mental health and well-being\nDuke is committed to holistic student well-being, including mental, emotional, and physical health. The university offers resources to help students manage daily stress, encourage intentional self-care, and access just-in-time support. If you find you need support, your mental and/or emotional health concerns are impacting your day-to-day activities and your academic performance, or you need someone to talk to, the resources below are available to you:\n\nDukeReach: DukeReach provides comprehensive outreach services to support students in managing all aspects of well-being, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can reach the DukeReach team at dukereach@duke.edu.\nCounseling and Psychological Services (CAPS): CAPS services include individual and group counseling services, psychiatric services, and workshops. CAPS also provides referrals to off-campus resources for specialized care. You can reach CAPS at (919) 660-1000.\nTimelyCare1: TimelyCare is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling.\nBC Fellows for Healthy Relationship: The BC Fellows meet with students individually and in groups, supporting the development of healthy relationships and building meaningful community in all areas of a student’s life.\nDukeLine: Students who want to connect anonymously with a Peer Coach can text 984-230-4888 from 5 to 11 p.m. daily. DukeLine offers in-the-moment anonymous, non-emergency text support from a peer.\nDuWell: DuWell provides Moments of Mindfulness (stress management and resilience building) and meditation programming (Koru workshop) to assist students in developing a daily emotional well-being practice. All are welcome, and no experience is necessary. You can reach DuWell at (919) 681-8421.",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_resources.html#footnotes",
+    "href": "syllabus/syllabus_resources.html#footnotes",
+    "title": "University resources",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFormerly known as Blue Devils Care.↩︎",
+    "crumbs": [
+      "Syllabus",
+      "University resources"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_overview.html",
+    "href": "syllabus/syllabus_overview.html",
+    "title": "Course overview",
+    "section": "",
+    "text": "Probability models, random variables with discrete and continuous distributions. Marginal, joint, and conditional distributions. Expectations, functions of random variables, central limit theorem. Estimators and sampling distributions, method of moments, and maximum likelihood estimation.\nPrerequisites: single-variable calculus.",
+    "crumbs": [
+      "Syllabus",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_overview.html#description",
+    "href": "syllabus/syllabus_overview.html#description",
+    "title": "Course overview",
+    "section": "",
+    "text": "Probability models, random variables with discrete and continuous distributions. Marginal, joint, and conditional distributions. Expectations, functions of random variables, central limit theorem. Estimators and sampling distributions, method of moments, and maximum likelihood estimation.\nPrerequisites: single-variable calculus.",
+    "crumbs": [
+      "Syllabus",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_overview.html#meetings",
+    "href": "syllabus/syllabus_overview.html#meetings",
+    "title": "Course overview",
+    "section": "Meetings",
+    "text": "Meetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nSocial Sciences 136\nMoWe 3:05 PM - 4:20 PM\nJohn\n\n\nLab 01\nPerkins LINK 071 (Classroom 5)\nTh 1:25 PM - 2:40 PM\nGwen\n\n\nLab 02\nPerkins LINK 071 (Classroom 5)\nTh 3:05 PM - 4:20 PM\nGwen",
+    "crumbs": [
+      "Syllabus",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
+    "section": "",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nWelcome!\n\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\n\n\n\n\n1\nMon, Jan 13\n\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\nPSET 0 @ 12PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "crumbs": [
+      "Syllabus",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_materials.html",
+    "href": "syllabus/syllabus_materials.html",
+    "title": "Course materials",
+    "section": "",
+    "text": "All books are freely available online:\n\n[ims]: Mine Çetinkaya-Rundel and Jo Hardin. Introduction to Modern Statistics. 2nd edition. OpenIntro, 2024.\n[r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. 2nd edition. O’Reilly, 2022.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_materials.html#textbooks",
+    "href": "syllabus/syllabus_materials.html#textbooks",
+    "title": "Course materials",
+    "section": "",
+    "text": "All books are freely available online:\n\n[ims]: Mine Çetinkaya-Rundel and Jo Hardin. Introduction to Modern Statistics. 2nd edition. OpenIntro, 2024.\n[r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. 2nd edition. O’Reilly, 2022.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "syllabus/syllabus_materials.html#technology",
+    "href": "syllabus/syllabus_materials.html#technology",
+    "title": "Course materials",
+    "section": "Technology",
+    "text": "Technology\nYou will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described here (!!!). Armed with your trusty laptop, you must be able to access the following:\n\nThis course page that you are on right now;\nR/RStudio as provided by the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "crumbs": [
+      "Syllabus",
+      "Materials"
     ]
   },
   {
@@ -99,256 +341,14 @@
     ]
   },
   {
-    "objectID": "syllabus/syllabus_materials.html",
-    "href": "syllabus/syllabus_materials.html",
-    "title": "Course materials",
+    "objectID": "syllabus/syllabus_team.html",
+    "href": "syllabus/syllabus_team.html",
+    "title": "Teaching team",
     "section": "",
-    "text": "All books are freely available online:\n\n[ims]: Mine Çetinkaya-Rundel and Jo Hardin. Introduction to Modern Statistics. 2nd edition. OpenIntro, 2024.\n[r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. 2nd edition. O’Reilly, 2022.",
+    "text": "Order By\n       Default\n         \n          Name\n        \n         \n          Role(s)\n        \n         \n          Section(s)\n        \n         \n          Office hours\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nName\n\n\nRole(s)\n\n\nSection(s)\n\n\nOffice hours\n\n\n\n\n\n\n\n\n\nJacobson, Gwen\n\n\nTA\n\n\nTBD\n\n\n🔗\n\n\n\n\n\n\n\nZito, John\n\n\nInstructor\n\n\nTBD\n\n\n🔗\n\n\n\n\n\n\n\nZito, John\n\n\nInstructor\n\n\nTBD\n\n\n🔗\n\n\n\n\n\n\n\nZito, John\n\n\nInstructor\n\n\nTBD\n\n\n🔗\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_materials.html#textbooks",
-    "href": "syllabus/syllabus_materials.html#textbooks",
-    "title": "Course materials",
-    "section": "",
-    "text": "All books are freely available online:\n\n[ims]: Mine Çetinkaya-Rundel and Jo Hardin. Introduction to Modern Statistics. 2nd edition. OpenIntro, 2024.\n[r4ds]: Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for Data Science. 2nd edition. O’Reilly, 2022.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_materials.html#technology",
-    "href": "syllabus/syllabus_materials.html#technology",
-    "title": "Course materials",
-    "section": "Technology",
-    "text": "Technology\nYou will need to bring a laptop to all lectures and labs. Options for obtaining a laptop through the university are described here (!!!). Armed with your trusty laptop, you must be able to access the following:\n\nThis course page that you are on right now;\nR/RStudio as provided by the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
-    "crumbs": [
-      "Syllabus",
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA 240 Probability for Statistical Inference, Modeling, and Data Analysis",
-    "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nWelcome!\n\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\n\n\n\n\n1\nMon, Jan 13\n\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\nPSET 0 @ 12PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
-    "crumbs": [
-      "Syllabus",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_overview.html",
-    "href": "syllabus/syllabus_overview.html",
-    "title": "Course overview",
-    "section": "",
-    "text": "Learn to explore, visualize, and analyze data to understand natural phenomena, investigate patterns, model outcomes, and make predictions, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization, and effective communication of results. Work on problems and case studies inspired by and based on real-world questions and data. The course will focus on the R statistical computing language.\nPrerequisites: none.",
-    "crumbs": [
-      "Syllabus",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_overview.html#description",
-    "href": "syllabus/syllabus_overview.html#description",
-    "title": "Course overview",
-    "section": "",
-    "text": "Learn to explore, visualize, and analyze data to understand natural phenomena, investigate patterns, model outcomes, and make predictions, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization, and effective communication of results. Work on problems and case studies inspired by and based on real-world questions and data. The course will focus on the R statistical computing language.\nPrerequisites: none.",
-    "crumbs": [
-      "Syllabus",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_overview.html#meetings",
-    "href": "syllabus/syllabus_overview.html#meetings",
-    "title": "Course overview",
-    "section": "Meetings",
-    "text": "Meetings\n\n\n\n\n\n\n\n\n\nMeeting\nLocation\nTime\nStaff\n\n\n\n\nLectures\nBiological Sciences 111\nTu Thu 11:45 AM - 01:00 PM\nJohn Z\n\n\nLab 01\nPerkins LINK 087 (Classroom 3)\nM 08:30 AM - 09:45 AM\nTBD\n\n\nLab 02\nPerkins LINK 087 (Classroom 3)\nM 10:05 AM - 11:20 AM\nTBD\n\n\nLab 03\nPerkins LINK 071 (Classroom 5)\nM 10:05 AM - 11:20 AM\nTBD\n\n\nLab 04\nPerkins LINK 087 (Classroom 3)\nM 11:45 AM - 01:00 PM\nTBD\n\n\nLab 05\nPerkins LINK 071 (Classroom 5)\nM 11:45 AM - 01:00 PM\nTBD\n\n\nLab 06\nPerkins LINK 087 (Classroom 3)\nM 01:25 PM - 02:40 PM\nTBD\n\n\nLab 07\nPerkins LINK 071 (Classroom 5)\nM 01:25 PM - 02:40 PM\nTBD\n\n\nLab 08\nPerkins LINK 087 (Classroom 3)\nM 03:05 PM - 04:20 PM\nTBD\n\n\nLab 09\nPerkins LINK 071 (Classroom 5)\nM 03:05 PM - 04:20 PM\nTBD\n\n\nLab 10\nPerkins LINK 087 (Classroom 3)\nM 04:40 PM - 05:55 PM\nTBD",
-    "crumbs": [
-      "Syllabus",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html",
-    "href": "syllabus/syllabus_resources.html",
-    "title": "University resources",
-    "section": "",
-    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html#course-costs",
-    "href": "syllabus/syllabus_resources.html#course-costs",
-    "title": "University resources",
-    "section": "",
-    "text": "If you are having difficulty with the costs associated with this course (obtaining a laptop, mostly), here are some resources:\n\nKarsh Office of Undergraduate Support: Regardless of your aid package, Karsh offers loans and resources for connecting students with campus programs that might help alleviate course costs.\nDukeLIFE: The Course Material Assistance program offers assistance for eligible students, including through the LIFE Loaner Laptop Program. Students who are eligible for DukeLIFE benefits are notified before the start of the semester; program resources are limited.\nDuke Link: They have a small supply of laptops that can be rented out for five days at a time.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html#tech-support",
-    "href": "syllabus/syllabus_resources.html#tech-support",
-    "title": "University resources",
-    "section": "Tech support",
-    "text": "Tech support\nContact the Duke OIT Service Desk at oit.duke.edu/help.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html#academic-support",
-    "href": "syllabus/syllabus_resources.html#academic-support",
-    "title": "University resources",
-    "section": "Academic support",
-    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The Academic Resource Center (ARC) offers free services to all students during their undergraduate careers at Duke. Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact ARC@duke.edu, 919-684-5917.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html#accessibility",
-    "href": "syllabus/syllabus_resources.html#accessibility",
-    "title": "University resources",
-    "section": "Accessibility",
-    "text": "Accessibility\nIf any portion of the course is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students can engage with their courses and related assignments. Students should contact the SDAO to request or update accommodations under these circumstances.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html#mental-health-and-well-being",
-    "href": "syllabus/syllabus_resources.html#mental-health-and-well-being",
-    "title": "University resources",
-    "section": "Mental health and well-being",
-    "text": "Mental health and well-being\nDuke is committed to holistic student well-being, including mental, emotional, and physical health. The university offers resources to help students manage daily stress, encourage intentional self-care, and access just-in-time support. If you find you need support, your mental and/or emotional health concerns are impacting your day-to-day activities and your academic performance, or you need someone to talk to, the resources below are available to you:\n\nDukeReach: DukeReach provides comprehensive outreach services to support students in managing all aspects of well-being, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can reach the DukeReach team at dukereach@duke.edu.\nCounseling and Psychological Services (CAPS): CAPS services include individual and group counseling services, psychiatric services, and workshops. CAPS also provides referrals to off-campus resources for specialized care. You can reach CAPS at (919) 660-1000.\nTimelyCare1: TimelyCare is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling.\nBC Fellows for Healthy Relationship: The BC Fellows meet with students individually and in groups, supporting the development of healthy relationships and building meaningful community in all areas of a student’s life.\nDukeLine: Students who want to connect anonymously with a Peer Coach can text 984-230-4888 from 5 to 11 p.m. daily. DukeLine offers in-the-moment anonymous, non-emergency text support from a peer.\nDuWell: DuWell provides Moments of Mindfulness (stress management and resilience building) and meditation programming (Koru workshop) to assist students in developing a daily emotional well-being practice. All are welcome, and no experience is necessary. You can reach DuWell at (919) 681-8421.",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_resources.html#footnotes",
-    "href": "syllabus/syllabus_resources.html#footnotes",
-    "title": "University resources",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFormerly known as Blue Devils Care.↩︎",
-    "crumbs": [
-      "Syllabus",
-      "University resources"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html",
-    "href": "syllabus/syllabus_assignments.html",
-    "title": "Assignments and grading",
-    "section": "",
-    "text": "Your final course grade will be calculated as follows:\nYour final letter grade will be determined based on these thresholds:",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#application-exercises-5",
-    "href": "syllabus/syllabus_assignments.html#application-exercises-5",
-    "title": "Assignments and grading",
-    "section": "Application exercises (5%)",
-    "text": "Application exercises (5%)\nDuring most lectures, we will work through an application exercise (AE) together. This is essentially a guided mini-lab that shows you how to implement the concepts introduced that day. On-time completion of at least 70% of AEs will result in full credit for the AE component of the final course grade. Here is what that means:\n\nAEs are due at 2PM ET on the day they are introduced;\nSubmit an AE by pushing your work to your GitHub repo;\nAEs are graded for completion; if you make a good faith attempt at all parts of the exercisem you get the credit.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#labs-15",
-    "href": "syllabus/syllabus_assignments.html#labs-15",
-    "title": "Assignments and grading",
-    "section": "Labs (15%)",
-    "text": "Labs (15%)\nIn labs, you will apply what you have learned in the videos and during lectures to complete data analysis tasks. You may discuss lab assignments with other students; however, the lab should be completed and submitted individually. Lab assignments must be typed up using Quarto, all work must be pushed to your GitHub repository for the lab, and the lab’s PDF output must be submitted on Gradescope by the deadline. Labs are due at 8:30 am ET on the indicated due date (generally the Monday after the lab is first introduced).\n\n\n\n\n\n\nNote\n\n\n\nYour lowest lab score will be dropped. This policy will be applied to the gradebook at the end of the semester, after all labs have been graded/regraded, and before the final exam.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#midterm-exams-20-each",
-    "href": "syllabus/syllabus_assignments.html#midterm-exams-20-each",
-    "title": "Assignments and grading",
-    "section": "Midterm Exams (20% each)",
-    "text": "Midterm Exams (20% each)\nThere will be two midterm exams, each with two components:\n\nIn-class (70% of the grade): sit-down, in-person, “pencil-and-paper,” with no technology, and with no outside resources apart from a note sheet that you and only you have prepared (both sides of an 8.5’ x 11’ piece of paper);\nTake-home (30% of the grade): each in-class exam will end at 1:00 PM ET on a Thursday. You will then have until 8:00 AM ET the following Monday to work independently on the take-home. This will consist of a data analysis in R, and submission will be identical to our usual labs (Quarto &gt; PDF &gt; Gradescope). The take-home portion of the midterms is completely open resource, but the citation policies of the course still apply, and you are forbidden from discussing the exam with your peers in any way.\n\nUnless we indicate otherwise, you should assume that all course content and materials (videos, readings, lectures, labs, AES, etc) are testable.\n\n\n\n\n\n\nWarning\n\n\n\nSee the course schedule for dates and times of the exams. Exam dates cannot be changed and no make-up exams will be given. If you cannot take the exams on these dates, you should drop this class.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#final-exam-20",
-    "href": "syllabus/syllabus_assignments.html#final-exam-20",
-    "title": "Assignments and grading",
-    "section": "Final Exam (20%)",
-    "text": "Final Exam (20%)\nOn Tuesday April 29 we have our final exam from 9AM ET to 12PM ET. This exam will be cumulative, and it will have the same format as the in-class components of the midterm exams.\n\n\n\n\n\n\nNote\n\n\n\nIf you do better on the final exam than you did on the in-class component of a midterm, we will replace your lowest in-class midterm exam score with your final exam score.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_assignments.html#final-project-20",
-    "href": "syllabus/syllabus_assignments.html#final-project-20",
-    "title": "Assignments and grading",
-    "section": "Final project (20%)",
-    "text": "Final project (20%)\nSee here (!!!) for a detailed description of the final project.\nAfter the first midterm exam, we will assign you to teams of four or five within your lab section. Teams will select a dataset and conduct an original data analysis using the tools from the course. The project has various intermediate deadlines (“Milestones”) that contribute to the project grade, and on the last day of the semester (Wednesday April 23) teams will submit a final written report and a five minute video presentation summarizing the results of the analysis.\n\n\n\n\n\n\nWarning\n\n\n\nIf you do not complete the project, you will not receive a passing grade in this course.",
-    "crumbs": [
-      "Syllabus",
-      "Assignments and grading"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_conduct.html",
-    "href": "syllabus/syllabus_conduct.html",
-    "title": "Conduct violations",
-    "section": "",
-    "text": "As a student in this course, you have agreed to uphold the Duke Community Standard and the practices specific to this course.",
-    "crumbs": [
-      "Syllabus",
-      "Conduct violations"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_conduct.html#violating-the-policy-on-use-of-outside-resources",
-    "href": "syllabus/syllabus_conduct.html#violating-the-policy-on-use-of-outside-resources",
-    "title": "Conduct violations",
-    "section": "Violating the policy on use of outside resources",
-    "text": "Violating the policy on use of outside resources\nIf you use outside resources (e.g. StackOverflow, ChatGPT, etc) without citing them, we treat that as plagiarism. If the grader has reasonable suspicion that outside resources were used without citation to complete some part of an assignment, they are empowered to immediately give that part a zero and leave a comment explaining why. If we make a mistake, you are welcome to submit a regrade request pleading your case.",
-    "crumbs": [
-      "Syllabus",
-      "Conduct violations"
-    ]
-  },
-  {
-    "objectID": "syllabus/syllabus_conduct.html#violating-the-policies-on-collaboration",
-    "href": "syllabus/syllabus_conduct.html#violating-the-policies-on-collaboration",
-    "title": "Conduct violations",
-    "section": "Violating the policies on collaboration",
-    "text": "Violating the policies on collaboration\nIf we suspect\n\n\n\n\n\n\nWarning\n\n\n\nIf a conduct violation results in a zero on a lab, that zero will not be dropped",
-    "crumbs": [
-      "Syllabus",
-      "Conduct violations"
+      "Teaching team"
     ]
   }
 ]
