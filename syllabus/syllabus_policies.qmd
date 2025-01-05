@@ -33,7 +33,7 @@ If you receive a graded assignment back, and you believe that some part of it wa
 -   Requests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;
 -   Requests to dispute the number of points deducted for an incorrect response will not be considered;
 -   Regrade requests are not a mechanism for asking for clarification on feedback. Those questions should be brought to office hours;
--   **No grades will be changed after the final exam has been administered on Tuesday, April 29**;
+-   **No grades will be changed after the final exam has been administered on Saturday May 3**;
 
 ::: callout-warning
 A regrade request can result in your grade going up, staying the same, or going down if we determine that, in fact, the original grader was too lenient.
@@ -41,7 +41,7 @@ A regrade request can result in your grade going up, staying the same, or going 
 
 ## Attendance
 
-Attendance is not strictly required for any of the class meetings. You are all adults, and you are free to live your lives. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.
+Live your life. Attendance is not strictly required for any of the class meetings. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.
 
 ## Accommodations
 
@@ -55,6 +55,6 @@ You are encouraged to discuss and collaborate on problem sets and labs, but all 
 
 It basically comes down to this:
 
-> Do your own math and write your own words, but write code however the hell you want (as long as you cite your sources).
+> Do your own math and write your own words, but write code however you want (as long as you cite your sources).
 
 You are expected to produce all mathematical reasoning, arguments, and calculations yourself, and your write-ups should be original to you. You should not use ChatGPT or anything like it to solve math problems or write words for you. When it comes to code, you are free to use any outside resources (`StackOverflow`, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
