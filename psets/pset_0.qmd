@@ -2,7 +2,7 @@
 title: "Problem Set 0"
 ---
 
-This is ostensibly calculus review, but each problem is a piece of probability in disguise. Throughout the semester, I will refer to Problem Set 0 often as we illuminate those connections.
+This is ostensibly calculus review, but each problem is a piece of probability in disguise. We will illuminate these connections throughout the semester, and I will refer to Problem Set 0 often.
 
 ## Problem 1
 
