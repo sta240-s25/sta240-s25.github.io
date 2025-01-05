@@ -54,7 +54,7 @@ par(mar = c(4, 4, 0.1, 4))
 plot(x_vals, y_vals, type = "l", xlab = "x", ylab = "h(x)")
 ```
 
-Before you start doing any math, can you use to picture to guess what the answer will be?
+Before you start doing any math, can you use the picture to guess what the answer will be?
 :::
 
 ## Problem 4
