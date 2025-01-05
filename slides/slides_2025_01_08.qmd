@@ -1,0 +1,57 @@
+---
+title: "Welcome to STA 240!"
+format: revealjs
+auto-stretch: false
+---
+
+# Why should you study the mathematics of probability and statistics?
+
+# Reason 1: It's necessary.
+
+## Example: the birthday problem
+
+## Example: the Monty Hall problem
+
+## Example: the wisdom of crowds
+
+## Example: the folly of doctors
+
+## Reason 1: It's necessary. {.large}
+
+Human intuition and “common sense” about probability and statistics are often just flat out wrong, in silly and dangerous ways. Mere mortals require the scaffolding of mathematics to discipline our thinking.
+
+# Reason 2: It's useful.
+
+## {}
+
+Wigner
+
+## Example:
+
+## Reason 2: It's useful {.large}
+
+# Reason 3: It's beautiful.
+
+## {}
+
+Russell and Einstein
+
+## This is a theorem we will prove:
+
+![](images/galton.gif){fig-align="center"}
+
+## Why study mathematical probstat?
+
+1.  It's necessary.
+
+    -   Humans suck at thinking about this stuff.
+
+2.  It's useful.
+
+    -   It makes studying other things so much easier.
+
+3.  It's beautiful.
+
+    -   ???
+
+# Syllabus highlights
