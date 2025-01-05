@@ -15,7 +15,7 @@ In the **PREPARE** column of the [course schedule](https://sta240-s25.github.io/
 
 ## Technology
 
-Lecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should plan to bring a laptop or tablet device to lab. In general, you will need regular access to a device with internet so that you can access the following:
+Lecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should plan to bring a laptop or tablet device to lab. In general, you will need access to a device with internet so that you can use the following:
 
 -   [This course page](https://sta240-s25.github.io/) that you are on right now;
 -   `R`/`RStudio` via the [Duke Container Manager](https://cmgr.oit.duke.edu/containers);
