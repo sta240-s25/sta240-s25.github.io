@@ -59,7 +59,7 @@
     "href": "syllabus/syllabus_policies.html#regrade-requests",
     "title": "Policies",
     "section": "Regrade requests",
-    "text": "Regrade requests\nIf you receive a graded assignment back, and you believe that some part of it was graded incorrectly, you may dispute the grade by submitting a regrade request in Gradescope. Note the following:\n\nYou have one week after you receive a grade to submit a regrade request;\nYou should submit separate regrade requests for each question you wish to dispute, not a single catch-all request;\nRequests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;\nRequests to dispute the number of points deducted for an incorrect response will not be considered;\nRegrade requests are not a mechanism for asking for clarification on feedback. Those questions should be brought to office hours;\nNo grades will be changed after the final exam has been administered on Tuesday, April 29;\n\n\n\n\n\n\n\nWarning\n\n\n\nA regrade request can result in your grade going up, staying the same, or going down if we determine that, in fact, the original grader was too lenient.",
+    "text": "Regrade requests\nIf you receive a graded assignment back, and you believe that some part of it was graded incorrectly, you may dispute the grade by submitting a regrade request in Gradescope. Note the following:\n\nYou have one week after you receive a grade to submit a regrade request;\nYou should submit separate regrade requests for each question you wish to dispute, not a single catch-all request;\nRequests will be considered if there was an error in the grade calculation or if a correct answer was mistakenly marked as incorrect;\nRequests to dispute the number of points deducted for an incorrect response will not be considered;\nRegrade requests are not a mechanism for asking for clarification on feedback. Those questions should be brought to office hours;\nNo grades will be changed after the final exam has been administered on Saturday May 3;\n\n\n\n\n\n\n\nWarning\n\n\n\nA regrade request can result in your grade going up, staying the same, or going down if we determine that, in fact, the original grader was too lenient.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -70,7 +70,7 @@
     "href": "syllabus/syllabus_policies.html#attendance",
     "title": "Policies",
     "section": "Attendance",
-    "text": "Attendance\nAttendance is not strictly required for any of the class meetings. You are all adults, and you are free to live your lives. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.",
+    "text": "Attendance\nLive your life. Attendance is not strictly required for any of the class meetings. The responsibility lies with us to make class meetings sufficiently engaging and informative that you choose to attend. Having said that, success in this class and regular attendance are probably highly positively correlated. Furthermore, while lab attendance is not required, regular attendance is most likely the path of least resistance to earning full credit for the lab component of your final grade. The labs are designed so that they can be completed in one sitting more or less, and they are due at midnight the same day. So show up to lab, bang it out, and move on with your life.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -103,7 +103,7 @@
     "href": "syllabus/syllabus_policies.html#use-of-outside-resources-including-ai",
     "title": "Policies",
     "section": "Use of outside resources, including AI",
-    "text": "Use of outside resources, including AI\nIt basically comes down to this:\n\nDo your own math and write your own words, but write code however the hell you want (as long as you cite your sources).\n\nYou are expected to produce all mathematical reasoning, arguments, and calculations yourself, and your write-ups should be original to you. You should not use ChatGPT or anything like it to solve math problems or write words for you. When it comes to code, you are free to use any outside resources (StackOverflow, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.",
+    "text": "Use of outside resources, including AI\nIt basically comes down to this:\n\nDo your own math and write your own words, but write code however you want (as long as you cite your sources).\n\nYou are expected to produce all mathematical reasoning, arguments, and calculations yourself, and your write-ups should be original to you. You should not use ChatGPT or anything like it to solve math problems or write words for you. When it comes to code, you are free to use any outside resources (StackOverflow, ChatGPT, etc) to help you complete coding tasks as long as you cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -158,7 +158,7 @@
     "href": "psets/pset_0.html",
     "title": "Problem Set 0",
     "section": "",
-    "text": "This is ostensibly calculus review, but each problem is a piece of probability in disguise. We will illuminate these connections throughout the semester, and I will refer to Problem Set 0 often.",
+    "text": "This is ostensibly calculus review, but each problem is a piece of probability in disguise. We will illuminate these connections throughout the semester, and I will refer to Problem Set 0 often. Stay tuned!",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
@@ -191,7 +191,7 @@
     "href": "psets/pset_0.html#problem-3",
     "title": "Problem Set 0",
     "section": "Problem 3",
-    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nTreat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.\nHere is an example of what \\(h\\) might look like in the special case where \\(\\mu = 1\\) and \\(\\sigma=2\\):",
+    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nTreat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.\n\n\n\n\n\n\nHint\n\n\n\nHere is an example of what \\(h\\) might look like in the special case where \\(\\mu = 1\\) and \\(\\sigma=2\\):\n\n\n\n\n\n\n\n\nBefore you start doing any math, can you use to picture to guess what the answer will be?",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
