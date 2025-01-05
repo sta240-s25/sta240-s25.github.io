@@ -136,7 +136,7 @@
     "href": "syllabus/syllabus_materials.html#technology",
     "title": "Course materials",
     "section": "Technology",
-    "text": "Technology\nLecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should plan to bring a laptop or tablet device to lab. In general, you will need regular access to a device with internet so that you can access the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "text": "Technology\nLecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should plan to bring a laptop or tablet device to lab. In general, you will need access to a device with internet so that you can use the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
     "crumbs": [
       "Syllabus",
       "Materials"
@@ -158,7 +158,7 @@
     "href": "psets/pset_0.html",
     "title": "Problem Set 0",
     "section": "",
-    "text": "This is ostensibly calculus review, but each problem is a piece of probability in disguise. Throughout the semester, I will refer to Problem Set 0 often as we illuminate those connections.",
+    "text": "This is ostensibly calculus review, but each problem is a piece of probability in disguise. We will illuminate these connections throughout the semester, and I will refer to Problem Set 0 often.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
