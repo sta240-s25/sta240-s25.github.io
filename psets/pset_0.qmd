@@ -69,7 +69,7 @@ Prove that $\Gamma(x+1)=x\Gamma(x)$.
 
 ::: callout-tip
 ## Hint
-Start on the left-hand side by writing out $\Gamma(x+1)$ and evaluating the integral *by parts*. If you simplify the result correctly, you can make it look like $x\Gamma(x)$.
+Start on the left-hand side by writing out $\Gamma(x+1)$ and evaluating the integral *by parts*.
 :::
 
 ## Problem 5
