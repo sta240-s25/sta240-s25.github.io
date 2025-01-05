@@ -114,7 +114,7 @@
     "href": "syllabus/syllabus_materials.html",
     "title": "Course materials",
     "section": "",
-    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the PREPARE column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
     "crumbs": [
       "Syllabus",
       "Materials"
@@ -125,7 +125,7 @@
     "href": "syllabus/syllabus_materials.html#textbooks",
     "title": "Course materials",
     "section": "",
-    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the “PREPARE” column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
+    "text": "You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:\n\n[Ross] A First Course in Probability by Sheldon Ross;\n[HTZ] Probability and Statistical Inference by Robert Hogg, Elliot Tanis, and Dale Zimmerman;\n[DS] Probability and Statistics by Morris Degroot and Mark Schervish;\n[Wass] All of Statistics by Larry Wasserman.\n\nIn the PREPARE column of the course schedule, I will indicate which parts of a book correspond to the lectures.",
     "crumbs": [
       "Syllabus",
       "Materials"
@@ -136,7 +136,7 @@
     "href": "syllabus/syllabus_materials.html#technology",
     "title": "Course materials",
     "section": "Technology",
-    "text": "Technology\nThis is primarily a pencil-and-paper mathematics course, and much of our work could be accomplished even if the power were out. That said, we will teach you a modicum of the R programming language, and you will need access to a device with internet so that you can stay up to date with the course logistics. In particular, that means:\n\nThis course page that you are on right now;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
+    "text": "Technology\nLecture will largely be a low tech affair: pencil and paper should be sufficient most of the time. You should plan to bring a laptop or tablet device to lab. In general, you will need regular access to a device with internet so that you can access the following:\n\nThis course page that you are on right now;\nR/RStudio via the Duke Container Manager;\nCanvas, through which you can access…\n\nGradescope;\nEd Discussion;\n\nZoom (e.g. for remote office hours).\n\nIf access to technology becomes a concern for you during the semester, contact the instructor immediately to discuss options.",
     "crumbs": [
       "Syllabus",
       "Materials"
