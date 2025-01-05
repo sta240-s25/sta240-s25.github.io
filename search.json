@@ -143,15 +143,81 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
+    "objectID": "slides/slides_2025_01_08.html#example-the-birthday-problem",
+    "href": "slides/slides_2025_01_08.html#example-the-birthday-problem",
+    "title": "Welcome to STA 240!",
+    "section": "Example: the birthday problem",
+    "text": "Example: the birthday problem"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#example-the-monty-hall-problem",
+    "href": "slides/slides_2025_01_08.html#example-the-monty-hall-problem",
+    "title": "Welcome to STA 240!",
+    "section": "Example: the Monty Hall problem",
+    "text": "Example: the Monty Hall problem"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#example-the-wisdom-of-crowds",
+    "href": "slides/slides_2025_01_08.html#example-the-wisdom-of-crowds",
+    "title": "Welcome to STA 240!",
+    "section": "Example: the wisdom of crowds",
+    "text": "Example: the wisdom of crowds"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#example-the-folly-of-doctors",
+    "href": "slides/slides_2025_01_08.html#example-the-folly-of-doctors",
+    "title": "Welcome to STA 240!",
+    "section": "Example: the folly of doctors",
+    "text": "Example: the folly of doctors"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#reason-1-its-necessary.-1",
+    "href": "slides/slides_2025_01_08.html#reason-1-its-necessary.-1",
+    "title": "Welcome to STA 240!",
+    "section": "Reason 1: It’s necessary.",
+    "text": "Reason 1: It’s necessary.\nHuman intuition and “common sense” about probability and statistics are often just flat out wrong, in silly and dangerous ways. Mere mortals require the scaffolding of mathematics to discipline our thinking."
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#section",
+    "href": "slides/slides_2025_01_08.html#section",
+    "title": "Welcome to STA 240!",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nWelcome!\n\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nPSET 0\n\n\n\n1\nMon, Jan 13\n\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
-    "crumbs": [
-      "Syllabus",
-      "Schedule"
-    ]
+    "text": "Wigner"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#example",
+    "href": "slides/slides_2025_01_08.html#example",
+    "title": "Welcome to STA 240!",
+    "section": "Example:",
+    "text": "Example:"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#reason-2-its-useful",
+    "href": "slides/slides_2025_01_08.html#reason-2-its-useful",
+    "title": "Welcome to STA 240!",
+    "section": "Reason 2: It’s useful",
+    "text": "Reason 2: It’s useful"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#section-1",
+    "href": "slides/slides_2025_01_08.html#section-1",
+    "title": "Welcome to STA 240!",
+    "section": "",
+    "text": "Russell and Einstein"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#this-is-a-theorem-we-will-prove",
+    "href": "slides/slides_2025_01_08.html#this-is-a-theorem-we-will-prove",
+    "title": "Welcome to STA 240!",
+    "section": "This is a theorem we will prove:",
+    "text": "This is a theorem we will prove:"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#why-study-mathematical-probstat",
+    "href": "slides/slides_2025_01_08.html#why-study-mathematical-probstat",
+    "title": "Welcome to STA 240!",
+    "section": "Why study mathematical probstat?",
+    "text": "Why study mathematical probstat?\n\nIt’s necessary.\n\nHumans suck at thinking about this stuff.\n\nIt’s useful.\n\nIt makes studying other things so much easier.\n\nIt’s beautiful.\n\n???"
   },
   {
     "objectID": "psets/pset_0.html",
@@ -191,7 +257,7 @@
     "href": "psets/pset_0.html#problem-3",
     "title": "Problem Set 0",
     "section": "Problem 3",
-    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nTreat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.\n\n\n\n\n\n\nHint\n\n\n\nHere is an example of what \\(h\\) might look like in the special case where \\(\\mu = 1\\) and \\(\\sigma=2\\):\n\n\n\n\n\n\n\n\nBefore you start doing any math, can you use to picture to guess what the answer will be?",
+    "text": "Problem 3\nHere is a very silly function:\n\\[\n    h(x)\n    =\n    \\exp\\left(-\\frac{1}{2}\\frac{(x-\\mu)^2}{\\sigma^2}\\right)\n    ,\\quad\n    -\\infty&lt;x&lt;\\infty\n    .\n\\]\nTreat \\(-\\infty&lt;\\mu&lt;\\infty\\) and \\(\\sigma&gt;0\\) as constants and compute the value(s) of \\(x\\) at which \\(h\\) has inflection points.\n\n\n\n\n\n\nHint\n\n\n\nHere is an example of what \\(h\\) might look like in the special case where \\(\\mu = 1\\) and \\(\\sigma=2\\):\n\n\n\n\n\n\n\n\nBefore you start doing any math, can you use the picture to guess what the answer will be?",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
@@ -228,6 +294,17 @@
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
+    "section": "",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nWelcome!\n\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nPSET 0\n\n\n\n1\nMon, Jan 13\n\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "crumbs": [
+      "Syllabus",
+      "Schedule"
     ]
   },
   {
