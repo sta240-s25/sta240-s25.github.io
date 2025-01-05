@@ -102,7 +102,8 @@ $$
     \frac{1}{x(\ln x)^p}\textrm{d} x
     .
 $$
-a.  Use a computer to create a single plot with lines graphing the *integrand* for $p$ equal to -2, -1.5, -1, 0, 1, 5. Make the $x$-axis of your plot run from 2 to 15.
+
+a.  Use a computer to create a single plot with many lines, each graphing the *integrand* for a different value of $p$. Consider $p$ equal to -2, -1.5, -1, 0, 1, and 5, and make the $x$-axis of your plot run from 2 to 15.
 b.  Show that $\lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0$ for all values of $-\infty<p<\infty$.
 c.  For what values of $p$ does the integral converge? When it does converge, what is its value?
 d.  Consult the picture you created in part (a), and explain conceptually, in words, why the integral converges for some values of $p$ but not others.
