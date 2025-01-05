@@ -42,7 +42,7 @@ Here is an example of what $h$ might look like in the special case where $\mu = 
 #| label: silly
 #| echo: false
 #| fig-align: center
-#| fig-asp: 0.667
+#| fig-asp: 0.5
 m = 1
 s = 2
 x_vals <- seq(-6, 8, length.out = 500)
