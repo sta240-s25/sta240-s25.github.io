@@ -22,19 +22,47 @@ Human intuition and “common sense” about probability and statistics are ofte
 
 # Reason 2: It's useful.
 
-## {}
+## 
 
 Wigner
 
-## Example:
+## Example: finance
+
+## Example: insurance
+
+## Example: LLMs
+
+## Example: something else
+
+## Example: something else
 
 ## Reason 2: It's useful {.large}
 
+::: {.columns .v-center-container}
+::: {.column width="45%"}
+![](images/brazil.jpg)
+:::
+
+::: {.column width="55%"}
+Learning probability theory gives you serious wings to study large swathes of science and technology.
+:::
+:::
+
 # Reason 3: It's beautiful.
 
-## {}
+## 
 
-Russell and Einstein
+::: callout-tip
+## Bertrand Russell, [*Mysticism and Logic and Other Essays*](https://en.wikisource.org/wiki/Mysticism_and_Logic_and_Other_Essays/Chapter_04) (1917)
+
+Mathematics, rightly viewed, possesses not only truth, but supreme beauty cold and austere, like that of sculpture, without appeal to any part of our weaker nature, without the gorgeous trappings of painting or music, yet sublimely pure, and capable of a stern perfection such as only the greatest art can show.
+:::
+
+::: callout-tip
+## Albert Einstein, ["The Late Emmy Noether"](https://www.nytimes.com/1935/05/04/archives/the-late-emmy-noether-professor-einstein-writes-in-appreciation-of.html?smid=url-share) (1935)
+
+Pure mathematics is, in its way, the poetry of logical ideas.
+:::
 
 ## This is a theorem we will prove:
 
@@ -52,6 +80,58 @@ Russell and Einstein
 
 3.  It's beautiful.
 
-    -   ???
+    -   This is the main reason, honestly.
 
 # Syllabus highlights
+
+## Bookmark the course page! {.large}
+
+::: {.columns .v-center-container}
+::: {.column width="30%"}
+![](images/sta240qr.png){fig-align="center"}
+:::
+
+::: {.column width="70%"}
+<https://sta240-s25.github.io/>
+:::
+:::
+
+## Final grade breakdown
+
+Your final course grade will be calculated as follows:
+
+| Category       | Percentage |
+|----------------|------------|
+| Labs           | 10%        |
+| Problem Sets   | 30%        |
+| Midterm Exam 1 | 20%        |
+| Midterm Exam 2 | 20%        |
+| Final exam     | 20%        |
+
+::: callout-warning
+The final letter grade will be based on the usual thresholds, which will not change and will be applied exactly. So no curve and no rounding.
+:::
+
+## Labs
+
+## Problem Sets
+
+## Three in-class exams
+
+No resources besides an 8.5" x 11" note sheet:
+
+-   **Midterm 1**: Monday February 17;
+-   **Midterm 2**: Monday March 31;
+-   **Final Exam**: Saturday May 3.
+
+::: callout-note
+## A little bit of grace...
+
+Lowest midterm score is replaced with final exam score if it's better.
+:::
+
+::: callout-note
+## If you need testing accommodations...
+
+Make sure I get a letter, and make your appointments in the [Testing Center](https://testingcenter.duke.edu/) now.
+:::
