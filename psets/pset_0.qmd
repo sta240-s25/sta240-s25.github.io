@@ -36,7 +36,7 @@ $$
 
 Treat $-\infty<\mu<\infty$ and $\sigma>0$ as constants and compute the value(s) of $x$ at which $h$ has *inflection points*.
 
-::: callout-tip
+::: {.callout-tip collapse="true"}
 ## Hint
 
 Here is an example of what $h$ might look like in the special case where $\mu = 1$ and $\sigma=2$:
@@ -67,8 +67,9 @@ $$
 
 Prove that $\Gamma(x+1)=x\Gamma(x)$.
 
-::: callout-tip
+::: {.callout-tip collapse="true"}
 ## Hint
+
 Start on the left-hand side by writing out $\Gamma(x+1)$ and evaluating the integral *by parts*.
 :::
 
@@ -88,8 +89,9 @@ $$
     .
 $$
 
-::: callout-tip
+::: {.callout-tip collapse="true"}
 ## Hint
+
 Are you allowed to "plug in" $\infty$ for $x$ and simplify the expression? If so, why is that allowed? If not, what do you have to do instead?
 :::
 
@@ -108,7 +110,8 @@ b.  Show that $\lim_{x\to\infty}\frac{1}{x(\ln x)^p}=0$ for all values of $-\inf
 c.  For what values of $p$ does the integral converge? When it does converge, what is its value?
 d.  Consult the picture you created in part (a), and write a few sentences explaining conceptually why the integral converges for some values of $p$ but not others.
 
-::: callout-tip
+::: {.callout-tip collapse="true"}
 ## Hint
+
 When taking the limit or evaluating the integral, can you use the same technique for all values of $p$, or do you need a different technique depending on what $p$ is?
 :::
