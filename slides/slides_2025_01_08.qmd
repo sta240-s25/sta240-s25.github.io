@@ -374,6 +374,10 @@ Say it with me:
 
 > Do your own math and write your own words, but write code however you want (as long as you cite your sources).
 
+- You are generally discouraged from consulting outside resources. The textbooks, notes, and discussion forum should be self-contained and sufficient. If you find that this is false, let me know and we will get you what you need;
+
+- Hopefully our coding needs are sufficiently basic that you don't feel the need to use outside resources too often, but telling you not use Google etc while coding is just insane. It's fine as long as you cite it.
+
 ## What level of mathematics should you expect?
 
 This is essentially a pencil-and-paper math class. We will use all of the basic skills taught in Calc I and II:
