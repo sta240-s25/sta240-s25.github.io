@@ -12,15 +12,15 @@ While you wait, please complete this brief questionnaire:
 :::
 
 ::: {.column width="50%"}
-![](images/sta240qr.png){fig-align="center"}
+![](images/quiz_qr.png){fig-align="center"}
 :::
 :::
 
 ## Teaching Team {.medium}
 
-| Mug            | Name           | Role       | Office Hours  |
-|----------------|----------------|------------|---------------|
-|                | Chen, Andy     | TA         | TBD           |
+| Mug                   | Name           | Role       | Office Hours  |
+|-----------------------|----------------|------------|---------------|
+| ![](images/c.jpg){.c} | Chen, Andy     | TA         | TBD           |
 | ![](images/h.jpg){.c} | Huang, Konnie  | TA         | TBD           |
 | ![](images/j.jpg){.c} | Jacobson, Gwen | Head TA    | TBD           |
 | ![](images/z.jpg){.c} | Zito, John     | Instructor | Tue 2pm - 4pm |
@@ -73,6 +73,7 @@ Let's play: <https://montyhall.io/>
 
 ::: callout-note
 ## Very counterintuitive
+
 Most people start out thinking that the two doors are equally likely to contain the prize, so switching doesn't matter. In fact, you have a 2/3 chance of winning if you switch.
 :::
 
@@ -164,19 +165,37 @@ Let's ask! <https://chatgpt.com/>
 
 ## Example: portfolio selection
 
-> Don't put all your eggs in one basket.
+::: callout-important
+## Problem
+How do you optimally allocate your savings to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?
+:::
 
-**Problem**: How do you optimally allocate your money to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?
+::: callout-note
+## Objective
+You want to make the most stable and lucrative choice possible, subject to uncertainty about how the competing assets will ultimately perform.
+:::
 
-**Goal**: You want to make the best choice subject to uncertainty about how the competing assets will ultimately perform.
-
+::: callout-tip
+## Thoroughly Modern Markowitz
 The mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it's "just" the creative application of basic probability.
+:::
 
-## Example: insurance
+## Example: the mathematics of insurance
 
-when an insurance company sells you a policy, they are making a bet that you won't need it. That you'll pay them but they won't ultimately pay you. They make thousands of such bets, no knowing for certain. What price should they charge to be confident that they won't go bust.
+When an insurance company sells you a policy, they are making a bet that you won't need it -- that you'll pay them but they won't ultimately pay you. They make thousands of such bets, and if everyone makes a claim, the company is ruined. How do they navigate this uncertainty?
 
-## Example: something else
+. . .
+
+::: callout-note
+## Actuarial mathematics!
+Every insurance company employs armies of *actuaries*, certified professionals with a deep understanding of probability and statistics, to help them make decisions about profit, loss, and risk of ruin.
+:::
+
+## Example: mathematical biology
+
+The metastasis of cancer cells is frequently modeled using something called a *branching process*, and a kind of random evolution process that builds on the fundamentals of our course:
+
+![](images/branching.png){fig-align="center"}
 
 ## Reason 2: It's useful {.large}
 
@@ -357,7 +376,7 @@ Say it with me:
 
 ## What level of mathematics should you expect?
 
-This is essentially a pencil-and-paper math class. We assume all the basic skills taught in Calc I and II:
+This is essentially a pencil-and-paper math class. We will use all of the basic skills taught in Calc I and II:
 
 ::: incremental
 -   differentiation (power rule, chain rule, all that)
@@ -380,8 +399,63 @@ Lab on Thursday January 9 is a review session and work period for this assignmen
 
 # So, what are we studying, anyway?
 
-## coin toss example
+## Probability
 
-## probstat picture
+State the distribution (probability rules) of some random phenomenon, and then study how the realizations of that phenomenon "typically" behave:
 
-## interpretation
+. . .
+
+> Given a **fair** coin, how many flips will it take on average until I observe the first head?
+
+::: incremental
+1. select a phenomenon to study (the outcome of a coin flip);
+2. fully specify its distribution (it's a fair, 50-50 coin);
+3. study typical behavior of realizations (how many flips *on average* until the first head?).
+:::
+
+## Statistics is "probability in reverse"
+
+Start with the realizations of a random phenomenon with *unknown* distribution, and try to use those realizations to figure out what the distribution is:
+
+. . .
+
+> Imagine that you are given an unfamiliar coin, and you do not know anything about its properties. So you flip it 25 times, and on the basis of those 25 flips, you try to decide whether or not the coin is fair.
+
+. . .
+
+In probability, we *assumed* that the coin was fair, and then reasoned from that. In statistics, we do not do this. We start with some coin, which may or may not be fair, and then we try to "infer" its properties.
+
+## Probability and statistics
+
+![](images/probstat.png){fig-align="center" width="50%"}
+
++-----------------+------------------------------------------------------------+
+| **Probability** | Forward problem\                                           |
+|                 | Deductive\                                                 |
+|                 | Reasons from rules to consequences                         |
++-----------------+------------------------------------------------------------+
+| **Statistics**  | Inverse problem\                                           |
+|                 | Inductive\                                                 |
+|                 | Observes consequences, and infers rules                    |
++-----------------+------------------------------------------------------------+
+
+## The philosophy of probability
+
+Two common interpretive perspectives:
+
+::: incremental
+- **Frequentist**: probability describes the long run frequency of repeatable events;
+- **Subjective**: probability describes an observer's subjective experience of uncertainty. 
+:::
+
+. . .
+
+::: callout-note
+Like the wave-particle duality of light, both are true and useful, but their coexistence can be tense and uneasy.
+:::
+
+. . .
+
+::: callout-important
+Regardless your interpretation, the mathematics of probability is the same.
+:::
