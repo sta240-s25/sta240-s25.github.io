@@ -16,19 +16,14 @@ While you wait, please complete this brief questionnaire:
 :::
 :::
 
-## Teaching Team {.small}
+## Teaching Team {.medium}
 
-+--------------+------------------+------------+-----------------+
-| Mug          | Name             | Role       | Office Hours    |
-+==============+==================+============+=================+
-|              | Chen, Andy       | TA         | TBD             |
-+--------------+------------------+------------+-----------------+
-|![](h.jpg){.c}| Huang, Konnie    | TA         | TBD             |
-+--------------+------------------+------------+-----------------+
-|![](j.jpg){.c}| Jacobson, Gwen   | Head TA    | TBD             |
-+--------------+------------------+------------+-----------------+
-|![](z.jpg){.c}| Zito, John       | Instructor | Tue 2pm - 4pm   |
-+--------------+------------------+------------+-----------------+
+| Mug            | Name           | Role       | Office Hours  |
+|----------------|----------------|------------|---------------|
+|                | Chen, Andy     | TA         | TBD           |
+| ![](images/h.jpg){.c} | Huang, Konnie  | TA         | TBD           |
+| ![](images/j.jpg){.c} | Jacobson, Gwen | Head TA    | TBD           |
+| ![](images/z.jpg){.c} | Zito, John     | Instructor | Tue 2pm - 4pm |
 
 # Why should you study the mathematics of probability and statistics?
 
@@ -69,6 +64,17 @@ In fact, you only need 23.
 ![](images/birthday_prob.png)
 
 ## Example: the Monty Hall problem
+
+Let's play: <https://montyhall.io/>
+
+![](images/monty_hall.png){fig-align="center" width="60%"}
+
+. . .
+
+::: callout-note
+## Very counterintuitive
+Most people start out thinking that the two doors are equally likely to contain the prize, so switching doesn't matter. In fact, you have a 2/3 chance of winning if you switch.
+:::
 
 ## Example: the wisdom of crowds {.medium}
 
@@ -140,10 +146,9 @@ Human intuition and “common sense” about probability and statistics are ofte
 
 ::: callout-note
 ## [Read it!](https://doi.org/10.1002/cpa.3160130102)
+
 ![](images/wigner.png){fig-align="center" width="70%"}
 :::
-
-
 
 ## Example: LLMs
 
@@ -168,6 +173,8 @@ Let's ask! <https://chatgpt.com/>
 The mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it's "just" the creative application of basic probability.
 
 ## Example: insurance
+
+when an insurance company sells you a policy, they are making a bet that you won't need it. That you'll pay them but they won't ultimately pay you. They make thousands of such bets, no knowing for certain. What price should they charge to be confident that they won't go bust.
 
 ## Example: something else
 
@@ -373,8 +380,8 @@ Lab on Thursday January 9 is a review session and work period for this assignmen
 
 # So, what are we studying, anyway?
 
-## coin toss example 
+## coin toss example
 
-## probstat picture 
+## probstat picture
 
 ## interpretation
