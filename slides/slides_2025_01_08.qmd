@@ -455,7 +455,7 @@ Two common interpretive perspectives:
 . . .
 
 ::: callout-note
-Like the wave-particle duality of light, both are true and useful, but their coexistence can be tense and uneasy.
+Like the wave-particle duality of light, both are true and useful, but their coexistence can be tense and uneasy. We just have to learn to live with that.
 :::
 
 . . .
