@@ -161,7 +161,7 @@ What method does ChatGPT use to generate the next word in one of its responses?
 
 . . .
 
-Let's ask! <https://chatgpt.com/>
+Let's ask! <https://chatgpt.com/share/677ef289-9564-8008-a662-9f8c2cfb04fc>
 
 ## Example: portfolio selection
 
