@@ -53,7 +53,8 @@ You are expected to produce all mathematical reasoning, arguments, and calculati
 
 ::: callout-tip
 ## Citing an LLM like ChatGPT
-[Here](https://www.monash.edu/student-academic-success/build-digital-capabilities/create-online/acknowledging-the-use-of-generative-artificial-intelligence) are some general guidelines for citing AI-generated content. In this class, if you use something like ChatGPT to help you, you need to cite that by providing a direct link to the conversation you had with the bot, like this: [https://chatgpt.com/share/677c4060-1d58-8008-8e47-5caa5556a825](https://chatgpt.com/share/677c4060-1d58-8008-8e47-5caa5556a825). You can generate such a link here:
+
+[Here](https://www.monash.edu/student-academic-success/build-digital-capabilities/create-online/acknowledging-the-use-of-generative-artificial-intelligence) are some general guidelines for citing AI-generated content. In this class, if you use something like ChatGPT to help you, you need to cite that by providing a direct link to the conversation you had with the bot, like this: <https://chatgpt.com/share/677c4060-1d58-8008-8e47-5caa5556a825>. You can generate such a link here:
 
 ![](chatgpt_link.png){fig-align="center" width="80%"}
 :::
@@ -66,4 +67,8 @@ As a student in this course, you have agreed to uphold the [Duke Community Stand
 
 </iframe>
 
-yada yada
+Any violations in academic honesty standards as outlined in the Duke Community Standard and those specific to this course will automatically results in a zero for the relevant portion or the entire assignment, and will be reported to the Office of Student Conduct & Community Standards for further action. Furthermore:
+
+-   If a conduct violation results in a zero on a lab, that zero will not be dropped;
+-   If a conduct violation results in a zero on the in-class portion of a midterm, that zero will not be replaced with your final exam score;
+-   If we discover that students are sharing and copying assignment solutions, all students involved will be penalized equally, the sharer the same as the recipient.
