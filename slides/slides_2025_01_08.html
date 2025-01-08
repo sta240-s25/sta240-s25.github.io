@@ -344,6 +344,65 @@ John Zito
 </div>
 
 </section>
+<section id="welcome-to-sta-240" class="slide level2 large">
+<h2>Welcome to STA 240!</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<p>While you wait, please complete this brief questionnaire:</p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/sta240qr.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="teaching-team" class="slide level2 small">
+<h2>Teaching Team</h2>
+<table class="caption-top" style="width:90%;">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 18%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mug</th>
+<th>Name</th>
+<th>Role</th>
+<th>Office Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Chen, Andy</td>
+<td>TA</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td><img data-src="h.jpg" class="c"></td>
+<td>Huang, Konnie</td>
+<td>TA</td>
+<td>TBD</td>
+</tr>
+<tr class="odd">
+<td><img data-src="j.jpg" class="c"></td>
+<td>Jacobson, Gwen</td>
+<td>Head TA</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td><img data-src="z.jpg" class="c"></td>
+<td>Zito, John</td>
+<td>Instructor</td>
+<td>Tue 2pm - 4pm</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="why-should-you-study-the-mathematics-of-probability-and-statistics" class="title-slide slide level1 center">
 <h1>Why should you study the mathematics of probability and statistics?</h1>
 
@@ -356,42 +415,221 @@ John Zito
 </section>
 <section id="example-the-birthday-problem" class="slide level2">
 <h2>Example: the birthday problem</h2>
+<p><span class="math inline">\(k\)</span> people convene for a birthday party:</p>
+<ul>
+<li><p>What is the probability that <em>at least two</em> of the attendees share a birthday?</p></li>
+<li><p>How many people need to show up to the party for there to be a 50% chance of at least one match?</p></li>
+</ul>
+<p>Most people guess that you need a hundred or more people.</p>
+<div class="fragment">
+<p>In fact, you only need 23.</p>
+</div>
+</section>
+<section id="example-the-birthday-problem-1" class="slide level2 medium">
+<h2>Example: the birthday problem</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>no. of attendees (k)</th>
+<th>Prob(at least one bday match)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0%</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>1.6%</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>28%</td>
+</tr>
+<tr class="even">
+<td>23</td>
+<td>50.7%</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>89%</td>
+</tr>
+<tr class="even">
+<td>56</td>
+<td>98%</td>
+</tr>
+<tr class="odd">
+<td>60</td>
+<td>99.4</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\vdots\)</span></td>
+<td><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="odd">
+<td>366</td>
+<td>100.0%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key words</strong>: binomial coefficient, pigeonhole principle</p>
+</section>
+<section id="example-the-birthday-problem-2" class="slide level2">
+<h2>Example: the birthday problem</h2>
+<p><img data-src="images/birthday_prob.png"></p>
 </section>
 <section id="example-the-monty-hall-problem" class="slide level2">
 <h2>Example: the Monty Hall problem</h2>
 </section>
-<section id="example-the-wisdom-of-crowds" class="slide level2">
+<section id="example-the-wisdom-of-crowds" class="slide level2 medium">
 <h2>Example: the wisdom of crowds</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="images/weight.jpg"></p>
+</div><div class="column" style="width:70%;">
+<p>At a 1906 country fair in Plymouth, 800 people participated in a contest to estimate the weight of an ox. Francis Galton observed that the median guess, 1207 lbs, was accurate within 1% of the true weight of 1198 lbs.</p>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Lesson</strong></p>
+</div>
+<div class="callout-content">
+<p>The aggregation of many imperfect estimates/guesses is often better than a needle-in-haystack search for the “best” individual guess.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Reality check!</strong></p>
+</div>
+<div class="callout-content">
+<p>It took humans a long time to realize this. The first recorded uses of an “average” were during Isaac Newton’s lifetime (see Stigler’s <em>Seven Pillars of Statistical Wisdom</em>).</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-the-wisdom-of-crowds-1" class="slide level2">
+<h2>Example: the wisdom of crowds</h2>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>It’s a lesson we are doomed to relearn often, apparently.</strong></p>
+</div>
+<div class="callout-content">
+<p><img data-src="images/prediction_markets.png"> (source: <a href="https://www.cnn.com/2024/11/08/business/polymarket-election-trump-nightcap/index.html">CNN</a>)</p>
+</div>
+</div>
+</div>
 </section>
 <section id="example-the-folly-of-doctors" class="slide level2">
 <h2>Example: the folly of doctors</h2>
+<blockquote>
+<p>A 50-year-old, asymptomatic woman tests positive for breast cancer. Alarming, but no diagnostic test is perfect. If the prevalence of breast cancer in the population is 1%, if the false negative rate of the test is 10%, and if the false positive rate is 9%, what is the chance that the woman <em>actually</em> has cancer, given that she tested positive?</p>
+</blockquote>
+<div class="fragment">
+<p>You will know how to answer this by February. Doctors though…</p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><a href="https://www.bbc.com/news/magazine-28166019">BBC News 2014</a></strong></p>
+</div>
+<div class="callout-content">
+<p>Only 34 out of 160 surveyed gynecologist got it right (9%). Almost half of them said 90%.</p>
+<blockquote>
+<p>We can only imagine how much anxiety those innumerate doctors instil in women.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="reason-1-its-necessary.-1" class="slide level2 large">
+<section id="reason-1-its-necessary.-1" class="slide level2 large-ish">
 <h2>Reason 1: It’s necessary.</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:35%;">
+<p><img data-src="images/dumb.jpg" style="width:90.0%"></p>
+</div><div class="column" style="width:65%;">
 <p>Human intuition and “common sense” about probability and statistics are often just flat out wrong, in silly and dangerous ways. Mere mortals require the scaffolding of mathematics to discipline our thinking.</p>
+</div>
+</div>
 </section></section>
 <section>
 <section id="reason-2-its-useful." class="title-slide slide level1 center">
 <h1>Reason 2: It’s useful.</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<p>Wigner</p>
+<section id="new-title-the-unreasonable-effectiveness-of-probability-ineverything" class="slide level2">
+<h2>New title: The Unreasonable Effectiveness of Probability in…Everything?</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><a href="https://doi.org/10.1002/cpa.3160130102">Read it!</a></strong></p>
+</div>
+<div class="callout-content">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/wigner.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="example-finance" class="slide level2">
-<h2>Example: finance</h2>
+<section id="example-llms" class="slide level2">
+<h2>Example: LLMs</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Question</strong></p>
+</div>
+<div class="callout-content">
+<p>What method does ChatGPT use to generate the next word in one of its responses?</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Let’s ask! <a href="https://chatgpt.com/" class="uri">https://chatgpt.com/</a></p>
+</div>
+</section>
+<section id="example-portfolio-selection" class="slide level2">
+<h2>Example: portfolio selection</h2>
+<blockquote>
+<p>Don’t put all your eggs in one basket.</p>
+</blockquote>
+<p><strong>Problem</strong>: How do you optimally allocate your money to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?</p>
+<p><strong>Goal</strong>: You want to make the best choice subject to uncertainty about how the competing assets will ultimately perform.</p>
+<p>The mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it’s “just” the creative application of basic probability.</p>
 </section>
 <section id="example-insurance" class="slide level2">
 <h2>Example: insurance</h2>
 </section>
-<section id="example-llms" class="slide level2">
-<h2>Example: LLMs</h2>
-</section>
 <section id="example-something-else" class="slide level2">
-<h2>Example: something else</h2>
-</section>
-<section id="example-something-else-1" class="slide level2">
 <h2>Example: something else</h2>
 </section>
 <section id="reason-2-its-useful" class="slide level2 large">
@@ -409,8 +647,8 @@ John Zito
 <h1>Reason 3: It’s beautiful.</h1>
 
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<section id="take-it-away-boys" class="slide level2">
+<h2>Take it away, boys…</h2>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -446,22 +684,37 @@ John Zito
 </figure>
 </div>
 </section>
+<section id="reason-3-its-beautiful" class="slide level2 large">
+<h2>Reason 3: It’s beautiful</h2>
+<div class="columns v-center-container">
+<div class="column" style="width:50%;">
+<p><img data-src="images/agony.jpg" style="width:70.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>Discerning elegant patterns within “random” behavior can be very aesthetically pleasing.</p>
+</div>
+</div>
+</section>
 <section id="why-study-mathematical-probstat" class="slide level2">
 <h2>Why study mathematical probstat?</h2>
+<div>
 <ol type="1">
-<li><p>It’s necessary.</p>
+<li class="fragment"><p>It’s necessary.</p>
 <ul>
-<li>Humans suck at thinking about this stuff.</li>
+<li class="fragment">Humans suck at thinking about this stuff.</li>
 </ul></li>
-<li><p>It’s useful.</p>
+<li class="fragment"><p>It’s useful.</p>
 <ul>
-<li>It makes studying other things so much easier.</li>
+<li class="fragment">It makes studying other things so much easier.</li>
 </ul></li>
-<li><p>It’s beautiful.</p>
+<li class="fragment"><p>It’s beautiful.</p>
 <ul>
-<li>This is the main reason, honestly.</li>
+<li class="fragment">This is the main reason, honestly.</li>
 </ul></li>
 </ol>
+</div>
+<div class="fragment">
+<p>Sound good?</p>
+</div>
 </section></section>
 <section>
 <section id="syllabus-highlights" class="title-slide slide level1 center">
@@ -529,15 +782,60 @@ John Zito
 </div>
 </div>
 </section>
-<section id="labs" class="slide level2">
-<h2>Labs</h2>
+<section id="sowheres-the-wiggle-room" class="slide level2">
+<h2>So…where’s the wiggle room?</h2>
+<ul>
+<li>We drop the two lowest labs;</li>
+<li>We drop the lowest problem set;</li>
+<li>We will replace your lowest midterm score with your final exam score (if it’s better).</li>
+</ul>
 </section>
-<section id="problem-sets" class="slide level2">
-<h2>Problem Sets</h2>
+<section id="labs-10" class="slide level2">
+<h2>Labs (10%)</h2>
+<p>Led by Gwen in Perkins LINK 071 (Classroom 5):</p>
+<ul>
+<li>Thursday 1:25 PM - 2:40 PM;</li>
+<li>Thursday 3:05 PM - 4:20 PM.</li>
+</ul>
+<p>Guided activities introducing you to special topics, extensions, applications, and case studies. We will also introduce some basic <code>R</code> stuff, and we will use Quarto for the lab write-ups.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Plan to attend regularly</strong></p>
+</div>
+<div class="callout-content">
+<p>Designed to be complete-able during the lab period, but due by 11:59 PM that same day.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="three-in-class-exams" class="slide level2">
-<h2>Three in-class exams</h2>
-<p>No resources besides an 8.5” x 11” note sheet:</p>
+<section id="problem-sets-30" class="slide level2">
+<h2>Problem Sets (30%)</h2>
+<ul>
+<li>Mostly pencil-and-paper math problems, with some coding thrown in occasionally;</li>
+<li>Compose solutions however you want: scan or photograph written work, handwriting capture, LaTeX, Quarto, whatever;</li>
+<li>Submit a single PDF in Gradescope (and mark your pages!)</li>
+</ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Late policy</strong></p>
+</div>
+<div class="callout-content">
+<p>No late work will be accepted unless you request an extension in advance by e-mailing JZ. All reasonable requests will be entertained, but extensions will not be long.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="exams-20-each" class="slide level2">
+<h2>Exams (20% each)</h2>
+<p>Traditional, in-class, written exams:</p>
 <ul>
 <li><strong>Midterm 1</strong>: Monday February 17;</li>
 <li><strong>Midterm 2</strong>: Monday March 31;</li>
@@ -549,10 +847,10 @@ John Zito
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>A little bit of grace…</strong></p>
+<p><strong>What can I use during the exam?</strong></p>
 </div>
 <div class="callout-content">
-<p>Lowest midterm score is replaced with final exam score if it’s better.</p>
+<p>No resources except an 8.5” x 11” note sheet created by you and only you.</p>
 </div>
 </div>
 </div>
@@ -569,6 +867,88 @@ John Zito
 </div>
 </div>
 </div>
+</section>
+<section id="attendance" class="slide level2">
+<h2>Attendance</h2>
+<p>Not required. Live your life.</p>
+</section>
+<section id="communication" class="slide level2">
+<h2>Communication</h2>
+<p>If you wish to ask questions in writing…</p>
+<ul>
+<li><p><strong>Post on Ed</strong>: stuff about general course policies and content;</p></li>
+<li><p><strong>Email JZ directly</strong>: stuff specific to your personal circumstances.</p></li>
+</ul>
+<p>You should not really be emailing the TAs directly for any reason.</p>
+</section>
+<section id="collaboration" class="slide level2">
+<h2>Collaboration</h2>
+<p>You are encouraged to work together on labs and problem sets, but you should not copy off one another or share solutions. All submitted work must be entirely your own.</p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>If we discover violations of this policy, everyone involved (sharers and recipients alike) will receive a zero on the assignment and be referred to the conduct office.</p>
+<p>A zero score resulting from a conduct violation <em>will not</em> be dropped or replaced.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="use-of-outside-resources-including-ai" class="slide level2">
+<h2>Use of outside resources, including AI</h2>
+<p>Say it with me:</p>
+<blockquote>
+<p>Do your own math and write your own words, but write code however you want (as long as you cite your sources).</p>
+</blockquote>
+</section>
+<section id="what-level-of-mathematics-should-you-expect" class="slide level2">
+<h2>What level of mathematics should you expect?</h2>
+<p>This is essentially a pencil-and-paper math class. We assume all the basic skills taught in Calc I and II:</p>
+<div>
+<ul>
+<li class="fragment">differentiation (power rule, chain rule, all that)</li>
+<li class="fragment">integration (FTOC, improper integrals, substitution, by parts…)</li>
+<li class="fragment">limits and continuity (L’Hôpital’s rule, etc)</li>
+<li class="fragment">infinite series (Taylor series for <span class="math inline">\(e^x\)</span>, anyone?)</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>REVIEW</strong>: <a href="https://sta240-s25.github.io/psets/pset_0.html">Problem Set 0</a> is due 12PM Thursday January 16.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>This is not sink-or-swim.</strong></p>
+</div>
+<div class="callout-content">
+<p>Lab on Thursday January 9 is a review session and work period for this assignment.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="so-what-are-we-studying-anyway" class="title-slide slide level1 center">
+<h1>So, what are we studying, anyway?</h1>
+
+</section>
+<section id="coin-toss-example" class="slide level2">
+<h2>coin toss example</h2>
+</section>
+<section id="probstat-picture" class="slide level2">
+<h2>probstat picture</h2>
+</section>
+<section id="interpretation" class="slide level2">
+<h2>interpretation</h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
