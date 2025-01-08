@@ -154,7 +154,7 @@
     "href": "slides/slides_2025_01_08.html#teaching-team",
     "title": "Welcome to STA 240!",
     "section": "Teaching Team",
-    "text": "Teaching Team\n\n\n\n\n\n\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nChen, Andy\nTA\nTBD\n\n\n\nHuang, Konnie\nTA\nTBD\n\n\n\nJacobson, Gwen\nHead TA\nTBD\n\n\n\nZito, John\nInstructor\nTue 2pm - 4pm"
+    "text": "Teaching Team\n\n\n\nMug\nName\nRole\nOffice Hours\n\n\n\n\n\nChen, Andy\nTA\nTBD\n\n\n\nHuang, Konnie\nTA\nTBD\n\n\n\nJacobson, Gwen\nHead TA\nTBD\n\n\n\nZito, John\nInstructor\nTue 2pm - 4pm"
   },
   {
     "objectID": "slides/slides_2025_01_08.html#example-the-birthday-problem",
@@ -182,7 +182,7 @@
     "href": "slides/slides_2025_01_08.html#example-the-monty-hall-problem",
     "title": "Welcome to STA 240!",
     "section": "Example: the Monty Hall problem",
-    "text": "Example: the Monty Hall problem"
+    "text": "Example: the Monty Hall problem\nLet’s play: https://montyhall.io/\n\n\n\n\n\n\n\n\n\n\n\n\nVery counterintuitive\n\n\nMost people start out thinking that the two doors are equally likely to contain the prize, so switching doesn’t matter. In fact, you have a 2/3 chance of winning if you switch."
   },
   {
     "objectID": "slides/slides_2025_01_08.html#example-the-wisdom-of-crowds",
@@ -231,21 +231,21 @@
     "href": "slides/slides_2025_01_08.html#example-portfolio-selection",
     "title": "Welcome to STA 240!",
     "section": "Example: portfolio selection",
-    "text": "Example: portfolio selection\n\nDon’t put all your eggs in one basket.\n\nProblem: How do you optimally allocate your money to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?\nGoal: You want to make the best choice subject to uncertainty about how the competing assets will ultimately perform.\nThe mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it’s “just” the creative application of basic probability."
+    "text": "Example: portfolio selection\n\n\n\n\n\n\nProblem\n\n\nHow do you optimally allocate your savings to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?\n\n\n\n\n\n\n\n\n\nObjective\n\n\nYou want to make the most stable and lucrative choice possible, subject to uncertainty about how the competing assets will ultimately perform.\n\n\n\n\n\n\n\n\n\nThoroughly Modern Markowitz\n\n\nThe mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it’s “just” the creative application of basic probability."
   },
   {
-    "objectID": "slides/slides_2025_01_08.html#example-insurance",
-    "href": "slides/slides_2025_01_08.html#example-insurance",
+    "objectID": "slides/slides_2025_01_08.html#example-the-mathematics-of-insurance",
+    "href": "slides/slides_2025_01_08.html#example-the-mathematics-of-insurance",
     "title": "Welcome to STA 240!",
-    "section": "Example: insurance",
-    "text": "Example: insurance"
+    "section": "Example: the mathematics of insurance",
+    "text": "Example: the mathematics of insurance\nWhen an insurance company sells you a policy, they are making a bet that you won’t need it – that you’ll pay them but they won’t ultimately pay you. They make thousands of such bets, and if everyone makes a claim, the company is ruined. How do they navigate this uncertainty?\n\n\n\n\n\n\n\nActuarial mathematics!\n\n\nEvery insurance company employs armies of actuaries, certified professionals with a deep understanding of probability and statistics, to help them make decisions about profit, loss, and risk of ruin."
   },
   {
-    "objectID": "slides/slides_2025_01_08.html#example-something-else",
-    "href": "slides/slides_2025_01_08.html#example-something-else",
+    "objectID": "slides/slides_2025_01_08.html#example-mathematical-biology",
+    "href": "slides/slides_2025_01_08.html#example-mathematical-biology",
     "title": "Welcome to STA 240!",
-    "section": "Example: something else",
-    "text": "Example: something else"
+    "section": "Example: mathematical biology",
+    "text": "Example: mathematical biology\nThe metastasis of cancer cells is frequently modeled using something called a branching process, and a kind of random evolution process that builds on the fundamentals of our course:"
   },
   {
     "objectID": "slides/slides_2025_01_08.html#reason-2-its-useful",
@@ -350,35 +350,42 @@
     "href": "slides/slides_2025_01_08.html#use-of-outside-resources-including-ai",
     "title": "Welcome to STA 240!",
     "section": "Use of outside resources, including AI",
-    "text": "Use of outside resources, including AI\nSay it with me:\n\nDo your own math and write your own words, but write code however you want (as long as you cite your sources)."
+    "text": "Use of outside resources, including AI\nSay it with me:\n\nDo your own math and write your own words, but write code however you want (as long as you cite your sources).\n\n\nYou are generally discouraged from consulting outside resources. The textbooks, notes, and discussion forum should be self-contained and sufficient. If you find that this is false, let me know and we will get you what you need;\nHopefully our coding needs are sufficiently basic that you don’t feel the need to use outside resources too often, but telling you not use Google etc while coding is just insane. It’s fine as long as you cite it."
   },
   {
     "objectID": "slides/slides_2025_01_08.html#what-level-of-mathematics-should-you-expect",
     "href": "slides/slides_2025_01_08.html#what-level-of-mathematics-should-you-expect",
     "title": "Welcome to STA 240!",
     "section": "What level of mathematics should you expect?",
-    "text": "What level of mathematics should you expect?\nThis is essentially a pencil-and-paper math class. We assume all the basic skills taught in Calc I and II:\n\n\ndifferentiation (power rule, chain rule, all that)\nintegration (FTOC, improper integrals, substitution, by parts…)\nlimits and continuity (L’Hôpital’s rule, etc)\ninfinite series (Taylor series for \\(e^x\\), anyone?)\n\n\n\nREVIEW: Problem Set 0 is due 12PM Thursday January 16.\n\n\n\n\n\n\n\n\nThis is not sink-or-swim.\n\n\nLab on Thursday January 9 is a review session and work period for this assignment."
+    "text": "What level of mathematics should you expect?\nThis is essentially a pencil-and-paper math class. We will use all of the basic skills taught in Calc I and II:\n\n\ndifferentiation (power rule, chain rule, all that)\nintegration (FTOC, improper integrals, substitution, by parts…)\nlimits and continuity (L’Hôpital’s rule, etc)\ninfinite series (Taylor series for \\(e^x\\), anyone?)\n\n\n\nREVIEW: Problem Set 0 is due 12PM Thursday January 16.\n\n\n\n\n\n\n\n\nThis is not sink-or-swim.\n\n\nLab on Thursday January 9 is a review session and work period for this assignment."
   },
   {
-    "objectID": "slides/slides_2025_01_08.html#coin-toss-example",
-    "href": "slides/slides_2025_01_08.html#coin-toss-example",
+    "objectID": "slides/slides_2025_01_08.html#probability",
+    "href": "slides/slides_2025_01_08.html#probability",
     "title": "Welcome to STA 240!",
-    "section": "coin toss example",
-    "text": "coin toss example"
+    "section": "Probability",
+    "text": "Probability\nState the distribution (probability rules) of some random phenomenon, and then study how the realizations of that phenomenon “typically” behave:\n\n\nGiven a fair coin, how many flips will it take on average until I observe the first head?\n\n\n\nselect a phenomenon to study (the outcome of a coin flip);\nfully specify its distribution (it’s a fair, 50-50 coin);\nstudy typical behavior of realizations (how many flips on average until the first head?)."
   },
   {
-    "objectID": "slides/slides_2025_01_08.html#probstat-picture",
-    "href": "slides/slides_2025_01_08.html#probstat-picture",
+    "objectID": "slides/slides_2025_01_08.html#statistics-is-probability-in-reverse",
+    "href": "slides/slides_2025_01_08.html#statistics-is-probability-in-reverse",
     "title": "Welcome to STA 240!",
-    "section": "probstat picture",
-    "text": "probstat picture"
+    "section": "Statistics is “probability in reverse”",
+    "text": "Statistics is “probability in reverse”\nStart with the realizations of a random phenomenon with unknown distribution, and try to use those realizations to figure out what the distribution is:\n\n\nImagine that you are given an unfamiliar coin, and you do not know anything about its properties. So you flip it 25 times, and on the basis of those 25 flips, you try to decide whether or not the coin is fair.\n\n\n\nIn probability, we assumed that the coin was fair, and then reasoned from that. In statistics, we do not do this. We start with some coin, which may or may not be fair, and then we try to “infer” its properties."
   },
   {
-    "objectID": "slides/slides_2025_01_08.html#interpretation",
-    "href": "slides/slides_2025_01_08.html#interpretation",
+    "objectID": "slides/slides_2025_01_08.html#probability-and-statistics",
+    "href": "slides/slides_2025_01_08.html#probability-and-statistics",
     "title": "Welcome to STA 240!",
-    "section": "interpretation",
-    "text": "interpretation"
+    "section": "Probability and statistics",
+    "text": "Probability and statistics\n\n\n\n\n\n\n\n\n\n\n\n\nProbability\nForward problem\nDeductive\nReasons from rules to consequences\n\n\nStatistics\nInverse problem\nInductive\nObserves consequences, and infers rules"
+  },
+  {
+    "objectID": "slides/slides_2025_01_08.html#the-philosophy-of-probability",
+    "href": "slides/slides_2025_01_08.html#the-philosophy-of-probability",
+    "title": "Welcome to STA 240!",
+    "section": "The philosophy of probability",
+    "text": "The philosophy of probability\nTwo common interpretive perspectives:\n\n\nFrequentist: probability describes the long run frequency of repeatable events;\nSubjective: probability describes an observer’s subjective experience of uncertainty.\n\n\n\n\n\n\n\n\n\nNote\n\n\nLike the wave-particle duality of light, both are true and useful, but their coexistence can be tense and uneasy.\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nRegardless your interpretation, the mathematics of probability is the same."
   },
   {
     "objectID": "psets/pset_0.html",
@@ -451,7 +458,7 @@
     "href": "psets/pset_0.html#problem-5",
     "title": "Problem Set 0",
     "section": "Problem 5",
-    "text": "Problem 5\nLet \\(f\\) be any function with the following properties:\n\n\n\\(f\\) is twice continuously differentiable in a neighborhood of 0;\n\n\\(f(0) = 0\\);\n\n\\(f'(0) = 0\\);\n\n\\(f''(0) = 1\\).\n\nAssume \\(t\\) is a constant and compute\n\\[\n    \\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n    .\n\\]\n\n\n\n\n\n\nHint\n\n\n\n\n\nAre you allowed to “plug in” \\(\\infty\\) for \\(x\\) and simplify the expression? If so, why is that allowed? If not, what do you have to do instead?",
+    "text": "Problem 5\nLet \\(f\\) be any function with the following properties:\n\n\n\\(f\\) is twice continuously differentiable in a neighborhood of 0;\n\n\\(f(0) = 0\\);\n\n\\(f'(0) = 0\\);\n\n\\(f''(0) = 1\\).\n\nAssume \\(t\\) is a constant and compute\n\\[\n    \\lim_{x\\to\\infty} xf\\left(\\frac{t}{\\sqrt{x}}\\right)\n    .\n\\]\n\n\n\n\n\n\nHint\n\n\n\n\n\nAre you allowed to simply “plug in” \\(\\infty\\) for \\(x\\) and simplify the expression? If so, why is that allowed? If not, what do you have to do instead?",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
@@ -473,7 +480,7 @@
     "href": "psets/pset_0.html#submission",
     "title": "Problem Set 0",
     "section": "Submission",
-    "text": "Submission\nGradescope blah blah.",
+    "text": "Submission\nYou are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 0"
