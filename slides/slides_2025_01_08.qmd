@@ -67,7 +67,7 @@ In fact, you only need 23.
 
 Let's play: <https://montyhall.io/>
 
-![](images/monty_hall.png){fig-align="center" width="60%"}
+![](images/monty_hall.png){fig-align="center" width="50%"}
 
 . . .
 
