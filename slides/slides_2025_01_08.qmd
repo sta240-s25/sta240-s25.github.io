@@ -165,7 +165,7 @@ Let's ask! <https://chatgpt.com/>
 
 **Goal**: You want to make the best choice subject to uncertainty about how the competing assets will ultimately perform.
 
-The mathematics of this won a Nobel Prize in Economic Sciences in 1990. It's all just basic probability and statistics, creatively deployed.
+The mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it's "just" the creative application of basic probability.
 
 ## Example: insurance
 
@@ -283,7 +283,7 @@ Guided activities introducing you to special topics, extensions, applications, a
 ::: callout-note
 ## Plan to attend regularly
 
-Designed to be complete-able during the lab period, but due at 11:59 PM that same day.
+Designed to be complete-able during the lab period, but due by 11:59 PM that same day.
 :::
 
 ## Problem Sets (30%)
@@ -334,15 +334,19 @@ You should not really be emailing the TAs directly for any reason.
 
 ## Collaboration
 
+You are encouraged to work together on labs and problem sets, but you should not copy off one another or share solutions. All submitted work must be entirely your own.
+
+::: callout-warning
+If we discover violations of this policy, everyone involved (sharers and recipients alike) will receive a zero on the assignment and be referred to the conduct office.
+
+A zero score resulting from a conduct violation *will not* be dropped or replaced.
+:::
+
 ## Use of outside resources, including AI
 
 Say it with me:
 
 > Do your own math and write your own words, but write code however you want (as long as you cite your sources).
-
-## Duke Community Standard
-
-Violations of the policies on outside resources and collaboration will be referred to the conduct office and will result in zeros on the assignments.
 
 ## What level of mathematics should you expect?
 
@@ -368,3 +372,9 @@ Lab on Thursday January 9 is a review session and work period for this assignmen
 :::
 
 # So, what are we studying, anyway?
+
+## coin toss example 
+
+## probstat picture 
+
+## interpretation
