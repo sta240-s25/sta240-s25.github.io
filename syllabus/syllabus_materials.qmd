@@ -4,7 +4,7 @@ title: "Course materials"
 
 ## Textbooks
 
-You are not required to purchase a textbook for this class. However, if you wish to follow along with one, these are all good options:
+You are not required to purchase a textbook for this class. I strive to make the lectures self-contained and sufficient for all of the assignments. However, if you wish to follow along with one, these are all good options:
 
 -   `[Ross]` *A First Course in Probability* by Sheldon Ross;
 -   `[HTZ]` *Probability and Statistical Inference* by Robert Hogg, Elliot Tanis, and Dale Zimmerman;
