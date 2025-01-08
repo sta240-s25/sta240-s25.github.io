@@ -4,35 +4,170 @@ format: revealjs
 auto-stretch: false
 ---
 
+## Welcome to STA 240! {.large}
+
+::: {.columns .v-center-container}
+::: {.column width="50%"}
+While you wait, please complete this brief questionnaire:
+:::
+
+::: {.column width="50%"}
+![](images/sta240qr.png){fig-align="center"}
+:::
+:::
+
+## Teaching Team {.small}
+
++--------------+------------------+------------+-----------------+
+| Mug          | Name             | Role       | Office Hours    |
++==============+==================+============+=================+
+|              | Chen, Andy       | TA         | TBD             |
++--------------+------------------+------------+-----------------+
+|![](h.jpg){.c}| Huang, Konnie    | TA         | TBD             |
++--------------+------------------+------------+-----------------+
+|![](j.jpg){.c}| Jacobson, Gwen   | Head TA    | TBD             |
++--------------+------------------+------------+-----------------+
+|![](z.jpg){.c}| Zito, John       | Instructor | Tue 2pm - 4pm   |
++--------------+------------------+------------+-----------------+
+
 # Why should you study the mathematics of probability and statistics?
 
 # Reason 1: It's necessary.
 
 ## Example: the birthday problem
 
+$k$ people convene for a birthday party:
+
+-   What is the probability that *at least two* of the attendees share a birthday?
+
+-   How many people need to show up to the party for there to be a 50% chance of at least one match?
+
+Most people guess that you need a hundred or more people.
+
+. . .
+
+In fact, you only need 23.
+
+## Example: the birthday problem {.medium}
+
+| no. of attendees (k) | Prob(at least one bday match) |
+|----------------------|-------------------------------|
+| 1                    | 0%                            |
+| 4                    | 1.6%                          |
+| 16                   | 28%                           |
+| 23                   | 50.7%                         |
+| 40                   | 89%                           |
+| 56                   | 98%                           |
+| 60                   | 99.4                          |
+| $\vdots$             | $\vdots$                      |
+| 366                  | 100.0%                        |
+
+**Key words**: binomial coefficient, pigeonhole principle
+
+## Example: the birthday problem
+
+![](images/birthday_prob.png)
+
 ## Example: the Monty Hall problem
+
+## Example: the wisdom of crowds {.medium}
+
+::: columns
+::: {.column width="30%"}
+![](images/weight.jpg)
+:::
+
+::: {.column width="70%"}
+At a 1906 country fair in Plymouth, 800 people participated in a contest to estimate the weight of an ox. Francis Galton observed that the median guess, 1207 lbs, was accurate within 1% of the true weight of 1198 lbs.
+:::
+:::
+
+. . .
+
+::: callout-note
+## Lesson
+
+The aggregation of many imperfect estimates/guesses is often better than a needle-in-haystack search for the "best" individual guess.
+:::
+
+. . .
+
+::: callout-warning
+## Reality check!
+
+It took humans a long time to realize this. The first recorded uses of an "average" were during Isaac Newton's lifetime (see Stigler's *Seven Pillars of Statistical Wisdom*).
+:::
 
 ## Example: the wisdom of crowds
 
+::: callout-warning
+## It's a lesson we are doomed to relearn often, apparently.
+
+![](images/prediction_markets.png) (source: [CNN](https://www.cnn.com/2024/11/08/business/polymarket-election-trump-nightcap/index.html))
+:::
+
 ## Example: the folly of doctors
 
-## Reason 1: It's necessary. {.large}
+> A 50-year-old, asymptomatic woman tests positive for breast cancer. Alarming, but no diagnostic test is perfect. If the prevalence of breast cancer in the population is 1%, if the false negative rate of the test is 10%, and if the false positive rate is 9%, what is the chance that the woman *actually* has cancer, given that she tested positive?
 
+. . .
+
+You will know how to answer this by February. Doctors though...
+
+::: callout-warning
+## [BBC News 2014](https://www.bbc.com/news/magazine-28166019)
+
+Only 34 out of 160 surveyed gynecologist got it right (9%). Almost half of them said 90%.
+
+> We can only imagine how much anxiety those innumerate doctors instil in women.
+:::
+
+## Reason 1: It's necessary. {.large-ish}
+
+::: {.columns .v-center-container}
+::: {.column width="35%"}
+![](images/dumb.jpg){width="90%"}
+:::
+
+::: {.column width="65%"}
 Human intuition and “common sense” about probability and statistics are often just flat out wrong, in silly and dangerous ways. Mere mortals require the scaffolding of mathematics to discipline our thinking.
+:::
+:::
 
 # Reason 2: It's useful.
 
-## 
+## New title: The Unreasonable Effectiveness of Probability in...Everything?
 
-Wigner
+::: callout-note
+## [Read it!](https://doi.org/10.1002/cpa.3160130102)
+![](images/wigner.png){fig-align="center" width="70%"}
+:::
 
-## Example: finance
 
-## Example: insurance
 
 ## Example: LLMs
 
-## Example: something else
+::: callout-note
+## Question
+
+What method does ChatGPT use to generate the next word in one of its responses?
+:::
+
+. . .
+
+Let's ask! <https://chatgpt.com/>
+
+## Example: portfolio selection
+
+> Don't put all your eggs in one basket.
+
+**Problem**: How do you optimally allocate your money to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?
+
+**Goal**: You want to make the best choice subject to uncertainty about how the competing assets will ultimately perform.
+
+The mathematics of this won a Nobel Prize in Economic Sciences in 1990. It's all just basic probability and statistics, creatively deployed.
+
+## Example: insurance
 
 ## Example: something else
 
@@ -50,7 +185,7 @@ Learning probability theory gives you serious wings to study large swathes of sc
 
 # Reason 3: It's beautiful.
 
-## 
+## Take it away, boys...
 
 ::: callout-tip
 ## Bertrand Russell, [*Mysticism and Logic and Other Essays*](https://en.wikisource.org/wiki/Mysticism_and_Logic_and_Other_Essays/Chapter_04) (1917)
@@ -68,8 +203,21 @@ Pure mathematics is, in its way, the poetry of logical ideas.
 
 ![](images/galton.gif){fig-align="center"}
 
+## Reason 3: It's beautiful {.large}
+
+::: {.columns .v-center-container}
+::: {.column width="50%"}
+![](images/agony.jpg){width="70%"}
+:::
+
+::: {.column width="50%"}
+Discerning elegant patterns within "random" behavior can be very aesthetically pleasing.
+:::
+:::
+
 ## Why study mathematical probstat?
 
+::: incremental
 1.  It's necessary.
 
     -   Humans suck at thinking about this stuff.
@@ -81,6 +229,11 @@ Pure mathematics is, in its way, the poetry of logical ideas.
 3.  It's beautiful.
 
     -   This is the main reason, honestly.
+:::
+
+. . .
+
+Sound good?
 
 # Syllabus highlights
 
@@ -112,22 +265,51 @@ Your final course grade will be calculated as follows:
 The final letter grade will be based on the usual thresholds, which will not change and will be applied exactly. So no curve and no rounding.
 :::
 
-## Labs
+## So...where's the wiggle room?
 
-## Problem Sets
+-   We drop the two lowest labs;
+-   We drop the lowest problem set;
+-   We will replace your lowest midterm score with your final exam score (if it's better).
 
-## Three in-class exams
+## Labs (10%)
 
-No resources besides an 8.5" x 11" note sheet:
+Led by Gwen in Perkins LINK 071 (Classroom 5):
+
+-   Thursday 1:25 PM - 2:40 PM;
+-   Thursday 3:05 PM - 4:20 PM.
+
+Guided activities introducing you to special topics, extensions, applications, and case studies. We will also introduce some basic `R` stuff, and we will use Quarto for the lab write-ups.
+
+::: callout-note
+## Plan to attend regularly
+
+Designed to be complete-able during the lab period, but due at 11:59 PM that same day.
+:::
+
+## Problem Sets (30%)
+
+-   Mostly pencil-and-paper math problems, with some coding thrown in occasionally;
+-   Compose solutions however you want: scan or photograph written work, handwriting capture, LaTeX, Quarto, whatever;
+-   Submit a single PDF in Gradescope (and mark your pages!)
+
+::: callout-warning
+## Late policy
+
+No late work will be accepted unless you request an extension in advance by e-mailing JZ. All reasonable requests will be entertained, but extensions will not be long.
+:::
+
+## Exams (20% each)
+
+Traditional, in-class, written exams:
 
 -   **Midterm 1**: Monday February 17;
 -   **Midterm 2**: Monday March 31;
 -   **Final Exam**: Saturday May 3.
 
 ::: callout-note
-## A little bit of grace...
+## What can I use during the exam?
 
-Lowest midterm score is replaced with final exam score if it's better.
+No resources except an 8.5" x 11" note sheet created by you and only you.
 :::
 
 ::: callout-note
@@ -135,3 +317,54 @@ Lowest midterm score is replaced with final exam score if it's better.
 
 Make sure I get a letter, and make your appointments in the [Testing Center](https://testingcenter.duke.edu/) now.
 :::
+
+## Attendance
+
+Not required. Live your life.
+
+## Communication
+
+If you wish to ask questions in writing...
+
+-   **Post on Ed**: stuff about general course policies and content;
+
+-   **Email JZ directly**: stuff specific to your personal circumstances.
+
+You should not really be emailing the TAs directly for any reason.
+
+## Collaboration
+
+## Use of outside resources, including AI
+
+Say it with me:
+
+> Do your own math and write your own words, but write code however you want (as long as you cite your sources).
+
+## Duke Community Standard
+
+Violations of the policies on outside resources and collaboration will be referred to the conduct office and will result in zeros on the assignments.
+
+## What level of mathematics should you expect?
+
+This is essentially a pencil-and-paper math class. We assume all the basic skills taught in Calc I and II:
+
+::: incremental
+-   differentiation (power rule, chain rule, all that)
+-   integration (FTOC, improper integrals, substitution, by parts...)
+-   limits and continuity (L'Hôpital's rule, etc)
+-   infinite series (Taylor series for $e^x$, anyone?)
+:::
+
+. . .
+
+**REVIEW**: [Problem Set 0](https://sta240-s25.github.io/psets/pset_0.html) is due 12PM Thursday January 16.
+
+. . .
+
+::: callout-note
+## This is not sink-or-swim.
+
+Lab on Thursday January 9 is a review session and work period for this assignment.
+:::
+
+# So, what are we studying, anyway?
