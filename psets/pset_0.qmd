@@ -97,7 +97,7 @@ $$
 ::: {.callout-tip collapse="true"}
 ## Hint
 
-Are you allowed to "plug in" $\infty$ for $x$ and simplify the expression? If so, why is that allowed? If not, what do you have to do instead?
+Are you allowed to simply "plug in" $\infty$ for $x$ and simplify the expression? If so, why is that allowed? If not, what do you have to do instead?
 :::
 
 ## Problem 6
