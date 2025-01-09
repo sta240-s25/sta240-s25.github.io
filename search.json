@@ -103,7 +103,7 @@
     "href": "syllabus/syllabus_policies.html#duke-community-standard",
     "title": "Policies",
     "section": "Duke Community Standard",
-    "text": "Duke Community Standard\nAs a student in this course, you have agreed to uphold the Duke Community Standard and the practices specific to this course.\n\n\nAny violations in academic honesty standards as outlined in the Duke Community Standard and those specific to this course will automatically results in a zero for the relevant portion or the entire assignment, and will be reported to the Office of Student Conduct & Community Standards for further action. Furthermore:\n\nIf a conduct violation results in a zero on a lab, that zero will not be dropped;\nIf a conduct violation results in a zero on the in-class portion of a midterm, that zero will not be replaced with your final exam score;\nIf we discover that students are sharing and copying assignment solutions, all students involved will be penalized equally, the sharer the same as the recipient.",
+    "text": "Duke Community Standard\nAs a student in this course, you have agreed to uphold the Duke Community Standard and the practices specific to this course.\n\n\nAny violations in academic honesty standards as outlined in the Duke Community Standard and those specific to this course will automatically results in a zero for the relevant portion or the entire assignment, and will be reported to the Office of Student Conduct & Community Standards for further action. Furthermore:\n\nIf a conduct violation results in a zero on a lab or problem set, that zero will not be dropped;\nIf a conduct violation results in a zero on an midterm, that zero will not be replaced with your final exam score;\nIf we discover that students are sharing and copying assignment solutions, all students involved will be penalized equally, the sharer the same as the recipients.",
     "crumbs": [
       "Syllabus",
       "Policies"
@@ -385,7 +385,7 @@
     "href": "slides/slides_2025_01_08.html#the-philosophy-of-probability",
     "title": "Welcome to STA 240!",
     "section": "The philosophy of probability",
-    "text": "The philosophy of probability\nTwo common interpretive perspectives:\n\n\nFrequentist: probability describes the long run frequency of repeatable events;\nSubjective: probability describes an observer’s subjective experience of uncertainty.\n\n\n\n\n\n\n\n\n\nNote\n\n\nLike the wave-particle duality of light, both are true and useful, but their coexistence can be tense and uneasy.\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nRegardless your interpretation, the mathematics of probability is the same."
+    "text": "The philosophy of probability\nTwo common interpretive perspectives:\n\n\nFrequentist: probability describes the long run frequency of repeatable events;\nSubjective: probability describes an observer’s subjective experience of uncertainty.\n\n\n\n\n\n\n\n\n\nNote\n\n\nLike the wave-particle duality of light, both are true and useful, but their coexistence can be tense and uneasy. We just have to learn to live with that.\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nRegardless your interpretation, the mathematics of probability is the same."
   },
   {
     "objectID": "psets/pset_0.html",
