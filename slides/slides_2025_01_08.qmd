@@ -167,16 +167,19 @@ Let's ask! <https://chatgpt.com/share/677ef289-9564-8008-a662-9f8c2cfb04fc>
 
 ::: callout-important
 ## Problem
+
 How do you optimally allocate your savings to different assets (stocks vs bonds, Apple stock vs Microsoft, etc)?
 :::
 
 ::: callout-note
 ## Objective
+
 You want to make the most stable and lucrative choice possible, subject to uncertainty about how the competing assets will ultimately perform.
 :::
 
 ::: callout-tip
 ## Thoroughly Modern Markowitz
+
 The mathematics of this won a Nobel Prize in Economic Sciences in 1990, but it's "just" the creative application of basic probability.
 :::
 
@@ -188,12 +191,13 @@ When an insurance company sells you a policy, they are making a bet that you won
 
 ::: callout-note
 ## Actuarial mathematics!
+
 Every insurance company employs armies of *actuaries*, certified professionals with a deep understanding of probability and statistics, to help them make decisions about profit, loss, and risk of ruin.
 :::
 
 ## Example: mathematical biology
 
-The metastasis of cancer cells is frequently modeled using something called a *branching process*, and a kind of random evolution process that builds on the fundamentals of our course:
+The metastasis of cancer cells is frequently modeled using something called a *branching process*, a kind of random evolution process that builds on the fundamentals of our course:
 
 ![](images/branching.png){fig-align="center"}
 
@@ -374,9 +378,9 @@ Say it with me:
 
 > Do your own math and write your own words, but write code however you want (as long as you cite your sources).
 
-- You are generally discouraged from consulting outside resources. The textbooks, notes, and discussion forum should be self-contained and sufficient. If you find that this is false, let me know and we will get you what you need;
+-   You are generally discouraged from consulting outside resources. The textbooks, notes, and discussion forum should be self-contained and sufficient. If you find that this is false, let me know and we will get you what you need;
 
-- Hopefully our coding needs are sufficiently basic that you don't feel the need to use outside resources too often, but telling you not use Google etc while coding is just insane. It's fine as long as you cite it.
+-   Hopefully our coding needs are sufficiently basic that you don't feel the need to use outside resources too often, but telling you not use Google etc while coding is just insane. It's fine as long as you cite it.
 
 ## What level of mathematics should you expect?
 
@@ -412,9 +416,9 @@ State the distribution (probability rules) of some random phenomenon, and then s
 > Given a **fair** coin, how many flips will it take on average until I observe the first head?
 
 ::: incremental
-1. select a phenomenon to study (the outcome of a coin flip);
-2. fully specify its distribution (it's a fair, 50-50 coin);
-3. study typical behavior of realizations (how many flips *on average* until the first head?).
+1.  select a phenomenon to study (the outcome of a coin flip);
+2.  fully specify its distribution (it's a fair, 50-50 coin);
+3.  study typical behavior of realizations (how many flips *on average* until the first head?).
 :::
 
 ## Statistics is "probability in reverse"
@@ -433,23 +437,23 @@ In probability, we *assumed* that the coin was fair, and then reasoned from that
 
 ![](images/probstat.png){fig-align="center" width="50%"}
 
-+-----------------+------------------------------------------------------------+
-| **Probability** | Forward problem\                                           |
-|                 | Deductive\                                                 |
-|                 | Reasons from rules to consequences                         |
-+-----------------+------------------------------------------------------------+
-| **Statistics**  | Inverse problem\                                           |
-|                 | Inductive\                                                 |
-|                 | Observes consequences, and infers rules                    |
-+-----------------+------------------------------------------------------------+
++-----------------+-----------------------------------------------------+
+| **Probability** | Forward problem\                                    |
+|                 | Deductive\                                          |
+|                 | Reasons from rules to consequences                  |
++-----------------+-----------------------------------------------------+
+| **Statistics**  | Inverse problem\                                    |
+|                 | Inductive\                                          |
+|                 | Observes consequences, and infers rules             |
++-----------------+-----------------------------------------------------+
 
 ## The philosophy of probability
 
 Two common interpretive perspectives:
 
 ::: incremental
-- **Frequentist**: probability describes the long run frequency of repeatable events;
-- **Subjective**: probability describes an observer's subjective experience of uncertainty. 
+-   **Frequentist**: probability describes the long run frequency of repeatable events;
+-   **Subjective**: probability describes an observer's subjective experience of uncertainty.
 :::
 
 . . .
