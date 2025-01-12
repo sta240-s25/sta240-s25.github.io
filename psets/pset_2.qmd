@@ -1,0 +1,33 @@
+---
+title: "Problem Set 2"
+subtitle: Due Thursday February 6 at 12PM
+---
+
+## Problem 0
+
+Recommend some music for us to listen to while we grade this.
+
+## Problem X
+
+Let $A$ and $B$ be independent events. Prove that $A^c$ and $B^c$ are independent events.
+
+## Problem X
+
+An encryption algorithm generates a seed value $z$ in the following way:
+
+- A binary operator is chosen at random from $\{+,\,\cdot\}$;
+
+- Two *distinct* numbers $x$ and $y$ are chosen at random from the set $\{1,\,2,\,...,\,9\}$ and the binary operation chosen above acts on $x$ and $y$ to produce $z$.
+
+a. What is the probability that $z$ is an even number?
+b. You notice that the algorithm generates an even $z$ value. Given this, what is the probability that the $+$ operator was used to generate it?
+
+## Problem X
+
+![](images/circuit.png){fig-align="center" width="60%"}
+
+The figure above displays a circuit. Switch $S_i$ closes with probability $p_i$, and the switches close independently of one another. What is the probability that electricity can flow from $A$ to $G$?
+
+## Submission
+
+You are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.

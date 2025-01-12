@@ -1,0 +1,77 @@
+---
+title: "Problem Set 1"
+subtitle: Due Thursday January 23 at 12PM
+---
+
+## Problem 0
+
+Recommend some music for us to listen to while we grade this.
+
+## Problem 1
+
+Persi Diaconis is a famous researcher in probability and statistics. He has a cute line of research where he probes the randomness that we take for granted in simple things like coin tossing, dice, and playing cards. In this [Numberphile interview](https://youtu.be/AYnJv68T3MM), he discusses coin tossing, and says both "coin tossing is as close to a random phenomenon as I know" and "coin tossing is a deterministic process. What's random about it?" Wut?
+
+Watch the interview, and report back with a brief summary of Diaconis' explanation of what makes a coin toss random. Do you agree or disagree?
+
+## Problem 2
+
+"Prove" De Morgan's second law with a picture:
+
+$$
+(A\cap B)^{c}=A^{c}\cup B^{c}.
+$$
+
+## Problem 3
+  
+  
+Rigorously prove this distributive property:
+
+$$
+(A\cap B)\cup C = (A\cup C)\cap(B\cup C).
+$$
+
+::: {.callout-tip collapse="true"}
+## Hint
+Your solution will probably have take the following form:
+
+*Proof.* 
+
+- (showing $\subseteq$) Let $x\in(A\cap B)\cup C$...yadayadayadablahblah...Therefore, $x\in(A\cup C)\cap(B\cup C)$;
+- (showing $\supseteq$) Let $x\in(A\cup C)\cap(B\cup C)$...yadayadayadablahblah...Therefore, $x\in(A\cap B)\cup C$.
+
+Having established subsethood in both directions, we have the result. □
+:::
+
+## Problem 4
+
+Prove that
+  
+$$
+P(A)+P(B)-1\leq P(A\cap B).
+$$
+
+## Problem 5
+
+Let $A$ and $B$ be events in a sample space $S$. Let $C$ be the set of outcomes that are in either $A$ or $B$, but *not* both.
+  
+a. Express $C$ in terms of $A$ and $B$ using any of the basic operations: union, intersection, complement. A picture will probably help.
+
+b. Prove that 
+
+$$
+P(\text{``$A$ or $B$ but not both''})=P(A)+P(B)-2P(A\cap B).
+$$
+
+c. Explain this result conceptually (with words and pictures).
+
+## Problem 6
+  
+Assume that $P(A)>0$ and prove that 
+
+$$
+P(A\cap B\,|\, A)\geq P(A\cap B\,|\, A\cup B).
+$$
+
+## Submission
+
+You are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.
