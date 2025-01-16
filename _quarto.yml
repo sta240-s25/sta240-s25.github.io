@@ -79,7 +79,7 @@ website:
             text: Problem Set 0
       - section: "Labs"
         contents:
-          - href: psets/lab-1.qmd
+          - href: labs/lab-1.qmd
             text: Lab 1
             
   page-footer:
