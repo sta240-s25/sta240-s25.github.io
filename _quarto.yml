@@ -77,6 +77,10 @@ website:
         contents:
           - href: psets/pset_0.qmd
             text: Problem Set 0
+      - section: "Labs"
+        contents:
+          - href: psets/lab-1.qmd
+            text: Lab 1
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'
