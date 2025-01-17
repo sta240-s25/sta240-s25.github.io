@@ -413,21 +413,42 @@
     "href": "psets/pset_1.html#problem-2",
     "title": "Problem Set 1",
     "section": "Problem 2",
-    "text": "Problem 2\n“Prove” De Morgan’s second law with a picture:\n\\[\n(A\\cap B)^{c}=A^{c}\\cup B^{c}.\n\\]"
+    "text": "Problem 2\nTake \\(\\mathbb{R}\\) to be your reference set, and consider these subsets: \\[\n\\begin{align*}\nA&=[1,\\,5]\\\\\nB&=\\{x\\in\\mathbb{R}\\,:\\,|x|&gt;2\\}\\\\\nC&=(-\\infty,\\,0].\n\\end{align*}\n\\] Express each of the following in as simplified and concise a form as possible:\n\n\\(A^c\\)\n\\(A \\cup B\\)\n\\(B \\cap C^c\\)\n\\(A^c \\cap B^c \\cap C^c\\)\n\\((A \\cup B) \\cap C\\)"
   },
   {
     "objectID": "psets/pset_1.html#problem-3",
     "href": "psets/pset_1.html#problem-3",
     "title": "Problem Set 1",
     "section": "Problem 3",
-    "text": "Problem 3\nProve that\n\\[\nP(A)+P(B)-1\\leq P(A\\cap B).\n\\]"
+    "text": "Problem 3\n“Prove” De Morgan’s second law with a picture:\n\\[\n(A\\cap B)^{c}=A^{c}\\cup B^{c}.\n\\]"
   },
   {
     "objectID": "psets/pset_1.html#problem-4",
     "href": "psets/pset_1.html#problem-4",
     "title": "Problem Set 1",
     "section": "Problem 4",
-    "text": "Problem 4\nLet \\(A\\) and \\(B\\) be events in a sample space \\(S\\). Let \\(C\\) be the set of outcomes that are in either \\(A\\) or \\(B\\), but not both.\n\nExpress \\(C\\) in terms of \\(A\\) and \\(B\\) using any of the basic operations: union, intersection, complement. A picture will probably help.\nProve that\n\n\\[\nP(C)=P(A)+P(B)-2P(A\\cap B).\n\\]\n\nExplain this result conceptually (with words and pictures)."
+    "text": "Problem 4\nProve that\n\\[\nP(A)+P(B)-1\\leq P(A\\cap B).\n\\]"
+  },
+  {
+    "objectID": "psets/pset_1.html#problem-5",
+    "href": "psets/pset_1.html#problem-5",
+    "title": "Problem Set 1",
+    "section": "Problem 5",
+    "text": "Problem 5\nLet \\(A\\) and \\(B\\) be events in a sample space \\(S\\). Let \\(C\\) be the set of outcomes that are in either \\(A\\) or \\(B\\), but not both.\n\nDraw a well-labeled picture of \\(S\\), \\(A\\), \\(B\\), and \\(C\\).\nWrite down a formula for \\(C\\) in terms of \\(A\\) and \\(B\\) using any of the basic operations: union, intersection, complement.\nProve that\n\n\\[\nP(C)=P(A)+P(B)-2P(A\\cap B).\n\\]\n\nExplain this result conceptually (with words and pictures)."
+  },
+  {
+    "objectID": "psets/pset_1.html#problem-6",
+    "href": "psets/pset_1.html#problem-6",
+    "title": "Problem Set 1",
+    "section": "Problem 6",
+    "text": "Problem 6\nLet \\(S\\) be a sample space, and consider events \\(A,\\, B,\\, C\\subseteq S\\). Recall that the law of inclusion/exclusion says that\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B).\n\\]\n\nHow should this be extended to unions of three events? \\[\nP(A\\cup B\\cup C)=P(A)+P(B)+P(C)+...{???}\n\\] Explain your conjecture with words and pictures.\nProve your conjecture."
+  },
+  {
+    "objectID": "psets/pset_1.html#problem-7",
+    "href": "psets/pset_1.html#problem-7",
+    "title": "Problem Set 1",
+    "section": "Problem 7",
+    "text": "Problem 7\nSuppose we have the sample space \\(S=\\mathbb{N}=\\{0,\\,1,\\,2,\\,...\\}\\) and a probability measure \\(P\\) that assigns the following individual probabilities to the singleton sets: \\[\nP(\\{i\\})=c\\frac{4^i}{i!},\\quad i\\in\\mathbb{N}.\n\\]\n\nIn order for \\(P\\) to satisfy the axiom of total measure one, what must be the value of the constant \\(c&gt;0\\).\nWhich outcome(s) in the sample space are most likely (ie have the largest individual probability of occurring)?"
   },
   {
     "objectID": "psets/pset_1.html#submission",
@@ -435,6 +456,13 @@
     "title": "Problem Set 1",
     "section": "Submission",
     "text": "Submission\nYou are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem."
+  },
+  {
+    "objectID": "psets/pset_1.html#point-values",
+    "href": "psets/pset_1.html#point-values",
+    "title": "Problem Set 1",
+    "section": "Point values",
+    "text": "Point values\n\n\n\nProblem\nPoints\n\n\n\n\n1\n5\n\n\n2.a\n2\n\n\n2.b\n2\n\n\n2.c\n2\n\n\n2.d\n2\n\n\n2.e\n2\n\n\n3\n5\n\n\n4\n5\n\n\n5.a\n2\n\n\n5.b\n2\n\n\n5.c\n5\n\n\n5.d\n1\n\n\n6.a\n5\n\n\n6.b\n5\n\n\n7.a\n5\n\n\n7.b\n5\n\n\nTOTAL\n55"
   },
   {
     "objectID": "psets/pset_2.html",
@@ -637,7 +665,7 @@
     "href": "index.html",
     "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nDS: 1.5 - 1.6\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\n\n\n\n\n\nWed, Jan 15\n\nDS: 1.5 - 1.6\nProbability rules\n\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nCounting\n\n\n\n\n\nThu, Jan 23\n\nLab 2\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nConditioning\n\n\n\n\n\nWed, Jan 29\n\nIndependence\n\n\n\n\n\nThu, Jan 30\n\nLab 3\n\n\n\n\n4\nMon, Feb 3\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 5\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 6\n\nLab 4\n\nPSET 2 @ 12PM\n\n\n5\nMon, Feb 10\n\nDiscrete random variables\n\n\n\n\n\nWed, Feb 12\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\n\nPSET 3 @ 12PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 20\n\nLab 5\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nTransformations\n\n\n\n\n\nThu, Feb 27\n\nLab 6: RNGs\n\n\n\n\n8\nMon, Mar 3\n\nJoint distributions\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 7\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nLinear combinations of random variables\n\n\n\n\n\nWed, Mar 19\n\nTail bounds\n\n\n\n\n\nThu, Mar 20\n\nLab 8\n\n\n\n\n11\nMon, Mar 24\n\nLaw of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 9\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 10\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
