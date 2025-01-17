@@ -77,6 +77,8 @@ website:
         contents:
           - href: psets/pset_0.qmd
             text: Problem Set 0
+          - href: psets/pset_1.qmd
+            text: Problem Set 1
       - section: "Labs"
         contents:
           - href: labs/lab-1.qmd
