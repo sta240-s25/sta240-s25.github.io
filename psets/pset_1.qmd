@@ -15,13 +15,29 @@ Watch the interview, and report back with a brief summary of Diaconis' explanati
 
 ## Problem 2
 
+Take $\mathbb{R}$ to be your reference set, and consider these subsets: $$
+\begin{align*}
+A&=[1,\,5]\\
+B&=\{x\in\mathbb{R}\,:\,|x|>2\}\\
+C&=(-\infty,\,0].
+\end{align*}
+$$ Express each of the following in as simplified and concise a form as possible:
+
+a.  $A^c$
+b.  $A \cup B$
+c.  $B \cap C^c$
+d.  $A^c \cap B^c \cap C^c$
+e.  $(A \cup B) \cap C$
+
+## Problem 3
+
 "Prove" De Morgan's second law with a picture:
 
 $$
 (A\cap B)^{c}=A^{c}\cup B^{c}.
 $$
 
-## Problem 3
+## Problem 4
 
 Prove that
 
@@ -29,20 +45,68 @@ $$
 P(A)+P(B)-1\leq P(A\cap B).
 $$
 
-## Problem 4
+## Problem 5
 
 Let $A$ and $B$ be events in a sample space $S$. Let $C$ be the set of outcomes that are in either $A$ or $B$, but *not* both.
 
-a.  Express $C$ in terms of $A$ and $B$ using any of the basic operations: union, intersection, complement. A picture will probably help.
+a.  Draw a well-labeled picture of $S$, $A$, $B$, and $C$.
 
-b.  Prove that
+b.  Write down a formula for $C$ in terms of $A$ and $B$ using any of the basic operations: union, intersection, complement.
+
+c.  Prove that
 
 $$
 P(C)=P(A)+P(B)-2P(A\cap B).
 $$
 
-c.  Explain this result conceptually (with words and pictures).
+d.  Explain this result conceptually (with words and pictures).
+
+## Problem 6
+
+Let $S$ be a sample space, and consider events $A,\, B,\, C\subseteq S$. Recall that the law of inclusion/exclusion says that
+
+$$
+P(A\cup B)=P(A)+P(B)-P(A\cap B).
+$$
+
+a.  How should this be extended to unions of three events? $$
+    P(A\cup B\cup C)=P(A)+P(B)+P(C)+...{???}
+    $$ Explain your conjecture with words and pictures.
+
+b.  Prove your conjecture.
+
+## Problem 7
+
+Suppose we have the sample space $S=\mathbb{N}=\{0,\,1,\,2,\,...\}$ and a probability measure $P$ that assigns the following individual probabilities to the singleton sets: $$
+P(\{i\})=c\frac{4^i}{i!},\quad i\in\mathbb{N}.
+$$
+
+a.  In order for $P$ to satisfy the axiom of total measure one, what *must* be the value of the constant $c>0$.
+
+b.  Which outcome(s) in the sample space are most likely (ie have the largest individual probability of occurring)?
 
 ## Submission
 
 You are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.
+
+## Point values
+
+| Problem  | Points |
+|----------|--------|
+| 1        | 5      |
+| 2.a      | 2      |
+| 2.b      | 2      |
+| 2.c      | 2      |
+| 2.d      | 2      |
+| 2.e      | 2      |
+| 3        | 5      |
+| 4        | 5      |
+| 5.a      | 2      |
+| 5.b      | 2      |
+| 5.c      | 5      |
+| 5.d      | 1      |
+| 6.a      | 5      |
+| 6.b      | 5      |
+| 7.a      | 5      |
+| 7.b      | 5      |
+|**TOTAL** | **55** |
