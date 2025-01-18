@@ -120,7 +120,7 @@ d.  Consult the picture you created in part (a), and write a few sentences expla
 ::: callout-note
 ## "Use a computer"
 
-This is deliberately vague. You are welcome to use any tool you are familiar with: graphing calculator, GeoGebra, R, Matlab, Mathematica, WolframAlpha, Julia, Maple, etc. Just make sure to plop a single image file, however crude, into your final submission.
+This is deliberately vague. You are welcome to use any tool you are familiar with: graphing calculator, GeoGebra, Desmos, R, Matlab, Mathematica, WolframAlpha, Julia, Maple, etc. Just make sure to plop a single image file, however crude, into your final submission.
 :::
 
 ::: {.callout-tip collapse="true"}

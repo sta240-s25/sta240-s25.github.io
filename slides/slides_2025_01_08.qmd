@@ -380,7 +380,7 @@ Say it with me:
 
 -   You are generally discouraged from consulting outside resources. The textbooks, notes, and discussion forum should be self-contained and sufficient. If you find that this is false, let me know and we will get you what you need;
 
--   Hopefully our coding needs are sufficiently basic that you don't feel the need to use outside resources too often, but telling you not use Google etc while coding is just insane. It's fine as long as you cite it.
+-   Hopefully our coding needs are sufficiently basic that you don't feel the need to use outside resources too often, but telling you not to use Google etc while coding is just insane. It's fine as long as you cite it.
 
 ## What level of mathematics should you expect?
 
@@ -437,15 +437,15 @@ In probability, we *assumed* that the coin was fair, and then reasoned from that
 
 ![](images/probstat.png){fig-align="center" width="50%"}
 
-+-----------------+-----------------------------------------------------+
-| **Probability** | Forward problem\                                    |
-|                 | Deductive\                                          |
-|                 | Reasons from rules to consequences                  |
-+-----------------+-----------------------------------------------------+
-| **Statistics**  | Inverse problem\                                    |
-|                 | Inductive\                                          |
-|                 | Observes consequences, and infers rules             |
-+-----------------+-----------------------------------------------------+
++-----------------+--------------------------------------------------+
+| **Probability** | Forward problem\                                 |
+|                 | Deductive\                                       |
+|                 | Reasons from rules to consequences               |
++-----------------+--------------------------------------------------+
+| **Statistics**  | Inverse problem\                                 |
+|                 | Inductive\                                       |
+|                 | Observes consequences, and infers rules          |
++-----------------+--------------------------------------------------+
 
 ## The philosophy of probability
 
