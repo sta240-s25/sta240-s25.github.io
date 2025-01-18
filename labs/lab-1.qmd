@@ -1,5 +1,5 @@
 ---
-title: "STA240 Spring 2025, Lab 1"
+title: "Lab 1"
 subtitle: Due Friday January 17 at 5:00 PM
 format: html
 editor: visual
