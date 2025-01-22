@@ -2,6 +2,9 @@ project:
   type: website
   resources:
     - labs/lab-0.pdf
+    - notes/sta240-01-set-theory.pdf
+    - notes/sta240-02-probability-fundamentals.pdf
+    - notes/sta240-03-counting.pdf
 
 website:
   page-navigation: true
