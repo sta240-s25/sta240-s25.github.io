@@ -338,7 +338,7 @@ window.Quarto = {
 <div class="cell">
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">sides_of_coin</span>, <span class="fl">10</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "H" "T" "H" "H" "H" "T" "H" "T" "T" "H"</code></pre>
+<pre><code> [1] "H" "T" "T" "T" "H" "T" "T" "H" "H" "T"</code></pre>
 </div>
 </div>
 <p>We can also use a different tool to simulate multiple fair coin flips: a <code>for</code>-loop.</p>
@@ -367,11 +367,11 @@ window.Quarto = {
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">coin_prob</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">was_it_heads</span><span class="op">)</span></span>
 <span><span class="va">coin_prob</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.4964</code></pre>
+<pre><code>[1] 0.507</code></pre>
 </div>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">was_it_heads</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_reps</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.4964</code></pre>
+<pre><code>[1] 0.507</code></pre>
 </div>
 </div>
 <p>As expected, we see a proportion rather close to <span class="math inline">\(0.5\)</span>! Due to the randomness of the individual flips and the finite number of flips, you likely won’t observe a proportion exactly equal to <span class="math inline">\(0.5\)</span>. However, the closeness of the proportion to the true probability is an illustration of the frequentist phenomenon of the long-run average. If you play around with the number of flips, you’ll tend to see that the longer the run, the closer the proportion to the true probability.</p>
@@ -389,7 +389,7 @@ window.Quarto = {
 <div class="cell">
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">deck_of_cards</span>, <span class="fl">5</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "AS" "9C" "5C" "3D" "JD"</code></pre>
+<pre><code>[1] "6H" "JD" "3S" "JS" "3D"</code></pre>
 </div>
 </div>
 <p>As in the previous coin-flipping example, we will use a <code>for</code>-loop to simulate <span class="math inline">\(5,000\)</span> different five-card hands. (Imagine that, after dealing each hand, we re-incorporate the dealt hand into the deck and shuffle thoroughly before the next hand is dealt.) We keep track of whether each hand was a full house in other <span class="math inline">\(5,000\)</span>-element vector of Booleans; below are helper functions I defined in order to check whether a particular hand was a full house.</p>
@@ -420,11 +420,11 @@ window.Quarto = {
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fivecard_prob</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">was_house_full</span><span class="op">)</span></span>
 <span><span class="va">fivecard_prob</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.0024</code></pre>
+<pre><code>[1] 0.001</code></pre>
 </div>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">was_house_full</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_reps</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.0024</code></pre>
+<pre><code>[1] 0.001</code></pre>
 </div>
 </div>
 <p>The true probability is approximately <span class="math inline">\(0.0014\)</span> – the long-run average simulations strike again!</p>
