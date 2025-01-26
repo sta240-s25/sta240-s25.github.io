@@ -11,10 +11,10 @@ Recommend some music for us to listen to while we grade this.
 
 Seven balls are randomly withdrawn from an urn that contains 12 red, 16 blue, and 18 green balls. Find the probability that
 
-a. 3 red, 2 blue, and 2 green balls are withdrawn;
-b. at least 2 red balls are withdrawn;
-c. all withdrawn balls are the same color;
-d. either exactly 3 red balls or exactly 3 blue balls are withdrawn.
+a.  3 red, 2 blue, and 2 green balls are withdrawn;
+b.  at least 2 red balls are withdrawn;
+c.  all withdrawn balls are the same color;
+d.  either exactly 3 red balls or exactly 3 blue balls are withdrawn.
 
 ## Problem X
 
@@ -26,7 +26,7 @@ A pair of fair dice is rolled until a sum of either a 5 or a 7 appears. What is 
 
 ## Problem X
 
-Assume that $P(A)>0$ and prove that 
+Assume that $P(A)>0$ and prove that
 
 $$
 P(A\cap B\,|\, A)\geq P(A\cap B\,|\, A\cup B).
@@ -52,3 +52,13 @@ The figure above displays a circuit. Switch $S_i$ closes with probability $p_i$,
 ## Submission
 
 You are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.
+
+
+## Point values
+
+| Problem   | Points |
+|-----------|--------|
+| 1         | 5      |
+| 2.a       | 2      |
+| **TOTAL** | **55** |
+
