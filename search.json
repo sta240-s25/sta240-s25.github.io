@@ -546,7 +546,7 @@
     "href": "psets/pset_2.html#problem-2",
     "title": "Problem Set 2",
     "section": "Problem 2",
-    "text": "Problem 2\nSuppose you are dealt six cards from a well-shuffled, standard deck of 52.\n\nWhat is the probability of getting 3 of one kind and 3 of another?\nWhat is the probability of getting 4 of one kind and 2 of another?\nWhat is the probability of getting 3 aces and 3 of another kind?\nWhat is the probability of getting 4 of one kind and 2 aces?\nWhat is the probability that all 6 cards are in the same suit?\nWhat is the probability that all 6 cards are consecutive (ie a hand with 3 hearts, 4 spades, 5 spades, 6 clubs, 7 hearts, and the 8 diamonds)? Assume that the ace can only be the high card;\nWhat is the answer to the previous question if we allow the ace to be either high or low?\nWhat is the probability of receiving the ace, king, queen, jack, 10 and 9 all in hearts?",
+    "text": "Problem 2\nSuppose you are dealt six cards from a well-shuffled, standard deck of 52.\n\nWhat is the probability of getting 3 of one rank and 3 of another?\nWhat is the probability of getting 4 of one rank and 2 of another?\nWhat is the probability of getting 3 aces and 3 of another rank?\nWhat is the probability of getting 4 of one rank and 2 aces?\nWhat is the probability that all 6 cards are in the same suit?\nWhat is the probability that all 6 cards are consecutive (ie a hand with 3 hearts, 4 spades, 5 spades, 6 clubs, 7 hearts, and the 8 diamonds)? Assume that the ace can only be the high card;\nWhat is the answer to the previous question if we allow the ace to be either high or low?\nWhat is the probability of receiving the ace, king, queen, jack, 10 and 9 all in hearts?",
     "crumbs": [
       "Problem Sets",
       "Problem Set 2"
