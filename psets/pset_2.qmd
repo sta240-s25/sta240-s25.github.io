@@ -20,23 +20,22 @@ d.  either exactly 3 red balls or exactly 3 blue balls are withdrawn.
 
 Suppose you are dealt six cards from a well-shuffled, standard deck of 52.
 
-a. What is the probability of getting 3 of one kind and 3 of another?
-b. What is the probability of getting 4 of one kind and 2 of another?
-c. What is the probability of getting 3 aces and 3 of another kind?
-d. What is the probability of getting 4 of one kind and 2 aces?
-e. What is the probability that all 6 cards are in the same suit?
-f. What is the probability that all 6 cards are consecutive (ie a hand with 3 hearts, 4 spades, 5 spades, 6 clubs, 7 hearts, and the 8 diamonds)? Assume that the ace can only be the high card;
-g. What is the answer to the previous question if we allow the ace to be either high or low?
-h. What is the probability of receiving the ace, king, queen, jack, 10 and 9 all in hearts?
-
+a.  What is the probability of getting 3 of one rank and 3 of another?
+b.  What is the probability of getting 4 of one rank and 2 of another?
+c.  What is the probability of getting 3 aces and 3 of another rank?
+d.  What is the probability of getting 4 of one rank and 2 aces?
+e.  What is the probability that all 6 cards are in the same suit?
+f.  What is the probability that all 6 cards are consecutive (ie a hand with 3 hearts, 4 spades, 5 spades, 6 clubs, 7 hearts, and the 8 diamonds)? Assume that the ace can only be the high card;
+g.  What is the answer to the previous question if we allow the ace to be either high or low?
+h.  What is the probability of receiving the ace, king, queen, jack, 10 and 9 all in hearts?
 
 ## Problem 3
 
 In an election, candidate $A$ received 2,656 votes, and candidate $B$ received 2,594 votes. So $A$ won. Then it was discovered that 136 ineligible people had voted. A judge ruled that the election should be redone from scratch. Candidate $A$ appealed this ruling, arguing that if the 136 ineligible votes were randomly reallocated to the two candidates, the probability that the election results change would be extremely small.
 
-a. What is the probability that $m$ of the 136 ineligible votes were cast for candidate $A$? Treat $m$ as an arbitrary constant in $\{0,\,1,\,2,\,...,\,136\}$;
-b. For what values of $m$ would the results change?
-c. What is the probability that the results would change?
+a.  What is the probability that $m$ of the 136 ineligible votes were cast for candidate $A$? Treat $m$ as an arbitrary constant in $\{0,\,1,\,2,\,...,\,136\}$;
+b.  For what values of $m$ would the results change?
+c.  What is the probability that the results would change?
 
 ## Problem 4
 
@@ -79,9 +78,9 @@ The figure above displays a circuit. Switch $S_i$ closes with probability $p_i$,
 
 Consider the "extended" Monty Hall problem:
 
-- there are $n$ doors. A car is behind one door and goats are behind the other $n-1$ doors;
-- the contestant selects one door. Instead of opening that door, the game show host then opens $0 \leq k \leq n-2$ of the remaining doors to reveal $k$ goats. Note that $k$ must not exceed $n-2$, since the host does not open your door or the door with the car;
-- the contestant is given an option: either they can stay with their originally chosen door or they can switch to one of the other remaining door that the host did not open. 
+-   there are $n$ doors. A car is behind one door and goats are behind the other $n-1$ doors;
+-   the contestant selects one door. Instead of opening that door, the game show host then opens $0 \leq k \leq n-2$ of the remaining doors to reveal $k$ goats. Note that $k$ must not exceed $n-2$, since the host does not open your door or the door with the car;
+-   the contestant is given an option: either they can stay with their originally chosen door or they can switch to one of the other remaining door that the host did not open.
 
 What is the probability that switching your choice of door results in a win?
 
