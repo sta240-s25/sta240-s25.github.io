@@ -88,6 +88,8 @@ website:
         contents:
           - href: labs/lab-1.qmd
             text: Lab 1
+          - href: labs/lab-2.qmd
+            text: Lab 2
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'
