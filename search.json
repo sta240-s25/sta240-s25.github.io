@@ -797,9 +797,9 @@
   {
     "objectID": "labs/lab-3.html",
     "href": "labs/lab-3.html",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "",
-    "text": "A vector in R is just an ordered set of values. The easiest way to create one is to manually list out the values, separated by commas, inside c():\n\nmyvec &lt;- c(pi, 5, 3.6, 2, 9, 6000) \nmyvec\n\n[1]    3.141593    5.000000    3.600000    2.000000    9.000000 6000.000000\n\n\nIf you want to list out all of the integers between some min and max, you can use this shortcut:\n\n5:15\n\n [1]  5  6  7  8  9 10 11 12 13 14 15\n\n\nMore generally, if you want a vector of evenly spaced numbers between a min and a max, do this:\n\na &lt;- seq(0, 1, length.out = 11) \na\n\n [1] 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0\n\n\nIf you want to create a “blank” vector that just has zeros in it, here you go:\n\nz &lt;- numeric(10)\nz\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nIn all of those cases, our vector contained numbers, but there is nothing special about numbers. Here is a vector where each value is a string (a piece of text):\n\npoetry &lt;- c(\"Mary\", \"had\", \"a\", \"little\", \"chainsaw\")\npoetry\n\n[1] \"Mary\"     \"had\"      \"a\"        \"little\"   \"chainsaw\"\n\n\nIn Lab 1 you learned about the sample command. This can be used to simulate a random phenomenon with a finite sample space. To simulate five flips of a fair coin:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE)\n\n[1] \"T\" \"H\" \"H\" \"H\" \"T\"\n\n\nThe vector c(\"H\", \"T\") represents the sample space, size = 5 is the number of simulations you want to perform, and replace = TRUE ensures that you are repeating the trial from scratch each time. By default, sample assumes that all outcomes are equally likely. To override this, you can supply a vector of probabilities:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE, prob = c(0.8, 0.2))\n\n[1] \"H\" \"H\" \"H\" \"T\" \"H\"\n\n\nYou see that the vector is the same length as the sample space (so every outcome gets its own individual probability), and the probabilities have to sum to one.",
+    "text": "A vector in R is just an ordered set of values. The easiest way to create one is to manually list out the values, separated by commas, inside c():\n\nmyvec &lt;- c(pi, 5, 3.6, 2, 9, 6000) \nmyvec\n\n[1]    3.141593    5.000000    3.600000    2.000000    9.000000 6000.000000\n\n\nIf you want to list out all of the integers between some min and max, you can use this shortcut:\n\n5:15\n\n [1]  5  6  7  8  9 10 11 12 13 14 15\n\n\nMore generally, if you want a vector of evenly spaced numbers between a min and a max, do this:\n\na &lt;- seq(0, 1, length.out = 11) \na\n\n [1] 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0\n\n\nIf you want to create a “blank” vector that just has zeros in it, here you go:\n\nz &lt;- numeric(10)\nz\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nIn all of those cases, our vector contained numbers, but there is nothing special about numbers. Here is a vector where each value is a string (a piece of text):\n\npoetry &lt;- c(\"Mary\", \"had\", \"a\", \"little\", \"chainsaw\")\npoetry\n\n[1] \"Mary\"     \"had\"      \"a\"        \"little\"   \"chainsaw\"\n\n\nIn Lab 1 you learned about the sample command. This can be used to simulate a random phenomenon with a finite sample space. To simulate five flips of a fair coin:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE)\n\n[1] \"H\" \"H\" \"T\" \"H\" \"T\"\n\n\nThe vector c(\"H\", \"T\") represents the sample space, size = 5 is the number of simulations you want to perform, and replace = TRUE ensures that you are repeating the trial from scratch each time. By default, sample assumes that all outcomes are equally likely. To override this, you can supply a vector of probabilities:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE, prob = c(0.8, 0.2))\n\n[1] \"H\" \"H\" \"H\" \"H\" \"H\"\n\n\nYou see that the vector is the same length as the sample space (so every outcome gets its own individual probability), and the probabilities have to sum to one.",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -808,7 +808,7 @@
   {
     "objectID": "labs/lab-3.html#task-1",
     "href": "labs/lab-3.html#task-1",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 1",
     "text": "Task 1\nWe have provided you with a pre-trained language model kn, a vector midsummer_words containing the 3,063 unique words in the play, and a function next_word_probs:\n\ncond_dist &lt;- next_word_probs(context, midsummer_words, kn)\ntail(cond_dist)\n\n         words         prob\n3058  unearned 3.375323e-05\n3059    'scape 3.375323e-05\n3060 serpent's 3.375323e-05\n3061    amends 6.751470e-05\n3062      liar 3.375323e-05\n3063   restore 3.375323e-05\n\n\nSo, given the context, the set of possible words, and the model, it returns a table (a data frame) listing out all the words together with their conditional probabilities given the context.\nRun this function and use the output together with the sample function to simulate a new word.",
     "crumbs": [
@@ -819,7 +819,7 @@
   {
     "objectID": "labs/lab-3.html#task-2",
     "href": "labs/lab-3.html#task-2",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 2",
     "text": "Task 2\nUse the paste function to append the word you simulated in Task 1 to the end of context. Then, starting from this updated context, go back to the beginning, generate a new conditional distribution, and use it to simulate a new word.",
     "crumbs": [
@@ -830,7 +830,7 @@
   {
     "objectID": "labs/lab-3.html#task-3",
     "href": "labs/lab-3.html#task-3",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 3",
     "text": "Task 3\nWrite a for loop that iterates the process in Tasks 1 and 2 in order to add six new words to the context.",
     "crumbs": [
@@ -841,7 +841,7 @@
   {
     "objectID": "labs/lab-3.html#task-4",
     "href": "labs/lab-3.html#task-4",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 4",
     "text": "Task 4\nRerun your code ten times to generate ten different responses. How many of them would you consider basically coherent?",
     "crumbs": [
@@ -852,7 +852,7 @@
   {
     "objectID": "labs/lab-3.html#task-5",
     "href": "labs/lab-3.html#task-5",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 5",
     "text": "Task 5\nNow that you have the basic code, play around with different starting contexts besides “now fair hippolyta.” Bear in mind that our world is small here. We’ve trained the model on a single, old text, so if you want coherent responses, you should probably give it something in the ballpark of what it has seen before. I doubt “which banger slaps hardest my dude” will yield anything meaningful (though feel free to try!). For inspiration, here is the full text of the original play.",
     "crumbs": [
@@ -863,9 +863,9 @@
   {
     "objectID": "labs/lab-3.html#task-6",
     "href": "labs/lab-3.html#task-6",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 6",
-    "text": "Task 6\nUp to now we’ve been worrying a lot about individual words, but individual words don’t create meaning. It’s how those words interact across phrases and sentences and paragraphs. Unfortunately, we do not have methods for inducing a probability distribution over the set of all possible sentences, or the set of all possible thoughts. But in a sense, language models are attempting to approximate such a thing. And on the evidence to date, maybe they succeed sometimes. Anyway, how do we go from a method that gets things right on the word level to a method that gets things right on the sentence level? Well, therein lies the art of the engineers that work on these things, but one method they have found helpful is something called temperature sampling.\nSo far, given the current context, the model returns a (conditional) probability \\(p(i)\\) for each word \\(i\\in \\text{corpus}\\). So far we’ve used these probabilities unmodified. With temperature sampling, before we draw the next word, we would first adjust the probabilities based on a user-defined tuning parameters \\(t\\) called the temperature:\n\\[\np_t(i) = \\frac{e^{\\ln\\frac{p(i)}{t}}}{\\sum\\limits_{i\\in\\text{corpus}}e^{\\ln\\frac{p(i)}{t}}}.\n\\]\nIf \\(t=1.0\\), we’re back to the original probabilities. Otherwise, to quote the \\(k\\)-grams people, “higher and lower temperatures make the original probability distribution smoother and rougher, respectively. By making a physical analogy, we can think of less probable words as states with higher energies, and the effect of higher (lower) temperatures is to make more (less) likely to excite these high energy states.” Why do people do this? To the best of my knowledge, it is no deeper than “it seems to work well.” In practice, adjusting the temperature seems to have a macro effect on the overall character of the sentences, and so this is what people do.\nThe function next_word_probs that we gave you has a fourth argument temp where you can give it a number and it will give you the tempered probabilities. Play around with big and small values, and report any effect that it has on the overall quality of the sentences.",
+    "text": "Task 6\nUp to now we’ve been worrying a lot about individual words, but individual words don’t create meaning. It’s how those words interact across phrases and sentences and paragraphs. Unfortunately, we do not have methods for inducing a probability distribution over the set of all possible sentences, or the set of all possible thoughts. But in a sense, language models are attempting to approximate such a thing. And on the evidence to date, maybe they succeed sometimes. Anyway, how do we go from a method that gets things right on the word level to a method that gets things right on the sentence level? Well, therein lies the art of the engineers that work on these things, and one method they have found helpful is something called temperature sampling.\nSo far, given the current context, the model returns a (conditional) probability \\(p(i)\\) for each word \\(i\\in \\text{corpus}\\). So far we’ve used these probabilities unmodified. With temperature sampling, before we draw the next word, we would first adjust the probabilities based on a user-defined tuning parameter \\(t&gt;0\\) called the temperature:\n\\[\np_t(i) = \\frac{e^{\\ln\\frac{p(i)}{t}}}{\\sum\\limits_{i\\in\\text{corpus}}e^{\\ln\\frac{p(i)}{t}}},\\quad i\\in\\text{corpus}.\n\\]\nIf \\(t=1.0\\), we’re back to the original probabilities (check this!). Otherwise, to quote the \\(k\\)-grams people, “higher and lower temperatures make the original probability distribution smoother and rougher, respectively. By making a physical analogy, we can think of less probable words as states with higher energies, and the effect of higher (lower) temperatures is to make more (less) likely to excite these high energy states.” Why do people do this? To the best of my knowledge, it is no deeper than “it seems to work well.” In practice, adjusting the temperature seems to have a macro effect on the overall character of the sentences.\nThe function next_word_probs that we gave you has a fourth argument temp where you can give it a number and it will give you the tempered probabilities. Play around with big and small values, and report any effect that it has on the overall quality of the sentences.",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -874,7 +874,7 @@
   {
     "objectID": "labs/lab-3.html#task-7",
     "href": "labs/lab-3.html#task-7",
-    "title": "Lab 3",
+    "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "Task 7",
     "text": "Task 7\nCode temperature sampling yourself. Take the probabilities that probs &lt;- next_word_probs(...) gives you when temp = 1.0, and then use basic R commands like exp, log, etc to apply the formula above and compute a vector temp_probs with the revised numbers for temp = 0.5. Check that your numbers agree with the ones that our function next_word_probs gives when you supply 0.5 as the fourth argument.",
     "crumbs": [
