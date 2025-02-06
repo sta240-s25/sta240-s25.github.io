@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>STA 240 Spring 2025</title>
+<title>STA 240 Spring 2025 - Lab 3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,8 +17,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -29,6 +59,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../labs/lab-2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -37,8 +68,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -64,39 +94,55 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
-<meta property="og:title" content="STA 240 Spring 2025">
+}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+<meta property="og:title" content="STA 240 Spring 2025 - Lab 3">
+<meta property="og:description" content="Due Thursday February 6 at 11:59 PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
-
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-3.html">Lab 3</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -105,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
+<li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Syllabus</span></a>
@@ -113,8 +159,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -157,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
@@ -166,8 +212,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 0</span></a>
@@ -179,44 +225,367 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Problem Set 1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../psets/pset_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Set 2</span></a>
+  </div>
+</li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../labs/lab-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab-3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 3</span></a>
+  </div>
+</li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#part-1-vector-refresher" id="toc-part-1-vector-refresher" class="nav-link active" data-scroll-target="#part-1-vector-refresher">Part 1: vector refresher</a></li>
+  <li><a href="#part-2-how-does-chatgpt-generate-the-next-word" id="toc-part-2-how-does-chatgpt-generate-the-next-word" class="nav-link" data-scroll-target="#part-2-how-does-chatgpt-generate-the-next-word">Part 2: how does ChatGPT generate the next word?</a></li>
+  <li>
+<a href="#part-3-now-you-try" id="toc-part-3-now-you-try" class="nav-link" data-scroll-target="#part-3-now-you-try">Part 3: now you try</a>
+  <ul class="collapse">
+<li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
+  <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
+  <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
+  <li><a href="#task-4" id="toc-task-4" class="nav-link" data-scroll-target="#task-4">Task 4</a></li>
+  <li><a href="#task-5" id="toc-task-5" class="nav-link" data-scroll-target="#task-5">Task 5</a></li>
+  <li><a href="#task-6" id="toc-task-6" class="nav-link" data-scroll-target="#task-6">Task 6</a></li>
+  <li><a href="#task-7" id="toc-task-7" class="nav-link" data-scroll-target="#task-7">Task 7</a></li>
+  </ul>
+</li>
+  <li><a href="#part-4-further-reading" id="toc-part-4-further-reading" class="nav-link" data-scroll-target="#part-4-further-reading">Part 4: further reading</a></li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-3.html">Lab 3</a></li></ol></nav><div class="quarto-title">
+<h1 class="title">Lab 3</h1>
+<p class="subtitle lead">Due Thursday February 6 at 11:59 PM</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header><section id="part-1-vector-refresher" class="level1"><h1>Part 1: vector refresher</h1>
+<p>A <em>vector</em> in R is just an ordered set of values. The easiest way to create one is to manually list out the values, separated by commas, inside <code><a href="https://rdrr.io/r/base/c.html">c()</a></code>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">myvec</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">pi</span>, <span class="fl">5</span>, <span class="fl">3.6</span>, <span class="fl">2</span>, <span class="fl">9</span>, <span class="fl">6000</span><span class="op">)</span> </span>
+<span><span class="va">myvec</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]    3.141593    5.000000    3.600000    2.000000    9.000000 6000.000000</code></pre>
+</div>
+</div>
+<p>If you want to list out all of the integers between some min and max, you can use this shortcut:</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">5</span><span class="op">:</span><span class="fl">15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  5  6  7  8  9 10 11 12 13 14 15</code></pre>
+</div>
+</div>
+<p>More generally, if you want a vector of evenly spaced numbers between a min and a max, do this:</p>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, length.out <span class="op">=</span> <span class="fl">11</span><span class="op">)</span> </span>
+<span><span class="va">a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0</code></pre>
+</div>
+</div>
+<p>If you want to create a “blank” vector that just has zeros in it, here you go:</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">numeric</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span>
+<span><span class="va">z</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 0 0 0 0 0 0 0 0 0 0</code></pre>
+</div>
+</div>
+<p>In all of those cases, our vector contained numbers, but there is nothing special about numbers. Here is a vector where each value is a <em>string</em> (a piece of text):</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">poetry</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Mary"</span>, <span class="st">"had"</span>, <span class="st">"a"</span>, <span class="st">"little"</span>, <span class="st">"chainsaw"</span><span class="op">)</span></span>
+<span><span class="va">poetry</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Mary"     "had"      "a"        "little"   "chainsaw"</code></pre>
+</div>
+</div>
+<p>In <a href="https://sta240-s25.github.io/labs/lab-1.html">Lab 1</a> you learned about the <code>sample</code> command. This can be used to simulate a random phenomenon with a finite sample space. To simulate five flips of a fair coin:</p>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"H"</span>, <span class="st">"T"</span><span class="op">)</span>, size <span class="op">=</span> <span class="fl">5</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "T" "H" "H" "H" "T"</code></pre>
+</div>
+</div>
+<p>The vector <code>c("H", "T")</code> represents the sample space, <code>size = 5</code> is the number of simulations you want to perform, and <code>replace = TRUE</code> ensures that you are repeating the trial from scratch each time. By default, <code>sample</code> assumes that all outcomes are equally likely. To override this, you can supply a vector of probabilities:</p>
+<div class="cell">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"H"</span>, <span class="st">"T"</span><span class="op">)</span>, size <span class="op">=</span> <span class="fl">5</span>, replace <span class="op">=</span> <span class="cn">TRUE</span>, prob <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.8</span>, <span class="fl">0.2</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "H" "H" "H" "T" "H"</code></pre>
+</div>
+</div>
+<p>You see that the vector is the same length as the sample space (so every outcome gets its own individual probability), and the probabilities have to sum to one.</p>
+</section><section id="part-2-how-does-chatgpt-generate-the-next-word" class="level1"><h1>Part 2: how does ChatGPT generate the next word?</h1>
+<p>If you’ve ever asked <a href="https://chatgpt.com/">ChatGPT</a> a question, you may have noticed something: it generates its response one word at a time right there in front of you.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="chatgpt.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<p>What exactly is it doing? Well, <a href="https://chatgpt.com/share/677ef289-9564-8008-a662-9f8c2cfb04fc">ask it</a>! If you do, the explanation will go something like this…</p>
+<p>ChatGPT is an example of a <em>large language model</em> (LLM). Under the hood, there’s this fancy pants deep neural network machine learning mumbo jumbo that has been trained on a massive corpus of documents (books, newspaper articles, academic publications, all of Wikipedia, etc). When you ask it a question like “What color is the apple?”, the model asks itself “<em>conditional</em> on the text you just gave me, what is the likely next word?” Based on the text it was trained on and the underlying ML model, ChatGPT constructs a <em>conditional probability distribution</em> over the set of “next words” and simulates from it, like with the <code>sample</code> function. The new word that it simulates gets added to the end of the text you provided, and it repeats the process over again: given where we are <em>now</em>, what is the next word likely to be? And on and on…</p>
+<p>So for example, you ask it “What color is the apple?” Based on that, the model constructs a probability distribution for <span class="math inline">\(P(\text{next word}\,|\,\text{"What color is the apple?"})\)</span>. The sample space <span class="math inline">\(S\)</span> here is (basically) the set of all words that the model has seen. That set could be pretty big, but nevertheless it is finite. So we just need to list out all of the possible words together with their individual probabilities:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Next word</th>
+<th>Conditional probability</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>red</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>is</td>
+<td>0.05</td>
+</tr>
+<tr class="odd">
+<td>the</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td>apple</td>
+<td>0.08</td>
+</tr>
+<tr class="odd">
+<td>amphibian</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>green</td>
+<td>0.05</td>
+</tr>
+<tr class="odd">
+<td>Zito</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td><em>etc</em></td>
+<td><em>etc</em></td>
+</tr>
+</tbody>
+</table>
+<p>Once this is constructed, the model simulates from the distribution. You could imagine that the code might look something like <code>sample(words, size = 1, prob = conditional_probs)</code>. So say that happens and the next word we simulate is “the.” That gets added to the end, and now we want to know <span class="math inline">\(P(\text{next word}\,|\,\text{"What color is the apple? the"})\)</span>. So we query the underlying model, and it constructs a new distribution on words, conditional on this revised context:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Next word</th>
+<th>Conditional probability</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>red</td>
+<td>0.09</td>
+</tr>
+<tr class="even">
+<td>is</td>
+<td>0.04</td>
+</tr>
+<tr class="odd">
+<td>the</td>
+<td>0.001</td>
+</tr>
+<tr class="even">
+<td>apple</td>
+<td>0.21</td>
+</tr>
+<tr class="odd">
+<td>amphibian</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>green</td>
+<td>0.05</td>
+</tr>
+<tr class="odd">
+<td>Zito</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td><em>etc</em></td>
+<td><em>etc</em></td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the information we are conditioning on has changed, so the probabilities change. Based on the new probabilities, we simulate the next word. Let’s say it ends up being “apple.” So we add that to the end, and ask the model to construct a new distribution for <span class="math inline">\(P(\text{next word}\,|\,\text{"What color is the apple? the apple"})\)</span>:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Next word</th>
+<th>Conditional probability</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>red</td>
+<td>0.07</td>
+</tr>
+<tr class="even">
+<td>is</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>the</td>
+<td>0.001</td>
+</tr>
+<tr class="even">
+<td>apple</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>amphibian</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>green</td>
+<td>0.09</td>
+</tr>
+<tr class="odd">
+<td>Zito</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td><em>etc</em></td>
+<td><em>etc</em></td>
+</tr>
+</tbody>
+</table>
+<p>Now we simulate “is,” add that to the end, and query the model for <span class="math inline">\(P(\text{next word}\,|\,\text{"What color is the apple? the apple is"})\)</span>:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th>Next word</th>
+<th>Conditional probability</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>red</td>
+<td>0.35</td>
+</tr>
+<tr class="even">
+<td>is</td>
+<td>0.01</td>
+</tr>
+<tr class="odd">
+<td>the</td>
+<td>0.001</td>
+</tr>
+<tr class="even">
+<td>apple</td>
+<td>0.001</td>
+</tr>
+<tr class="odd">
+<td>amphibian</td>
+<td>0.002</td>
+</tr>
+<tr class="even">
+<td>green</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<td>Zito</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td><em>etc</em></td>
+<td><em>etc</em></td>
+</tr>
+</tbody>
+</table>
+<p>We see at this point that “red” is the most likely next word, but we are not searching the table for the most likely next word and slavishly returning it. We are simulating. So there’s a 35% chance we’ll come up with “red,” but also a non-trivial possibility that we’ll come up with “green.” You will notice that if you ask ChatGPT the exact same question multiple times (literally the identical text prompt), it returns different answers. That is because of this element of randomness.</p>
+<p>Obviously, the elephant in the room in the above discussion is “where did the probabilities come from?” This is the magic, such as it is, of LLMs. In order to implement this scheme, we need to be able to construct a conditional probability distribution on words given <em>any</em> context. So no matter if you give it “What color is the apple” or “Explain string theory like I’m a genius” or “Why did my wife leave me” or “que se passe t’il,” it needs to come up with a meaningful and useful distribution for the next word, and it has to repeat this thousands if not millions of times. There are so many possibilities that it’s kind of bonkers to expect to be able to do this, but with enough data and computing power and a big enough model, apparently we can pull it off (at least some of the time).</p>
+<p>So, the question of “where did the probabilities come from?” is sadly beyond the scope of our course. However, the question of “what do you do with the probabilities once you have them?” is perfectly accessible to us, even at this early stage, so let’s have some fun…</p>
+</section><section id="part-3-now-you-try" class="level1"><h1>Part 3: now you try</h1>
+<p>The <a href="https://en.wikipedia.org/wiki/Word_n-gram_language_model"><span class="math inline">\(k\)</span>-gram language model</a> is I guess what you’d call a “small language model.” Next to ChatGPT, it looks prehistoric. But it is simple and can be comfortably run on a laptop. We have trained this SLM on a single document: the text of Shakespeare’s <em>A Midsummer Night’s Dream</em>. Given the pre-trained model we are handing you, we ask that you implement the recursive scheme above in order to generate a text response, the same way ChatGPT does.</p>
+<p>In all cases, the starting <code>context</code> is</p>
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">context</span> <span class="op">&lt;-</span> <span class="st">"now fair hippolyta"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Hippolyta is Queen of the Amazons in the play. Let’s see if our model can spit game.</p>
+<section id="task-1" class="level2"><h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<p>We have provided you with a pre-trained language model <code>kn</code>, a vector <code>midsummer_words</code> containing the 3,063 unique words in the play, and a function <code>next_word_probs</code>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cond_dist</span> <span class="op">&lt;-</span> <span class="fu">next_word_probs</span><span class="op">(</span><span class="va">context</span>, <span class="va">midsummer_words</span>, <span class="va">kn</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span><span class="op">(</span><span class="va">cond_dist</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         words         prob
+3058  unearned 3.375323e-05
+3059    'scape 3.375323e-05
+3060 serpent's 3.375323e-05
+3061    amends 6.751470e-05
+3062      liar 3.375323e-05
+3063   restore 3.375323e-05</code></pre>
+</div>
+</div>
+<p>So, given the context, the set of possible words, and the model, it returns a table (a <em>data frame</em>) listing out all the words together with their <em>conditional probabilities</em> given the context.</p>
+<p>Run this function and use the output together with the <code>sample</code> function to simulate a new word.</p>
+</section><section id="task-2" class="level2"><h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+<p>Use the <code>paste</code> function to append the word you simulated in Task 1 to the end of <code>context</code>. Then, starting from this updated context, go back to the beginning, generate a new conditional distribution, and use it to simulate a new word.</p>
+</section><section id="task-3" class="level2"><h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+<p>Write a for loop that iterates the process in Tasks 1 and 2 in order to add six new words to the context.</p>
+</section><section id="task-4" class="level2"><h2 class="anchored" data-anchor-id="task-4">Task 4</h2>
+<p>Rerun your code ten times to generate ten different responses. How many of them would you consider <em>basically</em> coherent?</p>
+</section><section id="task-5" class="level2"><h2 class="anchored" data-anchor-id="task-5">Task 5</h2>
+<p>Now that you have the basic code, play around with different starting contexts besides “now fair hippolyta.” Bear in mind that our world is small here. We’ve trained the model on a single, old text, so if you want coherent responses, you should probably give it something in the ballpark of what it has seen before. I doubt “which banger slaps hardest my dude” will yield anything meaningful (though feel free to try!). For inspiration, <a href="https://shakespeare.mit.edu/midsummer/full.html">here</a> is the full text of the original play.</p>
+</section><section id="task-6" class="level2"><h2 class="anchored" data-anchor-id="task-6">Task 6</h2>
+<p>Up to now we’ve been worrying a lot about individual words, but individual words don’t create meaning. It’s how those words interact across phrases and sentences and paragraphs. Unfortunately, we do not have methods for inducing a probability distribution over the set of all possible sentences, or the set of all possible thoughts. But in a sense, language models are attempting to <em>approximate</em> such a thing. And on the evidence to date, maybe they succeed sometimes. Anyway, how do we go from a method that gets things right on the word level to a method that gets things right on the sentence level? Well, therein lies the art of the engineers that work on these things, but one method they have found helpful is something called <em>temperature sampling</em>.</p>
+<p>So far, given the current context, the model returns a (conditional) probability <span class="math inline">\(p(i)\)</span> for each word <span class="math inline">\(i\in \text{corpus}\)</span>. So far we’ve used these probabilities unmodified. With temperature sampling, before we draw the next word, we would first adjust the probabilities based on a user-defined tuning parameters <span class="math inline">\(t\)</span> called the temperature:</p>
+<p><span class="math display">\[
+p_t(i) = \frac{e^{\ln\frac{p(i)}{t}}}{\sum\limits_{i\in\text{corpus}}e^{\ln\frac{p(i)}{t}}}.
+\]</span></p>
+<p>If <span class="math inline">\(t=1.0\)</span>, we’re back to the original probabilities. Otherwise, to quote the <span class="math inline">\(k\)</span>-grams people, “higher and lower temperatures make the original probability distribution smoother and rougher, respectively. By making a physical analogy, we can think of less probable words as states with higher energies, and the effect of higher (lower) temperatures is to make more (less) likely to excite these high energy states.” Why do people do this? To the best of my knowledge, it is no deeper than “it seems to work well.” In practice, adjusting the temperature seems to have a macro effect on the overall character of the <em>sentences</em>, and so this is what people do.</p>
+<p>The function <code>next_word_probs</code> that we gave you has a fourth argument <code>temp</code> where you can give it a number and it will give you the <em>tempered</em> probabilities. Play around with big and small values, and report any effect that it has on the overall quality of the sentences.</p>
+</section><section id="task-7" class="level2"><h2 class="anchored" data-anchor-id="task-7">Task 7</h2>
+<p>Code temperature sampling yourself. Take the probabilities that <code>probs &lt;- next_word_probs(...)</code> gives you when <code>temp = 1.0</code>, and then use basic R commands like <code>exp</code>, <code>log</code>, etc to apply the formula above and compute a vector <code>temp_probs</code> with the revised numbers for <code>temp = 0.5</code>. Check that your numbers agree with the ones that our function <code>next_word_probs</code> gives when you supply <code>0.5</code> as the fourth argument.</p>
+</section></section><section id="part-4-further-reading" class="level1"><h1>Part 4: further reading</h1>
+<p>If you’re interested in this stuff…</p>
+<ul>
+<li>The guy who created WolframAlpha has a nice <a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">primer</a>;</li>
+<li>People seemed to like <a href="https://youtu.be/zjkBMFhNj_g?feature=shared">this video</a> when it made the rounds a few years back;</li>
+<li>The <span class="math inline">\(k\)</span>-grams model might serve as “baby’s first language model.” It looks naive compared to the LLMs of today, but in order to understand how it works, you have to confront ideas like tokenization and temperature sampling, which apply to all language models, big or small. <a href="https://cran.r-project.org/web/packages/kgrams/vignettes/kgrams.html">This</a> is the <code>R</code> package that we used for this lab.</li>
+</ul>
 
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -624,10 +993,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../labs/lab-2.html" class="pagination-link" aria-label="Lab 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2025 John Zito</p>
 </div>   
@@ -639,8 +1014,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
