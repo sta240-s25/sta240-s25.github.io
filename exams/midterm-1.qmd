@@ -77,6 +77,7 @@ p & \text{if }x \in \{1, 2,\dots, 36\} \\
 \end{cases}
 $$
 where $p \in (0, 1)$.
+
 a. Your statistically disinclined friend says, "Oh, okay. There are $38$ possible values of $X$, so $p = \frac{1}{38}$." Explain why your friend is sorely mistaken.
 b. What is the value of $p$?
 
@@ -99,7 +100,10 @@ Suppose you deal out two cards from the deck. What is the probability that they 
 
 ## Problem X
 
-Bayes' Theorem here
+Disclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take.
+My Italian office mate is known to (1) watch football (in freedom units, that's soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he's watching a football match, there's a $80\%$ chance he'll be yelling at his monitor. In general, though, he only yells about $12\%$ of the time. At any rate, he only watches a match $10\%$ of the time, and he yells $40\%$ of the time that he's not watching a match.
+
+Given that I enter my office to his excited utterances, what is the probability that he is watching a football match?
 
 ## Problem X
 
