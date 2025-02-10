@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_team.html</loc>
-    <lastmod>2025-01-13T19:35:55.427Z</lastmod>
+    <loc>https://sta240-s25.github.io/exams/midterm-1.html</loc>
+    <lastmod>2025-02-10T17:12:23.719Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_policies.html</loc>
-    <lastmod>2025-01-09T02:16:32.276Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_materials.html</loc>
-    <lastmod>2025-01-12T05:11:25.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/slides/slides_2025_01_08.html</loc>
-    <lastmod>2025-01-18T21:20:37.009Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/psets/pset_1.html</loc>
-    <lastmod>2025-01-17T06:22:05.983Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/psets/pset_2.html</loc>
-    <lastmod>2025-01-29T23:23:24.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/labs/lab-1.html</loc>
-    <lastmod>2025-01-18T23:19:04.568Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/labs/lab-2.html</loc>
-    <lastmod>2025-01-26T18:56:17.598Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/labs/lab-3.html</loc>
-    <lastmod>2025-02-06T22:39:13.982Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/psets/pset_3.html</loc>
-    <lastmod>2025-02-05T02:37:03.313Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/psets/pset_0.html</loc>
-    <lastmod>2025-01-18T21:21:09.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/index.html</loc>
-    <lastmod>2025-01-02T00:47:02.748Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_overview.html</loc>
-    <lastmod>2025-01-02T03:07:04.478Z</lastmod>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_assignments.html</loc>
+    <lastmod>2025-01-08T04:37:21.266Z</lastmod>
   </url>
   <url>
     <loc>https://sta240-s25.github.io/syllabus/syllabus_resources.html</loc>
     <lastmod>2025-01-02T05:21:11.792Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/syllabus/syllabus_assignments.html</loc>
-    <lastmod>2025-01-08T04:37:21.266Z</lastmod>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_overview.html</loc>
+    <lastmod>2025-01-02T03:07:04.478Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/index.html</loc>
+    <lastmod>2025-01-02T00:47:02.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/psets/pset_0.html</loc>
+    <lastmod>2025-01-18T21:21:09.140Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/psets/pset_3.html</loc>
+    <lastmod>2025-02-10T18:18:09.529Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/labs/lab-3.html</loc>
+    <lastmod>2025-02-06T22:39:13.982Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/labs/lab-2.html</loc>
+    <lastmod>2025-02-08T00:59:44.135Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/labs/lab-1.html</loc>
+    <lastmod>2025-01-18T23:19:04.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/psets/pset_2.html</loc>
+    <lastmod>2025-01-29T23:23:24.271Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/psets/pset_1.html</loc>
+    <lastmod>2025-01-17T06:22:05.983Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/slides/slides_2025_01_08.html</loc>
+    <lastmod>2025-01-18T21:20:37.009Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_materials.html</loc>
+    <lastmod>2025-01-12T05:11:25.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_policies.html</loc>
+    <lastmod>2025-01-09T02:16:32.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/syllabus/syllabus_team.html</loc>
+    <lastmod>2025-01-13T19:35:55.427Z</lastmod>
   </url>
 </urlset>

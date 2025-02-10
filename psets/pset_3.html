@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STA 240 Spring 2025 - DRAFT Problem Set 3</title>
+<title>STA 240 Spring 2025 - Problem Set 3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="STA 240 Spring 2025 - DRAFT Problem Set 3">
+<meta property="og:title" content="STA 240 Spring 2025 - Problem Set 3">
 <meta property="og:description" content="Due Thursday February 13 at 12PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">DRAFT Problem Set 3</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Problem Set 3</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -244,6 +244,12 @@ window.Quarto = {
  <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab-4.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 4</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -261,9 +267,6 @@ window.Quarto = {
   <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
   <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
   <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
-  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
-  <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
-  <li><a href="#problem-7" id="toc-problem-7" class="nav-link" data-scroll-target="#problem-7">Problem 7</a></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   <li><a href="#point-values-tbd" id="toc-point-values-tbd" class="nav-link" data-scroll-target="#point-values-tbd">Point values (TBD)</a></li>
   </ul>
@@ -274,7 +277,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DRAFT Problem Set 3</h1>
+<h1 class="title">Problem Set 3</h1>
 <p class="subtitle lead">Due Thursday February 13 at 12PM</p>
 </div>
 
@@ -316,26 +319,49 @@ window.Quarto = {
 <p>Two balls are chosen randomly from an urn containing 8 green, 4 black, and 2 orange balls. Suppose that we win $2 for each black ball selected, we lose $1 for each green ball selected, and we earn nothing for each orange ball selected. Let <span class="math inline">\(X\)</span> denote our winnings.</p>
 <ol type="a">
 <li><p>Make a table with the possible values of <span class="math inline">\(X\)</span> and the probabilities of each value.</p></li>
-<li><p>Sketch the pmf and the cdf of <span class="math inline">\(X\)</span>.</p></li>
+<li><p>Sketch the pmf of <span class="math inline">\(X\)</span>.</p></li>
+<li><p>Sketch the cdf of <span class="math inline">\(X\)</span>.</p></li>
 <li><p>Compute the expected value of <span class="math inline">\(X\)</span>.</p></li>
-<li><p>Compute the variance of <span class="math inline">\(X\)</span>.</p></li>
 </ol>
 </section>
 <section id="problem-3" class="level2">
 <h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
-<p>One fine day you are walking down the street when you are accosted by some shyster. He wants to charge you <span class="math inline">\(c\)</span> dollars to play the following game:</p>
-<ul>
-<li>The man will flip a fair coin until a tail appears for the first time;</li>
-<li>If the tail appears on the <span class="math inline">\(n\)</span>th flip, you will win <span class="math inline">\(2^n\)</span> dollars.</li>
-</ul>
-<p>Let <span class="math inline">\(X\)</span> denote your winnings when you play this game.</p>
+<p>Let <span class="math inline">\(X\)</span> be a random variable with the following pmf:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(P(X=x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>-1</td>
+<td>0.500</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>0.250</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0.125</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.125</td>
+</tr>
+</tbody>
+</table>
 <ol type="a">
-<li>What is the range of <span class="math inline">\(X\)</span>?</li>
-<li>What is the pmf of <span class="math inline">\(X\)</span>?</li>
-<li>What is <span class="math inline">\(E(X)\)</span>?</li>
-<li>How much would you be willing to pay for the chance to play this game once?</li>
+<li>What is the mean of <span class="math inline">\(X\)</span>?</li>
+<li>What is the pmf of <span class="math inline">\(Y = 2X-3\)</span>?</li>
+<li>What is the mean of <span class="math inline">\(Y\)</span>?</li>
+<li>What is the pmf of <span class="math inline">\(W = X^2\)</span>?</li>
+<li>What is the mean of <span class="math inline">\(W\)</span>?</li>
+<li>What is the conditional pmf of <span class="math inline">\(X\)</span> given <span class="math inline">\(X \neq 0\)</span>?</li>
+<li>What is the conditional mean of <span class="math inline">\(X\)</span> given <span class="math inline">\(X \neq 0\)</span>?</li>
 </ol>
-<p>JZ: ADD THE FINITE WEALTH BIT?</p>
 </section>
 <section id="problem-4" class="level2">
 <h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
@@ -344,31 +370,6 @@ window.Quarto = {
 <li><p>What is the expected number of pairs of people with the same birthday?</p></li>
 <li><p>What is the expected number of days on which at least two players were born?</p></li>
 </ol>
-</section>
-<section id="problem-5" class="level2">
-<h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
-<p>If <span class="math inline">\(X\sim\text{Binomial}(n,\,p)\)</span>, show that</p>
-<p><span class="math display">\[
-E\left[\frac{1}{X+1}\right]=\frac{1-(1-p)^{n+1}}{(n+1)p}.
-\]</span></p>
-</section>
-<section id="problem-6" class="level2">
-<h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
-<p>The number of claims <span class="math inline">\(N\)</span> that an insurance company will receive in a six month period has <span class="math inline">\(N\sim\textrm{Poisson}(\lambda)\)</span> for some <span class="math inline">\(\lambda&gt;0\)</span>.</p>
-<ol type="a">
-<li>If <span class="math inline">\(\lambda = 0.2\)</span>, what is the probability that the company receives no claims?</li>
-<li>If <span class="math inline">\(\lambda = 0.2\)</span>, what is the probability that the company receives at least two claims?</li>
-</ol>
-</section>
-<section id="problem-7" class="level2">
-<h2 class="anchored" data-anchor-id="problem-7">Problem 7</h2>
-<p>With <span class="math inline">\(p=1\)</span>, show that there does not exist any number <span class="math inline">\(c\)</span> such that the following function would be a pmf:</p>
-<p><span class="math display">\[
-f(x) = \begin{cases}
-\frac{c}{x^p}, &amp; \text{for } x = 1, 2, 3, \cdots,\\
-0, &amp; \text{otherwise}.
-\end{cases}
-\]</span> For what choices of <span class="math inline">\(p &gt; 0\)</span> would there exist a number <span class="math inline">\(c\)</span> such that <span class="math inline">\(f(x)\)</span> is a valid pmf?</p>
 </section>
 <section id="submission" class="level2">
 <h2 class="anchored" data-anchor-id="submission">Submission</h2>
@@ -385,6 +386,66 @@ f(x) = \begin{cases}
 </thead>
 <tbody>
 <tr class="odd">
+<td>1.a</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1.b</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2.a</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.b</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2.c</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.d</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3.a</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3.b</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3.c</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3.d</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3.e</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3.f</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3.g</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4.a</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>4.b</td>
+<td></td>
+</tr>
+<tr class="even">
 <td><strong>TOTAL</strong></td>
 <td><strong>XX</strong></td>
 </tr>
