@@ -41,6 +41,13 @@ b.  $B \cup C^{c}$
 c.  $B^{c} \cap C$
 d.  $A \cap B \cap C$
 
+## Problem X
+
+Let $A$ and $B$ be two sets. Simplify the following expressions so that each set appears exactly once in the final form:
+
+a. $(A \cup B) \cap (A \cup B^{c})$
+b. $(A \cup B) \cap (A^{c} \cup B) \cap (A \cup B^{c})$
+
 # Probability axioms and basic rules
 
 ## Problem X
