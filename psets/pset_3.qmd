@@ -11,82 +11,56 @@ Recommend some music for us to listen to while we grade this.
 
 Say you have an unfamiliar coin on hand which may or may not be fair. So this coin lands on heads with some unknown probability $p$, which is not necessarily equal to 1/2. Nevertheless, you want to somehow use this coin to generate the outcome of the flip of a fair coin. Consider the following algorithm for doing this:
 
-- Flip the coin;
-- Flip the coin again;
-- If both flips land on heads or if both flips land on tails, start over from Step (i);
-- If the two flips are different, let the result of the last flip be the result of the experiment.
+-   Flip the coin;
+-   Flip the coin again;
+-   If both flips land on heads or if both flips land on tails, start over from Step (i);
+-   If the two flips are different, let the result of the last flip be the result of the experiment.
 
 Then:
 
-a. Show that if you generate flips using this algorithm, the result is equally likely to be either heads or tails.
+a.  Show that if you generate flips using this algorithm, the result is equally likely to be either heads or tails.
 
-b. Here is another possible algorithm: *flip the coin until the last two flips are different, and let the result be the outcome of the final flip*. Are heads and tails equally likely using this procedure?
+b.  Here is another possible algorithm: *flip the coin until the last two flips are different, and let the result be the outcome of the final flip*. Are heads and tails equally likely using this procedure?
 
 ## Problem 2
 
 Two balls are chosen randomly from an urn containing 8 green, 4 black, and 2 orange balls. Suppose that we win \$2 for each black ball selected, we lose \$1 for each green ball selected, and we earn nothing for each orange ball selected. Let $X$ denote our winnings.
 
-a. Make a table with the possible values of $X$ and the probabilities of each value.
-    
-b. Sketch the pmf and the cdf of $X$.
-    
-c. Compute the expected value of $X$.
+a.  Make a table with the possible values of $X$ and the probabilities of each value.
 
-d. Compute the variance of $X$.
+b.  Sketch the pmf and the cdf of $X$.
+
+c.  Compute the expected value of $X$.
+
+d.  Compute the variance of $X$.
 
 ## Problem 3
 
-One fine day you are walking down the street when you are accosted by some shyster. He wants to charge you $c$ dollars to play the following game: 
+Let $X$ be a random variable with the following pmf:
 
-- The man will flip a fair coin until a tail appears for the first time;
-- If the tail appears on the $n$th flip, you will win $2^n$ dollars.
+| $x$   | $P(X=x)$ |
+|-----|--------|
+|  -1   |   0.500     |
+|  0   |    0.250    |
+|  1   |   0.125     |
+|  2   |   0.125     |
 
-Let $X$ denote your winnings when you play this game.
+a. What is the mean of $X$?
+b. What is the pmf of $Y = 2X-3$? 
+c. What is the mean of $Y$?
+d. What is the pmf of $W = X^2$? 
+e. What is the mean of $W$?
+f. What is the conditional pmf of $X$ given $X \neq 0$? 
+g. What is the conditional mean of $X$ given $X \neq 0$?
 
-a. What is the range of $X$?
-b. What is the pmf of $X$?
-c. What is $E(X)$?
-d. How much would you be willing to pay for the chance to play this game once?
-
-JZ: ADD THE FINITE WEALTH BIT?
 
 ## Problem 4
 
 Forty-nine members of the Cleveland Orchestra string section wish to compare their birthdays. Assume that no one has February 29th and that all birthdays are independent.
 
-a. What is the expected number of pairs of people with the same birthday?
-    
-b. What is the expected number of days on which at least two players were born?
+a.  What is the expected number of pairs of people with the same birthday?
 
-
-## Problem 5
-
-If $X\sim\text{Binomial}(n,\,p)$, show that
-
-$$
-E\left[\frac{1}{X+1}\right]=\frac{1-(1-p)^{n+1}}{(n+1)p}.
-$$
-  
-## Problem 6
-
-The number of claims $N$ that an insurance company will receive in a six month period has $N\sim\textrm{Poisson}(\lambda)$ for some $\lambda>0$.
-
-a. If $\lambda = 0.2$, what is the probability that the company receives no claims?
-b. If $\lambda = 0.2$, what is the probability that the company receives at least two claims?
-
-## Problem 7
-
-With $p=1$, show that there does not exist any number $c$ such that the following function would be a pmf:
-
-$$
-f(x) = \begin{cases}
-\frac{c}{x^p}, & \text{for } x = 1, 2, 3, \cdots,\\
-0, & \text{otherwise}.
-\end{cases}
-$$
-For what choices of $p > 0$ would there exist a number $c$ such that $f(x)$ is a valid pmf?
-
-
+b.  What is the expected number of days on which at least two players were born?
 
 ## Submission
 
@@ -97,4 +71,3 @@ You are free to compose your solutions for this problem set however you wish (sc
 | Problem   | Points |
 |-----------|--------|
 | **TOTAL** | **XX** |
-
