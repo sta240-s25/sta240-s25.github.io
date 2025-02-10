@@ -4,15 +4,23 @@ title: "Extra Practice for Midterm 1"
 
 On Monday February 17 during our usual class meeting, we have our first midterm exam. It will cover the following topics:
 
-- Set theory;
-- Probability axioms and basic rules;
-- Counting methods;
-- Conditional probability and independence;
-- Random variables in general, and discrete random variables in particular.
+-   Set theory;
+-   Probability axioms and basic rules;
+-   Counting methods;
+-   Conditional probability and independence;
+-   Random variables in general, and discrete random variables in particular.
 
-Below is a set of practice problems to help you prepare. 
+Below is a set of practice problems to help you prepare.
 
 # Set theory
+
+## Problem X
+
+Let $\Omega$ be the set of integers from 1 to 100, that is, $\Omega = \{1, 2, ..., 99, 100\}$. Let $E$ be the subset of $\Omega$ that contains even numbers, $B$ be the subset of $\Omega$ that contains integers 1 through 20, and $C = \{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\}$.
+
+a.  List the elements in the set $E\cap C$.
+b.  How many elements are in $E\cup C$?
+c.  How many elements are in $(E\cap C)\^c$?
 
 ## Problem X
 
@@ -28,10 +36,10 @@ $$
 
 Express the following in as simplified and concise a form as possible:
 
-a. $A \cap C$
-b. $B \cup C^{c}$
-c. $B^{c} \cap C$
-d. $A \cap B \cap C$
+a.  $A \cap C$
+b.  $B \cup C^{c}$
+c.  $B^{c} \cap C$
+d.  $A \cap B \cap C$
 
 # Probability axioms and basic rules
 
@@ -39,10 +47,14 @@ d. $A \cap B \cap C$
 
 Suppose that $A$ and $B$ are mutually exclusive events for which $P(A) = 0.3$ and $P(B) = 0.5$. What is the probability that...
 
-a. either $A$ or $B$ occurs?
-b. $A$ occurs but $B$ does not?
-c. both $A$ and $B$ occur?
-d. Are $A$ and $B$ independent? Why or why not?
+a.  either $A$ or $B$ occurs?
+b.  $A$ occurs but $B$ does not?
+c.  both $A$ and $B$ occur?
+d.  Are $A$ and $B$ independent? Why or why not?
+
+## Problem X
+
+Out of the students in a class, 60% are geniuses, 70% love chocolate, and 40% fall into both categories. Determine the probability that a randomly selected student is neither a genius nor a chocolate lover.
 
 # Counting methods
 
@@ -50,37 +62,44 @@ d. Are $A$ and $B$ independent? Why or why not?
 
 Suppose you have a set $A$ of objects. The *power set* of $A$ is defined to be the set of all possible subsets of $A$.
 
-a. Let $A = \{1, 3, 5\}$. What is the power set of $A$?
-b. Suppose $A$ contains some number of items given by $N > 0$. How many sets are contained in the power set of $A$?
+a.  Let $A = \{1, 3, 5\}$. What is the power set of $A$?
+b.  Suppose $A$ contains some number of items given by $N > 0$. How many sets are contained in the power set of $A$?
 
 # Conditional probability and independence
 
 ## Problem X
 
-Let's talk face cards. No, not *those* face cards -- the boring kind. In a standard deck of $52$ cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the ``face cards" of the deck. Recall that a standard deck of $52$ cards also has $4$ suits (Hearts, Diamonds, Clubs, and Spades).
+Let's talk face cards. No, not *those* face cards -- the boring kind. In a standard deck of $52$ cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the \`\`face cards" of the deck. Recall that a standard deck of $52$ cards also has $4$ suits (Hearts, Diamonds, Clubs, and Spades).
 
 Suppose you deal out two cards from the deck. What is the probability that they are both face cards given that they are both hearts?
 
-## Problem X 
+## Problem X
 
 Some of the greatest creations in the history of the universe have been born of mash-ups. You want breakfast and lunch? You got brunch! You want drama and comedy? You got dramedy! Perhaps the greatest mash-up of all: you want conditional probability and independent events? You got conditionally independent events!
 
-Let $A$, $B$, and $C$ be events with $\mathbb{P}(C) > 0$. $A$ and $B$ are *conditionally independent* given $C$ if and only if 
+Let $A$, $B$, and $C$ be events with $P(C) > 0$. $A$ and $B$ are *conditionally independent* given $C$ if and only if
 
 $$
 P(A \cap B \mid C) = P(A \mid C)P(B \mid C).
-$$ 
+$$
 
-Show that the above implies $\mathbb{P}(A \mid B, C) = \mathbb{P}(A \mid C)$.
+Show that the above implies $P(A \mid B, C) = P(A \mid C)$.
 
 # Random variables
 
 ## Problem X
 
+The probability that a child in a given family will inherit a certain genetic mutation is 5%, and this probability is unaffected by the inheritance status of their siblings. Consider a family with 4 children.
+
+a.  If it is known that the first born has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?
+b.  If it is known that at least one child has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?
+
+## Problem X
+
 Suppose you have a sequence of independent $\text{Bernoulli}(p)$ trials; that is, each trial has probability $p$ of success. We are interested in seeing how long it takes to observe a fixed number $r > 0$ of successes and thus repeat the trials until we observe $r$ successes. Let $A$ be the number of the trial at which we observe the $r$th success.
 
-a. What is the sample space of $A$?
-b. Fix $n > 0$. What is the probability that we observe the $r$th success on the $n$th trial?
+a.  What is the sample space of $A$?
+b.  Fix $n > 0$. What is the probability that we observe the $r$th success on the $n$th trial?
 
 ## Problem X
 
