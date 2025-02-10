@@ -1,0 +1,14 @@
+---
+title: "Extra Practice for Midterm 1"
+---
+
+On Monday February 17 during our usual class meeting, we have our first midterm exam. It will cover the following topics:
+
+- Set theory;
+- Probability axioms and basic rules;
+- Counting methods;
+- Conditional probability and independence;
+- Random variables in general;
+- Discrete random variables in particular.
+
+Below is a set of practice problems to help you prepare. 
