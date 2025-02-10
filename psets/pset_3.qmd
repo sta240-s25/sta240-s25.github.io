@@ -28,11 +28,11 @@ Two balls are chosen randomly from an urn containing 8 green, 4 black, and 2 ora
 
 a.  Make a table with the possible values of $X$ and the probabilities of each value.
 
-b.  Sketch the pmf and the cdf of $X$.
+b.  Sketch the pmf of $X$.
 
-c.  Compute the expected value of $X$.
+c. Sketch the cdf of $X$.
 
-d.  Compute the variance of $X$.
+d.  Compute the expected value of $X$.
 
 ## Problem 3
 
@@ -70,4 +70,19 @@ You are free to compose your solutions for this problem set however you wish (sc
 
 | Problem   | Points |
 |-----------|--------|
+| 1.a |  |
+| 1.b |  |
+| 2.a |  |
+| 2.b |  |
+| 2.c |  |
+| 2.d |  |
+| 3.a |  |
+| 3.b |  |
+| 3.c |  |
+| 3.d |  |
+| 3.e |  |
+| 3.f |  |
+| 3.g |  |
+| 4.a |  |
+| 4.b |  |
 | **TOTAL** | **XX** |
