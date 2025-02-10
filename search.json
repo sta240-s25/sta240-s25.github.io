@@ -345,56 +345,88 @@
     "href": "psets/pset_3.html",
     "title": "Problem Set 3",
     "section": "",
-    "text": "Recommend some music for us to listen to while we grade this."
+    "text": "Recommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#problem-0",
     "href": "psets/pset_3.html#problem-0",
     "title": "Problem Set 3",
     "section": "",
-    "text": "Recommend some music for us to listen to while we grade this."
+    "text": "Recommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#problem-1",
     "href": "psets/pset_3.html#problem-1",
     "title": "Problem Set 3",
     "section": "Problem 1",
-    "text": "Problem 1\nSay you have an unfamiliar coin on hand which may or may not be fair. So this coin lands on heads with some unknown probability \\(p\\), which is not necessarily equal to 1/2. Nevertheless, you want to somehow use this coin to generate the outcome of the flip of a fair coin. Consider the following algorithm for doing this:\n\nFlip the coin;\nFlip the coin again;\nIf both flips land on heads or if both flips land on tails, start over from Step (i);\nIf the two flips are different, let the result of the last flip be the result of the experiment.\n\nThen:\n\nShow that if you generate flips using this algorithm, the result is equally likely to be either heads or tails.\nHere is another possible algorithm: flip the coin until the last two flips are different, and let the result be the outcome of the final flip. Are heads and tails equally likely using this procedure?"
+    "text": "Problem 1\nSay you have an unfamiliar coin on hand which may or may not be fair. So this coin lands on heads with some unknown probability \\(p\\), which is not necessarily equal to 1/2. Nevertheless, you want to somehow use this coin to generate the outcome of the flip of a fair coin. Consider the following algorithm for doing this:\n\nFlip the coin;\nFlip the coin again;\nIf both flips land on heads or if both flips land on tails, start over from Step (i);\nIf the two flips are different, let the result of the last flip be the result of the experiment.\n\nThen:\n\nShow that if you generate flips using this algorithm, the result is equally likely to be either heads or tails.\nHere is another possible algorithm: flip the coin until the last two flips are different, and let the result be the outcome of the final flip. Are heads and tails equally likely using this procedure?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#problem-2",
     "href": "psets/pset_3.html#problem-2",
     "title": "Problem Set 3",
     "section": "Problem 2",
-    "text": "Problem 2\nTwo balls are chosen randomly from an urn containing 8 green, 4 black, and 2 orange balls. Suppose that we win $2 for each black ball selected, we lose $1 for each green ball selected, and we earn nothing for each orange ball selected. Let \\(X\\) denote our winnings.\n\nMake a table with the possible values of \\(X\\) and the probabilities of each value.\nSketch the pmf of \\(X\\).\nSketch the cdf of \\(X\\).\nCompute the expected value of \\(X\\)."
+    "text": "Problem 2\nTwo balls are chosen randomly from an urn containing 8 green, 4 black, and 2 orange balls. Suppose that we win $2 for each black ball selected, we lose $1 for each green ball selected, and we earn nothing for each orange ball selected. Let \\(X\\) denote our winnings.\n\nMake a table with the possible values of \\(X\\) and the probabilities of each value.\nSketch the pmf of \\(X\\).\nSketch the cdf of \\(X\\).\nCompute the expected value of \\(X\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#problem-3",
     "href": "psets/pset_3.html#problem-3",
     "title": "Problem Set 3",
     "section": "Problem 3",
-    "text": "Problem 3\nLet \\(X\\) be a random variable with the following pmf:\n\n\n\n\\(x\\)\n\\(P(X=x)\\)\n\n\n\n\n-1\n0.500\n\n\n0\n0.250\n\n\n1\n0.125\n\n\n2\n0.125\n\n\n\n\nWhat is the mean of \\(X\\)?\nWhat is the pmf of \\(Y = 2X-3\\)?\nWhat is the mean of \\(Y\\)?\nWhat is the pmf of \\(W = X^2\\)?\nWhat is the mean of \\(W\\)?\nWhat is the conditional pmf of \\(X\\) given \\(X \\neq 0\\)?\nWhat is the conditional mean of \\(X\\) given \\(X \\neq 0\\)?"
+    "text": "Problem 3\nLet \\(X\\) be a random variable with the following pmf:\n\n\n\n\\(x\\)\n\\(P(X=x)\\)\n\n\n\n\n-1\n0.500\n\n\n0\n0.250\n\n\n1\n0.125\n\n\n2\n0.125\n\n\n\n\nWhat is the mean of \\(X\\)?\nWhat is the pmf of \\(Y = 2X-3\\)?\nWhat is the mean of \\(Y\\)?\nWhat is the pmf of \\(W = X^2\\)?\nWhat is the mean of \\(W\\)?\nWhat is the conditional pmf of \\(X\\) given \\(X \\neq 0\\)?\nWhat is the conditional mean of \\(X\\) given \\(X \\neq 0\\)?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#problem-4",
     "href": "psets/pset_3.html#problem-4",
     "title": "Problem Set 3",
     "section": "Problem 4",
-    "text": "Problem 4\nForty-nine members of the Cleveland Orchestra string section wish to compare their birthdays. Assume that no one has February 29th and that all birthdays are independent.\n\nWhat is the expected number of pairs of people with the same birthday?\nWhat is the expected number of days on which at least two players were born?"
+    "text": "Problem 4\nForty-nine members of the Cleveland Orchestra string section wish to compare their birthdays. Assume that no one has February 29th and that all birthdays are independent.\n\nWhat is the expected number of pairs of people with the same birthday?\nWhat is the expected number of days on which at least two players were born?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#submission",
     "href": "psets/pset_3.html#submission",
     "title": "Problem Set 3",
     "section": "Submission",
-    "text": "Submission\nYou are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem."
+    "text": "Submission\nYou are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "psets/pset_3.html#point-values-tbd",
     "href": "psets/pset_3.html#point-values-tbd",
     "title": "Problem Set 3",
     "section": "Point values (TBD)",
-    "text": "Point values (TBD)\n\n\n\nProblem\nPoints\n\n\n\n\n1.a\n\n\n\n1.b\n\n\n\n2.a\n\n\n\n2.b\n\n\n\n2.c\n\n\n\n2.d\n\n\n\n3.a\n\n\n\n3.b\n\n\n\n3.c\n\n\n\n3.d\n\n\n\n3.e\n\n\n\n3.f\n\n\n\n3.g\n\n\n\n4.a\n\n\n\n4.b\n\n\n\nTOTAL\nXX"
+    "text": "Point values (TBD)\n\n\n\nProblem\nPoints\n\n\n\n\n1.a\n\n\n\n1.b\n\n\n\n2.a\n\n\n\n2.b\n\n\n\n2.c\n\n\n\n2.d\n\n\n\n3.a\n\n\n\n3.b\n\n\n\n3.c\n\n\n\n3.d\n\n\n\n3.e\n\n\n\n3.f\n\n\n\n3.g\n\n\n\n4.a\n\n\n\n4.b\n\n\n\nTOTAL\nXX",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 3"
+    ]
   },
   {
     "objectID": "labs/lab-3.html",
