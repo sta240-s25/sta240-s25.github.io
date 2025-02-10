@@ -92,6 +92,8 @@ website:
             text: Lab 2
           - href: labs/lab-3.qmd
             text: Lab 3
+          - href: labs/lab-4.qmd
+            text: Lab 4
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'
