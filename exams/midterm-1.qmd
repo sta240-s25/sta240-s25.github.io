@@ -63,6 +63,23 @@ d.  Are $A$ and $B$ independent? Why or why not?
 
 Out of the students in a class, 60% are geniuses, 70% love chocolate, and 40% fall into both categories. Determine the probability that a randomly selected student is neither a genius nor a chocolate lover.
 
+## Problem X
+
+In the American version of the casino game roulette, the roulette wheel is divided into $38$ spaces, namely the numbers $1$ through $36$ (even numbers colored red and odd colored black) and the special single zero and double zero (both colored green). Gamblers place bets on various groups of numbers and colors. The wheel is then spun one way, a ball is set in motion the other, and the ball eventually settles on one of the numbers -- if the bet you placed included that number, you win! Let $X$ be the number on which the ball settles.
+
+Suppose you know that the roulette wheel is not fair; in particular, you know that the probability that the ball settles on a particular zero is twice the probability the ball settles on a particular non-zero. That is to say,
+
+$$
+\mathbb{P}(X = x) = 
+\begin{cases}
+p & \text{if }x \in \{1, 2,\dots, 36\} \\
+2p & \text{if }x \in \{0, 00\},
+\end{cases}
+$$
+where $p \in (0, 1)$.
+a. Your statistically disinclined friend says, "Oh, okay. There are $38$ possible values of $X$, so $p = \frac{1}{38}$." Explain why your friend is sorely mistaken.
+b. What is the value of $p$?
+
 # Counting methods
 
 ## Problem X
@@ -79,6 +96,10 @@ b.  Suppose $A$ contains some number of items given by $N > 0$. How many sets ar
 Let's talk face cards. No, not *those* face cards -- the boring kind. In a standard deck of $52$ cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the \`\`face cards" of the deck. Recall that a standard deck of $52$ cards also has $4$ suits (Hearts, Diamonds, Clubs, and Spades).
 
 Suppose you deal out two cards from the deck. What is the probability that they are both face cards given that they are both hearts?
+
+## Problem X
+
+Bayes' Theorem here
 
 ## Problem X
 
