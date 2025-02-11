@@ -5,6 +5,9 @@ project:
     - notes/sta240-01-set-theory.pdf
     - notes/sta240-02-probability-fundamentals.pdf
     - notes/sta240-03-counting.pdf
+    - notes/sta240-04-conditioning.pdf
+    - notes/sta240-05-rv.pdf
+    - notes/sta240-06-discrete.pdf
 
 website:
   page-navigation: true
