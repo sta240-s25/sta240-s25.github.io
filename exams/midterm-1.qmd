@@ -90,12 +90,18 @@ Suppose you have a set $A$ of objects. The *power set* of $A$ is defined to be t
 a.  Let $A = \{1, 3, 5\}$. What is the power set of $A$?
 b.  Suppose $A$ contains some number of items given by $N > 0$. How many sets are contained in the power set of $A$?
 
+## Problem X
+
 Suppose you have your trusty standard $52$-card deck on hand, and you deal out an eight-card hand. How many possible hands have...
 
 a. three cards of one rank, four cards of another rank, and one card of yet another rank?
 b. two cards of each suit?
 c. at least one ace?
 d. no spades?
+
+## Problem X
+
+[more counting here]
 
 # Conditional probability and independence
 
