@@ -20,7 +20,7 @@ Let $\Omega$ be the set of integers from 1 to 100, that is, $\Omega = \{1, 2, ..
 
 a.  List the elements in the set $E\cap C$.
 b.  How many elements are in $E\cup C$?
-c.  How many elements are in $(E\cap C)\^c$?
+c.  How many elements are in $(E\cap C)^c$?
 
 ## Problem X
 
