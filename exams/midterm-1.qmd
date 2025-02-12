@@ -97,7 +97,7 @@ Suppose you have your trusty standard $52$-card deck on hand, and you deal out a
 a. three cards of one rank, four cards of another rank, and one card of yet another rank?
 b. two cards of each suit?
 c. at least one ace?
-d. three hearts and three queens?
+d. no spades?
 
 ## Problem X
 
