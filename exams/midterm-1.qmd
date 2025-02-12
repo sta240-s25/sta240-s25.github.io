@@ -141,7 +141,7 @@ b.  If it is known that at least one child has inherited the mutation, what is t
 
 ## Problem X
 
-Two balls are chosen randomly from an urn containing $8$ green, $4$ black, and $2$ orange balls. Suppose that we win $\$2$ for each black ball selected, we lose $\$1$ for each green ball selected, and we earn nothing for each orange ball selected. Let $X$ denote our winnings.
+Two balls are chosen randomly from an urn containing $9$ green, $6$ black, and $5$ orange balls. Suppose that we win $\$2$ for each black ball selected, we lose $\$1$ for each green ball selected, and we earn nothing for each orange ball selected. Let $X$ denote our winnings.
 
 a. Make a table listing the possible values of $X$ and the probabilities associated with each value.
 b. Compute the expected value of $X$.
