@@ -7,95 +7,116 @@
     "text": "On Monday February 17 during our usual class meeting, we have our first midterm exam. It will cover the following topics:\nBelow is a set of practice problems to help you prepare."
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x",
-    "href": "exams/midterm-1.html#problem-x",
+    "objectID": "exams/midterm-1.html#problem-1",
+    "href": "exams/midterm-1.html#problem-1",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nLet \\(\\Omega\\) be the set of integers from 1 to 100, that is, \\(\\Omega = \\{1, 2, ..., 99, 100\\}\\). Let \\(E\\) be the subset of \\(\\Omega\\) that contains even numbers, \\(B\\) be the subset of \\(\\Omega\\) that contains integers 1 through 20, and \\(C = \\{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\\}\\).\n\nList the elements in the set \\(E\\cap C\\).\nHow many elements are in \\(E\\cup C\\)?\nHow many elements are in \\((E\\cap C)\\^c\\)?"
+    "section": "Problem 1",
+    "text": "Problem 1\nLet \\(\\Omega\\) be the set of integers from 1 to 100, that is, \\(\\Omega = \\{1, 2, ..., 99, 100\\}\\). Let \\(E\\) be the subset of \\(\\Omega\\) that contains even numbers and \\(C = \\{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\\}\\).\n\nList the elements in the set \\(E\\cap C\\).\nHow many elements are in \\(E\\cup C\\)?\nHow many elements are in \\((E\\cap C)^c\\)?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-1",
-    "href": "exams/midterm-1.html#problem-x-1",
+    "objectID": "exams/midterm-1.html#problem-2",
+    "href": "exams/midterm-1.html#problem-2",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nTake \\(\\mathbb{R}\\) to be your reference set and consider these subsets:\n\\[\n\\begin{align}\n    A & = \\mathbb{Z} = \\{\\dots,-2, -1, 0, 1, 2,\\dots\\}\\\\\n    B & = (0, 1)\\\\\n    C & = [0, \\infty).\n\\end{align}\n\\]\nExpress the following in as simplified and concise a form as possible:\n\n\\(A \\cap C\\)\n\\(B \\cup C^{c}\\)\n\\(B^{c} \\cap C\\)\n\\(A \\cap B \\cap C\\)"
+    "section": "Problem 2",
+    "text": "Problem 2\nTake \\(\\mathbb{R}\\) to be your reference set and consider these subsets:\n\\[\n\\begin{align}\n    A & = \\mathbb{Z} = \\{\\dots,-2, -1, 0, 1, 2,\\dots\\}\\\\\n    B & = (0, 1)\\\\\n    C & = [0, \\infty).\n\\end{align}\n\\]\nExpress the following in as simplified and concise a form as possible:\n\n\\(A \\cap C\\)\n\\(B \\cup C^{c}\\)\n\\(B^{c} \\cap C\\)\n\\(A \\cap B \\cap C\\)"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-2",
-    "href": "exams/midterm-1.html#problem-x-2",
+    "objectID": "exams/midterm-1.html#problem-3",
+    "href": "exams/midterm-1.html#problem-3",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nLet \\(A\\) and \\(B\\) be two sets. Simplify the following expressions so that each set appears exactly once in the final form:\n\n\\((A \\cup B) \\cap (A \\cup B^{c})\\)\n\\((A \\cup B) \\cap (A^{c} \\cup B) \\cap (A \\cup B^{c})\\)"
+    "section": "Problem 3",
+    "text": "Problem 3\nLet \\(A\\) and \\(B\\) be two sets. Simplify the following expressions so that each set appears at most once in the final form:\n\n\\((A \\cup B) \\cap (A \\cup B^{c})\\)\n\\((A \\cup B) \\cap (A^{c} \\cup B) \\cap (A \\cup B^{c})\\)"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-3",
-    "href": "exams/midterm-1.html#problem-x-3",
+    "objectID": "exams/midterm-1.html#problem-4",
+    "href": "exams/midterm-1.html#problem-4",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nSuppose that \\(A\\) and \\(B\\) are mutually exclusive events for which \\(P(A) = 0.3\\) and \\(P(B) = 0.5\\). What is the probability that…\n\neither \\(A\\) or \\(B\\) occurs?\n\\(A\\) occurs but \\(B\\) does not?\nboth \\(A\\) and \\(B\\) occur?\nAre \\(A\\) and \\(B\\) independent? Why or why not?"
+    "section": "Problem 4",
+    "text": "Problem 4\nSuppose that \\(A\\) and \\(B\\) are mutually exclusive events for which \\(P(A) = 0.3\\) and \\(P(B) = 0.5\\). What is the probability that…\n\neither \\(A\\) or \\(B\\) occurs?\n\\(A\\) occurs but \\(B\\) does not?\nboth \\(A\\) and \\(B\\) occur?\nAre \\(A\\) and \\(B\\) independent? Why or why not?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-4",
-    "href": "exams/midterm-1.html#problem-x-4",
+    "objectID": "exams/midterm-1.html#problem-5",
+    "href": "exams/midterm-1.html#problem-5",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nOut of the students in a class, 60% are geniuses, 70% love chocolate, and 40% fall into both categories. Determine the probability that a randomly selected student is neither a genius nor a chocolate lover."
+    "section": "Problem 5",
+    "text": "Problem 5\nOut of the students in a class, 60% are geniuses, 70% love chocolate, and 40% fall into both categories. Determine the probability that a randomly selected student is neither a genius nor a chocolate lover."
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-5",
-    "href": "exams/midterm-1.html#problem-x-5",
+    "objectID": "exams/midterm-1.html#problem-6",
+    "href": "exams/midterm-1.html#problem-6",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nIn the American version of the casino game roulette, the roulette wheel is divided into \\(38\\) spaces, namely the numbers \\(1\\) through \\(36\\) (even numbers colored red and odd colored black) and the special single zero and double zero (both colored green). Gamblers place bets on various groups of numbers and colors. The wheel is then spun one way, a ball is set in motion the other, and the ball eventually settles on one of the numbers – if the bet you placed included that number, you win! Let \\(X\\) be the number on which the ball settles.\nSuppose you know that the roulette wheel is not fair; in particular, you know that the probability that the ball settles on a particular zero is twice the probability the ball settles on a particular non-zero. That is to say,\n\\[\n\\mathbb{P}(X = x) =\n\\begin{cases}\np & \\text{if }x \\in \\{1, 2,\\dots, 36\\} \\\\\n2p & \\text{if }x \\in \\{0, 00\\},\n\\end{cases}\n\\] where \\(p \\in (0, 1)\\).\n\nYour statistically disinclined friend says, “Oh, okay. There are \\(38\\) possible values of \\(X\\), so \\(p = \\frac{1}{38}\\).” Explain why your friend is sorely mistaken.\nWhat is the value of \\(p\\)?"
+    "section": "Problem 6",
+    "text": "Problem 6\nIn the American version of the casino game roulette, the roulette wheel is divided into \\(38\\) spaces, namely the numbers \\(1\\) through \\(36\\) (even numbers colored red and odd colored black) and the special single zero and double zero (both colored green). Gamblers place bets on various groups of numbers and colors. The wheel is then spun one way, a ball is set in motion the other, and the ball eventually settles on one of the numbers – if the bet you placed included that number, you win! Let \\(X\\) be the number on which the ball settles.\nSuppose you know that the roulette wheel is not fair; in particular, you know that the probability that the ball settles on a particular zero is twice the probability the ball settles on a particular non-zero. That is to say,\n\\[\n\\mathbb{P}(X = x) =\n\\begin{cases}\np & \\text{if }x \\in \\{1, 2,\\dots, 36\\} \\\\\n2p & \\text{if }x \\in \\{0, 00\\},\n\\end{cases}\n\\] where \\(p \\in (0, 1)\\).\n\nYour statistically disinclined friend says, “Oh, okay. There are \\(38\\) possible values of \\(X\\), so \\(p = \\frac{1}{38}\\).” Explain why your friend is sorely mistaken.\nWhat is the value of \\(p\\)?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-6",
-    "href": "exams/midterm-1.html#problem-x-6",
+    "objectID": "exams/midterm-1.html#problem-7",
+    "href": "exams/midterm-1.html#problem-7",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nSuppose you have a set \\(A\\) of objects. The power set of \\(A\\) is defined to be the set of all possible subsets of \\(A\\).\n\nLet \\(A = \\{1, 3, 5\\}\\). What is the power set of \\(A\\)?\nSuppose \\(A\\) contains some number of items given by \\(N &gt; 0\\). How many sets are contained in the power set of \\(A\\)?"
+    "section": "Problem 7",
+    "text": "Problem 7\nSuppose you have a set \\(A\\) of objects. The power set of \\(A\\) is defined to be the set of all possible subsets of \\(A\\).\n\nLet \\(A = \\{1, 3, 5\\}\\). What is the power set of \\(A\\)?\nSuppose \\(A\\) contains some number of items given by \\(N &gt; 0\\). How many sets are contained in the power set of \\(A\\)?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-7",
-    "href": "exams/midterm-1.html#problem-x-7",
+    "objectID": "exams/midterm-1.html#problem-8",
+    "href": "exams/midterm-1.html#problem-8",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nLet’s talk face cards. No, not those face cards – the boring kind. In a standard deck of \\(52\\) cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the ``face cards” of the deck. Recall that a standard deck of \\(52\\) cards also has \\(4\\) suits (Hearts, Diamonds, Clubs, and Spades).\nSuppose you deal out two cards from the deck. What is the probability that they are both face cards given that they are both hearts?"
+    "section": "Problem 8",
+    "text": "Problem 8\nSuppose you have your trusty standard \\(52\\)-card deck on hand, and you deal out an eight-card hand. How many possible hands have…\n\nthree cards of one rank, four cards of another rank, and one card of yet another rank?\ntwo cards of each suit?\nat least one ace?\nno spades?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-8",
-    "href": "exams/midterm-1.html#problem-x-8",
+    "objectID": "exams/midterm-1.html#problem-9",
+    "href": "exams/midterm-1.html#problem-9",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nDisclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take. My Italian office mate is known to (1) watch football (in freedom units, that’s soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he’s watching a football match, there’s a \\(80\\%\\) chance he’ll be yelling at his monitor. In general, though, he only yells about \\(12\\%\\) of the time. At any rate, he only watches a match \\(10\\%\\) of the time, and he yells \\(40\\%\\) of the time that he’s not watching a match.\nGiven that I enter my office to his excited utterances, what is the probability that he is watching a football match?"
+    "section": "Problem 9",
+    "text": "Problem 9\nWe have now at this point the formulae for two- and three-way inclusion-exclusion, namely \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\] and \\[P(A \\cup B \\cup C) = P(A) + P(B) + P(C) - P(A \\cap B) - P(A \\cap C) - P(B \\cap C) + P(A \\cap B \\cap C).\\] Explain in counting terms why we end up subtracting the two-way intersection in the first case and adding the three-way intersection in the second case."
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-9",
-    "href": "exams/midterm-1.html#problem-x-9",
+    "objectID": "exams/midterm-1.html#problem-10",
+    "href": "exams/midterm-1.html#problem-10",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nSome of the greatest creations in the history of the universe have been born of mash-ups. You want breakfast and lunch? You got brunch! You want drama and comedy? You got dramedy! Perhaps the greatest mash-up of all: you want conditional probability and independent events? You got conditionally independent events!\nLet \\(A\\), \\(B\\), and \\(C\\) be events with \\(P(C) &gt; 0\\). \\(A\\) and \\(B\\) are conditionally independent given \\(C\\) if and only if\n\\[\nP(A \\cap B \\mid C) = P(A \\mid C)P(B \\mid C).\n\\]\nShow that the above implies \\(P(A \\mid B, C) = P(A \\mid C)\\)."
+    "section": "Problem 10",
+    "text": "Problem 10\nLet’s talk face cards. No, not those face cards – the boring kind. In a standard deck of \\(52\\) cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the ``face cards” of the deck. Recall that a standard deck of \\(52\\) cards also has \\(4\\) suits (Hearts, Diamonds, Clubs, and Spades).\nSuppose you deal out two cards from the deck. What is the probability that they are both face cards given that they are both hearts?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-10",
-    "href": "exams/midterm-1.html#problem-x-10",
+    "objectID": "exams/midterm-1.html#problem-11",
+    "href": "exams/midterm-1.html#problem-11",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nThe probability that a child in a given family will inherit a certain genetic mutation is 5%, and this probability is unaffected by the inheritance status of their siblings. Consider a family with 4 children.\n\nIf it is known that the first born has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?\nIf it is known that at least one child has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?"
+    "section": "Problem 11",
+    "text": "Problem 11\nDisclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take. My Italian office mate is known to (1) watch football (in freedom units, that’s soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he’s watching a football match, there’s a \\(80\\%\\) chance he’ll be yelling at his monitor. At any rate, he only watches a match \\(10\\%\\) of the time, and he yells \\(40\\%\\) of the time that he’s not watching a match.\nGiven that I enter my office to his excited utterances, what is the probability that he is watching a football match?"
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-11",
-    "href": "exams/midterm-1.html#problem-x-11",
+    "objectID": "exams/midterm-1.html#problem-12",
+    "href": "exams/midterm-1.html#problem-12",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nSuppose you have a sequence of independent \\(\\text{Bernoulli}(p)\\) trials; that is, each trial has probability \\(p\\) of success. We are interested in seeing how long it takes to observe a fixed number \\(r &gt; 0\\) of successes and thus repeat the trials until we observe \\(r\\) successes. Let \\(A\\) be the number of the trial at which we observe the \\(r\\)th success.\n\nWhat is the sample space of \\(A\\)?\nFix \\(n &gt; 0\\). What is the probability that we observe the \\(r\\)th success on the \\(n\\)th trial?"
+    "section": "Problem 12",
+    "text": "Problem 12\nSome of the greatest creations in the history of the universe have been born of mash-ups. You want breakfast and lunch? You got brunch! You want drama and comedy? You got dramedy! Perhaps the greatest mash-up of all: you want conditional probability and independent events? You got conditionally independent events!\nLet \\(A\\), \\(B\\), and \\(C\\) be events with \\(P(C) &gt; 0\\). \\(A\\) and \\(B\\) are conditionally independent given \\(C\\) if and only if\n\\[\nP(A \\cap B \\mid C) = P(A \\mid C)P(B \\mid C).\n\\]\nShow that the above implies \\(P(A \\mid B, C) = P(A \\mid C)\\)."
   },
   {
-    "objectID": "exams/midterm-1.html#problem-x-12",
-    "href": "exams/midterm-1.html#problem-x-12",
+    "objectID": "exams/midterm-1.html#problem-13",
+    "href": "exams/midterm-1.html#problem-13",
     "title": "Extra Practice for Midterm 1",
-    "section": "Problem X",
-    "text": "Problem X\nLet \\(D \\sim \\text{Geometric}(p)\\), and fix \\(n, k &gt; 0\\). What is \\(P(D = n + k \\,|\\, D &gt; k)\\)? Does this look familiar?"
+    "section": "Problem 13",
+    "text": "Problem 13\nThe probability that a child in a given family will inherit a certain genetic mutation is 5%, and this probability is unaffected by the inheritance status of their siblings. Consider a family with 4 children.\n\nIf it is known that the first born has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?\nIf it is known that at least one child has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?"
+  },
+  {
+    "objectID": "exams/midterm-1.html#problem-14",
+    "href": "exams/midterm-1.html#problem-14",
+    "title": "Extra Practice for Midterm 1",
+    "section": "Problem 14",
+    "text": "Problem 14\nTwo balls are chosen randomly from an urn containing \\(9\\) green, \\(6\\) black, and \\(5\\) orange balls. Suppose that we win \\(\\$2\\) for each black ball selected, we lose \\(\\$1\\) for each green ball selected, and we earn nothing for each orange ball selected. Let \\(X\\) denote our winnings.\n\nMake a table listing the possible values of \\(X\\) and the probabilities associated with each value.\nCompute the expected value of \\(X\\).\nSketch the cdf and the pmf of \\(X\\)."
+  },
+  {
+    "objectID": "exams/midterm-1.html#problem-15",
+    "href": "exams/midterm-1.html#problem-15",
+    "title": "Extra Practice for Midterm 1",
+    "section": "Problem 15",
+    "text": "Problem 15\nSuppose you have a sequence of independent \\(\\text{Bernoulli}(p)\\) trials; that is, each trial has probability \\(p\\) of success. We are interested in seeing how long it takes to observe a fixed number \\(r &gt; 0\\) of successes and thus repeat the trials until we observe \\(r\\) successes. Let \\(A\\) be the number of the trial at which we observe the \\(r\\)th success.\n\nWhat is the sample space of \\(A\\)?\nFix \\(n &gt; 0\\). What is the probability that we observe the \\(r\\)th success on the \\(n\\)th trial?"
+  },
+  {
+    "objectID": "exams/midterm-1.html#problem-16",
+    "href": "exams/midterm-1.html#problem-16",
+    "title": "Extra Practice for Midterm 1",
+    "section": "Problem 16",
+    "text": "Problem 16\nLet \\(D \\sim \\text{Geometric}(p)\\), and fix \\(n, k &gt; 0\\). What is \\(P(D = n + k \\,|\\, D &gt; k)\\)? Does this look familiar?"
   },
   {
     "objectID": "syllabus/syllabus_assignments.html",
@@ -454,7 +475,7 @@
     "href": "labs/lab-3.html",
     "title": "Lab 3 - How does ChatGPT generate the next word?",
     "section": "",
-    "text": "A vector in R is just an ordered set of values. The easiest way to create one is to manually list out the values, separated by commas, inside c():\n\nmyvec &lt;- c(pi, 5, 3.6, 2, 9, 6000) \nmyvec\n\n[1]    3.141593    5.000000    3.600000    2.000000    9.000000 6000.000000\n\n\nIf you want to list out all of the integers between some min and max, you can use this shortcut:\n\n5:15\n\n [1]  5  6  7  8  9 10 11 12 13 14 15\n\n\nMore generally, if you want a vector of evenly spaced numbers between a min and a max, do this:\n\na &lt;- seq(0, 1, length.out = 11) \na\n\n [1] 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0\n\n\nIf you want to create a “blank” vector that just has zeros in it, here you go:\n\nz &lt;- numeric(10)\nz\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nIn all of those cases, our vector contained numbers, but there is nothing special about numbers. Here is a vector where each value is a string (a piece of text):\n\npoetry &lt;- c(\"Mary\", \"had\", \"a\", \"little\", \"chainsaw\")\npoetry\n\n[1] \"Mary\"     \"had\"      \"a\"        \"little\"   \"chainsaw\"\n\n\nIn Lab 1 you learned about the sample command. This can be used to simulate a random phenomenon with a finite sample space. To simulate five flips of a fair coin:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE)\n\n[1] \"H\" \"T\" \"T\" \"H\" \"T\"\n\n\nThe vector c(\"H\", \"T\") represents the sample space, size = 5 is the number of simulations you want to perform, and replace = TRUE ensures that you are repeating the trial from scratch each time. By default, sample assumes that all outcomes are equally likely. To override this, you can supply a vector of probabilities:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE, prob = c(0.8, 0.2))\n\n[1] \"H\" \"H\" \"H\" \"T\" \"H\"\n\n\nYou see that the vector is the same length as the sample space (so every outcome gets its own individual probability), and the probabilities have to sum to one.",
+    "text": "A vector in R is just an ordered set of values. The easiest way to create one is to manually list out the values, separated by commas, inside c():\n\nmyvec &lt;- c(pi, 5, 3.6, 2, 9, 6000) \nmyvec\n\n[1]    3.141593    5.000000    3.600000    2.000000    9.000000 6000.000000\n\n\nIf you want to list out all of the integers between some min and max, you can use this shortcut:\n\n5:15\n\n [1]  5  6  7  8  9 10 11 12 13 14 15\n\n\nMore generally, if you want a vector of evenly spaced numbers between a min and a max, do this:\n\na &lt;- seq(0, 1, length.out = 11) \na\n\n [1] 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0\n\n\nIf you want to create a “blank” vector that just has zeros in it, here you go:\n\nz &lt;- numeric(10)\nz\n\n [1] 0 0 0 0 0 0 0 0 0 0\n\n\nIn all of those cases, our vector contained numbers, but there is nothing special about numbers. Here is a vector where each value is a string (a piece of text):\n\npoetry &lt;- c(\"Mary\", \"had\", \"a\", \"little\", \"chainsaw\")\npoetry\n\n[1] \"Mary\"     \"had\"      \"a\"        \"little\"   \"chainsaw\"\n\n\nIn Lab 1 you learned about the sample command. This can be used to simulate a random phenomenon with a finite sample space. To simulate five flips of a fair coin:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE)\n\n[1] \"H\" \"H\" \"H\" \"T\" \"T\"\n\n\nThe vector c(\"H\", \"T\") represents the sample space, size = 5 is the number of simulations you want to perform, and replace = TRUE ensures that you are repeating the trial from scratch each time. By default, sample assumes that all outcomes are equally likely. To override this, you can supply a vector of probabilities:\n\nsample(x = c(\"H\", \"T\"), size = 5, replace = TRUE, prob = c(0.8, 0.2))\n\n[1] \"H\" \"H\" \"H\" \"H\" \"H\"\n\n\nYou see that the vector is the same length as the sample space (so every outcome gets its own individual probability), and the probabilities have to sum to one.",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -652,7 +673,7 @@
     "href": "labs/lab-1.html#how-does-one-count-i-do-it.",
     "title": "Lab 1",
     "section": "How does one count? (I do it.)",
-    "text": "How does one count? (I do it.)\nCoin Toss\nWe first consider the flip of a fair coin. That is, when flipped, the coin will equiprobably come up heads or tails. Suppose we try to illustrate the fairness of a coin by physically flipping it a bunch of times. Very quickly, this becomes tedious and labor-intensive; surely, no reasonable/sane person would want to do this by hand…\n(Though, on the off chance that somebody actually did this, at least you might get co-authorship and recognition from various sectors of media.)\nAt any rate, R provides a much more enticing, efficient alternative to being one of about \\(50\\) people flipping coins thousands of times.\nFirst, let’s define a vector with the sample space – all possible outcomes – of a single coin flip. We notate heads as H and tails as T, and we call the vector sides_of_coin.\n\nsides_of_coin &lt;- c(\"H\", \"T\")\n\nTo simulate an actual coin flip, R has this nifty built-in function called sample().\nThe sample() function\nThe sample() function can take many arguments: a vector of elements (the sample space), a positive integer (the size), a Boolean (with or without replacement), and a vector of probabilities. So, a call to sample() will return a random sample of the specified size from the sample space, either with or without replacement, according to the vector of probabilities.\nNOTE: The replace Boolean defaults to FALSE (without replacement), and the prob vector defaults to equal weighting among the elements in the sample space.\nSample flips\nWe can perform a single coin flip with the following function call.\n\nsample(sides_of_coin, 1)\n\n[1] \"T\"\n\n\nIf we wanted to simulate multiple coin flips in the same vector, sample() lets us do that as well! Below is an example of a simulation of \\(10\\) coin flips.\n\nsample(sides_of_coin, 10, replace = TRUE)\n\n [1] \"H\" \"T\" \"T\" \"H\" \"T\" \"T\" \"H\" \"H\" \"H\" \"T\"\n\n\nWe can also use a different tool to simulate multiple fair coin flips: a for-loop.\n\nfor-loops\nA for-loop is a great way to perform the same set of commands a fixed, known number of times or to perform the same set of commands on the different elements in a vector. The bare bones of the for-loop are given below.\n\nfor(){\n  \n}\n\nIn the parentheses (), you define the variable and values of iteration; in the brackets {}, you list the commands to be performed in each iteration.\nSimulating the flips\nWe will simulation \\(5,000\\) independent flips of a fair coin and track whether each flip came up heads. We do this by initializing a \\(5,000\\)-element vector of zeroes and replacing each zero with a TRUE or FALSE according to the result of the current coin flip. You may find the corresponding code below.\n\nn_reps &lt;- 5000\nwas_it_heads &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_flip &lt;- sample(sides_of_coin, 1)\n  was_it_heads[m] &lt;- new_flip == \"H\"\n}\n\nTo calculate the empirical probability of the coin coming up heads, we will calculate the proportion of flips in our simulation that came up heads. To do this, we can use either the mean() or sum() function; while those functions are typically used to average or sum vectors of numbers, they can also be used on Boolean vectors like was_it_heads. It will treat each TRUE as a one and each FALSE as a zero in the calculation.\nWe use each function in the code chunk below, remembering to divide the sum() call by the number of flips n_rep.\n\ncoin_prob &lt;- mean(was_it_heads)\ncoin_prob\n\n[1] 0.507\n\nsum(was_it_heads) / n_reps\n\n[1] 0.507\n\n\nAs expected, we see a proportion rather close to \\(0.5\\)! Due to the randomness of the individual flips and the finite number of flips, you likely won’t observe a proportion exactly equal to \\(0.5\\). However, the closeness of the proportion to the true probability is an illustration of the frequentist phenomenon of the long-run average. If you play around with the number of flips, you’ll tend to see that the longer the run, the closer the proportion to the true probability.\nFive-Card Poker Hand\nSuppose you are playing some sort of card game with a standard \\(52\\)-card deck. As part of this game, you are dealt a hand of five cards, the composition of which has some bearing on your success in the game.\nProvided is a vector representing the deck of cards, aptly (in my humble opinion) called deck_of_cards.\n\ndeck_of_cards &lt;- c(\"AH\", \"2H\", \"3H\", \"4H\", \"5H\", \"6H\", \"7H\", \"8H\", \"9H\", \"10H\", \"JH\", \"QH\", \"KH\", \"AD\", \"2D\", \"3D\", \"4D\", \"5D\", \"6D\", \"7D\", \"8D\", \"9D\", \"10D\", \"JD\", \"QD\", \"KD\", \"AC\", \"2C\", \"3C\", \"4C\", \"5C\", \"6C\", \"7C\", \"8C\", \"9C\", \"10C\", \"JC\", \"QC\", \"KC\", \"AS\", \"2S\", \"3S\", \"4S\", \"5S\", \"6S\", \"7S\", \"8S\", \"9S\", \"10S\", \"JS\", \"QS\", \"KS\")\n\nRecall that each card in a deck has one of four “suits” (Hearts, Diamonds, Clubs, and Spades) and one of four ranks (Ace, 2-10, Jack, Queen, King). In the above vector, each card is thus represented as a string (sequences of characters between quotation marks) with the (abbreviated) rank and (abbreviated) suit.\nOne hand of interest is called a “full house,” consisting of three cards of one rank and two cards of a different rank. (For example, {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, 3 of Spades} would be a full house, but {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, Queen of Spades} would not be a full house.)\nSo, we want to calculate the probability of getting a full house!\nSimulation and empirical calculation\nHere’s a sample (hehe, see what I did there?) piece of code to simulate the dealing of a single five-card hand.\n\nsample(deck_of_cards, 5)\n\n[1] \"7H\" \"9C\" \"6C\" \"KD\" \"AD\"\n\n\nAs in the previous coin-flipping example, we will use a for-loop to simulate \\(5,000\\) different five-card hands. (Imagine that, after dealing each hand, we re-incorporate the dealt hand into the deck and shuffle thoroughly before the next hand is dealt.) We keep track of whether each hand was a full house in other \\(5,000\\)-element vector of Booleans; below are helper functions I defined in order to check whether a particular hand was a full house.\n\nsplit_card &lt;- function(card){\n  return(c(substr(card, 1, nchar(card) - 1), substr(card, nchar(card), nchar(card))))\n}\n\nis_full_house &lt;- function(hand){\n  ranks &lt;- numeric(5)\n  for(c in 1:5){\n    ranks[c] &lt;- split_card(hand[c])[1]\n  }\n  return(length(unique(ranks)) == 2)\n}\n\nWe then have the following code for the simulation.\n\nn_reps &lt;- 5000\nwas_house_full &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_hand &lt;- sample(deck_of_cards, 5)\n  was_house_full[m] &lt;- is_full_house(new_hand)\n}\n\nAs before, we calculate the empirical probability using both the mean() function and the sum() function.\n\nfivecard_prob &lt;- mean(was_house_full)\nfivecard_prob\n\n[1] 0.0024\n\nsum(was_house_full) / n_reps\n\n[1] 0.0024\n\n\nThe true probability is approximately \\(0.0014\\) – the long-run average simulations strike again!",
+    "text": "How does one count? (I do it.)\nCoin Toss\nWe first consider the flip of a fair coin. That is, when flipped, the coin will equiprobably come up heads or tails. Suppose we try to illustrate the fairness of a coin by physically flipping it a bunch of times. Very quickly, this becomes tedious and labor-intensive; surely, no reasonable/sane person would want to do this by hand…\n(Though, on the off chance that somebody actually did this, at least you might get co-authorship and recognition from various sectors of media.)\nAt any rate, R provides a much more enticing, efficient alternative to being one of about \\(50\\) people flipping coins thousands of times.\nFirst, let’s define a vector with the sample space – all possible outcomes – of a single coin flip. We notate heads as H and tails as T, and we call the vector sides_of_coin.\n\nsides_of_coin &lt;- c(\"H\", \"T\")\n\nTo simulate an actual coin flip, R has this nifty built-in function called sample().\nThe sample() function\nThe sample() function can take many arguments: a vector of elements (the sample space), a positive integer (the size), a Boolean (with or without replacement), and a vector of probabilities. So, a call to sample() will return a random sample of the specified size from the sample space, either with or without replacement, according to the vector of probabilities.\nNOTE: The replace Boolean defaults to FALSE (without replacement), and the prob vector defaults to equal weighting among the elements in the sample space.\nSample flips\nWe can perform a single coin flip with the following function call.\n\nsample(sides_of_coin, 1)\n\n[1] \"H\"\n\n\nIf we wanted to simulate multiple coin flips in the same vector, sample() lets us do that as well! Below is an example of a simulation of \\(10\\) coin flips.\n\nsample(sides_of_coin, 10, replace = TRUE)\n\n [1] \"H\" \"H\" \"T\" \"H\" \"H\" \"H\" \"T\" \"H\" \"H\" \"T\"\n\n\nWe can also use a different tool to simulate multiple fair coin flips: a for-loop.\n\nfor-loops\nA for-loop is a great way to perform the same set of commands a fixed, known number of times or to perform the same set of commands on the different elements in a vector. The bare bones of the for-loop are given below.\n\nfor(){\n  \n}\n\nIn the parentheses (), you define the variable and values of iteration; in the brackets {}, you list the commands to be performed in each iteration.\nSimulating the flips\nWe will simulation \\(5,000\\) independent flips of a fair coin and track whether each flip came up heads. We do this by initializing a \\(5,000\\)-element vector of zeroes and replacing each zero with a TRUE or FALSE according to the result of the current coin flip. You may find the corresponding code below.\n\nn_reps &lt;- 5000\nwas_it_heads &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_flip &lt;- sample(sides_of_coin, 1)\n  was_it_heads[m] &lt;- new_flip == \"H\"\n}\n\nTo calculate the empirical probability of the coin coming up heads, we will calculate the proportion of flips in our simulation that came up heads. To do this, we can use either the mean() or sum() function; while those functions are typically used to average or sum vectors of numbers, they can also be used on Boolean vectors like was_it_heads. It will treat each TRUE as a one and each FALSE as a zero in the calculation.\nWe use each function in the code chunk below, remembering to divide the sum() call by the number of flips n_rep.\n\ncoin_prob &lt;- mean(was_it_heads)\ncoin_prob\n\n[1] 0.5022\n\nsum(was_it_heads) / n_reps\n\n[1] 0.5022\n\n\nAs expected, we see a proportion rather close to \\(0.5\\)! Due to the randomness of the individual flips and the finite number of flips, you likely won’t observe a proportion exactly equal to \\(0.5\\). However, the closeness of the proportion to the true probability is an illustration of the frequentist phenomenon of the long-run average. If you play around with the number of flips, you’ll tend to see that the longer the run, the closer the proportion to the true probability.\nFive-Card Poker Hand\nSuppose you are playing some sort of card game with a standard \\(52\\)-card deck. As part of this game, you are dealt a hand of five cards, the composition of which has some bearing on your success in the game.\nProvided is a vector representing the deck of cards, aptly (in my humble opinion) called deck_of_cards.\n\ndeck_of_cards &lt;- c(\"AH\", \"2H\", \"3H\", \"4H\", \"5H\", \"6H\", \"7H\", \"8H\", \"9H\", \"10H\", \"JH\", \"QH\", \"KH\", \"AD\", \"2D\", \"3D\", \"4D\", \"5D\", \"6D\", \"7D\", \"8D\", \"9D\", \"10D\", \"JD\", \"QD\", \"KD\", \"AC\", \"2C\", \"3C\", \"4C\", \"5C\", \"6C\", \"7C\", \"8C\", \"9C\", \"10C\", \"JC\", \"QC\", \"KC\", \"AS\", \"2S\", \"3S\", \"4S\", \"5S\", \"6S\", \"7S\", \"8S\", \"9S\", \"10S\", \"JS\", \"QS\", \"KS\")\n\nRecall that each card in a deck has one of four “suits” (Hearts, Diamonds, Clubs, and Spades) and one of four ranks (Ace, 2-10, Jack, Queen, King). In the above vector, each card is thus represented as a string (sequences of characters between quotation marks) with the (abbreviated) rank and (abbreviated) suit.\nOne hand of interest is called a “full house,” consisting of three cards of one rank and two cards of a different rank. (For example, {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, 3 of Spades} would be a full house, but {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, Queen of Spades} would not be a full house.)\nSo, we want to calculate the probability of getting a full house!\nSimulation and empirical calculation\nHere’s a sample (hehe, see what I did there?) piece of code to simulate the dealing of a single five-card hand.\n\nsample(deck_of_cards, 5)\n\n[1] \"5S\" \"QS\" \"QH\" \"KH\" \"6S\"\n\n\nAs in the previous coin-flipping example, we will use a for-loop to simulate \\(5,000\\) different five-card hands. (Imagine that, after dealing each hand, we re-incorporate the dealt hand into the deck and shuffle thoroughly before the next hand is dealt.) We keep track of whether each hand was a full house in other \\(5,000\\)-element vector of Booleans; below are helper functions I defined in order to check whether a particular hand was a full house.\n\nsplit_card &lt;- function(card){\n  return(c(substr(card, 1, nchar(card) - 1), substr(card, nchar(card), nchar(card))))\n}\n\nis_full_house &lt;- function(hand){\n  ranks &lt;- numeric(5)\n  for(c in 1:5){\n    ranks[c] &lt;- split_card(hand[c])[1]\n  }\n  return(length(unique(ranks)) == 2)\n}\n\nWe then have the following code for the simulation.\n\nn_reps &lt;- 5000\nwas_house_full &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_hand &lt;- sample(deck_of_cards, 5)\n  was_house_full[m] &lt;- is_full_house(new_hand)\n}\n\nAs before, we calculate the empirical probability using both the mean() function and the sum() function.\n\nfivecard_prob &lt;- mean(was_house_full)\nfivecard_prob\n\n[1] 0.0016\n\nsum(was_house_full) / n_reps\n\n[1] 0.0016\n\n\nThe true probability is approximately \\(0.0014\\) – the long-run average simulations strike again!",
     "crumbs": [
       "Labs",
       "Lab 1"
