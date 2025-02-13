@@ -4,119 +4,187 @@
     "href": "exams/midterm-1.html",
     "title": "Extra Practice for Midterm 1",
     "section": "",
-    "text": "On Monday February 17 during our usual class meeting, we have our first midterm exam. It will cover the following topics:\nBelow is a set of practice problems to help you prepare."
+    "text": "On Monday February 17 during our usual class meeting, we have our first midterm exam. It will cover the following topics:\nBelow is a set of practice problems to help you prepare.",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-1",
     "href": "exams/midterm-1.html#problem-1",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 1",
-    "text": "Problem 1\nLet \\(\\Omega\\) be the set of integers from 1 to 100, that is, \\(\\Omega = \\{1, 2, ..., 99, 100\\}\\). Let \\(E\\) be the subset of \\(\\Omega\\) that contains even numbers and \\(C = \\{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\\}\\).\n\nList the elements in the set \\(E\\cap C\\).\nHow many elements are in \\(E\\cup C\\)?\nHow many elements are in \\((E\\cap C)^c\\)?"
+    "text": "Problem 1\nLet \\(\\Omega\\) be the set of integers from 1 to 100, that is, \\(\\Omega = \\{1, 2, ..., 99, 100\\}\\). Let \\(E\\) be the subset of \\(\\Omega\\) that contains even numbers and \\(C = \\{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\\}\\).\n\nList the elements in the set \\(E\\cap C\\).\nHow many elements are in \\(E\\cup C\\)?\nHow many elements are in \\((E\\cap C)^c\\)?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-2",
     "href": "exams/midterm-1.html#problem-2",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 2",
-    "text": "Problem 2\nTake \\(\\mathbb{R}\\) to be your reference set and consider these subsets:\n\\[\n\\begin{align}\n    A & = \\mathbb{Z} = \\{\\dots,-2, -1, 0, 1, 2,\\dots\\}\\\\\n    B & = (0, 1)\\\\\n    C & = [0, \\infty).\n\\end{align}\n\\]\nExpress the following in as simplified and concise a form as possible:\n\n\\(A \\cap C\\)\n\\(B \\cup C^{c}\\)\n\\(B^{c} \\cap C\\)\n\\(A \\cap B \\cap C\\)"
+    "text": "Problem 2\nTake \\(\\mathbb{R}\\) to be your reference set and consider these subsets:\n\\[\n\\begin{align}\n    A & = \\mathbb{Z} = \\{\\dots,-2, -1, 0, 1, 2,\\dots\\}\\\\\n    B & = (0, 1)\\\\\n    C & = [0, \\infty).\n\\end{align}\n\\]\nExpress the following in as simplified and concise a form as possible:\n\n\\(A \\cap C\\)\n\\(B \\cup C^{c}\\)\n\\(B^{c} \\cap C\\)\n\\(A \\cap B \\cap C\\)",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-3",
     "href": "exams/midterm-1.html#problem-3",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 3",
-    "text": "Problem 3\nLet \\(A\\) and \\(B\\) be two sets. Simplify the following expressions so that each set appears at most once in the final form:\n\n\\((A \\cup B) \\cap (A \\cup B^{c})\\)\n\\((A \\cup B) \\cap (A^{c} \\cup B) \\cap (A \\cup B^{c})\\)"
+    "text": "Problem 3\nLet \\(A\\) and \\(B\\) be two sets. Simplify the following expressions so that each set appears at most once in the final form:\n\n\\((A \\cup B) \\cap (A \\cup B^{c})\\)\n\\((A \\cup B) \\cap (A^{c} \\cup B) \\cap (A \\cup B^{c})\\)",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-4",
     "href": "exams/midterm-1.html#problem-4",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 4",
-    "text": "Problem 4\nSuppose that \\(A\\) and \\(B\\) are mutually exclusive events for which \\(P(A) = 0.3\\) and \\(P(B) = 0.5\\). What is the probability that…\n\neither \\(A\\) or \\(B\\) occurs?\n\\(A\\) occurs but \\(B\\) does not?\nboth \\(A\\) and \\(B\\) occur?\nAre \\(A\\) and \\(B\\) independent? Why or why not?"
+    "text": "Problem 4\nSuppose that \\(A\\) and \\(B\\) are mutually exclusive events for which \\(P(A) = 0.3\\) and \\(P(B) = 0.5\\). What is the probability that…\n\neither \\(A\\) or \\(B\\) occurs?\n\\(A\\) occurs but \\(B\\) does not?\nboth \\(A\\) and \\(B\\) occur?\nAre \\(A\\) and \\(B\\) independent? Why or why not?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-5",
     "href": "exams/midterm-1.html#problem-5",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 5",
-    "text": "Problem 5\nOut of the students in a class, 60% are geniuses, 70% love chocolate, and 40% fall into both categories. Determine the probability that a randomly selected student is neither a genius nor a chocolate lover."
+    "text": "Problem 5\nOut of the students in a class, 60% are geniuses, 70% love chocolate, and 40% fall into both categories. Determine the probability that a randomly selected student is neither a genius nor a chocolate lover.",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-6",
     "href": "exams/midterm-1.html#problem-6",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 6",
-    "text": "Problem 6\nIn the American version of the casino game roulette, the roulette wheel is divided into \\(38\\) spaces, namely the numbers \\(1\\) through \\(36\\) (even numbers colored red and odd colored black) and the special single zero and double zero (both colored green). Gamblers place bets on various groups of numbers and colors. The wheel is then spun one way, a ball is set in motion the other, and the ball eventually settles on one of the numbers – if the bet you placed included that number, you win! Let \\(X\\) be the number on which the ball settles.\nSuppose you know that the roulette wheel is not fair; in particular, you know that the probability that the ball settles on a particular zero is twice the probability the ball settles on a particular non-zero. That is to say,\n\\[\n\\mathbb{P}(X = x) =\n\\begin{cases}\np & \\text{if }x \\in \\{1, 2,\\dots, 36\\} \\\\\n2p & \\text{if }x \\in \\{0, 00\\},\n\\end{cases}\n\\] where \\(p \\in (0, 1)\\).\n\nYour statistically disinclined friend says, “Oh, okay. There are \\(38\\) possible values of \\(X\\), so \\(p = \\frac{1}{38}\\).” Explain why your friend is sorely mistaken.\nWhat is the value of \\(p\\)?"
+    "text": "Problem 6\nIn the American version of the casino game roulette, the roulette wheel is divided into \\(38\\) spaces, namely the numbers \\(1\\) through \\(36\\) (even numbers colored red and odd colored black) and the special single zero and double zero (both colored green). Gamblers place bets on various groups of numbers and colors. The wheel is then spun one way, a ball is set in motion the other, and the ball eventually settles on one of the numbers – if the bet you placed included that number, you win! Let \\(X\\) be the number on which the ball settles.\nSuppose you know that the roulette wheel is not fair; in particular, you know that the probability that the ball settles on a particular zero is twice the probability the ball settles on a particular non-zero. That is to say,\n\\[\n\\mathbb{P}(X = x) =\n\\begin{cases}\np & \\text{if }x \\in \\{1, 2,\\dots, 36\\} \\\\\n2p & \\text{if }x \\in \\{0, 00\\},\n\\end{cases}\n\\] where \\(p \\in (0, 1)\\).\n\nYour statistically disinclined friend says, “Oh, okay. There are \\(38\\) possible values of \\(X\\), so \\(p = \\frac{1}{38}\\).” Explain why your friend is sorely mistaken.\nWhat is the value of \\(p\\)?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-7",
     "href": "exams/midterm-1.html#problem-7",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 7",
-    "text": "Problem 7\nSuppose you have a set \\(A\\) of objects. The power set of \\(A\\) is defined to be the set of all possible subsets of \\(A\\).\n\nLet \\(A = \\{1, 3, 5\\}\\). What is the power set of \\(A\\)?\nSuppose \\(A\\) contains some number of items given by \\(N &gt; 0\\). How many sets are contained in the power set of \\(A\\)?"
+    "text": "Problem 7\nSuppose you have a set \\(A\\) of objects. The power set of \\(A\\) is defined to be the set of all possible subsets of \\(A\\).\n\nLet \\(A = \\{1, 3, 5\\}\\). What is the power set of \\(A\\)?\nSuppose \\(A\\) contains some number of items given by \\(N &gt; 0\\). How many sets are contained in the power set of \\(A\\)?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-8",
     "href": "exams/midterm-1.html#problem-8",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 8",
-    "text": "Problem 8\nSuppose you have your trusty standard \\(52\\)-card deck on hand, and you deal out an eight-card hand. How many possible hands have…\n\nthree cards of one rank, four cards of another rank, and one card of yet another rank?\ntwo cards of each suit?\nat least one ace?\nno spades?"
+    "text": "Problem 8\nSuppose you have your trusty standard \\(52\\)-card deck on hand, and you deal out an eight-card hand. How many possible hands have…\n\nthree cards of one rank, four cards of another rank, and one card of yet another rank?\ntwo cards of each suit?\nat least one ace?\nno spades?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-9",
     "href": "exams/midterm-1.html#problem-9",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 9",
-    "text": "Problem 9\nWe have now at this point the formulae for two- and three-way inclusion-exclusion, namely \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\] and \\[P(A \\cup B \\cup C) = P(A) + P(B) + P(C) - P(A \\cap B) - P(A \\cap C) - P(B \\cap C) + P(A \\cap B \\cap C).\\] Explain in counting terms why we end up subtracting the two-way intersection in the first case and adding the three-way intersection in the second case."
+    "text": "Problem 9\nWe have now at this point the formulae for two- and three-way inclusion-exclusion, namely \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\] and \\[P(A \\cup B \\cup C) = P(A) + P(B) + P(C) - P(A \\cap B) - P(A \\cap C) - P(B \\cap C) + P(A \\cap B \\cap C).\\] Explain in counting terms why we end up subtracting the two-way intersection in the first case and adding the three-way intersection in the second case.",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-10",
     "href": "exams/midterm-1.html#problem-10",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 10",
-    "text": "Problem 10\nLet’s talk face cards. No, not those face cards – the boring kind. In a standard deck of \\(52\\) cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the ``face cards” of the deck. Recall that a standard deck of \\(52\\) cards also has \\(4\\) suits (Hearts, Diamonds, Clubs, and Spades).\nSuppose you deal out two cards from the deck. What is the probability that they are both face cards given that they are both hearts?"
+    "text": "Problem 10\nLet’s talk face cards. No, not those face cards – the boring kind. In a standard deck of \\(52\\) cards, 3 (Jack, Queen, and King) of the 13 ranks are collectively known as the ``face cards” of the deck. Recall that a standard deck of \\(52\\) cards also has \\(4\\) suits (Hearts, Diamonds, Clubs, and Spades).\nSuppose you deal out two cards from the deck. What is the probability that they are both face cards given that they are both hearts?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-11",
     "href": "exams/midterm-1.html#problem-11",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 11",
-    "text": "Problem 11\nDisclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take. My Italian office mate is known to (1) watch football (in freedom units, that’s soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he’s watching a football match, there’s a \\(80\\%\\) chance he’ll be yelling at his monitor. At any rate, he only watches a match \\(10\\%\\) of the time, and he yells \\(40\\%\\) of the time that he’s not watching a match.\nGiven that I enter my office to his excited utterances, what is the probability that he is watching a football match?"
+    "text": "Problem 11\nDisclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take. My Italian office mate is known to (1) watch football (in freedom units, that’s soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he’s watching a football match, there’s a \\(80\\%\\) chance he’ll be yelling at his monitor. At any rate, he only watches a match \\(10\\%\\) of the time, and he yells \\(40\\%\\) of the time that he’s not watching a match.\nGiven that I enter my office to his excited utterances, what is the probability that he is watching a football match?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-12",
     "href": "exams/midterm-1.html#problem-12",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 12",
-    "text": "Problem 12\nSome of the greatest creations in the history of the universe have been born of mash-ups. You want breakfast and lunch? You got brunch! You want drama and comedy? You got dramedy! Perhaps the greatest mash-up of all: you want conditional probability and independent events? You got conditionally independent events!\nLet \\(A\\), \\(B\\), and \\(C\\) be events with \\(P(C) &gt; 0\\). \\(A\\) and \\(B\\) are conditionally independent given \\(C\\) if and only if\n\\[\nP(A \\cap B \\mid C) = P(A \\mid C)P(B \\mid C).\n\\]\nShow that the above implies \\(P(A \\mid B, C) = P(A \\mid C)\\)."
+    "text": "Problem 12\nSome of the greatest creations in the history of the universe have been born of mash-ups. You want breakfast and lunch? You got brunch! You want drama and comedy? You got dramedy! Perhaps the greatest mash-up of all: you want conditional probability and independent events? You got conditionally independent events!\nLet \\(A\\), \\(B\\), and \\(C\\) be events with \\(P(C) &gt; 0\\). \\(A\\) and \\(B\\) are conditionally independent given \\(C\\) if and only if\n\\[\nP(A \\cap B \\mid C) = P(A \\mid C)P(B \\mid C).\n\\]\nShow that the above implies \\(P(A \\mid B, C) = P(A \\mid C)\\).",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-13",
     "href": "exams/midterm-1.html#problem-13",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 13",
-    "text": "Problem 13\nThe probability that a child in a given family will inherit a certain genetic mutation is 5%, and this probability is unaffected by the inheritance status of their siblings. Consider a family with 4 children.\n\nIf it is known that the first born has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?\nIf it is known that at least one child has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?"
+    "text": "Problem 13\nThe probability that a child in a given family will inherit a certain genetic mutation is 5%, and this probability is unaffected by the inheritance status of their siblings. Consider a family with 4 children.\n\nIf it is known that the first born has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?\nIf it is known that at least one child has inherited the mutation, what is the expected number of children in the family who have inherited the mutation?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-14",
     "href": "exams/midterm-1.html#problem-14",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 14",
-    "text": "Problem 14\nTwo balls are chosen randomly from an urn containing \\(9\\) green, \\(6\\) black, and \\(5\\) orange balls. Suppose that we win \\(\\$2\\) for each black ball selected, we lose \\(\\$1\\) for each green ball selected, and we earn nothing for each orange ball selected. Let \\(X\\) denote our winnings.\n\nMake a table listing the possible values of \\(X\\) and the probabilities associated with each value.\nCompute the expected value of \\(X\\).\nSketch the cdf and the pmf of \\(X\\)."
+    "text": "Problem 14\nTwo balls are chosen randomly from an urn containing \\(9\\) green, \\(6\\) black, and \\(5\\) orange balls. Suppose that we win \\(\\$2\\) for each black ball selected, we lose \\(\\$1\\) for each green ball selected, and we earn nothing for each orange ball selected. Let \\(X\\) denote our winnings.\n\nMake a table listing the possible values of \\(X\\) and the probabilities associated with each value.\nCompute the expected value of \\(X\\).\nSketch the cdf and the pmf of \\(X\\).",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-15",
     "href": "exams/midterm-1.html#problem-15",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 15",
-    "text": "Problem 15\nSuppose you have a sequence of independent \\(\\text{Bernoulli}(p)\\) trials; that is, each trial has probability \\(p\\) of success. We are interested in seeing how long it takes to observe a fixed number \\(r &gt; 0\\) of successes and thus repeat the trials until we observe \\(r\\) successes. Let \\(A\\) be the number of the trial at which we observe the \\(r\\)th success.\n\nWhat is the sample space of \\(A\\)?\nFix \\(n &gt; 0\\). What is the probability that we observe the \\(r\\)th success on the \\(n\\)th trial?"
+    "text": "Problem 15\nSuppose you have a sequence of independent \\(\\text{Bernoulli}(p)\\) trials; that is, each trial has probability \\(p\\) of success. We are interested in seeing how long it takes to observe a fixed number \\(r &gt; 0\\) of successes and thus repeat the trials until we observe \\(r\\) successes. Let \\(A\\) be the number of the trial at which we observe the \\(r\\)th success.\n\nWhat is the sample space of \\(A\\)?\nFix \\(n &gt; 0\\). What is the probability that we observe the \\(r\\)th success on the \\(n\\)th trial?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "exams/midterm-1.html#problem-16",
     "href": "exams/midterm-1.html#problem-16",
     "title": "Extra Practice for Midterm 1",
     "section": "Problem 16",
-    "text": "Problem 16\nLet \\(D \\sim \\text{Geometric}(p)\\), and fix \\(n, k &gt; 0\\). What is \\(P(D = n + k \\,|\\, D &gt; k)\\)? Does this look familiar?"
+    "text": "Problem 16\nLet \\(D \\sim \\text{Geometric}(p)\\), and fix \\(n, k &gt; 0\\). What is \\(P(D = n + k \\,|\\, D &gt; k)\\)? Does this look familiar?",
+    "crumbs": [
+      "Labs",
+      "Midterm 1 Practice"
+    ]
   },
   {
     "objectID": "syllabus/syllabus_assignments.html",
