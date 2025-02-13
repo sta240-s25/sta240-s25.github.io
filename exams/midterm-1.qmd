@@ -16,7 +16,7 @@ Below is a set of practice problems to help you prepare.
 
 ## Problem X
 
-Let $\Omega$ be the set of integers from 1 to 100, that is, $\Omega = \{1, 2, ..., 99, 100\}$. Let $E$ be the subset of $\Omega$ that contains even numbers, $B$ be the subset of $\Omega$ that contains integers 1 through 20, and $C = \{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\}$.
+Let $\Omega$ be the set of integers from 1 to 100, that is, $\Omega = \{1, 2, ..., 99, 100\}$. Let $E$ be the subset of $\Omega$ that contains even numbers and $C = \{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\}$.
 
 a.  List the elements in the set $E\cap C$.
 b.  How many elements are in $E\cup C$?
@@ -43,7 +43,7 @@ d.  $A \cap B \cap C$
 
 ## Problem X
 
-Let $A$ and $B$ be two sets. Simplify the following expressions so that each set appears exactly once in the final form:
+Let $A$ and $B$ be two sets. Simplify the following expressions so that each set appears at most once in the final form:
 
 a. $(A \cup B) \cap (A \cup B^{c})$
 b. $(A \cup B) \cap (A^{c} \cup B) \cap (A \cup B^{c})$
@@ -114,7 +114,7 @@ Suppose you deal out two cards from the deck. What is the probability that they 
 ## Problem X
 
 Disclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take.
-My Italian office mate is known to (1) watch football (in freedom units, that's soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he's watching a football match, there's a $80\%$ chance he'll be yelling at his monitor. In general, though, he only yells about $12\%$ of the time. At any rate, he only watches a match $10\%$ of the time, and he yells $40\%$ of the time that he's not watching a match.
+My Italian office mate is known to (1) watch football (in freedom units, that's soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he's watching a football match, there's a $80\%$ chance he'll be yelling at his monitor. At any rate, he only watches a match $10\%$ of the time, and he yells $40\%$ of the time that he's not watching a match.
 
 Given that I enter my office to his excited utterances, what is the probability that he is watching a football match?
 
