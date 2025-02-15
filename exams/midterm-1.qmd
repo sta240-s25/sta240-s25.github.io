@@ -12,6 +12,10 @@ On Monday February 17 during our usual class meeting, we have our first midterm 
 
 Below is a set of practice problems to help you prepare.
 
+::: callout-note 
+Solutions are [here](https://duke.box.com/s/6xoyd1qjlkw4cnui7plbuuv84cd5u9r9).
+:::
+
 # Set theory
 
 ## Problem 1
