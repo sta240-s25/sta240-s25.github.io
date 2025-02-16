@@ -12,8 +12,8 @@ On Monday February 17 during our usual class meeting, we have our first midterm 
 
 Below is a set of practice problems to help you prepare.
 
-::: callout-note 
-Solutions are [here](https://duke.box.com/s/6xoyd1qjlkw4cnui7plbuuv84cd5u9r9).
+::: callout-note
+Solutions are [here](https://duke.box.com/s/x0551eddujvi7t02k2ukbjrihnmgo70s).
 :::
 
 # Set theory
@@ -49,8 +49,8 @@ d.  $A \cap B \cap C$
 
 Let $A$ and $B$ be two sets. Simplify the following expressions so that each set appears at most once in the final form:
 
-a. $(A \cup B) \cap (A \cup B^{c})$
-b. $(A \cup B) \cap (A^{c} \cup B) \cap (A \cup B^{c})$
+a.  $(A \cup B) \cap (A \cup B^{c})$
+b.  $(A \cup B) \cap (A^{c} \cup B) \cap (A \cup B^{c})$
 
 # Probability axioms and basic rules
 
@@ -79,11 +79,10 @@ $$
 p & \text{if }x \in \{1, 2,\dots, 36\} \\
 2p & \text{if }x \in \{0, 00\},
 \end{cases}
-$$
-where $p \in (0, 1)$.
+$$ where $p \in (0, 1)$.
 
-a. Your statistically disinclined friend says, "Oh, okay. There are $38$ possible values of $X$, so $p = \frac{1}{38}$." Explain why your friend is sorely mistaken.
-b. What is the value of $p$?
+a.  Your statistically disinclined friend says, "Oh, okay. There are $38$ possible values of $X$, so $p = \frac{1}{38}$." Explain why your friend is sorely mistaken.
+b.  What is the value of $p$?
 
 # Counting methods
 
@@ -98,10 +97,10 @@ b.  Suppose $A$ contains some number of items given by $N > 0$. How many sets ar
 
 Suppose you have your trusty standard $52$-card deck on hand, and you deal out an eight-card hand. How many possible hands have...
 
-a. three cards of one rank, four cards of another rank, and one card of yet another rank?
-b. two cards of each suit?
-c. at least one ace?
-d. no spades?
+a.  three cards of one rank, four cards of another rank, and one card of yet another rank?
+b.  two cards of each suit?
+c.  at least one ace?
+d.  no spades?
 
 ## Problem 9
 
@@ -117,8 +116,7 @@ Suppose you deal out two cards from the deck. What is the probability that they 
 
 ## Problem 11
 
-Disclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take.
-My Italian office mate is known to (1) watch football (in freedom units, that's soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he's watching a football match, there's a $80\%$ chance he'll be yelling at his monitor. At any rate, he only watches a match $10\%$ of the time, and he yells $40\%$ of the time that he's not watching a match.
+Disclaimer: The referenced party gave express permission to be used in this way. All numbers quoted are self-assessments, give or take. My Italian office mate is known to (1) watch football (in freedom units, that's soccer) on his computer monitor and (2) yell at said monitor, sometimes simultaneously. In fact, if he's watching a football match, there's a $80\%$ chance he'll be yelling at his monitor. At any rate, he only watches a match $10\%$ of the time, and he yells $40\%$ of the time that he's not watching a match.
 
 Given that I enter my office to his excited utterances, what is the probability that he is watching a football match?
 
@@ -147,9 +145,9 @@ b.  If it is known that at least one child has inherited the mutation, what is t
 
 Two balls are chosen randomly from an urn containing $9$ green, $6$ black, and $5$ orange balls. Suppose that we win $\$2$ for each black ball selected, we lose $\$1$ for each green ball selected, and we earn nothing for each orange ball selected. Let $X$ denote our winnings.
 
-a. Make a table listing the possible values of $X$ and the probabilities associated with each value.
-b. Compute the expected value of $X$.
-c. Sketch the cdf and the pmf of $X$.
+a.  Make a table listing the possible values of $X$ and the probabilities associated with each value.
+b.  Compute the expected value of $X$.
+c.  Sketch the cdf and the pmf of $X$.
 
 ## Problem 15
 
