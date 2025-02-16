@@ -539,6 +539,138 @@
     ]
   },
   {
+    "objectID": "labs/lab-1.html",
+    "href": "labs/lab-1.html",
+    "title": "Lab 1",
+    "section": "",
+    "text": "Throughout this course, it may serve you well to familiarize yourself with the following:\n\n\nR/RStudio for coding;\n\nLaTeX (or \\(\\LaTeX\\), if you’re cool) for typesetting math;\n\nQuarto for synthesizing your expertly written code and your beautifully typeset math in a wonderfully legible PDF format!\n\nOf these three tools, we will focus the most on R/RStudio during lab time, though LaTeX and Quarto will certainly make incidental appearances.\nTo use R/RStudio, you can either use the Duke Container Manager or download the necessary applications here. Note: The R/RStudio in the containers comes with TinyTeX already downloaded. So, if you download the application and want to use LaTeX in your files, run the following command (and whatever subsequent commands you are prompted to run):\n\ntinytex::install_tinytex()\n\nFor a quick guide to useful LaTeX symbols, check out this OEIS wiki or this Rice page.\nTo learn more about Quarto, visit https://quarto.org.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab-1.html#important-techno-babble",
+    "href": "labs/lab-1.html#important-techno-babble",
+    "title": "Lab 1",
+    "section": "",
+    "text": "Throughout this course, it may serve you well to familiarize yourself with the following:\n\n\nR/RStudio for coding;\n\nLaTeX (or \\(\\LaTeX\\), if you’re cool) for typesetting math;\n\nQuarto for synthesizing your expertly written code and your beautifully typeset math in a wonderfully legible PDF format!\n\nOf these three tools, we will focus the most on R/RStudio during lab time, though LaTeX and Quarto will certainly make incidental appearances.\nTo use R/RStudio, you can either use the Duke Container Manager or download the necessary applications here. Note: The R/RStudio in the containers comes with TinyTeX already downloaded. So, if you download the application and want to use LaTeX in your files, run the following command (and whatever subsequent commands you are prompted to run):\n\ntinytex::install_tinytex()\n\nFor a quick guide to useful LaTeX symbols, check out this OEIS wiki or this Rice page.\nTo learn more about Quarto, visit https://quarto.org.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab-1.html#skillz",
+    "href": "labs/lab-1.html#skillz",
+    "title": "Lab 1",
+    "section": "Skillz",
+    "text": "Skillz\nBesides helping you exercise your probability and statistics muscles, each lab will help you develop your understanding of and comfort with various coding concepts and skills. Although the implementation will vary from language to language, the underlying structure will remain the same!\nThis lab exercises the following coding concepts:\n\nVectors/Arrays of numbers and strings;\n\nfor-loops;\nBoolean logic and operations;\nBase R functions like mean() and sample().",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab-1.html#how-does-one-count-i-do-it.",
+    "href": "labs/lab-1.html#how-does-one-count-i-do-it.",
+    "title": "Lab 1",
+    "section": "How does one count? (I do it.)",
+    "text": "How does one count? (I do it.)\nCoin Toss\nWe first consider the flip of a fair coin. That is, when flipped, the coin will equiprobably come up heads or tails. Suppose we try to illustrate the fairness of a coin by physically flipping it a bunch of times. Very quickly, this becomes tedious and labor-intensive; surely, no reasonable/sane person would want to do this by hand…\n(Though, on the off chance that somebody actually did this, at least you might get co-authorship and recognition from various sectors of media.)\nAt any rate, R provides a much more enticing, efficient alternative to being one of about \\(50\\) people flipping coins thousands of times.\nFirst, let’s define a vector with the sample space – all possible outcomes – of a single coin flip. We notate heads as H and tails as T, and we call the vector sides_of_coin.\n\nsides_of_coin &lt;- c(\"H\", \"T\")\n\nTo simulate an actual coin flip, R has this nifty built-in function called sample().\nThe sample() function\nThe sample() function can take many arguments: a vector of elements (the sample space), a positive integer (the size), a Boolean (with or without replacement), and a vector of probabilities. So, a call to sample() will return a random sample of the specified size from the sample space, either with or without replacement, according to the vector of probabilities.\nNOTE: The replace Boolean defaults to FALSE (without replacement), and the prob vector defaults to equal weighting among the elements in the sample space.\nSample flips\nWe can perform a single coin flip with the following function call.\n\nsample(sides_of_coin, 1)\n\n[1] \"H\"\n\n\nIf we wanted to simulate multiple coin flips in the same vector, sample() lets us do that as well! Below is an example of a simulation of \\(10\\) coin flips.\n\nsample(sides_of_coin, 10, replace = TRUE)\n\n [1] \"H\" \"H\" \"T\" \"H\" \"H\" \"H\" \"T\" \"H\" \"H\" \"T\"\n\n\nWe can also use a different tool to simulate multiple fair coin flips: a for-loop.\n\nfor-loops\nA for-loop is a great way to perform the same set of commands a fixed, known number of times or to perform the same set of commands on the different elements in a vector. The bare bones of the for-loop are given below.\n\nfor(){\n  \n}\n\nIn the parentheses (), you define the variable and values of iteration; in the brackets {}, you list the commands to be performed in each iteration.\nSimulating the flips\nWe will simulation \\(5,000\\) independent flips of a fair coin and track whether each flip came up heads. We do this by initializing a \\(5,000\\)-element vector of zeroes and replacing each zero with a TRUE or FALSE according to the result of the current coin flip. You may find the corresponding code below.\n\nn_reps &lt;- 5000\nwas_it_heads &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_flip &lt;- sample(sides_of_coin, 1)\n  was_it_heads[m] &lt;- new_flip == \"H\"\n}\n\nTo calculate the empirical probability of the coin coming up heads, we will calculate the proportion of flips in our simulation that came up heads. To do this, we can use either the mean() or sum() function; while those functions are typically used to average or sum vectors of numbers, they can also be used on Boolean vectors like was_it_heads. It will treat each TRUE as a one and each FALSE as a zero in the calculation.\nWe use each function in the code chunk below, remembering to divide the sum() call by the number of flips n_rep.\n\ncoin_prob &lt;- mean(was_it_heads)\ncoin_prob\n\n[1] 0.5022\n\nsum(was_it_heads) / n_reps\n\n[1] 0.5022\n\n\nAs expected, we see a proportion rather close to \\(0.5\\)! Due to the randomness of the individual flips and the finite number of flips, you likely won’t observe a proportion exactly equal to \\(0.5\\). However, the closeness of the proportion to the true probability is an illustration of the frequentist phenomenon of the long-run average. If you play around with the number of flips, you’ll tend to see that the longer the run, the closer the proportion to the true probability.\nFive-Card Poker Hand\nSuppose you are playing some sort of card game with a standard \\(52\\)-card deck. As part of this game, you are dealt a hand of five cards, the composition of which has some bearing on your success in the game.\nProvided is a vector representing the deck of cards, aptly (in my humble opinion) called deck_of_cards.\n\ndeck_of_cards &lt;- c(\"AH\", \"2H\", \"3H\", \"4H\", \"5H\", \"6H\", \"7H\", \"8H\", \"9H\", \"10H\", \"JH\", \"QH\", \"KH\", \"AD\", \"2D\", \"3D\", \"4D\", \"5D\", \"6D\", \"7D\", \"8D\", \"9D\", \"10D\", \"JD\", \"QD\", \"KD\", \"AC\", \"2C\", \"3C\", \"4C\", \"5C\", \"6C\", \"7C\", \"8C\", \"9C\", \"10C\", \"JC\", \"QC\", \"KC\", \"AS\", \"2S\", \"3S\", \"4S\", \"5S\", \"6S\", \"7S\", \"8S\", \"9S\", \"10S\", \"JS\", \"QS\", \"KS\")\n\nRecall that each card in a deck has one of four “suits” (Hearts, Diamonds, Clubs, and Spades) and one of four ranks (Ace, 2-10, Jack, Queen, King). In the above vector, each card is thus represented as a string (sequences of characters between quotation marks) with the (abbreviated) rank and (abbreviated) suit.\nOne hand of interest is called a “full house,” consisting of three cards of one rank and two cards of a different rank. (For example, {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, 3 of Spades} would be a full house, but {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, Queen of Spades} would not be a full house.)\nSo, we want to calculate the probability of getting a full house!\nSimulation and empirical calculation\nHere’s a sample (hehe, see what I did there?) piece of code to simulate the dealing of a single five-card hand.\n\nsample(deck_of_cards, 5)\n\n[1] \"5S\" \"QS\" \"QH\" \"KH\" \"6S\"\n\n\nAs in the previous coin-flipping example, we will use a for-loop to simulate \\(5,000\\) different five-card hands. (Imagine that, after dealing each hand, we re-incorporate the dealt hand into the deck and shuffle thoroughly before the next hand is dealt.) We keep track of whether each hand was a full house in other \\(5,000\\)-element vector of Booleans; below are helper functions I defined in order to check whether a particular hand was a full house.\n\nsplit_card &lt;- function(card){\n  return(c(substr(card, 1, nchar(card) - 1), substr(card, nchar(card), nchar(card))))\n}\n\nis_full_house &lt;- function(hand){\n  ranks &lt;- numeric(5)\n  for(c in 1:5){\n    ranks[c] &lt;- split_card(hand[c])[1]\n  }\n  return(length(unique(ranks)) == 2)\n}\n\nWe then have the following code for the simulation.\n\nn_reps &lt;- 5000\nwas_house_full &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_hand &lt;- sample(deck_of_cards, 5)\n  was_house_full[m] &lt;- is_full_house(new_hand)\n}\n\nAs before, we calculate the empirical probability using both the mean() function and the sum() function.\n\nfivecard_prob &lt;- mean(was_house_full)\nfivecard_prob\n\n[1] 0.0016\n\nsum(was_house_full) / n_reps\n\n[1] 0.0016\n\n\nThe true probability is approximately \\(0.0014\\) – the long-run average simulations strike again!",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab-1.html#we-can-count-on-you-you-do-it.",
+    "href": "labs/lab-1.html#we-can-count-on-you-you-do-it.",
+    "title": "Lab 1",
+    "section": "We can count on you! (You do it.)",
+    "text": "We can count on you! (You do it.)\nWell, that was fun! Shame that it’s over…\nWait a second. gasp We have two more exercises just for you to try – hurray!\nINSTRUCTIONS: For each of the following two exercises, your mission (should you choose to accept it) is to perform simulations from which you calculate the empirical probabilities of the specified events.\nAnd no, the order in which you accomplish these tasks does not matter. :) Happy counting!\nThe Birthday Problem\nWe have the following vector of strings, formatted MMMDD, wherein each entry is one of \\(365\\) days in a non-leap year.\n\nbdays &lt;- c(\"Jan01\", \"Jan02\", \"Jan03\", \"Jan04\", \"Jan05\", \"Jan06\", \"Jan07\", \"Jan08\", \"Jan09\", \"Jan10\", \"Jan11\", \"Jan12\", \"Jan13\", \"Jan14\", \"Jan15\", \"Jan16\", \"Jan17\", \"Jan18\", \"Jan19\", \"Jan20\", \"Jan21\", \"Jan22\", \"Jan23\", \"Jan24\", \"Jan25\", \"Jan26\", \"Jan27\", \"Jan28\", \"Jan29\", \"Jan30\", \"Jan31\", \"Feb01\", \"Feb02\", \"Feb03\", \"Feb04\", \"Feb05\", \"Feb06\", \"Feb07\", \"Feb08\", \"Feb09\", \"Feb10\", \"Feb11\", \"Feb12\", \"Feb13\", \"Feb14\", \"Feb15\", \"Feb16\", \"Feb17\", \"Feb18\", \"Feb19\", \"Feb20\", \"Feb21\", \"Feb22\", \"Feb23\", \"Feb24\", \"Feb25\", \"Feb26\", \"Feb27\", \"Feb28\", \"Mar01\", \"Mar02\", \"Mar03\", \"Mar04\", \"Mar05\", \"Mar06\", \"Mar07\", \"Mar08\", \"Mar09\", \"Mar10\", \"Mar11\", \"Mar12\", \"Mar13\", \"Mar14\", \"Mar15\", \"Mar16\", \"Mar17\", \"Mar18\", \"Mar19\", \"Mar20\", \"Mar21\", \"Mar22\", \"Mar23\", \"Mar24\", \"Mar25\", \"Mar26\", \"Mar27\", \"Mar28\", \"Mar29\", \"Mar30\", \"Mar31\", \"Apr01\", \"Apr02\", \"Apr03\", \"Apr04\", \"Apr05\", \"Apr06\", \"Apr07\", \"Apr08\", \"Apr09\", \"Apr10\", \"Apr11\", \"Apr12\", \"Apr13\", \"Apr14\", \"Apr15\", \"Apr16\", \"Apr17\", \"Apr18\", \"Apr19\", \"Apr20\", \"Apr21\", \"Apr22\", \"Apr23\", \"Apr24\", \"Apr25\", \"Apr26\", \"Apr27\", \"Apr28\", \"Apr29\", \"Apr30\", \"May01\", \"May02\", \"May03\", \"May04\", \"May05\", \"May06\", \"May07\", \"May08\", \"May09\", \"May10\", \"May11\", \"May12\", \"May13\", \"May14\", \"May15\", \"May16\", \"May17\", \"May18\", \"May19\", \"May20\", \"May21\", \"May22\", \"May23\", \"May24\", \"May25\", \"May26\", \"May27\", \"May28\", \"May29\", \"May30\", \"May31\", \"Jun01\", \"Jun02\", \"Jun03\", \"Jun04\", \"Jun05\", \"Jun06\", \"Jun07\", \"Jun08\", \"Jun09\", \"Jun10\", \"Jun11\", \"Jun12\", \"Jun13\", \"Jun14\", \"Jun15\", \"Jun16\", \"Jun17\", \"Jun18\", \"Jun19\", \"Jun20\", \"Jun21\", \"Jun22\", \"Jun23\", \"Jun24\", \"Jun25\", \"Jun26\", \"Jun27\", \"Jun28\", \"Jun29\", \"Jun30\", \"Jul01\", \"Jul02\", \"Jul03\", \"Jul04\", \"Jul05\", \"Jul06\", \"Jul07\", \"Jul08\", \"Jul09\", \"Jul10\", \"Jul11\", \"Jul12\", \"Jul13\", \"Jul14\", \"Jul15\", \"Jul16\", \"Jul17\", \"Jul18\", \"Jul19\", \"Jul20\", \"Jul21\", \"Jul22\", \"Jul23\", \"Jul24\", \"Jul25\", \"Jul26\", \"Jul27\", \"Jul28\", \"Jul29\", \"Jul30\", \"Jul31\", \"Aug01\", \"Aug02\", \"Aug03\", \"Aug04\", \"Aug05\", \"Aug06\", \"Aug07\", \"Aug08\", \"Aug09\", \"Aug10\", \"Aug11\", \"Aug12\", \"Aug13\", \"Aug14\", \"Aug15\", \"Aug16\", \"Aug17\", \"Aug18\", \"Aug19\", \"Aug20\", \"Aug21\", \"Aug22\", \"Aug23\", \"Aug24\", \"Aug25\", \"Aug26\", \"Aug27\", \"Aug28\", \"Aug29\", \"Aug30\", \"Aug31\", \"Sep01\", \"Sep02\", \"Sep03\", \"Sep04\", \"Sep05\", \"Sep06\", \"Sep07\", \"Sep08\", \"Sep09\", \"Sep10\", \"Sep11\", \"Sep12\", \"Sep13\", \"Sep14\", \"Sep15\", \"Sep16\", \"Sep17\", \"Sep18\", \"Sep19\", \"Sep20\", \"Sep21\", \"Sep22\", \"Sep23\", \"Sep24\", \"Sep25\", \"Sep26\", \"Sep27\", \"Sep28\", \"Sep29\", \"Sep30\", \"Oct01\", \"Oct02\", \"Oct03\", \"Oct04\", \"Oct05\", \"Oct06\", \"Oct07\", \"Oct08\", \"Oct09\", \"Oct10\", \"Oct11\", \"Oct12\", \"Oct13\", \"Oct14\", \"Oct15\", \"Oct16\", \"Oct17\", \"Oct18\", \"Oct19\", \"Oct20\", \"Oct21\", \"Oct22\", \"Oct23\", \"Oct24\", \"Oct25\", \"Oct26\", \"Oct27\", \"Oct28\", \"Oct29\", \"Oct30\", \"Oct31\", \"Nov01\", \"Nov02\", \"Nov03\", \"Nov04\", \"Nov05\", \"Nov06\", \"Nov07\", \"Nov08\", \"Nov09\", \"Nov10\", \"Nov11\", \"Nov12\", \"Nov13\", \"Nov14\", \"Nov15\", \"Nov16\", \"Nov17\", \"Nov18\", \"Nov19\", \"Nov20\", \"Nov21\", \"Nov22\", \"Nov23\", \"Nov24\", \"Nov25\", \"Nov26\", \"Nov27\", \"Nov28\", \"Nov29\", \"Nov30\", \"Dec01\", \"Dec02\", \"Dec03\", \"Dec04\", \"Dec05\", \"Dec06\", \"Dec07\", \"Dec08\", \"Dec09\", \"Dec10\", \"Dec11\", \"Dec12\", \"Dec13\", \"Dec14\", \"Dec15\", \"Dec16\", \"Dec17\", \"Dec18\", \"Dec19\", \"Dec20\", \"Dec21\", \"Dec22\", \"Dec23\", \"Dec24\", \"Dec25\", \"Dec26\", \"Dec27\", \"Dec28\", \"Dec29\", \"Dec30\", \"Dec31\")\n\nWe now address the Birthday Problem: Given a group of \\(n\\) people, what is the probability that at least \\(2\\) share a birthday? Consider \\(n = 10\\), \\(n = 100\\), and \\(n = 1,000\\).\nHelpful suggestions\nThis is yet another counting problem! For a given \\(n\\), what does your sample space look like?\nAny of the following functions may be useful in the simulation portion of this particular exercise: unique(), duplicated(), anyDuplicated(). To find out more, type ?&lt;function&gt; in the console and the documentation will appear in the Help tab on the right-hand side of the window.\nTwo-Card Poker Hand\nSuppose you are dealt a two-card hand; what is the probability that both cards are the same suit (i.e., Hearts, Diamonds, Clubs, Spades)? (You may use the deck_of_cards vector defined above to simulate this counting exercise.)",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html",
+    "href": "labs/lab-2.html",
+    "title": "Lab 2",
+    "section": "",
+    "text": "Car Talk (1977 - 2012) was a popular show on NPR. It featured a segment called the “Puzzler,” where the hosts would read a brain teaser and invite listeners to send in solutions for the chance to win a prize. Here is the text of one such Puzzler (original audio at around 19:19 here):\nIn what follows, you may find some notation useful. Let \\(D\\) denote your true disease status, and \\(T\\) denote the result of your test. Then\n\\[\n\\begin{align*}\n    p &= P(D=+) && \\text{(prevalence)}\n    \\\\\n    f_{-}&=P(T=-\\,|\\, D=+) && \\text{(false negative rate)}\n    \\\\\n    f_{+}&=P(T=+\\,|\\, D=-) && \\text{(false positive rate)}\n    \\\\\n    1-f_{-}&=P(T=+\\,|\\, D = +) && \\text{(sensitivity)}\n    \\\\\n    1-f_{+}&=P(T=-\\,|\\, D = -) && \\text{(specificity)}.\n\\end{align*}\n\\]",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html#problem-1",
+    "href": "labs/lab-2.html#problem-1",
+    "title": "Lab 2",
+    "section": "Problem 1",
+    "text": "Problem 1\nWhat is your solution to the puzzler?",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html#problem-2",
+    "href": "labs/lab-2.html#problem-2",
+    "title": "Lab 2",
+    "section": "Problem 2",
+    "text": "Problem 2\nExplain the correct way to solve this problem. Exactly what probability are we asked to compute, and what formula should we apply to do it? Does the prompt actually provide enough information to ultimately get the job done?",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html#problem-3",
+    "href": "labs/lab-2.html#problem-3",
+    "title": "Lab 2",
+    "section": "Problem 3",
+    "text": "Problem 3\nThis is the solution that the hosts ultimately revealed (original audio at around 20:30 here):\n\nLet’s say 1000 people take the test. Fifty people will test positive and yet they will not have it. One will test positive and have it. So your chances of actually having it, even though you tested positive, are one in 51, or a little less than 2%.\n\nSo, what do you think? Did they get it right? Explain how the show interpreted the information given in the Puzzler, and explain what arithmetic formula they implicitly applied in order to compute their answer.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html#problem-4",
+    "href": "labs/lab-2.html#problem-4",
+    "title": "Lab 2",
+    "section": "Problem 4",
+    "text": "Problem 4\nExplain two things:\n\nUnder what conditions is the formula that the show used actually an upper bound on the correct answer?\nWhy might an upper bound on the true probability still be a useful thing to calculate?",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html#problem-5",
+    "href": "labs/lab-2.html#problem-5",
+    "title": "Lab 2",
+    "section": "Problem 5",
+    "text": "Problem 5\nSo, the show’s answer, while wrong, could still be potentially useful upper bound on the true probability. Neat! But how wrong is it, even? To get a sense of this, use a computer to create some line plots of the prevalence \\(p\\in[0,\\, 1]\\) against the true and approximate probabilities for different values of \\(f_-\\) and \\(f_+\\). Mix-and-match \\(f_-,\\, f_+\\in\\{0.1,\\, 0.2\\}\\).",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab-2.html#problem-6",
+    "href": "labs/lab-2.html#problem-6",
+    "title": "Lab 2",
+    "section": "Problem 6",
+    "text": "Problem 6\nNow let’s try to be more precise about the “wrongness” of the show’s answer. Let \\(B\\) denote the true probability, and \\(\\overline{B}\\) denote the show’s approximation. In part (c) you showed that \\(B\\leq \\overline{B}\\) under certain conditions. Now define\n\\[\n\\delta = \\frac{\\overline{B}-B}{B}.\n\\]\nThis is the relative error of the show’s answer. Prove that\n\\[\n|\\delta|\n\\leq\n\\max\n\\left\\{\n\\frac{f_-}{1-f_-}\n,\\,\n\\frac{f_+}{1+f_+}\n\\right\\}\n,\\quad \\forall p\\in[0,\\, 1].\n\\]\nInterpret this result.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
     "objectID": "labs/lab-3.html",
     "href": "labs/lab-3.html",
     "title": "Lab 3 - How does ChatGPT generate the next word?",
@@ -624,138 +756,6 @@
     "crumbs": [
       "Labs",
       "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html",
-    "href": "labs/lab-2.html",
-    "title": "Lab 2",
-    "section": "",
-    "text": "Car Talk (1977 - 2012) was a popular show on NPR. It featured a segment called the “Puzzler,” where the hosts would read a brain teaser and invite listeners to send in solutions for the chance to win a prize. Here is the text of one such Puzzler (original audio at around 19:19 here):\nIn what follows, you may find some notation useful. Let \\(D\\) denote your true disease status, and \\(T\\) denote the result of your test. Then\n\\[\n\\begin{align*}\n    p &= P(D=+) && \\text{(prevalence)}\n    \\\\\n    f_{-}&=P(T=-\\,|\\, D=+) && \\text{(false negative rate)}\n    \\\\\n    f_{+}&=P(T=+\\,|\\, D=-) && \\text{(false positive rate)}\n    \\\\\n    1-f_{-}&=P(T=+\\,|\\, D = +) && \\text{(sensitivity)}\n    \\\\\n    1-f_{+}&=P(T=-\\,|\\, D = -) && \\text{(specificity)}.\n\\end{align*}\n\\]",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html#problem-1",
-    "href": "labs/lab-2.html#problem-1",
-    "title": "Lab 2",
-    "section": "Problem 1",
-    "text": "Problem 1\nWhat is your solution to the puzzler?",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html#problem-2",
-    "href": "labs/lab-2.html#problem-2",
-    "title": "Lab 2",
-    "section": "Problem 2",
-    "text": "Problem 2\nExplain the correct way to solve this problem. Exactly what probability are we asked to compute, and what formula should we apply to do it? Does the prompt actually provide enough information to ultimately get the job done?",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html#problem-3",
-    "href": "labs/lab-2.html#problem-3",
-    "title": "Lab 2",
-    "section": "Problem 3",
-    "text": "Problem 3\nThis is the solution that the hosts ultimately revealed (original audio at around 20:30 here):\n\nLet’s say 1000 people take the test. Fifty people will test positive and yet they will not have it. One will test positive and have it. So your chances of actually having it, even though you tested positive, are one in 51, or a little less than 2%.\n\nSo, what do you think? Did they get it right? Explain how the show interpreted the information given in the Puzzler, and explain what arithmetic formula they implicitly applied in order to compute their answer.",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html#problem-4",
-    "href": "labs/lab-2.html#problem-4",
-    "title": "Lab 2",
-    "section": "Problem 4",
-    "text": "Problem 4\nExplain two things:\n\nUnder what conditions is the formula that the show used actually an upper bound on the correct answer?\nWhy might an upper bound on the true probability still be a useful thing to calculate?",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html#problem-5",
-    "href": "labs/lab-2.html#problem-5",
-    "title": "Lab 2",
-    "section": "Problem 5",
-    "text": "Problem 5\nSo, the show’s answer, while wrong, could still be potentially useful upper bound on the true probability. Neat! But how wrong is it, even? To get a sense of this, use a computer to create some line plots of the prevalence \\(p\\in[0,\\, 1]\\) against the true and approximate probabilities for different values of \\(f_-\\) and \\(f_+\\). Mix-and-match \\(f_-,\\, f_+\\in\\{0.1,\\, 0.2\\}\\).",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-2.html#problem-6",
-    "href": "labs/lab-2.html#problem-6",
-    "title": "Lab 2",
-    "section": "Problem 6",
-    "text": "Problem 6\nNow let’s try to be more precise about the “wrongness” of the show’s answer. Let \\(B\\) denote the true probability, and \\(\\overline{B}\\) denote the show’s approximation. In part (c) you showed that \\(B\\leq \\overline{B}\\) under certain conditions. Now define\n\\[\n\\delta = \\frac{\\overline{B}-B}{B}.\n\\]\nThis is the relative error of the show’s answer. Prove that\n\\[\n|\\delta|\n\\leq\n\\max\n\\left\\{\n\\frac{f_-}{1-f_-}\n,\\,\n\\frac{f_+}{1+f_+}\n\\right\\}\n,\\quad \\forall p\\in[0,\\, 1].\n\\]\nInterpret this result.",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab-1.html",
-    "href": "labs/lab-1.html",
-    "title": "Lab 1",
-    "section": "",
-    "text": "Throughout this course, it may serve you well to familiarize yourself with the following:\n\n\nR/RStudio for coding;\n\nLaTeX (or \\(\\LaTeX\\), if you’re cool) for typesetting math;\n\nQuarto for synthesizing your expertly written code and your beautifully typeset math in a wonderfully legible PDF format!\n\nOf these three tools, we will focus the most on R/RStudio during lab time, though LaTeX and Quarto will certainly make incidental appearances.\nTo use R/RStudio, you can either use the Duke Container Manager or download the necessary applications here. Note: The R/RStudio in the containers comes with TinyTeX already downloaded. So, if you download the application and want to use LaTeX in your files, run the following command (and whatever subsequent commands you are prompted to run):\n\ntinytex::install_tinytex()\n\nFor a quick guide to useful LaTeX symbols, check out this OEIS wiki or this Rice page.\nTo learn more about Quarto, visit https://quarto.org.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab-1.html#important-techno-babble",
-    "href": "labs/lab-1.html#important-techno-babble",
-    "title": "Lab 1",
-    "section": "",
-    "text": "Throughout this course, it may serve you well to familiarize yourself with the following:\n\n\nR/RStudio for coding;\n\nLaTeX (or \\(\\LaTeX\\), if you’re cool) for typesetting math;\n\nQuarto for synthesizing your expertly written code and your beautifully typeset math in a wonderfully legible PDF format!\n\nOf these three tools, we will focus the most on R/RStudio during lab time, though LaTeX and Quarto will certainly make incidental appearances.\nTo use R/RStudio, you can either use the Duke Container Manager or download the necessary applications here. Note: The R/RStudio in the containers comes with TinyTeX already downloaded. So, if you download the application and want to use LaTeX in your files, run the following command (and whatever subsequent commands you are prompted to run):\n\ntinytex::install_tinytex()\n\nFor a quick guide to useful LaTeX symbols, check out this OEIS wiki or this Rice page.\nTo learn more about Quarto, visit https://quarto.org.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab-1.html#skillz",
-    "href": "labs/lab-1.html#skillz",
-    "title": "Lab 1",
-    "section": "Skillz",
-    "text": "Skillz\nBesides helping you exercise your probability and statistics muscles, each lab will help you develop your understanding of and comfort with various coding concepts and skills. Although the implementation will vary from language to language, the underlying structure will remain the same!\nThis lab exercises the following coding concepts:\n\nVectors/Arrays of numbers and strings;\n\nfor-loops;\nBoolean logic and operations;\nBase R functions like mean() and sample().",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab-1.html#how-does-one-count-i-do-it.",
-    "href": "labs/lab-1.html#how-does-one-count-i-do-it.",
-    "title": "Lab 1",
-    "section": "How does one count? (I do it.)",
-    "text": "How does one count? (I do it.)\nCoin Toss\nWe first consider the flip of a fair coin. That is, when flipped, the coin will equiprobably come up heads or tails. Suppose we try to illustrate the fairness of a coin by physically flipping it a bunch of times. Very quickly, this becomes tedious and labor-intensive; surely, no reasonable/sane person would want to do this by hand…\n(Though, on the off chance that somebody actually did this, at least you might get co-authorship and recognition from various sectors of media.)\nAt any rate, R provides a much more enticing, efficient alternative to being one of about \\(50\\) people flipping coins thousands of times.\nFirst, let’s define a vector with the sample space – all possible outcomes – of a single coin flip. We notate heads as H and tails as T, and we call the vector sides_of_coin.\n\nsides_of_coin &lt;- c(\"H\", \"T\")\n\nTo simulate an actual coin flip, R has this nifty built-in function called sample().\nThe sample() function\nThe sample() function can take many arguments: a vector of elements (the sample space), a positive integer (the size), a Boolean (with or without replacement), and a vector of probabilities. So, a call to sample() will return a random sample of the specified size from the sample space, either with or without replacement, according to the vector of probabilities.\nNOTE: The replace Boolean defaults to FALSE (without replacement), and the prob vector defaults to equal weighting among the elements in the sample space.\nSample flips\nWe can perform a single coin flip with the following function call.\n\nsample(sides_of_coin, 1)\n\n[1] \"H\"\n\n\nIf we wanted to simulate multiple coin flips in the same vector, sample() lets us do that as well! Below is an example of a simulation of \\(10\\) coin flips.\n\nsample(sides_of_coin, 10, replace = TRUE)\n\n [1] \"H\" \"H\" \"T\" \"H\" \"H\" \"H\" \"T\" \"H\" \"H\" \"T\"\n\n\nWe can also use a different tool to simulate multiple fair coin flips: a for-loop.\n\nfor-loops\nA for-loop is a great way to perform the same set of commands a fixed, known number of times or to perform the same set of commands on the different elements in a vector. The bare bones of the for-loop are given below.\n\nfor(){\n  \n}\n\nIn the parentheses (), you define the variable and values of iteration; in the brackets {}, you list the commands to be performed in each iteration.\nSimulating the flips\nWe will simulation \\(5,000\\) independent flips of a fair coin and track whether each flip came up heads. We do this by initializing a \\(5,000\\)-element vector of zeroes and replacing each zero with a TRUE or FALSE according to the result of the current coin flip. You may find the corresponding code below.\n\nn_reps &lt;- 5000\nwas_it_heads &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_flip &lt;- sample(sides_of_coin, 1)\n  was_it_heads[m] &lt;- new_flip == \"H\"\n}\n\nTo calculate the empirical probability of the coin coming up heads, we will calculate the proportion of flips in our simulation that came up heads. To do this, we can use either the mean() or sum() function; while those functions are typically used to average or sum vectors of numbers, they can also be used on Boolean vectors like was_it_heads. It will treat each TRUE as a one and each FALSE as a zero in the calculation.\nWe use each function in the code chunk below, remembering to divide the sum() call by the number of flips n_rep.\n\ncoin_prob &lt;- mean(was_it_heads)\ncoin_prob\n\n[1] 0.5022\n\nsum(was_it_heads) / n_reps\n\n[1] 0.5022\n\n\nAs expected, we see a proportion rather close to \\(0.5\\)! Due to the randomness of the individual flips and the finite number of flips, you likely won’t observe a proportion exactly equal to \\(0.5\\). However, the closeness of the proportion to the true probability is an illustration of the frequentist phenomenon of the long-run average. If you play around with the number of flips, you’ll tend to see that the longer the run, the closer the proportion to the true probability.\nFive-Card Poker Hand\nSuppose you are playing some sort of card game with a standard \\(52\\)-card deck. As part of this game, you are dealt a hand of five cards, the composition of which has some bearing on your success in the game.\nProvided is a vector representing the deck of cards, aptly (in my humble opinion) called deck_of_cards.\n\ndeck_of_cards &lt;- c(\"AH\", \"2H\", \"3H\", \"4H\", \"5H\", \"6H\", \"7H\", \"8H\", \"9H\", \"10H\", \"JH\", \"QH\", \"KH\", \"AD\", \"2D\", \"3D\", \"4D\", \"5D\", \"6D\", \"7D\", \"8D\", \"9D\", \"10D\", \"JD\", \"QD\", \"KD\", \"AC\", \"2C\", \"3C\", \"4C\", \"5C\", \"6C\", \"7C\", \"8C\", \"9C\", \"10C\", \"JC\", \"QC\", \"KC\", \"AS\", \"2S\", \"3S\", \"4S\", \"5S\", \"6S\", \"7S\", \"8S\", \"9S\", \"10S\", \"JS\", \"QS\", \"KS\")\n\nRecall that each card in a deck has one of four “suits” (Hearts, Diamonds, Clubs, and Spades) and one of four ranks (Ace, 2-10, Jack, Queen, King). In the above vector, each card is thus represented as a string (sequences of characters between quotation marks) with the (abbreviated) rank and (abbreviated) suit.\nOne hand of interest is called a “full house,” consisting of three cards of one rank and two cards of a different rank. (For example, {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, 3 of Spades} would be a full house, but {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, Queen of Spades} would not be a full house.)\nSo, we want to calculate the probability of getting a full house!\nSimulation and empirical calculation\nHere’s a sample (hehe, see what I did there?) piece of code to simulate the dealing of a single five-card hand.\n\nsample(deck_of_cards, 5)\n\n[1] \"5S\" \"QS\" \"QH\" \"KH\" \"6S\"\n\n\nAs in the previous coin-flipping example, we will use a for-loop to simulate \\(5,000\\) different five-card hands. (Imagine that, after dealing each hand, we re-incorporate the dealt hand into the deck and shuffle thoroughly before the next hand is dealt.) We keep track of whether each hand was a full house in other \\(5,000\\)-element vector of Booleans; below are helper functions I defined in order to check whether a particular hand was a full house.\n\nsplit_card &lt;- function(card){\n  return(c(substr(card, 1, nchar(card) - 1), substr(card, nchar(card), nchar(card))))\n}\n\nis_full_house &lt;- function(hand){\n  ranks &lt;- numeric(5)\n  for(c in 1:5){\n    ranks[c] &lt;- split_card(hand[c])[1]\n  }\n  return(length(unique(ranks)) == 2)\n}\n\nWe then have the following code for the simulation.\n\nn_reps &lt;- 5000\nwas_house_full &lt;- numeric(n_reps)\nfor(m in 1:n_reps){\n  new_hand &lt;- sample(deck_of_cards, 5)\n  was_house_full[m] &lt;- is_full_house(new_hand)\n}\n\nAs before, we calculate the empirical probability using both the mean() function and the sum() function.\n\nfivecard_prob &lt;- mean(was_house_full)\nfivecard_prob\n\n[1] 0.0016\n\nsum(was_house_full) / n_reps\n\n[1] 0.0016\n\n\nThe true probability is approximately \\(0.0014\\) – the long-run average simulations strike again!",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab-1.html#we-can-count-on-you-you-do-it.",
-    "href": "labs/lab-1.html#we-can-count-on-you-you-do-it.",
-    "title": "Lab 1",
-    "section": "We can count on you! (You do it.)",
-    "text": "We can count on you! (You do it.)\nWell, that was fun! Shame that it’s over…\nWait a second. gasp We have two more exercises just for you to try – hurray!\nINSTRUCTIONS: For each of the following two exercises, your mission (should you choose to accept it) is to perform simulations from which you calculate the empirical probabilities of the specified events.\nAnd no, the order in which you accomplish these tasks does not matter. :) Happy counting!\nThe Birthday Problem\nWe have the following vector of strings, formatted MMMDD, wherein each entry is one of \\(365\\) days in a non-leap year.\n\nbdays &lt;- c(\"Jan01\", \"Jan02\", \"Jan03\", \"Jan04\", \"Jan05\", \"Jan06\", \"Jan07\", \"Jan08\", \"Jan09\", \"Jan10\", \"Jan11\", \"Jan12\", \"Jan13\", \"Jan14\", \"Jan15\", \"Jan16\", \"Jan17\", \"Jan18\", \"Jan19\", \"Jan20\", \"Jan21\", \"Jan22\", \"Jan23\", \"Jan24\", \"Jan25\", \"Jan26\", \"Jan27\", \"Jan28\", \"Jan29\", \"Jan30\", \"Jan31\", \"Feb01\", \"Feb02\", \"Feb03\", \"Feb04\", \"Feb05\", \"Feb06\", \"Feb07\", \"Feb08\", \"Feb09\", \"Feb10\", \"Feb11\", \"Feb12\", \"Feb13\", \"Feb14\", \"Feb15\", \"Feb16\", \"Feb17\", \"Feb18\", \"Feb19\", \"Feb20\", \"Feb21\", \"Feb22\", \"Feb23\", \"Feb24\", \"Feb25\", \"Feb26\", \"Feb27\", \"Feb28\", \"Mar01\", \"Mar02\", \"Mar03\", \"Mar04\", \"Mar05\", \"Mar06\", \"Mar07\", \"Mar08\", \"Mar09\", \"Mar10\", \"Mar11\", \"Mar12\", \"Mar13\", \"Mar14\", \"Mar15\", \"Mar16\", \"Mar17\", \"Mar18\", \"Mar19\", \"Mar20\", \"Mar21\", \"Mar22\", \"Mar23\", \"Mar24\", \"Mar25\", \"Mar26\", \"Mar27\", \"Mar28\", \"Mar29\", \"Mar30\", \"Mar31\", \"Apr01\", \"Apr02\", \"Apr03\", \"Apr04\", \"Apr05\", \"Apr06\", \"Apr07\", \"Apr08\", \"Apr09\", \"Apr10\", \"Apr11\", \"Apr12\", \"Apr13\", \"Apr14\", \"Apr15\", \"Apr16\", \"Apr17\", \"Apr18\", \"Apr19\", \"Apr20\", \"Apr21\", \"Apr22\", \"Apr23\", \"Apr24\", \"Apr25\", \"Apr26\", \"Apr27\", \"Apr28\", \"Apr29\", \"Apr30\", \"May01\", \"May02\", \"May03\", \"May04\", \"May05\", \"May06\", \"May07\", \"May08\", \"May09\", \"May10\", \"May11\", \"May12\", \"May13\", \"May14\", \"May15\", \"May16\", \"May17\", \"May18\", \"May19\", \"May20\", \"May21\", \"May22\", \"May23\", \"May24\", \"May25\", \"May26\", \"May27\", \"May28\", \"May29\", \"May30\", \"May31\", \"Jun01\", \"Jun02\", \"Jun03\", \"Jun04\", \"Jun05\", \"Jun06\", \"Jun07\", \"Jun08\", \"Jun09\", \"Jun10\", \"Jun11\", \"Jun12\", \"Jun13\", \"Jun14\", \"Jun15\", \"Jun16\", \"Jun17\", \"Jun18\", \"Jun19\", \"Jun20\", \"Jun21\", \"Jun22\", \"Jun23\", \"Jun24\", \"Jun25\", \"Jun26\", \"Jun27\", \"Jun28\", \"Jun29\", \"Jun30\", \"Jul01\", \"Jul02\", \"Jul03\", \"Jul04\", \"Jul05\", \"Jul06\", \"Jul07\", \"Jul08\", \"Jul09\", \"Jul10\", \"Jul11\", \"Jul12\", \"Jul13\", \"Jul14\", \"Jul15\", \"Jul16\", \"Jul17\", \"Jul18\", \"Jul19\", \"Jul20\", \"Jul21\", \"Jul22\", \"Jul23\", \"Jul24\", \"Jul25\", \"Jul26\", \"Jul27\", \"Jul28\", \"Jul29\", \"Jul30\", \"Jul31\", \"Aug01\", \"Aug02\", \"Aug03\", \"Aug04\", \"Aug05\", \"Aug06\", \"Aug07\", \"Aug08\", \"Aug09\", \"Aug10\", \"Aug11\", \"Aug12\", \"Aug13\", \"Aug14\", \"Aug15\", \"Aug16\", \"Aug17\", \"Aug18\", \"Aug19\", \"Aug20\", \"Aug21\", \"Aug22\", \"Aug23\", \"Aug24\", \"Aug25\", \"Aug26\", \"Aug27\", \"Aug28\", \"Aug29\", \"Aug30\", \"Aug31\", \"Sep01\", \"Sep02\", \"Sep03\", \"Sep04\", \"Sep05\", \"Sep06\", \"Sep07\", \"Sep08\", \"Sep09\", \"Sep10\", \"Sep11\", \"Sep12\", \"Sep13\", \"Sep14\", \"Sep15\", \"Sep16\", \"Sep17\", \"Sep18\", \"Sep19\", \"Sep20\", \"Sep21\", \"Sep22\", \"Sep23\", \"Sep24\", \"Sep25\", \"Sep26\", \"Sep27\", \"Sep28\", \"Sep29\", \"Sep30\", \"Oct01\", \"Oct02\", \"Oct03\", \"Oct04\", \"Oct05\", \"Oct06\", \"Oct07\", \"Oct08\", \"Oct09\", \"Oct10\", \"Oct11\", \"Oct12\", \"Oct13\", \"Oct14\", \"Oct15\", \"Oct16\", \"Oct17\", \"Oct18\", \"Oct19\", \"Oct20\", \"Oct21\", \"Oct22\", \"Oct23\", \"Oct24\", \"Oct25\", \"Oct26\", \"Oct27\", \"Oct28\", \"Oct29\", \"Oct30\", \"Oct31\", \"Nov01\", \"Nov02\", \"Nov03\", \"Nov04\", \"Nov05\", \"Nov06\", \"Nov07\", \"Nov08\", \"Nov09\", \"Nov10\", \"Nov11\", \"Nov12\", \"Nov13\", \"Nov14\", \"Nov15\", \"Nov16\", \"Nov17\", \"Nov18\", \"Nov19\", \"Nov20\", \"Nov21\", \"Nov22\", \"Nov23\", \"Nov24\", \"Nov25\", \"Nov26\", \"Nov27\", \"Nov28\", \"Nov29\", \"Nov30\", \"Dec01\", \"Dec02\", \"Dec03\", \"Dec04\", \"Dec05\", \"Dec06\", \"Dec07\", \"Dec08\", \"Dec09\", \"Dec10\", \"Dec11\", \"Dec12\", \"Dec13\", \"Dec14\", \"Dec15\", \"Dec16\", \"Dec17\", \"Dec18\", \"Dec19\", \"Dec20\", \"Dec21\", \"Dec22\", \"Dec23\", \"Dec24\", \"Dec25\", \"Dec26\", \"Dec27\", \"Dec28\", \"Dec29\", \"Dec30\", \"Dec31\")\n\nWe now address the Birthday Problem: Given a group of \\(n\\) people, what is the probability that at least \\(2\\) share a birthday? Consider \\(n = 10\\), \\(n = 100\\), and \\(n = 1,000\\).\nHelpful suggestions\nThis is yet another counting problem! For a given \\(n\\), what does your sample space look like?\nAny of the following functions may be useful in the simulation portion of this particular exercise: unique(), duplicated(), anyDuplicated(). To find out more, type ?&lt;function&gt; in the console and the documentation will appear in the Help tab on the right-hand side of the window.\nTwo-Card Poker Hand\nSuppose you are dealt a two-card hand; what is the probability that both cards are the same suit (i.e., Hearts, Diamonds, Clubs, Spades)? (You may use the deck_of_cards vector defined above to simulate this counting exercise.)",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
     ]
   },
   {

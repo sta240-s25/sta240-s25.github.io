@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta240-s25.github.io/exams/midterm-1.html</loc>
-    <lastmod>2025-02-15T13:14:00.601Z</lastmod>
+    <lastmod>2025-02-16T00:35:14.400Z</lastmod>
   </url>
   <url>
     <loc>https://sta240-s25.github.io/syllabus/syllabus_assignments.html</loc>
@@ -29,16 +29,20 @@
     <lastmod>2025-02-12T02:46:12.658Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/labs/lab-3.html</loc>
-    <lastmod>2025-02-12T02:46:12.628Z</lastmod>
+    <loc>https://sta240-s25.github.io/labs/lab-1.html</loc>
+    <lastmod>2025-02-12T02:46:12.627Z</lastmod>
   </url>
   <url>
     <loc>https://sta240-s25.github.io/labs/lab-2.html</loc>
     <lastmod>2025-02-12T02:46:12.627Z</lastmod>
   </url>
   <url>
-    <loc>https://sta240-s25.github.io/labs/lab-1.html</loc>
-    <lastmod>2025-02-12T02:46:12.627Z</lastmod>
+    <loc>https://sta240-s25.github.io/labs/lab-3.html</loc>
+    <lastmod>2025-02-12T02:46:12.628Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta240-s25.github.io/psets/pset_4.html</loc>
+    <lastmod>2025-02-15T15:28:55.190Z</lastmod>
   </url>
   <url>
     <loc>https://sta240-s25.github.io/psets/pset_2.html</loc>
