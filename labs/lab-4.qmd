@@ -92,7 +92,7 @@ For both discrete and (absolutely) continuous distributions, R uses the same syn
 #| eval: false
 # discrete 
 
-dbinom(x, size, prob) # Bernoulli is just binomial with size = 1
+dbinom(x, size, prob)
 dgeom(x, prob)
 dpois(x, lambda)
 
@@ -102,7 +102,17 @@ dnorm(x, mean = 0, sd = 1)
 dgamma(x, shape, rate = 1)
 ```
 
-This is understandable but slightly unfortunate, because we know that the pmf is a function that returns probabilities when evaluated. The pdf is not. But anyway, 
+This is understandable but slightly unfortunate, because we know that the pmf is a function that returns probabilities when evaluated. The pdf is not. But anyway, if you want $P(X=5)$ for $X\sim\text{Binom}(10, 0.3)$, here you go:
+
+```{r}
+dbinom(5, 10, 0.3)
+```
+
+Do you understand what this command did?
+
+```{r}
+dbinom(0, 1, 0.7)
+```
 
 ## `q-` functions: evaluating the quantile function
 
@@ -196,7 +206,7 @@ Let $X$ be the size of a single claim the company receives. $X$ is measured in u
 
 ::: {.callout-note collapse="true"}
 ## Don't read this
-One could argue that all random variables are discrete in practice. In financial markets for instance, there is a minimum [tick size](https://en.wikipedia.org/wiki/Tick_size) (you can't quote a price of $1.0000000001), and so prices fluctuate on a discrete grid. Or in general, we only ever work with numbers represented on a computer, and a computer can only store a [finite number of decimals](https://en.wikipedia.org/wiki/Floating-point_arithmetic). In these cases then, assuming a continuous distribution serves ti clean up life.
+One could argue that all random variables are discrete in practice. In financial markets for instance, there is a minimum [tick size](https://en.wikipedia.org/wiki/Tick_size) (you can't quote a price of $1.0000000001), and so prices fluctuate on a discrete grid. Or in general, we only ever work with numbers represented on a computer, and a computer can only store a [finite number of decimals](https://en.wikipedia.org/wiki/Floating-point_arithmetic). In these cases then, assuming a continuous distribution serves to clean up life.
 :::
 
 ### Task 11
