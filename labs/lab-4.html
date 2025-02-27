@@ -497,7 +497,7 @@ The normal commands take the standard deviation, not the variance!
 <div class="cell">
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">5</span>, mean <span class="op">=</span> <span class="fl">4</span>, sd <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  2.531043  6.101357  1.466859  4.187232 -2.205368</code></pre>
+<pre><code>[1]  1.529747  6.203865 -1.829385  1.661029  6.081032</code></pre>
 </div>
 </div>
 </section><section id="d--functions-evaluating-the-pmfpdf" class="level2"><h2 class="anchored" data-anchor-id="d--functions-evaluating-the-pmfpdf">
@@ -506,7 +506,7 @@ The normal commands take the standard deviation, not the variance!
 <div class="cell">
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># discrete </span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">size</span>, <span class="va">prob</span><span class="op">)</span> <span class="co"># Bernoulli is just binomial with size = 1</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">size</span>, <span class="va">prob</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/Geometric.html">dgeom</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">prob</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">lambda</span><span class="op">)</span></span>
 <span></span>
@@ -515,7 +515,20 @@ The normal commands take the standard deviation, not the variance!
 <span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">dnorm</a></span><span class="op">(</span><span class="va">x</span>, mean <span class="op">=</span> <span class="fl">0</span>, sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">dgamma</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">shape</span>, rate <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This is understandable but slightly unfortunate, because we know that the pmf is a function that returns probabilities when evaluated. The pdf is not. But anyway,</p>
+<p>This is understandable but slightly unfortunate, because we know that the pmf is a function that returns probabilities when evaluated. The pdf is not. But anyway, if you want <span class="math inline">\(P(X=5)\)</span> for <span class="math inline">\(X\sim\text{Binom}(10, 0.3)\)</span>, here you go:</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">10</span>, <span class="fl">0.3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1029193</code></pre>
+</div>
+</div>
+<p>Do you understand what this command did?</p>
+<div class="cell">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">0.7</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3</code></pre>
+</div>
+</div>
 </section><section id="q--functions-evaluating-the-quantile-function" class="level2"><h2 class="anchored" data-anchor-id="q--functions-evaluating-the-quantile-function">
 <code>q-</code> functions: evaluating the quantile function</h2>
 <p>We will not work with this today, but for completeness, the <strong>quantile function</strong> of a random variable is the (<em>generalized</em>) <em>inverse</em> of its cdf <span class="math inline">\(F^{-1}\)</span>. It is the function that, given a probability <span class="math inline">\(\alpha\in(0,\,1)\)</span>, returns the cut-off point on the number line that has that much probability <em>to the left</em>. So the <span class="math inline">\(\alpha\)</span>th quantile <span class="math inline">\(q_alpha\)</span> satisfies <span class="math inline">\(P(X\leq q_\alpha) = \alpha\)</span>. Here is the picture:</p>
@@ -525,22 +538,22 @@ The normal commands take the standard deviation, not the variance!
 </div>
 <p>The <strong>median</strong> is the <span class="math inline">\(\alpha=0.5\)</span> quantile. The quantiles of the standard normal distribution are famous:</p>
 <div class="cell">
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.95</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.95</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.644854</code></pre>
 </div>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.975</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.975</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.959964</code></pre>
 </div>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.995</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.995</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.575829</code></pre>
 </div>
 </div>
 <p>Every distribution family has a <code>q-</code> function that, given <span class="math inline">\(p\in(0,\,1)\)</span>, returns <span class="math inline">\(q_p\)</span>:</p>
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># discrete </span></span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># discrete </span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">qbinom</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">size</span>, <span class="va">prob</span><span class="op">)</span> <span class="co"># Bernoulli is just binomial with size = 1</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/Geometric.html">qgeom</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">prob</span><span class="op">)</span></span>
@@ -593,7 +606,7 @@ Don’t read this
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>One could argue that all random variables are discrete in practice. In financial markets for instance, there is a minimum <a href="https://en.wikipedia.org/wiki/Tick_size">tick size</a> (you can’t quote a price of $1.0000000001), and so prices fluctuate on a discrete grid. Or in general, we only ever work with numbers represented on a computer, and a computer can only store a <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">finite number of decimals</a>. In these cases then, assuming a continuous distribution serves ti clean up life.</p>
+<p>One could argue that all random variables are discrete in practice. In financial markets for instance, there is a minimum <a href="https://en.wikipedia.org/wiki/Tick_size">tick size</a> (you can’t quote a price of $1.0000000001), and so prices fluctuate on a discrete grid. Or in general, we only ever work with numbers represented on a computer, and a computer can only store a <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">finite number of decimals</a>. In these cases then, assuming a continuous distribution serves to clean up life.</p>
 </div>
 </div>
 </div>
