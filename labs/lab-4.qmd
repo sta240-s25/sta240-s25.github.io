@@ -116,7 +116,7 @@ dbinom(0, 1, 0.7)
 
 ## `q-` functions: evaluating the quantile function
 
-We will not work with this today, but for completeness, the **quantile function** of a random variable is the (*generalized*) *inverse* of its cdf. So $F^{-1}$. It is the function that, given a probability $\alpha\in(0,\,1)$, returns the cut-off point on the number line that has that much probability *to the left*. So the $\alpha$th quantile $q_alpha$ satisfies $P(X\leq q_\alpha) = \alpha$. Here is the picture:
+We will not work with this today, but for completeness, the **quantile function** of a random variable is the (*generalized*) *inverse* of its cdf. So $F^{-1}$. It is the function that, given a probability $\alpha\in(0,\,1)$, returns the cut-off point on the number line that has that much probability *to the left*. So the $\alpha$th quantile $q_{\alpha}$ satisfies $P(X\leq q_\alpha) = \alpha$. Here is the picture:
 
 ![](quantile.png){fig-align="center"}
 
