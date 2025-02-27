@@ -223,7 +223,7 @@ Verify that the sample mean and sample variance of your random numbers are close
 
 ### Task 14
 
-What is the probability $P(X > 15,000)$. Calculate this probability exactly using the appropriate `p-` function, and also approximate it using your random numbers. Verify that the two numbers are close.
+What is the probability $P(X > 15,000)$? Calculate this probability exactly using the appropriate `p-` function, and also approximate it using your random numbers. Verify that the two numbers are close.
 
 ## The bottom line
 
@@ -247,9 +247,9 @@ Use your simulations to approximate the probability $P(S>1,300,00)$.
 
 ### Task 18
 
-Compute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying $\text{Poisson}(\lambda)$ and $\text{Gamma}(\alpha,\,\beta)$ distributions are related to $E(S)$ and $\text{var}(S)$? That is, propose formulas $E(S)=h(\lambda,\,\alpha,\,\beta)$ and $\text{var}(S)=g(\lambda,\,\alpha,\,\beta)$ that describe how the underling Poisson and gamma parameters determine the moments of $S$.
+Compute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying $\text{Poisson}(\lambda)$ and $\text{Gamma}(\alpha,\,\beta)$ distributions are related to $E(S)$ and $\text{var}(S)$? That is, propose formulas $E(S)=h(\lambda,\,\alpha,\,\beta)$ and $\text{var}(S)=g(\lambda,\,\alpha,\,\beta)$ that describe how the underlying Poisson and gamma parameters determine the moments of $S$.
 
-## Most important of all
+# Part 3: the only important part
 
 ### Task $\infty$
 
