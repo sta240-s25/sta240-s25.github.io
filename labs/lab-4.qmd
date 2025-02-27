@@ -243,5 +243,5 @@ Compute the sample mean and the sample variance of your simulations. Based on th
 
 ### Task $\infty$
 
-Go watch [Double Indemnity](https://en.wikipedia.org/wiki/Double_Indemnity). It is so entertaining it will make your head spin.
+Go watch [*Double Indemnity*](https://en.wikipedia.org/wiki/Double_Indemnity). It is so entertaining it will make your head spin.
 
