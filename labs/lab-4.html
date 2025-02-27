@@ -338,12 +338,12 @@ window.Quarto = {
   <li><a href="#task-18" id="toc-task-18" class="nav-link" data-scroll-target="#task-18">Task 18</a></li>
   </ul>
 </li>
-  <li>
-<a href="#most-important-of-all" id="toc-most-important-of-all" class="nav-link" data-scroll-target="#most-important-of-all">Most important of all</a>
-  <ul class="collapse">
-<li><a href="#task-infty" id="toc-task-infty" class="nav-link" data-scroll-target="#task-infty">Task <span class="math inline">\(\infty\)</span></a></li>
   </ul>
 </li>
+  <li>
+<a href="#part-3-the-only-important-part" id="toc-part-3-the-only-important-part" class="nav-link" data-scroll-target="#part-3-the-only-important-part">Part 3: the only important part</a>
+  <ul class="collapse">
+<li><a href="#task-infty" id="toc-task-infty" class="nav-link" data-scroll-target="#task-infty">Task <span class="math inline">\(\infty\)</span></a></li>
   </ul>
 </li>
   </ul></nav>
@@ -497,7 +497,7 @@ The normal commands take the standard deviation, not the variance!
 <div class="cell">
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">5</span>, mean <span class="op">=</span> <span class="fl">4</span>, sd <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  1.529747  6.203865 -1.829385  1.661029  6.081032</code></pre>
+<pre><code>[1]  2.797220 -1.358531  4.245181  2.469837  2.679211</code></pre>
 </div>
 </div>
 </section><section id="d--functions-evaluating-the-pmfpdf" class="level2"><h2 class="anchored" data-anchor-id="d--functions-evaluating-the-pmfpdf">
@@ -531,7 +531,7 @@ The normal commands take the standard deviation, not the variance!
 </div>
 </section><section id="q--functions-evaluating-the-quantile-function" class="level2"><h2 class="anchored" data-anchor-id="q--functions-evaluating-the-quantile-function">
 <code>q-</code> functions: evaluating the quantile function</h2>
-<p>We will not work with this today, but for completeness, the <strong>quantile function</strong> of a random variable is the (<em>generalized</em>) <em>inverse</em> of its cdf <span class="math inline">\(F^{-1}\)</span>. It is the function that, given a probability <span class="math inline">\(\alpha\in(0,\,1)\)</span>, returns the cut-off point on the number line that has that much probability <em>to the left</em>. So the <span class="math inline">\(\alpha\)</span>th quantile <span class="math inline">\(q_alpha\)</span> satisfies <span class="math inline">\(P(X\leq q_\alpha) = \alpha\)</span>. Here is the picture:</p>
+<p>We will not work with this today, but for completeness, the <strong>quantile function</strong> of a random variable is the (<em>generalized</em>) <em>inverse</em> of its cdf. So <span class="math inline">\(F^{-1}\)</span>. It is the function that, given a probability <span class="math inline">\(\alpha\in(0,\,1)\)</span>, returns the cut-off point on the number line that has that much probability <em>to the left</em>. So the <span class="math inline">\(\alpha\)</span>th quantile <span class="math inline">\(q_alpha\)</span> satisfies <span class="math inline">\(P(X\leq q_\alpha) = \alpha\)</span>. Here is the picture:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="quantile.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
@@ -617,7 +617,7 @@ Don’t read this
 </section><section id="task-13" class="level3"><h3 class="anchored" data-anchor-id="task-13">Task 13</h3>
 <p>Verify that the sample mean and sample variance of your random numbers are close to the prescriptions from Task 11. If they are not, revisit Task 11 and adjust your choice of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> until this works.</p>
 </section><section id="task-14" class="level3"><h3 class="anchored" data-anchor-id="task-14">Task 14</h3>
-<p>What is the probability <span class="math inline">\(P(X &gt; 15,000)\)</span>. Calculate this probability exactly using the appropriate <code>p-</code> function, and also approximate it using your random numbers. Verify that the two numbers are close.</p>
+<p>What is the probability <span class="math inline">\(P(X &gt; 15,000)\)</span>? Calculate this probability exactly using the appropriate <code>p-</code> function, and also approximate it using your random numbers. Verify that the two numbers are close.</p>
 </section></section><section id="the-bottom-line" class="level2"><h2 class="anchored" data-anchor-id="the-bottom-line">The bottom line</h2>
 <p>The number that the insurance company truly cares about is <span class="math inline">\(S=X_1+X_2+...+X_N\)</span>, the total amount of money they are on the hook for that month. <span class="math inline">\(S\)</span> is a random variable, and it inherits its randomness both from <span class="math inline">\(N\)</span> and from each <span class="math inline">\(X_i\)</span>. To keep things simple, we will assume that <span class="math inline">\(N\)</span> and the <span class="math inline">\(X_i\)</span> are <em>independent</em>, meaning their outcomes don’t influence one another. This is mathematically convenient, but it’s a lousy assumption in terms of realism. Are all of the insurance claims coming out of southern California recently totally unrelated to one another? I think not. But we don’t yet possess the tools to handle this, so we assume independence.</p>
 <section id="task-15" class="level3"><h3 class="anchored" data-anchor-id="task-15">Task 15</h3>
@@ -631,14 +631,14 @@ Don’t read this
 </section><section id="task-17" class="level3"><h3 class="anchored" data-anchor-id="task-17">Task 17</h3>
 <p>Use your simulations to approximate the probability <span class="math inline">\(P(S&gt;1,300,00)\)</span>.</p>
 </section><section id="task-18" class="level3"><h3 class="anchored" data-anchor-id="task-18">Task 18</h3>
-<p>Compute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying <span class="math inline">\(\text{Poisson}(\lambda)\)</span> and <span class="math inline">\(\text{Gamma}(\alpha,\,\beta)\)</span> distributions are related to <span class="math inline">\(E(S)\)</span> and <span class="math inline">\(\text{var}(S)\)</span>? That is, propose formulas <span class="math inline">\(E(S)=h(\lambda,\,\alpha,\,\beta)\)</span> and <span class="math inline">\(\text{var}(S)=g(\lambda,\,\alpha,\,\beta)\)</span> that describe how the underling Poisson and gamma parameters determine the moments of <span class="math inline">\(S\)</span>.</p>
-</section></section><section id="most-important-of-all" class="level2"><h2 class="anchored" data-anchor-id="most-important-of-all">Most important of all</h2>
+<p>Compute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying <span class="math inline">\(\text{Poisson}(\lambda)\)</span> and <span class="math inline">\(\text{Gamma}(\alpha,\,\beta)\)</span> distributions are related to <span class="math inline">\(E(S)\)</span> and <span class="math inline">\(\text{var}(S)\)</span>? That is, propose formulas <span class="math inline">\(E(S)=h(\lambda,\,\alpha,\,\beta)\)</span> and <span class="math inline">\(\text{var}(S)=g(\lambda,\,\alpha,\,\beta)\)</span> that describe how the underlying Poisson and gamma parameters determine the moments of <span class="math inline">\(S\)</span>.</p>
+</section></section></section><section id="part-3-the-only-important-part" class="level1"><h1>Part 3: the only important part</h1>
 <section id="task-infty" class="level3"><h3 class="anchored" data-anchor-id="task-infty">Task <span class="math inline">\(\infty\)</span>
 </h3>
 <p>Go watch <a href="https://en.wikipedia.org/wiki/Double_Indemnity"><em>Double Indemnity</em></a>. It is so entertaining it will make your head spin.</p>
 
 
-</section></section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
