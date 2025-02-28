@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STA 240 Spring 2025 - Problem Set 4</title>
+<title>STA 240 Spring 2025 - Extra Practice for Midterm 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,8 +96,8 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="STA 240 Spring 2025 - Problem Set 4">
-<meta property="og:description" content="Due Friday March 7 at 5PM">
+<meta property="og:title" content="STA 240 Spring 2025 - Extra Practice for Midterm 2">
+<meta property="og:description" content="Homepage for STA 240 Probability for Statistical Inference, Modeling, and Data Analysis at Duke University, Spring 2025.">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
 
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Problem Set 4</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Extra Practice for Midterm 2</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -274,13 +274,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-0" id="toc-problem-0" class="nav-link active" data-scroll-target="#problem-0">Problem 0</a></li>
-  <li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
-  <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
-  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
-  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
-  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
-  <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
+  <li><a href="#discrete-random-variables" id="toc-discrete-random-variables" class="nav-link active" data-scroll-target="#discrete-random-variables">Discrete random variables</a>
+  <ul class="collapse">
+  <li><a href="#problem-x" id="toc-problem-x" class="nav-link" data-scroll-target="#problem-x">Problem X</a></li>
+  </ul></li>
+  <li><a href="#absolutely-continuous-random-variables" id="toc-absolutely-continuous-random-variables" class="nav-link" data-scroll-target="#absolutely-continuous-random-variables">Absolutely continuous random variables</a></li>
+  <li><a href="#transformations" id="toc-transformations" class="nav-link" data-scroll-target="#transformations">Transformations</a></li>
+  <li><a href="#joint-distributions" id="toc-joint-distributions" class="nav-link" data-scroll-target="#joint-distributions">Joint distributions</a></li>
   </ul>
 </nav>
     </div>
@@ -289,8 +289,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Problem Set 4</h1>
-<p class="subtitle lead">Due Friday March 7 at 5PM</p>
+<h1 class="title">Extra Practice for Midterm 2</h1>
 </div>
 
 
@@ -307,87 +306,42 @@ window.Quarto = {
 </header>
 
 
-<section id="problem-0" class="level2">
-<h2 class="anchored" data-anchor-id="problem-0">Problem 0</h2>
-<p>Recommend some music for us to listen to while we grade this.</p>
-</section>
-<section id="problem-1" class="level2">
-<h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
-<p>Finish <a href="../labs/lab-4.html">Lab 4</a>! To remind you, we were modeling insurance claims in the following way:</p>
+<p>On Monday March 31 during our usual class meeting, we have our second midterm exam. It will focus on the following topics:</p>
 <ul>
-<li><span class="math inline">\(N\sim\text{Poisson}(\lambda=100)\)</span> is a discrete random variable counting the number of claims that an insurance company receives in a given month;</li>
-<li><span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, … are continuous random variables representing the dollar amount of each claim;</li>
-<li><span class="math inline">\(S=X_1+X_2+...+X_N\)</span> is the total amount of money the company has to pay out. It’s a new random variable that inherits its randomness from both <span class="math inline">\(N\)</span> and the <span class="math inline">\(X_i\)</span>. If <span class="math inline">\(S\)</span> ends up being too large, the company will go broke.</li>
+<li>Set theory;</li>
+<li>Probability axioms and basic rules;</li>
+<li>Counting methods;</li>
+<li>Conditional probability and independence;</li>
+<li>Random variables in general, and discrete random variables in particular.</li>
 </ul>
-<p>For simplicity we assume everything is independent here, which is a totally bogus assumption. But oh well:</p>
+<p>Below is a set of practice problems to help you prepare.</p>
+<section id="discrete-random-variables" class="level1">
+<h1>Discrete random variables</h1>
+<section id="problem-x" class="level2">
+<h2 class="anchored" data-anchor-id="problem-x">Problem X</h2>
+<p>One fine day you are walking down the street when you are accosted by some shyster. He wants to charge you <span class="math inline">\(c\)</span> dollars to play the following game:</p>
+<ul>
+<li>The man will flip a fair coin until a tail appears for the first time;</li>
+<li>If the tail appears on the <span class="math inline">\(n\)</span>th flip, you will win <span class="math inline">\(2^n\)</span> dollars.</li>
+</ul>
+<p>Let <span class="math inline">\(X\)</span> denote your winnings when you play this game.</p>
 <ol type="a">
-<li><p>Zoom in for a second on a single claim amount <span class="math inline">\(X\)</span> and assume <span class="math inline">\(X\sim\text{Gamma}(\alpha,\,\beta)\)</span>. If we know from historical experience that claims are <em>typically</em> around $10,000 with a standard deviation of $2,000, what values should we pick for <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> so that <span class="math inline">\(X\)</span> has the right center and spread?</p></li>
-<li><p>Simulate <code>n = 5000</code> random numbers from the gamma distribution. Plot a histogram of these numbers, and overlay a line plot of the density.</p></li>
-<li><p>Verify that the sample mean and sample variance of your random numbers are close to the prescriptions from part a. If they are not, revisit part a and adjust your choice of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> until this works.</p></li>
-<li><p>What is the probability <span class="math inline">\(P(X &gt; 15000)\)</span>? Calculate this probability exactly using the appropriate <code>p-</code> function, and also approximate it using your random numbers from part b. Verify that the two numbers are close.</p></li>
-<li><p>Write a function that simulates <span class="math inline">\(S\)</span>. So your function should spit out a single number, generated in the following way:</p>
-<ol type="1">
-<li>Simulate <span class="math inline">\(N\)</span>;</li>
-<li>Given the result of Step 1, simulate independent <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_N\)</span>;</li>
-<li>Given the result of Step 2, return <span class="math inline">\(S=X_1+X_2+...+X_N\)</span>.</li>
-</ol></li>
-<li><p>Using the function you wrote in the previous task, simulate <span class="math inline">\(n=5000\)</span> possible values for the random variable <span class="math inline">\(S\)</span> and plot a histogram of them.</p></li>
-<li><p>Use your simulations to approximate the probability <span class="math inline">\(P(S&gt;130000)\)</span>.</p></li>
-<li><p>Compute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying <span class="math inline">\(\text{Poisson}(\lambda)\)</span> and <span class="math inline">\(\text{Gamma}(\alpha,\,\beta)\)</span> distributions are related to <span class="math inline">\(E(S)\)</span> and <span class="math inline">\(\text{var}(S)\)</span>? That is, propose formulas <span class="math inline">\(E(S)=h(\lambda,\,\alpha,\,\beta)\)</span> and <span class="math inline">\(\text{var}(S)=g(\lambda,\,\alpha,\,\beta)\)</span> that describe how the underlying Poisson and gamma parameters determine the moments of <span class="math inline">\(S\)</span>.</p></li>
+<li>What is the range of <span class="math inline">\(X\)</span>?</li>
+<li>What is the pmf of <span class="math inline">\(X\)</span>?</li>
+<li>What is <span class="math inline">\(E(X)\)</span>?</li>
+<li>How much would you be willing to pay for the chance to play this game once? Explain your thought-process.</li>
+<li>You say to the guy “Now wait just a gosh-darned minute. Let’s say for the sake of argument that the first tail does not appear until the hundredth flip (<span class="math inline">\(n=100\)</span>). In that case you’d have to pay me <span class="math inline">\(2^{100}\approx 1.26 × 10^{30}\)</span> dollars. Do you even have that kind of dough?” The guy says “Well, no. I only have <span class="math inline">\(\$W\)</span> to pay you with, so if this goes on long enough, we’d just have to stop, and I’d have to give you all of my money.” Let <span class="math inline">\(Y\)</span> denote your winnings when you play this <em>new</em> game that terminates once the guy runs out of money. What is <span class="math inline">\(E(Y)\)</span>, and how much would you be willing to pay for the chance to play this game once?</li>
 </ol>
 </section>
-<section id="problem-2" class="level2">
-<h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
-<p>If <span class="math inline">\(X\sim\text{Binomial}(n,\,p)\)</span>, show that</p>
-<p><span class="math display">\[
-E\left[\frac{1}{X+1}\right]=\frac{1-(1-p)^{n+1}}{(n+1)p}.
-\]</span></p>
 </section>
-<section id="problem-3" class="level2">
-<h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
-<p>An absolutely continuous random variable <span class="math inline">\(X\)</span> has pdf</p>
-<p><span class="math display">\[
-f(x)=\begin{cases}
-\frac{3}{22}[5 - (x-1)^2] &amp; 1\leq x \leq3\\
-0 &amp; \text{else}.
-\end{cases}
-\]</span></p>
-<ol type="a">
-<li>Confirm that <span class="math inline">\(f\)</span> is a valid pdf.</li>
-<li>Derive the formula for the cdf of <span class="math inline">\(X\)</span> and plot it.</li>
-<li>Compute <span class="math inline">\(E(X)\)</span>.</li>
-<li>Compute <span class="math inline">\(\text{var}(X)\)</span>.</li>
-</ol>
+<section id="absolutely-continuous-random-variables" class="level1">
+<h1>Absolutely continuous random variables</h1>
 </section>
-<section id="problem-4" class="level2">
-<h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
-<p>A point is chosen at random on a line segment of length <span class="math inline">\(L\)</span>. Interpret this statement, and find the probability that the ratio of the shorter to the longer segment is less than <span class="math inline">\(\frac{1}{4}\)</span>.</p>
+<section id="transformations" class="level1">
+<h1>Transformations</h1>
 </section>
-<section id="problem-5" class="level2">
-<h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
-<p>Let <span class="math inline">\(X\)</span> be any absolutely continuous random variable with pdf <span class="math inline">\(f\)</span> and cdf <span class="math inline">\(F\)</span>, and assume that <span class="math inline">\(E[(X-a)^2]\)</span> and <span class="math inline">\(E\left[|X-a|\right]\)</span> are finite for all <span class="math inline">\(a\in \mathbb{R}\)</span>.</p>
-<ol type="a">
-<li>Compute and interpret</li>
-</ol>
-<p><span class="math display">\[
-a_0=\underset{a\in\mathbb{R}}{\arg\min}\,E[(X-a)^2].
-\]</span></p>
-<ol start="2" type="a">
-<li>Compute and interpret</li>
-</ol>
-<p><span class="math display">\[
-b_0=\underset{b\in\mathbb{R}}{\arg\min}\,E\left[|X-b|\right].
-\]</span></p>
-</section>
-<section id="problem-6" class="level2">
-<h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
-<p>Consider <span class="math inline">\(X\sim\textrm{Gamma}(\alpha,\,\beta)\)</span>.</p>
-<ol type="a">
-<li>Find <span class="math inline">\(M_X(t)=E[e^{tX}]\)</span>, the moment generating function of <span class="math inline">\(X\)</span>. For what values of <span class="math inline">\(t\)</span> is it defined?</li>
-<li>Use the moment-generating function to compute <span class="math inline">\(E(X)\)</span>.</li>
-<li>Use the moment-generating function to compute <span class="math inline">\(\text{var}(X)\)</span>.</li>
-<li>If <span class="math inline">\(c&gt;0\)</span>, what is the distribution of <span class="math inline">\(Y=cX\)</span>?</li>
-</ol>
+<section id="joint-distributions" class="level1">
+<h1>Joint distributions</h1>
 
 
 </section>
