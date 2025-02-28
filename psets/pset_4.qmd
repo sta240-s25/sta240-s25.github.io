@@ -59,8 +59,9 @@ $$
 a.  What is the range of $X$?
 b.  Confirm that $f$ is a valid pdf.
 c.  Derive the formula for the cdf of $X$ and plot it.
-d.  Compute $E(X)$.
-e.  Compute $\text{var}(X)$.
+d.  Compute $P(0.9 < X < 1.1)$.
+e.  Compute $E(X)$.
+f.  Compute $\text{var}(X)$.
 
 ## Problem 4
 
