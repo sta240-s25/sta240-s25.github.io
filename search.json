@@ -725,7 +725,7 @@
     "href": "psets/pset_4.html#problem-3",
     "title": "Problem Set 4",
     "section": "Problem 3",
-    "text": "Problem 3\nAn absolutely continuous random variable \\(X\\) has pdf\n\\[\nf(x)=\\begin{cases}\n\\frac{3}{22}[5 - (x-1)^2] & 1\\leq x \\leq3\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\n\nWhat is the range of \\(X\\)?\nConfirm that \\(f\\) is a valid pdf.\nDerive the formula for the cdf of \\(X\\) and plot it.\nCompute \\(E(X)\\).\nCompute \\(\\text{var}(X)\\).",
+    "text": "Problem 3\nAn absolutely continuous random variable \\(X\\) has pdf\n\\[\nf(x)=\\begin{cases}\n\\frac{3}{22}[5 - (x-1)^2] & 1\\leq x \\leq3\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\n\nWhat is the range of \\(X\\)?\nConfirm that \\(f\\) is a valid pdf.\nDerive the formula for the cdf of \\(X\\) and plot it.\nCompute \\(P(0.9 &lt; X &lt; 1.1)\\).\nCompute \\(E(X)\\).\nCompute \\(\\text{var}(X)\\).",
     "crumbs": [
       "Problem Sets",
       "Problem Set 4"
