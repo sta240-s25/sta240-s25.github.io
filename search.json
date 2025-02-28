@@ -7,11 +7,11 @@
     "text": "On Monday March 31 during our usual class meeting, we have our second midterm exam. It will focus on the following topics:\nBelow is a set of practice problems to help you prepare."
   },
   {
-    "objectID": "exams/midterm-2.html#problem-x",
-    "href": "exams/midterm-2.html#problem-x",
+    "objectID": "exams/midterm-2.html#problem",
+    "href": "exams/midterm-2.html#problem",
     "title": "Extra Practice for Midterm 2",
-    "section": "Problem X",
-    "text": "Problem X\nOne fine day you are walking down the street when you are accosted by some shyster. He wants to charge you \\(c\\) dollars to play the following game:\n\nThe man will flip a fair coin until a tail appears for the first time;\nIf the tail appears on the \\(n\\)th flip, you will win \\(2^n\\) dollars.\n\nLet \\(X\\) denote your winnings when you play this game.\n\nWhat is the range of \\(X\\)?\nWhat is the pmf of \\(X\\)?\nWhat is \\(E(X)\\)?\nHow much would you be willing to pay for the chance to play this game once? Explain your thought-process.\nYou say to the guy “Now wait just a gosh-darned minute. Let’s say for the sake of argument that the first tail does not appear until the hundredth flip (\\(n=100\\)). In that case you’d have to pay me \\(2^{100}\\approx 1.26 × 10^{30}\\) dollars. Do you even have that kind of dough?” The guy says “Well, no. I only have \\(\\$W\\) to pay you with, so if this goes on long enough, we’d just have to stop, and I’d have to give you all of my money.” Let \\(Y\\) denote your winnings when you play this new game that terminates once the guy runs out of money. What is \\(E(Y)\\), and how much would you be willing to pay for the chance to play this game once?"
+    "section": "Problem",
+    "text": "Problem\nOne fine day you are walking down the street when you are accosted by some shyster. He wants to charge you \\(c\\) dollars to play the following game:\n\nThe man will flip a fair coin until a tail appears for the first time;\nIf the tail appears on the \\(n\\)th flip, you will win \\(2^n\\) dollars.\n\nLet \\(X\\) denote your winnings when you play this game.\n\nWhat is the range of \\(X\\)?\nWhat is the pmf of \\(X\\)?\nWhat is \\(E(X)\\)?\nHow much would you be willing to pay for the chance to play this game once? Explain your thought-process.\nYou say to the guy “Now wait just a gosh-darned minute. Let’s say for the sake of argument that the first tail does not appear until the hundredth flip (\\(n=100\\)). In that case you’d have to pay me \\(2^{100}\\approx 1.26 × 10^{30}\\) dollars. Do you even have that kind of dough?” The guy says “Well, no. I only have \\(\\$W\\) to pay you with, so if this goes on long enough, we’d just have to stop, and I’d have to give you all of my money.” Let \\(Y\\) denote your winnings when you play this new game that terminates once the guy runs out of money. What is \\(E(Y)\\), and how much would you be willing to pay for the chance to play this game once?"
   },
   {
     "objectID": "syllabus/syllabus_team.html",
@@ -681,56 +681,88 @@
     "href": "psets/pset_4.html",
     "title": "Problem Set 4",
     "section": "",
-    "text": "Recommend some music for us to listen to while we grade this."
+    "text": "Recommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-0",
     "href": "psets/pset_4.html#problem-0",
     "title": "Problem Set 4",
     "section": "",
-    "text": "Recommend some music for us to listen to while we grade this."
+    "text": "Recommend some music for us to listen to while we grade this.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-1",
     "href": "psets/pset_4.html#problem-1",
     "title": "Problem Set 4",
     "section": "Problem 1",
-    "text": "Problem 1\nFinish Lab 4! To remind you, we were modeling insurance claims in the following way:\n\n\\(N\\sim\\text{Poisson}(\\lambda=100)\\) is a discrete random variable counting the number of claims that an insurance company receives in a given month;\n\\(X_1\\), \\(X_2\\), … are continuous random variables representing the dollar amount of each claim;\n\\(S=X_1+X_2+...+X_N\\) is the total amount of money the company has to pay out. It’s a new random variable that inherits its randomness from both \\(N\\) and the \\(X_i\\). If \\(S\\) ends up being too large, the company will go broke.\n\nFor simplicity we assume everything is independent here, which is a totally bogus assumption. But oh well:\n\nZoom in for a second on a single claim amount \\(X\\) and assume \\(X\\sim\\text{Gamma}(\\alpha,\\,\\beta)\\). If we know from historical experience that claims are typically around $10,000 with a standard deviation of $2,000, what values should we pick for \\(\\alpha\\) and \\(\\beta\\) so that \\(X\\) has the right center and spread?\nSimulate n = 5000 random numbers from the gamma distribution. Plot a histogram of these numbers, and overlay a line plot of the density.\nVerify that the sample mean and sample variance of your random numbers are close to the prescriptions from part a. If they are not, revisit part a and adjust your choice of \\(\\alpha\\) and \\(\\beta\\) until this works.\nWhat is the probability \\(P(X &gt; 15000)\\)? Calculate this probability exactly using the appropriate p- function, and also approximate it using your random numbers from part b. Verify that the two numbers are close.\nWrite a function that simulates \\(S\\). So your function should spit out a single number, generated in the following way:\n\nSimulate \\(N\\);\nGiven the result of Step 1, simulate independent \\(X_1\\), \\(X_2\\), …, \\(X_N\\);\nGiven the result of Step 2, return \\(S=X_1+X_2+...+X_N\\).\n\nUsing the function you wrote in the previous task, simulate \\(n=5000\\) possible values for the random variable \\(S\\) and plot a histogram of them.\nUse your simulations to approximate the probability \\(P(S&gt;130000)\\).\nCompute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying \\(\\text{Poisson}(\\lambda)\\) and \\(\\text{Gamma}(\\alpha,\\,\\beta)\\) distributions are related to \\(E(S)\\) and \\(\\text{var}(S)\\)? That is, propose formulas \\(E(S)=h(\\lambda,\\,\\alpha,\\,\\beta)\\) and \\(\\text{var}(S)=g(\\lambda,\\,\\alpha,\\,\\beta)\\) that describe how the underlying Poisson and gamma parameters determine the moments of \\(S\\)."
+    "text": "Problem 1\nFinish Lab 4! To remind you, we were modeling insurance claims in the following way:\n\n\\(N\\sim\\text{Poisson}(\\lambda=100)\\) is a discrete random variable counting the number of claims that an insurance company receives in a given month;\n\\(X_1\\), \\(X_2\\), … are continuous random variables representing the dollar amount of each claim;\n\\(S=X_1+X_2+...+X_N\\) is the total amount of money the company has to pay out. It’s a new random variable that inherits its randomness from both \\(N\\) and the \\(X_i\\). If \\(S\\) ends up being too large, the company will go broke.\n\nFor simplicity we assume everything is independent here, which is a totally bogus assumption. But oh well:\n\nZoom in for a second on a single claim amount \\(X\\) and assume \\(X\\sim\\text{Gamma}(\\alpha,\\,\\beta)\\). If we know from historical experience that claims are typically around $10,000 with a standard deviation of $2,000, what values should we pick for \\(\\alpha\\) and \\(\\beta\\) so that \\(X\\) has the right center and spread?\nSimulate n = 5000 random numbers from the gamma distribution. Plot a histogram of these numbers, and overlay a line plot of the density.\nVerify that the sample mean and sample variance of your random numbers are close to the prescriptions from part a. If they are not, revisit part a and adjust your choice of \\(\\alpha\\) and \\(\\beta\\) until this works.\nWhat is the probability \\(P(X &gt; 15000)\\)? Calculate this probability exactly using the appropriate p- function, and also approximate it using your random numbers from part b. Verify that the two numbers are close.\nWrite a function that simulates \\(S\\). So your function should spit out a single number, generated in the following way:\n\nSimulate \\(N\\);\nGiven the result of Step 1, simulate independent \\(X_1\\), \\(X_2\\), …, \\(X_N\\);\nGiven the result of Step 2, return \\(S=X_1+X_2+...+X_N\\).\n\nUsing the function you wrote in the previous task, simulate \\(n=5000\\) possible values for the random variable \\(S\\) and plot a histogram of them.\nUse your simulations to approximate the probability \\(P(S&gt;130000)\\).\nCompute the sample mean and the sample variance of your simulations. Based on these, can you conjecture how the parameters of the underlying \\(\\text{Poisson}(\\lambda)\\) and \\(\\text{Gamma}(\\alpha,\\,\\beta)\\) distributions are related to \\(E(S)\\) and \\(\\text{var}(S)\\)? That is, propose formulas \\(E(S)=h(\\lambda,\\,\\alpha,\\,\\beta)\\) and \\(\\text{var}(S)=g(\\lambda,\\,\\alpha,\\,\\beta)\\) that describe how the underlying Poisson and gamma parameters determine the moments of \\(S\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-2",
     "href": "psets/pset_4.html#problem-2",
     "title": "Problem Set 4",
     "section": "Problem 2",
-    "text": "Problem 2\nIf \\(X\\sim\\text{Binomial}(n,\\,p)\\), show that\n\\[\nE\\left[\\frac{1}{X+1}\\right]=\\frac{1-(1-p)^{n+1}}{(n+1)p}.\n\\]"
+    "text": "Problem 2\nIf \\(X\\sim\\text{Binomial}(n,\\,p)\\), show that\n\\[\nE\\left[\\frac{1}{X+1}\\right]=\\frac{1-(1-p)^{n+1}}{(n+1)p}.\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-3",
     "href": "psets/pset_4.html#problem-3",
     "title": "Problem Set 4",
     "section": "Problem 3",
-    "text": "Problem 3\nAn absolutely continuous random variable \\(X\\) has pdf\n\\[\nf(x)=\\begin{cases}\n\\frac{3}{22}[5 - (x-1)^2] & 1\\leq x \\leq3\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\n\nConfirm that \\(f\\) is a valid pdf.\nDerive the formula for the cdf of \\(X\\) and plot it.\nCompute \\(E(X)\\).\nCompute \\(\\text{var}(X)\\)."
+    "text": "Problem 3\nAn absolutely continuous random variable \\(X\\) has pdf\n\\[\nf(x)=\\begin{cases}\n\\frac{3}{22}[5 - (x-1)^2] & 1\\leq x \\leq3\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\n\nConfirm that \\(f\\) is a valid pdf.\nDerive the formula for the cdf of \\(X\\) and plot it.\nCompute \\(E(X)\\).\nCompute \\(\\text{var}(X)\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-4",
     "href": "psets/pset_4.html#problem-4",
     "title": "Problem Set 4",
     "section": "Problem 4",
-    "text": "Problem 4\nA point is chosen at random on a line segment of length \\(L\\). Interpret this statement, and find the probability that the ratio of the shorter to the longer segment is less than \\(\\frac{1}{4}\\)."
+    "text": "Problem 4\nA point is chosen at random on a line segment of length \\(L\\). Interpret this statement, and find the probability that the ratio of the shorter to the longer segment is less than \\(\\frac{1}{4}\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-5",
     "href": "psets/pset_4.html#problem-5",
     "title": "Problem Set 4",
     "section": "Problem 5",
-    "text": "Problem 5\nLet \\(X\\) be any absolutely continuous random variable with pdf \\(f\\) and cdf \\(F\\), and assume that \\(E[(X-a)^2]\\) and \\(E\\left[|X-a|\\right]\\) are finite for all \\(a\\in \\mathbb{R}\\).\n\nCompute and interpret\n\n\\[\na_0=\\underset{a\\in\\mathbb{R}}{\\arg\\min}\\,E[(X-a)^2].\n\\]\n\nCompute and interpret\n\n\\[\nb_0=\\underset{b\\in\\mathbb{R}}{\\arg\\min}\\,E\\left[|X-b|\\right].\n\\]"
+    "text": "Problem 5\nLet \\(X\\) be any absolutely continuous random variable with pdf \\(f\\) and cdf \\(F\\), and assume that \\(E[(X-a)^2]\\) and \\(E\\left[|X-a|\\right]\\) are finite for all \\(a\\in \\mathbb{R}\\).\n\nCompute and interpret\n\n\\[\na_0=\\underset{a\\in\\mathbb{R}}{\\arg\\min}\\,E[(X-a)^2].\n\\]\n\nCompute and interpret\n\n\\[\nb_0=\\underset{b\\in\\mathbb{R}}{\\arg\\min}\\,E\\left[|X-b|\\right].\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "psets/pset_4.html#problem-6",
     "href": "psets/pset_4.html#problem-6",
     "title": "Problem Set 4",
     "section": "Problem 6",
-    "text": "Problem 6\nConsider \\(X\\sim\\textrm{Gamma}(\\alpha,\\,\\beta)\\).\n\nFind \\(M_X(t)=E[e^{tX}]\\), the moment generating function of \\(X\\). For what values of \\(t\\) is it defined?\nUse the moment-generating function to compute \\(E(X)\\).\nUse the moment-generating function to compute \\(\\text{var}(X)\\).\nIf \\(c&gt;0\\), what is the distribution of \\(Y=cX\\)?"
+    "text": "Problem 6\nConsider \\(X\\sim\\textrm{Gamma}(\\alpha,\\,\\beta)\\).\n\nFind \\(M_X(t)=E[e^{tX}]\\), the moment generating function of \\(X\\). For what values of \\(t\\) is it defined?\nUse the moment-generating function to compute \\(E(X)\\).\nUse the moment-generating function to compute \\(\\text{var}(X)\\).\nIf \\(c&gt;0\\), what is the distribution of \\(Y=cX\\)?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 4"
+    ]
   },
   {
     "objectID": "labs/lab-1.html",
@@ -1243,7 +1275,7 @@
     "href": "index.html",
     "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\nnotes\n\n\n\n\nWed, Jan 15\n\nDS: 1.5\nProbability rules\nnotes\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nDS: 1.6 - 1.8\nCounting Snow Day - No Lecture\n\n\nvideos notes\n\n\n\n\n\nThu, Jan 23\n\nOH w/ Gwen\n\n\n\n\n\nFri, Jan 24\n\n\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nDS: 2\nConditional probability 1\n\nPlay around! Play around some more!\n\n\n\n\n\nWed, Jan 29\n\nDS: 2\nConditional probability 2\nnotes\n\n\n\n\nThu, Jan 30\n\nLab 2\n\n\nLab 2 @ 11:59 PM\n\n\n4\nMon, Feb 3\n\nDS: 3.1, 3.3, 4.1\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 5\n\nDS: 5.1 - 5.4\nDiscrete random variables\nnotes\n\n\n\n\nThu, Feb 6\n\nLab 3\n\n\nPSET 2 @ 12PM Lab 3 @ 11:59 PM\n\n\n5\nMon, Feb 10\n\nDS: 4.1 - 4.3\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 12\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\npractice\n\n\n\n\nFri, Feb 14\n\n\n\n\nPSET 3 @ 5PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nSnow Day - No Lecture\n\n\n\n\n\nThu, Feb 20\n\nSnow Day - No Lab\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 27\n\nLab 4\n\n\nLab 4 @ 11:59 PM\n\n\n8\nMon, Mar 3\n\nTransformations\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 5: RNGs\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nJoint distributions\n\n\n\n\n\nWed, Mar 19\n\nLinear combinations of random variables\n\n\n\n\n\nThu, Mar 20\n\nLab 6\n\n\n\n\n11\nMon, Mar 24\n\nTail bounds  Law of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 7\n\n\n\n\n\nSat, Apr 5\n\nMakeup Day?\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 8\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\nnotes\n\n\n\n\nWed, Jan 15\n\nDS: 1.5\nProbability rules\nnotes\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nDS: 1.6 - 1.8\nCounting Snow Day - No Lecture\n\n\nvideos notes\n\n\n\n\n\nThu, Jan 23\n\nOH w/ Gwen\n\n\n\n\n\nFri, Jan 24\n\n\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nDS: 2\nConditional probability 1\n\nPlay around! Play around some more!\n\n\n\n\n\nWed, Jan 29\n\nDS: 2\nConditional probability 2\nnotes\n\n\n\n\nThu, Jan 30\n\nLab 2\n\n\nLab 2 @ 11:59 PM\n\n\n4\nMon, Feb 3\n\nDS: 3.1, 3.3, 4.1\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 5\n\nDS: 5.1 - 5.4\nDiscrete random variables\nnotes\n\n\n\n\nThu, Feb 6\n\nLab 3\n\n\nPSET 2 @ 12PM Lab 3 @ 11:59 PM\n\n\n5\nMon, Feb 10\n\nDS: 4.1 - 4.3\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 12\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\npractice\n\n\n\n\nFri, Feb 14\n\n\n\n\nPSET 3 @ 5PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nSnow Day - No Lecture\n\n\n\n\n\nThu, Feb 20\n\nSnow Day - No Lab\n\n\n\n\n7\nMon, Feb 24\n\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nContinuous random variables\n\n\n\n\n\nThu, Feb 27\n\nLab 4\n\n\nLab 4 @ 11:59 PM\n\n\n8\nMon, Mar 3\n\nTransformations\n\n\n\n\n\nWed, Mar 5\n\nJoint distributions\n\n\n\n\n\nThu, Mar 6\n\nLab 5: RNGs\n\n\nPSET 4 @ 12PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nJoint distributions\n\n\n\n\n\nWed, Mar 19\n\nLinear combinations of random variables\n\n\n\n\n\nThu, Mar 20\n\nLab 6\n\n\n\n\n11\nMon, Mar 24\n\nTail bounds  Law of large numbers\n\n\n\n\n\nWed, Mar 26\n\nCentral limit theorem\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nStatistics\n\n\n\n\n\nThu, Apr 3\n\nLab 7\n\n\n\n\n\nSat, Apr 5\n\nMakeup Day?\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 8\n\nPSET 6 @ 12PM\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\n???\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 5PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
