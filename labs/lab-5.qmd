@@ -79,5 +79,5 @@ Let $X$ be an absolutely continuous random variable with pdf $f_X$, let $a>0$ an
 
 a.  What is $E(Y)$?
 b.  What is $\text{var}(Y)$?
-c.  What is the density of $Y$?
-d.  In the special case where $X\sim\text{N}(0,\,1)$, what are $E(Y)$, $\text{var}(Y)$, and the density of $Y$?
+c.  Use the change-of-variables formula to find the density of $Y$?
+d.  In the special case where $X\sim\text{N}(0,\,1)$, what are $E(Y)$, $\text{var}(Y)$, and the density of $Y$? There's no need to re-derive anything here. Just plug what you know about N(0, 1) into the formulas from parts a, b, and c.
