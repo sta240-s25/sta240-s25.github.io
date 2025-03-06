@@ -3,13 +3,11 @@ title: "Lab 5"
 subtitle: Due Thursday March 6 at 11:59 PM
 ---
 
-# Part 1: transformations
-
 Let $X$ be a random variable, and let $g$ be some function. Because $X$ is random, the new variable $Y=g(X)$ is also random. Given what we know about $X$, what is the distribution of $Y$? This simple question will preoccupy us for the next seventy-five minutes.
 
 ## Problem -1: recall lecture
 
-If $\Theta\sim\text{Unif}(-\pi/2,\,\pi/2)$, then what is the distribution of $X=\tan\Theta$? We know that $\text{Range}(X)=\mathbb{R}$, so for any $x\in\mathbb{R}$, we have 
+If $\Theta\sim\text{Unif}(-\pi/2,\,\pi/2)$, then what is the distribution of $X=\tan\Theta$? We know that $\text{Range}(X)=\mathbb{R}$, so for any $x\in\mathbb{R}$, we have
 
 $$
 \begin{aligned}
@@ -41,100 +39,45 @@ This is the density of the **Cauchy distribution**.
 
 ## Problem 0: watch Gwen!
 
-If $X\sim\text{N}(0,\, 1)$, then what is the pdf of $Y=Z^2$? Turns out it's a member of the gamma family.
+If $Z\sim\text{N}(0,\, 1)$, then what is the pdf of $Y=Z^2$? Turns out it's a member of the gamma family.
 
 ## Problem 1: now you try
 
-Consider $X\sim \text{Gamma}(1,\,1)$. Its density is 
+Consider $X\sim \text{Gamma}(1,\,1)$. Its density is
 
 $$
 f_X(x)=e^{-x},\quad x>0.
 $$
 
-a. What is the cdf of $X$?
-b. What are the range and pdf of $Y=\ln X$?
-c. Simulate `n=5000` draws of $Y$. Plot a histogram, and add a line plot of the density you derived in part b. They should match!
+a.  What is the cdf of $X$?
+b.  What are the range and pdf of $Y=\ln X$?
+c.  Simulate `n=5000` draws of $Y$. Plot a histogram, and add a line plot of the density you derived in part b. They should match!
+
+## Interlude
+
+Given $X\sim f_X$, we want the density of $Y=g(X)$. In the three examples, you followed the same basic steps: 
+
+- write the generic cdf of $Y$: $F_Y(y)=P(Y\leq y)=P(g(X)\leq y)$;
+- rewrite the event inside until $X$ is by itself (you probably have to undo or *invert* $g$ to do this);
+- since $X$ is by itself, rewrite the probability using the cdf of $X$;
+- differentiate (you probably have to use the chain rule to do this).
+
+The basic template can be neatly summarized with the so-called change-of-variables formula, which tells you how to compute the density of $Y$ using the density of $X$ and the transformation $g$:
+
+$$
+f_Y(y)=f_X\left(g^{-1}(y)\right)
+    \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|,\quad y\in\text{Range}(Y).
+$$
+
+## Problem 1.5
+
+Use the change-of-variables formula to re-do Problem 1. You should get the same answer.
 
 ## Problem 2: location-scale transformations
 
-Let $X$ be an absolutely continuous random variable with pdf $f_X$, let $a>0$ and $b\in\mathbb{R}$ be constants, and consider the new random variable $Y=aX+b$. 
+Let $X$ be an absolutely continuous random variable with pdf $f_X$, let $a>0$ and $b\in\mathbb{R}$ be constants, and consider the new random variable $Y=aX+b$.
 
-a. What is $E(Y)$?
-b. What is $\text{var}(Y)$?
-c. What is the density of $Y$?
-d. In the special case where $X\sim\text{N}(0,\,1)$, what are $E(Y)$, $\text{var}(Y)$, and the density of $Y$?
-
-# Part 2: simulation
-
-When you call the `r-` functions and get random numbers from some distribution, what is the computer doing under the hood? Ultimately, it's simulating simpler stuff and then applying a transformation to give you the distribution that you want. For example...
-
-- Want Cauchy? Simulate $\text{Unif}(-\pi/2,\,\pi/2)$ and apply tan;
-- Want Gamma(1/2, 1/2)? Simulate N(0, 1) and square;
-- Want $\text{N}(\mu,\,\sigma^2)$? Simulate N(0, 1) and then scale and shift.
-
-Okay, but where is the simple stuff coming from? It turns out that you can boil everything down to the standard uniform distribution $\text{Unif}(0,\, 1)$.
-
-::: callout-note
-## Theorem: inverse transform sampling
-
-Let $U\sim \text{Unif}(0,\, 1)$, and let $F$ be any cdf (non-decreasing, right-continuous, yada yada) you're interested in. If you define a new random variable $X=F^{-1}(U)$, then $X\sim F$.
-:::
-
-In words, this theorem is saying that you can simulate *any* distribution by simulating the standard uniform distribution and then applying a transformation. We statisticians take for granted that the computer scientists figured out how to simulate $\text{Unif}(0,\, 1)$ ([here](https://en.wikipedia.org/wiki/Mersenne_Twister) is an example), and so if we want random numbers from some fancy distribution, we just need to figure out what the transformation is.
-
-## Problem 3
-
-If you took AP Statistics or STA 101, you probably learned about Student's $t$ distribution. This is a family of continuous distributions with heavier tails than the normal, and the density is:
-
-$$
-f_X(x;\,\nu)=\frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\Gamma\left(\frac{\nu}{2}\right)\sqrt{\pi\nu}}\left(1+\frac{1}{\nu}x^2\right)^{-\frac{\nu+1}{2}},\quad x\in\mathbb{R}.
-$$
-
-This family has one parameter $\nu>0$ called the *degrees of freedom*. Okay, that's a big rotten mess, but whatever. If we wanted to simulate it, all we have to do is simulate from $\text{Unif}(0,\, 1)$, and then plug those numbers into the inverse cdf of the $t$ distribution. The transformed numbers are guaranteed to follow the $t$ distribution. Let's see that!
-
-Student's $t$ has it's own `d-` and `q-` functions:
-
-```{r}
-#| eval: false
-dt(x, df)
-qt(p, df)
-```
-
-`dt` evaluates the pdf, and `qt` evaluates the *inverse* cdf (the so-called **quantile function**). Implement the following:
-
-- Simulate $n=5000$ numbers from $\text{Unif}(0,\, 1)$;
-- Plug them into the inverse cdf of the $t$ distribution with `df = 10`;
-- Plot a histogram of these transformed numbers;
-- Add on top of the histogram a line plot of the density of the $t$ distribution;
-- They had better match!
-
-## Problem 4
-
-Let $X\sim\text{Gamma}(1,\,\beta)$. So the pdf of $X$ is 
-
-$$
-f_X(x)=\beta e^{-\beta x},\quad x>0.
-$$
-
-a. Find the cdf $F_X(x)=P(X\leq x)$;
-b. Find the inverse cdf $F_X^{-1}(y)$, $y\in(0,\,1)$;
-c. Implement inverse transform sampling to simulate $\text{Gamma}(1,\,\beta)$ for $\beta = 2$.
-d. Plot a histogram of 5000 draws from your sampler, and add a line plot of the $\text{Gamma}(1,\,\beta)$ density on top. They had better match!
-
-## Problem 5
-
-The bottom line of all of this is the **universality of the uniform**. The fundamental principle of simulation is that any distribution can be simulated by first simulating from the standard uniform, and then applying a transformation. 
-
-The **Box-Muller** method says that we can simulate the standard normal in the following way:
-
-$$
-\begin{align*}
-U_1,\,U_2&\overset{\textrm{iid}}{\sim}\textrm{Unif}(0,\,1)\\
-Z&=\sqrt{-2\ln U_1}\cos(2\pi U_2)
-\end{align*}
-$$
-
-So $Z\sim\text{N}(0,\,1)$. It is not hard to prove this if you've taken multivariable calculus (yaaay polar coordinates), but our course does not assume this. Nevertheless, we can still implement the sampler and check that it works.
-
-a. Use the Box-Muller method to simulate 5000 random numbers from N(0, 1). Check that you did it right by plotting the histogram and superimposing the standard normal density;
-b. Modify your code to simulate $\text{N}(\mu=-3.5,\,\sigma^2=0.58)$.
+a.  What is $E(Y)$?
+b.  What is $\text{var}(Y)$?
+c.  What is the density of $Y$?
+d.  In the special case where $X\sim\text{N}(0,\,1)$, what are $E(Y)$, $\text{var}(Y)$, and the density of $Y$?
