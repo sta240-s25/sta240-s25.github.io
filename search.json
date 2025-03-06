@@ -941,6 +941,34 @@
     ]
   },
   {
+    "objectID": "labs/lab_scraps.html",
+    "href": "labs/lab_scraps.html",
+    "title": "Part 2: simulation",
+    "section": "",
+    "text": "When you call the r- functions and get random numbers from some distribution, what is the computer doing under the hood? Ultimately, it’s simulating simpler stuff and then applying a transformation to give you the distribution that you want. For example…\n\nWant Cauchy? Simulate \\(\\text{Unif}(-\\pi/2,\\,\\pi/2)\\) and apply tan;\nWant Gamma(1/2, 1/2)? Simulate N(0, 1) and square;\nWant \\(\\text{N}(\\mu,\\,\\sigma^2)\\)? Simulate N(0, 1) and then scale and shift.\n\nOkay, but where is the simple stuff coming from? It turns out that you can boil everything down to the standard uniform distribution \\(\\text{Unif}(0,\\, 1)\\).\n\n\n\n\n\n\nTheorem: inverse transform sampling\n\n\n\nLet \\(U\\sim \\text{Unif}(0,\\, 1)\\), and let \\(F\\) be any cdf (non-decreasing, right-continuous, yada yada) you’re interested in. If you define a new random variable \\(X=F^{-1}(U)\\), then \\(X\\sim F\\).\n\n\nIn words, this theorem is saying that you can simulate any distribution by simulating the standard uniform distribution and then applying a transformation. We statisticians take for granted that the computer scientists figured out how to simulate \\(\\text{Unif}(0,\\, 1)\\) (here is an example), and so if we want random numbers from some fancy distribution, we just need to figure out what the transformation is.\n\nIf you took AP Statistics or STA 101, you probably learned about Student’s \\(t\\) distribution. This is a family of continuous distributions with heavier tails than the normal, and the density is:\n\\[\nf_X(x;\\,\\nu)=\\frac{\\Gamma\\left(\\frac{\\nu+1}{2}\\right)}{\\Gamma\\left(\\frac{\\nu}{2}\\right)\\sqrt{\\pi\\nu}}\\left(1+\\frac{1}{\\nu}x^2\\right)^{-\\frac{\\nu+1}{2}},\\quad x\\in\\mathbb{R}.\n\\]\nThis family has one parameter \\(\\nu&gt;0\\) called the degrees of freedom. Okay, that’s a big rotten mess, but whatever. If we wanted to simulate it, all we have to do is simulate from \\(\\text{Unif}(0,\\, 1)\\), and then plug those numbers into the inverse cdf of the \\(t\\) distribution. The transformed numbers are guaranteed to follow the \\(t\\) distribution. Let’s see that!\nStudent’s \\(t\\) has it’s own d- and q- functions:\n\ndt(x, df)\nqt(p, df)\n\ndt evaluates the pdf, and qt evaluates the inverse cdf (the so-called quantile function). Implement the following:\n\nSimulate \\(n=5000\\) numbers from \\(\\text{Unif}(0,\\, 1)\\);\nPlug them into the inverse cdf of the \\(t\\) distribution with df = 10;\nPlot a histogram of these transformed numbers;\nAdd on top of the histogram a line plot of the density of the \\(t\\) distribution;\nThey had better match!\n\nLet \\(X\\sim\\text{Gamma}(1,\\,\\beta)\\). So the pdf of \\(X\\) is\n\\[\nf_X(x)=\\beta e^{-\\beta x},\\quad x&gt;0.\n\\]\n\nFind the cdf \\(F_X(x)=P(X\\leq x)\\);\nFind the inverse cdf \\(F_X^{-1}(y)\\), \\(y\\in(0,\\,1)\\);\nImplement inverse transform sampling to simulate \\(\\text{Gamma}(1,\\,\\beta)\\) for \\(\\beta = 2\\).\nPlot a histogram of 5000 draws from your sampler, and add a line plot of the \\(\\text{Gamma}(1,\\,\\beta)\\) density on top. They had better match!\n\nThe bottom line of all of this is the universality of the uniform. The fundamental principle of simulation is that any distribution can be simulated by first simulating from the standard uniform, and then applying a transformation.\nThe Box-Muller method says that we can simulate the standard normal in the following way:\n\\[\n\\begin{align*}\nU_1,\\,U_2&\\overset{\\textrm{iid}}{\\sim}\\textrm{Unif}(0,\\,1)\\\\\nZ&=\\sqrt{-2\\ln U_1}\\cos(2\\pi U_2)\n\\end{align*}\n\\]\nSo \\(Z\\sim\\text{N}(0,\\,1)\\). It is not hard to prove this if you’ve taken multivariable calculus (yaaay polar coordinates), but our course does not assume this. Nevertheless, we can still implement the sampler and check that it works.\n\nUse the Box-Muller method to simulate 5000 random numbers from N(0, 1). Check that you did it right by plotting the histogram and superimposing the standard normal density;\nModify your code to simulate \\(\\text{N}(\\mu=-3.5,\\,\\sigma^2=0.58)\\)."
+  },
+  {
+    "objectID": "labs/lab_scraps.html#problem-3",
+    "href": "labs/lab_scraps.html#problem-3",
+    "title": "Part 2: simulation",
+    "section": "",
+    "text": "If you took AP Statistics or STA 101, you probably learned about Student’s \\(t\\) distribution. This is a family of continuous distributions with heavier tails than the normal, and the density is:\n\\[\nf_X(x;\\,\\nu)=\\frac{\\Gamma\\left(\\frac{\\nu+1}{2}\\right)}{\\Gamma\\left(\\frac{\\nu}{2}\\right)\\sqrt{\\pi\\nu}}\\left(1+\\frac{1}{\\nu}x^2\\right)^{-\\frac{\\nu+1}{2}},\\quad x\\in\\mathbb{R}.\n\\]\nThis family has one parameter \\(\\nu&gt;0\\) called the degrees of freedom. Okay, that’s a big rotten mess, but whatever. If we wanted to simulate it, all we have to do is simulate from \\(\\text{Unif}(0,\\, 1)\\), and then plug those numbers into the inverse cdf of the \\(t\\) distribution. The transformed numbers are guaranteed to follow the \\(t\\) distribution. Let’s see that!\nStudent’s \\(t\\) has it’s own d- and q- functions:\n\ndt(x, df)\nqt(p, df)\n\ndt evaluates the pdf, and qt evaluates the inverse cdf (the so-called quantile function). Implement the following:\n\nSimulate \\(n=5000\\) numbers from \\(\\text{Unif}(0,\\, 1)\\);\nPlug them into the inverse cdf of the \\(t\\) distribution with df = 10;\nPlot a histogram of these transformed numbers;\nAdd on top of the histogram a line plot of the density of the \\(t\\) distribution;\nThey had better match!"
+  },
+  {
+    "objectID": "labs/lab_scraps.html#problem-4",
+    "href": "labs/lab_scraps.html#problem-4",
+    "title": "Part 2: simulation",
+    "section": "",
+    "text": "Let \\(X\\sim\\text{Gamma}(1,\\,\\beta)\\). So the pdf of \\(X\\) is\n\\[\nf_X(x)=\\beta e^{-\\beta x},\\quad x&gt;0.\n\\]\n\nFind the cdf \\(F_X(x)=P(X\\leq x)\\);\nFind the inverse cdf \\(F_X^{-1}(y)\\), \\(y\\in(0,\\,1)\\);\nImplement inverse transform sampling to simulate \\(\\text{Gamma}(1,\\,\\beta)\\) for \\(\\beta = 2\\).\nPlot a histogram of 5000 draws from your sampler, and add a line plot of the \\(\\text{Gamma}(1,\\,\\beta)\\) density on top. They had better match!"
+  },
+  {
+    "objectID": "labs/lab_scraps.html#problem-5",
+    "href": "labs/lab_scraps.html#problem-5",
+    "title": "Part 2: simulation",
+    "section": "",
+    "text": "The bottom line of all of this is the universality of the uniform. The fundamental principle of simulation is that any distribution can be simulated by first simulating from the standard uniform, and then applying a transformation.\nThe Box-Muller method says that we can simulate the standard normal in the following way:\n\\[\n\\begin{align*}\nU_1,\\,U_2&\\overset{\\textrm{iid}}{\\sim}\\textrm{Unif}(0,\\,1)\\\\\nZ&=\\sqrt{-2\\ln U_1}\\cos(2\\pi U_2)\n\\end{align*}\n\\]\nSo \\(Z\\sim\\text{N}(0,\\,1)\\). It is not hard to prove this if you’ve taken multivariable calculus (yaaay polar coordinates), but our course does not assume this. Nevertheless, we can still implement the sampler and check that it works.\n\nUse the Box-Muller method to simulate 5000 random numbers from N(0, 1). Check that you did it right by plotting the histogram and superimposing the standard normal density;\nModify your code to simulate \\(\\text{N}(\\mu=-3.5,\\,\\sigma^2=0.58)\\)."
+  },
+  {
     "objectID": "labs/lab-2.html",
     "href": "labs/lab-2.html",
     "title": "Lab 2",
@@ -1077,7 +1105,7 @@
     "href": "labs/lab-5.html",
     "title": "Lab 5",
     "section": "",
-    "text": "Let \\(X\\) be a random variable, and let \\(g\\) be some function. Because \\(X\\) is random, the new variable \\(Y=g(X)\\) is also random. Given what we know about \\(X\\), what is the distribution of \\(Y\\)? This simple question will preoccupy us for the next seventy-five minutes.\n\nIf \\(\\Theta\\sim\\text{Unif}(-\\pi/2,\\,\\pi/2)\\), then what is the distribution of \\(X=\\tan\\Theta\\)? We know that \\(\\text{Range}(X)=\\mathbb{R}\\), so for any \\(x\\in\\mathbb{R}\\), we have\n\\[\n\\begin{aligned}\nF_X(x)\n&=\nP(X\\leq x)\n\\\\\n&=\nP(\\tan\\Theta\\leq x)\n\\\\\n&=\nP(\\Theta\\leq \\tan^{-1}x)\n\\\\\n&=\nF_{\\Theta}(\\tan^{-1}x)\n\\\\\n&=\n\\frac{\\tan^{-1}x}{\\pi}+\\frac{1}{2}.\n\\end{aligned}\n\\]\nSo the density of \\(X\\) is\n\\[\nf_X(x)=\\frac{\\text{d}}{\\text{d}x}F_X(x)=\\frac{\\text{d}}{\\text{d}x}\\left[\\frac{\\tan^{-1}x}{\\pi}+\\frac{1}{2}\\right]=\\frac{1}{\\pi(1+x^2)},\\quad x\\in\\mathbb{R}.\n\\]\nThis is the density of the Cauchy distribution.\n\nIf \\(X\\sim\\text{N}(0,\\, 1)\\), then what is the pdf of \\(Y=Z^2\\)? Turns out it’s a member of the gamma family.\n\nConsider \\(X\\sim \\text{Gamma}(1,\\,1)\\). Its density is\n\\[\nf_X(x)=e^{-x},\\quad x&gt;0.\n\\]\n\nWhat is the cdf of \\(X\\)?\nWhat are the range and pdf of \\(Y=\\ln X\\)?\nSimulate n=5000 draws of \\(Y\\). Plot a histogram, and add a line plot of the density you derived in part b. They should match!\n\nLet \\(X\\) be an absolutely continuous random variable with pdf \\(f_X\\), let \\(a&gt;0\\) and \\(b\\in\\mathbb{R}\\) be constants, and consider the new random variable \\(Y=aX+b\\).\n\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\nWhat is the density of \\(Y\\)?\nIn the special case where \\(X\\sim\\text{N}(0,\\,1)\\), what are \\(E(Y)\\), \\(\\text{var}(Y)\\), and the density of \\(Y\\)?",
+    "text": "Let \\(X\\) be a random variable, and let \\(g\\) be some function. Because \\(X\\) is random, the new variable \\(Y=g(X)\\) is also random. Given what we know about \\(X\\), what is the distribution of \\(Y\\)? This simple question will preoccupy us for the next seventy-five minutes.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -1087,8 +1115,8 @@
     "objectID": "labs/lab-5.html#problem--1-recall-lecture",
     "href": "labs/lab-5.html#problem--1-recall-lecture",
     "title": "Lab 5",
-    "section": "",
-    "text": "If \\(\\Theta\\sim\\text{Unif}(-\\pi/2,\\,\\pi/2)\\), then what is the distribution of \\(X=\\tan\\Theta\\)? We know that \\(\\text{Range}(X)=\\mathbb{R}\\), so for any \\(x\\in\\mathbb{R}\\), we have\n\\[\n\\begin{aligned}\nF_X(x)\n&=\nP(X\\leq x)\n\\\\\n&=\nP(\\tan\\Theta\\leq x)\n\\\\\n&=\nP(\\Theta\\leq \\tan^{-1}x)\n\\\\\n&=\nF_{\\Theta}(\\tan^{-1}x)\n\\\\\n&=\n\\frac{\\tan^{-1}x}{\\pi}+\\frac{1}{2}.\n\\end{aligned}\n\\]\nSo the density of \\(X\\) is\n\\[\nf_X(x)=\\frac{\\text{d}}{\\text{d}x}F_X(x)=\\frac{\\text{d}}{\\text{d}x}\\left[\\frac{\\tan^{-1}x}{\\pi}+\\frac{1}{2}\\right]=\\frac{1}{\\pi(1+x^2)},\\quad x\\in\\mathbb{R}.\n\\]\nThis is the density of the Cauchy distribution.",
+    "section": "Problem -1: recall lecture",
+    "text": "Problem -1: recall lecture\nIf \\(\\Theta\\sim\\text{Unif}(-\\pi/2,\\,\\pi/2)\\), then what is the distribution of \\(X=\\tan\\Theta\\)? We know that \\(\\text{Range}(X)=\\mathbb{R}\\), so for any \\(x\\in\\mathbb{R}\\), we have\n\\[\n\\begin{aligned}\nF_X(x)\n&=\nP(X\\leq x)\n\\\\\n&=\nP(\\tan\\Theta\\leq x)\n\\\\\n&=\nP(\\Theta\\leq \\tan^{-1}x)\n\\\\\n&=\nF_{\\Theta}(\\tan^{-1}x)\n\\\\\n&=\n\\frac{\\tan^{-1}x}{\\pi}+\\frac{1}{2}.\n\\end{aligned}\n\\]\nSo the density of \\(X\\) is\n\\[\nf_X(x)=\\frac{\\text{d}}{\\text{d}x}F_X(x)=\\frac{\\text{d}}{\\text{d}x}\\left[\\frac{\\tan^{-1}x}{\\pi}+\\frac{1}{2}\\right]=\\frac{1}{\\pi(1+x^2)},\\quad x\\in\\mathbb{R}.\n\\]\nThis is the density of the Cauchy distribution.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -1098,8 +1126,8 @@
     "objectID": "labs/lab-5.html#problem-0-watch-gwen",
     "href": "labs/lab-5.html#problem-0-watch-gwen",
     "title": "Lab 5",
-    "section": "",
-    "text": "If \\(X\\sim\\text{N}(0,\\, 1)\\), then what is the pdf of \\(Y=Z^2\\)? Turns out it’s a member of the gamma family.",
+    "section": "Problem 0: watch Gwen!",
+    "text": "Problem 0: watch Gwen!\nIf \\(Z\\sim\\text{N}(0,\\, 1)\\), then what is the pdf of \\(Y=Z^2\\)? Turns out it’s a member of the gamma family.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -1109,8 +1137,30 @@
     "objectID": "labs/lab-5.html#problem-1-now-you-try",
     "href": "labs/lab-5.html#problem-1-now-you-try",
     "title": "Lab 5",
-    "section": "",
-    "text": "Consider \\(X\\sim \\text{Gamma}(1,\\,1)\\). Its density is\n\\[\nf_X(x)=e^{-x},\\quad x&gt;0.\n\\]\n\nWhat is the cdf of \\(X\\)?\nWhat are the range and pdf of \\(Y=\\ln X\\)?\nSimulate n=5000 draws of \\(Y\\). Plot a histogram, and add a line plot of the density you derived in part b. They should match!",
+    "section": "Problem 1: now you try",
+    "text": "Problem 1: now you try\nConsider \\(X\\sim \\text{Gamma}(1,\\,1)\\). Its density is\n\\[\nf_X(x)=e^{-x},\\quad x&gt;0.\n\\]\n\nWhat is the cdf of \\(X\\)?\nWhat are the range and pdf of \\(Y=\\ln X\\)?\nSimulate n=5000 draws of \\(Y\\). Plot a histogram, and add a line plot of the density you derived in part b. They should match!",
+    "crumbs": [
+      "Labs",
+      "Lab 5"
+    ]
+  },
+  {
+    "objectID": "labs/lab-5.html#interlude",
+    "href": "labs/lab-5.html#interlude",
+    "title": "Lab 5",
+    "section": "Interlude",
+    "text": "Interlude\nGiven \\(X\\sim f_X\\), we want the density of \\(Y=g(X)\\). In the three examples, you followed the same basic steps:\n\nwrite the generic cdf of \\(Y\\): \\(F_Y(y)=P(Y\\leq y)=P(g(X)\\leq y)\\);\nrewrite the event inside until \\(X\\) is by itself (you probably have to undo or invert \\(g\\) to do this);\nsince \\(X\\) is by itself, rewrite the probability using the cdf of \\(X\\);\ndifferentiate (you probably have to use the chain rule to do this).\n\nThe basic template can be neatly summarized with the so-called change-of-variables formula, which tells you how to compute the density of \\(Y\\) using the density of \\(X\\) and the transformation \\(g\\):\n\\[\nf_Y(y)=f_X\\left(g^{-1}(y)\\right)\n    \\left|\\frac{\\text{d}}{\\text{d} y}g^{-1}(y)\\right|,\\quad y\\in\\text{Range}(Y).\n\\]",
+    "crumbs": [
+      "Labs",
+      "Lab 5"
+    ]
+  },
+  {
+    "objectID": "labs/lab-5.html#problem-1.5",
+    "href": "labs/lab-5.html#problem-1.5",
+    "title": "Lab 5",
+    "section": "Problem 1.5",
+    "text": "Problem 1.5\nUse the change-of-variables formula to re-do Problem 1. You should get the same answer.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -1120,41 +1170,8 @@
     "objectID": "labs/lab-5.html#problem-2-location-scale-transformations",
     "href": "labs/lab-5.html#problem-2-location-scale-transformations",
     "title": "Lab 5",
-    "section": "",
-    "text": "Let \\(X\\) be an absolutely continuous random variable with pdf \\(f_X\\), let \\(a&gt;0\\) and \\(b\\in\\mathbb{R}\\) be constants, and consider the new random variable \\(Y=aX+b\\).\n\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\nWhat is the density of \\(Y\\)?\nIn the special case where \\(X\\sim\\text{N}(0,\\,1)\\), what are \\(E(Y)\\), \\(\\text{var}(Y)\\), and the density of \\(Y\\)?",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab-5.html#problem-3",
-    "href": "labs/lab-5.html#problem-3",
-    "title": "Lab 5",
-    "section": "Problem 3",
-    "text": "Problem 3\nIf you took AP Statistics or STA 101, you probably learned about Student’s \\(t\\) distribution. This is a family of continuous distributions with heavier tails than the normal, and the density is:\n\\[\nf_X(x;\\,\\nu)=\\frac{\\Gamma\\left(\\frac{\\nu+1}{2}\\right)}{\\Gamma\\left(\\frac{\\nu}{2}\\right)\\sqrt{\\pi\\nu}}\\left(1+\\frac{1}{\\nu}x^2\\right)^{-\\frac{\\nu+1}{2}},\\quad x\\in\\mathbb{R}.\n\\]\nThis family has one parameter \\(\\nu&gt;0\\) called the degrees of freedom. Okay, that’s a big rotten mess, but whatever. If we wanted to simulate it, all we have to do is simulate from \\(\\text{Unif}(0,\\, 1)\\), and then plug those numbers into the inverse cdf of the \\(t\\) distribution. The transformed numbers are guaranteed to follow the \\(t\\) distribution. Let’s see that!\nStudent’s \\(t\\) has it’s own d- and q- functions:\n\ndt(x, df)\nqt(p, df)\n\ndt evaluates the pdf, and qt evaluates the inverse cdf (the so-called quantile function). Implement the following:\n\nSimulate \\(n=5000\\) numbers from \\(\\text{Unif}(0,\\, 1)\\);\nPlug them into the inverse cdf of the \\(t\\) distribution with df = 10;\nPlot a histogram of these transformed numbers;\nAdd on top of the histogram a line plot of the density of the \\(t\\) distribution;\nThey had better match!",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab-5.html#problem-4",
-    "href": "labs/lab-5.html#problem-4",
-    "title": "Lab 5",
-    "section": "Problem 4",
-    "text": "Problem 4\nLet \\(X\\sim\\text{Gamma}(1,\\,\\beta)\\). So the pdf of \\(X\\) is\n\\[\nf_X(x)=\\beta e^{-\\beta x},\\quad x&gt;0.\n\\]\n\nFind the cdf \\(F_X(x)=P(X\\leq x)\\);\nFind the inverse cdf \\(F_X^{-1}(y)\\), \\(y\\in(0,\\,1)\\);\nImplement inverse transform sampling to simulate \\(\\text{Gamma}(1,\\,\\beta)\\) for \\(\\beta = 2\\).\nPlot a histogram of 5000 draws from your sampler, and add a line plot of the \\(\\text{Gamma}(1,\\,\\beta)\\) density on top. They had better match!",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab-5.html#problem-5",
-    "href": "labs/lab-5.html#problem-5",
-    "title": "Lab 5",
-    "section": "Problem 5",
-    "text": "Problem 5\nThe bottom line of all of this is the universality of the uniform. The fundamental principle of simulation is that any distribution can be simulated by first simulating from the standard uniform, and then applying a transformation.\nThe Box-Muller method says that we can simulate the standard normal in the following way:\n\\[\n\\begin{align*}\nU_1,\\,U_2&\\overset{\\textrm{iid}}{\\sim}\\textrm{Unif}(0,\\,1)\\\\\nZ&=\\sqrt{-2\\ln U_1}\\cos(2\\pi U_2)\n\\end{align*}\n\\]\nSo \\(Z\\sim\\text{N}(0,\\,1)\\). It is not hard to prove this if you’ve taken multivariable calculus (yaaay polar coordinates), but our course does not assume this. Nevertheless, we can still implement the sampler and check that it works.\n\nUse the Box-Muller method to simulate 5000 random numbers from N(0, 1). Check that you did it right by plotting the histogram and superimposing the standard normal density;\nModify your code to simulate \\(\\text{N}(\\mu=-3.5,\\,\\sigma^2=0.58)\\).",
+    "section": "Problem 2: location-scale transformations",
+    "text": "Problem 2: location-scale transformations\nLet \\(X\\) be an absolutely continuous random variable with pdf \\(f_X\\), let \\(a&gt;0\\) and \\(b\\in\\mathbb{R}\\) be constants, and consider the new random variable \\(Y=aX+b\\).\n\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\nWhat is the density of \\(Y\\)?\nIn the special case where \\(X\\sim\\text{N}(0,\\,1)\\), what are \\(E(Y)\\), \\(\\text{var}(Y)\\), and the density of \\(Y\\)?",
     "crumbs": [
       "Labs",
       "Lab 5"
