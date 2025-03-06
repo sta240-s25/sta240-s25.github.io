@@ -378,6 +378,106 @@ f_X(x)=e^{-x},\quad x&gt;0.
 f_Y(y)=f_X\left(g^{-1}(y)\right)
     \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|,\quad y\in\text{Range}(Y).
 \]</span></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wanna see the proof?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Assume…</p>
+<ul>
+<li><span class="math inline">\(X\)</span> is absolutely continuous with pdf <span class="math inline">\(f_X\)</span>;</li>
+<li><span class="math inline">\(g\)</span> is defined for all <span class="math inline">\(x\in\text{Range}(X)\)</span>;</li>
+<li><span class="math inline">\(g\)</span> is differentiable and either strictly increasing or strictly decreasing (hence, invertible).</li>
+</ul>
+<p>There are two cases:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Strictly increasing</strong></p>
+<p>This means that <span class="math inline">\(\frac{\text{d}}{\text{d} y}g^{-1}(y)\)</span> must be positive for all <span class="math inline">\(y\)</span>!</p>
+<p>Fix arbitrary <span class="math inline">\(y\in\text{Range}(Y)\)</span>. Then:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    F_Y(y)
+    &amp;=
+    P(Y\leq y)
+    \\
+    &amp;=
+    P\left(g(X)\leq y\right)
+    \\
+    &amp;=
+    P\left(X\leq g^{-1}(y)\right)
+    \\
+    &amp;=
+    F_X\left(g^{-1}(y)\right)
+    .
+\end{aligned}
+\]</span></p>
+<p>Taking a derivative and applying the chain rule gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+    f_Y(y)
+    &amp;=
+    \frac{\text{d}}{\text{d} y}F_X\left(g^{-1}(y)\right)
+    \\
+    &amp;=
+    f_X\left(g^{-1}(y)\right)\underbrace{\frac{\text{d}}{\text{d} y}g^{-1}(y)}_{\text{positive!}}
+    \\
+    &amp;=
+    f_X\left(g^{-1}(y)\right)
+    \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|.
+\end{aligned}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Strictly decreasing</strong></p>
+<p>This means that <span class="math inline">\(\frac{\text{d}}{\text{d} y}g^{-1}(y)\)</span> must be negative for all <span class="math inline">\(y\)</span>!</p>
+<p>Fix arbitrary <span class="math inline">\(y\in\text{Range}(Y)\)</span>. Then:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    F_Y(y)
+    &amp;=
+    P(Y\leq y)
+    \\
+    &amp;=
+    P\left(g(X)\leq y\right)
+    \\
+    &amp;=
+    P\left(X&gt; g^{-1}(y)\right)
+    \\
+    &amp;=
+    1-P\left(X\leq g^{-1}(y)\right)
+    \\
+    &amp;=
+    1-F_X\left(g^{-1}(y)\right)
+    .
+\end{aligned}
+\]</span> Taking a derivative and applying the chain rule gives</p>
+<p><span class="math display">\[
+\begin{align*}
+    f_Y(y)
+    &amp;=
+    \frac{\text{d}}{\text{d} y}[1-F_X\left(g^{-1}(y)\right)]
+    \\
+    &amp;=
+    {\color{red}-}f_X\left(g^{-1}(y)\right)\underbrace{\frac{\text{d}}{\text{d} y}g^{-1}(y)}_{\text{negative!}}
+    \\
+    &amp;=
+    f_X\left(g^{-1}(y)\right)
+    \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|.
+\end{align*}
+\]</span></p>
+</div>
+</div>
+<p>Either way, we got to the same place.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="problem-1.5" class="level2">
 <h2 class="anchored" data-anchor-id="problem-1.5">Problem 1.5</h2>
