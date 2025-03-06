@@ -83,7 +83,7 @@ There are two cases:
 ::: {.column width="50%"}
 **Strictly increasing**
 
-This means that $\frac{\text{d}}{\text{d} y}g^{-1}(y)$ must be positive for all $y$! It also means that $g$ is order-*preserving*. If $a\leq b$, then $g(a)\leq g(b)$. 
+If $g$ is strictly increasing, then $g^{-1}$ is strictly increasing also. This means that $\frac{\text{d}}{\text{d} y}g^{-1}(y)$ must be positive for all $y$! It also means that $g^{-1}$ is order-*preserving*. If $a\leq b$, then $g^{-1}(a)\leq g^{-1}(b)$. 
 
 Fix arbitrary $y\in\text{Range}(Y)$. Then:
 
@@ -127,7 +127,7 @@ $$
 ::: {.column width="50%"}
 **Strictly decreasing**
 
-This means that $\frac{\text{d}}{\text{d} y}g^{-1}(y)$ must be negative for all $y$! It also means that $g$ is order-*reversing*. If $a\leq b$, then $g(a)\geq g(b)$. 
+If $g$ is strictly decreasing, then $g^{-1}$ is strictly decreasing also. This means that $\frac{\text{d}}{\text{d} y}g^{-1}(y)$ must be negative for all $y$! It also means that $g^{-1}$ is order-*reversing*. If $a\leq b$, then $g^{-1}(a)\geq g^{-1}(b)$. 
 
 Fix arbitrary $y\in\text{Range}(Y)$. Then:
 
