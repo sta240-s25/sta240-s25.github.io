@@ -104,6 +104,8 @@ website:
             text: Midterm 1 Practice
           - href: labs/lab-4.qmd
             text: Lab 4
+          - href: labs/lab-5.qmd
+            text: Lab 5
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'
