@@ -1,0 +1,37 @@
+---
+title: "Extra Practice for Midterm 2"
+---
+
+On Monday March 31 during our usual class meeting, we have our second midterm exam. It will focus on the following topics:
+
+-   Set theory;
+-   Probability axioms and basic rules;
+-   Counting methods;
+-   Conditional probability and independence;
+-   Random variables in general, and discrete random variables in particular.
+
+Below is a set of practice problems to help you prepare.
+
+# Discrete random variables
+
+## Problem 
+
+One fine day you are walking down the street when you are accosted by some shyster. He wants to charge you $c$ dollars to play the following game:
+
+-   The man will flip a fair coin until a tail appears for the first time;
+-   If the tail appears on the $n$th flip, you will win $2^n$ dollars.
+
+Let $X$ denote your winnings when you play this game.
+
+a.  What is the range of $X$?
+b.  What is the pmf of $X$?
+c.  What is $E(X)$?
+d.  How much would you be willing to pay for the chance to play this game once? Explain your thought-process.
+e.  You say to the guy "Now wait just a gosh-darned minute. Let's say for the sake of argument that the first tail does not appear until the hundredth flip ($n=100$). In that case you'd have to pay me $2^{100}\approx 1.26 × 10^{30}$ dollars. Do you even have that kind of dough?" The guy says "Well, no. I only have $\$W$ to pay you with, so if this goes on long enough, we'd just have to stop, and I'd have to give you all of my money." Let $Y$ denote your winnings when you play this *new* game that terminates once the guy runs out of money. What is $E(Y)$, and how much would you be willing to pay for the chance to play this game once?
+
+# Absolutely continuous random variables
+
+# Transformations 
+
+# Joint distributions
+
