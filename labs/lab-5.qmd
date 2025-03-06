@@ -69,6 +69,112 @@ f_Y(y)=f_X\left(g^{-1}(y)\right)
     \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|,\quad y\in\text{Range}(Y).
 $$
 
+::: {.callout-warning collapse="true"}
+## Wanna see the proof?
+Assume...
+
+- $X$ is absolutely continuous with pdf $f_X$;
+- $g$ is defined for all $x\in\text{Range}(X)$;
+- $g$ is differentiable and either strictly increasing or strictly decreasing (hence, invertible).
+
+There are two cases:
+
+::: {.columns }
+::: {.column width="50%"}
+**Strictly increasing**
+
+This means that $\frac{\text{d}}{\text{d} y}g^{-1}(y)$ must be positive for all $y$!
+
+Fix arbitrary $y\in\text{Range}(Y)$. Then:
+
+$$
+\begin{aligned}
+    F_Y(y)
+    &=
+    P(Y\leq y)
+    \\
+    &=
+    P\left(g(X)\leq y\right)
+    \\
+    &=
+    P\left(X\leq g^{-1}(y)\right)
+    \\
+    &=
+    F_X\left(g^{-1}(y)\right)
+    .
+\end{aligned}
+$$
+
+Taking a derivative and applying the chain rule gives 
+
+$$
+\begin{aligned}
+    f_Y(y)
+    &=
+    \frac{\text{d}}{\text{d} y}F_X\left(g^{-1}(y)\right)
+    \\
+    &=
+    f_X\left(g^{-1}(y)\right)\underbrace{\frac{\text{d}}{\text{d} y}g^{-1}(y)}_{\text{positive!}}
+    \\
+    &=
+    f_X\left(g^{-1}(y)\right)
+    \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|.
+\end{aligned}
+$$
+
+:::
+
+::: {.column width="50%"}
+**Strictly decreasing**
+
+This means that $\frac{\text{d}}{\text{d} y}g^{-1}(y)$ must be negative for all $y$!
+
+Fix arbitrary $y\in\text{Range}(Y)$. Then:
+
+$$
+\begin{aligned}
+    F_Y(y)
+    &=
+    P(Y\leq y)
+    \\
+    &=
+    P\left(g(X)\leq y\right)
+    \\
+    &=
+    P\left(X> g^{-1}(y)\right)
+    \\
+    &=
+    1-P\left(X\leq g^{-1}(y)\right)
+    \\
+    &=
+    1-F_X\left(g^{-1}(y)\right)
+    .
+\end{aligned}
+$$
+Taking a derivative and applying the chain rule gives 
+
+$$
+\begin{align*}
+    f_Y(y)
+    &=
+    \frac{\text{d}}{\text{d} y}[1-F_X\left(g^{-1}(y)\right)]
+    \\
+    &=
+    {\color{red}-}f_X\left(g^{-1}(y)\right)\underbrace{\frac{\text{d}}{\text{d} y}g^{-1}(y)}_{\text{negative!}}
+    \\
+    &=
+    f_X\left(g^{-1}(y)\right)
+    \left|\frac{\text{d}}{\text{d} y}g^{-1}(y)\right|.
+\end{align*}
+$$
+
+:::
+:::
+
+Either way, we got to the same place.
+
+:::
+
 ## Problem 1.5
 
 Use the change-of-variables formula to re-do Problem 1. You should get the same answer.
