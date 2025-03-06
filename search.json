@@ -1171,7 +1171,7 @@
     "href": "labs/lab-5.html#problem-2-location-scale-transformations",
     "title": "Lab 5",
     "section": "Problem 2: location-scale transformations",
-    "text": "Problem 2: location-scale transformations\nLet \\(X\\) be an absolutely continuous random variable with pdf \\(f_X\\), let \\(a&gt;0\\) and \\(b\\in\\mathbb{R}\\) be constants, and consider the new random variable \\(Y=aX+b\\).\n\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\nWhat is the density of \\(Y\\)?\nIn the special case where \\(X\\sim\\text{N}(0,\\,1)\\), what are \\(E(Y)\\), \\(\\text{var}(Y)\\), and the density of \\(Y\\)?",
+    "text": "Problem 2: location-scale transformations\nLet \\(X\\) be an absolutely continuous random variable with pdf \\(f_X\\), let \\(a&gt;0\\) and \\(b\\in\\mathbb{R}\\) be constants, and consider the new random variable \\(Y=aX+b\\).\n\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\nUse the change-of-variables formula to find the density of \\(Y\\)?\nIn the special case where \\(X\\sim\\text{N}(0,\\,1)\\), what are \\(E(Y)\\), \\(\\text{var}(Y)\\), and the density of \\(Y\\)? There’s no need to re-derive anything here. Just plug what you know about N(0, 1) into the formulas from parts a, b, and c.",
     "crumbs": [
       "Labs",
       "Lab 5"
