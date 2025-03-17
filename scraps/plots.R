@@ -1,4 +1,28 @@
 # ==============================================================================
+# plot a gamma
+# ==============================================================================
+
+n <- 5000
+alpha = 25
+beta = 0.0025
+X <- rgamma(n, shape = alpha, rate = beta)
+hist(X, breaks = "Scott", freq = FALSE,
+     main = "Distribution of a single claim amount")
+curve(dgamma(x, shape = alpha, rate = beta),
+      from = min(X),
+      to = max(X),
+      lwd = 2,
+      col = "red", 
+      n = 500,
+      add = TRUE)
+
+mean(X)
+sd(X)
+
+1 - pgamma(15000, shape = alpha, rate = beta)
+mean(X > 150000)
+
+# ==============================================================================
 # chi-squared
 # ==============================================================================
 
@@ -29,7 +53,7 @@ curve(exp(x - exp(x)),
       add = TRUE)
 
 # ==============================================================================
-# N(0, 1) versus Cauchy
+# different distributions, same raw moments.
 # ==============================================================================
 
 x = seq(0, 5, length.out = 500)

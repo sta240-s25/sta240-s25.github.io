@@ -1,0 +1,51 @@
+---
+title: "Problem Set 5"
+subtitle: Due Thursday March 27 at 12PM
+---
+
+## Problem 0
+
+Recommend some music for us to listen to while we grade this.
+
+## Problem X
+
+a. Let $X\sim\text{Unif}(0,\,1)$ and compute the pdf of $Y=e^X$.
+b. Let $X\sim \textrm{N}(\mu\com\sigma^2)$ and compute the pdf of $Y=e^X$.
+c. Let $Z\sim\textrm{N}(0\com1)$, and find the pdf, mean, and variance of $Y=|Z|$.
+d. Let $X\sim\textrm{N}(0\com\sigma^2)$, and find the pdf, mean, and variance of $W=|X|$.
+
+## Problem X
+
+Suppose $X$ and $Y$ are jointly absolutely continuous random variables with joint density
+
+$$
+f_{XY}(x,\,y)=xe^{-x(y+1)},\quad x,\,y>0.
+$$
+
+a. Find the marginal density of $X$. Is it familiar?
+b. Find the marginal density of $Y$.
+c. Find the conditional density of $X$ given $Y=y$.
+d. Find the conditional density of $Y$ given $X=x$. Is it familiar?
+
+## Problem X
+
+Let $X$ be an absolutely continuous random variable with the following:
+
+$$
+\begin{aligned}
+    \textrm{Range}(X)&=(0\com 1)\\
+    f_X(x)&=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}x^{a-1}(1-x)^{b-1},
+    \quad 0<x<1.
+\end{aligned}
+$$
+
+This means $X$ has the **beta distribution**, and we write $X\sim\textrm{Beta}(a\com b)$. Now let $Y\sim\textrm{Gamma}(a+b\com c)$ be independent of $X$, and define a third random variable $Z=XY$.
+
+a. Write the joint distribution of $X$ and $Z$ in hierarchical form:
+$$
+\begin{align*}
+    X &\sim \textrm{???}\\
+    Z\,|\, X = x &\sim \textrm{???}.
+\end{align*}
+$$
+b. Based on this hierarchy, compute the marginal density of $Z$. Is it familiar?

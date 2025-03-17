@@ -91,22 +91,22 @@ You are free to compose your solutions for this problem set however you wish (sc
 
 ## Point values
 
-| Problem  | Points |
-|----------|--------|
-| 1        | 5      |
-| 2.a      | 2      |
-| 2.b      | 2      |
-| 2.c      | 2      |
-| 2.d      | 2      |
-| 2.e      | 2      |
-| 3        | 5      |
-| 4        | 5      |
-| 5.a      | 2      |
-| 5.b      | 2      |
-| 5.c      | 5      |
-| 5.d      | 1      |
-| 6.a      | 5      |
-| 6.b      | 5      |
-| 7.a      | 5      |
-| 7.b      | 5      |
-|**TOTAL** | **55** |
+| Problem   | Points |
+|-----------|--------|
+| 1         | 5      |
+| 2.a       | 2      |
+| 2.b       | 2      |
+| 2.c       | 2      |
+| 2.d       | 2      |
+| 2.e       | 2      |
+| 3         | 5      |
+| 4         | 5      |
+| 5.a       | 2      |
+| 5.b       | 2      |
+| 5.c       | 5      |
+| 5.d       | 1      |
+| 6.a       | 5      |
+| 6.b       | 5      |
+| 7.a       | 5      |
+| 7.b       | 5      |
+| **TOTAL** | **55** |
