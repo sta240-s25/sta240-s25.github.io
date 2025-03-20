@@ -523,10 +523,23 @@ f_X(x;\,\nu)=\frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\Gamma\left(\frac{\nu}{2}
 f_X(x)=\beta e^{-\beta x},\quad x&gt;0.
 \]</span></p>
 <ol type="a">
-<li>Use the work you did in Part 1 to implement inverse transform sampling to simulate <span class="math inline">\(\text{Gamma}(1,\,\beta)\)</span> for <span class="math inline">\(\beta = 2\)</span>.</li>
-<li>Plot a histogram of 5000 draws from your sampler, and add a line plot of the <span class="math inline">\(\text{Gamma}(1,\,\beta)\)</span> density on top. They had better match!</li>
+<li>Use your inverse CDF formula from Part 1 to implement inverse transform sampling and simulate <span class="math inline">\(\text{Gamma}(1,\,\beta)\)</span> for <span class="math inline">\(\beta = 2\)</span>.</li>
+<li>Plot a histogram of 5000 draws from your sampler, and add a line plot of the <span class="math inline">\(\text{Gamma}(1,\,2)\)</span> density on top. They had better match!</li>
 </ol></section><section id="problem-5" class="level2"><h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
-<p>Let <span class="math inline">\(X\sim \text{Cauchy}\)</span>. Use the work you did in Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!</p>
+<p>Let <span class="math inline">\(X\sim \text{Cauchy}\)</span>. Use your inverse CDF formula from Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You may find that you have to fiddle with the plot a little bit to get a picture that it easy to read. Do you know why that is?</p>
+</div>
+</div>
 </section><section id="problem-6" class="level2"><h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
 <p>The bottom line of all of this is the <strong>universality of the uniform</strong>. The fundamental principle of simulation is that <em>any</em> distribution can be simulated by first simulating from the standard uniform, and then applying a transformation.</p>
 <p>The <strong>Box-Muller</strong> method says that we can simulate the standard normal in the following way:</p>

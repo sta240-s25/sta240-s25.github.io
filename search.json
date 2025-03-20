@@ -802,7 +802,7 @@
     "href": "labs/lab-6.html#problem-4",
     "title": "Lab 6 - simulation",
     "section": "Problem 4",
-    "text": "Problem 4\nLet \\(X\\sim\\text{Gamma}(1,\\,\\beta)\\). So the pdf of \\(X\\) is\n\\[\nf_X(x)=\\beta e^{-\\beta x},\\quad x&gt;0.\n\\]\n\nUse the work you did in Part 1 to implement inverse transform sampling to simulate \\(\\text{Gamma}(1,\\,\\beta)\\) for \\(\\beta = 2\\).\nPlot a histogram of 5000 draws from your sampler, and add a line plot of the \\(\\text{Gamma}(1,\\,\\beta)\\) density on top. They had better match!",
+    "text": "Problem 4\nLet \\(X\\sim\\text{Gamma}(1,\\,\\beta)\\). So the pdf of \\(X\\) is\n\\[\nf_X(x)=\\beta e^{-\\beta x},\\quad x&gt;0.\n\\]\n\nUse your inverse CDF formula from Part 1 to implement inverse transform sampling and simulate \\(\\text{Gamma}(1,\\,\\beta)\\) for \\(\\beta = 2\\).\nPlot a histogram of 5000 draws from your sampler, and add a line plot of the \\(\\text{Gamma}(1,\\,2)\\) density on top. They had better match!",
     "crumbs": [
       "Labs",
       "Lab 6"
@@ -813,7 +813,7 @@
     "href": "labs/lab-6.html#problem-5",
     "title": "Lab 6 - simulation",
     "section": "Problem 5",
-    "text": "Problem 5\nLet \\(X\\sim \\text{Cauchy}\\). Use the work you did in Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!",
+    "text": "Problem 5\nLet \\(X\\sim \\text{Cauchy}\\). Use your inverse CDF formula from Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!\n\n\n\n\n\n\nNote\n\n\n\nYou may find that you have to fiddle with the plot a little bit to get a picture that it easy to read. Do you know why that is?",
     "crumbs": [
       "Labs",
       "Lab 6"
