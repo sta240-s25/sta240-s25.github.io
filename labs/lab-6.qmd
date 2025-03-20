@@ -168,12 +168,16 @@ $$
 f_X(x)=\beta e^{-\beta x},\quad x>0.
 $$
 
-a.  Use the work you did in Part 1 to implement inverse transform sampling to simulate $\text{Gamma}(1,\,\beta)$ for $\beta = 2$.
-b.  Plot a histogram of 5000 draws from your sampler, and add a line plot of the $\text{Gamma}(1,\,\beta)$ density on top. They had better match!
+a.  Use your inverse CDF formula from Part 1 to implement inverse transform sampling and simulate $\text{Gamma}(1,\,\beta)$ for $\beta = 2$.
+b.  Plot a histogram of 5000 draws from your sampler, and add a line plot of the $\text{Gamma}(1,\,2)$ density on top. They had better match!
 
 ## Problem 5
 
-Let $X\sim \text{Cauchy}$. Use the work you did in Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!
+Let $X\sim \text{Cauchy}$. Use your inverse CDF formula from Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!
+
+::: callout-note
+You may find that you have to fiddle with the plot a little bit to get a picture that it easy to read. Do you know why that is?
+:::
 
 ## Problem 6
 
