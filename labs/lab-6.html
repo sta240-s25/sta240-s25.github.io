@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>STA 240 Spring 2025 - Problem Set 3</title>
+<title>STA 240 Spring 2025 - Lab 6 - simulation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,8 +17,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -29,8 +59,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../psets/pset_4.html" rel="next">
-<link href="../psets/pset_2.html" rel="prev">
+<link href="../labs/lab-5.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,8 +68,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -66,12 +94,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
+}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -97,38 +120,29 @@ window.Quarto = {
   typesetMath
 };
 </script>
-
-<meta property="og:title" content="STA 240 Spring 2025 - Problem Set 3">
-<meta property="og:description" content="Due Thursday February 13 at 5PM">
+<meta property="og:title" content="STA 240 Spring 2025 - Lab 6 - simulation">
+<meta property="og:description" content="Due Thursday March 20 at 11:59 PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
-
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../psets/pset_0.html">Problem Sets</a></li><li class="breadcrumb-item"><a href="../psets/pset_3.html">Problem Set 3</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-6.html">Lab 6</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -137,7 +151,7 @@ window.Quarto = {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
+<li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Syllabus</span></a>
@@ -145,8 +159,8 @@ window.Quarto = {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -189,17 +203,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Problem Sets</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 0</span></a>
@@ -219,7 +233,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../psets/pset_3.html" class="sidebar-item-text sidebar-link active">
+  <a href="../psets/pset_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 3</span></a>
   </div>
 </li>
@@ -230,17 +244,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../labs/lab-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
@@ -278,38 +292,42 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-6.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab-6.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 6</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-0" id="toc-problem-0" class="nav-link active" data-scroll-target="#problem-0">Problem 0</a></li>
-  <li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
+<li>
+<a href="#part-1-quantiles" id="toc-part-1-quantiles" class="nav-link active" data-scroll-target="#part-1-quantiles">Part 1: quantiles</a>
+  <ul class="collapse">
+<li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
   <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
-  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
-  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
-  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul>
-</nav>
+</li>
+  <li>
+<a href="#part-2-simulation" id="toc-part-2-simulation" class="nav-link" data-scroll-target="#part-2-simulation">Part 2: simulation</a>
+  <ul class="collapse">
+<li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
+  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
+  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
+  <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
+  </ul>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../psets/pset_0.html">Problem Sets</a></li><li class="breadcrumb-item"><a href="../psets/pset_3.html">Problem Set 3</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Problem Set 3</h1>
-<p class="subtitle lead">Due Thursday February 13 at 5PM</p>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-6.html">Lab 6</a></li></ol></nav><div class="quarto-title">
+<h1 class="title">Lab 6 - simulation</h1>
+<p class="subtitle lead">Due Thursday March 20 at 11:59 PM</p>
 </div>
 
 
@@ -323,94 +341,209 @@ window.Quarto = {
   
 
 
-</header>
-
-
-<section id="problem-0" class="level2">
-<h2 class="anchored" data-anchor-id="problem-0">Problem 0</h2>
-<p>Recommend some music for us to listen to while we grade this.</p>
-</section>
-<section id="problem-1" class="level2">
-<h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
-<p>Say you have an unfamiliar coin on hand which may or may not be fair. So this coin lands on heads with some unknown probability <span class="math inline">\(p\)</span>, which is not necessarily equal to 1/2. Nevertheless, you want to somehow use this coin to generate the outcome of the flip of a fair coin. Consider the following algorithm for doing this:</p>
+</header><section id="part-1-quantiles" class="level1"><h1>Part 1: quantiles</h1>
+<p>The <strong>quantile function</strong> of a random variable is the (<em>generalized</em>) <em>inverse</em> of its cdf. So <span class="math inline">\(F^{-1}\)</span>. It is the function that, given a probability <span class="math inline">\(\alpha\in(0,\,1)\)</span>, returns the cut-off point on the number line that has that much probability <em>to the left</em>. So the <span class="math inline">\(\alpha\)</span>th quantile <span class="math inline">\(q_{\alpha}\)</span> satisfies <span class="math inline">\(P(X\leq q_\alpha) = \alpha\)</span> and <span class="math inline">\(F^{-1}(\alpha)=q_\alpha\)</span>. Here is the picture:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="quantile.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>The <strong>median</strong> is the <span class="math inline">\(\alpha=0.5\)</span> quantile. The quantiles of the standard normal distribution are famous:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.95</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.644854</code></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.975</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.959964</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.995</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.575829</code></pre>
+</div>
+</div>
+<p>Every distribution family has a <code>q-</code> function that, given <span class="math inline">\(p\in(0,\,1)\)</span>, returns the quantile <span class="math inline">\(F^{-1}(p)=q_p\)</span>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># discrete </span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">qbinom</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">size</span>, <span class="va">prob</span><span class="op">)</span> <span class="co"># Bernoulli is just binomial with size = 1</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Geometric.html">qgeom</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">prob</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">qpois</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">lambda</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># continuous</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="va">p</span>, mean <span class="op">=</span> <span class="fl">0</span>, sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">qgamma</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">shape</span>, rate <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">qunif</a></span><span class="op">(</span><span class="va">p</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Cauchy.html">qcauchy</a></span><span class="op">(</span><span class="va">p</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What about the discrete case?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In the discrete case, the CDF is a piecewise constant step function. Definitely not invertible. And in general, the cdf <span class="math inline">\(F\)</span> is not invertible, like in this picture:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="quantile-fxn.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<p>So what do we mean by <span class="math inline">\(F^{-1}\)</span> then? That’s when we invoke the <em>generalized</em> inverse and define</p>
+<p><span class="math display">\[
+F^{-1}(\alpha)=\inf\{x\in\mathbb{R}:\alpha\leq F(x)\}.
+\]</span></p>
+<p>“inf” stands for <em>infimum</em>, which in mathematics is a special generalization of the minimum. <strong>You don’t have to know about any of this, by the way.</strong></p>
+</div>
+</div>
+</div>
+<section id="problem-1" class="level2"><h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
+<p>Let <span class="math inline">\(X\sim \text{Cauchy}\)</span>, meaning its cdf is</p>
+<p><span class="math display">\[
+F_X(x)=\frac{\tan^{-1}x}{\pi}+\frac{1}{2},\quad x\in\mathbb{R}.
+\]</span></p>
+<ol type="a">
+<li>Find the inverse cdf <span class="math inline">\(F_X^{-1}(y)\)</span>, <span class="math inline">\(y\in(0,\,1)\)</span>;</li>
+<li>Use your inverse cdf formula to compute the 60% quantile of <span class="math inline">\(X\)</span>;</li>
+<li>Use the <code>qcauchy</code> function to compute the same quantile, and verify that you get the same number.</li>
+</ol></section><section id="problem-2" class="level2"><h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
+<p>Let <span class="math inline">\(X\sim\text{Gamma}(1,\,\beta)\)</span>. So the pdf of <span class="math inline">\(X\)</span> is</p>
+<p><span class="math display">\[
+f_X(x)=\beta e^{-\beta x},\quad x&gt;0.
+\]</span></p>
+<ol type="a">
+<li>Find the cdf <span class="math inline">\(F_X(x)=P(X\leq x)\)</span>;</li>
+<li>Find the inverse cdf <span class="math inline">\(F_X^{-1}(y)\)</span>, <span class="math inline">\(y\in(0,\,1)\)</span>;</li>
+<li>Use your inverse cdf formula to compute the median of <span class="math inline">\(X\)</span>. It will be a function of <span class="math inline">\(\beta\)</span>;</li>
+<li>Fix <span class="math inline">\(\beta = 2\)</span>. Use the <code>qgamma</code> function to compute the median of <span class="math inline">\(X\)</span>, and verify that you get the same number as you get when you use your formula from part c.&nbsp;</li>
+</ol></section></section><section id="part-2-simulation" class="level1"><h1>Part 2: simulation</h1>
+<p>When you call the <code>r-</code> functions and get random numbers from some distribution, what is the computer doing under the hood? Ultimately, it’s simulating simpler stuff and then applying a transformation to give you the distribution that you want. For example…</p>
 <ul>
-<li>Flip the coin;</li>
-<li>Flip the coin again;</li>
-<li>If both flips land on heads or if both flips land on tails, start over from Step (i);</li>
-<li>If the two flips are different, let the result of the last flip be the result of the experiment.</li>
+<li>Want Cauchy? Simulate <span class="math inline">\(\text{Unif}(-\pi/2,\,\pi/2)\)</span> and apply tan;</li>
+<li>Want Gamma(1/2, 1/2)? Simulate N(0, 1) and square;</li>
+<li>Want <span class="math inline">\(\text{N}(\mu,\,\sigma^2)\)</span>? Simulate N(0, 1) and then scale and shift.</li>
 </ul>
-<p>Then:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you have no clue what any of that just meant, please take a second look at <a href="https://sta240-s25.github.io/labs/lab-5.html">Lab 5</a>.</p>
+</div>
+</div>
+<p>Okay, but where is the simple stuff coming from? It turns out that you can boil everything down to the standard uniform distribution <span class="math inline">\(\text{Unif}(0,\, 1)\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Theorem: inverse transform sampling
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(U\sim \text{Unif}(0,\, 1)\)</span>, and let <span class="math inline">\(F\)</span> be any cdf (non-decreasing, right-continuous, yada yada) you’re interested in. If you define a new random variable <span class="math inline">\(X=F^{-1}(U)\)</span>, then <span class="math inline">\(X\sim F\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For simplicity, assume <span class="math inline">\(F\)</span> is smooth and invertible. Things still work if it isn’t, but it makes the math a little cleaner. Furthermore, recall the cdf of the standard uniform <span class="math inline">\(U\sim\text{Unif}(0,\, 1)\)</span>: <span class="math display">\[
+    F_U(x)=\begin{cases}
+        0 &amp; x \leq 0\\
+        x &amp; 0&lt;x&lt;1\\
+        1 &amp; 1 \leq x.
+    \end{cases}
+\]</span></p>
+<p><span class="math inline">\(X\)</span> is just a transformation of <span class="math inline">\(U\)</span>, so we can apply the cdf method. <span class="math display">\[
+    \begin{align*}
+        F_X(x)
+        &amp;=
+        P(X\leq x)
+        \\
+        &amp;=
+        P(F^{-1}(U)\leq x)
+        \\
+        &amp;=
+        P(U\leq F(x))
+        \\
+        &amp;=
+        F_U\left(F(x)\right)
+        \\
+        &amp;=
+        F(x)
+        .
+    \end{align*}
+\]</span></p>
+<p>So, the cdf of <span class="math inline">\(X\)</span> is literally just <span class="math inline">\(F\)</span>.</p>
+</div>
+</div>
+</div>
+<p>In words, this theorem is saying that you can simulate <em>any</em> distribution by simulating the standard uniform distribution and then applying a transformation. We statisticians take for granted that the computer scientists figured out how to simulate <span class="math inline">\(\text{Unif}(0,\, 1)\)</span> (<a href="https://en.wikipedia.org/wiki/Mersenne_Twister">here</a> is an example), and so if we want random numbers from some fancy distribution, we just need to figure out what the transformation is.</p>
+<section id="problem-3" class="level2"><h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
+<p>If you took AP Statistics or STA 101, you probably learned about Student’s <span class="math inline">\(t\)</span> distribution. This is a family of continuous distributions with heavier tails than the normal, and the density is:</p>
+<p><span class="math display">\[
+f_X(x;\,\nu)=\frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\Gamma\left(\frac{\nu}{2}\right)\sqrt{\pi\nu}}\left(1+\frac{1}{\nu}x^2\right)^{-\frac{\nu+1}{2}},\quad x\in\mathbb{R}.
+\]</span></p>
+<p>This family has one parameter <span class="math inline">\(\nu&gt;0\)</span> called the <em>degrees of freedom</em>. Okay, that’s a big rotten mess, but whatever. If we wanted to simulate it, all we have to do is simulate from <span class="math inline">\(\text{Unif}(0,\, 1)\)</span>, and then plug those numbers into the inverse cdf of the <span class="math inline">\(t\)</span> distribution. The transformed numbers are guaranteed to follow the <span class="math inline">\(t\)</span> distribution. Let’s see that!</p>
+<p>Student’s <span class="math inline">\(t\)</span> has it’s own <code>d-</code> and <code>q-</code> functions:</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/TDist.html">dt</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">df</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/TDist.html">qt</a></span><span class="op">(</span><span class="va">p</span>, <span class="va">df</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>dt</code> evaluates the pdf, and <code>qt</code> evaluates the <em>inverse</em> cdf (ie the quantile function). Implement the following:</p>
+<ul>
+<li>Simulate <span class="math inline">\(n=5000\)</span> numbers from <span class="math inline">\(\text{Unif}(0,\, 1)\)</span>;</li>
+<li>Plug them into the inverse cdf of the <span class="math inline">\(t\)</span> distribution with <code>df = 10</code>;</li>
+<li>Plot a histogram of these transformed numbers;</li>
+<li>Add on top of the histogram a line plot of the density of the <span class="math inline">\(t\)</span> distribution with ten degrees of freedom;</li>
+<li>They had better match!</li>
+</ul></section><section id="problem-4" class="level2"><h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
+<p>Let <span class="math inline">\(X\sim\text{Gamma}(1,\,\beta)\)</span>. So the pdf of <span class="math inline">\(X\)</span> is</p>
+<p><span class="math display">\[
+f_X(x)=\beta e^{-\beta x},\quad x&gt;0.
+\]</span></p>
 <ol type="a">
-<li><p>Show that if you generate flips using this algorithm, the result is equally likely to be either heads or tails.</p></li>
-<li><p>Here is another possible algorithm: <em>flip the coin until the last two flips are different, and let the result be the outcome of the final flip</em>. Are heads and tails equally likely using this procedure?</p></li>
-</ol>
-</section>
-<section id="problem-2" class="level2">
-<h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
-<p>Two balls are chosen randomly from an urn containing 8 green, 4 black, and 2 orange balls. Suppose that we win $2 for each black ball selected, we lose $1 for each green ball selected, and we earn nothing for each orange ball selected. Let <span class="math inline">\(X\)</span> denote our winnings.</p>
+<li>Use the work you did in Part 1 to implement inverse transform sampling to simulate <span class="math inline">\(\text{Gamma}(1,\,\beta)\)</span> for <span class="math inline">\(\beta = 2\)</span>.</li>
+<li>Plot a histogram of 5000 draws from your sampler, and add a line plot of the <span class="math inline">\(\text{Gamma}(1,\,\beta)\)</span> density on top. They had better match!</li>
+</ol></section><section id="problem-5" class="level2"><h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
+<p>Let <span class="math inline">\(X\sim \text{Cauchy}\)</span>. Use the work you did in Part 1 to implement inverse transform sampling for the Cauchy distribution. Plot a histogram of 5000 draws from your sampler, and add a line plot of the Cauchy density on top. They had better match!</p>
+</section><section id="problem-6" class="level2"><h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
+<p>The bottom line of all of this is the <strong>universality of the uniform</strong>. The fundamental principle of simulation is that <em>any</em> distribution can be simulated by first simulating from the standard uniform, and then applying a transformation.</p>
+<p>The <strong>Box-Muller</strong> method says that we can simulate the standard normal in the following way:</p>
+<p><span class="math display">\[
+\begin{align*}
+U_1,\,U_2&amp;\overset{\textrm{iid}}{\sim}\textrm{Unif}(0,\,1)\\
+Z&amp;=\sqrt{-2\ln U_1}\cos(2\pi U_2)
+\end{align*}
+\]</span></p>
+<p>So <span class="math inline">\(Z\sim\text{N}(0,\,1)\)</span>. It is not hard to prove this if you’ve taken multivariable calculus (yaaay polar coordinates), but our course does not assume this. Nevertheless, we can still implement the sampler and check that it works.</p>
 <ol type="a">
-<li><p>Make a table with the possible values of <span class="math inline">\(X\)</span> and the probabilities of each value.</p></li>
-<li><p>Sketch the pmf of <span class="math inline">\(X\)</span>.</p></li>
-<li><p>Sketch the cdf of <span class="math inline">\(X\)</span>.</p></li>
-<li><p>Compute the expected value of <span class="math inline">\(X\)</span>.</p></li>
+<li>Use the Box-Muller method to simulate 5000 random numbers from N(0, 1). Check that you did it right by plotting the histogram and superimposing the standard normal density;</li>
+<li>Modify your code to simulate <span class="math inline">\(\text{N}(\mu=-3.5,\,\sigma^2=0.58)\)</span>, and compare a histogram with a density to verify that it works.</li>
 </ol>
-</section>
-<section id="problem-3" class="level2">
-<h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
-<p>Let <span class="math inline">\(X\)</span> be a random variable with the following pmf:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th><span class="math inline">\(x\)</span></th>
-<th><span class="math inline">\(P(X=x)\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>-1</td>
-<td>0.500</td>
-</tr>
-<tr class="even">
-<td>0</td>
-<td>0.250</td>
-</tr>
-<tr class="odd">
-<td>1</td>
-<td>0.125</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>0.125</td>
-</tr>
-</tbody>
-</table>
-<ol type="a">
-<li>What is the mean of <span class="math inline">\(X\)</span>?</li>
-<li>What is the pmf of <span class="math inline">\(Y = 2X-3\)</span>?</li>
-<li>What is the mean of <span class="math inline">\(Y\)</span>?</li>
-<li>What is the pmf of <span class="math inline">\(W = X^2\)</span>?</li>
-<li>What is the mean of <span class="math inline">\(W\)</span>?</li>
-<li>What is the conditional pmf of <span class="math inline">\(X\)</span> given <span class="math inline">\(X \neq 0\)</span>?</li>
-<li>What is the conditional mean of <span class="math inline">\(X\)</span> given <span class="math inline">\(X \neq 0\)</span>?</li>
-</ol>
-</section>
-<section id="problem-4" class="level2">
-<h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
-<p>Forty-nine members of the Cleveland Orchestra string section wish to compare their birthdays. Assume that no one has February 29th and that all birthdays are independent.</p>
-<ol type="a">
-<li><p>What is the expected number of pairs of people with the same birthday?</p></li>
-<li><p>What is the expected number of days on which at least two players were born?</p></li>
-</ol>
-</section>
-<section id="submission" class="level2">
-<h2 class="anchored" data-anchor-id="submission">Submission</h2>
-<p>You are free to compose your solutions for this problem set however you wish (scan or photograph written work, handwriting capture on a tablet device, LaTeX, Quarto, whatever) as long as the final product is a single PDF file. You must upload this to Gradescope and mark the pages associated with each problem.</p>
 
 
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -818,22 +951,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../psets/pset_2.html" class="pagination-link" aria-label="Problem Set 2">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Problem Set 2</span>
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../labs/lab-5.html" class="pagination-link" aria-label="Lab 5">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 5</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../psets/pset_4.html" class="pagination-link" aria-label="Problem Set 4">
-        <span class="nav-page-text">Problem Set 4</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2025 John Zito</p>
 </div>   
@@ -845,8 +972,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
