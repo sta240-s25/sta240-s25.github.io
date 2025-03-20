@@ -26,6 +26,26 @@ mean(X > 150000)
 # chi-squared
 # ==============================================================================
 
+simulate_total_claim <- function(){
+  N = rpois(1, lambda = 100)
+  X = rgamma(N, shape = 25, rate = 0.0025)
+  S = sum(X)
+  return(S)
+}
+
+S = replicate(5000, simulate_total_claim())
+hist(S, freq = FALSE, breaks = "Scott")
+
+mean(S > 130000)
+mean(S > 1300000)
+
+mean(S)
+var(S)
+
+# ==============================================================================
+# chi-squared
+# ==============================================================================
+
 n <- 5000
 Z <- rnorm(n)
 Y <- Z^2
