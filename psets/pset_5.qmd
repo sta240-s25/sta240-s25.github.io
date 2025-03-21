@@ -98,7 +98,7 @@ $$
 where $\theta >0$ is a parameter.
 
 a. Compute the CDF of $X$.
-c. Compute $E(X)$.
+b. Compute the median of $X$.
 
 ## Problem 8
 
