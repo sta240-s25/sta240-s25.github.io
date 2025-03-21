@@ -3,11 +3,11 @@ title: "Problem Set 5"
 subtitle: Due Friday March 28 at 5PM
 ---
 
-Every part of every problem on this set is worth one point, and they will each be graded on the following scale:
+Each part of each problem on this set is worth one point, and they will each be graded on the following scale:
 
 - **0.0**: little or no attempt;
-- **0.5**: imperfect attempt;
-- **1.0**: nailed it.
+- **0.5**: imperfect attempt (incorrect solution, or insufficient work);
+- **1.0**: nailed it (correct solution, and all weeeerk shown)
 
 This assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade.
 
