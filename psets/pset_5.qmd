@@ -61,7 +61,7 @@ $$
 Let $X$ be any random variable whose moment-generating function exists, and define a new random variable $Y=aX+b$ for arbitrary constants $a,\,b\in\mathbb{R}$. Show that 
 
 $$
-M_Y(t)=e^{at}M_X(bt).
+M_Y(t)=e^{bt}M_X(at).
 $$
 
 # Part 2: Absolutely continuous random variables
