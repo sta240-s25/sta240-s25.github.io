@@ -97,7 +97,7 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="STA 240 Spring 2025 - Problem Set 5">
-<meta property="og:description" content="Due Thursday March 27 at 12PM">
+<meta property="og:description" content="Due Friday March 28 at 5PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
 
@@ -292,10 +292,37 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-0" id="toc-problem-0" class="nav-link active" data-scroll-target="#problem-0">Problem 0</a></li>
-  <li><a href="#problem-x" id="toc-problem-x" class="nav-link" data-scroll-target="#problem-x">Problem X</a></li>
-  <li><a href="#problem-x-1" id="toc-problem-x-1" class="nav-link" data-scroll-target="#problem-x-1">Problem X</a></li>
-  <li><a href="#problem-x-2" id="toc-problem-x-2" class="nav-link" data-scroll-target="#problem-x-2">Problem X</a></li>
+  <li><a href="#part-1-miscellaneous" id="toc-part-1-miscellaneous" class="nav-link active" data-scroll-target="#part-1-miscellaneous">Part 1: Miscellaneous</a>
+  <ul class="collapse">
+  <li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
+  <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
+  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
+  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
+  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
+  </ul></li>
+  <li><a href="#part-2-absolutely-continuous-random-variables" id="toc-part-2-absolutely-continuous-random-variables" class="nav-link" data-scroll-target="#part-2-absolutely-continuous-random-variables">Part 2: Absolutely continuous random variables</a>
+  <ul class="collapse">
+  <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
+  <li><a href="#problem-7" id="toc-problem-7" class="nav-link" data-scroll-target="#problem-7">Problem 7</a></li>
+  <li><a href="#problem-8" id="toc-problem-8" class="nav-link" data-scroll-target="#problem-8">Problem 8</a></li>
+  </ul></li>
+  <li><a href="#part-3-moments" id="toc-part-3-moments" class="nav-link" data-scroll-target="#part-3-moments">Part 3: Moments</a>
+  <ul class="collapse">
+  <li><a href="#problem-9" id="toc-problem-9" class="nav-link" data-scroll-target="#problem-9">Problem 9</a></li>
+  <li><a href="#problem-10" id="toc-problem-10" class="nav-link" data-scroll-target="#problem-10">Problem 10</a></li>
+  </ul></li>
+  <li><a href="#part-4-transformations" id="toc-part-4-transformations" class="nav-link" data-scroll-target="#part-4-transformations">Part 4: Transformations</a>
+  <ul class="collapse">
+  <li><a href="#problem-11" id="toc-problem-11" class="nav-link" data-scroll-target="#problem-11">Problem 11</a></li>
+  <li><a href="#problem-12" id="toc-problem-12" class="nav-link" data-scroll-target="#problem-12">Problem 12</a></li>
+  </ul></li>
+  <li><a href="#part-5-joint-distributions" id="toc-part-5-joint-distributions" class="nav-link" data-scroll-target="#part-5-joint-distributions">Part 5: Joint distributions</a>
+  <ul class="collapse">
+  <li><a href="#problem-13" id="toc-problem-13" class="nav-link" data-scroll-target="#problem-13">Problem 13</a></li>
+  <li><a href="#problem-14" id="toc-problem-14" class="nav-link" data-scroll-target="#problem-14">Problem 14</a></li>
+  <li><a href="#problem-15" id="toc-problem-15" class="nav-link" data-scroll-target="#problem-15">Problem 15</a></li>
+  <li><a href="#problem-16" id="toc-problem-16" class="nav-link" data-scroll-target="#problem-16">Problem 16</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -305,7 +332,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Problem Set 5</h1>
-<p class="subtitle lead">Due Thursday March 27 at 12PM</p>
+<p class="subtitle lead">Due Friday March 28 at 5PM</p>
 </div>
 
 
@@ -322,54 +349,255 @@ window.Quarto = {
 </header>
 
 
-<section id="problem-0" class="level2">
-<h2 class="anchored" data-anchor-id="problem-0">Problem 0</h2>
-<p>Recommend some music for us to listen to while we grade this.</p>
+<p>Every part of every problem on this set is worth one point, and they will each be graded on the following scale:</p>
+<ul>
+<li><strong>0.0</strong>: little or no attempt;</li>
+<li><strong>0.5</strong>: imperfect attempt;</li>
+<li><strong>1.0</strong>: nailed it.</li>
+</ul>
+<p>This assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade.</p>
+<section id="part-1-miscellaneous" class="level1">
+<h1>Part 1: Miscellaneous</h1>
+<section id="problem-1" class="level2">
+<h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
+<p>Recall the gamma function</p>
+<p><span class="math display">\[
+\Gamma(x)=\int_0^\infty y^{x-1}e^{-y}\,\text{d}y.
+\]</span></p>
+<p>Show that <span class="math inline">\(\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}\)</span>.</p>
 </section>
-<section id="problem-x" class="level2">
-<h2 class="anchored" data-anchor-id="problem-x">Problem X</h2>
+<section id="problem-2" class="level2">
+<h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
+<p>Here is the pdf of some absolutely continuous random variable:</p>
+<p><span class="math display">\[
+f(x)=\begin{cases}
+ax^2e^{-bx^2} &amp; x\geq 0\\
+0 &amp; x&lt; 0.
+\end{cases}
+\]</span></p>
+<p>Solve for <span class="math inline">\(a\)</span> in terms of <span class="math inline">\(b\)</span>. So your final answer will look like</p>
+<p><span class="math display">\[
+a=\text{``some formula including $b$ and a bunch of constants''}
+\]</span></p>
+</section>
+<section id="problem-3" class="level2">
+<h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
+<p>Let <span class="math inline">\(X\)</span> be a nonnegative, absolutely continuous random variable with density <span class="math inline">\(f\)</span>. Assuming <span class="math inline">\(E(X)\)</span> is finite, show that</p>
+<p><span class="math display">\[
+E(X)=\int_0^\infty P(X&gt;x)\,\text{d} x.
+\]</span></p>
+</section>
+<section id="problem-4" class="level2">
+<h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
+<p>Let <span class="math inline">\(X\)</span> be a random variable with finite expectation, pdf <span class="math inline">\(f(x)\)</span>, and cdf <span class="math inline">\(F(x)\)</span>. Assuming <span class="math inline">\(E(X)\)</span> is finite, show that</p>
+<p><span class="math display">\[
+E(X)=\int_0^1F^{-1}(x)\,\text{d} x.
+\]</span></p>
+</section>
+<section id="problem-5" class="level2">
+<h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
+<p>Let <span class="math inline">\(X\)</span> be any random variable whose moment-generating function exists, and define a new random variable <span class="math inline">\(Y=aX+b\)</span> for arbitrary constants <span class="math inline">\(a,\,b\in\mathbb{R}\)</span>. Show that</p>
+<p><span class="math display">\[
+M_Y(t)=e^{at}M_X(bt).
+\]</span></p>
+</section>
+</section>
+<section id="part-2-absolutely-continuous-random-variables" class="level1">
+<h1>Part 2: Absolutely continuous random variables</h1>
+<section id="problem-6" class="level2">
+<h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
+<p>Consider an absolutely continuous random variable <span class="math inline">\(X\)</span> with pdf</p>
+<p><span class="math display">\[
+f_X(x)=\frac{e^{-\frac{x-\mu}{s}}}{s\left[1+e^{-\frac{x-\mu}{s}}\right]^2}\quad x\in\mathbb{R},
+\]</span></p>
+<p>where <span class="math inline">\(\mu\in\mathbb{R}\)</span> and <span class="math inline">\(s&gt;0\)</span> are parameters.</p>
 <ol type="a">
-<li>Let <span class="math inline">\(X\sim\text{Unif}(0,\,1)\)</span> and compute the pdf of <span class="math inline">\(Y=e^X\)</span>.</li>
-<li>Let <span class="math inline">\(X\sim \textrm{N}(\mu\com\sigma^2)\)</span> and compute the pdf of <span class="math inline">\(Y=e^X\)</span>.</li>
-<li>Let <span class="math inline">\(Z\sim\textrm{N}(0\com1)\)</span>, and find the pdf, mean, and variance of <span class="math inline">\(Y=|Z|\)</span>.</li>
-<li>Let <span class="math inline">\(X\sim\textrm{N}(0\com\sigma^2)\)</span>, and find the pdf, mean, and variance of <span class="math inline">\(W=|X|\)</span>.</li>
+<li>Compute the cdf of <span class="math inline">\(X\)</span>.</li>
+<li>Compute <span class="math inline">\(E(X)\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Work smarter not harder. You have that <span class="math inline">\(1/s\)</span> constant out front, and that <span class="math inline">\((x-\mu)/s\)</span> bit floating around. What does that tell you?</p>
+</div>
+</div>
+</section>
+<section id="problem-7" class="level2">
+<h2 class="anchored" data-anchor-id="problem-7">Problem 7</h2>
+<p>Consider a random variable <span class="math inline">\(X\)</span> with pdf</p>
+<p><span class="math display">\[
+f(x;\,\theta) =\begin{cases}
+\frac{x}{\theta}e^{-\frac{x^2}{2\theta}} &amp; x\geq 0\\
+0 &amp; \text{else},
+\end{cases}
+\]</span></p>
+<p>where <span class="math inline">\(\theta &gt;0\)</span> is a parameter.</p>
+<ol type="a">
+<li>Compute the CDF of <span class="math inline">\(X\)</span>.</li>
+<li>Compute <span class="math inline">\(E(X)\)</span>.</li>
 </ol>
 </section>
-<section id="problem-x-1" class="level2">
-<h2 class="anchored" data-anchor-id="problem-x-1">Problem X</h2>
+<section id="problem-8" class="level2">
+<h2 class="anchored" data-anchor-id="problem-8">Problem 8</h2>
+<p>Here is the cdf of an absolutely continuous random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+F(x;\,\alpha,\,\theta)
+=
+\begin{cases}
+1-\left(\frac{\theta}{x + \theta}\right)^\alpha &amp; x &gt;0 \\
+0 &amp; \text{else}.
+\end{cases}
+\]</span></p>
+<p>The parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\theta\)</span> are just positive constants.</p>
+<ol type="a">
+<li>Find the pdf of <span class="math inline">\(X\)</span> and plot it for <span class="math inline">\(\alpha=1,\, 2,\, 3\)</span> and <span class="math inline">\(\theta = 1\)</span>.</li>
+<li>Compute <span class="math inline">\(E(X)\)</span>. Is it finite for all values of the parameters?</li>
+<li>Compute <span class="math inline">\(\textrm{var}(X)\)</span>. Is it finite for all values of the parameters?</li>
+<li>Fix <span class="math inline">\((\alpha,\,\theta) = (3,\, 100)\)</span> and compute <span class="math inline">\(P(X &gt; 75\,|\, X &gt; 50)\)</span>.</li>
+</ol>
+</section>
+</section>
+<section id="part-3-moments" class="level1">
+<h1>Part 3: Moments</h1>
+<section id="problem-9" class="level2">
+<h2 class="anchored" data-anchor-id="problem-9">Problem 9</h2>
+<p>Let <span class="math inline">\(X\)</span> be absolutely continuous with density</p>
+<p><span class="math display">\[
+f(x)=\begin{cases}
+2x &amp; 0&lt;x&lt;1\\
+0 &amp; \text{else}.
+\end{cases}
+\]</span></p>
+<p>Find the mgf of <span class="math inline">\(X\)</span> and use it to compute the first two moments.</p>
+</section>
+<section id="problem-10" class="level2">
+<h2 class="anchored" data-anchor-id="problem-10">Problem 10</h2>
+<ol type="a">
+<li>Compute the moment generating function of the geometric distribution. For what values of <span class="math inline">\(t\)</span> is it defined?</li>
+<li>Use the mgf to compute the mean and variance of the geometric distribution.</li>
+</ol>
+</section>
+</section>
+<section id="part-4-transformations" class="level1">
+<h1>Part 4: Transformations</h1>
+<section id="problem-11" class="level2">
+<h2 class="anchored" data-anchor-id="problem-11">Problem 11</h2>
+<ol type="a">
+<li>Let <span class="math inline">\(X\sim\text{Unif}(0,\,1)\)</span>, and find the density of <span class="math inline">\(Y=e^X\)</span>.</li>
+<li>Let <span class="math inline">\(X\sim\textrm{Unif}(0,\,1)\)</span>, and find the density of <span class="math inline">\(Y=\sqrt{X}\)</span>.</li>
+<li>Let <span class="math inline">\(X\sim\textrm{N}(\mu,\,\sigma^2)\)</span>, and find the density of <span class="math inline">\(Y=e^X\)</span>?</li>
+</ol>
+</section>
+<section id="problem-12" class="level2">
+<h2 class="anchored" data-anchor-id="problem-12">Problem 12</h2>
+<p>Let <span class="math inline">\(Z\sim\textrm{N}(0,\,1)\)</span> and let <span class="math inline">\(X\sim\textrm{N}(0,\,\sigma^2)\)</span>.</p>
+<ol type="a">
+<li>Find the pdf of <span class="math inline">\(Y=|Z|\)</span>.</li>
+<li>Compute <span class="math inline">\(E(Y)\)</span>.</li>
+<li>Compute <span class="math inline">\(\textrm{var}(Y)\)</span>.</li>
+<li>Find the pdf of <span class="math inline">\(W=|X|\)</span>.</li>
+<li>Compute <span class="math inline">\(E(W)\)</span> and <span class="math inline">\(\textrm{var}(W)\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you do parts a, b, and c correctly, and you understand how <span class="math inline">\(Z\)</span> and <span class="math inline">\(X\)</span> are related to one another, then you don’t necessarily have to do a lot of work on parts d and e.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="part-5-joint-distributions" class="level1">
+<h1>Part 5: Joint distributions</h1>
+<section id="problem-13" class="level2">
+<h2 class="anchored" data-anchor-id="problem-13">Problem 13</h2>
 <p>Suppose <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are jointly absolutely continuous random variables with joint density</p>
 <p><span class="math display">\[
 f_{XY}(x,\,y)=xe^{-x(y+1)},\quad x,\,y&gt;0.
 \]</span></p>
 <ol type="a">
-<li>Find the marginal density of <span class="math inline">\(X\)</span>. Is it familiar?</li>
+<li>Find the marginal density of <span class="math inline">\(X\)</span>.</li>
 <li>Find the marginal density of <span class="math inline">\(Y\)</span>.</li>
 <li>Find the conditional density of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y=y\)</span>.</li>
-<li>Find the conditional density of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X=x\)</span>. Is it familiar?</li>
+<li>Find the conditional density of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X=x\)</span>.</li>
+<li>Find the density of <span class="math inline">\(Z=XY\)</span>.</li>
 </ol>
 </section>
-<section id="problem-x-2" class="level2">
-<h2 class="anchored" data-anchor-id="problem-x-2">Problem X</h2>
+<section id="problem-14" class="level2">
+<h2 class="anchored" data-anchor-id="problem-14">Problem 14</h2>
+<p><span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are jointly absolutely continuous with joint density</p>
+<p><span class="math display">\[
+f_{XY}(x,\, y)
+=
+c
+(y^2-x^2)
+e^{-y}
+,\quad
+y&gt;0
+;\,
+-y&lt;x&lt;y.
+\]</span></p>
+<ol type="a">
+<li>Sketch <span class="math inline">\(\textrm{Range}(X,\, Y)\)</span>.</li>
+<li>Compute <span class="math inline">\(c\)</span>.</li>
+<li>Compute the marginal density of <span class="math inline">\(X\)</span>.</li>
+<li>Compute the marginal density of <span class="math inline">\(Y\)</span>.</li>
+<li>Compute <span class="math inline">\(E(X)\)</span>.</li>
+</ol>
+</section>
+<section id="problem-15" class="level2">
+<h2 class="anchored" data-anchor-id="problem-15">Problem 15</h2>
 <p>Let <span class="math inline">\(X\)</span> be an absolutely continuous random variable with the following:</p>
 <p><span class="math display">\[
-\begin{aligned}
-    \textrm{Range}(X)&amp;=(0\com 1)\\
+\begin{align*}
+    \textrm{Range}(X)&amp;=(0,\, 1)\\
     f_X(x)&amp;=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}x^{a-1}(1-x)^{b-1},
     \quad 0&lt;x&lt;1.
-\end{aligned}
-\]</span></p>
-<p>This means <span class="math inline">\(X\)</span> has the <strong>beta distribution</strong>, and we write <span class="math inline">\(X\sim\textrm{Beta}(a\com b)\)</span>. Now let <span class="math inline">\(Y\sim\textrm{Gamma}(a+b\com c)\)</span> be independent of <span class="math inline">\(X\)</span>, and define a third random variable <span class="math inline">\(Z=XY\)</span>.</p>
-<ol type="a">
-<li>Write the joint distribution of <span class="math inline">\(X\)</span> and <span class="math inline">\(Z\)</span> in hierarchical form: <span class="math display">\[
-\begin{align*}
-X &amp;\sim \textrm{???}\\
-Z\,|\, X = x &amp;\sim \textrm{???}.
 \end{align*}
-\]</span></li>
+\]</span></p>
+<p>This means <span class="math inline">\(X\)</span> has the <strong>beta distribution</strong>, and we write <span class="math inline">\(X\sim\textrm{Beta}(a,\, b)\)</span>. Now let <span class="math inline">\(Y\sim\textrm{Gamma}(a+b,\, c)\)</span> be independent of <span class="math inline">\(X\)</span>, and define a third random variable <span class="math inline">\(Z=XY\)</span>.</p>
+<ol type="a">
+<li>Write the joint distribution of <span class="math inline">\(X\)</span> and <span class="math inline">\(Z\)</span> in hierarchical form:</li>
+</ol>
+<p><span class="math display">\[
+    \begin{align*}
+        X &amp;\sim \textrm{???}\\
+        Z\,|\, X = x &amp;\sim \textrm{???}.
+    \end{align*}
+\]</span></p>
+<ol start="2" type="a">
 <li>Based on this hierarchy, compute the marginal density of <span class="math inline">\(Z\)</span>. Is it familiar?</li>
+</ol>
+</section>
+<section id="problem-16" class="level2">
+<h2 class="anchored" data-anchor-id="problem-16">Problem 16</h2>
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be jointly absolutely continuous with density</p>
+<p><span class="math display">\[
+f_{XY}(x,\, y)=\frac{1}{\pi},\quad x^2+y^2\leq 1.
+\]</span></p>
+<p>So <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> jointly possess the uniform distribution on the unit disc.</p>
+<ol type="a">
+<li>The joint density is a surface in three-dimensional space. Sketch what the joint density looks like.</li>
+<li>Compute the marginal densities of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</li>
+<li>Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent?</li>
+<li>Compute <span class="math inline">\(\textrm{cov}(X,\, Y)\)</span>.</li>
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
