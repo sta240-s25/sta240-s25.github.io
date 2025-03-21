@@ -1275,7 +1275,7 @@
     "href": "psets/pset_5.html#problem-5",
     "title": "Problem Set 5",
     "section": "Problem 5",
-    "text": "Problem 5\nLet \\(X\\) be any random variable whose moment-generating function exists, and define a new random variable \\(Y=aX+b\\) for arbitrary constants \\(a,\\,b\\in\\mathbb{R}\\). Show that\n\\[\nM_Y(t)=e^{at}M_X(bt).\n\\]",
+    "text": "Problem 5\nLet \\(X\\) be any random variable whose moment-generating function exists, and define a new random variable \\(Y=aX+b\\) for arbitrary constants \\(a,\\,b\\in\\mathbb{R}\\). Show that\n\\[\nM_Y(t)=e^{bt}M_X(at).\n\\]",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
