@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../labs/lab-1.html" rel="next">
+<link href="../psets/pset_4.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Problem Set 5</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../psets/pset_0.html">Problem Sets</a></li><li class="breadcrumb-item"><a href="../psets/pset_5.html">Problem Set 5</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -190,13 +192,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Problem Sets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_0.html" class="sidebar-item-text sidebar-link">
@@ -225,6 +227,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../psets/pset_5.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Problem Set 5</span></a>
   </div>
 </li>
       </ul>
@@ -329,7 +337,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../psets/pset_0.html">Problem Sets</a></li><li class="breadcrumb-item"><a href="../psets/pset_5.html">Problem Set 5</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Problem Set 5</h1>
 <p class="subtitle lead">Due Friday March 28 at 5PM</p>
@@ -349,11 +357,11 @@ window.Quarto = {
 </header>
 
 
-<p>Every part of every problem on this set is worth one point, and they will each be graded on the following scale:</p>
+<p>Each part of each problem on this set is worth one point, and they will each be graded on the following scale:</p>
 <ul>
 <li><strong>0.0</strong>: little or no attempt;</li>
-<li><strong>0.5</strong>: imperfect attempt;</li>
-<li><strong>1.0</strong>: nailed it.</li>
+<li><strong>0.5</strong>: imperfect attempt (incorrect solution, or insufficient work);</li>
+<li><strong>1.0</strong>: nailed it (correct solution, and all weeeerk shown)</li>
 </ul>
 <p>This assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade.</p>
 <section id="part-1-miscellaneous" class="level1">
@@ -441,7 +449,7 @@ f(x;\,\theta) =\begin{cases}
 <p>where <span class="math inline">\(\theta &gt;0\)</span> is a parameter.</p>
 <ol type="a">
 <li>Compute the CDF of <span class="math inline">\(X\)</span>.</li>
-<li>Compute <span class="math inline">\(E(X)\)</span>.</li>
+<li>Compute the median of <span class="math inline">\(X\)</span>.</li>
 </ol>
 </section>
 <section id="problem-8" class="level2">
@@ -1010,6 +1018,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../psets/pset_4.html" class="pagination-link" aria-label="Problem Set 4">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Problem Set 4</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../labs/lab-1.html" class="pagination-link" aria-label="Lab 1">
+        <span class="nav-page-text">Lab 1</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

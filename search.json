@@ -1220,119 +1220,187 @@
     "href": "psets/pset_5.html",
     "title": "Problem Set 5",
     "section": "",
-    "text": "Every part of every problem on this set is worth one point, and they will each be graded on the following scale:\nThis assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade."
+    "text": "Each part of each problem on this set is worth one point, and they will each be graded on the following scale:\nThis assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-1",
     "href": "psets/pset_5.html#problem-1",
     "title": "Problem Set 5",
     "section": "Problem 1",
-    "text": "Problem 1\nRecall the gamma function\n\\[\n\\Gamma(x)=\\int_0^\\infty y^{x-1}e^{-y}\\,\\text{d}y.\n\\]\nShow that \\(\\Gamma\\left(\\frac{1}{2}\\right)=\\sqrt{\\pi}\\)."
+    "text": "Problem 1\nRecall the gamma function\n\\[\n\\Gamma(x)=\\int_0^\\infty y^{x-1}e^{-y}\\,\\text{d}y.\n\\]\nShow that \\(\\Gamma\\left(\\frac{1}{2}\\right)=\\sqrt{\\pi}\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-2",
     "href": "psets/pset_5.html#problem-2",
     "title": "Problem Set 5",
     "section": "Problem 2",
-    "text": "Problem 2\nHere is the pdf of some absolutely continuous random variable:\n\\[\nf(x)=\\begin{cases}\nax^2e^{-bx^2} & x\\geq 0\\\\\n0 & x&lt; 0.\n\\end{cases}\n\\]\nSolve for \\(a\\) in terms of \\(b\\). So your final answer will look like\n\\[\na=\\text{``some formula including $b$ and a bunch of constants''}\n\\]"
+    "text": "Problem 2\nHere is the pdf of some absolutely continuous random variable:\n\\[\nf(x)=\\begin{cases}\nax^2e^{-bx^2} & x\\geq 0\\\\\n0 & x&lt; 0.\n\\end{cases}\n\\]\nSolve for \\(a\\) in terms of \\(b\\). So your final answer will look like\n\\[\na=\\text{``some formula including $b$ and a bunch of constants''}\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-3",
     "href": "psets/pset_5.html#problem-3",
     "title": "Problem Set 5",
     "section": "Problem 3",
-    "text": "Problem 3\nLet \\(X\\) be a nonnegative, absolutely continuous random variable with density \\(f\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^\\infty P(X&gt;x)\\,\\text{d} x.\n\\]"
+    "text": "Problem 3\nLet \\(X\\) be a nonnegative, absolutely continuous random variable with density \\(f\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^\\infty P(X&gt;x)\\,\\text{d} x.\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-4",
     "href": "psets/pset_5.html#problem-4",
     "title": "Problem Set 5",
     "section": "Problem 4",
-    "text": "Problem 4\nLet \\(X\\) be a random variable with finite expectation, pdf \\(f(x)\\), and cdf \\(F(x)\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^1F^{-1}(x)\\,\\text{d} x.\n\\]"
+    "text": "Problem 4\nLet \\(X\\) be a random variable with finite expectation, pdf \\(f(x)\\), and cdf \\(F(x)\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^1F^{-1}(x)\\,\\text{d} x.\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-5",
     "href": "psets/pset_5.html#problem-5",
     "title": "Problem Set 5",
     "section": "Problem 5",
-    "text": "Problem 5\nLet \\(X\\) be any random variable whose moment-generating function exists, and define a new random variable \\(Y=aX+b\\) for arbitrary constants \\(a,\\,b\\in\\mathbb{R}\\). Show that\n\\[\nM_Y(t)=e^{at}M_X(bt).\n\\]"
+    "text": "Problem 5\nLet \\(X\\) be any random variable whose moment-generating function exists, and define a new random variable \\(Y=aX+b\\) for arbitrary constants \\(a,\\,b\\in\\mathbb{R}\\). Show that\n\\[\nM_Y(t)=e^{at}M_X(bt).\n\\]",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-6",
     "href": "psets/pset_5.html#problem-6",
     "title": "Problem Set 5",
     "section": "Problem 6",
-    "text": "Problem 6\nConsider an absolutely continuous random variable \\(X\\) with pdf\n\\[\nf_X(x)=\\frac{e^{-\\frac{x-\\mu}{s}}}{s\\left[1+e^{-\\frac{x-\\mu}{s}}\\right]^2}\\quad x\\in\\mathbb{R},\n\\]\nwhere \\(\\mu\\in\\mathbb{R}\\) and \\(s&gt;0\\) are parameters.\n\nCompute the cdf of \\(X\\).\nCompute \\(E(X)\\).\n\n\n\n\n\n\n\nHint\n\n\n\nWork smarter not harder. You have that \\(1/s\\) constant out front, and that \\((x-\\mu)/s\\) bit floating around. What does that tell you?"
+    "text": "Problem 6\nConsider an absolutely continuous random variable \\(X\\) with pdf\n\\[\nf_X(x)=\\frac{e^{-\\frac{x-\\mu}{s}}}{s\\left[1+e^{-\\frac{x-\\mu}{s}}\\right]^2}\\quad x\\in\\mathbb{R},\n\\]\nwhere \\(\\mu\\in\\mathbb{R}\\) and \\(s&gt;0\\) are parameters.\n\nCompute the cdf of \\(X\\).\nCompute \\(E(X)\\).\n\n\n\n\n\n\n\nHint\n\n\n\nWork smarter not harder. You have that \\(1/s\\) constant out front, and that \\((x-\\mu)/s\\) bit floating around. What does that tell you?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-7",
     "href": "psets/pset_5.html#problem-7",
     "title": "Problem Set 5",
     "section": "Problem 7",
-    "text": "Problem 7\nConsider a random variable \\(X\\) with pdf\n\\[\nf(x;\\,\\theta) =\\begin{cases}\n\\frac{x}{\\theta}e^{-\\frac{x^2}{2\\theta}} & x\\geq 0\\\\\n0 & \\text{else},\n\\end{cases}\n\\]\nwhere \\(\\theta &gt;0\\) is a parameter.\n\nCompute the CDF of \\(X\\).\nCompute \\(E(X)\\)."
+    "text": "Problem 7\nConsider a random variable \\(X\\) with pdf\n\\[\nf(x;\\,\\theta) =\\begin{cases}\n\\frac{x}{\\theta}e^{-\\frac{x^2}{2\\theta}} & x\\geq 0\\\\\n0 & \\text{else},\n\\end{cases}\n\\]\nwhere \\(\\theta &gt;0\\) is a parameter.\n\nCompute the CDF of \\(X\\).\nCompute the median of \\(X\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-8",
     "href": "psets/pset_5.html#problem-8",
     "title": "Problem Set 5",
     "section": "Problem 8",
-    "text": "Problem 8\nHere is the cdf of an absolutely continuous random variable \\(X\\):\n\\[\nF(x;\\,\\alpha,\\,\\theta)\n=\n\\begin{cases}\n1-\\left(\\frac{\\theta}{x + \\theta}\\right)^\\alpha & x &gt;0 \\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nThe parameters \\(\\alpha\\) and \\(\\theta\\) are just positive constants.\n\nFind the pdf of \\(X\\) and plot it for \\(\\alpha=1,\\, 2,\\, 3\\) and \\(\\theta = 1\\).\nCompute \\(E(X)\\). Is it finite for all values of the parameters?\nCompute \\(\\textrm{var}(X)\\). Is it finite for all values of the parameters?\nFix \\((\\alpha,\\,\\theta) = (3,\\, 100)\\) and compute \\(P(X &gt; 75\\,|\\, X &gt; 50)\\)."
+    "text": "Problem 8\nHere is the cdf of an absolutely continuous random variable \\(X\\):\n\\[\nF(x;\\,\\alpha,\\,\\theta)\n=\n\\begin{cases}\n1-\\left(\\frac{\\theta}{x + \\theta}\\right)^\\alpha & x &gt;0 \\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nThe parameters \\(\\alpha\\) and \\(\\theta\\) are just positive constants.\n\nFind the pdf of \\(X\\) and plot it for \\(\\alpha=1,\\, 2,\\, 3\\) and \\(\\theta = 1\\).\nCompute \\(E(X)\\). Is it finite for all values of the parameters?\nCompute \\(\\textrm{var}(X)\\). Is it finite for all values of the parameters?\nFix \\((\\alpha,\\,\\theta) = (3,\\, 100)\\) and compute \\(P(X &gt; 75\\,|\\, X &gt; 50)\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-9",
     "href": "psets/pset_5.html#problem-9",
     "title": "Problem Set 5",
     "section": "Problem 9",
-    "text": "Problem 9\nLet \\(X\\) be absolutely continuous with density\n\\[\nf(x)=\\begin{cases}\n2x & 0&lt;x&lt;1\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nFind the mgf of \\(X\\) and use it to compute the first two moments."
+    "text": "Problem 9\nLet \\(X\\) be absolutely continuous with density\n\\[\nf(x)=\\begin{cases}\n2x & 0&lt;x&lt;1\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nFind the mgf of \\(X\\) and use it to compute the first two moments.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-10",
     "href": "psets/pset_5.html#problem-10",
     "title": "Problem Set 5",
     "section": "Problem 10",
-    "text": "Problem 10\n\nCompute the moment generating function of the geometric distribution. For what values of \\(t\\) is it defined?\nUse the mgf to compute the mean and variance of the geometric distribution."
+    "text": "Problem 10\n\nCompute the moment generating function of the geometric distribution. For what values of \\(t\\) is it defined?\nUse the mgf to compute the mean and variance of the geometric distribution.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-11",
     "href": "psets/pset_5.html#problem-11",
     "title": "Problem Set 5",
     "section": "Problem 11",
-    "text": "Problem 11\n\nLet \\(X\\sim\\text{Unif}(0,\\,1)\\), and find the density of \\(Y=e^X\\).\nLet \\(X\\sim\\textrm{Unif}(0,\\,1)\\), and find the density of \\(Y=\\sqrt{X}\\).\nLet \\(X\\sim\\textrm{N}(\\mu,\\,\\sigma^2)\\), and find the density of \\(Y=e^X\\)?"
+    "text": "Problem 11\n\nLet \\(X\\sim\\text{Unif}(0,\\,1)\\), and find the density of \\(Y=e^X\\).\nLet \\(X\\sim\\textrm{Unif}(0,\\,1)\\), and find the density of \\(Y=\\sqrt{X}\\).\nLet \\(X\\sim\\textrm{N}(\\mu,\\,\\sigma^2)\\), and find the density of \\(Y=e^X\\)?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-12",
     "href": "psets/pset_5.html#problem-12",
     "title": "Problem Set 5",
     "section": "Problem 12",
-    "text": "Problem 12\nLet \\(Z\\sim\\textrm{N}(0,\\,1)\\) and let \\(X\\sim\\textrm{N}(0,\\,\\sigma^2)\\).\n\nFind the pdf of \\(Y=|Z|\\).\nCompute \\(E(Y)\\).\nCompute \\(\\textrm{var}(Y)\\).\nFind the pdf of \\(W=|X|\\).\nCompute \\(E(W)\\) and \\(\\textrm{var}(W)\\).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you do parts a, b, and c correctly, and you understand how \\(Z\\) and \\(X\\) are related to one another, then you don’t necessarily have to do a lot of work on parts d and e."
+    "text": "Problem 12\nLet \\(Z\\sim\\textrm{N}(0,\\,1)\\) and let \\(X\\sim\\textrm{N}(0,\\,\\sigma^2)\\).\n\nFind the pdf of \\(Y=|Z|\\).\nCompute \\(E(Y)\\).\nCompute \\(\\textrm{var}(Y)\\).\nFind the pdf of \\(W=|X|\\).\nCompute \\(E(W)\\) and \\(\\textrm{var}(W)\\).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you do parts a, b, and c correctly, and you understand how \\(Z\\) and \\(X\\) are related to one another, then you don’t necessarily have to do a lot of work on parts d and e.",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-13",
     "href": "psets/pset_5.html#problem-13",
     "title": "Problem Set 5",
     "section": "Problem 13",
-    "text": "Problem 13\nSuppose \\(X\\) and \\(Y\\) are jointly absolutely continuous random variables with joint density\n\\[\nf_{XY}(x,\\,y)=xe^{-x(y+1)},\\quad x,\\,y&gt;0.\n\\]\n\nFind the marginal density of \\(X\\).\nFind the marginal density of \\(Y\\).\nFind the conditional density of \\(X\\) given \\(Y=y\\).\nFind the conditional density of \\(Y\\) given \\(X=x\\).\nFind the density of \\(Z=XY\\)."
+    "text": "Problem 13\nSuppose \\(X\\) and \\(Y\\) are jointly absolutely continuous random variables with joint density\n\\[\nf_{XY}(x,\\,y)=xe^{-x(y+1)},\\quad x,\\,y&gt;0.\n\\]\n\nFind the marginal density of \\(X\\).\nFind the marginal density of \\(Y\\).\nFind the conditional density of \\(X\\) given \\(Y=y\\).\nFind the conditional density of \\(Y\\) given \\(X=x\\).\nFind the density of \\(Z=XY\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-14",
     "href": "psets/pset_5.html#problem-14",
     "title": "Problem Set 5",
     "section": "Problem 14",
-    "text": "Problem 14\n\\(X\\) and \\(Y\\) are jointly absolutely continuous with joint density\n\\[\nf_{XY}(x,\\, y)\n=\nc\n(y^2-x^2)\ne^{-y}\n,\\quad\ny&gt;0\n;\\,\n-y&lt;x&lt;y.\n\\]\n\nSketch \\(\\textrm{Range}(X,\\, Y)\\).\nCompute \\(c\\).\nCompute the marginal density of \\(X\\).\nCompute the marginal density of \\(Y\\).\nCompute \\(E(X)\\)."
+    "text": "Problem 14\n\\(X\\) and \\(Y\\) are jointly absolutely continuous with joint density\n\\[\nf_{XY}(x,\\, y)\n=\nc\n(y^2-x^2)\ne^{-y}\n,\\quad\ny&gt;0\n;\\,\n-y&lt;x&lt;y.\n\\]\n\nSketch \\(\\textrm{Range}(X,\\, Y)\\).\nCompute \\(c\\).\nCompute the marginal density of \\(X\\).\nCompute the marginal density of \\(Y\\).\nCompute \\(E(X)\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-15",
     "href": "psets/pset_5.html#problem-15",
     "title": "Problem Set 5",
     "section": "Problem 15",
-    "text": "Problem 15\nLet \\(X\\) be an absolutely continuous random variable with the following:\n\\[\n\\begin{align*}\n    \\textrm{Range}(X)&=(0,\\, 1)\\\\\n    f_X(x)&=\\frac{\\Gamma(a+b)}{\\Gamma(a)\\Gamma(b)}x^{a-1}(1-x)^{b-1},\n    \\quad 0&lt;x&lt;1.\n\\end{align*}\n\\]\nThis means \\(X\\) has the beta distribution, and we write \\(X\\sim\\textrm{Beta}(a,\\, b)\\). Now let \\(Y\\sim\\textrm{Gamma}(a+b,\\, c)\\) be independent of \\(X\\), and define a third random variable \\(Z=XY\\).\n\nWrite the joint distribution of \\(X\\) and \\(Z\\) in hierarchical form:\n\n\\[\n    \\begin{align*}\n        X &\\sim \\textrm{???}\\\\\n        Z\\,|\\, X = x &\\sim \\textrm{???}.\n    \\end{align*}\n\\]\n\nBased on this hierarchy, compute the marginal density of \\(Z\\). Is it familiar?"
+    "text": "Problem 15\nLet \\(X\\) be an absolutely continuous random variable with the following:\n\\[\n\\begin{align*}\n    \\textrm{Range}(X)&=(0,\\, 1)\\\\\n    f_X(x)&=\\frac{\\Gamma(a+b)}{\\Gamma(a)\\Gamma(b)}x^{a-1}(1-x)^{b-1},\n    \\quad 0&lt;x&lt;1.\n\\end{align*}\n\\]\nThis means \\(X\\) has the beta distribution, and we write \\(X\\sim\\textrm{Beta}(a,\\, b)\\). Now let \\(Y\\sim\\textrm{Gamma}(a+b,\\, c)\\) be independent of \\(X\\), and define a third random variable \\(Z=XY\\).\n\nWrite the joint distribution of \\(X\\) and \\(Z\\) in hierarchical form:\n\n\\[\n    \\begin{align*}\n        X &\\sim \\textrm{???}\\\\\n        Z\\,|\\, X = x &\\sim \\textrm{???}.\n    \\end{align*}\n\\]\n\nBased on this hierarchy, compute the marginal density of \\(Z\\). Is it familiar?",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_5.html#problem-16",
     "href": "psets/pset_5.html#problem-16",
     "title": "Problem Set 5",
     "section": "Problem 16",
-    "text": "Problem 16\nLet \\(X\\) and \\(Y\\) be jointly absolutely continuous with density\n\\[\nf_{XY}(x,\\, y)=\\frac{1}{\\pi},\\quad x^2+y^2\\leq 1.\n\\]\nSo \\(X\\) and \\(Y\\) jointly possess the uniform distribution on the unit disc.\n\nThe joint density is a surface in three-dimensional space. Sketch what the joint density looks like.\nCompute the marginal densities of \\(X\\) and \\(Y\\).\nAre \\(X\\) and \\(Y\\) independent?\nCompute \\(\\textrm{cov}(X,\\, Y)\\)."
+    "text": "Problem 16\nLet \\(X\\) and \\(Y\\) be jointly absolutely continuous with density\n\\[\nf_{XY}(x,\\, y)=\\frac{1}{\\pi},\\quad x^2+y^2\\leq 1.\n\\]\nSo \\(X\\) and \\(Y\\) jointly possess the uniform distribution on the unit disc.\n\nThe joint density is a surface in three-dimensional space. Sketch what the joint density looks like.\nCompute the marginal densities of \\(X\\) and \\(Y\\).\nAre \\(X\\) and \\(Y\\) independent?\nCompute \\(\\textrm{cov}(X,\\, Y)\\).",
+    "crumbs": [
+      "Problem Sets",
+      "Problem Set 5"
+    ]
   },
   {
     "objectID": "psets/pset_3.html",
@@ -1526,7 +1594,7 @@
     "href": "index.html",
     "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\nnotes\n\n\n\n\nWed, Jan 15\n\nDS: 1.5\nProbability rules\nnotes\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nDS: 1.6 - 1.8\nCounting Snow Day - No Lecture\n\n\nvideos notes\n\n\n\n\n\nThu, Jan 23\n\nOH w/ Gwen\n\n\n\n\n\nFri, Jan 24\n\n\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nDS: 2\nConditional probability 1\n\nPlay around! Play around some more!\n\n\n\n\n\nWed, Jan 29\n\nDS: 2\nConditional probability 2\nnotes\n\n\n\n\nThu, Jan 30\n\nLab 2\n\n\nLab 2 @ 11:59 PM\n\n\n4\nMon, Feb 3\n\nDS: 3.1, 3.3, 4.1\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 5\n\nDS: 5.1 - 5.4\nDiscrete random variables\nnotes\n\n\n\n\nThu, Feb 6\n\nLab 3\n\n\nPSET 2 @ 12PM Lab 3 @ 11:59 PM\n\n\n5\nMon, Feb 10\n\nDS: 4.1 - 4.3\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 12\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\npractice\n\n\n\n\nFri, Feb 14\n\n\n\n\nPSET 3 @ 5PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nSnow Day - No Lecture\n\n\n\n\n\nThu, Feb 20\n\nSnow Day - No Lab\n\n\n\n\n7\nMon, Feb 24\n\nDS: 3.2 - 3.3\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nDS: 5.6 - 5.7\nContinuous random variables\n\n\n\n\n\nThu, Feb 27\n\nLab 4\n\n\nLab 4 @ 11:59 PM\n\n\n8\nMon, Mar 3\n\nDS: 4.1 - 4.5\nContinuous random variables\n\n\n\n\n\nWed, Mar 5\n\nDS: 3.8\nContinuous random variables\n\n\n\n\n\nThu, Mar 6\n\nDS: 12\nLab 5\n\n\nLab 5 @ 11:59 PM\n\n\n\nFri, Mar 7\n\n\n\n\nPSET 4 @ 5PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nDS: 3.4 - 3.7, 4.6\nJoint distributions\n\n\n\n\n\nWed, Mar 19\n\nDS: 3.4 - 3.7, 4.6\nJoint distributions\n\n\n\n\n\nThu, Mar 20\n\nLab 6\n\n\nLab 6 @ 11:59 PM\n\n\n11\nMon, Mar 24\n\nDS: 3.4 - 3.7, 4.6\nJoint distributions\n\n\n\n\n\nWed, Mar 26\n\nDS: 6\nLinear combinations of random variables  Tail bounds\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\nPSET 5 @ 12PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nDS: 6\nThe limit theorems\n\n\n\n\n\nThu, Apr 3\n\nLab 7\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 8\n\n\n\n\n\nFri, Apr 11\n\n\n\nPSET 6 @ 5PM\n\n\n\nSat, Apr 12\n\nStatistics (optional make-up)\n\n\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\nLab 9\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 3PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\nnotes\n\n\n\n\nWed, Jan 15\n\nDS: 1.5\nProbability rules\nnotes\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nDS: 1.6 - 1.8\nCounting Snow Day - No Lecture\n\n\nvideos notes\n\n\n\n\n\nThu, Jan 23\n\nOH w/ Gwen\n\n\n\n\n\nFri, Jan 24\n\n\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nDS: 2\nConditional probability 1\n\nPlay around! Play around some more!\n\n\n\n\n\nWed, Jan 29\n\nDS: 2\nConditional probability 2\nnotes\n\n\n\n\nThu, Jan 30\n\nLab 2\n\n\nLab 2 @ 11:59 PM\n\n\n4\nMon, Feb 3\n\nDS: 3.1, 3.3, 4.1\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 5\n\nDS: 5.1 - 5.4\nDiscrete random variables\nnotes\n\n\n\n\nThu, Feb 6\n\nLab 3\n\n\nPSET 2 @ 12PM Lab 3 @ 11:59 PM\n\n\n5\nMon, Feb 10\n\nDS: 4.1 - 4.3\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 12\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\npractice\n\n\n\n\nFri, Feb 14\n\n\n\n\nPSET 3 @ 5PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nSnow Day - No Lecture\n\n\n\n\n\nThu, Feb 20\n\nSnow Day - No Lab\n\n\n\n\n7\nMon, Feb 24\n\nDS: 3.2 - 3.3\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nDS: 5.6 - 5.7\nContinuous random variables\n\n\n\n\n\nThu, Feb 27\n\nLab 4\n\n\nLab 4 @ 11:59 PM\n\n\n8\nMon, Mar 3\n\nDS: 4.1 - 4.5\nContinuous random variables\n\n\n\n\n\nWed, Mar 5\n\nDS: 3.8\nContinuous random variables\n\n\n\n\n\nThu, Mar 6\n\nDS: 12\nLab 5\n\n\nLab 5 @ 11:59 PM\n\n\n\nFri, Mar 7\n\n\n\n\nPSET 4 @ 5PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nDS: 3.4 - 3.7, 4.6\nJoint distributions\n\n\n\n\n\nWed, Mar 19\n\nDS: 3.4 - 3.7, 4.6\nJoint distributions\n\n\n\n\n\nThu, Mar 20\n\nLab 6\n\n\nLab 6 @ 11:59 PM\n\n\n11\nMon, Mar 24\n\nDS: 3.4 - 3.7, 4.6\nJoint distributions\n\n\n\n\n\nWed, Mar 26\n\nDS: 6\nLinear combinations of random variables  Tail bounds\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\n\n\n\n\nFri, Mar 28\n\n\n\n\nPSET 5 @ 5PM\n\n\n12\nMon, Mar 31\n\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nDS: 6\nThe limit theorems\n\n\n\n\n\nThu, Apr 3\n\nLab 7\n\n\n\n\n13\nMon, Apr 7\n\nStatistics\n\n\n\n\n\nWed, Apr 9\n\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 8\n\n\n\n\n\nFri, Apr 11\n\n\n\nPSET 6 @ 5PM\n\n\n\nSat, Apr 12\n\nStatistics (optional make-up)\n\n\n\n\n14\nMon, Apr 14\n\nStatistics\n\n\n\n\n\nWed, Apr 16\n\nStatistics\n\n\n\n\n\nThu, Apr 17\n\nLab 9\n\n\n\n\n15\nMon, Apr 21\n\nStatistics\n\n\n\n\n\nWed, Apr 23\n\nStatistics\n\nPSET 7 @ 3PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"
