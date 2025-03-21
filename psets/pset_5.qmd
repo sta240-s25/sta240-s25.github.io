@@ -1,20 +1,172 @@
 ---
 title: "Problem Set 5"
-subtitle: Due Thursday March 27 at 12PM
+subtitle: Due Friday March 28 at 5PM
 ---
 
-## Problem 0
+Every part of every problem on this set is worth one point, and they will each be graded on the following scale:
 
-Recommend some music for us to listen to while we grade this.
+- **0.0**: little or no attempt;
+- **0.5**: imperfect attempt;
+- **1.0**: nailed it.
 
-## Problem X
+This assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade.
 
-a. Let $X\sim\text{Unif}(0,\,1)$ and compute the pdf of $Y=e^X$.
-b. Let $X\sim \textrm{N}(\mu\com\sigma^2)$ and compute the pdf of $Y=e^X$.
-c. Let $Z\sim\textrm{N}(0\com1)$, and find the pdf, mean, and variance of $Y=|Z|$.
-d. Let $X\sim\textrm{N}(0\com\sigma^2)$, and find the pdf, mean, and variance of $W=|X|$.
+# Part 1: Miscellaneous
 
-## Problem X
+## Problem 1
+
+Recall the gamma function
+
+$$
+\Gamma(x)=\int_0^\infty y^{x-1}e^{-y}\,\text{d}y.
+$$
+
+Show that $\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}$.
+
+## Problem 2
+
+Here is the pdf of some absolutely continuous random variable:
+
+$$
+f(x)=\begin{cases}
+ax^2e^{-bx^2} & x\geq 0\\
+0 & x< 0.
+\end{cases}
+$$
+
+Solve for $a$ in terms of $b$. So your final answer will look like
+
+$$
+a=\text{``some formula including $b$ and a bunch of constants''}
+$$
+
+## Problem 3
+
+Let $X$ be a nonnegative, absolutely continuous random variable with density $f$. Assuming $E(X)$ is finite, show that
+
+$$
+E(X)=\int_0^\infty P(X>x)\,\text{d} x.
+$$
+
+## Problem 4
+
+Let $X$ be a random variable with finite expectation, pdf $f(x)$, and cdf $F(x)$. Assuming $E(X)$ is finite, show that
+
+$$
+E(X)=\int_0^1F^{-1}(x)\,\text{d} x.
+$$
+
+## Problem 5
+
+Let $X$ be any random variable whose moment-generating function exists, and define a new random variable $Y=aX+b$ for arbitrary constants $a,\,b\in\mathbb{R}$. Show that 
+
+$$
+M_Y(t)=e^{at}M_X(bt).
+$$
+
+# Part 2: Absolutely continuous random variables
+
+## Problem 6
+
+Consider an absolutely continuous random variable $X$ with pdf
+
+$$
+f_X(x)=\frac{e^{-\frac{x-\mu}{s}}}{s\left[1+e^{-\frac{x-\mu}{s}}\right]^2}\quad x\in\mathbb{R},
+$$
+
+where $\mu\in\mathbb{R}$ and $s>0$ are parameters.
+  
+a. Compute the cdf of $X$.
+b. Compute $E(X)$.
+
+::: callout-tip
+## Hint
+Work smarter not harder. You have that $1/s$ constant out front, and that $(x-\mu)/s$ bit floating around. What does that tell you?
+:::
+
+## Problem 7
+
+Consider a random variable $X$ with pdf
+
+$$
+f(x;\,\theta) =\begin{cases}
+\frac{x}{\theta}e^{-\frac{x^2}{2\theta}} & x\geq 0\\
+0 & \text{else},
+\end{cases}
+$$
+
+where $\theta >0$ is a parameter.
+
+a. Compute the CDF of $X$.
+c. Compute $E(X)$.
+
+## Problem 8
+
+Here is the cdf of an absolutely continuous random variable $X$:
+
+$$
+F(x;\,\alpha,\,\theta)
+=
+\begin{cases}
+1-\left(\frac{\theta}{x + \theta}\right)^\alpha & x >0 \\
+0 & \text{else}.
+\end{cases}
+$$
+
+The parameters $\alpha$ and $\theta$ are just positive constants.
+
+a. Find the pdf of $X$ and plot it for $\alpha=1,\, 2,\, 3$ and $\theta = 1$.
+b. Compute $E(X)$. Is it finite for all values of the parameters?
+c. Compute $\textrm{var}(X)$. Is it finite for all values of the parameters?
+d. Fix $(\alpha,\,\theta) = (3,\, 100)$ and compute $P(X > 75\,|\, X > 50)$.
+
+# Part 3: Moments
+
+
+## Problem 9
+
+Let $X$ be absolutely continuous with density 
+
+$$
+f(x)=\begin{cases}
+2x & 0<x<1\\
+0 & \text{else}.
+\end{cases}
+$$
+
+Find the mgf of $X$ and use it to compute the first two moments.
+
+## Problem 10
+
+a. Compute the moment generating function of the geometric distribution. For what values of $t$ is it defined?
+b. Use the mgf to compute the mean and variance of the geometric distribution.
+
+# Part 4: Transformations
+
+## Problem 11
+
+a. Let $X\sim\text{Unif}(0,\,1)$, and find the density of $Y=e^X$.
+b. Let $X\sim\textrm{Unif}(0,\,1)$, and find the density of $Y=\sqrt{X}$.
+c. Let $X\sim\textrm{N}(\mu,\,\sigma^2)$, and find the density of $Y=e^X$?
+
+## Problem 12
+
+Let $Z\sim\textrm{N}(0,\,1)$ and let $X\sim\textrm{N}(0,\,\sigma^2)$.
+
+a. Find the pdf of $Y=|Z|$.
+b. Compute $E(Y)$.
+c. Compute $\textrm{var}(Y)$.
+d. Find the pdf of $W=|X|$.
+e. Compute $E(W)$ and $\textrm{var}(W)$.
+
+::: callout-tip
+If you do parts a, b, and c correctly, and you understand how $Z$ and $X$ are related to one another, then you don't necessarily have to do a lot of work on parts d and e.
+:::
+
+
+# Part 5: Joint distributions
+
+## Problem 13
 
 Suppose $X$ and $Y$ are jointly absolutely continuous random variables with joint density
 
@@ -22,30 +174,71 @@ $$
 f_{XY}(x,\,y)=xe^{-x(y+1)},\quad x,\,y>0.
 $$
 
-a. Find the marginal density of $X$. Is it familiar?
+a. Find the marginal density of $X$.
 b. Find the marginal density of $Y$.
 c. Find the conditional density of $X$ given $Y=y$.
-d. Find the conditional density of $Y$ given $X=x$. Is it familiar?
+d. Find the conditional density of $Y$ given $X=x$.
+e. Find the density of $Z=XY$.
 
-## Problem X
+
+## Problem 14
+
+$X$ and $Y$ are jointly absolutely continuous with joint density
+
+$$
+f_{XY}(x,\, y)
+=
+c
+(y^2-x^2)
+e^{-y}
+,\quad 
+y>0
+;\,
+-y<x<y.
+$$
+
+a. Sketch $\textrm{Range}(X,\, Y)$.
+b. Compute $c$.
+c. Compute the marginal density of $X$.
+d. Compute the marginal density of $Y$.
+e. Compute $E(X)$.
+
+## Problem 15
 
 Let $X$ be an absolutely continuous random variable with the following:
 
 $$
-\begin{aligned}
-    \textrm{Range}(X)&=(0\com 1)\\
+\begin{align*}
+    \textrm{Range}(X)&=(0,\, 1)\\
     f_X(x)&=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}x^{a-1}(1-x)^{b-1},
     \quad 0<x<1.
-\end{aligned}
-$$
-
-This means $X$ has the **beta distribution**, and we write $X\sim\textrm{Beta}(a\com b)$. Now let $Y\sim\textrm{Gamma}(a+b\com c)$ be independent of $X$, and define a third random variable $Z=XY$.
-
-a. Write the joint distribution of $X$ and $Z$ in hierarchical form:
-$$
-\begin{align*}
-    X &\sim \textrm{???}\\
-    Z\,|\, X = x &\sim \textrm{???}.
 \end{align*}
 $$
+
+This means $X$ has the **beta distribution**, and we write $X\sim\textrm{Beta}(a,\, b)$. Now let $Y\sim\textrm{Gamma}(a+b,\, c)$ be independent of $X$, and define a third random variable $Z=XY$.
+
+a. Write the joint distribution of $X$ and $Z$ in hierarchical form:
+
+$$
+    \begin{align*}
+        X &\sim \textrm{???}\\
+        Z\,|\, X = x &\sim \textrm{???}.
+    \end{align*}
+$$
+
 b. Based on this hierarchy, compute the marginal density of $Z$. Is it familiar?
+
+## Problem 16
+
+Let $X$ and $Y$ be jointly absolutely continuous with density
+
+$$
+f_{XY}(x,\, y)=\frac{1}{\pi},\quad x^2+y^2\leq 1.
+$$
+
+So $X$ and $Y$ jointly possess the uniform distribution on the unit disc.
+
+a. The joint density is a surface in three-dimensional space. Sketch what the joint density looks like.
+b. Compute the marginal densities of $X$ and $Y$.
+c. Are $X$ and $Y$ independent?
+d. Compute $\textrm{cov}(X,\, Y)$.
