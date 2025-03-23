@@ -5,9 +5,9 @@ subtitle: Due Friday March 28 at 5PM
 
 Each part of each problem on this set is worth one point, and they will each be graded on the following scale:
 
-- **0.0**: little or no attempt;
-- **0.5**: imperfect attempt (incorrect solution, or insufficient work);
-- **1.0**: nailed it (correct solution, and all weeeerk shown)
+-   **0.0**: little or no attempt;
+-   **0.5**: imperfect attempt (incorrect solution, or insufficient work);
+-   **1.0**: nailed it (correct solution, and all weeeerk shown)
 
 This assignment contains a total of 40 points, but it will be graded out of 30. So if you do extra problems, you get extra credit. For example, if you do every problem, and you nail them all, then that appears as a 40 / 30 in Canvas toward the problem set component of your final course grade.
 
@@ -22,6 +22,14 @@ $$
 $$
 
 Show that $\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}$.
+
+::: {.callout-tip collapse="true"}
+## Hint
+Two things to remember, for this problem set, for the midterm, and for life in general:
+
+- every probability density function is a funky integral identity in disguise;
+- "massage and squint."
+:::
 
 ## Problem 2
 
@@ -48,6 +56,11 @@ $$
 E(X)=\int_0^\infty P(X>x)\,\text{d} x.
 $$
 
+::: {.callout-tip collapse="true"}
+## Hint
+Start on the left-hand side and manipulate it until you get the right-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn't.
+:::
+
 ## Problem 4
 
 Let $X$ be a random variable with finite expectation, pdf $f(x)$, and cdf $F(x)$. Assuming $E(X)$ is finite, show that
@@ -56,9 +69,14 @@ $$
 E(X)=\int_0^1F^{-1}(x)\,\text{d} x.
 $$
 
+::: {.callout-tip collapse="true"}
+## Hint
+If you pick a good u-substitution, there's almost no work here.
+:::
+
 ## Problem 5
 
-Let $X$ be any random variable whose moment-generating function exists, and define a new random variable $Y=aX+b$ for arbitrary constants $a,\,b\in\mathbb{R}$. Show that 
+Let $X$ be any random variable whose moment-generating function exists, and define a new random variable $Y=aX+b$ for arbitrary constants $a,\,b\in\mathbb{R}$. Show that
 
 $$
 M_Y(t)=e^{bt}M_X(at).
@@ -75,12 +93,13 @@ f_X(x)=\frac{e^{-\frac{x-\mu}{s}}}{s\left[1+e^{-\frac{x-\mu}{s}}\right]^2}\quad 
 $$
 
 where $\mu\in\mathbb{R}$ and $s>0$ are parameters.
-  
-a. Compute the cdf of $X$.
-b. Compute $E(X)$.
 
-::: callout-tip
+a.  Compute the cdf of $X$.
+b.  Compute $E(X)$.
+
+::: {.callout-tip collapse="true"}
 ## Hint
+
 Work smarter not harder. You have that $1/s$ constant out front, and that $(x-\mu)/s$ bit floating around. What does that tell you?
 :::
 
@@ -97,8 +116,8 @@ $$
 
 where $\theta >0$ is a parameter.
 
-a. Compute the CDF of $X$.
-b. Compute the median of $X$.
+a.  Compute the CDF of $X$.
+b.  Compute the median of $X$.
 
 ## Problem 8
 
@@ -115,17 +134,21 @@ $$
 
 The parameters $\alpha$ and $\theta$ are just positive constants.
 
-a. Find the pdf of $X$ and plot it for $\alpha=1,\, 2,\, 3$ and $\theta = 1$.
-b. Compute $E(X)$. Is it finite for all values of the parameters?
-c. Compute $\textrm{var}(X)$. Is it finite for all values of the parameters?
-d. Fix $(\alpha,\,\theta) = (3,\, 100)$ and compute $P(X > 75\,|\, X > 50)$.
+a.  Find the pdf of $X$ and plot it for $\alpha=1,\, 2,\, 3$ and $\theta = 1$.
+b.  Compute $E(X)$. Is it finite for all values of the parameters?
+c.  Compute $\textrm{var}(X)$. Is it finite for all values of the parameters?
+d.  Fix $(\alpha,\,\theta) = (3,\, 100)$ and compute $P(X > 75\,|\, X > 50)$.
+
+::: {.callout-tip collapse="true"}
+## Hint
+Problems 3 and 4 at the top of this very problem set provide you with alternative methods for calculating expected values. See if you don't find them useful here.
+:::
 
 # Part 3: Moments
 
-
 ## Problem 9
 
-Let $X$ be absolutely continuous with density 
+Let $X$ be absolutely continuous with density
 
 $$
 f(x)=\begin{cases}
@@ -138,31 +161,31 @@ Find the mgf of $X$ and use it to compute the first two moments.
 
 ## Problem 10
 
-a. Compute the moment generating function of the geometric distribution. For what values of $t$ is it defined?
-b. Use the mgf to compute the mean and variance of the geometric distribution.
+a.  Compute the moment generating function of the geometric distribution. For what values of $t$ is it defined?
+b.  Use the mgf to compute the mean and variance of the geometric distribution.
 
 # Part 4: Transformations
 
 ## Problem 11
 
-a. Let $X\sim\text{Unif}(0,\,1)$, and find the density of $Y=e^X$.
-b. Let $X\sim\textrm{Unif}(0,\,1)$, and find the density of $Y=\sqrt{X}$.
-c. Let $X\sim\textrm{N}(\mu,\,\sigma^2)$, and find the density of $Y=e^X$?
+a.  Let $X\sim\text{Unif}(0,\,1)$, and find the density of $Y=e^X$.
+b.  Let $X\sim\textrm{Unif}(0,\,1)$, and find the density of $Y=\sqrt{X}$.
+c.  Let $X\sim\textrm{N}(\mu,\,\sigma^2)$, and find the density of $Y=e^X$?
 
 ## Problem 12
 
 Let $Z\sim\textrm{N}(0,\,1)$ and let $X\sim\textrm{N}(0,\,\sigma^2)$.
 
-a. Find the pdf of $Y=|Z|$.
-b. Compute $E(Y)$.
-c. Compute $\textrm{var}(Y)$.
-d. Find the pdf of $W=|X|$.
-e. Compute $E(W)$ and $\textrm{var}(W)$.
+a.  Find the pdf of $Y=|Z|$.
+b.  Compute $E(Y)$.
+c.  Compute $\textrm{var}(Y)$.
+d.  Find the pdf of $W=|X|$.
+e.  Compute $E(W)$ and $\textrm{var}(W)$.
 
-::: callout-tip
+::: {.callout-tip collapse="true"}
+## Hint
 If you do parts a, b, and c correctly, and you understand how $Z$ and $X$ are related to one another, then you don't necessarily have to do a lot of work on parts d and e.
 :::
-
 
 # Part 5: Joint distributions
 
@@ -174,12 +197,11 @@ $$
 f_{XY}(x,\,y)=xe^{-x(y+1)},\quad x,\,y>0.
 $$
 
-a. Find the marginal density of $X$.
-b. Find the marginal density of $Y$.
-c. Find the conditional density of $X$ given $Y=y$.
-d. Find the conditional density of $Y$ given $X=x$.
-e. Find the density of $Z=XY$.
-
+a.  Find the marginal density of $X$.
+b.  Find the marginal density of $Y$.
+c.  Find the conditional density of $X$ given $Y=y$.
+d.  Find the conditional density of $Y$ given $X=x$.
+e.  Find the density of $Z=XY$.
 
 ## Problem 14
 
@@ -197,11 +219,11 @@ y>0
 -y<x<y.
 $$
 
-a. Sketch $\textrm{Range}(X,\, Y)$.
-b. Compute $c$.
-c. Compute the marginal density of $X$.
-d. Compute the marginal density of $Y$.
-e. Compute $E(X)$.
+a.  Sketch $\textrm{Range}(X,\, Y)$.
+b.  Compute $c$.
+c.  Compute the marginal density of $X$.
+d.  Compute the marginal density of $Y$.
+e.  Compute $E(X)$.
 
 ## Problem 15
 
@@ -217,7 +239,7 @@ $$
 
 This means $X$ has the **beta distribution**, and we write $X\sim\textrm{Beta}(a,\, b)$. Now let $Y\sim\textrm{Gamma}(a+b,\, c)$ be independent of $X$, and define a third random variable $Z=XY$.
 
-a. Write the joint distribution of $X$ and $Z$ in hierarchical form:
+a.  Write the joint distribution of $X$ and $Z$ in hierarchical form:
 
 $$
     \begin{align*}
@@ -226,7 +248,7 @@ $$
     \end{align*}
 $$
 
-b. Based on this hierarchy, compute the marginal density of $Z$. Is it familiar?
+b.  Based on this hierarchy, compute the marginal density of $Z$. Is it familiar?
 
 ## Problem 16
 
@@ -238,7 +260,7 @@ $$
 
 So $X$ and $Y$ jointly possess the uniform distribution on the unit disc.
 
-a. The joint density is a surface in three-dimensional space. Sketch what the joint density looks like.
-b. Compute the marginal densities of $X$ and $Y$.
-c. Are $X$ and $Y$ independent?
-d. Compute $\textrm{cov}(X,\, Y)$.
+a.  The joint density is a surface in three-dimensional space. Sketch what the joint density looks like.
+b.  Compute the marginal densities of $X$ and $Y$.
+c.  Are $X$ and $Y$ independent?
+d.  Compute $\textrm{cov}(X,\, Y)$.
