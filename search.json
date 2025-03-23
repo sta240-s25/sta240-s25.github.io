@@ -1253,7 +1253,7 @@
     "href": "psets/pset_5.html#problem-3",
     "title": "Problem Set 5",
     "section": "Problem 3",
-    "text": "Problem 3\nLet \\(X\\) be a nonnegative, absolutely continuous random variable with density \\(f\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^\\infty P(X&gt;x)\\,\\text{d} x.\n\\]\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart on the left-hand side and manipulate it until you get the right-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn’t.",
+    "text": "Problem 3\nLet \\(X\\) be a nonnegative, absolutely continuous random variable with density \\(f\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^\\infty P(X&gt;x)\\,\\text{d} x.\n\\]\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart on the right-hand side and manipulate it until you get the left-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn’t.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
