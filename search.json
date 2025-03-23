@@ -1231,7 +1231,7 @@
     "href": "psets/pset_5.html#problem-1",
     "title": "Problem Set 5",
     "section": "Problem 1",
-    "text": "Problem 1\nRecall the gamma function\n\\[\n\\Gamma(x)=\\int_0^\\infty y^{x-1}e^{-y}\\,\\text{d}y.\n\\]\nShow that \\(\\Gamma\\left(\\frac{1}{2}\\right)=\\sqrt{\\pi}\\).",
+    "text": "Problem 1\nRecall the gamma function\n\\[\n\\Gamma(x)=\\int_0^\\infty y^{x-1}e^{-y}\\,\\text{d}y.\n\\]\nShow that \\(\\Gamma\\left(\\frac{1}{2}\\right)=\\sqrt{\\pi}\\).\n\n\n\n\n\n\nHint\n\n\n\n\n\nTwo things to remember, for this problem set, for the midterm, and for life in general:\n\nevery probability density function is a funky integral identity in disguise;\n“massage and squint.”",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
@@ -1253,7 +1253,7 @@
     "href": "psets/pset_5.html#problem-3",
     "title": "Problem Set 5",
     "section": "Problem 3",
-    "text": "Problem 3\nLet \\(X\\) be a nonnegative, absolutely continuous random variable with density \\(f\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^\\infty P(X&gt;x)\\,\\text{d} x.\n\\]",
+    "text": "Problem 3\nLet \\(X\\) be a nonnegative, absolutely continuous random variable with density \\(f\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^\\infty P(X&gt;x)\\,\\text{d} x.\n\\]\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart on the left-hand side and manipulate it until you get the right-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn’t.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
@@ -1264,7 +1264,7 @@
     "href": "psets/pset_5.html#problem-4",
     "title": "Problem Set 5",
     "section": "Problem 4",
-    "text": "Problem 4\nLet \\(X\\) be a random variable with finite expectation, pdf \\(f(x)\\), and cdf \\(F(x)\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^1F^{-1}(x)\\,\\text{d} x.\n\\]",
+    "text": "Problem 4\nLet \\(X\\) be a random variable with finite expectation, pdf \\(f(x)\\), and cdf \\(F(x)\\). Assuming \\(E(X)\\) is finite, show that\n\\[\nE(X)=\\int_0^1F^{-1}(x)\\,\\text{d} x.\n\\]\n\n\n\n\n\n\nHint\n\n\n\n\n\nIf you pick a good u-substitution, there’s almost no work here.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
@@ -1286,7 +1286,7 @@
     "href": "psets/pset_5.html#problem-6",
     "title": "Problem Set 5",
     "section": "Problem 6",
-    "text": "Problem 6\nConsider an absolutely continuous random variable \\(X\\) with pdf\n\\[\nf_X(x)=\\frac{e^{-\\frac{x-\\mu}{s}}}{s\\left[1+e^{-\\frac{x-\\mu}{s}}\\right]^2}\\quad x\\in\\mathbb{R},\n\\]\nwhere \\(\\mu\\in\\mathbb{R}\\) and \\(s&gt;0\\) are parameters.\n\nCompute the cdf of \\(X\\).\nCompute \\(E(X)\\).\n\n\n\n\n\n\n\nHint\n\n\n\nWork smarter not harder. You have that \\(1/s\\) constant out front, and that \\((x-\\mu)/s\\) bit floating around. What does that tell you?",
+    "text": "Problem 6\nConsider an absolutely continuous random variable \\(X\\) with pdf\n\\[\nf_X(x)=\\frac{e^{-\\frac{x-\\mu}{s}}}{s\\left[1+e^{-\\frac{x-\\mu}{s}}\\right]^2}\\quad x\\in\\mathbb{R},\n\\]\nwhere \\(\\mu\\in\\mathbb{R}\\) and \\(s&gt;0\\) are parameters.\n\nCompute the cdf of \\(X\\).\nCompute \\(E(X)\\).\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nWork smarter not harder. You have that \\(1/s\\) constant out front, and that \\((x-\\mu)/s\\) bit floating around. What does that tell you?",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
@@ -1308,7 +1308,7 @@
     "href": "psets/pset_5.html#problem-8",
     "title": "Problem Set 5",
     "section": "Problem 8",
-    "text": "Problem 8\nHere is the cdf of an absolutely continuous random variable \\(X\\):\n\\[\nF(x;\\,\\alpha,\\,\\theta)\n=\n\\begin{cases}\n1-\\left(\\frac{\\theta}{x + \\theta}\\right)^\\alpha & x &gt;0 \\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nThe parameters \\(\\alpha\\) and \\(\\theta\\) are just positive constants.\n\nFind the pdf of \\(X\\) and plot it for \\(\\alpha=1,\\, 2,\\, 3\\) and \\(\\theta = 1\\).\nCompute \\(E(X)\\). Is it finite for all values of the parameters?\nCompute \\(\\textrm{var}(X)\\). Is it finite for all values of the parameters?\nFix \\((\\alpha,\\,\\theta) = (3,\\, 100)\\) and compute \\(P(X &gt; 75\\,|\\, X &gt; 50)\\).",
+    "text": "Problem 8\nHere is the cdf of an absolutely continuous random variable \\(X\\):\n\\[\nF(x;\\,\\alpha,\\,\\theta)\n=\n\\begin{cases}\n1-\\left(\\frac{\\theta}{x + \\theta}\\right)^\\alpha & x &gt;0 \\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nThe parameters \\(\\alpha\\) and \\(\\theta\\) are just positive constants.\n\nFind the pdf of \\(X\\) and plot it for \\(\\alpha=1,\\, 2,\\, 3\\) and \\(\\theta = 1\\).\nCompute \\(E(X)\\). Is it finite for all values of the parameters?\nCompute \\(\\textrm{var}(X)\\). Is it finite for all values of the parameters?\nFix \\((\\alpha,\\,\\theta) = (3,\\, 100)\\) and compute \\(P(X &gt; 75\\,|\\, X &gt; 50)\\).\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nProblems 3 and 4 at the top of this very problem set provide you with alternative methods for calculating expected values. See if you don’t find them useful here.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
@@ -1352,7 +1352,7 @@
     "href": "psets/pset_5.html#problem-12",
     "title": "Problem Set 5",
     "section": "Problem 12",
-    "text": "Problem 12\nLet \\(Z\\sim\\textrm{N}(0,\\,1)\\) and let \\(X\\sim\\textrm{N}(0,\\,\\sigma^2)\\).\n\nFind the pdf of \\(Y=|Z|\\).\nCompute \\(E(Y)\\).\nCompute \\(\\textrm{var}(Y)\\).\nFind the pdf of \\(W=|X|\\).\nCompute \\(E(W)\\) and \\(\\textrm{var}(W)\\).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you do parts a, b, and c correctly, and you understand how \\(Z\\) and \\(X\\) are related to one another, then you don’t necessarily have to do a lot of work on parts d and e.",
+    "text": "Problem 12\nLet \\(Z\\sim\\textrm{N}(0,\\,1)\\) and let \\(X\\sim\\textrm{N}(0,\\,\\sigma^2)\\).\n\nFind the pdf of \\(Y=|Z|\\).\nCompute \\(E(Y)\\).\nCompute \\(\\textrm{var}(Y)\\).\nFind the pdf of \\(W=|X|\\).\nCompute \\(E(W)\\) and \\(\\textrm{var}(W)\\).\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nIf you do parts a, b, and c correctly, and you understand how \\(Z\\) and \\(X\\) are related to one another, then you don’t necessarily have to do a lot of work on parts d and e.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 5"
