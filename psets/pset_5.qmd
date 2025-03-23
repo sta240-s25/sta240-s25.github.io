@@ -58,7 +58,7 @@ $$
 
 ::: {.callout-tip collapse="true"}
 ## Hint
-Start on the left-hand side and manipulate it until you get the right-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn't.
+Start on the right-hand side and manipulate it until you get the left-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn't.
 :::
 
 ## Problem 4
