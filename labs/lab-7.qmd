@@ -1,0 +1,9 @@
+---
+title: "Lab 7"
+subtitle: Due Thursday April 3 at 11:59 PM
+---
+
+# Part 1 - covariance recap
+
+
+# Part 2 - modern portfolio theory
