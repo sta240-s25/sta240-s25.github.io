@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STA 240 Spring 2025 - Lab 7</title>
+<title>STA 240 Spring 2025 - Lab 7: risk and return</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="STA 240 Spring 2025 - Lab 7">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="STA 240 Spring 2025 - Lab 7: risk and return">
 <meta property="og:description" content="Due Thursday April 3 at 11:59 PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 7</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 7: risk and return</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -269,8 +298,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-1---covariance-recap" id="toc-part-1---covariance-recap" class="nav-link active" data-scroll-target="#part-1---covariance-recap">Part 1 - covariance recap</a></li>
-  <li><a href="#part-2---modern-portfolio-theory" id="toc-part-2---modern-portfolio-theory" class="nav-link" data-scroll-target="#part-2---modern-portfolio-theory">Part 2 - modern portfolio theory</a></li>
+  <li><a href="#part-1---covariance-recap" id="toc-part-1---covariance-recap" class="nav-link active" data-scroll-target="#part-1---covariance-recap">Part 1 - covariance recap</a>
+  <ul class="collapse">
+  <li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
+  <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
+  </ul></li>
+  <li><a href="#part-2---modern-portfolio-theory" id="toc-part-2---modern-portfolio-theory" class="nav-link" data-scroll-target="#part-2---modern-portfolio-theory">Part 2 - modern portfolio theory</a>
+  <ul class="collapse">
+  <li><a href="#a-two-asset-model" id="toc-a-two-asset-model" class="nav-link" data-scroll-target="#a-two-asset-model">A two-asset model</a></li>
+  <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
+  <li><a href="#task-4" id="toc-task-4" class="nav-link" data-scroll-target="#task-4">Task 4</a></li>
+  <li><a href="#task-5" id="toc-task-5" class="nav-link" data-scroll-target="#task-5">Task 5</a></li>
+  <li><a href="#task-6" id="toc-task-6" class="nav-link" data-scroll-target="#task-6">Task 6</a></li>
+  <li><a href="#task-infty" id="toc-task-infty" class="nav-link" data-scroll-target="#task-infty">Task <span class="math inline">\(\infty\)</span></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -279,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 7</h1>
+<h1 class="title">Lab 7: risk and return</h1>
 <p class="subtitle lead">Due Thursday April 3 at 11:59 PM</p>
 </div>
 
@@ -297,13 +338,133 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<blockquote class="blockquote">
+<p>My ventures are not in one bottom trusted,<br>Nor to one place; nor is my whole estate<br>Upon the fortune of this present year:<br>Therefore my merchandise makes me not sad.</p>
+<p><em>The Merchant of Venice</em></p>
+</blockquote>
+<p>Mathematical finance is a major area of application for probability and statistics. When an individual or institution is deciding how best to invest their money, there are many competing options (stocks, bonds, real estate, Broadway musicals, etc), and they all bare some type of risk (EXAMPLES). The hope is that mathematical models can be used to manage this risk and guide investors in making optimal decisions in an environment of uncertainty.</p>
+<p>In this lab, we will use tools from our course to study the <em>portfolio selection problem</em>. That is, given two competing assets, what fraction of my money should I invest in one, and what fraction should I invest in the other? Should I go 50/50? 60/40? 25/75? 100/0? The answer will hinge on two important points:</p>
+<ul>
+<li>what does “should” mean (ie what exactly is our objective)?</li>
+<li>what is the correlation between the two assets?</li>
+</ul>
 <section id="part-1---covariance-recap" class="level1">
 <h1>Part 1 - covariance recap</h1>
+<p>If <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are jointly distributed random variables (of any type), then their <strong>covariance</strong> is</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{cov}(X,\,Y)
+&amp;=
+E\left[(X - E(X))(Y-E(Y))\right]
+\\
+&amp;=
+E(XY)-E(X)E(Y)
+.
+\end{align*}
+\]</span> This measures their <em>linear</em> association. Covariance can be positive, negative, or zero, indicating variables that tend to move together, tend to move apart, or tend to do their own thing, respectively. The magnitude of the covariance can be challenging to interpret, so it is useful to look at the normalized version called the <strong>correlation</strong>:</p>
+<p><span class="math display">\[
+\text{cor}(X,\,Y) = \frac{\text{cov}(X,\,Y)}{\text{sd}(X)\text{sd}(Y)}\in[-1,\,1].
+\]</span> ADD REGRESSION PIC.</p>
+<p>The definition of correlation gives us another way of writing the covariance which might come in handy:</p>
+<p><span class="math display">\[
+\text{cov}(X,\,Y) = \text{cor}(X,\,Y)\text{sd}(X)\text{sd}(Y).
+\]</span></p>
+<section id="task-1" class="level2">
+<h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<p>Let <span class="math inline">\((X,\,Y)\)</span> be jointly distributed <strong>and not necessarily independent</strong>. If <span class="math inline">\(a,\,b\in\mathbb{R}\)</span> are constants, what is <span class="math inline">\(E(aX+bY)\)</span>?</p>
+</section>
+<section id="task-2" class="level2">
+<h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+<p>What is <span class="math inline">\(\text{var}(aX+bY)\)</span>?</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="part-2---modern-portfolio-theory" class="level1">
 <h1>Part 2 - modern portfolio theory</h1>
+<p>What should you do with your savings? This is a fundamental question that all grown-ups must confront at some point. If you just leave your money as cash under a mattress, inflation will eat away at its value over time, so you need to trade your cash for assets that will earn a positive real rate of return. But what should you buy? There are thousands of stocks and bonds you could choose from, not to mention paintings, crypto, NFTs, real estate, Beanie Babies, you name it. So, what are you going to buy, and in what amounts? This is called your <em>portfolio</em>.</p>
+<p>Selecting a portfolio is hard because all of the options are fundamentally risky. If a friend proposes that you invest in a new restaurant they are opening, it is far from guaranteed that you will ever get your money back. The <em>return</em> on an asset is</p>
+<p><span class="math display">\[
+R
+=
+\frac{\text{final value} - \text{initial cost}}{\text{initial cost}}.
+\]</span></p>
+<p>So, how much money you made or lost compared to how much you paid. If the top is zero, you broke even. If the top is positive, you made money. If the top is negative, you lost money. As generations of luckless investors can tell you, there is a tremendous amount of random variation in asset returns, and we want to compile the “best” portfolio possible subject to this uncertainty. Maybe probability theory can help.</p>
+<section id="a-two-asset-model" class="level2">
+<h2 class="anchored" data-anchor-id="a-two-asset-model">A two-asset model</h2>
+<p>Imagine we live in a stylized world where there are only two assets, and we must decide what fraction of our money to invest in one, and what fraction to invest in the other. Sure, we could be talking about two stocks (Apple versus Google), or stocks versus bonds, or something fancy like that, but JZ loves Broadway musicals, so let’s imagine that two producers come to my office and try to convince</p>
+<p><em>Quiet!</em>, a musical version of All Quiet on the Western Front</p>
+<p><span class="math display">\[
+R = \alpha R_1 + (1-\alpha) R_2
+\]</span></p>
+<p>So we know that</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(R)
+&amp;=
+\alpha
+\mu_1
++
+(1-\alpha)
+\mu_2
+\\
+\text{var}(R)
+&amp;=
+\alpha^2\sigma_1^2+(1-\alpha)^2\sigma^2_2+2\alpha(1-\alpha)COV
+\end{aligned}
+\]</span></p>
+</section>
+<section id="task-3" class="level2">
+<h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+<p>Imagine two possible portfolios:</p>
+<ul>
+<li>Portfolio 1: I invest 50/50 in both assets;</li>
+<li>Portfolio 2: I put all my money in . So 100/0.</li>
+</ul>
+<p>Compute the expected return and the variance</p>
+<p>Even though these two assets are identical, diversification decreases risk.</p>
+</section>
+<section id="task-4" class="level2">
+<h2 class="anchored" data-anchor-id="task-4">Task 4</h2>
+<p>Solve for the optimal weight</p>
+<p>minimize variance subject to</p>
+</section>
+<section id="task-5" class="level2">
+<h2 class="anchored" data-anchor-id="task-5">Task 5</h2>
+<p>draw the efficient frontier</p>
+</section>
+<section id="task-6" class="level2">
+<h2 class="anchored" data-anchor-id="task-6">Task 6</h2>
+<p>when you change covariance, mean returns, variance,</p>
+</section>
+<section id="task-infty" class="level2">
+<h2 class="anchored" data-anchor-id="task-infty">Task <span class="math inline">\(\infty\)</span></h2>
+<p>This toy model was enough for one lab, but it can be extended in several directions to make it more realistic:</p>
+<ul>
+<li>We assumed only two assets, but <a href="https://www.jstor.org/stable/2975974">the original 1952 paper</a> by Harry Markowitz worked things out for a general set of <span class="math inline">\(n\)</span> assets;</li>
+<li>We performed a “mean-variance” analysis that ignored all features of the return distribution besides the first and second moment. But other features matter, like the skew (third moment). If the distribution of <span class="math inline">\(R_1\)</span> is very left skewed (skewed toward the negative end, losing money) compared to <span class="math inline">\(R_2\)</span>, that should surely affect the weight I place on that asset;</li>
+<li>We assumed that the means and variances of asset returns were known, when in fact they are unknown and must be estimated from data, which is a major complication;</li>
+<li>We assumed a static world where the decisions and their consequences are all shaking out in a single period, but the world is dynamic and decisions but be sequentially re-optimized as the environment changes;</li>
+<li>We assumed the portfolio weight <span class="math inline">\(w\)</span> had to be in <span class="math inline">\([0,\,1]\)</span>, but why? Ever heard of <a href="https://en.wikipedia.org/wiki/Short_(finance)">shorting</a>?</li>
+</ul>
+<p>If you take courses in mathematical finance, you’ll learn about all of these things and much more. And you’ll use a ton of probability and statistics along the way!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
