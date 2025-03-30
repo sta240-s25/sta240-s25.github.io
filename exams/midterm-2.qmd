@@ -2,36 +2,115 @@
 title: "Extra Practice for Midterm 2"
 ---
 
-On Monday March 31 during our usual class meeting, we have our second midterm exam. It will focus on the following topics:
+# Problem 1
 
--   Set theory;
--   Probability axioms and basic rules;
--   Counting methods;
--   Conditional probability and independence;
--   Random variables in general, and discrete random variables in particular.
+Consider a nonnegative, absolutely continuous random variable with cdf
 
-Below is a set of practice problems to help you prepare.
+$$
+F_X(x)
+=
+\begin{cases}
+1 - \exp\left(-\frac{x^2}{2}\right) & x\geq 0
+\\
+0 & x<0.
+\end{cases}
+$$
 
-# Discrete random variables
+a.  What is $P(2\leq X\leq 3)$;
+b.  What is the density of $X$?
+c.  What is $E(X^n)$ for any $n\in\mathbb{N}$?
+d.  What is $\text{var}(X)$?
+e.  What is the median of $X$?
 
-## Problem 
+::: {.callout-tip collapse="true"}
+## Answers
 
-One fine day you are walking down the street when you are accosted by some shyster. He wants to charge you $c$ dollars to play the following game:
+a. $P(2\leq X\leq 3)=F_X(3)- F_X(2)\approx 0.124$;
+b. $f_X(x)=xe^{-x^2/2}$ for $x\geq 0$;
+c. $E(X^n)=2^{n/2}\Gamma(1 + n/2)$;
+d. $\text{var}(X)=(4-\pi)/2$;
+e. $\text{median}(X)=\sqrt{2\ln 2}$.
 
--   The man will flip a fair coin until a tail appears for the first time;
--   If the tail appears on the $n$th flip, you will win $2^n$ dollars.
+:::
 
-Let $X$ denote your winnings when you play this game.
+# Problem 2
 
-a.  What is the range of $X$?
-b.  What is the pmf of $X$?
-c.  What is $E(X)$?
-d.  How much would you be willing to pay for the chance to play this game once? Explain your thought-process.
-e.  You say to the guy "Now wait just a gosh-darned minute. Let's say for the sake of argument that the first tail does not appear until the hundredth flip ($n=100$). In that case you'd have to pay me $2^{100}\approx 1.26 × 10^{30}$ dollars. Do you even have that kind of dough?" The guy says "Well, no. I only have $\$W$ to pay you with, so if this goes on long enough, we'd just have to stop, and I'd have to give you all of my money." Let $Y$ denote your winnings when you play this *new* game that terminates once the guy runs out of money. What is $E(Y)$, and how much would you be willing to pay for the chance to play this game once?
+Let $X$ be a discrete random variable with
 
-# Absolutely continuous random variables
+| $x$      | -1  | 3   | 7   |
+|----------|-----|-----|-----|
+| $P(X=x)$ | 0.5 | 0.2 | 0.3 |
 
-# Transformations 
+a.  Compute the mgf of $X$.
+b.  Compute the mean two ways: using the definition, and using the mgf. Confirm that you get the same answer.
+c.  Compute the variance two ways: using the definition, and using the mgf. Confirm that you get the same answer.
 
-# Joint distributions
+::: {.callout-tip collapse="true"}
+## Answers
 
+a. $M_X(t)=0.5e^{-t}+0.2e^{3t}+0.3e^{7t}$ for all $t\in\mathbb{R}$;
+b. $E(X)=2.2$;
+c. $\text{var}(X)=12.16$.
+:::
+
+# Problem 3
+
+Let $X$ have density
+
+$$
+f_X(x)
+=
+\frac{1}{2}
+e^{-|x|},\quad x\in\mathbb{R}.
+$$
+
+a.  What is the mgf of $X$?
+b.  What is the mean?
+c.  What is the variance?
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a. $M_X(t)=1 / (1-t^2)$ for all $-1 < t < 1$;
+b. $E(X)=0$;
+c. $\text{var}(X)=2$.
+:::
+
+# Problem 4
+
+Let $X\sim\text{Unif}(0,\,1)$, and find the density of $Y=X^2$.
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+$\text{Range}(Y)=(0,\,1)$ and 
+
+$$
+f_Y(y) = \frac{1}{2\sqrt{y}},\quad 0<y<1.
+$$
+
+:::
+
+# Problem 5
+
+Consider this joint distribution written in hierarchical form:
+
+$$
+\begin{align*}
+X & \sim\text{Unif}(0,\,1)\\
+Y\,|\,X = x & \sim \text{Unif}(0,\,x).
+\end{align*}
+$$
+
+a.  What is the joint range?
+b.  What is the marginal density of $Y$?
+c.  What is the conditional density of $X$?
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a. $\text{Range}(X,\,Y)=\{(x,\,y)\in\mathbb{R}^2:0<x<1;\,0<y<x\}$;
+b. $f_Y(y)=\ln(1/y)$ for $0<y<1$;
+c. $f_{X|Y}(x\,|\,y)=\frac{1}{x\ln(1/y)}$ for $0<y<x<1$.
+
+:::
