@@ -7,7 +7,7 @@ subtitle: Due Thursday April 3 at 11:59 PM
 >
 > *The Merchant of Venice*
 
-Mathematical finance is a major area of application for probability and statistics. When an individual or institution is deciding how best to invest their money, there are many competing options (stocks, bonds, real estate, Broadway musicals, etc), and they all bare some type of risk (EXAMPLES). The hope is that mathematical models can be used to manage this risk and guide investors in making optimal decisions in an environment of uncertainty.
+Mathematical finance is a major area of application for probability and statistics. When an individual or institution is deciding how best to invest their money, there are many competing options (stocks, bonds, real estate, etc), and they all bare some type of risk. The hope is that mathematical models can be used to manage this risk and guide investors in making optimal decisions in an environment of uncertainty.
 
 In this lab, we will use tools from our course to study the *portfolio selection problem*. That is, given two competing assets, what fraction of my money should I invest in one, and what fraction should I invest in the other? Should I go 50/50? 60/40? 25/75? 100/0? The answer will hinge on two important points:
 
@@ -28,11 +28,17 @@ E\left[(X - E(X))(Y-E(Y))\right]
 E(XY)-E(X)E(Y)
 .
 \end{align*}
-$$ This measures their *linear* association. Covariance can be positive, negative, or zero, indicating variables that tend to move together, tend to move apart, or tend to do their own thing, respectively. The magnitude of the covariance can be challenging to interpret, so it is useful to look at the normalized version called the **correlation**:
+$$ 
+
+This measures their *linear* association. Covariance can be positive, negative, or zero, indicating variables that tend to move together, tend to move apart, or tend to do their own thing, respectively. The magnitude of the covariance can be challenging to interpret, so it is useful to look at the normalized version called the **correlation**:
 
 $$
 \text{cor}(X,\,Y) = \frac{\text{cov}(X,\,Y)}{\text{sd}(X)\text{sd}(Y)}\in[-1,\,1].
-$$ ADD REGRESSION PIC.
+$$ 
+
+This is a number between -1 and 1 that summarizes the strength and direction of the linear relationship between $X$ and $Y$. Here are some examples of what that might look like:
+
+![](corr-example.png){fig-align="center"}
 
 The definition of correlation gives us another way of writing the covariance which might come in handy:
 
@@ -42,20 +48,17 @@ $$
 
 ## Task 1
 
-Let $(X,\,Y)$ be jointly distributed **and not necessarily independent**. If $a,\,b\in\mathbb{R}$ are constants, what is $E(aX+bY)$?
+Let $(X,\,Y)$ be jointly distributed and **possibly dependent**. If $a,\,b\in\mathbb{R}$ are constants, what is $E(aX+bY)$?
 
 ## Task 2
 
-What is $\text{var}(aX+bY)$?
-
-::: {.callout-warning collapse="true"}
-:::
+What is $\text{var}(aX+bY)$, again accounting for the possibility that $X$ and $Y$ are dependent?
 
 # Part 2 - modern portfolio theory
 
-What should you do with your savings? This is a fundamental question that all grown-ups must confront at some point. If you just leave your money as cash under a mattress, inflation will eat away at its value over time, so you need to trade your cash for assets that will earn a positive real rate of return. But what should you buy? There are thousands of stocks and bonds you could choose from, not to mention paintings, crypto, NFTs, real estate, Beanie Babies, you name it. So, what are you going to buy, and in what amounts? This is called your *portfolio*.
+What should you do with your savings? This is a fundamental question that all grown-ups must confront at some point. If you just leave your money as cash under a mattress, inflation (remember that?) will eat away at its value over time, so you need to trade your cash for assets that will earn a positive real rate of return. But what should you buy? There are thousands of stocks and bonds you could choose from, not to mention paintings, crypto, NFTs, real estate, Beanie Babies, you name it. So, what are you going to buy, and in what amounts? This is called your **portfolio**.
 
-Selecting a portfolio is hard because all of the options are fundamentally risky. If a friend proposes that you invest in a new restaurant they are opening, it is far from guaranteed that you will ever get your money back. The *return* on an asset is
+Selecting a portfolio is hard because all of the options are fundamentally risky. If a friend proposes that you invest in a new restaurant they are opening, it is far from guaranteed that you will ever get your money back. The **return** on an asset is
 
 $$
 R
@@ -65,67 +68,139 @@ $$
 
 So, how much money you made or lost compared to how much you paid. If the top is zero, you broke even. If the top is positive, you made money. If the top is negative, you lost money. As generations of luckless investors can tell you, there is a tremendous amount of random variation in asset returns, and we want to compile the "best" portfolio possible subject to this uncertainty. Maybe probability theory can help.
 
-## A two-asset model
+Imagine we live in a stylized world where there are only two assets, and we must decide what fraction of our money to invest in one, and what fraction to invest in the other. Sure, we could be talking about two stocks (Apple versus Google), or stocks versus bonds, or something fancy like that, but JZ loves musicals, so let's imagine that two producers come to my office and try to convince me to invest in the shows they are developing on Broadway: 
 
-Imagine we live in a stylized world where there are only two assets, and we must decide what fraction of our money to invest in one, and what fraction to invest in the other. Sure, we could be talking about two stocks (Apple versus Google), or stocks versus bonds, or something fancy like that, but JZ loves Broadway musicals, so let's imagine that two producers come to my office and try to convince
+- **Investment A**: a stake in *Quiet!*, a light, frothy adaptation of [*All Quiet on the Western Front*](https://en.wikipedia.org/wiki/All_Quiet_on_the_Western_Front);
+- **Investment B**: a stake in *Tidy!*, with rollicking numbers like "`pivot` the Night Away" and "`facet_wrap`ped in Your Love."
 
-*Quiet!*, a musical version of All Quiet on the Western Front
+Let $R_A$ denote the return on the first investment, and $R_B$ the return on the second. These are jointly distributed continuous random variables that could take on any real numbers (positive, negative, or zero), and so perhaps the bivariate normal distribution is a good model. In fact, asset returns are notoriously heavy tailed (likely to surprise you both for good and ill), so something like bivariate Student's $t$ might be more appropriate. But I digress. Let's introduce some notation:
+
+- **The means**: $\mu_A=E(R_A)$ and $\mu_B=E(R_B)$;
+- **The variances**: $\sigma^2_A=\text{var}(R_A)$ and $\sigma^2_B=\text{var}(R_B)$;
+- **The correlation**: $\rho=\text{cor}(R_A,\,R_B)$.
+
+Capturing the relationship between asset returns is a crucial part of this analysis. If something devastating happens in New York City, both $R_A$ and $R_B$ would be affected simultaneously. Or if it's a particularly good summer for Manhattan tourism, both might benefit. The choice of how much money to invest in one versus the other will depend in no small part on how these two random variables do or do not move together. 
+
+Now let's do some investing. Let $w\in[0,\,1]$ be the fraction of your money that you invest in $A$, implying that you invest the remaining $1-w$ portion in $B$. The return on your overall portfolio is a new random variable:
 
 $$
-R = \alpha R_1 + (1-\alpha) R_2
+R = w R_A + (1-w) R_B
 $$
 
-So we know that
+In other words, the investment return you will enjoy is the weighted average of the returns on the two possible assets, weighted by the fraction of your money you invested in them. This is just a linear combination of *dependent* random variables, and so we know from Part 1 that 
 
 $$
 \begin{aligned}
 E(R)
 &=
-\alpha
-\mu_1
+w
+\mu_A
 +
-(1-\alpha)
-\mu_2
+(1-w)
+\mu_B
 \\
-\text{var}(R)
+\text{sd}(R)
 &=
-\alpha^2\sigma_1^2+(1-\alpha)^2\sigma^2_2+2\alpha(1-\alpha)COV
+\sqrt{w^2\sigma_A^2+(1-w)^2\sigma^2_B+2w(1-w)\rho\sigma_A\sigma_B}.
 \end{aligned}
 $$
 
+$E(R)$ is your expected return, and $\text{sd}(R)$ is the variability of that return. In finance we use $\text{sd}(R)$ as a measure of the **risk** of the portfolio. In a perfect world, we would want $E(R)=+\infty$ and $\text{sd}(R)=0$. Well, that's not gonna happen, but you get the idea. We want (expected) returns to be high, and risk to be low, but there's a trade-off.
+
 ## Task 3
+
+Assume momentarily that $R_A$ and $R_B$ are independent and identically distributed (iid), implying that $E(R_A)=E(R_B)=\mu$, $\text{var}(R_A)=\text{var}(R_B)=\sigma^2$, and $\text{cor}(R_A,\,R_B) = 0$.
 
 Imagine two possible portfolios:
 
--   Portfolio 1: I invest 50/50 in both assets;
--   Portfolio 2: I put all my money in . So 100/0.
+-   **Portfolio 1**: invest equally in both assets;
+-   **Portfolio 2**: invest everything in $A$ and none in $B$.
 
-Compute the expected return and the variance
+Compute the mean and variance of the return for each portfolio. Which portfolio would you prefer to hold, and why?
 
-Even though these two assets are identical, diversification decreases risk.
+::: callout-tip
+## Wink wink nudge nudge
+It might be good to include the word *diversification* in your answer.
+:::
 
 ## Task 4
 
-Solve for the optimal weight
+Every weight $w\in[0,\,1]$ corresponds to a different portfolio, and each portfolio will have a different mean and variance (ie return and risk) associated with it. To display the full menu of options, we can plot the so-called "Markowitz bullet:" 
 
-minimize variance subject to
+```{r}
+#| fig-asp: 1
+#| echo: false
+markowitz_bullet <- function(EA, EB, VA, VB, r){
+  w <- seq(0, 1, length.out = 1000)
+  sA = sqrt(VA)
+  sB = sqrt(VB)
+  ER = w * EA + (1 - w) * EB
+  VR = w^2 * VA + (1-w)^2 * VB + 2 * w * (1-w) * r * sA * sB
+  SR = sqrt(VR)
+  plot(SR, ER, 
+       type = "l", 
+       xlim = c(0, 1.1 * max(SR)), 
+       ylim = c(0, 1.1 * max(ER)),
+       xlab = "Portfolio standard deviation (risk)",
+       ylab = "Expected return",
+       main = expression(
+         mu[A]~" = 3; "~mu[B]~" = 1; "~sigma[A]~" = 0.707; "~sigma[B]~" = 1; "~rho~" = -0.5"
+       ))
+  points(c(sA, sB), c(EA, EB), pch = 19)
+}
+
+markowitz_bullet(3, 1, 0.5, 1, -0.5)
+```
+
+Each point along this curve corresponds to a different $w$ and its associated (risk, return) pair. The endpoints of the curve correspond to the portfolios that place all weight on either of the assets ($w=0$ or $w=1$), and then you have all the combinations in between. 
+
+What is this curve saying about *diversification* and the trade-off between risk and return? Where on the curve would you personally prefer to be?
 
 ## Task 5
 
-draw the efficient frontier
+Fill in the blanks below to write a function in `R` that plots the bullet:
+
+```{r}
+#| eval: false 
+
+markowitz_bullet <- function(EA, EB, VA, VB, r){
+  w <- seq(0, 1, length.out = 1000)
+  
+  BLANK 
+  
+  plot( BLANK )
+}
+```
+
+The function will take five numbers as arguments: the means and variances of the two assets, as well as their correlation. 
+
+
 
 ## Task 6
 
-when you change covariance, mean returns, variance,
+Play around with the function you wrote. Plot the bullet for different choices of means, variances, and correlations. Observe how these different settings change the shape of the curve, and write a sentence or two discussing the lesson for diversification, portfolio selection, navigating the trade-off between risk and return, whatever:
+
+a. if $R_A$ and $R_B$ are iid;
+b. $\mu_A > \mu_B$, $\sigma_A = \sigma_B$, and $\rho = 0$;
+c. $\mu_A > \mu_B$, $\sigma_A = \sigma_B$, and $\rho = 0.5$;
+d. $\mu_A > \mu_B$, $\sigma_A = \sigma_B$, and $\rho = 1$;
+e. $\mu_A > \mu_B$, $\sigma_A = \sigma_B$, and $\rho = -0.5$;
+f. $\mu_A > \mu_B$, $\sigma_A = \sigma_B$, and $\rho = -1$;
+g. $\mu_A > \mu_B$ and $\sigma_A = 0$;
+h. $\mu_A > \mu_B$ and $\sigma_B = 0$.
+
+## Task 7
+
+Assume $R_A$ and $R_B$ are uncorrelated, and the variances could be anything. Solve for the value of $w$ that minimizes $\text{var}(R)$. 
 
 ## Task $\infty$
 
 This toy model was enough for one lab, but it can be extended in several directions to make it more realistic:
 
 -   We assumed only two assets, but [the original 1952 paper](https://www.jstor.org/stable/2975974) by Harry Markowitz worked things out for a general set of $n$ assets;
--   We performed a "mean-variance" analysis that ignored all features of the return distribution besides the first and second moment. But other features matter, like the skew (third moment). If the distribution of $R_1$ is very left skewed (skewed toward the negative end, losing money) compared to $R_2$, that should surely affect the weight I place on that asset;
--   We assumed that the means and variances of asset returns were known, when in fact they are unknown and must be estimated from data, which is a major complication;
--   We assumed a static world where the decisions and their consequences are all shaking out in a single period, but the world is dynamic and decisions but be sequentially re-optimized as the environment changes;
+-   We performed a "mean-variance" analysis that ignored all features of the return distribution besides the first and second moment. But other features matter, like the skew (third moment). If the distribution of $R_A$ is very left skewed (skewed toward the negative end where you lose money) compared to $R_B$, that should surely affect the weight I place on that asset;
+-   We assumed that the means and variances of asset returns were known, when in fact they are unknown and must be estimated from historical data, which is a major complication;
+-   We assumed a static world where the distribution of returns is fixed and the consequences of our decisions cash out in a single period, but the world is dynamic and decisions but be sequentially re-optimized as the environment changes;
 -   We assumed the portfolio weight $w$ had to be in $[0,\,1]$, but why? Ever heard of [shorting](https://en.wikipedia.org/wiki/Short_(finance))?
 
 If you take courses in mathematical finance, you'll learn about all of these things and much more. And you'll use a ton of probability and statistics along the way!
