@@ -25,10 +25,11 @@ Show that $\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}$.
 
 ::: {.callout-tip collapse="true"}
 ## Hint
+
 Two things to remember, for this problem set, for the midterm, and for life in general:
 
-- every probability density function is a funky integral identity in disguise;
-- "massage and squint."
+-   every probability density function is a funky integral identity in disguise;
+-   "massage and squint."
 :::
 
 ## Problem 2
@@ -58,6 +59,7 @@ $$
 
 ::: {.callout-tip collapse="true"}
 ## Hint
+
 Start on the right-hand side and manipulate it until you get the left-hand side. There are several ways to do this: one for those of you that took multivariable calculus, and one for those who didn't.
 :::
 
@@ -71,6 +73,7 @@ $$
 
 ::: {.callout-tip collapse="true"}
 ## Hint
+
 If you pick a good u-substitution, there's almost no work here.
 :::
 
@@ -141,6 +144,7 @@ d.  Fix $(\alpha,\,\theta) = (3,\, 100)$ and compute $P(X > 75\,|\, X > 50)$.
 
 ::: {.callout-tip collapse="true"}
 ## Hint
+
 Problems 3 and 4 at the top of this very problem set provide you with alternative methods for calculating expected values. See if you don't find them useful here.
 :::
 
@@ -184,6 +188,7 @@ e.  Compute $E(W)$ and $\textrm{var}(W)$.
 
 ::: {.callout-tip collapse="true"}
 ## Hint
+
 If you do parts a, b, and c correctly, and you understand how $Z$ and $X$ are related to one another, then you don't necessarily have to do a lot of work on parts d and e.
 :::
 
