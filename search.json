@@ -1128,6 +1128,13 @@
     ]
   },
   {
+    "objectID": "labs/lab-8.html",
+    "href": "labs/lab-8.html",
+    "title": "Lab 7: risk and return",
+    "section": "",
+    "text": "Part 1 - tuning up\nThursday April 17 is our last lab, and to celebrate, we will do something fun and silly. In order for this to go smoothly, please download the following programs onto your personal computer if you have not already done do:\n\nR: https://cran.rstudio.com/\n\nRStudio: https://posit.co/download/rstudio-desktop/\n\nMuseScore: https://musescore.org/en\n\n\nOnce you have downloaded these things, open RStudio, and install the gm package:\n\ninstall.packages(\"gm\")\n\nOnce you have done all of those things, copy this code into the console and try to run it:\n\nlibrary(gm)\n\nmusic &lt;- \n  Music() +\n  Meter(4, 4) +\n  Line(c(\"C5\", \"D5\", \"E5\", \"F5\"))\n  \nshow(music)\n\nIf everything went according to plan, the Viewer pane in the lower right will be launched, and inside you’ll see the following:\n\n\n\n\n\n\nDesired output\n\n\n\n\n\n\n\n\n\n\n\nPart 2"
+  },
+  {
     "objectID": "labs/lab-2.html",
     "href": "labs/lab-2.html",
     "title": "Lab 2",
