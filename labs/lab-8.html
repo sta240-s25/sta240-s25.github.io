@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>STA 240 Spring 2025 - Lab 7: risk and return</title>
+<title>STA 240 Spring 2025 - Lab 8</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,8 +93,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<meta property="og:title" content="STA 240 Spring 2025 - Lab 7: risk and return">
+}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+<meta property="og:title" content="STA 240 Spring 2025 - Lab 8">
 <meta property="og:description" content="Due Thursday April 10 at 11:59 PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
@@ -105,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 7: risk and return</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 8</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -292,13 +317,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#part-1---tuning-up" id="toc-part-1---tuning-up" class="nav-link active" data-scroll-target="#part-1---tuning-up">Part 1 - tuning up</a></li>
-  <li><a href="#part-2" id="toc-part-2" class="nav-link" data-scroll-target="#part-2">Part 2</a></li>
+<li><a href="#part-0---tuning-up" id="toc-part-0---tuning-up" class="nav-link active" data-scroll-target="#part-0---tuning-up">Part 0 - tuning up</a></li>
+  <li>
+<a href="#part-1---eating-spinach" id="toc-part-1---eating-spinach" class="nav-link" data-scroll-target="#part-1---eating-spinach">Part 1 - eating spinach</a>
+  <ul class="collapse">
+<li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
+  <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
+  <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
+  </ul>
+</li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Lab 7: risk and return</h1>
+<h1 class="title">Lab 8</h1>
 <p class="subtitle lead">Due Thursday April 10 at 11:59 PM</p>
 </div>
 
@@ -313,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header><section id="part-1---tuning-up" class="level1"><h1>Part 1 - tuning up</h1>
+</header><section id="part-0---tuning-up" class="level1"><h1>Part 0 - tuning up</h1>
 <p>Thursday April 17 is our last lab, and to celebrate, we will do something fun and silly. In order for this to go smoothly, please download the following programs onto your personal computer if you have not already done do:</p>
 <ul>
 <li>R: <a href="https://cran.rstudio.com/" class="uri">https://cran.rstudio.com/</a>
@@ -357,10 +389,192 @@ Desired output
 </div>
 </div>
 </div>
-</section><section id="part-2" class="level1"><h1>Part 2</h1>
+<p>If that worked, you’re all set! Sit tight until next week.</p>
+</section><section id="part-1---eating-spinach" class="level1"><h1>Part 1 - eating spinach</h1>
+<p>There is nothing fun or glamorous about today’s lab. All we’re trying to do is use computer simulation to drill down on the interpretation of a classical confidence interval, which is a fundamental concept in statistics, and one that both students and “experts” alike are prone to bungle.</p>
+<p>Imagine we have a sample of iid binary data from a Bernoulli distribution with some unknown probability of success <span class="math inline">\(p_0\in[0,\,1]\)</span>:</p>
+<p><span class="math display">\[
+X_1,\, X_2,\, X_3,\,...,\, X_n \overset{\text{iid}}{\sim}\text{Bern}(p_0)
+\]</span></p>
+<p>So each observation is of the form</p>
+<p><span class="math display">\[
+X_i=\begin{cases}
+0 &amp; \text{something did not happen} \\
+1 &amp; \text{something did happen}.
+\end{cases}
+\]</span></p>
+<p>You can think of 1/0 however you like: heads/tails, success/failure, true/false, win/lose. If we were in 101 or 199, these data might come to us as a lil’ baby data frame with <span class="math inline">\(n\)</span> rows and one column, like this:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 1
+      x
+  &lt;int&gt;
+1     1
+2     1
+3     0
+4     1
+5     0</code></pre>
+</div>
+</div>
+<p>This could be me flipping a coin five times and recording the outcome, or baking five soufflés and recording which rose and fell, or giving five performances of <em>Turandot</em> and recording how many times I crack or land the money note in Act 2. You get the idea.</p>
+<p>The purpose of collecting and analyzing these data is to estimate the unknown probability of success <span class="math inline">\(p_0\)</span>. This is the <em>true</em> probability of this event happening: the true probability of the coin coming up heads, etc. We don’t know what this number is, but given data, we seek to construct a best guess. A plausible method for guessing <span class="math inline">\(p_0\)</span> is to compute the sample proportion:</p>
+<p><span class="math display">\[
+\hat{p}_n=\frac{1}{n}\sum\limits_{i=1}^n X_i.
+\]</span></p>
+<p>This is the fraction of the time that I empirically observed the target event occurring, and with enough data, perhaps this is a a good <em>estimator</em> of the event’s probability. Indeed, from lecture we know that the sample proportion is unbiased and consistent:</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(\hat{p}_n)&amp;=p_0\\
+\text{var}(\hat{p}_n)&amp;=\frac{p_0(1-p_0)}{n}\\
+\hat{p}_n&amp;\overset{\text{prob}}{\to}p_0 \quad (\text{weak LLN}).
+\end{aligned}
+\]</span></p>
+<p>The estimator has other properties, and this estimator is not the only one we could consider, but clearly we’re barking up the right tree. Our guess is correct on average, and with enough data, we’re nailing it. Good enough.</p>
+<p>The sample proportion <span class="math inline">\(\hat{p}_n\)</span> is an example of a <em>point estimator</em>: given a sample of data, we calculate this number, and it provides our best guess at the unknown quantity of interest (the <em>estimand</em>). But one of the signal characteristics of statistics as a discipline is the quantification of uncertainty. Instead of just a single-number best guess (which is important!), we seek to produce a range of likely values that communicates how reliablyy estimated <span class="math inline">\(p_0\)</span> is given the data we have. This can be achieved with a <strong>confidence interval</strong>.</p>
+<p>A confidence interval is an interval <span class="math inline">\((L_n,\,U_n)\subseteq \mathbb{R}\)</span> with the following property:</p>
+<p><span class="math display">\[
+P(L_n&lt;p_0&lt;U_n)\geq 1-\alpha.
+\]</span></p>
+<p>We want the <strong>coverage</strong> or <strong>confidence level</strong> of the interval to be high (90%, 95%, 99%, etc), so we typically take <span class="math inline">\(\alpha=0.1, 0.05, 0.01, ...\)</span> Just like the point estimator <span class="math inline">\(\hat{p}_n\)</span>, the bounds <span class="math inline">\(L_n\)</span> and <span class="math inline">\(U_n\)</span> of the interval are computed from the data. The data are random, and so the bounds are random variables. When we refer to <span class="math inline">\(P(L_n&lt;p_0&lt;U_n)\)</span>, we are referring to the <em>sampling distribution</em> of the random interval. This is why it is improper to compute a confidence interval and say “there is a 95% chance that the true value is in this interval right here.” This is not guaranteed.</p>
+<p>There are many many ways to compute a confidence interval for any given estimation problem, but in lecture we focused on the one you are most likely to have seen in a course like AP Statistics. If <span class="math inline">\(n\)</span> is large, the central limit theorem guarantees that the standardization of <span class="math inline">\(\hat{p}_n\)</span> is approximately distributed like <span class="math inline">\(\text{N}(0,\,1)\)</span>:</p>
+<p><span class="math display">\[
+\frac{\hat{p}_n - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}\overset{\text{dist}}{\to}\text{N}(0,\,1).
+\]</span></p>
+<p>Who cares? Because the CLT is a general result that applies to any distribution (so long as mean and variance are finite), it gives us a method for constructing approximate confidence intervals for the mean of <em>any</em> data. In the case of the binary data we have, the CLT-based approximate confidence interval has the form</p>
+<p><span class="math display">\[
+\underbrace{\hat{p}_n}_{\text{point estimate}}\pm \underbrace{z\left(1-\frac{\alpha}{2}\right)\times \sqrt{\frac{p_0(1-p_0)}{n}}}_{\text{margin of error}}.
+\]</span></p>
+<p>The form of this interval is familiar: “point estimate plus or minus some <strong>margin of error</strong>.” Recall that <span class="math inline">\(z(p)=F_Z^{-1}(p)\)</span> is our notation for the quantiles of the standard normal distribution. The interval above is what we derived in class, but the one we will use in practice is</p>
+<p><span class="math display">\[
+\underbrace{\hat{p}_n}_{\text{point estimate}}\pm \underbrace{z\left(1-\frac{\alpha}{2}\right)\times \sqrt{\frac{\hat{p}_n(1-\hat{p}_n)}{n}}}_{\text{margin of error}}.
+\]</span></p>
+<p>The entire point of this exercise is that we do not know <span class="math inline">\(p_0\)</span>, so it’s silly to have a confidence interval formula that relies on knowing it. Replacing <span class="math inline">\(p_0\)</span> with <span class="math inline">\(\hat{p}_n\)</span> remains valid, and this is the sort of thing you might prove in STA 332. So, here’s what we’ve got:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Approximate <span class="math inline">\(100\times (1-\alpha)\%\)</span> confidence interval for the probability of success
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Given data <span class="math inline">\(X_1,\, X_2,\, X_3,\,...,\, X_n \overset{\text{iid}}{\sim}\text{Bern}(p_0)\)</span>, we can estimate <span class="math inline">\(p_0\)</span> with <span class="math inline">\(\hat{p}_n=n^{-1}\sum_{i=1}^nX_i\)</span>, and if we take</p>
+<p><span class="math display">\[
+\begin{align*}
+L_n&amp;=\hat{p}_n-z\left(1-\frac{\alpha}{2}\right)\sqrt{\frac{\hat{p}_n(1-\hat{p}_n)}{n}}\\
+U_n&amp;=\hat{p}_n+z\left(1-\frac{\alpha}{2}\right)\sqrt{\frac{\hat{p}_n(1-\hat{p}_n)}{n}},
+\end{align*}
+\]</span></p>
+<p>then the central limit theorem (and some other things) ensures that</p>
+<p><span class="math display">\[
+P\left(L_n&lt;p_0&lt;U_n\right)\approx 1-\alpha
+\]</span></p>
+<p>if the sample size <span class="math inline">\(n\)</span> is large enough, whatever that means.</p>
+</div>
+</div>
+<p>We see that the bounds of our interval depend on <span class="math inline">\(\hat{p}_n\)</span>, which is random. Different random samples of data will give us different point estimates and confidence intervals. So the coverage statement <span class="math inline">\(P\left(L_n&lt;p_0&lt;U_n\right)\approx 1-\alpha\)</span> refers to the behavior of the random interval bounds across repeated sampling.</p>
+<section id="task-1" class="level2"><h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<p>Pretend that we know for a fact that <span class="math inline">\(p_0 = 0.4\)</span>.</p>
+<ol type="a">
+<li>Use <code>rbinom</code> to simulate <span class="math inline">\(n=10\)</span> realizations from Bern(0.4) and store them in a vector.</li>
+<li>Compute <span class="math inline">\(\hat{p}_n\)</span> for your simulated data.</li>
+<li>Compute a 90% confidence for your simulated data (remember <code>qnorm</code>?).</li>
+<li>Is the true value <span class="math inline">\(p_0 = 0.4\)</span> in the interval you just computed?</li>
+<li>What is the probability that the true value is in the interval you just computed?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What are we driving at?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>One dataset, one point estimate, one interval. That’s all you’re going to have in practice. And that interval you computed for your data is either going to contain the true value or it’s not, with probability 100% or 0%, whatever the case may be. So the “90%” statement is not referring to the one-shot reliability of a particular realization of the interval on a single dataset. It is referring to the reliability of the interval <em>method</em> across datasets. So the sampling variability of the interval.</p>
+</div>
+</div>
+</div>
+</section><section id="task-2" class="level2"><h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+<p>One of the main ideas in classical statistics is sampling variability. We model data as a random sample from an unknown distribution. Different random samples will give different point and interval estimates. So the point and interval estimates are themselves random quantities, and we can itemize their performance and reliability by studying their sampling distribution and seeing how the estimates vary across datasets. If they vary a little, we are comforted. If they vary a lot, we are troubled.</p>
+<ol type="a">
+<li>Fill in this function:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sampling_distribution</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">p0</span>, <span class="va">n</span>, <span class="va">M</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="co"># p0: the true probability of success</span></span>
+<span>  <span class="co"># n: the sample size of each iid dataset from Bern(p0)</span></span>
+<span>  <span class="co"># M: the number of alternative datasets to generate</span></span>
+<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Inside, you should have a for loop. The loop cycles through <span class="math inline">\(M\)</span> iterations, each time simulating a data set of size <span class="math inline">\(n\)</span> from <code>Bern(p0)</code>. For each of those datasets, compute the sample proportion of ones (“successes”) in that dataset. At the end, you will have a collection of <span class="math inline">\(M\)</span> estimates. So, <span class="math inline">\(M\)</span> realizations of <span class="math inline">\(\hat{p}_n\)</span>. Plot a histogram of them: I like <a href="https://profiles.rice.edu/faculty/david-scott"><code>breaks = "Scott"</code></a> as you know, make sure it’s a density histogram, and fix the range of the horizontal axis to <code>xlim = c(0, 1)</code>.</p>
+<ol start="2" type="a">
+<li>
+<p>Play around with your function. Adjust <code>p0</code> and <code>n</code> and see what happens to the picture. In particular, convince yourself of these facts we have proven:</p>
+<ul>
+<li>the sampling distribution is centered on the true value;</li>
+<li>the sampling distribution’s spread (variance) shrinks as the sample size grows;</li>
+<li>the shape of the sampling distribution resembles a bell curve for large <span class="math inline">\(n\)</span>;</li>
+</ul>
+</li>
+<li><p>Here’s something true that we haven’t proven. The convergence of the sampling distribution to the normal is faster when the underlying distribution of the data is symmetric, and slower when the underlying distribution is highly skewed (this is a consequence of the Berry-Esseen theorem). What does that mean in this case? Can you use your function to illustrate that?</p></li>
+</ol></section><section id="task-3" class="level2"><h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+<p>You just simulated the sampling distribution of the sample proportion. Now let’s think about the sampling distribution of the confidence interval. When you repeatedly sample new datasets and compute a new confidence interval for each one, what fraction of those intervals contain the true value?</p>
+<ol type="a">
+<li>Fill in this function. It will be similar to your function in the previous task, but in each iteration of the loop, compute a confidence interval for that dataset, and check if the true value (whatever you chose for <code>p0</code>) is included in the interval. After the loop is done, tally up the fraction of your <span class="math inline">\(M\)</span> intervals that contained the true value.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">interval_coverage</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">p0</span>, <span class="va">n</span>, <span class="va">M</span>, <span class="va">alpha</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="co"># p0: the true probability of success</span></span>
+<span>  <span class="co"># n: the sample size of each iid dataset from Bern(p0)</span></span>
+<span>  <span class="co"># M: the number of alternative datasets to generate</span></span>
+<span>  <span class="co"># alpha: confidence level of the interval</span></span>
+<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Here is a schematic of what you’re implementing: <span class="math display">\[
+\underbrace{
+\begin{matrix}
+  &amp;&amp;\textrm{Bern}(p_0)&amp;\\
+  &amp;&amp;&amp;&amp;\\
+  \swarrow &amp; \swarrow &amp; \cdots &amp; \searrow &amp;\searrow \\[0.25cm]
+  x^{(1)}_1  &amp; x^{(2)}_1  &amp;        &amp; x^{(M-1)}_1 &amp; x^{(M)}_1\\[0.25cm]
+  x^{(1)}_2  &amp; x^{(2)}_2  &amp;        &amp; x^{(M-1)}_2 &amp; x^{(M)}_2\\[0.25cm]
+  \vdots     &amp; \vdots     &amp; \cdots &amp; \vdots &amp; \vdots       \\[0.25cm]
+  x^{(1)}_{n}  &amp; x^{(2)}_{n}  &amp;        &amp; x^{(M-1)}_n &amp; x^{(M)}_{n}\\[0.25cm]
+  \Big\downarrow &amp; \Big\downarrow &amp;        &amp; \Big\downarrow &amp; \Big\downarrow \\[0.25cm]
+  (L_n^{(1)},\,U_n^{(1)}) &amp; (L_n^{(2)},\,U_n^{(2)}) &amp; \cdots &amp; (L_n^{(M-1)},\,U_n^{(M-1)}) &amp; (L_n^{(M)},\,U_n^{(M)})\\
+  &amp;&amp;&amp;&amp;\\
+\end{matrix}
+}_{\text{What fraction of these intervals contain the true value of $p_0$? It had better be $\approx1-\alpha$!}}
+\]</span></p>
+<ol start="2" type="a">
+<li>If <span class="math inline">\(n\)</span> is large, your function had better spit out a number close to <span class="math inline">\(1-\alpha\)</span>. But if <span class="math inline">\(n\)</span> is moderate or small, it may not. And as we saw in the previous task, you might have a harder time achieving the prescribed coverage if <span class="math inline">\(p_0=0.001\)</span> versus if <span class="math inline">\(p_0=0.4\)</span>. Use your function to illustrate these points. Consider this sequence of sample sizes: <span class="math display">\[
+n = 10,\, 30,\, 50,\, 100,\, 150,\, 200,\, 250.
+\]</span> Apply your function to each sample size. Use <span class="math inline">\(\alpha = 0.05\)</span>. Create a line plot with sample size on the x-axis and the coverage of the confidence interval on the y-axis. Do this twice: once for <span class="math inline">\(p_0=0.1\)</span> and again for <span class="math inline">\(p_0=0.5\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What are we driving at?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>As <span class="math inline">\(n\)</span> increases, you should see the interval coverage creep up to 95%. When <span class="math inline">\(p_0=0.5\)</span>, this will happen pretty much immediately. When <span class="math inline">\(p_0=0.1\)</span>, it will take a minute to get going.</p>
+</div>
+</div>
+</div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
