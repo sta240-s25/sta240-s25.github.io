@@ -1,0 +1,62 @@
+---
+title: "Lab 7: risk and return"
+subtitle: Due Thursday April 10 at 11:59 PM
+---
+
+```{r}
+#| echo: false
+html_tag_audio <- function(file, type = c("wav")) {
+  type <- match.arg(type)
+  htmltools::tags$audio(
+    controls = "",
+    htmltools::tags$source(
+      src = file,
+      type = glue::glue("audio/{type}", type = type)
+    )
+  )
+}
+```
+
+# Part 1 - tuning up
+
+Thursday April 17 is our last lab, and to celebrate, we will do something fun and silly. In order for this to go smoothly, please download the following programs onto your personal computer if you have not already done do:
+
+-   R: <https://cran.rstudio.com/>
+-   RStudio: <https://posit.co/download/rstudio-desktop/>
+-   MuseScore: <https://musescore.org/en>
+
+Once you have downloaded these things, open RStudio, and install the [`gm`](https://cran.r-project.org/web/packages/gm/index.html) package:
+
+```{r}
+#| eval: false
+install.packages("gm")
+```
+
+Once you have done all of those things, copy this code into the console and try to run it:
+
+```{r}
+#| eval: false
+library(gm)
+
+music <- 
+  Music() +
+  Meter(4, 4) +
+  Line(c("C5", "D5", "E5", "F5"))
+  
+show(music)
+```
+
+If everything went according to plan, the **Viewer** pane in the lower right will be launched, and inside you'll see the following:
+
+::: callout-note
+## Desired output
+
+![](do_re_mi.png)
+
+```{r}
+#| echo: false
+html_tag_audio("do_re_mi.mp3", type = "wav")
+```
+:::
+
+# Part 2
