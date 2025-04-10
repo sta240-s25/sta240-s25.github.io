@@ -25,7 +25,7 @@ Thursday April 17 is our last lab, and to celebrate, we will do something fun an
 -   RStudio: <https://posit.co/download/rstudio-desktop/>
 -   MuseScore Studio: <https://musescore.org/en>
 
-    - select **Download Download MuseScore Studio without MuseHub**.
+    - select **Download MuseScore Studio without MuseHub**.
 
 Once you have downloaded these things, open RStudio, and install the [`gm`](https://cran.r-project.org/web/packages/gm/index.html) package:
 
