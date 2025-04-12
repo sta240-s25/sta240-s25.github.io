@@ -9,6 +9,7 @@ project:
     - notes/sta240-05-rv.pdf
     - notes/sta240-06-discrete.pdf
     - notes/sta240-07-expectation.pdf
+    - notes/sta240-ap-stats.pdf
 
 website:
   page-navigation: true
