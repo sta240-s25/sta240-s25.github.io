@@ -355,8 +355,8 @@ window.Quarto = {
   <ul class="collapse">
 <li><a href="#part-a-2" id="toc-part-a-2" class="nav-link" data-scroll-target="#part-a-2">Part a</a></li>
   <li><a href="#part-b-2" id="toc-part-b-2" class="nav-link" data-scroll-target="#part-b-2">Part b</a></li>
-  <li><a href="#part-d-1" id="toc-part-d-1" class="nav-link" data-scroll-target="#part-d-1">Part d</a></li>
   <li><a href="#part-c-2" id="toc-part-c-2" class="nav-link" data-scroll-target="#part-c-2">Part c</a></li>
+  <li><a href="#part-d-1" id="toc-part-d-1" class="nav-link" data-scroll-target="#part-d-1">Part d</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -476,15 +476,15 @@ See the lecture notes from class on 4/14
 </div>
 </section></section><section id="problem-3" class="level1"><h1>Problem 3</h1>
 <p>Imagine that I quit my job and open a factory that manufactures bow ties and light bulbs (<em>Zito’s Bows and Bulbs</em>). The ties are alright, but the bulbs suck. They burn out real quick. Each bulb is slightly different, and you can’t perfectly predict how long they will last, so the time (in hours) until the bulb dies is a random variable <span class="math inline">\(X\)</span>, and let’s assume <span class="math inline">\(X\sim\text{Exponential}(\lambda)\)</span>, where <span class="math inline">\(\lambda&gt;0\)</span> is unknown. Recall that <span class="math inline">\(E(X)=1/\lambda\)</span>, so the larger the rate, the sooner the burnout time.</p>
-<p>I want to estimate <span class="math inline">\(\lambda\)</span> to get a sense of how bad my light bulbs are, so I sample <span class="math inline">\(n\)</span> bulbs and record their burnout times: <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\sim\text{Exponential}(\lambda)\)</span>. At this point, I could just use the method of maximum likelihood to estimate <span class="math inline">\(\lambda\)</span>, but before I do, I go and consult Great Grandma Zito. She’s been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, <span class="math inline">\(\lambda\)</span> is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there’s uncertainty about that. In her opinion, the probability that <span class="math inline">\(\lambda&gt;3\)</span> is about 1.7%.</p>
+<p>I want to estimate <span class="math inline">\(\lambda\)</span> to get a sense of how bad my light bulbs are, so I sample <span class="math inline">\(n\)</span> bulbs and record their burnout times: <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim}\text{Exponential}(\lambda)\)</span>. At this point, I could just use the method of maximum likelihood to estimate <span class="math inline">\(\lambda\)</span>, but before I do, I go and consult Great Grandma Zito. She’s been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, <span class="math inline">\(\lambda\)</span> is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there’s uncertainty about that. In her opinion, the probability that <span class="math inline">\(\lambda&gt;3\)</span> is about 1.7%.</p>
 <p>I want to incorporate my grandmother’s prior knowledge into my analysis, so I decide to be Bayesian:</p>
 <p><span class="math display">\[
 \begin{aligned}
 \lambda &amp;\sim\text{Gamma}(\alpha_0,\,\beta_0) &amp;&amp; \text{(prior)}\\
-X_1,\,X_2,\,...,\,X_n\,|\,\lambda&amp;\sim\text{Exponential}(\lambda) &amp;&amp; \text{(data model)}.
+X_1,\,X_2,\,...,\,X_n\,|\,\lambda&amp;\overset{\text{iid}}{\sim}\text{Exponential}(\lambda) &amp;&amp; \text{(data model)}.
 \end{aligned}
 \]</span></p>
-<p><span class="math inline">\(\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)\)</span> is my prior distribution for the unknown parameter, and <span class="math inline">\(\alpha_0,\,\beta_0&gt;0\)</span> are <em>hyperparameters</em> that I will tune in order to encode the prior knowledge about <span class="math inline">\(\lambda\)</span> that my grandmother described. I chose the Gamma family because it is familiar to me, and I know that <span class="math inline">\(\lambda\)</span> is a continuous numerical quantity that must be positive.</p>
+<p><span class="math inline">\(\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)\)</span> is my prior distribution for the unknown parameter, and <span class="math inline">\(\alpha_0,\,\beta_0&gt;0\)</span> are <em>hyperparameters</em> that I will tune in order to encode the prior knowledge about <span class="math inline">\(\lambda\)</span> that my grandmother described. I chose the gamma family simply because it is convenient and familiar to me, and I know that <span class="math inline">\(\lambda\)</span> is a continuous numerical quantity that must be positive.</p>
 <section id="part-a-2" class="level2"><h2 class="anchored" data-anchor-id="part-a-2">Part a</h2>
 <p>Show that the posterior distribution for <span class="math inline">\(\lambda\)</span> in this model is</p>
 <p><span class="math display">\[
@@ -510,7 +510,7 @@ Pay attention to the notation here
 E(\lambda\,|\,X_1,\,X_2,\,...,\,X_n)=w_n\hat{\lambda}_n^{(MLE)} + (1-w_n)\underbrace{E(\lambda)}_{\text{prior mean}},
 \]</span></p>
 <p>where <span class="math inline">\(w_n\in(0,\,1)\)</span> might depend on the data. This means that the posterior mean is a <em>shrinkage estimator</em>. We shrink the MLE toward our prior estimate of the parameter.</p>
-</section><section id="part-d-1" class="level2"><h2 class="anchored" data-anchor-id="part-d-1">Part d</h2>
+</section><section id="part-c-2" class="level2"><h2 class="anchored" data-anchor-id="part-c-2">Part c</h2>
 <p>Construct a <span class="math inline">\(100\times (1-\alpha)\%\)</span> <em>credible set</em> that satisfies:</p>
 <p><span class="math display">\[
 P(\lambda \in C_n\,|\,X_{1:n})=1-\alpha.
@@ -528,7 +528,7 @@ Bayesian interpretation
 <p>In this context, we treat <span class="math inline">\(C_n\)</span> as fixed, and <span class="math inline">\(\lambda\)</span> as random. The probability comes from the posterior distribution on <span class="math inline">\(\lambda\)</span>.</p>
 </div>
 </div>
-</section><section id="part-c-2" class="level2"><h2 class="anchored" data-anchor-id="part-c-2">Part c</h2>
+</section><section id="part-d-1" class="level2"><h2 class="anchored" data-anchor-id="part-d-1">Part d</h2>
 <p>How should the prior hyperparameters <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> be set so that the prior distribution captures my grandmother’s beliefs about <span class="math inline">\(\lambda\)</span>?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">

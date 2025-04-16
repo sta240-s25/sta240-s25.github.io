@@ -780,22 +780,22 @@
     ]
   },
   {
-    "objectID": "psets/pset_6.html#part-d-1",
-    "href": "psets/pset_6.html#part-d-1",
+    "objectID": "psets/pset_6.html#part-c-2",
+    "href": "psets/pset_6.html#part-c-2",
     "title": "Problem Set 6",
-    "section": "Part d",
-    "text": "Part d\nConstruct a \\(100\\times (1-\\alpha)\\%\\) credible set that satisfies:\n\\[\nP(\\lambda \\in C_n\\,|\\,X_{1:n})=1-\\alpha.\n\\]\n\n\n\n\n\n\nBayesian interpretation\n\n\n\nIn this context, we treat \\(C_n\\) as fixed, and \\(\\lambda\\) as random. The probability comes from the posterior distribution on \\(\\lambda\\).",
+    "section": "Part c",
+    "text": "Part c\nConstruct a \\(100\\times (1-\\alpha)\\%\\) credible set that satisfies:\n\\[\nP(\\lambda \\in C_n\\,|\\,X_{1:n})=1-\\alpha.\n\\]\n\n\n\n\n\n\nBayesian interpretation\n\n\n\nIn this context, we treat \\(C_n\\) as fixed, and \\(\\lambda\\) as random. The probability comes from the posterior distribution on \\(\\lambda\\).",
     "crumbs": [
       "Problem Sets",
       "Problem Set 6"
     ]
   },
   {
-    "objectID": "psets/pset_6.html#part-c-2",
-    "href": "psets/pset_6.html#part-c-2",
+    "objectID": "psets/pset_6.html#part-d-1",
+    "href": "psets/pset_6.html#part-d-1",
     "title": "Problem Set 6",
-    "section": "Part c",
-    "text": "Part c\nHow should the prior hyperparameters \\(\\alpha_0\\) and \\(\\beta_0\\) be set so that the prior distribution captures my grandmother’s beliefs about \\(\\lambda\\)?\n\n\n\n\n\n\nLess math; more trial-and-error\n\n\n\nJust play around in the computer until you find numbers that work.",
+    "section": "Part d",
+    "text": "Part d\nHow should the prior hyperparameters \\(\\alpha_0\\) and \\(\\beta_0\\) be set so that the prior distribution captures my grandmother’s beliefs about \\(\\lambda\\)?\n\n\n\n\n\n\nLess math; more trial-and-error\n\n\n\nJust play around in the computer until you find numbers that work.",
     "crumbs": [
       "Problem Sets",
       "Problem Set 6"
