@@ -379,38 +379,38 @@ window.Quarto = {
 
 
 </header><section id="problem-0" class="level1"><h1>Problem 0</h1>
-<p>Recommend some music for me to listen to while I grade your final Exams on Sunday May 4.</p>
+<p>Recommend some music for me to listen to while I grade your final exam on Sunday May 4.</p>
 </section><section id="problem-1" class="level1"><h1>Problem 1</h1>
-<p>In statistics, we observe data <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} P_0\)</span> from an unknown probability distribution, and we try to use the data to estimate some feature <span class="math inline">\(\theta_0=\theta(P_0)\)</span> of the unknown distribution. Let’s assume that <span class="math inline">\(\theta_0\in\mathbb{R}\)</span> is a scalar summary, like the mean, median, variance, etc. We estimate <span class="math inline">\(\theta_0\)</span> by constructing an <strong>estimator</strong>:</p>
+<p>In statistics, we observe data <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} P_0\)</span> from an unknown probability distribution <span class="math inline">\(P\)</span>, and we try to use the data to estimate some feature <span class="math inline">\(\theta=\theta(P)\)</span> of the unknown distribution. Let’s assume that <span class="math inline">\(\theta\in\mathbb{R}\)</span> is a scalar summary, like the mean, median, variance, etc. We estimate <span class="math inline">\(\theta\)</span> by constructing an <strong>estimator</strong>:</p>
 <p><span class="math display">\[
 \hat{\theta}_n=\hat{\theta}(X_1,\,X_2,\,...,\,X_n).
 \]</span></p>
 <p>This is a function of the data, and the data are random, so the estimator is also random, and we say it has a <strong>sampling distribution</strong>. This is the distribution that describes the random variation you would observe in the estimate if you recomputed it across different random samples.</p>
 <p>To assess the accuracy of an estimator, you can study its mean squared error:</p>
 <p><span class="math display">\[
-\text{MSE}=E[(\hat{\theta}_n-\theta_0)^2].
+\text{MSE}=E[(\hat{\theta}_n-\theta)^2].
 \]</span></p>
 <p>So, on average, how far is the estimate from the truth? The smaller the MSE, the better the estimator.</p>
 <section id="part-a" class="level2"><h2 class="anchored" data-anchor-id="part-a">Part a</h2>
 <p>Show that</p>
 <p><span class="math display">\[
 \begin{aligned}
-E[(\hat{\theta}_n-\theta_0)^2] &amp;= \left[E(\hat{\theta}_n) - \theta_0\right]^2 + \text{var}(\hat{\theta}_n)\\
+E[(\hat{\theta}_n-\theta)^2] &amp;= \left[E(\hat{\theta}_n) - \theta\right]^2 + \text{var}(\hat{\theta}_n)\\
 &amp;=\text{bias}^2+\text{variance}.
 \end{aligned}
 \]</span></p>
 <p>This is the famous <strong>bias-variance trade-off</strong>. It’s natural to think that an <em>unbiased</em> estimator is ideal (bias = 0), but if you want MSE in total to be as small as possible, you also care about variance. So you might be willing to tolerate a little bit of bias if it corresponds to a large reduction in variance. This is the main idea behind <em>shrinkage</em> and <em>regularization</em> in statistics.</p>
 </section><section id="part-b" class="level2"><h2 class="anchored" data-anchor-id="part-b">Part b</h2>
-<p>Let <span class="math inline">\(\mu_0=E(X_1)\)</span> and <span class="math inline">\(\sigma_0^2=\text{var}(X_1)\)</span> be the true but unknown mean and variance of the data, and let’s focus on the task of estimating the mean. So far, we have used the sample average <span class="math inline">\(\bar{X}_n=\sum_{i=1}^nX_i/n\)</span> to do this, but let’s consider a new estimator: <span class="math display">\[
+<p>Let <span class="math inline">\(\mu=E(X_1)\)</span> and <span class="math inline">\(\sigma_0^2=\text{var}(X_1)\)</span> be the true but unknown mean and variance of the data, and let’s focus on the task of estimating the mean. So far, we have used the sample average <span class="math inline">\(\bar{X}_n=\sum_{i=1}^nX_i/n\)</span> to do this, but let’s consider a new estimator: <span class="math display">\[
 \hat{\mu}_n=\alpha\bar{X}_n+(1-\alpha)g,
 \]</span> where <span class="math inline">\(\alpha\in[0,\,1]\)</span> is a <em>tuning parameter</em> that you as the researcher must select, and <span class="math inline">\(g\in\mathbb{R}\)</span> is some <em>prior guess</em> at what the mean is. <span class="math inline">\(\hat{\mu}_n\)</span> is an example of a <strong>shrinkage estimator</strong>. Imagine we have decades of research devoted to estimating the mean, and that research says that the mean is probably equal to <span class="math inline">\(g\)</span>. Now we come along with a new dataset and conduct a new study. It would be silly to ignore what has come before, so we set our estimate at a combination of what the previous literature says (<span class="math inline">\(g\)</span>) and what our new study says (<span class="math inline">\(\bar{X}_n\)</span>). <span class="math inline">\(\alpha\)</span> describes the weight we give to the new research versus the old.</p>
 <p><strong>Your turn</strong>: What are the mean and variance of our shrinkage estimator <span class="math inline">\(\hat{\mu}_n\)</span>.</p>
 </section><section id="part-c" class="level2"><h2 class="anchored" data-anchor-id="part-c">Part c</h2>
-<p>Imagine that prior research says that the mean is probably <span class="math inline">\(g=1.6\)</span>, and you are conducting a new study with <span class="math inline">\(n=10\)</span>. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are <span class="math inline">\(\mu_0=10\)</span> and <span class="math inline">\(\sigma_0^2=1\)</span>. Yeesh, with friends like Zeus, who needs statistics!</p>
+<p>Imagine that prior research says that the mean is probably <span class="math inline">\(g=1.6\)</span>, and you are conducting a new study with <span class="math inline">\(n=10\)</span>. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are <span class="math inline">\(\mu=10\)</span> and <span class="math inline">\(\sigma^2=1\)</span>. Yeesh, with friends like Zeus, who needs statistics!</p>
 <p><strong>Your task</strong>: In <code>R</code>, create a well labeled line graph with <span class="math inline">\(\alpha\)</span> on the <span class="math inline">\(x\)</span>-axis. Plot, as a function of <span class="math inline">\(\alpha\)</span>, the squared bias of <span class="math inline">\(\hat{\mu}_n\)</span>, the variance of <span class="math inline">\(\hat{\mu}_n\)</span>, and the MSE of <span class="math inline">\(\hat{\mu}_n\)</span>. So, you should have three lines on the plot. Make them different colors, and add a cute legend labeling them.</p>
 <p>Using your graph, discuss the trade-off between bias and variance in estimation accuracy. Which choice of <span class="math inline">\(\alpha\)</span> would give as “optimal” estimator, in the sense of minimizing MSE?</p>
 </section></section><section id="problem-2" class="level1"><h1>Problem 2</h1>
-<p>Imagine you have iid data <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> from a distribution with the following density, where <span class="math inline">\(\theta&gt;0\)</span> is a parameter:</p>
+<p>Imagine you have iid data <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> from a distribution with the following density, where <span class="math inline">\(\theta&gt;0\)</span> is the unknown parameter:</p>
 <p><span class="math display">\[
 f(x\,|\,\theta)
 =
@@ -491,6 +491,19 @@ X_1,\,X_2,\,...,\,X_n\,|\,\lambda&amp;\sim\text{Exponential}(\lambda) &amp;&amp;
 \lambda\,|\,X_{1:n}=x_{1:n} \sim \text{Gamma}(\alpha_n,\,\beta_n).
 \]</span></p>
 <p>After we see some data, what are the revised hyperparameters <span class="math inline">\(\alpha_n,\,\beta_n\)</span> equal to?</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pay attention to the notation here
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before I see any data, <span class="math inline">\(\text{Gamma}(\alpha_0,\,\beta_0)\)</span> summarizes my beliefs about <span class="math inline">\(\lambda\)</span>. After I see some data, <span class="math inline">\(\text{Gamma}(\alpha_n,\,\beta_n)\)</span> summarizes my beliefs about <span class="math inline">\(\lambda\)</span>. <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> are the <em>prior</em> hyperparameters, and <span class="math inline">\(\alpha_n\)</span> and <span class="math inline">\(\beta_n\)</span> are the <em>posterior</em> hyperparameters. The subscript indicates how much data my beliefs are based on.</p>
+</div>
+</div>
 </section><section id="part-b-2" class="level2"><h2 class="anchored" data-anchor-id="part-b-2">Part b</h2>
 <p>Show that the posterior mean has the form</p>
 <p><span class="math display">\[
