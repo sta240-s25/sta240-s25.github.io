@@ -5,6 +5,8 @@ subtitle: Due Wednesday April 23 at 3PM
 
 # Problem 0
 
+Recommend some music for me to listen to while I grade your final Exams on Sunday May 4.
+
 # Problem 1
 
 In statistics, we observe data $X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} P_0$ from an unknown probability distribution, and we try to use the data to estimate some feature $\theta_0=\theta(P_0)$ of the unknown distribution. Let's assume that $\theta_0\in\mathbb{R}$ is a scalar summary, like the mean, median, variance, etc. We estimate $\theta_0$ by constructing an **estimator**:
