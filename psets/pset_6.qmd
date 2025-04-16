@@ -1,0 +1,181 @@
+---
+title: "Problem Set 6"
+subtitle: Due Wednesday April 23 at 3PM
+---
+
+# Problem 0
+
+# Problem 1
+
+In statistics, we observe data $X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} P_0$ from an unknown probability distribution, and we try to use the data to estimate some feature $\theta_0=\theta(P_0)$ of the unknown distribution. Let's assume that $\theta_0\in\mathbb{R}$ is a scalar summary, like the mean, median, variance, etc. We estimate $\theta_0$ by constructing an **estimator**:
+
+$$
+\hat{\theta}_n=\hat{\theta}(X_1,\,X_2,\,...,\,X_n).
+$$
+
+This is a function of the data, and the data are random, so the estimator is also random, and we say it has a **sampling distribution**. This is the distribution that describes the random variation you would observe in the estimate if you recomputed it across different random samples.
+
+To assess the accuracy of an estimator, you can study its mean squared error:
+
+$$
+\text{MSE}=E[(\hat{\theta}_n-\theta_0)^2].
+$$
+
+So, on average, how far is the estimate from the truth? The smaller the MSE, the better the estimator.
+
+## Part a
+
+Show that
+
+$$
+\begin{aligned}
+E[(\hat{\theta}_n-\theta_0)^2] &= \left[E(\hat{\theta}_n) - \theta_0\right]^2 + \text{var}(\hat{\theta}_n)\\
+&=\text{bias}^2+\text{variance}.
+\end{aligned}
+$$
+
+This is the famous **bias-variance trade-off**. It's natural to think that an *unbiased* estimator is ideal (bias = 0), but if you want MSE in total to be as small as possible, you also care about variance. So you might be willing to tolerate a little bit of bias if it corresponds to a large reduction in variance. This is the main idea behind *shrinkage* and *regularization* in statistics.
+
+## Part b
+
+Let $\mu_0=E(X_1)$ and $\sigma_0^2=\text{var}(X_1)$ be the true but unknown mean and variance of the data, and let's focus on the task of estimating the mean. So far, we have used the sample average $\bar{X}_n=\sum_{i=1}^nX_i/n$ to do this, but let's consider a new estimator: $$
+\hat{\mu}_n=\alpha\bar{X}_n+(1-\alpha)g,
+$$ where $\alpha\in[0,\,1]$ is a *tuning parameter* that you as the researcher must select, and $g\in\mathbb{R}$ is some *prior guess* at what the mean is. $\hat{\mu}_n$ is an example of a **shrinkage estimator**. Imagine we have decades of research devoted to estimating the mean, and that research says that the mean is probably equal to $g$. Now we come along with a new dataset and conduct a new study. It would be silly to ignore what has come before, so we set our estimate at a combination of what the previous literature says ($g$) and what our new study says ($\bar{X}_n$). $\alpha$ describes the weight we give to the new research versus the old.
+
+**Your turn**: What are the mean and variance of our shrinkage estimator $\hat{\mu}_n$.
+
+## Part c
+
+Imagine that prior research says that the mean is probably $g=1.6$, and you are conducting a new study with $n=10$. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are $\mu_0=10$ and $\sigma_0^2=1$. Yeesh, with friends like Zeus, who needs statistics!
+
+**Your task**: In `R`, create a well labeled line graph with $\alpha$ on the $x$-axis. Plot, as a function of $\alpha$, the squared bias of $\hat{\mu}_n$, the variance of $\hat{\mu}_n$, and the MSE of $\hat{\mu}_n$. So, you should have three lines on the plot. Make them different colors, and add a cute legend labeling them.
+
+Using your graph, discuss the trade-off between bias and variance in estimation accuracy. Which choice of $\alpha$ would give as "optimal" estimator, in the sense of minimizing MSE?
+
+# Problem 2
+
+Imagine you have iid data $X_1$, $X_2$, ..., $X_n$ from a distribution with the following density, where $\theta>0$ is a parameter:
+
+$$
+f(x\,|\,\theta)
+=
+\begin{cases}
+\frac{x}{\theta}
+\exp\left(-\frac{x^2}{2\theta}\right), & x\geq0\\
+0 & x< 0.
+\end{cases}
+$$
+
+You saw this distribution on Problem Set 5, where you showed, among other things, that the cdf of this distribution is 
+
+$$
+      F(x\,|\,\theta)=\begin{cases}
+      1-e^{-\frac{x^2}{2\theta}} & x\geq 0\\
+      0 & x <0.
+      \end{cases}
+$$
+
+## Part a
+
+Compute the maximum likelihood estimator for the parameter $\theta>0$: 
+
+$$
+    \hat{\theta}_n=\underset{\theta>0}{\arg\max}\,\ln L(\theta).
+$$
+
+## Part b
+
+Find the sampling distribution of $\hat{\theta}_n$, and compute its mean-squared error. What do these things tell you about the properties of this estimator?
+
+## Part c
+
+Construct a $100\times (1-\alpha)\%$ *confidence set* $C_n$ that satisfies 
+
+$$
+P(\theta\in C_n)=1-\alpha.
+$$
+
+::: callout-note
+## Classical interpretation
+In this context, we treat $C_n$ as random, and $\theta$ as fixed. The probability comes from the sampling distribution of $C_n$.
+:::
+
+## Part d
+
+Write a function in `R` that takes in two arguments `n` and `theta` and returns a vector with $n$ random numbers draw iid from the member of this family with parameter `theta`. In other words, fill in the blank:
+
+```{r}
+#| eval: false
+
+my_random_numbers <- function(n, theta){
+  # add code here.
+}
+```
+
+## Part e
+
+Write some code in `R` that simulates the sampling distribution of your estimator for various choices of sample size $n$ and visualizes how the distribution evolves as $n$ increases. Based on the picture, what are the properties of this estimator?
+
+::: callout-tip
+## See the lecture notes from class on 4/14
+:::
+
+
+# Problem 3
+
+Imagine that I quit my job and open a factory that manufactures bow ties and light bulbs (*Zito's Bows and Bulbs*). The ties are alright, but the bulbs suck. They burn out real quick. Each bulb is slightly different, and you can't perfectly predict how long they will last, so the time (in hours) until the bulb dies is a random variable $X$, and let's assume $X\sim\text{Exponential}(\lambda)$, where $\lambda>0$ is unknown. Recall that $E(X)=1/\lambda$, so the larger the rate, the sooner the burnout time.
+
+I want to estimate $\lambda$ to get a sense of how bad my light bulbs are, so I sample $n$ bulbs and record their burnout times: $X_1,\,X_2,\,...,\,X_n\sim\text{Exponential}(\lambda)$. At this point, I could just use the method of maximum likelihood to estimate $\lambda$, but before I do, I go and consult Great Grandma Zito. She's been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, $\lambda$ is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there's uncertainty about that. In her opinion, the probability that $\lambda>3$ is about 1.7%.
+
+I want to incorporate my grandmother's prior knowledge into my analysis, so I decide to be Bayesian:
+
+$$
+\begin{aligned}
+\lambda &\sim\text{Gamma}(\alpha_0,\,\beta_0) && \text{(prior)}\\
+X_1,\,X_2,\,...,\,X_n\,|\,\lambda&\sim\text{Exponential}(\lambda) && \text{(data model)}.
+\end{aligned}
+$$
+
+$\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)$ is my prior distribution for the unknown parameter, and $\alpha_0,\,\beta_0>0$ are *hyperparameters* that I will tune in order to encode the prior knowledge about $\lambda$ that my grandmother described. I chose the Gamma family because it is familiar to me, and I know that $\lambda$ is a continuous numerical quantity that must be positive.
+
+## Part a
+
+Show that the posterior distribution for $\lambda$ in this model is
+
+$$
+\lambda\,|\,X_{1:n}=x_{1:n} \sim \text{Gamma}(\alpha_n,\,\beta_n).
+$$
+
+After we see some data, what are the revised hyperparameters $\alpha_n,\,\beta_n$ equal to?
+
+## Part b
+
+Show that the posterior mean has the form
+
+$$
+E(\lambda\,|\,X_1,\,X_2,\,...,\,X_n)=w_n\hat{\lambda}_n^{(MLE)} + (1-w_n)\underbrace{E(\lambda)}_{\text{prior mean}},
+$$ 
+
+where $w_n\in(0,\,1)$ might depend on the data. This means that the posterior mean is a *shrinkage estimator*. We shrink the MLE toward our prior estimate of the parameter.
+
+## Part d
+
+Construct a $100\times (1-\alpha)\%$ *credible set* that satisfies:
+
+$$
+P(\lambda \in C_n\,|\,X_{1:n})=1-\alpha.
+$$
+
+::: callout-note
+## Bayesian interpretation
+In this context, we treat $C_n$ as fixed, and $\lambda$ as random. The probability comes from the posterior distribution on $\lambda$. 
+:::
+
+## Part c
+
+How should the prior hyperparameters $\alpha_0$ and $\beta_0$ be set so that the prior distribution captures my grandmother's beliefs about $\lambda$?
+
+::: callout-tip
+## Less math; more trial-and-error
+Just play around in the computer until you find numbers that work.
+:::
