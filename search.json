@@ -718,7 +718,7 @@
     "href": "psets/pset_6.html#part-b-1",
     "title": "Problem Set 6",
     "section": "Part b",
-    "text": "Part b\nFind the sampling distribution of \\(\\hat{\\theta}_n\\), and compute its mean-squared error. What do these things tell you about the properties of this estimator?",
+    "text": "Part b\nFind the exact sampling distribution of \\(\\hat{\\theta}_n\\), and compute its mean-squared error. What do these things tell you about the properties of this estimator?",
     "crumbs": [
       "Problem Sets",
       "Problem Set 6"
