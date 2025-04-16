@@ -659,11 +659,46 @@
     ]
   },
   {
-    "objectID": "psets/pset_6.html",
-    "href": "psets/pset_6.html",
+    "objectID": "psets/pset_6.html#part-a",
+    "href": "psets/pset_6.html#part-a",
     "title": "Problem Set 6",
-    "section": "",
-    "text": "something with hierarchies again\nsome applied word problem\ncovariance\nsums and average\nsomething with simulation"
+    "section": "Part a",
+    "text": "Part a\nShow that\n\\[\n\\begin{aligned}\nE[(\\hat{\\theta}_n-\\theta_0)^2] &= \\left[E(\\hat{\\theta}_n) - \\theta_0\\right]^2 + \\text{var}(\\hat{\\theta}_n)\\\\\n&=\\text{bias}^2+\\text{variance}.\n\\end{aligned}\n\\]\nThis is the famous bias-variance trade-off. It’s natural to think that an unbiased estimator is ideal (bias = 0), but if you want MSE in total to be as small as possible, you also care about variance. So you might be willing to tolerate a little bit of bias if it corresponds to a large reduction in variance. This is the main idea behind shrinkage and regularization in statistics."
+  },
+  {
+    "objectID": "psets/pset_6.html#part-b",
+    "href": "psets/pset_6.html#part-b",
+    "title": "Problem Set 6",
+    "section": "Part b",
+    "text": "Part b\nLet \\(\\mu_0=E(X_1)\\) and \\(\\sigma_0^2=\\text{var}(X_1)\\) be the true but unknown mean and variance of the data, and let’s focus on the task of estimating the mean. So far, we have used the sample average \\(\\bar{X}_n=\\sum_{i=1}^nX_i/n\\) to do this, but let’s consider a new estimator: \\[\n\\hat{\\mu}_n=\\alpha\\bar{X}_n+(1-\\alpha)g,\n\\] where \\(\\alpha\\in[0,\\,1]\\) is a tuning parameter that you as the researcher must select, and \\(g\\in\\mathbb{R}\\) is some prior guess at what the mean is. \\(\\hat{\\mu}_n\\) is an example of a shrinkage estimator. Imagine we have decades of research devoted to estimating the mean, and that research says that the mean is probably equal to \\(g\\). Now we come along with a new dataset and conduct a new study. It would be silly to ignore what has come before, so we set our estimate at a combination of what the previous literature says (\\(g\\)) and what our new study says (\\(\\bar{X}_n\\)). \\(\\alpha\\) describes the weight we give to the new research versus the old.\nYour turn: What are the mean and variance of our shrinkage estimator \\(\\hat{\\mu}_n\\)."
+  },
+  {
+    "objectID": "psets/pset_6.html#part-c",
+    "href": "psets/pset_6.html#part-c",
+    "title": "Problem Set 6",
+    "section": "Part c",
+    "text": "Part c\nImagine that prior research says that the mean is probably \\(g=1.6\\), and you are conducting a new study with \\(n=10\\). Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are \\(\\mu_0=10\\) and \\(\\sigma_0^2=1\\). Yeesh, with friends like Zeus, who needs statistics!\nYour task: In R, create a well labeled line graph with \\(\\alpha\\) on the \\(x\\)-axis. Plot, as a function of \\(\\alpha\\), the squared bias of \\(\\hat{\\mu}_n\\), the variance of \\(\\hat{\\mu}_n\\), and the MSE of \\(\\hat{\\mu}_n\\). So, you should have three lines on the plot. Make them different colors, and add a cute legend labeling them.\nUsing your graph, discuss the trade-off between bias and variance in estimation accuracy. Which choice of \\(\\alpha\\) would give as “optimal” estimator, in the sense of minimizing MSE?"
+  },
+  {
+    "objectID": "psets/pset_6.html#part-a-1",
+    "href": "psets/pset_6.html#part-a-1",
+    "title": "Problem Set 6",
+    "section": "Part a",
+    "text": "Part a\nShow that the posterior distribution for \\(\\lambda\\) in this model is\n\\[\n\\lambda\\,|\\,X_{1:n}=x_{1:n} \\sim \\text{Gamma}(\\alpha_n,\\,\\beta_n).\n\\]\nAfter we see some data, what are the revised hyperparameters \\(\\alpha_n,\\,\\beta_n\\) equal to?"
+  },
+  {
+    "objectID": "psets/pset_6.html#part-b-1",
+    "href": "psets/pset_6.html#part-b-1",
+    "title": "Problem Set 6",
+    "section": "Part b",
+    "text": "Part b\nShow that the posterior mean has the form\n\\[\nE(\\lambda\\,|\\,X_1,\\,X_2,\\,...,\\,X_n)=w_n\\hat{\\lambda}_n^{(MLE)} + (1-w_n)\\underbrace{E(\\lambda)}_{\\text{prior mean}},\n\\] where \\(w_n\\in(0,\\,1)\\) might depend on the data. This means that the posterior mean is a shrinkage estimator. We shrink the MLE toward our prior estimate of the parameter."
+  },
+  {
+    "objectID": "psets/pset_6.html#part-c-1",
+    "href": "psets/pset_6.html#part-c-1",
+    "title": "Problem Set 6",
+    "section": "Part c",
+    "text": "Part c\nHow should the prior hyperparameters \\(\\alpha_0\\) and \\(\\beta_0\\) be set so that the prior distribution captures my Grandmother’s beliefs about \\(\\lambda\\)?\n\n\n\n\n\n\nTip\n\n\n\nThere’s not necessarily any math here that will"
   },
   {
     "objectID": "psets/pset_5.html",
@@ -1737,7 +1772,7 @@
     "href": "index.html",
     "title": "STA 240 Probability for Inference, Modeling, and Data Analysis",
     "section": "",
-    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\nnotes\n\n\n\n\nWed, Jan 15\n\nDS: 1.5\nProbability rules\nnotes\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nDS: 1.6 - 1.8\nCounting Snow Day - No Lecture\n\n\nvideos notes\n\n\n\n\n\nThu, Jan 23\n\nOH w/ Gwen\n\n\n\n\n\nFri, Jan 24\n\n\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nDS: 2\nConditional probability 1\n\nPlay around! Play around some more!\n\n\n\n\n\nWed, Jan 29\n\nDS: 2\nConditional probability 2\nnotes\n\n\n\n\nThu, Jan 30\n\nLab 2\n\n\nLab 2 @ 11:59 PM\n\n\n4\nMon, Feb 3\n\nDS: 3.1, 3.3, 4.1\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 5\n\nDS: 5.1 - 5.4\nDiscrete random variables\nnotes\n\n\n\n\nThu, Feb 6\n\nLab 3\n\n\nPSET 2 @ 12PM Lab 3 @ 11:59 PM\n\n\n5\nMon, Feb 10\n\nDS: 4.1 - 4.3\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 12\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\npractice\n\n\n\n\nFri, Feb 14\n\n\n\n\nPSET 3 @ 5PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nSnow Day - No Lecture\n\n\n\n\n\nThu, Feb 20\n\nSnow Day - No Lab\n\n\n\n\n7\nMon, Feb 24\n\nDS: 3.2 - 3.3\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nDS: 5.6 - 5.7\nContinuous random variables\n\n\n\n\n\nThu, Feb 27\n\nLab 4\n\n\nLab 4 @ 11:59 PM\n\n\n8\nMon, Mar 3\n\nDS: 4.1 - 4.5\nContinuous random variables\n\n\n\n\n\nWed, Mar 5\n\nDS: 3.8\nContinuous random variables\n\n\n\n\n\nThu, Mar 6\n\nDS: 12\nLab 5\n\n\nLab 5 @ 11:59 PM\n\n\n\nFri, Mar 7\n\n\n\n\nPSET 4 @ 5PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nDS: 3.4 - 3.7\nJoint distributions\n\n\n\n\n\nWed, Mar 19\n\nDS: 3.4 - 3.7\nJoint distributions\n\n\n\n\n\nThu, Mar 20\n\nLab 6\n\n\nLab 6 @ 11:59 PM\n\n\n11\nMon, Mar 24\n\nDS: 3.4 - 3.7\nJoint distributions\n\n\n\n\n\nWed, Mar 26\n\nDS: 4.6\nCovariance\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\n\n\n\n\nSat, Mar 29\n\n\n\n\nPSET 5 @ 8AM\n\n\n12\nMon, Mar 31\nMore practice\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nDS: 6\nSums and averages\n\n\n\n\n\nThu, Apr 3\n\nLab 7\n\n\nLab 7 @ 11:59 PM\n\n\n13\nMon, Apr 7\n\nDS: 6\nLimit theorems\n\n\n\n\n\nWed, Apr 9\n\nDS: 7.1\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 8\n\n\nLab 8 @ 11:59 PM\n\n\n\nSat, Apr 12\n\nDS: 8.1 - 8.5\nWhence AP Stats?  (optional make-up lecture)\nnotes\n\n\n\n14\nMon, Apr 14\n\nDS: 7.5 - 7.6\nMaximum likelihood\n\n\n\n\n\nWed, Apr 16\n\nDS: 7.5 - 7.6\nMaximum likelihood\n\n\n\n\n\nThu, Apr 17\n\nLab 9 - Rhapsody in R\n\n\n\n\n\n15\nMon, Apr 21\n\nDS: 7.2 - 7.4\nBayesian inference\n\n\n\n\n\nWed, Apr 23\n\nDS: 7.2 - 7.4\nBayesian inference\n\nPSET 6 @ 3PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
+    "text": "Below is a prospective outline for the course. Due dates are firm, but topics may change with advanced notice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nPREPARE\nTOPIC\nMATERIALS\nDUE\n\n\n\n0\nWed, Jan 8\n\nDS: 1.1 - 1.2\nWelcome!\nslides\n\n\n\n\nThu, Jan 9\n\nLab 0: calculus review\nslides\n\n\n\n1\nMon, Jan 13\n\nDS: 1.3 - 1.4\nSet theory\nnotes\n\n\n\n\nWed, Jan 15\n\nDS: 1.5\nProbability rules\nnotes\n\n\n\n\nThu, Jan 16\n\nLab 1\n\n\nPSET 0 @ 12PM\n\n\n\nFri, Jan 17\n\n\n\n\nLab 1 @ 5:00 PM\n\n\n2\nMon, Jan 20\n\nMLK Day - No Lecture\n\n\n\n\n\nWed, Jan 22\n\nDS: 1.6 - 1.8\nCounting Snow Day - No Lecture\n\n\nvideos notes\n\n\n\n\n\nThu, Jan 23\n\nOH w/ Gwen\n\n\n\n\n\nFri, Jan 24\n\n\n\n\nPSET 1 @ 12PM\n\n\n3\nMon, Jan 27\n\nDS: 2\nConditional probability 1\n\nPlay around! Play around some more!\n\n\n\n\n\nWed, Jan 29\n\nDS: 2\nConditional probability 2\nnotes\n\n\n\n\nThu, Jan 30\n\nLab 2\n\n\nLab 2 @ 11:59 PM\n\n\n4\nMon, Feb 3\n\nDS: 3.1, 3.3, 4.1\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 5\n\nDS: 5.1 - 5.4\nDiscrete random variables\nnotes\n\n\n\n\nThu, Feb 6\n\nLab 3\n\n\nPSET 2 @ 12PM Lab 3 @ 11:59 PM\n\n\n5\nMon, Feb 10\n\nDS: 4.1 - 4.3\nDiscrete random variables\nnotes\n\n\n\n\nWed, Feb 12\n\nDiscrete random variables\n\n\n\n\n\nThu, Feb 13\n\nExam Review\npractice\n\n\n\n\nFri, Feb 14\n\n\n\n\nPSET 3 @ 5PM\n\n\n6\nMon, Feb 17\n\nMidterm 1\n\n\n\n\n\nWed, Feb 19\n\nSnow Day - No Lecture\n\n\n\n\n\nThu, Feb 20\n\nSnow Day - No Lab\n\n\n\n\n7\nMon, Feb 24\n\nDS: 3.2 - 3.3\nContinuous random variables\n\n\n\n\n\nWed, Feb 26\n\nDS: 5.6 - 5.7\nContinuous random variables\n\n\n\n\n\nThu, Feb 27\n\nLab 4\n\n\nLab 4 @ 11:59 PM\n\n\n8\nMon, Mar 3\n\nDS: 4.1 - 4.5\nContinuous random variables\n\n\n\n\n\nWed, Mar 5\n\nDS: 3.8\nContinuous random variables\n\n\n\n\n\nThu, Mar 6\n\nDS: 12\nLab 5\n\n\nLab 5 @ 11:59 PM\n\n\n\nFri, Mar 7\n\n\n\n\nPSET 4 @ 5PM\n\n\n9\nMon, Mar 10\n\nSpring Break - No Lecture\n\n\n\n\n\nWed, Mar 12\n\nSpring Break - No Lecture\n\n\n\n\n\nThu, Mar 13\n\nSpring Break - No Lab\n\n\n\n\n10\nMon, Mar 17\n\nDS: 3.4 - 3.7\nJoint distributions\n\n\n\n\n\nWed, Mar 19\n\nDS: 3.4 - 3.7\nJoint distributions\n\n\n\n\n\nThu, Mar 20\n\nLab 6\n\n\nLab 6 @ 11:59 PM\n\n\n11\nMon, Mar 24\n\nDS: 3.4 - 3.7\nJoint distributions\n\n\n\n\n\nWed, Mar 26\n\nDS: 4.6\nCovariance\n\n\n\n\n\nThu, Mar 27\n\nExam Review\n\n\n\n\n\nSat, Mar 29\n\n\n\n\nPSET 5 @ 8AM\n\n\n12\nMon, Mar 31\nMore practice\nMidterm 2\n\n\n\n\n\nWed, Apr 2\n\nDS: 6\nSums and averages\n\n\n\n\n\nThu, Apr 3\n\nLab 7\n\n\nLab 7 @ 11:59 PM\n\n\n13\nMon, Apr 7\n\nDS: 6\nLimit theorems\n\n\n\n\n\nWed, Apr 9\n\nDS: 7.1\nStatistics\n\n\n\n\n\nThu, Apr 10\n\nLab 8\n\n\nLab 8 @ 11:59 PM\n\n\n\nSat, Apr 12\n\nDS: 8.1 - 8.5\nWhence AP Stats?  (optional make-up lecture)\nnotes\n\n\n\n14\nMon, Apr 14\n\nDS: 7.5 - 7.6\nMaximum likelihood\nnotes\n\n\n\n\nWed, Apr 16\n\nDS: 7.5 - 7.6\nMaximum likelihood\n\n\n\n\n\nThu, Apr 17\n\nLab 9 - Rhapsody in R\n\n\n\n\n\n15\nMon, Apr 21\n\nDS: 7.2 - 7.4\nBayesian inference\n\n\n\n\n\nWed, Apr 23\n\nDS: 7.2 - 7.4\nBayesian inference\n\nPSET 6 @ 3PM\n\n\n16\nSat, May 3\nsee…everything above\nFinal (7PM - 10PM)",
     "crumbs": [
       "Syllabus",
       "Schedule"

@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>STA 240 Spring 2025 - Problem Set 6</title>
 <style>
 code{white-space: pre-wrap;}
@@ -20,8 +17,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -37,8 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -64,20 +93,40 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
+}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 <meta property="og:title" content="STA 240 Spring 2025 - Problem Set 6">
 <meta property="og:description" content="Due Wednesday April 23 at 3PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
-
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -88,16 +137,11 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -106,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
+<li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Syllabus</span></a>
@@ -114,8 +158,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -158,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
@@ -167,8 +211,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 0</span></a>
@@ -205,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
@@ -214,8 +258,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../labs/lab-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
@@ -270,20 +314,40 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#problem-0" id="toc-problem-0" class="nav-link active" data-scroll-target="#problem-0">Problem 0</a></li>
+  <li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
+  <li>
+<a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a>
+  <ul class="collapse">
+<li><a href="#part-a" id="toc-part-a" class="nav-link" data-scroll-target="#part-a">Part a</a></li>
+  <li><a href="#part-b" id="toc-part-b" class="nav-link" data-scroll-target="#part-b">Part b</a></li>
+  <li><a href="#part-c" id="toc-part-c" class="nav-link" data-scroll-target="#part-c">Part c</a></li>
+  </ul>
+</li>
+  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
+  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
+  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
+  <li>
+<a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a>
+  <ul class="collapse">
+<li><a href="#part-a-1" id="toc-part-a-1" class="nav-link" data-scroll-target="#part-a-1">Part a</a></li>
+  <li><a href="#part-b-1" id="toc-part-b-1" class="nav-link" data-scroll-target="#part-b-1">Part b</a></li>
+  <li><a href="#part-c-1" id="toc-part-c-1" class="nav-link" data-scroll-target="#part-c-1">Part c</a></li>
+  </ul>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Problem Set 6</h1>
 <p class="subtitle lead">Due Wednesday April 23 at 3PM</p>
 </div>
@@ -299,19 +363,114 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><section id="problem-0" class="level1"><h1>Problem 0</h1>
+</section><section id="problem-1" class="level1"><h1>Problem 1</h1>
+<p>Do a sum and average distribution calculation.</p>
+</section><section id="problem-2" class="level1"><h1>Problem 2</h1>
+<p>In statistics, we observe data <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} P_0\)</span> from an unknown probability distribution, and we try to use the data to estimate some feature <span class="math inline">\(\theta_0=\theta(P_0)\)</span> of the unknown distribution. Let’s assume that <span class="math inline">\(\theta_0\in\mathbb{R}\)</span> is a scalar summary, like the mean, median, variance, etc. We estimate <span class="math inline">\(\theta_0\)</span> by constructing an <strong>estimator</strong>:</p>
+<p><span class="math display">\[
+\hat{\theta}_n=\hat{\theta}(X_1,\,X_2,\,...,\,X_n).
+\]</span></p>
+<p>This is a function of the data, and the data are random, so the estimator is also random, and we say it has a <strong>sampling distribution</strong>. This is the distribution that describes the random variation you would observe in the estimate if you recomputed it across different random samples.</p>
+<p>To assess the accuracy of an estimator, you can study its mean squared error:</p>
+<p><span class="math display">\[
+\text{MSE}=E[(\hat{\theta}_n-\theta_0)^2].
+\]</span></p>
+<p>So, on average, how far is the estimate from the truth? The smaller the MSE, the better the estimator.</p>
+<section id="part-a" class="level2"><h2 class="anchored" data-anchor-id="part-a">Part a</h2>
+<p>Show that</p>
+<p><span class="math display">\[
+\begin{aligned}
+E[(\hat{\theta}_n-\theta_0)^2] &amp;= \left[E(\hat{\theta}_n) - \theta_0\right]^2 + \text{var}(\hat{\theta}_n)\\
+&amp;=\text{bias}^2+\text{variance}.
+\end{aligned}
+\]</span></p>
+<p>This is the famous <strong>bias-variance trade-off</strong>. It’s natural to think that an <em>unbiased</em> estimator is ideal (bias = 0), but if you want MSE in total to be as small as possible, you also care about variance. So you might be willing to tolerate a little bit of bias if it corresponds to a large reduction in variance. This is the main idea behind <em>shrinkage</em> and <em>regularization</em> in statistics.</p>
+</section><section id="part-b" class="level2"><h2 class="anchored" data-anchor-id="part-b">Part b</h2>
+<p>Let <span class="math inline">\(\mu_0=E(X_1)\)</span> and <span class="math inline">\(\sigma_0^2=\text{var}(X_1)\)</span> be the true but unknown mean and variance of the data, and let’s focus on the task of estimating the mean. So far, we have used the sample average <span class="math inline">\(\bar{X}_n=\sum_{i=1}^nX_i/n\)</span> to do this, but let’s consider a new estimator: <span class="math display">\[
+\hat{\mu}_n=\alpha\bar{X}_n+(1-\alpha)g,
+\]</span> where <span class="math inline">\(\alpha\in[0,\,1]\)</span> is a <em>tuning parameter</em> that you as the researcher must select, and <span class="math inline">\(g\in\mathbb{R}\)</span> is some <em>prior guess</em> at what the mean is. <span class="math inline">\(\hat{\mu}_n\)</span> is an example of a <strong>shrinkage estimator</strong>. Imagine we have decades of research devoted to estimating the mean, and that research says that the mean is probably equal to <span class="math inline">\(g\)</span>. Now we come along with a new dataset and conduct a new study. It would be silly to ignore what has come before, so we set our estimate at a combination of what the previous literature says (<span class="math inline">\(g\)</span>) and what our new study says (<span class="math inline">\(\bar{X}_n\)</span>). <span class="math inline">\(\alpha\)</span> describes the weight we give to the new research versus the old.</p>
+<p><strong>Your turn</strong>: What are the mean and variance of our shrinkage estimator <span class="math inline">\(\hat{\mu}_n\)</span>.</p>
+</section><section id="part-c" class="level2"><h2 class="anchored" data-anchor-id="part-c">Part c</h2>
+<p>Imagine that prior research says that the mean is probably <span class="math inline">\(g=1.6\)</span>, and you are conducting a new study with <span class="math inline">\(n=10\)</span>. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are <span class="math inline">\(\mu_0=10\)</span> and <span class="math inline">\(\sigma_0^2=1\)</span>. Yeesh, with friends like Zeus, who needs statistics!</p>
+<p><strong>Your task</strong>: In <code>R</code>, create a well labeled line graph with <span class="math inline">\(\alpha\)</span> on the <span class="math inline">\(x\)</span>-axis. Plot, as a function of <span class="math inline">\(\alpha\)</span>, the squared bias of <span class="math inline">\(\hat{\mu}_n\)</span>, the variance of <span class="math inline">\(\hat{\mu}_n\)</span>, and the MSE of <span class="math inline">\(\hat{\mu}_n\)</span>. So, you should have three lines on the plot. Make them different colors, and add a cute legend labeling them.</p>
+<p>Using your graph, discuss the trade-off between bias and variance in estimation accuracy. Which choice of <span class="math inline">\(\alpha\)</span> would give as “optimal” estimator, in the sense of minimizing MSE?</p>
+</section></section><section id="problem-3" class="level1"><h1>Problem 3</h1>
+<p>MLE</p>
+</section><section id="problem-4" class="level1"><h1>Problem 4</h1>
+<p>Imagine you have iid data <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> from a distribution with the following density, where <span class="math inline">\(\theta&gt;0\)</span> is a parameter:</p>
+<p><span class="math display">\[
+f(x\,|\,\theta)
+=
+\begin{cases}
+\frac{2}{\theta^2}
+x
+\exp\left(-\frac{x^2}{\theta^2}\right), &amp; x&gt;0\\
+0 &amp; x\leq 0.
+\end{cases}
+\]</span></p>
+<ol type="a">
+<li>What is <span class="math inline">\(E(X_1)\)</span>?</li>
+<li>Compute the maximum likelihood estimator for the parameter <span class="math inline">\(\theta&gt;0\)</span>: <span class="math display">\[
+\hat{\theta}_n=\underset{\theta&gt;0}{\arg\max}\,\ln L(\theta).
+\]</span>
+</li>
+<li>Write a function in <code>R</code> that takes in two arguments <code>n</code> and <code>t</code> and returns a vector with <span class="math inline">\(n\)</span> random numbers draw iid from this distribution family with <span class="math inline">\(\theta=\texttt{t}\)</span>. In other words, fill in the blank:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">my_random_numbers</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span>, <span class="va">t</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="co"># add code here.</span></span>
+<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="a">
+<li>Write a simulation in <code>R</code> that simulates the sampling distribution of your estimator for various choices of sample size <span class="math inline">\(n\)</span>, and displays how the distribution evolves as <span class="math inline">\(n\)</span> increases. In other words, fill in the blank:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">true_theta</span> <span class="op">&lt;-</span> <span class="fl">3</span></span>
+<span><span class="va">sample_sizes</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="problem-5" class="level1"><h1>Problem 5</h1>
+<p>Bayes</p>
+</section><section id="problem-6" class="level1"><h1>Problem 6</h1>
+<p>Imagine that I quit my job and open a factory that manufactures bow ties and light bulbs (<em>Zito’s Bows and Bulbs</em>). The ties are alright, but the bulbs suck. They burn out real quick. Each bulb is slightly different, and you can’t perfectly predict how long they will last, so the time (in hours) until the bulb dies is a random variable <span class="math inline">\(X\)</span>, and let’s assume <span class="math inline">\(X\sim\text{Exponential}(\lambda)\)</span>, where <span class="math inline">\(\lambda&gt;0\)</span> is unknown. Recall that <span class="math inline">\(E(X)=1/\lambda\)</span>, so the larger the rate, the sooner the burnout time.</p>
+<p>I want to estimate <span class="math inline">\(\lambda\)</span> to get a sense of how bad my light bulbs are, so I sample <span class="math inline">\(n\)</span> bulbs and record their burnout times: <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\sim\text{Exponential}(\lambda)\)</span>. At this point, I could just use the method of maximum likelihood to estimate <span class="math inline">\(\lambda\)</span>, but before I do, I go and consult Great Grandma Zito. She’s been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, <span class="math inline">\(\lambda\)</span> is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there’s uncertainty about that. In her opinion, the probability that <span class="math inline">\(\lambda&gt;3\)</span> is about 1.7%.</p>
+<p>I want to incorporate my grandmother’s prior knowledge into my analysis, so I decide to be Bayesian:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\lambda &amp;\sim\text{Gamma}(\alpha_0,\,\beta_0) &amp;&amp; \text{(prior)}\\
+X_1,\,X_2,\,...,\,X_n\,|\,\lambda&amp;\sim\text{Exponential}(\lambda) &amp;&amp; \text{(data model)}.
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)\)</span> is my prior distribution for the unknown parameter, and <span class="math inline">\(\alpha_0,\,\beta_0&gt;0\)</span> are <em>hyperparameters</em> that I will tune in order to encode the prior knowledge about <span class="math inline">\(\lambda\)</span> that my grandmother described. I chose the Gamma family because it is familiar to me, and I know that <span class="math inline">\(\lambda\)</span> is a continuous numerical quantity that must be positive.</p>
+<section id="part-a-1" class="level2"><h2 class="anchored" data-anchor-id="part-a-1">Part a</h2>
+<p>Show that the posterior distribution for <span class="math inline">\(\lambda\)</span> in this model is</p>
+<p><span class="math display">\[
+\lambda\,|\,X_{1:n}=x_{1:n} \sim \text{Gamma}(\alpha_n,\,\beta_n).
+\]</span></p>
+<p>After we see some data, what are the revised hyperparameters <span class="math inline">\(\alpha_n,\,\beta_n\)</span> equal to?</p>
+</section><section id="part-b-1" class="level2"><h2 class="anchored" data-anchor-id="part-b-1">Part b</h2>
+<p>Show that the posterior mean has the form</p>
+<p><span class="math display">\[
+E(\lambda\,|\,X_1,\,X_2,\,...,\,X_n)=w_n\hat{\lambda}_n^{(MLE)} + (1-w_n)\underbrace{E(\lambda)}_{\text{prior mean}},
+\]</span> where <span class="math inline">\(w_n\in(0,\,1)\)</span> might depend on the data. This means that the posterior mean is a <em>shrinkage estimator</em>. We shrink the MLE toward our prior estimate of the parameter.</p>
+</section><section id="part-c-1" class="level2"><h2 class="anchored" data-anchor-id="part-c-1">Part c</h2>
+<p>How should the prior hyperparameters <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> be set so that the prior distribution captures my Grandmother’s beliefs about <span class="math inline">\(\lambda\)</span>?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There’s not necessarily any math here that will</p>
+</div>
+</div>
 
 
-<p>something with hierarchies again</p>
-<p>some applied word problem</p>
-<p>covariance</p>
-<p>sums and average</p>
-<p>something with simulation</p>
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -721,8 +880,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2025 John Zito</p>
 </div>   
@@ -734,8 +892,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
