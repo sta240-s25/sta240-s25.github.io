@@ -87,7 +87,7 @@ $$
 
 ## Part b
 
-Find the sampling distribution of $\hat{\theta}_n$, and compute its mean-squared error. What do these things tell you about the properties of this estimator?
+Find the *exact* sampling distribution of $\hat{\theta}_n$, and compute its mean-squared error. What do these things tell you about the properties of this estimator?
 
 ## Part c
 
