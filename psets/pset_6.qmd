@@ -68,7 +68,7 @@ f(x\,|\,\theta)
 \end{cases}
 $$
 
-You saw this distribution on Problem Set 5, where you showed, among other things, that the cdf of this distribution is 
+You saw this distribution on Problem Set 5, where you showed, among other things, that the cdf of this distribution is
 
 $$
       F(x\,|\,\theta)=\begin{cases}
@@ -79,7 +79,7 @@ $$
 
 ## Part a
 
-Compute the maximum likelihood estimator for the parameter $\theta>0$: 
+Compute the maximum likelihood estimator for the parameter $\theta>0$:
 
 $$
     \hat{\theta}_n=\underset{\theta>0}{\arg\max}\,\ln L(\theta).
@@ -91,7 +91,7 @@ Find the sampling distribution of $\hat{\theta}_n$, and compute its mean-squared
 
 ## Part c
 
-Construct a $100\times (1-\alpha)\%$ *confidence set* $C_n$ that satisfies 
+Construct a $100\times (1-\alpha)\%$ *confidence set* $C_n$ that satisfies
 
 $$
 P(\theta\in C_n)=1-\alpha.
@@ -99,6 +99,7 @@ $$
 
 ::: callout-note
 ## Classical interpretation
+
 In this context, we treat $C_n$ as random, and $\theta$ as fixed. The probability comes from the sampling distribution of $C_n$.
 :::
 
@@ -122,23 +123,22 @@ Write some code in `R` that simulates the sampling distribution of your estimato
 ## See the lecture notes from class on 4/14
 :::
 
-
 # Problem 3
 
 Imagine that I quit my job and open a factory that manufactures bow ties and light bulbs (*Zito's Bows and Bulbs*). The ties are alright, but the bulbs suck. They burn out real quick. Each bulb is slightly different, and you can't perfectly predict how long they will last, so the time (in hours) until the bulb dies is a random variable $X$, and let's assume $X\sim\text{Exponential}(\lambda)$, where $\lambda>0$ is unknown. Recall that $E(X)=1/\lambda$, so the larger the rate, the sooner the burnout time.
 
-I want to estimate $\lambda$ to get a sense of how bad my light bulbs are, so I sample $n$ bulbs and record their burnout times: $X_1,\,X_2,\,...,\,X_n\sim\text{Exponential}(\lambda)$. At this point, I could just use the method of maximum likelihood to estimate $\lambda$, but before I do, I go and consult Great Grandma Zito. She's been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, $\lambda$ is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there's uncertainty about that. In her opinion, the probability that $\lambda>3$ is about 1.7%.
+I want to estimate $\lambda$ to get a sense of how bad my light bulbs are, so I sample $n$ bulbs and record their burnout times: $X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim}\text{Exponential}(\lambda)$. At this point, I could just use the method of maximum likelihood to estimate $\lambda$, but before I do, I go and consult Great Grandma Zito. She's been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, $\lambda$ is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there's uncertainty about that. In her opinion, the probability that $\lambda>3$ is about 1.7%.
 
 I want to incorporate my grandmother's prior knowledge into my analysis, so I decide to be Bayesian:
 
 $$
 \begin{aligned}
 \lambda &\sim\text{Gamma}(\alpha_0,\,\beta_0) && \text{(prior)}\\
-X_1,\,X_2,\,...,\,X_n\,|\,\lambda&\sim\text{Exponential}(\lambda) && \text{(data model)}.
+X_1,\,X_2,\,...,\,X_n\,|\,\lambda&\overset{\text{iid}}{\sim}\text{Exponential}(\lambda) && \text{(data model)}.
 \end{aligned}
 $$
 
-$\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)$ is my prior distribution for the unknown parameter, and $\alpha_0,\,\beta_0>0$ are *hyperparameters* that I will tune in order to encode the prior knowledge about $\lambda$ that my grandmother described. I chose the Gamma family because it is familiar to me, and I know that $\lambda$ is a continuous numerical quantity that must be positive.
+$\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)$ is my prior distribution for the unknown parameter, and $\alpha_0,\,\beta_0>0$ are *hyperparameters* that I will tune in order to encode the prior knowledge about $\lambda$ that my grandmother described. I chose the gamma family simply because it is convenient and familiar to me, and I know that $\lambda$ is a continuous numerical quantity that must be positive.
 
 ## Part a
 
@@ -154,7 +154,6 @@ After we see some data, what are the revised hyperparameters $\alpha_n,\,\beta_n
 # Pay attention to the notation here
 
 Before I see any data, $\text{Gamma}(\alpha_0,\,\beta_0)$ summarizes my beliefs about $\lambda$. After I see some data, $\text{Gamma}(\alpha_n,\,\beta_n)$ summarizes my beliefs about $\lambda$. $\alpha_0$ and $\beta_0$ are the *prior* hyperparameters, and $\alpha_n$ and $\beta_n$ are the *posterior* hyperparameters. The subscript indicates how much data my beliefs are based on.
-
 :::
 
 ## Part b
@@ -163,11 +162,11 @@ Show that the posterior mean has the form
 
 $$
 E(\lambda\,|\,X_1,\,X_2,\,...,\,X_n)=w_n\hat{\lambda}_n^{(MLE)} + (1-w_n)\underbrace{E(\lambda)}_{\text{prior mean}},
-$$ 
+$$
 
 where $w_n\in(0,\,1)$ might depend on the data. This means that the posterior mean is a *shrinkage estimator*. We shrink the MLE toward our prior estimate of the parameter.
 
-## Part d
+## Part c
 
 Construct a $100\times (1-\alpha)\%$ *credible set* that satisfies:
 
@@ -177,14 +176,16 @@ $$
 
 ::: callout-note
 ## Bayesian interpretation
-In this context, we treat $C_n$ as fixed, and $\lambda$ as random. The probability comes from the posterior distribution on $\lambda$. 
+
+In this context, we treat $C_n$ as fixed, and $\lambda$ as random. The probability comes from the posterior distribution on $\lambda$.
 :::
 
-## Part c
+## Part d
 
 How should the prior hyperparameters $\alpha_0$ and $\beta_0$ be set so that the prior distribution captures my grandmother's beliefs about $\lambda$?
 
 ::: callout-tip
 ## Less math; more trial-and-error
+
 Just play around in the computer until you find numbers that work.
 :::
