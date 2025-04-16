@@ -48,7 +48,7 @@ $$ where $\alpha\in[0,\,1]$ is a *tuning parameter* that you as the researcher m
 
 ## Part c
 
-Imagine that prior research says that the mean is probably $g=1.6$, and you are conducting a new study with $n=10$. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are $\mu=10$ and $\sigma^2=1$. Yeesh, with friends like Zeus, who needs statistics!
+Imagine that prior research says that the mean is probably $g=1.6$, and you are conducting a new study with $n=10$. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are $\mu=2$ and $\sigma^2=1$. Yeesh, with friends like Zeus, who needs statistics!
 
 **Your task**: In `R`, create a well labeled line graph with $\alpha$ on the $x$-axis. Plot, as a function of $\alpha$, the squared bias of $\hat{\mu}_n$, the variance of $\hat{\mu}_n$, and the MSE of $\hat{\mu}_n$. So, you should have three lines on the plot. Make them different colors, and add a cute legend labeling them.
 
