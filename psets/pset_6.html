@@ -324,24 +324,31 @@ window.Quarto = {
    
   <ul>
 <li><a href="#problem-0" id="toc-problem-0" class="nav-link active" data-scroll-target="#problem-0">Problem 0</a></li>
-  <li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
   <li>
-<a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a>
+<a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a>
   <ul class="collapse">
 <li><a href="#part-a" id="toc-part-a" class="nav-link" data-scroll-target="#part-a">Part a</a></li>
   <li><a href="#part-b" id="toc-part-b" class="nav-link" data-scroll-target="#part-b">Part b</a></li>
   <li><a href="#part-c" id="toc-part-c" class="nav-link" data-scroll-target="#part-c">Part c</a></li>
   </ul>
 </li>
-  <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
-  <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
-  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
   <li>
-<a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a>
+<a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a>
   <ul class="collapse">
 <li><a href="#part-a-1" id="toc-part-a-1" class="nav-link" data-scroll-target="#part-a-1">Part a</a></li>
   <li><a href="#part-b-1" id="toc-part-b-1" class="nav-link" data-scroll-target="#part-b-1">Part b</a></li>
   <li><a href="#part-c-1" id="toc-part-c-1" class="nav-link" data-scroll-target="#part-c-1">Part c</a></li>
+  <li><a href="#part-d" id="toc-part-d" class="nav-link" data-scroll-target="#part-d">Part d</a></li>
+  <li><a href="#part-e" id="toc-part-e" class="nav-link" data-scroll-target="#part-e">Part e</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a>
+  <ul class="collapse">
+<li><a href="#part-a-2" id="toc-part-a-2" class="nav-link" data-scroll-target="#part-a-2">Part a</a></li>
+  <li><a href="#part-b-2" id="toc-part-b-2" class="nav-link" data-scroll-target="#part-b-2">Part b</a></li>
+  <li><a href="#part-d-1" id="toc-part-d-1" class="nav-link" data-scroll-target="#part-d-1">Part d</a></li>
+  <li><a href="#part-c-2" id="toc-part-c-2" class="nav-link" data-scroll-target="#part-c-2">Part c</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -365,8 +372,6 @@ window.Quarto = {
 
 </header><section id="problem-0" class="level1"><h1>Problem 0</h1>
 </section><section id="problem-1" class="level1"><h1>Problem 1</h1>
-<p>Do a sum and average distribution calculation.</p>
-</section><section id="problem-2" class="level1"><h1>Problem 2</h1>
 <p>In statistics, we observe data <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} P_0\)</span> from an unknown probability distribution, and we try to use the data to estimate some feature <span class="math inline">\(\theta_0=\theta(P_0)\)</span> of the unknown distribution. Let’s assume that <span class="math inline">\(\theta_0\in\mathbb{R}\)</span> is a scalar summary, like the mean, median, variance, etc. We estimate <span class="math inline">\(\theta_0\)</span> by constructing an <strong>estimator</strong>:</p>
 <p><span class="math display">\[
 \hat{\theta}_n=\hat{\theta}(X_1,\,X_2,\,...,\,X_n).
@@ -395,43 +400,72 @@ E[(\hat{\theta}_n-\theta_0)^2] &amp;= \left[E(\hat{\theta}_n) - \theta_0\right]^
 <p>Imagine that prior research says that the mean is probably <span class="math inline">\(g=1.6\)</span>, and you are conducting a new study with <span class="math inline">\(n=10\)</span>. Then one night Zeus comes to you in a dream and whispers in your ear that, in fact, the true values are <span class="math inline">\(\mu_0=10\)</span> and <span class="math inline">\(\sigma_0^2=1\)</span>. Yeesh, with friends like Zeus, who needs statistics!</p>
 <p><strong>Your task</strong>: In <code>R</code>, create a well labeled line graph with <span class="math inline">\(\alpha\)</span> on the <span class="math inline">\(x\)</span>-axis. Plot, as a function of <span class="math inline">\(\alpha\)</span>, the squared bias of <span class="math inline">\(\hat{\mu}_n\)</span>, the variance of <span class="math inline">\(\hat{\mu}_n\)</span>, and the MSE of <span class="math inline">\(\hat{\mu}_n\)</span>. So, you should have three lines on the plot. Make them different colors, and add a cute legend labeling them.</p>
 <p>Using your graph, discuss the trade-off between bias and variance in estimation accuracy. Which choice of <span class="math inline">\(\alpha\)</span> would give as “optimal” estimator, in the sense of minimizing MSE?</p>
-</section></section><section id="problem-3" class="level1"><h1>Problem 3</h1>
-<p>MLE</p>
-</section><section id="problem-4" class="level1"><h1>Problem 4</h1>
+</section></section><section id="problem-2" class="level1"><h1>Problem 2</h1>
 <p>Imagine you have iid data <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> from a distribution with the following density, where <span class="math inline">\(\theta&gt;0\)</span> is a parameter:</p>
 <p><span class="math display">\[
 f(x\,|\,\theta)
 =
 \begin{cases}
-\frac{2}{\theta^2}
-x
-\exp\left(-\frac{x^2}{\theta^2}\right), &amp; x&gt;0\\
-0 &amp; x\leq 0.
+\frac{x}{\theta}
+\exp\left(-\frac{x^2}{2\theta}\right), &amp; x\geq0\\
+0 &amp; x&lt; 0.
 \end{cases}
 \]</span></p>
-<ol type="a">
-<li>What is <span class="math inline">\(E(X_1)\)</span>?</li>
-<li>Compute the maximum likelihood estimator for the parameter <span class="math inline">\(\theta&gt;0\)</span>: <span class="math display">\[
-\hat{\theta}_n=\underset{\theta&gt;0}{\arg\max}\,\ln L(\theta).
-\]</span>
-</li>
-<li>Write a function in <code>R</code> that takes in two arguments <code>n</code> and <code>t</code> and returns a vector with <span class="math inline">\(n\)</span> random numbers draw iid from this distribution family with <span class="math inline">\(\theta=\texttt{t}\)</span>. In other words, fill in the blank:</li>
-</ol>
+<p>You saw this distribution on Problem Set 5, where you showed, among other things, that the cdf of this distribution is</p>
+<p><span class="math display">\[
+      F(x\,|\,\theta)=\begin{cases}
+      1-e^{-\frac{x^2}{2\theta}} &amp; x\geq 0\\
+      0 &amp; x &lt;0.
+      \end{cases}
+\]</span></p>
+<section id="part-a-1" class="level2"><h2 class="anchored" data-anchor-id="part-a-1">Part a</h2>
+<p>Compute the maximum likelihood estimator for the parameter <span class="math inline">\(\theta&gt;0\)</span>:</p>
+<p><span class="math display">\[
+    \hat{\theta}_n=\underset{\theta&gt;0}{\arg\max}\,\ln L(\theta).
+\]</span></p>
+</section><section id="part-b-1" class="level2"><h2 class="anchored" data-anchor-id="part-b-1">Part b</h2>
+<p>Find the sampling distribution of <span class="math inline">\(\hat{\theta}_n\)</span>, and compute its mean-squared error. What do these things tell you about the properties of this estimator?</p>
+</section><section id="part-c-1" class="level2"><h2 class="anchored" data-anchor-id="part-c-1">Part c</h2>
+<p>Construct a <span class="math inline">\(100\times (1-\alpha)\%\)</span> <em>confidence set</em> <span class="math inline">\(C_n\)</span> that satisfies</p>
+<p><span class="math display">\[
+P(\theta\in C_n)=1-\alpha.
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Classical interpretation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In this context, we treat <span class="math inline">\(C_n\)</span> as random, and <span class="math inline">\(\theta\)</span> as fixed. The probability comes from the sampling distribution of <span class="math inline">\(C_n\)</span>.</p>
+</div>
+</div>
+</section><section id="part-d" class="level2"><h2 class="anchored" data-anchor-id="part-d">Part d</h2>
+<p>Write a function in <code>R</code> that takes in two arguments <code>n</code> and <code>theta</code> and returns a vector with <span class="math inline">\(n\)</span> random numbers draw iid from the member of this family with parameter <code>theta</code>. In other words, fill in the blank:</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">my_random_numbers</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span>, <span class="va">t</span><span class="op">)</span><span class="op">{</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">my_random_numbers</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span>, <span class="va">theta</span><span class="op">)</span><span class="op">{</span></span>
 <span>  <span class="co"># add code here.</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<ol start="4" type="a">
-<li>Write a simulation in <code>R</code> that simulates the sampling distribution of your estimator for various choices of sample size <span class="math inline">\(n\)</span>, and displays how the distribution evolves as <span class="math inline">\(n\)</span> increases. In other words, fill in the blank:</li>
-</ol>
-<div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">true_theta</span> <span class="op">&lt;-</span> <span class="fl">3</span></span>
-<span><span class="va">sample_sizes</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="part-e" class="level2"><h2 class="anchored" data-anchor-id="part-e">Part e</h2>
+<p>Write some code in <code>R</code> that simulates the sampling distribution of your estimator for various choices of sample size <span class="math inline">\(n\)</span> and visualizes how the distribution evolves as <span class="math inline">\(n\)</span> increases. Based on the picture, what are the properties of this estimator?</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</section><section id="problem-5" class="level1"><h1>Problem 5</h1>
-<p>Bayes</p>
-</section><section id="problem-6" class="level1"><h1>Problem 6</h1>
+<div class="callout-title-container flex-fill">
+See the lecture notes from class on 4/14
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section></section><section id="problem-3" class="level1"><h1>Problem 3</h1>
 <p>Imagine that I quit my job and open a factory that manufactures bow ties and light bulbs (<em>Zito’s Bows and Bulbs</em>). The ties are alright, but the bulbs suck. They burn out real quick. Each bulb is slightly different, and you can’t perfectly predict how long they will last, so the time (in hours) until the bulb dies is a random variable <span class="math inline">\(X\)</span>, and let’s assume <span class="math inline">\(X\sim\text{Exponential}(\lambda)\)</span>, where <span class="math inline">\(\lambda&gt;0\)</span> is unknown. Recall that <span class="math inline">\(E(X)=1/\lambda\)</span>, so the larger the rate, the sooner the burnout time.</p>
 <p>I want to estimate <span class="math inline">\(\lambda\)</span> to get a sense of how bad my light bulbs are, so I sample <span class="math inline">\(n\)</span> bulbs and record their burnout times: <span class="math inline">\(X_1,\,X_2,\,...,\,X_n\sim\text{Exponential}(\lambda)\)</span>. At this point, I could just use the method of maximum likelihood to estimate <span class="math inline">\(\lambda\)</span>, but before I do, I go and consult Great Grandma Zito. She’s been making bad light bulbs for decades and taught me everything that I know. She says that in her experience, <span class="math inline">\(\lambda\)</span> is in the ballpark of 1 (meaning our bulbs burn out in an hour, on average), but there’s uncertainty about that. In her opinion, the probability that <span class="math inline">\(\lambda&gt;3\)</span> is about 1.7%.</p>
 <p>I want to incorporate my grandmother’s prior knowledge into my analysis, so I decide to be Bayesian:</p>
@@ -442,30 +476,49 @@ X_1,\,X_2,\,...,\,X_n\,|\,\lambda&amp;\sim\text{Exponential}(\lambda) &amp;&amp;
 \end{aligned}
 \]</span></p>
 <p><span class="math inline">\(\lambda \sim\text{Gamma}(\alpha_0,\,\beta_0)\)</span> is my prior distribution for the unknown parameter, and <span class="math inline">\(\alpha_0,\,\beta_0&gt;0\)</span> are <em>hyperparameters</em> that I will tune in order to encode the prior knowledge about <span class="math inline">\(\lambda\)</span> that my grandmother described. I chose the Gamma family because it is familiar to me, and I know that <span class="math inline">\(\lambda\)</span> is a continuous numerical quantity that must be positive.</p>
-<section id="part-a-1" class="level2"><h2 class="anchored" data-anchor-id="part-a-1">Part a</h2>
+<section id="part-a-2" class="level2"><h2 class="anchored" data-anchor-id="part-a-2">Part a</h2>
 <p>Show that the posterior distribution for <span class="math inline">\(\lambda\)</span> in this model is</p>
 <p><span class="math display">\[
 \lambda\,|\,X_{1:n}=x_{1:n} \sim \text{Gamma}(\alpha_n,\,\beta_n).
 \]</span></p>
 <p>After we see some data, what are the revised hyperparameters <span class="math inline">\(\alpha_n,\,\beta_n\)</span> equal to?</p>
-</section><section id="part-b-1" class="level2"><h2 class="anchored" data-anchor-id="part-b-1">Part b</h2>
+</section><section id="part-b-2" class="level2"><h2 class="anchored" data-anchor-id="part-b-2">Part b</h2>
 <p>Show that the posterior mean has the form</p>
 <p><span class="math display">\[
 E(\lambda\,|\,X_1,\,X_2,\,...,\,X_n)=w_n\hat{\lambda}_n^{(MLE)} + (1-w_n)\underbrace{E(\lambda)}_{\text{prior mean}},
-\]</span> where <span class="math inline">\(w_n\in(0,\,1)\)</span> might depend on the data. This means that the posterior mean is a <em>shrinkage estimator</em>. We shrink the MLE toward our prior estimate of the parameter.</p>
-</section><section id="part-c-1" class="level2"><h2 class="anchored" data-anchor-id="part-c-1">Part c</h2>
-<p>How should the prior hyperparameters <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> be set so that the prior distribution captures my Grandmother’s beliefs about <span class="math inline">\(\lambda\)</span>?</p>
+\]</span></p>
+<p>where <span class="math inline">\(w_n\in(0,\,1)\)</span> might depend on the data. This means that the posterior mean is a <em>shrinkage estimator</em>. We shrink the MLE toward our prior estimate of the parameter.</p>
+</section><section id="part-d-1" class="level2"><h2 class="anchored" data-anchor-id="part-d-1">Part d</h2>
+<p>Construct a <span class="math inline">\(100\times (1-\alpha)\%\)</span> <em>credible set</em> that satisfies:</p>
+<p><span class="math display">\[
+P(\lambda \in C_n\,|\,X_{1:n})=1-\alpha.
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bayesian interpretation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In this context, we treat <span class="math inline">\(C_n\)</span> as fixed, and <span class="math inline">\(\lambda\)</span> as random. The probability comes from the posterior distribution on <span class="math inline">\(\lambda\)</span>.</p>
+</div>
+</div>
+</section><section id="part-c-2" class="level2"><h2 class="anchored" data-anchor-id="part-c-2">Part c</h2>
+<p>How should the prior hyperparameters <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> be set so that the prior distribution captures my grandmother’s beliefs about <span class="math inline">\(\lambda\)</span>?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Less math; more trial-and-error
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>There’s not necessarily any math here that will</p>
+<p>Just play around in the computer until you find numbers that work.</p>
 </div>
 </div>
 

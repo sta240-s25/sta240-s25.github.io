@@ -684,21 +684,63 @@
     "href": "psets/pset_6.html#part-a-1",
     "title": "Problem Set 6",
     "section": "Part a",
-    "text": "Part a\nShow that the posterior distribution for \\(\\lambda\\) in this model is\n\\[\n\\lambda\\,|\\,X_{1:n}=x_{1:n} \\sim \\text{Gamma}(\\alpha_n,\\,\\beta_n).\n\\]\nAfter we see some data, what are the revised hyperparameters \\(\\alpha_n,\\,\\beta_n\\) equal to?"
+    "text": "Part a\nCompute the maximum likelihood estimator for the parameter \\(\\theta&gt;0\\):\n\\[\n    \\hat{\\theta}_n=\\underset{\\theta&gt;0}{\\arg\\max}\\,\\ln L(\\theta).\n\\]"
   },
   {
     "objectID": "psets/pset_6.html#part-b-1",
     "href": "psets/pset_6.html#part-b-1",
     "title": "Problem Set 6",
     "section": "Part b",
-    "text": "Part b\nShow that the posterior mean has the form\n\\[\nE(\\lambda\\,|\\,X_1,\\,X_2,\\,...,\\,X_n)=w_n\\hat{\\lambda}_n^{(MLE)} + (1-w_n)\\underbrace{E(\\lambda)}_{\\text{prior mean}},\n\\] where \\(w_n\\in(0,\\,1)\\) might depend on the data. This means that the posterior mean is a shrinkage estimator. We shrink the MLE toward our prior estimate of the parameter."
+    "text": "Part b\nFind the sampling distribution of \\(\\hat{\\theta}_n\\), and compute its mean-squared error. What do these things tell you about the properties of this estimator?"
   },
   {
     "objectID": "psets/pset_6.html#part-c-1",
     "href": "psets/pset_6.html#part-c-1",
     "title": "Problem Set 6",
     "section": "Part c",
-    "text": "Part c\nHow should the prior hyperparameters \\(\\alpha_0\\) and \\(\\beta_0\\) be set so that the prior distribution captures my Grandmother’s beliefs about \\(\\lambda\\)?\n\n\n\n\n\n\nTip\n\n\n\nThere’s not necessarily any math here that will"
+    "text": "Part c\nConstruct a \\(100\\times (1-\\alpha)\\%\\) confidence set \\(C_n\\) that satisfies\n\\[\nP(\\theta\\in C_n)=1-\\alpha.\n\\]\n\n\n\n\n\n\nClassical interpretation\n\n\n\nIn this context, we treat \\(C_n\\) as random, and \\(\\theta\\) as fixed. The probability comes from the sampling distribution of \\(C_n\\)."
+  },
+  {
+    "objectID": "psets/pset_6.html#part-d",
+    "href": "psets/pset_6.html#part-d",
+    "title": "Problem Set 6",
+    "section": "Part d",
+    "text": "Part d\nWrite a function in R that takes in two arguments n and theta and returns a vector with \\(n\\) random numbers draw iid from the member of this family with parameter theta. In other words, fill in the blank:\n\nmy_random_numbers &lt;- function(n, theta){\n  # add code here.\n}"
+  },
+  {
+    "objectID": "psets/pset_6.html#part-e",
+    "href": "psets/pset_6.html#part-e",
+    "title": "Problem Set 6",
+    "section": "Part e",
+    "text": "Part e\nWrite some code in R that simulates the sampling distribution of your estimator for various choices of sample size \\(n\\) and visualizes how the distribution evolves as \\(n\\) increases. Based on the picture, what are the properties of this estimator?\n\n\n\n\n\n\nSee the lecture notes from class on 4/14"
+  },
+  {
+    "objectID": "psets/pset_6.html#part-a-2",
+    "href": "psets/pset_6.html#part-a-2",
+    "title": "Problem Set 6",
+    "section": "Part a",
+    "text": "Part a\nShow that the posterior distribution for \\(\\lambda\\) in this model is\n\\[\n\\lambda\\,|\\,X_{1:n}=x_{1:n} \\sim \\text{Gamma}(\\alpha_n,\\,\\beta_n).\n\\]\nAfter we see some data, what are the revised hyperparameters \\(\\alpha_n,\\,\\beta_n\\) equal to?"
+  },
+  {
+    "objectID": "psets/pset_6.html#part-b-2",
+    "href": "psets/pset_6.html#part-b-2",
+    "title": "Problem Set 6",
+    "section": "Part b",
+    "text": "Part b\nShow that the posterior mean has the form\n\\[\nE(\\lambda\\,|\\,X_1,\\,X_2,\\,...,\\,X_n)=w_n\\hat{\\lambda}_n^{(MLE)} + (1-w_n)\\underbrace{E(\\lambda)}_{\\text{prior mean}},\n\\]\nwhere \\(w_n\\in(0,\\,1)\\) might depend on the data. This means that the posterior mean is a shrinkage estimator. We shrink the MLE toward our prior estimate of the parameter."
+  },
+  {
+    "objectID": "psets/pset_6.html#part-d-1",
+    "href": "psets/pset_6.html#part-d-1",
+    "title": "Problem Set 6",
+    "section": "Part d",
+    "text": "Part d\nConstruct a \\(100\\times (1-\\alpha)\\%\\) credible set that satisfies:\n\\[\nP(\\lambda \\in C_n\\,|\\,X_{1:n})=1-\\alpha.\n\\]\n\n\n\n\n\n\nBayesian interpretation\n\n\n\nIn this context, we treat \\(C_n\\) as fixed, and \\(\\lambda\\) as random. The probability comes from the posterior distribution on \\(\\lambda\\)."
+  },
+  {
+    "objectID": "psets/pset_6.html#part-c-2",
+    "href": "psets/pset_6.html#part-c-2",
+    "title": "Problem Set 6",
+    "section": "Part c",
+    "text": "Part c\nHow should the prior hyperparameters \\(\\alpha_0\\) and \\(\\beta_0\\) be set so that the prior distribution captures my grandmother’s beliefs about \\(\\lambda\\)?\n\n\n\n\n\n\nLess math; more trial-and-error\n\n\n\nJust play around in the computer until you find numbers that work."
   },
   {
     "objectID": "psets/pset_5.html",
