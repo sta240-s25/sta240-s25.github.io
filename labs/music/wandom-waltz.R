@@ -109,7 +109,7 @@ music <- Music() +
   Tempo(170) + 
   Key(-3) + 
   
-  tune_random_walk_2 + 
+  tune_iid + 
   Instrument(72) + # 72 - clarinet
   Dynamic("p", 13) + 
   
