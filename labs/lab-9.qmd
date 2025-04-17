@@ -134,6 +134,8 @@ all_pitches <- c("A0", "A#0", "B0",
                  "C8")
 ```
 
+![](piano.webp){fig-align="center"}
+
 The simplest piece of stochastic music is one where we randomly sample these pitches with replacement.
 
 ```{r}
@@ -431,3 +433,6 @@ To complete this lab, please upload the following **to Canvas** (not Gradescope)
 -   an `R` script (*not* Quarto!) with the source code that generates your music. **Don't forget to set a seed**!
 -   the `.mp3` file with the audio of your piece;
 -   a paragraph or two describing the thought process behind the simulation you set up. Discuss how the rules of your random process translated to the sound of the music that was generated. Note anything that surprised you.
+
+
+![](mayonnaise_meme.jpg){width="50%" fig-align="center"}
