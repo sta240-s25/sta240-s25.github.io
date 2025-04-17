@@ -1264,6 +1264,34 @@
     ]
   },
   {
+    "objectID": "labs/lab-9.html",
+    "href": "labs/lab-9.html",
+    "title": "Lab 9: Rhapsody in R\n",
+    "section": "",
+    "text": "There are countless applications of probability and statistics to the natural and social sciences, and we have explored several of them: disease testing, ChatGPT, insurance modeling, portfolio selection, etc. Less frequently explored are the applications of probability in the arts. So, for our last lab, let’s have some silly fun and use what we’ve learned about computer simulation to write our own pieces of stochastic music."
+  },
+  {
+    "objectID": "labs/lab-9.html#schrödingers-kitten-on-the-keys-op.-1",
+    "href": "labs/lab-9.html#schrödingers-kitten-on-the-keys-op.-1",
+    "title": "Lab 9: Rhapsody in R\n",
+    "section": "Schrödinger’s Kitten on the Keys, Op. 1",
+    "text": "Schrödinger’s Kitten on the Keys, Op. 1\nThis code creates a vector with every pitch on the piano from lowest to highest:\n\npitches &lt;- c(\"C\", \"C#\", \"D\", \"D#\", \"E\", \"F\", \"F#\", \"G\", \"G#\", \"A\", \"A#\", \"B\")\noctaves &lt;- 1:7\nall_pitches &lt;- c(\"A0\", \"A#0\", \"B0\", \n                 paste(rep(pitches, length(octaves)), \n                       sort(rep(octaves, length(pitches))), \n                       sep = \"\"), \n                 \"C8\")\n\nThe simplest piece of stochastic music is one where we randomly sample these pitches with replacement.\n\n\n\n\n\n\nSource code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nddd"
+  },
+  {
+    "objectID": "labs/lab-9.html#the-wandom-waltz-op.-2",
+    "href": "labs/lab-9.html#the-wandom-waltz-op.-2",
+    "title": "Lab 9: Rhapsody in R\n",
+    "section": "The Wandom Waltz, Op. 2",
+    "text": "The Wandom Waltz, Op. 2"
+  },
+  {
+    "objectID": "labs/lab-9.html#fauxenakis-op.-3",
+    "href": "labs/lab-9.html#fauxenakis-op.-3",
+    "title": "Lab 9: Rhapsody in R\n",
+    "section": "Fauxenakis, Op. 3",
+    "text": "Fauxenakis, Op. 3"
+  },
+  {
     "objectID": "labs/lab-8.html",
     "href": "labs/lab-8.html",
     "title": "Lab 8",
