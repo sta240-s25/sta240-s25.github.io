@@ -228,11 +228,12 @@ chunk_4 <- list(g_octave, c("F3", "A-3"), c("F3", "A-3"))
 
 accompaniment <- Line(c(chunk_1, chunk_2, chunk_1, chunk_2,
                         chunk_1, chunk_2, chunk_1, chunk_2,
-                        chunk_1, chunk_2, chunk_3, chunk_4))
+                        chunk_1, chunk_2, chunk_3, chunk_4),
+                      name = "Accordion")
 
-bass <- Line(c("C3", NA, NA, "G2", NA, NA, "C3", NA, NA, "G2", NA, NA,
-               "C3", NA, NA, "G2", NA, NA, "C3", NA, NA, "G2", NA, NA,
-               "C3", NA, NA, "G2", NA, NA, "D3", NA, NA, "G2", NA, NA))
+bass <- c("C3", NA, NA, "G2", NA, NA, "C3", NA, NA, "G2", NA, NA,
+          "C3", NA, NA, "G2", NA, NA, "C3", NA, NA, "G2", NA, NA,
+          "C3", NA, NA, "G2", NA, NA, "D3", NA, NA, "G2", NA, NA)
 
 # ===============================================
 # simulate tune
@@ -240,9 +241,10 @@ bass <- Line(c("C3", NA, NA, "G2", NA, NA, "C3", NA, NA, "G2", NA, NA,
 
 set.seed(8675309)
 
-tune_iid <- Line(pitches = random_walk(my_notes, 1, 47),
-                 durations = 0.5,
-                 bar = 5)
+tune <- Line(pitches = random_walk(my_notes, 1, 47),
+             durations = 0.5,
+             bar = 5,
+             name = "Clarinet")
 
 # ===============================================
 # compose!
@@ -253,7 +255,7 @@ waltz <- Music() +
   Tempo(170) + 
   Key(-3) + 
   
-  tune_iid + 
+  tune + 
   Instrument(72) + # 72 - clarinet
   Slur(1, 48) +
   
@@ -263,14 +265,14 @@ waltz <- Music() +
   Dynamic("p", 1) +
   Dynamic("pp", 13) +
 
-  bass + 
+  Line(bass, name = "Banjo") + 
   Clef("F") + 
   Instrument(106) + # 106 - banjo
   Dynamic("p", 1) +
   Dynamic("pp", 13) +
   Hairpin(">", 7, 12) + 
   
-  bass + 
+  Line(bass, name = "Bassoon") + 
   Clef("F") + 
   Instrument(71) + # 71 - bassoon
   Dynamic("p", 1) +
