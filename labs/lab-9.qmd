@@ -290,7 +290,7 @@ show(waltz)
 ```
 
 
-## Fauxenakis, Op. 3
+## Reichleriana, Op. 3
 
 I was trying to create something that sounded like *Pithoprakta*: 49 string players independently scrubbing away. But I ended up with something that sounded more like [Steve Reich](https://youtu.be/1oOmUi4HGt0?feature=shared). Note that I randomized the duration as well as the pitch of the notes:
 
