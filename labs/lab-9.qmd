@@ -1,4 +1,159 @@
 ---
-title: "Lab 9"
-subtitle: Due Thursday April 10 at 11:59 PM
+title: "Lab 9: Rhapsody in `R`"
+subtitle: Due Wednesday April 23 at 3:00 PM
 ---
+
+```{r}
+#| echo: false
+html_tag_audio <- function(file, type = c("wav")) {
+  type <- match.arg(type)
+  htmltools::tags$audio(
+    controls = "",
+    htmltools::tags$source(
+      src = file,
+      type = glue::glue("audio/{type}", type = type)
+    )
+  )
+}
+```
+
+There are countless applications of probability and statistics to the natural and social sciences, and we have explored several of them: [disease testing](https://sta240-s25.github.io/labs/lab-2.html), [ChatGPT](https://sta240-s25.github.io/labs/lab-3.html), [insurance modeling](https://sta240-s25.github.io/labs/lab-4.html#part-2-modeling-insurance-claims), [portfolio selection](https://sta240-s25.github.io/labs/lab-7.html), etc. Less frequently explored are the applications of probability in the arts. So, for our last lab, let's have some silly fun and use what we've learned about computer simulation to write our own pieces of **stochastic music**. 
+
+# Background
+
+In the twentieth century, avant-garde composers experimented with new techniques for composing music -- techniques that would make Mozart and Beethoven cringe. One of these composers was named [Iannis Xenakis](https://en.wikipedia.org/wiki/Iannis_Xenakis). He would write music by simulating random processes, either in the physical world or on a computer. To put it crudely, whatever the simulation spit out, that's what he'd write on paper and hand to the musicians to play. The *art* of this approach lay in how the simulation was constructed. As we know from results like the central limit theorem, ostensibly random phenomena can nevertheless be quite patternful, and so Xenakis' career was devoted to experimenting with different random structures and exploring their implications for the sound of the resulting music. 
+
+In his work *Pithoprakta* (1956) for example, Xenakis conceived of each player in the 46-piece string orchestra as a gas molecule randomly drifting through space according to the laws of statistical mechanics. He notated this in the following way:
+
+![](pithoprakta.jpg){fig-align="center" width="80%"}
+
+Suffice it to say, this music sounds crazy. As Leonard Bernstein [said](https://youtu.be/LfH74hlhKp0?feature=shared&t=639), "every member of the orchestra is on the honor system." Hear for yourself:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nvH2KYYJg-o?si=FCG2k2XsaY4MKZi-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Do I love the sound of that? Not exactly. But as a statistician, I can respect and appreciate the thought behind it.
+
+**Further reading**: 
+
+- [Stochastic music](https://www.iannis-xenakis.org/en/stochastic-music/) by Benoît Gibson (from the Xenakis official website);
+- [Mathematics of Music](https://www.ams.jhu.edu/dan-mathofmusic/stochastic-processes/) by Daniel Naiman (Johns Hopkins).
+
+# The `gm` package
+
+::: callout-warning 
+If you have not done so already, please complete the installation instructions [here](https://sta240-s25.github.io/labs/lab-8.html#part-0---tuning-up).
+:::
+
+```{r}
+library(gm)
+```
+
+
+In this lab, we will write our own pieces of stochastic music. We will do this using the [`gm` package](https://cran.r-project.org/web/packages/gm/index.html) by [Renfei Mao](https://flujoo.github.io/). "gm" stands for "grammar of music," and this package provides a `ggplot2`-style syntax for representing music in `R`. Musical elements (pitch, meter, articulation, instrumentation, etc) are added in layers just like we would write `ggplot() + geom_X() + theme() + ...`, and the package is integrated with MuseScore to allow us to generate sheet music and MIDI previews of our compositions. 
+
+::: callout-tip
+## Read the manual
+`gm` has a very thorough users guide that you can refer to:
+
+<https://cran.r-project.org/web/packages/gm/vignettes/gm.html>
+:::
+
+For example, this is how I would input the first five bars of Ravel's [Prelude in A Minor](https://youtu.be/KAuu3dWf4e0?feature=shared):
+
+![](prelude.png){fig-align="center" width="80%"}
+
+```{r}
+#| eval: true
+
+right_hand <- Line(
+  pitches = list(NA, "E5", "F#5", "D5", "E5", "F#5",
+                 "B5", "G5", "D5", 
+                 "E5", "G4",
+                 c("D4", "F#4", "B4"), c("C#4", "F4", "C5"),
+                 c("G3", "C4", "E4"), c("D#4", "G4"), c("C4", "E4")),
+  durations = c(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 
+                1, 1, 2, 
+                1, 1, 
+                2, 1, 
+                1.5, 0.5, 1)
+)
+  
+left_hand <- Line(
+  pitches = c("A2", "E3", "G3", "C4", "E4", 
+              "G4", "C5", NA, 
+              NA, "E2", "E3", "F#3", "G#3",
+              NA, "A2", "E3", "B3", "G3"),
+  durations = c(rep(0.5, 7), 2, 
+                rep(0.5, 4), 1, 
+                rep(0.5, 4), 1),
+  bar = 2, offset = 0.5
+)
+
+  
+  
+prelude <- Music() + 
+  Meter(3, 4) + 
+  Tempo(60, marking = "Assez lent et très expressif (d'un rhythme libre) quarter = 60 environ") + 
+  right_hand + 
+  Dynamic("p", 1) + 
+  Slur(2, 11) + 
+  Slur(12, 16) + 
+  left_hand + 
+  Clef("F") +
+  Dynamic("p", 1) + 
+  Slur(1, 7) + 
+  Slur(10, 13) + 
+  Slur(15, 18) + 
+  Pedal(1, 7)
+  
+
+show(prelude)
+```
+
+
+# Ludwig van Zito
+
+I adore music of all kinds, but I know absolutely nothing about it. My kid brother Paul is a music ed major in college, and I am frequently harassing him with ridiculous questions about Ice Spice's use of the plagal cadence. I am as dumb as they come. But I do know something about probability, so to give you some inspiration, here is what I came up with after tinkering with this stuff for a few hours.
+
+## Schrödinger's Kitten on the Keys, Op. 1
+
+This code creates a vector with every pitch on the piano from lowest to highest:
+
+```{r}
+pitches <- c("C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B")
+octaves <- 1:7
+all_pitches <- c("A0", "A#0", "B0", 
+                 paste(rep(pitches, length(octaves)), 
+                       sort(rep(octaves, length(pitches))), 
+                       sep = ""), 
+                 "C8")
+```
+
+The simplest piece of stochastic music is one where we randomly sample these pitches with replacement.
+
+::: {.callout-note collapse="true"}
+## Source code
+:::
+
+::: callout-important
+ddd
+:::
+
+
+## The Wandom Waltz, Op. 2
+
+
+
+## Fauxenakis, Op. 3
+
+# Your turn
+
+Your task here is simply to **play**. Play, and surprise yourself. Set up a simulation, and use the output to randomly determine the elements of a piece of music: the melody, harmony, rhythm, meter, pitch, articulation, instrumentation, etc. The sky is truly the limit. The goal is to generate music that contains surprising emergent properties that you would not have anticipated based on the rules of the system you designed. If you can also make yourself laugh by how absurd these things sound, even better.
+
+To complete this lab, please submit the following **on Canvas**:
+
+- an `R` script (*not* Quarto!) with the code that generates your music. **Don't forget to set a seed**!
+- the `.mp3` file;
+- a paragraph or two describing the thought process behind the simulation you set up. Discuss how the rules of your random process translated to the sound of the music that was generated. Note anything that surprised you. 
+
+To be clear, if you are totally not into this, but you can't afford to drop this assignment, then feel free to copy one of my examples, make a minor change, and submit. Otherwise, I encourage you to let the creative juices flow!
