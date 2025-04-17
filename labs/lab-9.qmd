@@ -17,11 +17,11 @@ html_tag_audio <- function(file, type = c("wav")) {
 }
 ```
 
-There are countless applications of probability and statistics to the natural and social sciences, and we have explored several of them: [disease testing](https://sta240-s25.github.io/labs/lab-2.html), [ChatGPT](https://sta240-s25.github.io/labs/lab-3.html), [insurance modeling](https://sta240-s25.github.io/labs/lab-4.html#part-2-modeling-insurance-claims), [portfolio selection](https://sta240-s25.github.io/labs/lab-7.html), etc. Less frequently explored are the applications of probability in the arts. So, for our last lab, let's have some silly fun and use what we've learned about computer simulation to write our own pieces of **stochastic music**. 
+There are countless applications of probability and statistics to the natural and social sciences, and we have explored several of them: [disease testing](https://sta240-s25.github.io/labs/lab-2.html), [ChatGPT](https://sta240-s25.github.io/labs/lab-3.html), [insurance modeling](https://sta240-s25.github.io/labs/lab-4.html#part-2-modeling-insurance-claims), [portfolio selection](https://sta240-s25.github.io/labs/lab-7.html), etc. Less frequently explored are the applications of probability in the arts. So, for our last lab, let's have some silly fun and use what we've learned about computer simulation to write our own pieces of **stochastic music**.
 
 # Background
 
-In the twentieth century, avant-garde composers experimented with new techniques for composing music -- techniques that would make Mozart and Beethoven cringe. One of these composers was named [Iannis Xenakis](https://en.wikipedia.org/wiki/Iannis_Xenakis). He would write music by simulating random processes, either in the physical world or on a computer. To put it crudely, whatever the simulation spit out, that's what he'd write on paper and hand to the musicians to play. The *art* of this approach lay in how the simulation was constructed. As we know from results like the central limit theorem, ostensibly random phenomena can nevertheless be quite patternful, and so Xenakis' career was devoted to experimenting with different random structures and exploring their implications for the sound of the resulting music. 
+In the twentieth century, avant-garde composers experimented with new techniques for composing music -- techniques that would make Mozart and Beethoven cringe. One of these composers was named [Iannis Xenakis](https://en.wikipedia.org/wiki/Iannis_Xenakis). He would write music by simulating random processes, either in the physical world or on a computer. To put it crudely, whatever the simulation spit out, that's what he'd write on paper and hand to the musicians to play. The *art* of this approach lay in how the simulation was constructed. As we know from results like the central limit theorem, ostensibly random phenomena can nevertheless be quite patternful, and so Xenakis' career was devoted to experimenting with different random structures and exploring their implications for the sound of the resulting music.
 
 In his work *Pithoprakta* (1956) for example, Xenakis conceived of each player in the 46-piece string orchestra as a gas molecule randomly drifting through space according to the laws of statistical mechanics. He notated this in the following way:
 
@@ -29,18 +29,20 @@ In his work *Pithoprakta* (1956) for example, Xenakis conceived of each player i
 
 Suffice it to say, this music sounds crazy. As Leonard Bernstein [said](https://youtu.be/LfH74hlhKp0?feature=shared&t=639), "every member of the orchestra is on the honor system." Hear for yourself:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nvH2KYYJg-o?si=FCG2k2XsaY4MKZi-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nvH2KYYJg-o?si=FCG2k2XsaY4MKZi-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
 
 Do I love the sound of that? Not exactly. But as a statistician, I can respect and appreciate the thought behind it.
 
-**Further reading**: 
+**Further reading**:
 
-- [Stochastic music](https://www.iannis-xenakis.org/en/stochastic-music/) by Benoît Gibson (from the Xenakis official website);
-- [Mathematics of Music](https://www.ams.jhu.edu/dan-mathofmusic/stochastic-processes/) by Daniel Naiman (Johns Hopkins).
+-   [Stochastic music](https://www.iannis-xenakis.org/en/stochastic-music/) by Benoît Gibson (from the Xenakis official website);
+-   [Mathematics of Music](https://www.ams.jhu.edu/dan-mathofmusic/stochastic-processes/) by Daniel Naiman (Johns Hopkins).
 
 # The `gm` package
 
-::: callout-warning 
+::: callout-warning
 If you have not done so already, please complete the installation instructions [here](https://sta240-s25.github.io/labs/lab-8.html#part-0---tuning-up).
 :::
 
@@ -50,11 +52,11 @@ If you have not done so already, please complete the installation instructions [
 library(gm)
 ```
 
-
-In this lab, we will write our own pieces of stochastic music. We will do this using the [`gm` package](https://cran.r-project.org/web/packages/gm/index.html) by [Renfei Mao](https://flujoo.github.io/). "gm" stands for "grammar of music," and this package provides a `ggplot2`-style syntax for representing music in `R`. Musical elements (pitch, meter, articulation, instrumentation, etc) are added in layers just like we would write `ggplot() + geom_X() + theme() + ...`, and the package is integrated with MuseScore to allow us to generate sheet music and MIDI previews of our compositions. 
+In this lab, we will write our own pieces of stochastic music. We will do this using the [`gm` package](https://cran.r-project.org/web/packages/gm/index.html) by [Renfei Mao](https://flujoo.github.io/). "gm" stands for "grammar of music," and this package provides a `ggplot2`-style syntax for representing music in `R`. Musical elements (pitch, meter, articulation, instrumentation, etc) are added in layers just like we would write `ggplot() + geom_X() + theme() + ...`, and the package is integrated with MuseScore to allow us to generate sheet music and MIDI previews of our compositions.
 
 ::: callout-tip
 ## Read the manual
+
 `gm` has a very thorough users guide that you can refer to:
 
 <https://cran.r-project.org/web/packages/gm/vignettes/gm.html>
@@ -113,7 +115,6 @@ show(prelude)
 ```
 
 Pretty close!
-
 
 # Ludwig van Zito
 
@@ -289,7 +290,6 @@ show(waltz)
 
 ```
 
-
 ## Reichleriana, Op. 3
 
 I was trying to create something that sounded like *Pithoprakta*: 49 string players independently scrubbing away. But I ended up with something that sounded more like [Steve Reich](https://youtu.be/1oOmUi4HGt0?feature=shared). Note that I randomized the duration as well as the pitch of the notes:
@@ -328,13 +328,104 @@ for(i in 1:50){
 show(reich, to = "audio")
 ```
 
+## *Oeuvre punning voyage* by G. Jacobson
+
+Gwen's method was to painstakingly transcribe a known piece of music and then "add noise." That is, she'd take the original "correct" notes and then randomly perturb them. Kinda like $y=X\beta+\varepsilon$, only it's music. See how long it takes you to recognize the original:
+
+```{r}
+#| code-fold: true
+
+random_shift <- function(start_pitch, notes = c("A", "B", "C", "D", "E", "F", "G"), var){
+  shift <- round(rnorm(1, mean = 0, sd = sqrt(var)))
+  start_note <- substring(start_pitch, 1, 1)
+  start_octave <- strtoi(substring(start_pitch, 2, 2))
+  n_length <- length(notes)
+  
+  old_pos <- which(notes == start_note)
+  new_pos <- old_pos + shift
+  while(new_pos > n_length){
+    new_pos <- new_pos - n_length
+  }
+  while(new_pos < 1){
+    new_pos <- new_pos + n_length
+  }
+  new_note <- notes[new_pos]
+  
+  new_octave <- start_octave
+  if(shift > 0){
+    if(new_pos >= 3 || shift >= n_length){
+      new_octave <- min(new_octave + (shift %/% n_length), 7)
+    }
+  } else if(shift < 0){
+    if(new_pos < 3 || (abs(shift) >= n_length && (shift %% n_length != 0))){
+      new_octave <- max(new_octave - ((abs(shift) %/% n_length) + 1), 1)
+    } else if(abs(shift) >= n_length && (shift %% n_length == 0)){
+      new_octave <- max(new_octave - (abs(shift) %/% n_length), 1)
+    }
+  }
+  return(paste0(new_note, new_octave))
+}
+
+pitches_treble <- list(c("F4", "D4", "B3"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), "C4", c("G4", "E4", "C4"), c("A4", "F4", "D4"), c("A4", "F4", "D4"), "C5", "B4", "A4", c("F4", "D4", "B3"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), "C4", "C4", NA, NA, "C4", "C4", "D4", "E4", "F4", c("F4", "D4", "B3"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), "C4", c("G4", "E4", "C4"), c("A4", "F4", "D4"), c("A4", "F4", "D4"), "C5", "B4", "A4", c("F4", "D4", "B3"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), "C4", c("E4", "C4"), "F4", c("F4", "D4", "A3"), NA, "F4", "F4", "F4", NA, c("D4", "B3"), c("E4", "B3"), c("F4", "B3"), c("F4", "B3"), "G4", c("E4", "C4"), c("E4", "C4"), "D4", "C4", "C4", NA, NA, c("D4", "B3"), c("D4", "B3"), c("E4", "B3"), c("F4", "B3"), "E4", "C4", c("C5", "C4"), NA, "C5", "G4", NA, NA, c("D4", "B3"), c("D4", "B3"), c("E4", "B3"), c("F4", "B3"), "D4", c("F4", "B3"), "G4", NA, c("E4", "C4"), "D4", "C4", "C4", NA, NA, c("D4", "B3"), c("D4", "B3"), "F4", c("E4", "B3"), "D4", "C4", c("G4", "E4", "C4"), "G4", "G4", "A4", "G4", NA, c("F4", "D4", "B3"), "F4", "G4", "A4", "F4", c("G4", "E4", "C4"), "G4", "G4", "A4", "G4", "C4", NA, "D4", "E4", "F4", "D4", NA, c("G4", "E4", "C4"), "A4", "G4", "G4", "C4", "D4", "F4", "D4", c("A4", "F4", "D4"), c("A4", "F4", "D4"), c("A4", "F4", "D4"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), "C4", "D4", "F4", "D4", c("G4", "E4", "C4"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), c("F4", "D4", "A3"), c("F4", "D4", "A3"), "E4", "D4", "C4", "D4", "F4", "D4", c("F4", "D4", "B3"), "G4", c("E4", "C4"), c("E4", "C4"), "D4", "C4", "C4", c("G4", "C4", "A3"), c("F4", "D4", "A3"), "C4", "D4", "F4", "D4", c("A4", "F4", "D4"), c("A4", "F4", "D4"), c("A4", "F4", "D4"), c("G4", "E4", "C4"), c("G4", "E4", "C4"), "C4", "D4", "F4", "D4", c("C5", "C4"), "E4", "F4", "F4", "E4", "D4", "C4", "D4", "F4", "D4", c("F4", "D4", "B3"), "G4", c("E4", "C4"), c("E4", "C4"), "D4", "C4", "C4", c("G4", "C4", "A3"), c("F4", "D4", "A3"), NA)
+
+times_treble <- list("quarter.", 0.5, 1, 1, "quarter.", 0.5, 1, 0.25, 0.25, 0.5, "quarter.", 0.5, 1, 1, "quarter.", 0.5, 0.5, 0.25, 0.25, 0.25, 0.5, 0.25, "quarter.", 0.5, 1, 1, "quarter.", 0.5, 1, 0.25, 0.25, 0.5, "quarter.", 0.5, 1, 1, 0.5, 0.5, 1, 1, 0.25, 0.5, 0.25, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.25, 0.5, 2, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 2, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 1, 1, 2, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1, 2, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.25, 0.25, 0.25, 0.25, "eighth.", 0.25, 0.5, 0.5, 1, 0.25, 0.25, 0.25, 0.25, "eighth.", 0.25, 0.5, 0.5, 0.25, 0.25, 0.5, 0.25, 0.25, 0.25, 0.25, 1, 0.5, 0.5, 0.25, 0.25, 1, 0.5, 1, 2, 0.25, 0.25, 0.25, 0.25, "eighth.", 0.25, 0.5, 0.5, 1, 0.25, 0.25, 0.25, 0.25, 1, 0.5, 0.5, 0.25, 0.25, 0.5, 0.25, 0.25, 0.25, 0.25, 1, 0.5, 0.5, 0.25, 0.25, 1, 0.5, 1, 2, 1)
+
+pitches_bass <- list("B1", c("B2", "B1"), "C2", "C2", c("C3", "C2"), "C2", c("C3", "C2"), "A1", c("A2", "A1"), "B1", "B1", c("D3", "B1"), "B1", c("D3", "B1"), "B1", c("B2", "B1"), "C2", "C2", c("C3", "C2"), "C2", c("C3", "C2"), "B1", c("B2", "B1"), "C2", "C2", c("C3", "C2"), "C2", c("C3", "C2"), "B1", c("B2", "B1"), "C2", "C2", c("C3", "C2"), "C2", c("C3", "C2"), "A1", c("A2", "A1"), "B1", "B1", c("D3", "B1"), "B1", c("D3", "B1"), "B1", c("B2", "B1"), "C2", "C2", c("C3", "C2"), "C2", c("C3", "C2"), "A1", c("A2", "A1"), "B1", "B1", c("D3", "B1"), "B1", c("D3", "B1"), "B1", c("F2", "B1"), c("B2", "B1"), c("B2", "B1"), c("C3", "C2"), c("C3", "C2"), c("C3", "C2"), c("C3", "C2"), c("B2", "B1"), "B1", c("F2", "B1"), c("B2", "B1"), c("B2", "B1"), c("C3", "C2"), NA, NA, NA, "B1", c("F2", "B1"), c("B2", "B1"), c("B2", "B1"), c("C3", "C2"), c("C3", "C2"), c("C3", "C2"), c("B2", "B1"), "B1", c("F2", "B1"), c("B2", "B1"), c("G2", "G1"), c("C3", "C2"), c("B2", "B1"), "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", "B1", "B2", c("C3", "C2"), NA, NA, NA, c("B2", "B1"), c("B2", "B1"), c("B2", "B1"), c("C3", "C2"), c("C3", "C2"), NA, c("A2", "A1"), c("A2", "A1"), c("A2", "A1"), c("D3", "D2"), c("D3", "D2"), NA, c("G2", "G1"), c("C3", "C2"), c("C3", "C2"), "C3", c("E3", "A2"), c("D3", "D2"), NA, c("B2", "B1"), c("B2", "B1"), c("B2", "B1"), c("C3", "C2"), c("C3", "C2"), NA, c("A2", "A1"), c("A2", "A1"), c("D3", "D2"), c("D3", "D2"), NA, c("G2", "G1"), c("C3", "C2"), c("C3", "C2"), "C3", c("E3", "A2"), c("D3", "D2"), NA)
+
+times_bass <- list(0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, "quarter.", 0.5, "quarter.", 0.5, 1, 1, 0.5, 0.5, 2, 1, 0.5, 0.5, 1, 2, 0.5, 0.5, 2, 1, "quarter.", 0.5, 1, 1, 0.5, 0.5, 1, 2, "half.", 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 2, 0.75, 0.25, 0.5, 0.5, 1, 1, 0.75, 0.25, 0.5, 0.5, 1, 1, "quarter.", 0.5, 1, 1, 1, 2, 1, 0.75, 0.25, 0.5, 0.5, 1, 1, 1, 0.5, 0.5, 1, 1, "quarter.", 0.5, 1, 1, 1, 2, 1)
+
+tie_starts_treble <- c(2, 6, 12, 14, 24, 28, 34, 36, 45, 46, 47, 50, 53, 57, 58, 59, 69, 70, 71, 79, 83, 95, 114)
+tie_ends_treble <- tie_starts_treble + 1
+
+set.seed(12345)
+pitches_treble_rand2 <- pitches_treble
+
+for(note in 1:43){
+  # use N(0, 144)
+  current_note <- pitches_treble[[note]]
+  if(!(note %in% c(tie_starts_treble, tie_ends_treble)) && sum(is.na(current_note)) == 0){
+    for(n in 1:length(current_note)){
+      current_note[n] <- random_shift(start_pitch = current_note[n], var = 144)
+    }
+    pitches_treble_rand2[[note]] <- current_note
+  }
+}
+
+for(note in 44:115){
+  # use N(0, 16)
+  current_note <- pitches_treble[[note]]
+  if(!(note %in% c(tie_starts_treble, tie_ends_treble)) && sum(is.na(current_note)) == 0){
+    for(n in 1:length(current_note)){
+      current_note[n] <- random_shift(start_pitch = current_note[n], var = 16)
+    }
+    pitches_treble_rand2[[note]] <- current_note
+  }
+}
+
+rr_rand2 <- Music() + 
+  Meter(4, 4) + 
+  Line(pitches_treble_rand2, times_treble, name = "treble") + 
+  Line(pitches_bass, times_bass, name = "bass") + 
+  Clef("F", to = "bass") +
+  Tie(2, to = "treble") + Tie(6, to = "treble") + Tie(12, to = "treble") + Tie(14, to = "treble") + Tie(24, to = "treble") + Tie(28, to = "treble") + Tie(34, to = "treble") + Tie(36, to = "treble") + Tie(45, to = "treble") + Tie(46, to = "treble") + Tie(47, 2, to = "treble") + Tie(50, to = "treble") + Tie(53, to = "treble") + Tie(57, 2, to = "treble") + Tie(58, to = "treble") + Tie(59, to = "treble") + Tie(69, 2, to = "treble") + Tie(70, to = "treble") + Tie(71, 2, to = "treble") + Tie(79, to = "treble") + Tie(83, 2, to = "treble") + Tie(95, to = "treble") + Tie(114, to = "treble") + Tie(121, to = "treble") + Tie(123, to = "treble") + Tie(130, to = "treble") + Tie(132, to = "treble") + Tie(142, to = "treble") + Tie(154, to = "treble") + Tie(156, to = "treble") + Tie(164, to = "treble") + Tie(174, to = "treble") + 
+  Tie(1, to = "bass") + Tie(3, to = "bass") + Tie(4, to = "bass") + Tie(5, to = "bass") + Tie(6, to = "bass") + Tie(8, to = "bass") + Tie(10, to = "bass") + Tie(11, to = "bass") + Tie(12, to = "bass") + Tie(13, to = "bass") + Tie(15, to = "bass") + Tie(17, to = "bass") + Tie(18, to = "bass") + Tie(19, to = "bass") + Tie(20, to = "bass") + Tie(22, to = "bass") + Tie(24, to = "bass") + Tie(25, to = "bass") + Tie(26, to = "bass") + Tie(27, to = "bass") + Tie(29, to = "bass") + Tie(31, to = "bass") + Tie(32, to = "bass") + Tie(33, to = "bass") + Tie(34, to = "bass") + Tie(36, to = "bass") + Tie(38, to = "bass") + Tie(39, to = "bass") + Tie(40, to = "bass") + Tie(41, to = "bass") + Tie(43, to = "bass") + Tie(45, to = "bass") + Tie(46, to = "bass") + Tie(47, to = "bass") + Tie(48, to = "bass") + Tie(50, to = "bass") + Tie(52, to = "bass") + Tie(53, to = "bass") + Tie(54, to = "bass") + Tie(55, to = "bass") + Tie(57, to = "bass") + Tie(58, to = "bass") + Tie(59, to = "bass") + Tie(61, to = "bass") + Tie(66, to = "bass") + Tie(67, to = "bass") + Tie(74, to = "bass") + Tie(75, to = "bass") + Tie(79, to = "bass") + Tie(82, to = "bass") + Tie(83, to = "bass") + Tie(117, to = "bass") + Tie(119, to = "bass") + Tie(123, to = "bass") + Tie(125, to = "bass") + Tie(129, to = "bass") + Tie(136, to = "bass") + Tie(138, to = "bass") + Tie(143, to = "bass") + Tie(147, to = "bass") +
+  Tempo(114) + 
+  Articulation(">", 63, to = "treble") + Articulation(".", 63, to = "treble") + Articulation(".", 120, to = "treble") + Articulation(".", 121, to = "treble") + Articulation(".", 129, to = "treble") + Articulation(".", 130, to = "treble") + Articulation(".", 153, to = "treble") + Articulation(".", 154, to = "treble") + 
+  Articulation(">", 70, to = "bass") + Articulation(".", 70, to = "bass") + Articulation(">", 112, to = "bass") + Articulation(".", 112, to = "bass") + Articulation(".", 116, to = "bass") + Articulation(".", 117, to = "bass") + Articulation(".", 122, to = "bass") + Articulation(".", 123, to = "bass") + Articulation(".", 132, to = "bass") + Articulation(".", 135, to = "bass") + Articulation(".", 136, to = "bass") + Articulation(".", 150, to = "bass") +
+  Accidental("sharp", 65, to = "bass") + Accidental("sharp", 81, to = "bass") + Accidental("sharp", 87, to = "bass") +
+  Dynamic("mf", 1, to = "treble") + Dynamic("mf", 68, to = "treble") + Dynamic("f", 116, to = "treble")
+
+show(rr_rand2)
+```
+
+Prokofiev lives!
 
 # Your turn
 
-Your task here is simply to **play**. Play, and surprise yourself. Set up a simulation, and use the output to randomly determine the elements of a piece of music: the melody, harmony, rhythm, meter, pitch, articulation, instrumentation, etc. The sky is truly the limit. The goal is to generate music that contains surprising emergent properties that you would not have anticipated based on the rules of the system you designed. If you can also make yourself laugh by how absurd these things sound, even better.
+Your task here is simple: **play**. Play, and surprise yourself. Set up a simulation, and use the output to randomly determine the elements of a piece of music: the melody, harmony, rhythm, meter, pitch, articulation, instrumentation, etc. The sky is truly the limit. The goal is to generate music that contains surprising emergent properties that you would not have anticipated based on the rules of the system you designed. If you can also make yourself laugh by how absurd these things sound, even better.
 
 To complete this lab, please upload the following **to Canvas** (not Gradescope):
 
-- an `R` script (*not* Quarto!) with the source code that generates your music. **Don't forget to set a seed**!
-- the `.mp3` file with the audio of your piece;
-- a paragraph or two describing the thought process behind the simulation you set up. Discuss how the rules of your random process translated to the sound of the music that was generated. Note anything that surprised you. 
+-   an `R` script (*not* Quarto!) with the source code that generates your music. **Don't forget to set a seed**!
+-   the `.mp3` file with the audio of your piece;
+-   a paragraph or two describing the thought process behind the simulation you set up. Discuss how the rules of your random process translated to the sound of the music that was generated. Note anything that surprised you.
