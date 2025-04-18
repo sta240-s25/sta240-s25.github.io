@@ -11,6 +11,7 @@ project:
     - notes/sta240-07-expectation.pdf
     - notes/sta240-ap-stats.pdf
     - notes/sta240-mle-1.pdf
+    - notes/sta240-mle-2.pdf
 
 website:
   page-navigation: true
