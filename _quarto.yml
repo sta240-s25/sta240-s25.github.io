@@ -107,8 +107,6 @@ website:
             text: Lab 2
           - href: labs/lab-3.qmd
             text: Lab 3
-          - href: exams/midterm-1.qmd
-            text: Midterm 1 Practice
           - href: labs/lab-4.qmd
             text: Lab 4
           - href: labs/lab-5.qmd
@@ -121,6 +119,12 @@ website:
             text: Lab 8
           - href: labs/lab-9.qmd
             text: Lab 9
+      - section: "Exam review"
+        contents:
+          - href: exams/midterm-1.qmd
+            text: Midterm 1
+          - href: exams/midterm-2.qmd
+            text: Midterm 2
             
   page-footer:
     right: 'This page is built with [Quarto](https://quarto.org/).'

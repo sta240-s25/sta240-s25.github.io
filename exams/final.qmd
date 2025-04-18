@@ -1,0 +1,38 @@
+---
+title: "Final Exam Study Guide"
+---
+
+Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 questions, and they will break down as follows:
+
+1. Basic probability rules
+2. Counting
+3. Conditional probability
+4. Discrete random variables
+5. Absolutely continuous random variables
+6. The moment-generating function
+7. Transformations of random variables
+8. Joint distributions
+9. Maximum likelihood estimation
+10. Bayesian inference
+11. Some undisclosed check on your visual intuition (like the matching you've already seen). I will say no more about this, and you will do very well on it.
+
+## What calculus do I need to know
+
+finite geometric sum
+geometric series 
+taylor series of exponential
+
+power rule 
+chain rule 
+log/exp rule 
+product rule 
+
+u sub 
+integration by parts 
+improper integration
+
+lhopital 
+
+"massage and squint"
+
+Multivariable calculus is *not* a pre-requisite for our course, and so there will be no partial differentiation or double integration. 
