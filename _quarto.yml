@@ -12,6 +12,10 @@ project:
     - notes/sta240-ap-stats.pdf
     - notes/sta240-mle-1.pdf
     - notes/sta240-mle-2.pdf
+    - notes/sta240-continuous-rv.pdf
+    - notes/sta240-mgf.pdf
+    - notes/sta240-sums-averages.pdf
+    - notes/sta240-transformations.pdf
 
 website:
   page-navigation: true
