@@ -4,6 +4,7 @@ title: "Final Exam Study Guide"
 
 Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 questions, and they will break down as follows:
 
+0. (Some undisclosed check on your visual intuition, like the matching you've already seen. I will say no more about this, and you will do very well on it.)
 1. Basic probability rules
 2. Counting
 3. Conditional probability
@@ -14,25 +15,176 @@ Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 
 8. Joint distributions
 9. Maximum likelihood estimation
 10. Bayesian inference
-11. Some undisclosed check on your visual intuition (like the matching you've already seen). I will say no more about this, and you will do very well on it.
 
-## What calculus do I need to know
+Below are two practice problems for each of these ten items, as well as guidance about what course materials to refer to if you want more review on a particular topic.
 
-finite geometric sum
-geometric series 
-taylor series of exponential
+# 1. Basic probability rules
 
-power rule 
-chain rule 
-log/exp rule 
-product rule 
+## Problem 1
 
-u sub 
-integration by parts 
-improper integration
+## Problem 2
 
-lhopital 
+## Need more review on this?
 
-"massage and squint"
+# 2. Counting
 
-Multivariable calculus is *not* a pre-requisite for our course, and so there will be no partial differentiation or double integration. 
+## Problem 3
+
+## Problem 4
+
+## Need more review on this?
+
+# 3. Conditional probability
+
+## Problem 5
+
+## Problem 6
+
+## Need more review on this?
+
+# 4. Discrete random variables
+
+## Problem 7
+
+## Problem 8
+
+## Need more review on this?
+
+# 5. Absolutely continuous random variables
+
+## Problem 9
+
+## Problem 10
+
+## Need more review on this?
+
+# 6. The moment-generating function
+
+## Problem 11
+
+## Problem 12
+
+## Need more review on this?
+
+- Poisson and standard normal examples from lecture (see my Overleaf notes);
+- Gamma on [Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-6);
+- Part 3 of [Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-3-moments);
+- Another on [Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html#problem-3).
+
+# 7. Transformations
+
+## Problem 13
+
+Let $X\sim\text{Gamma}(\alpha,\,\beta)$, and define a new random variable $Y=1/X$?
+
+a. What is the density of $Y$?
+b. What is $E(Y)$?
+c. What is $\text{var}(Y)$?
+
+::: callout-note 
+A random variable possessing this new density is said to follow the **inverse gamma distribution**.
+:::
+
+## Problem 14
+
+Let $X$ be a nonnegative continuous random variable with this density:
+
+$$
+f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
+$$
+
+Treat $\theta>0$ as a constant, and define a new random variable $Y=\ln(X+1)$. 
+
+a. What is the range of $Y$?
+b. What is the density of $Y$?
+c. Is the density of $Y$ familiar?
+
+## Problem 15
+
+Let $X$ be a continuous random variable with this density:
+
+$$
+f(x\,|\,\theta)
+=
+\frac{1}{2\theta}\exp\left(-\frac{|x|}{\theta}\right), \quad -\infty<x<\infty.
+$$
+
+Treat $\theta>0$ as a constant, and define a new random variable $Y=|X|$. 
+
+a. Sketch what this density looks like for $\theta=1$.
+b. What is the range of $Y$?
+c. What is the density of $Y$?
+d. Is the density of $Y$ familiar?
+
+## Need more review on this?
+
+- See [Lab 5](https://sta240-s25.github.io/labs/lab-5.html) and Section 3.8 in my Overleaf notes;
+- [Part 4 of Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-4-transformations);
+- [Problem 4 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-4);
+- Problem 4 on Midterm 2.
+
+
+# 8. Joint distributions 
+
+## Problem 16
+
+## Problem 17
+
+pareto gamma
+
+## Need more review on this?
+
+# 9. Maximum likelihood estimation 
+
+## Problem 18
+
+Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem 14 above:
+
+$$
+f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
+$$
+
+a. What is the maximum likelihood estimator of $\theta>0$?
+b. What is the sampling distribution of the estimator?
+c. What is the MSE of the estimator?
+d. State the bounds of a 90% confidence interval for $\theta$.
+
+## Problem 19
+
+Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem 15 above:
+
+$$
+f(x\,|\,\theta)
+=
+\frac{1}{2\theta}\exp\left(-\frac{|x|}{\theta}\right), \quad -\infty<x<\infty.
+$$
+
+a. What is the maximum likelihood estimator of $\theta>0$?
+b. What is the sampling distribution of the estimator? 
+c. What is the MSE of the estimator?
+d. State the bounds of a 75% confidence interval for $\theta$.
+
+## Need more review on this?
+
+- Four worked examples from lecture: [4/14](https://sta240-s25.github.io/notes/sta240-mle-1.pdf), [4/16](https://sta240-s25.github.io/notes/sta240-mle-2.pdf);
+- [Problem 2 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-2);
+- Ch. 7.5, 7.6 in DeGroot & Schervish. 
+
+# 10. Bayesian inference
+
+## Problem 20
+
+Geometric beta
+
+## Problem 21
+
+pareto-gamma
+
+## Need more review on this?
+
+- Worked examples from lecture (coming soon!);
+- [Problem 3 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-3);
+- Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples:
+    - the Poisson-binomial hierarchy;
+    - the gamma-normal hierarchy that motivated Student's $t$ distribution;
+    - the [beta-gamma hierarchy](https://sta240-s25.github.io/psets/pset_5.html#problem-15) from Problem Set 5.
