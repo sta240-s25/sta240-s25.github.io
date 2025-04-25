@@ -5,7 +5,7 @@ title: "Final Exam Study Guide"
 Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 questions, and they will break down as follows:
 
 0.  (Some undisclosed check on your visual intuition, like the matching you've already seen. I will say no more about this, and you will do very well on it.)
-1.  Basic probability rules
+1.  Set theory and basic probability rules
 2.  Counting
 3.  Conditional probability
 4.  Discrete random variables
@@ -16,17 +16,26 @@ Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 
 9.  Maximum likelihood estimation
 10. Bayesian inference
 
-Below are two practice problems for each of these ten items, as well as guidance about what course materials to refer to if you want more review on a particular topic.
+Below are at least two practice problems for each of these ten items, as well as guidance about what course materials to refer to if you want more review on a particular topic.
 
-# 1. Basic probability rules
+# 1. Set theory and basic probability rules
 
 ## Problem 1
 
-Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ and $B^{c}$ disjoint?
+Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ and $B^{c}$ also disjoint events?
 
 ## Problem 2
 
-Let $A_{1}$, $A_{2}$, and $A_{3}$ be three arbitrary events. Show that the probability that exactly one of these three events will occur is $$\mathbb{P}(A_{1}) + \mathbb{P}(A_{2}) + \mathbb{P}(A_{3}) - 2\mathbb{P}(A_{1} \cap A_{2}) - 2\mathbb{P}(A_{1} \cap A_{3}) - 2\mathbb{P}(A_{2} \cap A_{3}) + 3\mathbb{P}(A_{1} \cap A_{2} \cap A_{3}).$$
+Let $A$, $B$, and $C$ be three arbitrary events, and let $D$ denote the event that "exactly one of these three events occurs."
+
+
+Show that the probability that exactly one of these three events will occur is 
+
+a. Draw a cartoon of $A$, $B$, $C$, and $D$;
+b. Use the three basic set operations (union, intersection, and complement) to express $D$ in terms of $A$, $B$, and $C$;
+c. Show that 
+
+$$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).$$
 
 ## Need more review on this?
 
@@ -34,9 +43,9 @@ Let $A_{1}$, $A_{2}$, and $A_{3}$ be three arbitrary events. Show that the proba
 
 ## Problem 3
 
-The United States Senate contains two seantors -- one senior and one junior -- from each of the $50$ states.
+The United States Senate contains two senators -- one senior and one junior -- from each of the $50$ states.
 
-a. If a committee of eight senators is selcted, what is the probability that it will contain at least one of the two senators from a certain specified state?
+a. If a committee of eight senators is selected, what is the probability that it will contain at least one of the two senators from a certain specified state?
 b. If a committee of twenty senators is selected, what is the probability it will contain $15$ junior senators and $5$ senior senators?
 c. What is the probability that a group of $50$ senators selected at random will contain one senator from each state?
 
@@ -187,8 +196,8 @@ Consider the following Bayesian model:
 
 $$
 \begin{aligned}
-p&\sim\text{Beta}(a_0,\,b_0)\\
-X_1,\,X_2,\,...,\,X_n\,|\,p&\overset{\text{iid}}{\sim}\text{Geometric}(p).
+p&\sim\text{Beta}(a_0,\,b_0)&& \text{(prior)}\\
+X_1,\,X_2,\,...,\,X_n\,|\,p&\overset{\text{iid}}{\sim}\text{Geometric}(p).&& \text{(likelihood)}
 \end{aligned}
 $$
 
@@ -198,7 +207,7 @@ c. State an 82% credible interval for $p$.
 
 ## Problem 21
 
-Recall this family of distributions from problems 14 and 18:
+Recall this family of distributions from Problems 14 and 18:
 
 $$
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
@@ -208,8 +217,8 @@ If we observed iid data from some unknown member of this family, we could perfor
 
 $$
 \begin{aligned}
-\theta&\sim\text{Gamma}(a_0,\,b_0)\\
-X_1,\,X_2,\,...,\,X_n\,|\,\theta&\overset{\text{iid}}{\sim}f(x\,|\,\theta).
+\theta&\sim\text{Gamma}(a_0,\,b_0) && \text{(prior)}\\
+X_1,\,X_2,\,...,\,X_n\,|\,\theta&\overset{\text{iid}}{\sim}f(x\,|\,\theta).  && \text{(likelihood)}
 \end{aligned}
 $$
 
