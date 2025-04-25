@@ -28,9 +28,9 @@ Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ a
 
 Let $A$, $B$, and $C$ be three arbitrary events, and let $D$ denote the event that "exactly one of these three events occurs."
 
-a. Draw a cartoon of $A$, $B$, $C$, and $D$;
-b. Use the three basic set operations (union, intersection, and complement) to express $D$ in terms of $A$, $B$, and $C$;
-c. Show that 
+a.  Draw a cartoon of $A$, $B$, $C$, and $D$;
+b.  Use the three basic set operations (union, intersection, and complement) to express $D$ in terms of $A$, $B$, and $C$;
+c.  Show that
 
 $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).$$
 
@@ -38,9 +38,9 @@ $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \c
 
 -   Various worked examples and derivations in [my notes](https://sta240-s25.github.io/notes/sta240-02-probability-fundamentals.pdf);
 -   [The entirety of Problem Set 1](https://sta240-s25.github.io/psets/pset_1.html);
--   [Problems 4-10 on Problem Set 2](https://sta240-s25.github.io/psets/pset_2.html);
--   [Problems 1-6 and 9-12 on Midterm 1 Practice](https://sta240-s25.github.io/exams/midterm-1.html);
--   Problem [insert numbers] on Midterm 1.
+-   [Problems 4 - 10 on Problem Set 2](https://sta240-s25.github.io/psets/pset_2.html);
+-   [Problems 1 - 6 and 9 - 12 on Midterm 1 Practice](https://sta240-s25.github.io/exams/midterm-1.html);
+-   Problem 1 on Midterm 1.
 
 # 2. Counting
 
@@ -48,25 +48,25 @@ $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \c
 
 The United States Senate contains two senators -- one senior and one junior -- from each of the $50$ states.
 
-a. If a committee of eight senators is selected, what is the probability that it will contain at least one of the two senators from a certain specified state?
-b. If a committee of twenty senators is selected, what is the probability it will contain $15$ junior senators and $5$ senior senators?
-c. What is the probability that a group of $50$ senators selected at random will contain one senator from each state?
+a.  If a committee of eight senators is selected, what is the probability that it will contain at least one of the two senators from a certain specified state?
+b.  If a committee of twenty senators is selected, what is the probability it will contain $15$ junior senators and $5$ senior senators?
+c.  What is the probability that a group of $50$ senators selected at random will contain one senator from each state?
 
 ## Problem 4
 
-Congratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers $0$-$9$ available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).
+Congratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers $0$ - $9$ available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).
 
-a. You are fairly chill about what you want in a PIN -- all you want is an even PIN, and you're totally fine if it starts with a zero. How many possible PINs fit your preference?
-b. One of your friends is a bit more persnickety -- they want a PIN divisible by $5$, and they cannot stand PINs starting with a zero. How many possible PINs fit this friend's preferences?
-c. Your other friend has some more...particular preferences -- they have an affinity for the number $16$ and thus want the digits $1$ and $6$ to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend's preferences?
+a.  You are fairly chill about what you want in a PIN -- all you want is an even PIN, and you're totally fine if it starts with a zero. How many possible PINs fit your preference?
+b.  One of your friends is a bit more persnickety -- they want a PIN divisible by $5$, and they cannot stand PINs starting with a zero. How many possible PINs fit this friend's preferences?
+c.  Your other friend has some more...particular preferences -- they have an affinity for the number $16$ and thus want the digits $1$ and $6$ to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend's preferences?
 
 ## Need more review on this?
 
 -   Various worked examples and derivations in [my notes](https://sta240-s25.github.io/notes/sta240-03-counting.pdf);
 -   [The videos from the snow day makeup](https://www.youtube.com/playlist?list=PL66cFaJuAGhVPKtE6WxefbutJ2ysEAj1O);
--   [Problems 1-3 on Problem Set 2](https://sta240-s25.github.io/psets/pset_2.html);
--   [Problems 7-8 on Midterm 1 Practice](https://sta240-s25.github.io/exams/midterm-1.html);
--   Problem [insert numbers] on Midterm 1.
+-   [Problems 1 - 3 on Problem Set 2](https://sta240-s25.github.io/psets/pset_2.html);
+-   [Problems 7 - 8 on Midterm 1 Practice](https://sta240-s25.github.io/exams/midterm-1.html);
+-   Problem 2 on Midterm 1.
 
 # 3. Conditional probability
 
@@ -88,15 +88,26 @@ c. Your other friend has some more...particular preferences -- they have an affi
 
 ## Problem 9
 
+Consider this function:
+
+$$
+F(x) = \begin{cases}
+1 - e^{-g(x)} & x\geq 0\\
+0 & \text{else}.
+\end{cases}
+$$
+
+Assume $g(x)$ is a continuous function. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF)? Give three examples of functions $g(x)$ that satisfy these properties.
+
 ## Problem 10
 
 ## Need more review on this?
 
-- The worked example in [these notes](https://sta240-s25.github.io/notes/sta240-continuous-rv.pdf);
-- [Problem 3 from Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-3);
-- [Part 2 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-2-absolutely-continuous-random-variables);
-- [Problems 1 and 3 on Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html);
-- Problem 2 on Midterm 2.
+-   The worked example in [these notes](https://sta240-s25.github.io/notes/sta240-continuous-rv.pdf);
+-   [Problem 3 from Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-3);
+-   [Part 2 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-2-absolutely-continuous-random-variables);
+-   [Problems 1 and 3 on Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html);
+-   Problem 2 on Midterm 2.
 
 # 6. The moment-generating function
 
@@ -213,7 +224,7 @@ d.  State the bounds of a 75% confidence interval for $\theta$.
 
 ## Problem 20
 
-Consider the following Bayesian model: 
+Consider the following Bayesian model:
 
 $$
 \begin{aligned}
@@ -222,9 +233,9 @@ X_1,\,X_2,\,...,\,X_n\,|\,p&\overset{\text{iid}}{\sim}\text{Geometric}(p).&& \te
 \end{aligned}
 $$
 
-a. What is the posterior distribution?
-b. Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.
-c. State an 82% credible interval for $p$.
+a.  What is the posterior distribution?
+b.  Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.
+c.  State an 82% credible interval for $p$.
 
 ## Problem 21
 
@@ -243,11 +254,9 @@ X_1,\,X_2,\,...,\,X_n\,|\,\theta&\overset{\text{iid}}{\sim}f(x\,|\,\theta).  && 
 \end{aligned}
 $$
 
-a. What is the posterior distribution of $\theta$?
-b. Compute the posterior mean and show that it is a convex combination of the prior mean and the mle.
-c. State a 90% credible interval for $\theta$.
-
-
+a.  What is the posterior distribution of $\theta$?
+b.  Compute the posterior mean and show that it is a convex combination of the prior mean and the mle.
+c.  State a 90% credible interval for $\theta$.
 
 ## Need more review on this?
 
