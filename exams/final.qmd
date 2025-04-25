@@ -4,16 +4,16 @@ title: "Final Exam Study Guide"
 
 Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 questions, and they will break down as follows:
 
-0. (Some undisclosed check on your visual intuition, like the matching you've already seen. I will say no more about this, and you will do very well on it.)
-1. Basic probability rules
-2. Counting
-3. Conditional probability
-4. Discrete random variables
-5. Absolutely continuous random variables
-6. The moment-generating function
-7. Transformations of random variables
-8. Joint distributions
-9. Maximum likelihood estimation
+0.  (Some undisclosed check on your visual intuition, like the matching you've already seen. I will say no more about this, and you will do very well on it.)
+1.  Basic probability rules
+2.  Counting
+3.  Conditional probability
+4.  Discrete random variables
+5.  Absolutely continuous random variables
+6.  The moment-generating function
+7.  Transformations of random variables
+8.  Joint distributions
+9.  Maximum likelihood estimation
 10. Bayesian inference
 
 Below are two practice problems for each of these ten items, as well as guidance about what course materials to refer to if you want more review on a particular topic.
@@ -66,10 +66,10 @@ Below are two practice problems for each of these ten items, as well as guidance
 
 ## Need more review on this?
 
-- Poisson and standard normal examples from lecture (see my Overleaf notes);
-- Gamma on [Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-6);
-- Part 3 of [Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-3-moments);
-- Another on [Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html#problem-3).
+-   Poisson and standard normal examples from lecture (see my Overleaf notes);
+-   Gamma on [Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-6);
+-   Part 3 of [Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-3-moments);
+-   Another on [Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html#problem-3).
 
 # 7. Transformations
 
@@ -77,11 +77,11 @@ Below are two practice problems for each of these ten items, as well as guidance
 
 Let $X\sim\text{Gamma}(\alpha,\,\beta)$, and define a new random variable $Y=1/X$?
 
-a. What is the density of $Y$?
-b. What is $E(Y)$?
-c. What is $\text{var}(Y)$?
+a.  What is the density of $Y$?
+b.  What is $E(Y)$?
+c.  What is $\text{var}(Y)$?
 
-::: callout-note 
+::: callout-note
 A random variable possessing this new density is said to follow the **inverse gamma distribution**.
 :::
 
@@ -93,11 +93,11 @@ $$
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
 $$
 
-Treat $\theta>0$ as a constant, and define a new random variable $Y=\ln(X+1)$. 
+Treat $\theta>0$ as a constant, and define a new random variable $Y=\ln(X+1)$.
 
-a. What is the range of $Y$?
-b. What is the density of $Y$?
-c. Is the density of $Y$ familiar?
+a.  What is the range of $Y$?
+b.  What is the density of $Y$?
+c.  Is the density of $Y$ familiar?
 
 ## Problem 15
 
@@ -109,22 +109,21 @@ f(x\,|\,\theta)
 \frac{1}{2\theta}\exp\left(-\frac{|x|}{\theta}\right), \quad -\infty<x<\infty.
 $$
 
-Treat $\theta>0$ as a constant, and define a new random variable $Y=|X|$. 
+Treat $\theta>0$ as a constant, and define a new random variable $Y=|X|$.
 
-a. Sketch what this density looks like for $\theta=1$.
-b. What is the range of $Y$?
-c. What is the density of $Y$?
-d. Is the density of $Y$ familiar?
+a.  Sketch what this density looks like for $\theta=1$.
+b.  What is the range of $Y$?
+c.  What is the density of $Y$?
+d.  Is the density of $Y$ familiar?
 
 ## Need more review on this?
 
-- See [Lab 5](https://sta240-s25.github.io/labs/lab-5.html) and Section 3.8 in my Overleaf notes;
-- [Part 4 of Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-4-transformations);
-- [Problem 4 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-4);
-- Problem 4 on Midterm 2.
+-   See several worked examples in [my notes](https://sta240-s25.github.io/notes/sta240-transformations.pdf);
+-   [Part 4 of Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-4-transformations);
+-   [Problem 4 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-4);
+-   Problem 4 on Midterm 2.
 
-
-# 8. Joint distributions 
+# 8. Joint distributions
 
 ## Problem 16
 
@@ -134,7 +133,7 @@ pareto gamma
 
 ## Need more review on this?
 
-# 9. Maximum likelihood estimation 
+# 9. Maximum likelihood estimation
 
 ## Problem 18
 
@@ -144,10 +143,10 @@ $$
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
 $$
 
-a. What is the maximum likelihood estimator of $\theta>0$?
-b. What is the sampling distribution of the estimator?
-c. What is the MSE of the estimator?
-d. State the bounds of a 90% confidence interval for $\theta$.
+a.  What is the maximum likelihood estimator of $\theta>0$?
+b.  What is the sampling distribution of the estimator? Problem 13 might be helpful here.
+c.  What is the MSE of the estimator?
+d.  State the bounds of a 90% confidence interval for $\theta$.
 
 ## Problem 19
 
@@ -159,32 +158,62 @@ f(x\,|\,\theta)
 \frac{1}{2\theta}\exp\left(-\frac{|x|}{\theta}\right), \quad -\infty<x<\infty.
 $$
 
-a. What is the maximum likelihood estimator of $\theta>0$?
-b. What is the sampling distribution of the estimator? 
-c. What is the MSE of the estimator?
-d. State the bounds of a 75% confidence interval for $\theta$.
+a.  What is the maximum likelihood estimator of $\theta>0$?
+b.  What is the sampling distribution of the estimator?
+c.  What is the MSE of the estimator?
+d.  State the bounds of a 75% confidence interval for $\theta$.
 
 ## Need more review on this?
 
-- Four worked examples from lecture: [4/14](https://sta240-s25.github.io/notes/sta240-mle-1.pdf), [4/16](https://sta240-s25.github.io/notes/sta240-mle-2.pdf);
-- [Problem 2 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-2);
-- Ch. 7.5, 7.6 in DeGroot & Schervish. 
+-   Four worked examples from lecture: [4/14](https://sta240-s25.github.io/notes/sta240-mle-1.pdf), [4/16](https://sta240-s25.github.io/notes/sta240-mle-2.pdf);
+-   [Problem 2 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-2);
+-   Ch. 7.5, 7.6 in DeGroot & Schervish.
 
 # 10. Bayesian inference
 
 ## Problem 20
 
-Geometric beta
+Consider the following Bayesian model: 
+
+$$
+\begin{aligned}
+p&\sim\text{Beta}(a_0,\,b_0)\\
+X_1,\,X_2,\,...,\,X_n\,|\,p&\overset{\text{iid}}{\sim}\text{Geometric}(p).
+\end{aligned}
+$$
+
+a. What is the posterior distribution?
+b. Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.
+c. State an 82% credible interval for $p$.
 
 ## Problem 21
 
-pareto-gamma
+Recall this family of distributions from problems 14 and 18:
+
+$$
+f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
+$$
+
+If we observed iid data from some unknown member of this family, we could perform Bayesian inference for the unknown parameter $\theta>0$ with the following model:
+
+$$
+\begin{aligned}
+\theta&\sim\text{Gamma}(a_0,\,b_0)\\
+X_1,\,X_2,\,...,\,X_n\,|\,\theta&\overset{\text{iid}}{\sim}f(x\,|\,\theta).
+\end{aligned}
+$$
+
+a. What is the posterior distribution of $\theta$?
+b. Compute the posterior mean and show that it is a convex combination of the prior mean and the mle.
+c. State a 90% credible interval for $\theta$.
+
+
 
 ## Need more review on this?
 
-- Worked examples from lecture (coming soon!);
-- [Problem 3 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-3);
-- Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples:
-    - the Poisson-binomial hierarchy;
-    - the gamma-normal hierarchy that motivated Student's $t$ distribution;
-    - the [beta-gamma hierarchy](https://sta240-s25.github.io/psets/pset_5.html#problem-15) from Problem Set 5.
+-   Beta-Bernoulli and gamma-Poisson examples from lecture;
+-   [Problem 3 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-3);
+-   Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples:
+    -   the Poisson-binomial hierarchy;
+    -   the gamma-normal hierarchy that motivated Student's $t$ distribution;
+    -   the [beta-gamma hierarchy](https://sta240-s25.github.io/psets/pset_5.html#problem-15) from Problem Set 5.
