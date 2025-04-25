@@ -88,6 +88,11 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 
 ## Problem 9
 
+
+
+
+## Problem 10
+
 Consider this function:
 
 $$
@@ -98,8 +103,6 @@ F(x) = \begin{cases}
 $$
 
 Assume $g(x)$ is a continuous function. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF)? Give three examples of functions $g(x)$ that satisfy these properties.
-
-## Problem 10
 
 ## Need more review on this?
 
