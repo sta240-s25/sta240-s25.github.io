@@ -22,7 +22,7 @@ Below are two practice problems for each of these ten items, as well as guidance
 
 ## Problem 1
 
-Suppose
+Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ and $B^{c}$ disjoint?
 
 ## Problem 2
 
