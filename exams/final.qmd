@@ -70,7 +70,7 @@ Let $A_{1}$, $A_{2}$, and $A_{3}$ be three arbitrary events. Show that the proba
 
 ## Need more review on this?
 
--   Poisson and standard normal examples from lecture (see my Overleaf notes);
+-   Poisson and standard normal examples from [lecture](https://sta240-s25.github.io/notes/sta240-mgf.pdf);
 -   Gamma on [Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-6);
 -   Part 3 of [Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-3-moments);
 -   Another on [Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html#problem-3).
