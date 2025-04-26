@@ -7,7 +7,7 @@ Our final exam is **Saturday May 3 from 7:00 PM to 10:00 PM**. There will be 11 
 0.  (Some undisclosed check on your visual intuition, like the matching you've already seen. I will say no more about this, and you will do very well on it.)
 1.  Set theory and basic probability rules
 2.  Counting
-3.  Conditional probability
+3.  Conditional probability and independence
 4.  Discrete random variables
 5.  Absolutely continuous random variables
 6.  The moment-generating function
@@ -20,11 +20,11 @@ Below are at least two practice problems for each of these ten items, as well as
 
 # 1. Set theory and basic probability rules
 
-## Problem XX
+## Problem 1
 
 Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ and $B^{c}$ also disjoint events?
 
-## Problem XX
+## Problem 2
 
 Let $A$, $B$, and $C$ be three arbitrary events, and let $D$ denote the event that "exactly one of these three events occurs."
 
@@ -44,7 +44,7 @@ $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \c
 
 # 2. Counting
 
-## Problem XX
+## Problem 3
 
 The United States Senate contains two senators -- one senior and one junior -- from each of the $50$ states.
 
@@ -52,7 +52,7 @@ a.  If a committee of eight senators is selected, what is the probability that i
 b.  If a committee of twenty senators is selected, what is the probability it will contain $15$ junior senators and $5$ senior senators?
 c.  What is the probability that a group of $50$ senators selected at random will contain one senator from each state?
 
-## Problem XX
+## Problem 4
 
 Congratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers $0$ - $9$ available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).
 
@@ -68,11 +68,28 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 -   [Problems 7 - 8 on Midterm 1 Practice](https://sta240-s25.github.io/exams/midterm-1.html);
 -   Problem 2 on Midterm 1.
 
-# 3. Conditional probability
+# 3. Conditional probability and independence
 
-## Problem XX
+## Problem 5
 
-## Problem XX
+An urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 reside in a box. A ticket is drawn at random from the box, and that number of balls is randomly chosen from the urn, without replacement.
+
+a. What is the probability that all of the balls drawn are white?
+b. If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?
+
+## Problem 6
+
+a. Let $S$ be the set of all permutations of $a$, $b$, $c$, together with the triples $aaa$, $bbb$, and $ccc$. Imagine we draw an outcome randomly from this set. Define the event $A_k=\{\text{the kth spot is occupied by the letter a}\}$ for $k=1,\,2,\,3$. Compute the probabilities $P(A_k)$, $P(A_i\cap A_j)$, $P(A_1\cap A_2\cap A_3)$, and comment on the independence of the three of events;
+
+b. Imagine we roll two fair, six-sided die. Consider the events
+$$
+\begin{aligned}
+A&=\text{first die is 1, 2, 3}\\
+B&=\text{first die is 3, 4, 5}\\
+C&=\text{the sum of the two rolls is 9}.
+\end{aligned}
+$$
+Compute $P(A)$, $P(B)$, $P(C)$, $P(A\cap B)$, $P(A\cap C)$, $P(B\cap C)$, $P(A\cap B\cap C)$, and comment on the independence of the three events.
 
 ## Need more review on this?
 
@@ -84,9 +101,45 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 
 # 4. Discrete random variables
 
-## Problem XX
+## Problem 7
 
-## Problem XX
+Let $A_1$, $A_2$, $A_3$, $A_4$, $A_5$, and $A_6$ be events in some sample space, each with the same probability $0<p<1/6$. Define the indicator random variables
+
+$$
+I_k
+=
+\begin{cases}
+0 & \text{if }A_k^c\text{ happens}\\
+1 & \text{if }A_k\text{ happens},
+\end{cases}
+$$
+
+and let $X$ be their sum 
+
+$$
+X = I_1 + I_2 + I_3 + I_4+I_5+I_6.
+$$
+
+a. Assume the events $A_i$ are mutually disjoint and compute...
+
+    i.   $E(X)$.
+    ii.  $P(X=1)$.
+    iii. $P(X=3)$.
+    
+b. Assume the $A_i$ are independent and compute...
+
+    i.   $E(X)$.
+    ii.  $P(X=1)$.
+    iii. $P(X=3)$.
+
+
+## Problem 8
+
+Signore Fibonacci has created a a balanced, six-sided die whose faces are labeled, naturally, 1, 2, 3, 5, 8, 13. He gives a pair to Enzo, who rolls them repeatedly, eager to get double 13s. Let $X$ be the number of times he has to roll the pair of dice in order to see double 13s for the first time. 
+
+a. What is the pmf of $X$?
+b. What is the expected value of $X$?
+c. Find a closed-form expression for $P(X\geq m)$.
 
 ## Need more review on this?
 
@@ -98,7 +151,7 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 
 # 5. Absolutely continuous random variables
 
-## Problem XX
+## Problem 9
 
 Here is a cdf for some nonnegative random variable $X$:
 
@@ -117,7 +170,7 @@ c. Compute $E(X^n)$ for any $n\in\mathbb{N}$.
 d. What is the variance of $X$?
 
 
-## Problem XX
+## Problem 10
 
 Consider this function:
 
@@ -130,20 +183,17 @@ $$
 
 Assume $g(x)$ is a continuous function. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF)? Give three examples of functions $g(x)$ that satisfy these properties.
 
-## Problem XX
+## Problem 11
 
-Here's a goofy cdf for some random variable $X$:
+Here is the goofy pdf of some nonnegative random variable $X$:
 
 $$
-F(x)
+f(x)
 =
-\begin{cases}
-1 - e^{1-e^x} & x\geq 0\\
-0 & \text{else}.
-\end{cases}
+e^{1-e^x+x},\quad x\geq 0.
 $$
 
-a.  Compute the pdf of $X$;
+a.  Compute the cdf of $X$;
 b.  Compute the median of $X$.
 
 ## Need more review on this?
@@ -156,20 +206,62 @@ b.  Compute the median of $X$.
 
 # 6. The moment-generating function
 
-## Problem XX
+## Problem 12
 
-## Problem XX
+A certain random variable $X$ has moment-generating function 
+
+$$
+M(t)=\frac{e^{2t}}{1-3t},\quad t<1/3.
+$$
+
+a. Compute the mean and variance of $X$.
+b. What is the moment generating function of the new random variable 
+
+$$
+Y=\frac{\pi}{2}-\frac{X}{3}.
+$$
+
+## Problem 13
+
+The **binomial theorem** says that 
+
+$$
+(x+y)^n=\sum\limits_{k=0}^n\binom{n}{k}x^{n-k}y^k,\quad x,\,y\in\mathbb{R}\text{ and }n\in\mathbb{N}.
+$$
+
+If, instead, we consider negative powers, you get this funky thing:
+
+$$
+(x+y)^{-n}=\sum\limits_{k=0}^\infty(-1)^k\binom{n+k-1}{k}y^kx^{-n-k},\quad |y|<x\text{ and }n\in\mathbb{N}.
+$$
+
+Now, let $X$ be a discrete random variable with $\text{Range}(X)=\mathbb{N}=\{0,\,1,\,2,\,...\}$ and pmf
+
+$$
+P(X = k)
+= 
+\binom{k+r-1}{k}(1-p)^kp^r,\quad k\in\mathbb{N}.
+$$
+
+This is the **negative binomial distribution**, denoted $X\sim\text{NB}(r,\,p)$, where $0<p<1$ and $r=1,\,2,\,3,\,...$ are parameters.
+
+a. What is $(1-p)^{-r}$?
+b. What is the mgf of $X$?
+c. Use the mgf to compute the mean of $X$.
+d. Let $X_1$, $X_2$, ..., $X_n$ be independent random variables each with distribution $\text{NB}(r_i,\,p)$. What is the distribution of $S_n=\sum_{i=1}^nX_i$?
+
 
 ## Need more review on this?
 
 -   Poisson and standard normal examples from [my notes](https://sta240-s25.github.io/notes/sta240-mgf.pdf);
 -   Gamma on [Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html#problem-6);
 -   Part 3 of [Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-3-moments);
--   Another on [Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html#problem-3).
+-   Problem 3 on [Midterm 2 review](https://sta240-s25.github.io/exams/midterm-2.html#problem-3);
+-   Lots of mgf practice when we studied [sums and averages of iid random variables](https://sta240-s25.github.io/notes/sta240-sums-averages.pdf).
 
 # 7. Transformations
 
-## Problem XX
+## Problem 14
 
 Let $X\sim\text{Gamma}(\alpha,\,\beta)$, and define a new random variable $Y=1/X$?
 
@@ -181,7 +273,7 @@ c.  What is $\text{var}(Y)$?
 A random variable possessing this new density is said to follow the **inverse gamma distribution**.
 :::
 
-## Problem XX
+## Problem 15
 
 Let $X$ be a nonnegative continuous random variable with this density:
 
@@ -195,7 +287,7 @@ a.  What is the range of $Y$?
 b.  What is the density of $Y$?
 c.  Is the density of $Y$ familiar?
 
-## Problem XX
+## Problem 16
 
 Let $X$ be a continuous random variable with this density:
 
@@ -221,34 +313,67 @@ d.  Is the density of $Y$ familiar?
 
 # 8. Joint distributions
 
-## Problem XX
+## Problem 17
 
-## Problem XX
+Here is the joint density for a random pair:
 
+$$
+f_{XY}(x,\,y)
+=
+\frac{24}{7}
+x(2-y),\quad 0<x<1\text{ and }0<y<1-x.
+$$
+
+a. Sketch the joint range of $(X,\,Y)$.
+b. Find the marginal density of $Y$.
+c. Find the marginal density of $X$.
+d. Find the conditional density of $X$ given $Y=y$.
+e. Use this to compute $P(X>1/2\,|\,Y=1/3)$.
+f. What is $E(X\,|\,Y=y$?
+
+## Problem 18
+
+Consider the joint distribution of random variables $X$ and $Y$, written in hierarchical form:
+
+$$
+\begin{aligned}
+X&\sim\textrm{Gamma}\left(\frac{d_2}{2},\, \frac{d_2}{2}\right)\\
+Y\,|\, X = x&\sim\textrm{Gamma}\left(\frac{d_1}{2},\, \frac{d_1}{2}x\right).\\
+\end{aligned}
+$$
+
+Do some serious "massage and squint" to show that the marginal pdf of $Y$ is
+
+$$
+f_Y(y)=\frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}y^{\frac{d_1}{2}-1}\left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}},\quad y>0.
+$$
+
+This means that $Y$ has the ***F*-distribution**.
 
 ## Need more review on this?
 
-- [Part 5 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-5-joint-distributions)
-- [Problem 5 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-5)
+- [Part 5 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-5-joint-distributions);
+- [Problem 5 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-5);
+- Problem 5 on Midterm 2.
 
 # 9. Maximum likelihood estimation
 
-## Problem XX
+## Problem 19
 
-Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem XX above:
+Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem 15 above:
 
 $$
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
 $$
 
 a.  What is the maximum likelihood estimator of $\theta>0$?
-b.  What is the sampling distribution of the estimator? Problem XX might be helpful here.
+b.  What is the sampling distribution of the estimator? Problem 14 might be helpful here.
 c.  What is the MSE of the estimator?
 d.  State the bounds of a 90% confidence interval for $\theta$.
 
-## Problem XX
+## Problem 20
 
-Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem XX above:
+Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem 16 above:
 
 $$
 f(x\,|\,\theta)
@@ -269,7 +394,7 @@ d.  State the bounds of a 75% confidence interval for $\theta$.
 
 # 10. Bayesian inference
 
-## Problem XX
+## Problem 21
 
 Consider the following Bayesian model:
 
@@ -284,9 +409,9 @@ a.  What is the posterior distribution?
 b.  Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.
 c.  State an 82% credible interval for $p$.
 
-## Problem XX
+## Problem 22
 
-Recall this family of distributions from Problems XX and XX above:
+Recall this family of distributions from Problems 15 and 19 above:
 
 $$
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x>0.
@@ -309,7 +434,4 @@ c.  State a 90% credible interval for $\theta$.
 
 -   Beta-Bernoulli and gamma-Poisson examples from lecture (coming soon!);
 -   [Problem 3 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-3);
--   Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples:
-    -   the Poisson-binomial hierarchy;
-    -   the gamma-normal hierarchy that motivated Student's $t$ distribution;
-    -   the [beta-gamma hierarchy](https://sta240-s25.github.io/psets/pset_5.html#problem-15) from Problem Set 5.
+-   Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples as well.
