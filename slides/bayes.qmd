@@ -1,0 +1,36 @@
+---
+title: "Bayesian statistics"
+format: revealjs
+auto-stretch: false
+---
+
+## Parametric statistics
+
+- We observe iid data from some parametric distribution 
+$$
+X_1,\,X_2,\,...,\,X_n\overset{\text{iid}}{\sim} f(x\,|\,\theta).
+$$
+Our goal is to use the data to learn $\theta$ and also to quantify our uncertainty about what we've learned. 
+
+- Uncertainty quantification (UQ) is important for decision-making; you make different decisions when you are confident in your knowledge than if you are tentative about your knowledge. 
+
+- Controversy creeps in when we determine what we mean by uncertainty, and how it should be quantified.
+
+## The heart of the matter
+
+All statisticians agree that we will use probability distributions to represent and quantify uncertainty. That is not controversial. Where we disagree is:
+
+- what distribution are we going to use?
+- what kind of uncertainty does it represent?
+
+## Bayesian philosophy
+
+- Probability describes an observer's subjective experience of uncertainty;
+- All uncertain quantities (unknown parameters, missing data, etc) should be treated as random variables whose distributions describe our beliefs about them based on the state of our knowledge;
+- Who cares about hypothetical data we never saw? They don't exist. I only care about the data I have actually seen and the inferences I can make *conditional* on these data.
+
+## Bayesian payoffs
+
+- We can generate interval estimates with a more natural interpretation: "there is a 90% chance the parameter is between these bounds;"
+
+- You can conduct a data analysis that incorporates prior information
