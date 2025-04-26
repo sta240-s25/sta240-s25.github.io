@@ -74,30 +74,28 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 
 An urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 reside in a box. A ticket is drawn at random from the box, and that number of balls is randomly chosen from the urn, without replacement.
 
-a. What is the probability that all of the balls drawn are white?
-b. If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?
+a.  What is the probability that all of the balls drawn are white?
+b.  If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?
 
 ## Problem 6
 
-a. Let $S$ be the set of all permutations of $a$, $b$, $c$, together with the triples $aaa$, $bbb$, and $ccc$. Imagine we draw an outcome randomly from this set. Define the event $A_k=\{\text{the kth spot is occupied by the letter a}\}$ for $k=1,\,2,\,3$. Compute the probabilities $P(A_k)$, $P(A_i\cap A_j)$, $P(A_1\cap A_2\cap A_3)$, and comment on the independence of the three of events;
+a.  Let $S$ be the set of all permutations of $a$, $b$, $c$, together with the triples $aaa$, $bbb$, and $ccc$. Imagine we draw an outcome randomly from this set. Define the event $A_k=\{\text{the kth spot is occupied by the letter a}\}$ for $k=1,\,2,\,3$. Compute the probabilities $P(A_k)$, $P(A_i\cap A_j)$, $P(A_1\cap A_2\cap A_3)$, and comment on the independence of the three of events;
 
-b. Imagine we roll two fair, six-sided die. Consider the events
-$$
-\begin{aligned}
-A&=\text{first die is 1, 2, 3}\\
-B&=\text{first die is 3, 4, 5}\\
-C&=\text{the sum of the two rolls is 9}.
-\end{aligned}
-$$
-Compute $P(A)$, $P(B)$, $P(C)$, $P(A\cap B)$, $P(A\cap C)$, $P(B\cap C)$, $P(A\cap B\cap C)$, and comment on the independence of the three events.
+b.  Imagine we roll two fair, six-sided die. Consider the events $$
+    \begin{aligned}
+    A&=\text{first die is 1, 2, 3}\\
+    B&=\text{first die is 3, 4, 5}\\
+    C&=\text{the sum of the two rolls is 9}.
+    \end{aligned}
+    $$ Compute $P(A)$, $P(B)$, $P(C)$, $P(A\cap B)$, $P(A\cap C)$, $P(B\cap C)$, $P(A\cap B\cap C)$, and comment on the independence of the three events.
 
 ## Need more review on this?
 
-- Worked examples in [my notes](https://sta240-s25.github.io/notes/sta240-04-conditioning.pdf);
-- [Lab 2](https://sta240-s25.github.io/labs/lab-2.html);
-- [Problems 4 - 10 on Problem Set 2](https://sta240-s25.github.io/psets/pset_2.html);
-- [Problems 10 - 12 on Midterm 1 practice](https://sta240-s25.github.io/exams/midterm-1.html#conditional-probability-and-independence).
-- Problems 3 and 4 on Midterm 1.
+-   Worked examples in [my notes](https://sta240-s25.github.io/notes/sta240-04-conditioning.pdf);
+-   [Lab 2](https://sta240-s25.github.io/labs/lab-2.html);
+-   [Problems 4 - 10 on Problem Set 2](https://sta240-s25.github.io/psets/pset_2.html);
+-   [Problems 10 - 12 on Midterm 1 practice](https://sta240-s25.github.io/exams/midterm-1.html#conditional-probability-and-independence).
+-   Problems 3 and 4 on Midterm 1.
 
 # 4. Discrete random variables
 
@@ -114,40 +112,39 @@ I_k
 \end{cases}
 $$
 
-and let $X$ be their sum 
+and let $X$ be their sum
 
 $$
 X = I_1 + I_2 + I_3 + I_4+I_5+I_6.
 $$
 
-a. Assume the events $A_i$ are mutually disjoint and compute...
+a.  Assume the events $A_i$ are mutually disjoint and compute...
 
-    i.   $E(X)$.
-    ii.  $P(X=1)$.
-    iii. $P(X=3)$.
-    
-b. Assume the $A_i$ are independent and compute...
-
-    i.   $E(X)$.
-    ii.  $P(X=1)$.
+    i.  $E(X)$.
+    ii. $P(X=1)$.
     iii. $P(X=3)$.
 
+b.  Assume the $A_i$ are independent and compute...
+
+    i.  $E(X)$.
+    ii. $P(X=1)$.
+    iii. $P(X=3)$.
 
 ## Problem 8
 
-Signore Fibonacci has created a a balanced, six-sided die whose faces are labeled, naturally, 1, 2, 3, 5, 8, 13. He gives a pair to Enzo, who rolls them repeatedly, eager to get double 13s. Let $X$ be the number of times he has to roll the pair of dice in order to see double 13s for the first time. 
+Signore Fibonacci has created a a balanced, six-sided die whose faces are labeled, naturally, 1, 2, 3, 5, 8, 13. He gives a pair to Enzo, who rolls them repeatedly, eager to get double 13s. Let $X$ be the number of times he has to roll the pair of dice in order to see double 13s for the first time.
 
-a. What is the pmf of $X$?
-b. What is the expected value of $X$?
-c. Find a closed-form expression for $P(X\geq m)$.
+a.  What is the pmf of $X$?
+b.  What is the expected value of $X$?
+c.  Find a closed-form expression for $P(X\geq m)$.
 
 ## Need more review on this?
 
-- Worked examples [here](https://sta240-s25.github.io/notes/sta240-05-rv.pdf), [here](https://sta240-s25.github.io/notes/sta240-06-discrete.pdf), and [here](https://sta240-s25.github.io/notes/sta240-07-expectation.pdf);
-- [Problem Set 3](https://sta240-s25.github.io/psets/pset_3.html);
-- [Problem 2 on Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html);
-- [Problems 13 - 16 on Midterm 1 practice](https://sta240-s25.github.io/exams/midterm-1.html#random-variables);
-- Problems 6 - 8 on Midterm 1.
+-   Worked examples [here](https://sta240-s25.github.io/notes/sta240-05-rv.pdf), [here](https://sta240-s25.github.io/notes/sta240-06-discrete.pdf), and [here](https://sta240-s25.github.io/notes/sta240-07-expectation.pdf);
+-   [Problem Set 3](https://sta240-s25.github.io/psets/pset_3.html);
+-   [Problem 2 on Problem Set 4](https://sta240-s25.github.io/psets/pset_4.html);
+-   [Problems 13 - 16 on Midterm 1 practice](https://sta240-s25.github.io/exams/midterm-1.html#random-variables);
+-   Problems 6 - 8 on Midterm 1.
 
 # 5. Absolutely continuous random variables
 
@@ -164,11 +161,10 @@ F(x)
 \end{cases}
 $$
 
-a. What is $P(1 < X <8)$?
-b. What is the pdf of $X$?
-c. Compute $E(X^n)$ for any $n\in\mathbb{N}$.
-d. What is the variance of $X$?
-
+a.  What is $P(1 < X <8)$?
+b.  What is the pdf of $X$?
+c.  Compute $E(X^n)$ for any $n\in\mathbb{N}$.
+d.  What is the variance of $X$?
 
 ## Problem 10
 
@@ -208,14 +204,14 @@ b.  Compute the median of $X$.
 
 ## Problem 12
 
-A certain random variable $X$ has moment-generating function 
+A certain random variable $X$ has moment-generating function
 
 $$
 M(t)=\frac{e^{2t}}{1-3t},\quad t<1/3.
 $$
 
-a. Compute the mean and variance of $X$.
-b. What is the moment generating function of the new random variable 
+a.  Compute the mean and variance of $X$.
+b.  What is the moment generating function of the new random variable
 
 $$
 Y=\frac{\pi}{2}-\frac{X}{3}.
@@ -223,7 +219,7 @@ $$
 
 ## Problem 13
 
-The **binomial theorem** says that 
+The **binomial theorem** says that
 
 $$
 (x+y)^n=\sum\limits_{k=0}^n\binom{n}{k}x^{n-k}y^k,\quad x,\,y\in\mathbb{R}\text{ and }n\in\mathbb{N}.
@@ -245,11 +241,10 @@ $$
 
 This is the **negative binomial distribution**, denoted $X\sim\text{NB}(r,\,p)$, where $0<p<1$ and $r=1,\,2,\,3,\,...$ are parameters.
 
-a. What is $(1-p)^{-r}$?
-b. What is the mgf of $X$?
-c. Use the mgf to compute the mean of $X$.
-d. Let $X_1$, $X_2$, ..., $X_n$ be independent random variables each with distribution $\text{NB}(r_i,\,p)$. What is the distribution of $S_n=\sum_{i=1}^nX_i$?
-
+a.  What is $(1-p)^{-r}$?
+b.  What is the mgf of $X$?
+c.  Use the mgf to compute the mean of $X$.
+d.  Let $X_1$, $X_2$, ..., $X_n$ be independent random variables each with distribution $\text{NB}(r_i,\,p)$. What is the distribution of $S_n=\sum_{i=1}^nX_i$?
 
 ## Need more review on this?
 
@@ -324,12 +319,12 @@ f_{XY}(x,\,y)
 x(2-y),\quad 0<x<1\text{ and }0<y<1-x.
 $$
 
-a. Sketch the joint range of $(X,\,Y)$.
-b. Find the marginal density of $Y$.
-c. Find the marginal density of $X$.
-d. Find the conditional density of $X$ given $Y=y$.
-e. Use this to compute $P(X>1/2\,|\,Y=1/3)$.
-f. What is $E(X\,|\,Y=y$?
+a.  Sketch the joint range of $(X,\,Y)$.
+b.  Find the marginal density of $Y$.
+c.  Find the marginal density of $X$.
+d.  Find the conditional density of $X$ given $Y=y$.
+e.  Use this to compute $P(X>1/2\,|\,Y=1/3)$.
+f.  What is $E(X\,|\,Y=y$?
 
 ## Problem 18
 
@@ -348,13 +343,13 @@ $$
 f_Y(y)=\frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}y^{\frac{d_1}{2}-1}\left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}},\quad y>0.
 $$
 
-This means that $Y$ has the ***F*-distribution**.
+This means that $Y$ has the ***F*****-distribution**.
 
 ## Need more review on this?
 
-- [Part 5 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-5-joint-distributions);
-- [Problem 5 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-5);
-- Problem 5 on Midterm 2.
+-   [Part 5 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-5-joint-distributions);
+-   [Problem 5 on Midterm 2 Practice](https://sta240-s25.github.io/exams/midterm-2.html#problem-5);
+-   Problem 5 on Midterm 2.
 
 # 9. Maximum likelihood estimation
 
@@ -432,6 +427,6 @@ c.  State a 90% credible interval for $\theta$.
 
 ## Need more review on this?
 
--   Beta-Bernoulli and gamma-Poisson examples from lecture (coming soon!);
+-   Beta-Bernoulli and gamma-Poisson examples in [my notes](https://sta240-s25.github.io/notes/sta240-bayes.pdf);
 -   [Problem 3 on PSET 6](https://sta240-s25.github.io/psets/pset_6.html#problem-3);
 -   Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples as well.
