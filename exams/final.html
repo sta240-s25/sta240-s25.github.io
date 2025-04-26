@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../exams/midterm-2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +111,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Final Exam Study Guide</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exams/midterm-1.html">Exam review</a></li><li class="breadcrumb-item"><a href="../exams/final.html">Final exam</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -308,13 +309,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Exam review</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exams/midterm-1.html" class="sidebar-item-text sidebar-link">
@@ -325,6 +326,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../exams/midterm-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Midterm 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exams/final.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Final exam</span></a>
   </div>
 </li>
       </ul>
@@ -339,7 +346,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#basic-probability-rules" id="toc-basic-probability-rules" class="nav-link active" data-scroll-target="#basic-probability-rules">1. Basic probability rules</a>
+  <li><a href="#set-theory-and-basic-probability-rules" id="toc-set-theory-and-basic-probability-rules" class="nav-link active" data-scroll-target="#set-theory-and-basic-probability-rules">1. Set theory and basic probability rules</a>
   <ul class="collapse">
   <li><a href="#problem-1" id="toc-problem-1" class="nav-link" data-scroll-target="#problem-1">Problem 1</a></li>
   <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
@@ -351,7 +358,7 @@ window.Quarto = {
   <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
   <li><a href="#need-more-review-on-this-1" id="toc-need-more-review-on-this-1" class="nav-link" data-scroll-target="#need-more-review-on-this-1">Need more review on this?</a></li>
   </ul></li>
-  <li><a href="#conditional-probability" id="toc-conditional-probability" class="nav-link" data-scroll-target="#conditional-probability">3. Conditional probability</a>
+  <li><a href="#conditional-probability-and-independence" id="toc-conditional-probability-and-independence" class="nav-link" data-scroll-target="#conditional-probability-and-independence">3. Conditional probability and independence</a>
   <ul class="collapse">
   <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
   <li><a href="#problem-6" id="toc-problem-6" class="nav-link" data-scroll-target="#problem-6">Problem 6</a></li>
@@ -367,37 +374,38 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#problem-9" id="toc-problem-9" class="nav-link" data-scroll-target="#problem-9">Problem 9</a></li>
   <li><a href="#problem-10" id="toc-problem-10" class="nav-link" data-scroll-target="#problem-10">Problem 10</a></li>
+  <li><a href="#problem-11" id="toc-problem-11" class="nav-link" data-scroll-target="#problem-11">Problem 11</a></li>
   <li><a href="#need-more-review-on-this-4" id="toc-need-more-review-on-this-4" class="nav-link" data-scroll-target="#need-more-review-on-this-4">Need more review on this?</a></li>
   </ul></li>
   <li><a href="#the-moment-generating-function" id="toc-the-moment-generating-function" class="nav-link" data-scroll-target="#the-moment-generating-function">6. The moment-generating function</a>
   <ul class="collapse">
-  <li><a href="#problem-11" id="toc-problem-11" class="nav-link" data-scroll-target="#problem-11">Problem 11</a></li>
   <li><a href="#problem-12" id="toc-problem-12" class="nav-link" data-scroll-target="#problem-12">Problem 12</a></li>
+  <li><a href="#problem-13" id="toc-problem-13" class="nav-link" data-scroll-target="#problem-13">Problem 13</a></li>
   <li><a href="#need-more-review-on-this-5" id="toc-need-more-review-on-this-5" class="nav-link" data-scroll-target="#need-more-review-on-this-5">Need more review on this?</a></li>
   </ul></li>
   <li><a href="#transformations" id="toc-transformations" class="nav-link" data-scroll-target="#transformations">7. Transformations</a>
   <ul class="collapse">
-  <li><a href="#problem-13" id="toc-problem-13" class="nav-link" data-scroll-target="#problem-13">Problem 13</a></li>
   <li><a href="#problem-14" id="toc-problem-14" class="nav-link" data-scroll-target="#problem-14">Problem 14</a></li>
   <li><a href="#problem-15" id="toc-problem-15" class="nav-link" data-scroll-target="#problem-15">Problem 15</a></li>
+  <li><a href="#problem-16" id="toc-problem-16" class="nav-link" data-scroll-target="#problem-16">Problem 16</a></li>
   <li><a href="#need-more-review-on-this-6" id="toc-need-more-review-on-this-6" class="nav-link" data-scroll-target="#need-more-review-on-this-6">Need more review on this?</a></li>
   </ul></li>
   <li><a href="#joint-distributions" id="toc-joint-distributions" class="nav-link" data-scroll-target="#joint-distributions">8. Joint distributions</a>
   <ul class="collapse">
-  <li><a href="#problem-16" id="toc-problem-16" class="nav-link" data-scroll-target="#problem-16">Problem 16</a></li>
   <li><a href="#problem-17" id="toc-problem-17" class="nav-link" data-scroll-target="#problem-17">Problem 17</a></li>
+  <li><a href="#problem-18" id="toc-problem-18" class="nav-link" data-scroll-target="#problem-18">Problem 18</a></li>
   <li><a href="#need-more-review-on-this-7" id="toc-need-more-review-on-this-7" class="nav-link" data-scroll-target="#need-more-review-on-this-7">Need more review on this?</a></li>
   </ul></li>
   <li><a href="#maximum-likelihood-estimation" id="toc-maximum-likelihood-estimation" class="nav-link" data-scroll-target="#maximum-likelihood-estimation">9. Maximum likelihood estimation</a>
   <ul class="collapse">
-  <li><a href="#problem-18" id="toc-problem-18" class="nav-link" data-scroll-target="#problem-18">Problem 18</a></li>
   <li><a href="#problem-19" id="toc-problem-19" class="nav-link" data-scroll-target="#problem-19">Problem 19</a></li>
+  <li><a href="#problem-20" id="toc-problem-20" class="nav-link" data-scroll-target="#problem-20">Problem 20</a></li>
   <li><a href="#need-more-review-on-this-8" id="toc-need-more-review-on-this-8" class="nav-link" data-scroll-target="#need-more-review-on-this-8">Need more review on this?</a></li>
   </ul></li>
   <li><a href="#bayesian-inference" id="toc-bayesian-inference" class="nav-link" data-scroll-target="#bayesian-inference">10. Bayesian inference</a>
   <ul class="collapse">
-  <li><a href="#problem-20" id="toc-problem-20" class="nav-link" data-scroll-target="#problem-20">Problem 20</a></li>
   <li><a href="#problem-21" id="toc-problem-21" class="nav-link" data-scroll-target="#problem-21">Problem 21</a></li>
+  <li><a href="#problem-22" id="toc-problem-22" class="nav-link" data-scroll-target="#problem-22">Problem 22</a></li>
   <li><a href="#need-more-review-on-this-9" id="toc-need-more-review-on-this-9" class="nav-link" data-scroll-target="#need-more-review-on-this-9">Need more review on this?</a></li>
   </ul></li>
   </ul>
@@ -406,7 +414,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exams/midterm-1.html">Exam review</a></li><li class="breadcrumb-item"><a href="../exams/final.html">Final exam</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Final Exam Study Guide</h1>
 </div>
@@ -428,9 +436,9 @@ window.Quarto = {
 <p>Our final exam is <strong>Saturday May 3 from 7:00 PM to 10:00 PM</strong>. There will be 11 questions, and they will break down as follows:</p>
 <ol start="0" type="1">
 <li>(Some undisclosed check on your visual intuition, like the matching you’ve already seen. I will say no more about this, and you will do very well on it.)</li>
-<li>Basic probability rules</li>
+<li>Set theory and basic probability rules</li>
 <li>Counting</li>
-<li>Conditional probability</li>
+<li>Conditional probability and independence</li>
 <li>Discrete random variables</li>
 <li>Absolutely continuous random variables</li>
 <li>The moment-generating function</li>
@@ -439,89 +447,261 @@ window.Quarto = {
 <li>Maximum likelihood estimation</li>
 <li>Bayesian inference</li>
 </ol>
-<p>Below are two practice problems for each of these ten items, as well as guidance about what course materials to refer to if you want more review on a particular topic.</p>
-<section id="basic-probability-rules" class="level1">
-<h1>1. Basic probability rules</h1>
+<p>Below are at least two practice problems for each of these ten items, as well as guidance about what course materials to refer to if you want more review on a particular topic.</p>
+<section id="set-theory-and-basic-probability-rules" class="level1">
+<h1>1. Set theory and basic probability rules</h1>
 <section id="problem-1" class="level2">
 <h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
+<p>Suppose the events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are disjoint. Under what conditions are <span class="math inline">\(A^{c}\)</span> and <span class="math inline">\(B^{c}\)</span> also disjoint events?</p>
 </section>
 <section id="problem-2" class="level2">
 <h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
+<p>Let <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(C\)</span> be three arbitrary events, and let <span class="math inline">\(D\)</span> denote the event that “exactly one of these three events occurs.”</p>
+<ol type="a">
+<li>Draw a cartoon of <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span>, and <span class="math inline">\(D\)</span>;</li>
+<li>Use the three basic set operations (union, intersection, and complement) to express <span class="math inline">\(D\)</span> in terms of <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(C\)</span>;</li>
+<li>Show that</li>
+</ol>
+<p><span class="math display">\[P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).\]</span></p>
 </section>
 <section id="need-more-review-on-this" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this">Need more review on this?</h2>
+<ul>
+<li>Worked examples in <a href="https://sta240-s25.github.io/notes/sta240-02-probability-fundamentals.pdf">my notes</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_1.html">The entirety of Problem Set 1</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_2.html">Problems 4 - 10 on Problem Set 2</a>;</li>
+<li><a href="https://sta240-s25.github.io/exams/midterm-1.html">Problems 1 - 6 and 9 - 12 on Midterm 1 Practice</a>;</li>
+<li>Problem 1 on Midterm 1.</li>
+</ul>
 </section>
 </section>
 <section id="counting" class="level1">
 <h1>2. Counting</h1>
 <section id="problem-3" class="level2">
 <h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
+<p>The United States Senate contains two senators – one senior and one junior – from each of the <span class="math inline">\(50\)</span> states.</p>
+<ol type="a">
+<li>If a committee of eight senators is selected, what is the probability that it will contain at least one of the two senators from a certain specified state?</li>
+<li>If a committee of twenty senators is selected, what is the probability it will contain <span class="math inline">\(15\)</span> junior senators and <span class="math inline">\(5\)</span> senior senators?</li>
+<li>What is the probability that a group of <span class="math inline">\(50\)</span> senators selected at random will contain one senator from each state?</li>
+</ol>
 </section>
 <section id="problem-4" class="level2">
 <h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
+<p>Congratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers <span class="math inline">\(0\)</span> - <span class="math inline">\(9\)</span> available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).</p>
+<ol type="a">
+<li>You are fairly chill about what you want in a PIN – all you want is an even PIN, and you’re totally fine if it starts with a zero. How many possible PINs fit your preference?</li>
+<li>One of your friends is a bit more persnickety – they want a PIN divisible by <span class="math inline">\(5\)</span>, and they cannot stand PINs starting with a zero. How many possible PINs fit this friend’s preferences?</li>
+<li>Your other friend has some more…particular preferences – they have an affinity for the number <span class="math inline">\(16\)</span> and thus want the digits <span class="math inline">\(1\)</span> and <span class="math inline">\(6\)</span> to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend’s preferences?</li>
+</ol>
 </section>
 <section id="need-more-review-on-this-1" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-1">Need more review on this?</h2>
+<ul>
+<li>Worked examples in <a href="https://sta240-s25.github.io/notes/sta240-03-counting.pdf">my notes</a>;</li>
+<li><a href="https://www.youtube.com/playlist?list=PL66cFaJuAGhVPKtE6WxefbutJ2ysEAj1O">The videos from the snow day makeup</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_2.html">Problems 1 - 3 on Problem Set 2</a>;</li>
+<li><a href="https://sta240-s25.github.io/exams/midterm-1.html">Problems 7 - 8 on Midterm 1 Practice</a>;</li>
+<li>Problem 2 on Midterm 1.</li>
+</ul>
 </section>
 </section>
-<section id="conditional-probability" class="level1">
-<h1>3. Conditional probability</h1>
+<section id="conditional-probability-and-independence" class="level1">
+<h1>3. Conditional probability and independence</h1>
 <section id="problem-5" class="level2">
 <h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
+<p>An urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 reside in a box. A ticket is drawn at random from the box, and that number of balls is randomly chosen from the urn, without replacement.</p>
+<ol type="a">
+<li>What is the probability that all of the balls drawn are white?</li>
+<li>If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?</li>
+</ol>
 </section>
 <section id="problem-6" class="level2">
 <h2 class="anchored" data-anchor-id="problem-6">Problem 6</h2>
+<ol type="a">
+<li><p>Let <span class="math inline">\(S\)</span> be the set of all permutations of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, together with the triples <span class="math inline">\(aaa\)</span>, <span class="math inline">\(bbb\)</span>, and <span class="math inline">\(ccc\)</span>. Imagine we draw an outcome randomly from this set. Define the event <span class="math inline">\(A_k=\{\text{the kth spot is occupied by the letter a}\}\)</span> for <span class="math inline">\(k=1,\,2,\,3\)</span>. Compute the probabilities <span class="math inline">\(P(A_k)\)</span>, <span class="math inline">\(P(A_i\cap A_j)\)</span>, <span class="math inline">\(P(A_1\cap A_2\cap A_3)\)</span>, and comment on the independence of the three of events;</p></li>
+<li><p>Imagine we roll two fair, six-sided die. Consider the events <span class="math display">\[
+\begin{aligned}
+A&amp;=\text{first die is 1, 2, 3}\\
+B&amp;=\text{first die is 3, 4, 5}\\
+C&amp;=\text{the sum of the two rolls is 9}.
+\end{aligned}
+\]</span> Compute <span class="math inline">\(P(A)\)</span>, <span class="math inline">\(P(B)\)</span>, <span class="math inline">\(P(C)\)</span>, <span class="math inline">\(P(A\cap B)\)</span>, <span class="math inline">\(P(A\cap C)\)</span>, <span class="math inline">\(P(B\cap C)\)</span>, <span class="math inline">\(P(A\cap B\cap C)\)</span>, and comment on the independence of the three events.</p></li>
+</ol>
 </section>
 <section id="need-more-review-on-this-2" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-2">Need more review on this?</h2>
+<ul>
+<li>Worked examples in <a href="https://sta240-s25.github.io/notes/sta240-04-conditioning.pdf">my notes</a>;</li>
+<li><a href="https://sta240-s25.github.io/labs/lab-2.html">Lab 2</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_2.html">Problems 4 - 10 on Problem Set 2</a>;</li>
+<li><a href="https://sta240-s25.github.io/exams/midterm-1.html#conditional-probability-and-independence">Problems 10 - 12 on Midterm 1 practice</a>.</li>
+<li>Problems 3 and 4 on Midterm 1.</li>
+</ul>
 </section>
 </section>
 <section id="discrete-random-variables" class="level1">
 <h1>4. Discrete random variables</h1>
 <section id="problem-7" class="level2">
 <h2 class="anchored" data-anchor-id="problem-7">Problem 7</h2>
+<p>Let <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>, <span class="math inline">\(A_3\)</span>, <span class="math inline">\(A_4\)</span>, <span class="math inline">\(A_5\)</span>, and <span class="math inline">\(A_6\)</span> be events in some sample space, each with the same probability <span class="math inline">\(0&lt;p&lt;1/6\)</span>. Define the indicator random variables</p>
+<p><span class="math display">\[
+I_k
+=
+\begin{cases}
+0 &amp; \text{if }A_k^c\text{ happens}\\
+1 &amp; \text{if }A_k\text{ happens},
+\end{cases}
+\]</span></p>
+<p>and let <span class="math inline">\(X\)</span> be their sum</p>
+<p><span class="math display">\[
+X = I_1 + I_2 + I_3 + I_4+I_5+I_6.
+\]</span></p>
+<ol type="a">
+<li><p>Assume the events <span class="math inline">\(A_i\)</span> are mutually disjoint and compute…</p>
+<ol type="i">
+<li><span class="math inline">\(E(X)\)</span>.</li>
+<li><span class="math inline">\(P(X=1)\)</span>.</li>
+<li><span class="math inline">\(P(X=3)\)</span>.</li>
+</ol></li>
+<li><p>Assume the <span class="math inline">\(A_i\)</span> are independent and compute…</p>
+<ol type="i">
+<li><span class="math inline">\(E(X)\)</span>.</li>
+<li><span class="math inline">\(P(X=1)\)</span>.</li>
+<li><span class="math inline">\(P(X=3)\)</span>.</li>
+</ol></li>
+</ol>
 </section>
 <section id="problem-8" class="level2">
 <h2 class="anchored" data-anchor-id="problem-8">Problem 8</h2>
+<p>Signore Fibonacci has created a a balanced, six-sided die whose faces are labeled, naturally, 1, 2, 3, 5, 8, 13. He gives a pair to Enzo, who rolls them repeatedly, eager to get double 13s. Let <span class="math inline">\(X\)</span> be the number of times he has to roll the pair of dice in order to see double 13s for the first time.</p>
+<ol type="a">
+<li>What is the pmf of <span class="math inline">\(X\)</span>?</li>
+<li>What is the expected value of <span class="math inline">\(X\)</span>?</li>
+<li>Find a closed-form expression for <span class="math inline">\(P(X\geq m)\)</span>.</li>
+</ol>
 </section>
 <section id="need-more-review-on-this-3" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-3">Need more review on this?</h2>
+<ul>
+<li>Worked examples <a href="https://sta240-s25.github.io/notes/sta240-05-rv.pdf">here</a>, <a href="https://sta240-s25.github.io/notes/sta240-06-discrete.pdf">here</a>, and <a href="https://sta240-s25.github.io/notes/sta240-07-expectation.pdf">here</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_3.html">Problem Set 3</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_4.html">Problem 2 on Problem Set 4</a>;</li>
+<li><a href="https://sta240-s25.github.io/exams/midterm-1.html#random-variables">Problems 13 - 16 on Midterm 1 practice</a>;</li>
+<li>Problems 6 - 8 on Midterm 1.</li>
+</ul>
 </section>
 </section>
 <section id="absolutely-continuous-random-variables" class="level1">
 <h1>5. Absolutely continuous random variables</h1>
 <section id="problem-9" class="level2">
 <h2 class="anchored" data-anchor-id="problem-9">Problem 9</h2>
+<p>Here is a cdf for some nonnegative random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+F(x)
+=
+\begin{cases}
+1-\exp(-\sqrt[3]{x}) &amp; x\geq 0 \\
+0 &amp; \text{else}.
+\end{cases}
+\]</span></p>
+<ol type="a">
+<li>What is <span class="math inline">\(P(1 &lt; X &lt;8)\)</span>?</li>
+<li>What is the pdf of <span class="math inline">\(X\)</span>?</li>
+<li>Compute <span class="math inline">\(E(X^n)\)</span> for any <span class="math inline">\(n\in\mathbb{N}\)</span>.</li>
+<li>What is the variance of <span class="math inline">\(X\)</span>?</li>
+</ol>
 </section>
 <section id="problem-10" class="level2">
 <h2 class="anchored" data-anchor-id="problem-10">Problem 10</h2>
+<p>Consider this function:</p>
+<p><span class="math display">\[
+F(x) = \begin{cases}
+1 - e^{-g(x)} &amp; x\geq 0\\
+0 &amp; \text{else}.
+\end{cases}
+\]</span></p>
+<p>Assume <span class="math inline">\(g(x)\)</span> is a continuous function. What properties must <span class="math inline">\(g(x)\)</span> satisfy in order for <span class="math inline">\(F(x)\)</span> to be a valid cumulative distribution function (CDF)? Give three examples of functions <span class="math inline">\(g(x)\)</span> that satisfy these properties.</p>
+</section>
+<section id="problem-11" class="level2">
+<h2 class="anchored" data-anchor-id="problem-11">Problem 11</h2>
+<p>Here is the goofy pdf of some nonnegative random variable <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+f(x)
+=
+e^{1-e^x+x},\quad x\geq 0.
+\]</span></p>
+<ol type="a">
+<li>Compute the cdf of <span class="math inline">\(X\)</span>;</li>
+<li>Compute the median of <span class="math inline">\(X\)</span>.</li>
+</ol>
 </section>
 <section id="need-more-review-on-this-4" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-4">Need more review on this?</h2>
+<ul>
+<li>Worked example in <a href="https://sta240-s25.github.io/notes/sta240-continuous-rv.pdf">my notes</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_4.html#problem-3">Problems 3 and 4 on Problem Set 4</a>;</li>
+<li><a href="https://sta240-s25.github.io/psets/pset_5.html#part-2-absolutely-continuous-random-variables">Part 2 on Problem Set 5</a>;</li>
+<li><a href="https://sta240-s25.github.io/exams/midterm-2.html">Problems 1 and 3 on Midterm 2 review</a>;</li>
+<li>Problems 1 and 2 on Midterm 2.</li>
+</ul>
 </section>
 </section>
 <section id="the-moment-generating-function" class="level1">
 <h1>6. The moment-generating function</h1>
-<section id="problem-11" class="level2">
-<h2 class="anchored" data-anchor-id="problem-11">Problem 11</h2>
-</section>
 <section id="problem-12" class="level2">
 <h2 class="anchored" data-anchor-id="problem-12">Problem 12</h2>
+<p>A certain random variable <span class="math inline">\(X\)</span> has moment-generating function</p>
+<p><span class="math display">\[
+M(t)=\frac{e^{2t}}{1-3t},\quad t&lt;1/3.
+\]</span></p>
+<ol type="a">
+<li>Compute the mean and variance of <span class="math inline">\(X\)</span>.</li>
+<li>What is the moment generating function of the new random variable</li>
+</ol>
+<p><span class="math display">\[
+Y=\frac{\pi}{2}-\frac{X}{3}.
+\]</span></p>
+</section>
+<section id="problem-13" class="level2">
+<h2 class="anchored" data-anchor-id="problem-13">Problem 13</h2>
+<p>The <strong>binomial theorem</strong> says that</p>
+<p><span class="math display">\[
+(x+y)^n=\sum\limits_{k=0}^n\binom{n}{k}x^{n-k}y^k,\quad x,\,y\in\mathbb{R}\text{ and }n\in\mathbb{N}.
+\]</span></p>
+<p>If, instead, we consider negative powers, you get this funky thing:</p>
+<p><span class="math display">\[
+(x+y)^{-n}=\sum\limits_{k=0}^\infty(-1)^k\binom{n+k-1}{k}y^kx^{-n-k},\quad |y|&lt;x\text{ and }n\in\mathbb{N}.
+\]</span></p>
+<p>Now, let <span class="math inline">\(X\)</span> be a discrete random variable with <span class="math inline">\(\text{Range}(X)=\mathbb{N}=\{0,\,1,\,2,\,...\}\)</span> and pmf</p>
+<p><span class="math display">\[
+P(X = k)
+=
+\binom{k+r-1}{k}(1-p)^kp^r,\quad k\in\mathbb{N}.
+\]</span></p>
+<p>This is the <strong>negative binomial distribution</strong>, denoted <span class="math inline">\(X\sim\text{NB}(r,\,p)\)</span>, where <span class="math inline">\(0&lt;p&lt;1\)</span> and <span class="math inline">\(r=1,\,2,\,3,\,...\)</span> are parameters.</p>
+<ol type="a">
+<li>What is <span class="math inline">\((1-p)^{-r}\)</span>?</li>
+<li>What is the mgf of <span class="math inline">\(X\)</span>?</li>
+<li>Use the mgf to compute the mean of <span class="math inline">\(X\)</span>.</li>
+<li>Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> be independent random variables each with distribution <span class="math inline">\(\text{NB}(r_i,\,p)\)</span>. What is the distribution of <span class="math inline">\(S_n=\sum_{i=1}^nX_i\)</span>?</li>
+</ol>
 </section>
 <section id="need-more-review-on-this-5" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-5">Need more review on this?</h2>
 <ul>
-<li>Poisson and standard normal examples from lecture (see my Overleaf notes);</li>
+<li>Poisson and standard normal examples from <a href="https://sta240-s25.github.io/notes/sta240-mgf.pdf">my notes</a>;</li>
 <li>Gamma on <a href="https://sta240-s25.github.io/psets/pset_4.html#problem-6">Problem Set 4</a>;</li>
 <li>Part 3 of <a href="https://sta240-s25.github.io/psets/pset_5.html#part-3-moments">Problem Set 5</a>;</li>
-<li>Another on <a href="https://sta240-s25.github.io/exams/midterm-2.html#problem-3">Midterm 2 review</a>.</li>
+<li>Problem 3 on <a href="https://sta240-s25.github.io/exams/midterm-2.html#problem-3">Midterm 2 review</a>;</li>
+<li>Lots of mgf practice when we studied <a href="https://sta240-s25.github.io/notes/sta240-sums-averages.pdf">sums and averages of iid random variables</a>.</li>
 </ul>
 </section>
 </section>
 <section id="transformations" class="level1">
 <h1>7. Transformations</h1>
-<section id="problem-13" class="level2">
-<h2 class="anchored" data-anchor-id="problem-13">Problem 13</h2>
+<section id="problem-14" class="level2">
+<h2 class="anchored" data-anchor-id="problem-14">Problem 14</h2>
 <p>Let <span class="math inline">\(X\sim\text{Gamma}(\alpha,\,\beta)\)</span>, and define a new random variable <span class="math inline">\(Y=1/X\)</span>?</p>
 <ol type="a">
 <li>What is the density of <span class="math inline">\(Y\)</span>?</li>
@@ -542,8 +722,8 @@ Note
 </div>
 </div>
 </section>
-<section id="problem-14" class="level2">
-<h2 class="anchored" data-anchor-id="problem-14">Problem 14</h2>
+<section id="problem-15" class="level2">
+<h2 class="anchored" data-anchor-id="problem-15">Problem 15</h2>
 <p>Let <span class="math inline">\(X\)</span> be a nonnegative continuous random variable with this density:</p>
 <p><span class="math display">\[
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x&gt;0.
@@ -555,8 +735,8 @@ f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x&gt;0.
 <li>Is the density of <span class="math inline">\(Y\)</span> familiar?</li>
 </ol>
 </section>
-<section id="problem-15" class="level2">
-<h2 class="anchored" data-anchor-id="problem-15">Problem 15</h2>
+<section id="problem-16" class="level2">
+<h2 class="anchored" data-anchor-id="problem-16">Problem 16</h2>
 <p>Let <span class="math inline">\(X\)</span> be a continuous random variable with this density:</p>
 <p><span class="math display">\[
 f(x\,|\,\theta)
@@ -574,7 +754,7 @@ f(x\,|\,\theta)
 <section id="need-more-review-on-this-6" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-6">Need more review on this?</h2>
 <ul>
-<li>See <a href="https://sta240-s25.github.io/labs/lab-5.html">Lab 5</a> and Section 3.8 in my Overleaf notes;</li>
+<li>Worked examples in <a href="https://sta240-s25.github.io/notes/sta240-transformations.pdf">my notes</a>;</li>
 <li><a href="https://sta240-s25.github.io/psets/pset_5.html#part-4-transformations">Part 4 of Problem Set 5</a>;</li>
 <li><a href="https://sta240-s25.github.io/exams/midterm-2.html#problem-4">Problem 4 on Midterm 2 Practice</a>;</li>
 <li>Problem 4 on Midterm 2.</li>
@@ -583,35 +763,66 @@ f(x\,|\,\theta)
 </section>
 <section id="joint-distributions" class="level1">
 <h1>8. Joint distributions</h1>
-<section id="problem-16" class="level2">
-<h2 class="anchored" data-anchor-id="problem-16">Problem 16</h2>
-</section>
 <section id="problem-17" class="level2">
 <h2 class="anchored" data-anchor-id="problem-17">Problem 17</h2>
-<p>pareto gamma</p>
+<p>Here is the joint density for a random pair:</p>
+<p><span class="math display">\[
+f_{XY}(x,\,y)
+=
+\frac{24}{7}
+x(2-y),\quad 0&lt;x&lt;1\text{ and }0&lt;y&lt;1-x.
+\]</span></p>
+<ol type="a">
+<li>Sketch the joint range of <span class="math inline">\((X,\,Y)\)</span>.</li>
+<li>Find the marginal density of <span class="math inline">\(Y\)</span>.</li>
+<li>Find the marginal density of <span class="math inline">\(X\)</span>.</li>
+<li>Find the conditional density of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y=y\)</span>.</li>
+<li>Use this to compute <span class="math inline">\(P(X&gt;1/2\,|\,Y=1/3)\)</span>.</li>
+<li>What is <span class="math inline">\(E(X\,|\,Y=y\)</span>?</li>
+</ol>
+</section>
+<section id="problem-18" class="level2">
+<h2 class="anchored" data-anchor-id="problem-18">Problem 18</h2>
+<p>Consider the joint distribution of random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, written in hierarchical form:</p>
+<p><span class="math display">\[
+\begin{aligned}
+X&amp;\sim\textrm{Gamma}\left(\frac{d_2}{2},\, \frac{d_2}{2}\right)\\
+Y\,|\, X = x&amp;\sim\textrm{Gamma}\left(\frac{d_1}{2},\, \frac{d_1}{2}x\right).\\
+\end{aligned}
+\]</span></p>
+<p>Do some serious “massage and squint” to show that the marginal pdf of <span class="math inline">\(Y\)</span> is</p>
+<p><span class="math display">\[
+f_Y(y)=\frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}y^{\frac{d_1}{2}-1}\left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}},\quad y&gt;0.
+\]</span></p>
+<p>This means that <span class="math inline">\(Y\)</span> has the <strong><em>F</em>-distribution</strong>.</p>
 </section>
 <section id="need-more-review-on-this-7" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-7">Need more review on this?</h2>
+<ul>
+<li><a href="https://sta240-s25.github.io/psets/pset_5.html#part-5-joint-distributions">Part 5 on Problem Set 5</a>;</li>
+<li><a href="https://sta240-s25.github.io/exams/midterm-2.html#problem-5">Problem 5 on Midterm 2 Practice</a>;</li>
+<li>Problem 5 on Midterm 2.</li>
+</ul>
 </section>
 </section>
 <section id="maximum-likelihood-estimation" class="level1">
 <h1>9. Maximum likelihood estimation</h1>
-<section id="problem-18" class="level2">
-<h2 class="anchored" data-anchor-id="problem-18">Problem 18</h2>
-<p>Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> be iid from some member of the parametric family that you studied in Problem 14 above:</p>
+<section id="problem-19" class="level2">
+<h2 class="anchored" data-anchor-id="problem-19">Problem 19</h2>
+<p>Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> be iid from some member of the parametric family that you studied in Problem 15 above:</p>
 <p><span class="math display">\[
 f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x&gt;0.
 \]</span></p>
 <ol type="a">
 <li>What is the maximum likelihood estimator of <span class="math inline">\(\theta&gt;0\)</span>?</li>
-<li>What is the sampling distribution of the estimator?</li>
+<li>What is the sampling distribution of the estimator? Problem 14 might be helpful here.</li>
 <li>What is the MSE of the estimator?</li>
 <li>State the bounds of a 90% confidence interval for <span class="math inline">\(\theta\)</span>.</li>
 </ol>
 </section>
-<section id="problem-19" class="level2">
-<h2 class="anchored" data-anchor-id="problem-19">Problem 19</h2>
-<p>Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> be iid from some member of the parametric family that you studied in Problem 15 above:</p>
+<section id="problem-20" class="level2">
+<h2 class="anchored" data-anchor-id="problem-20">Problem 20</h2>
+<p>Let <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, …, <span class="math inline">\(X_n\)</span> be iid from some member of the parametric family that you studied in Problem 16 above:</p>
 <p><span class="math display">\[
 f(x\,|\,\theta)
 =
@@ -635,25 +846,46 @@ f(x\,|\,\theta)
 </section>
 <section id="bayesian-inference" class="level1">
 <h1>10. Bayesian inference</h1>
-<section id="problem-20" class="level2">
-<h2 class="anchored" data-anchor-id="problem-20">Problem 20</h2>
-<p>Geometric beta</p>
-</section>
 <section id="problem-21" class="level2">
 <h2 class="anchored" data-anchor-id="problem-21">Problem 21</h2>
-<p>pareto-gamma</p>
+<p>Consider the following Bayesian model:</p>
+<p><span class="math display">\[
+\begin{aligned}
+p&amp;\sim\text{Beta}(a_0,\,b_0)&amp;&amp; \text{(prior)}\\
+X_1,\,X_2,\,...,\,X_n\,|\,p&amp;\overset{\text{iid}}{\sim}\text{Geometric}(p).&amp;&amp; \text{(likelihood)}
+\end{aligned}
+\]</span></p>
+<ol type="a">
+<li>What is the posterior distribution?</li>
+<li>Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.</li>
+<li>State an 82% credible interval for <span class="math inline">\(p\)</span>.</li>
+</ol>
+</section>
+<section id="problem-22" class="level2">
+<h2 class="anchored" data-anchor-id="problem-22">Problem 22</h2>
+<p>Recall this family of distributions from Problems 15 and 19 above:</p>
+<p><span class="math display">\[
+f(x\,|\,\theta)=\theta(x+1)^{-(\theta+1)},\quad x&gt;0.
+\]</span></p>
+<p>If we observed iid data from some unknown member of this family, we could perform Bayesian inference for the unknown parameter <span class="math inline">\(\theta&gt;0\)</span> with the following model:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\theta&amp;\sim\text{Gamma}(a_0,\,b_0) &amp;&amp; \text{(prior)}\\
+X_1,\,X_2,\,...,\,X_n\,|\,\theta&amp;\overset{\text{iid}}{\sim}f(x\,|\,\theta).  &amp;&amp; \text{(likelihood)}
+\end{aligned}
+\]</span></p>
+<ol type="a">
+<li>What is the posterior distribution of <span class="math inline">\(\theta\)</span>?</li>
+<li>Compute the posterior mean and show that it is a convex combination of the prior mean and the mle.</li>
+<li>State a 90% credible interval for <span class="math inline">\(\theta\)</span>.</li>
+</ol>
 </section>
 <section id="need-more-review-on-this-9" class="level2">
 <h2 class="anchored" data-anchor-id="need-more-review-on-this-9">Need more review on this?</h2>
 <ul>
-<li>Worked examples from lecture (coming soon!);</li>
+<li>Beta-Bernoulli and gamma-Poisson examples from lecture (coming soon!);</li>
 <li><a href="https://sta240-s25.github.io/psets/pset_6.html#problem-3">Problem 3 on PSET 6</a>;</li>
-<li>Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples:
-<ul>
-<li>the Poisson-binomial hierarchy;</li>
-<li>the gamma-normal hierarchy that motivated Student’s <span class="math inline">\(t\)</span> distribution;</li>
-<li>the <a href="https://sta240-s25.github.io/psets/pset_5.html#problem-15">beta-gamma hierarchy</a> from Problem Set 5.</li>
-</ul></li>
+<li>Note also that these prior-posterior calculations are the same as when we wrote joint distributions hierarchically and then solved for the marginals and conditionals. As such, you can also consult all of those examples as well.</li>
 </ul>
 
 
@@ -1070,6 +1302,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../exams/midterm-2.html" class="pagination-link" aria-label="Midterm 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Midterm 2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
