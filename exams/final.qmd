@@ -24,6 +24,13 @@ Below are at least two practice problems for each of these ten items, as well as
 
 Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ and $B^{c}$ also disjoint events?
 
+::: {.callout-tip collapse="true"}
+## Answer
+
+$P(A) + P(B) = 1$ -- that is, $A$ and $B$ partition the sample space.
+
+:::
+
 ## Problem 2
 
 Let $A$, $B$, and $C$ be three arbitrary events, and let $D$ denote the event that "exactly one of these three events occurs."
@@ -33,6 +40,13 @@ b.  Use the three basic set operations (union, intersection, and complement) to 
 c.  Show that
 
 $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).$$
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+b. $P\left(A \cap B^{c} \cap C^{c}\right) + P\left(A^{c} \cap B \cap C^{c}\right) + P\left(A^{c} \cap B^{c} \cap C\right)$;
+
+:::
 
 ## Need more review on this?
 
@@ -52,6 +66,15 @@ a.  If a committee of eight senators is selected, what is the probability that i
 b.  If a committee of twenty senators is selected, what is the probability it will contain $15$ junior senators and $5$ senior senators?
 c.  What is the probability that a group of $50$ senators selected at random will contain one senator from each state?
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a. $\frac{\binom{100}{8} - \binom{98}{8}}{\binom{100}{8}}$;
+b. $\frac{\binom{50}{15}\binom{50}{5}}{\binom{100}{20}}$;
+c. $\frac{2^{50}}{\binom{100}{50}}$.
+
+:::
+
 ## Problem 4
 
 Congratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers $0$ - $9$ available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).
@@ -59,6 +82,15 @@ Congratulations! You and two of your friends are now proud owners of brand-new l
 a.  You are fairly chill about what you want in a PIN -- all you want is an even PIN, and you're totally fine if it starts with a zero. How many possible PINs fit your preference?
 b.  One of your friends is a bit more persnickety -- they want a PIN divisible by $5$, and they cannot stand PINs starting with a zero. How many possible PINs fit this friend's preferences?
 c.  Your other friend has some more...particular preferences -- they have an affinity for the number $16$ and thus want the digits $1$ and $6$ to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend's preferences?
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a. $10^{3} \times 5 = 5,000$ PINs;
+b. $9 \times 10^{2} \times 2 = 1,800$ PINs;
+c. $10^{2} + 2 \times 9 \times 10 = 280$ PINs.
+
+:::
 
 ## Need more review on this?
 
@@ -77,6 +109,14 @@ An urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 
 a.  What is the probability that all of the balls drawn are white?
 b.  If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?
 
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a. $\frac{1}{4}\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}$;
+b. $\frac{\frac{\binom{5}{3}}{\binom{15}{3}}}{\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}}$.
+
+:::
 ## Problem 6
 
 a.  Let $S$ be the set of all permutations of $a$, $b$, $c$, together with the triples $aaa$, $bbb$, and $ccc$. Imagine we draw an outcome randomly from this set. Define the event $A_k=\{\text{the kth spot is occupied by the letter a}\}$ for $k=1,\,2,\,3$. Compute the probabilities $P(A_k)$, $P(A_i\cap A_j)$, $P(A_1\cap A_2\cap A_3)$, and comment on the independence of the three of events;
