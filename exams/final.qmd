@@ -129,6 +129,14 @@ b.  Imagine we roll two fair, six-sided die. Consider the events $$
     \end{aligned}
     $$ Compute $P(A)$, $P(B)$, $P(C)$, $P(A\cap B)$, $P(A\cap C)$, $P(B\cap C)$, $P(A\cap B\cap C)$, and comment on the independence of the three events.
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a. $P\left(A_{k}\right) = \frac{1}{3}\text{ for all }k \in \{1, 2, 3\}$; $P\left(A_{i} \cap A_{j}\right) = \begin{cases}\frac{1}{9} & i \neq j \\ \frac{1}{3} & i = j\end{cases}$; $P\left(A_{1} \cap A_{2} \cap A_{3}\right) = \frac{1}{9}$; the events are *pairwise* independent, but not *mutually* independent.
+b. $f_X(x)=xe^{-x^2/2}$ for $x\geq 0$.
+
+:::
+
 ## Need more review on this?
 
 -   Worked examples in [my notes](https://sta240-s25.github.io/notes/sta240-04-conditioning.pdf);
