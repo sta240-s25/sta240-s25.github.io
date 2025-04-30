@@ -37,7 +37,7 @@
     "href": "exams/final.html#problem-2",
     "title": "Final Exam Study Guide",
     "section": "Problem 2",
-    "text": "Problem 2\nLet \\(A\\), \\(B\\), and \\(C\\) be three arbitrary events, and let \\(D\\) denote the event that “exactly one of these three events occurs.”\n\nDraw a cartoon of \\(A\\), \\(B\\), \\(C\\), and \\(D\\);\nUse the three basic set operations (union, intersection, and complement) to express \\(D\\) in terms of \\(A\\), \\(B\\), and \\(C\\);\nShow that\n\n\\[P(D)=P(A) + P(B) + P(C) - 2P(A \\cap B) - 2P(A \\cap C) - 2P(B \\cap C) + 3P(A \\cap B \\cap C).\\]",
+    "text": "Problem 2\nLet \\(A\\), \\(B\\), and \\(C\\) be three arbitrary events, and let \\(D\\) denote the event that “exactly one of these three events occurs.”\n\nDraw a cartoon of \\(A\\), \\(B\\), \\(C\\), and \\(D\\);\nUse the three basic set operations (union, intersection, and complement) to express \\(D\\) in terms of \\(A\\), \\(B\\), and \\(C\\);\nShow that\n\n\\[P(D)=P(A) + P(B) + P(C) - 2P(A \\cap B) - 2P(A \\cap C) - 2P(B \\cap C) + 3P(A \\cap B \\cap C).\\]\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n[sketch];\n\\(D = \\left(A \\cap B^{c} \\cap C^{c}\\right) \\cup \\left(A^{c} \\cap B \\cap C^{c}\\right) \\cup \\left(A^{c} \\cap B^{c} \\cap C\\right)\\);\n[proof].",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -59,7 +59,7 @@
     "href": "exams/final.html#problem-3",
     "title": "Final Exam Study Guide",
     "section": "Problem 3",
-    "text": "Problem 3\nThe United States Senate contains two senators – one senior and one junior – from each of the \\(50\\) states.\n\nIf a committee of eight senators is selected, what is the probability that it will contain at least one of the two senators from a certain specified state?\nIf a committee of twenty senators is selected, what is the probability it will contain \\(15\\) junior senators and \\(5\\) senior senators?\nWhat is the probability that a group of \\(50\\) senators selected at random will contain one senator from each state?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\frac{\\binom{100}{8} - \\binom{98}{8}}{\\binom{100}{8}}\\);\n\\(\\frac{\\binom{50}{15}\\binom{50}{5}}{\\binom{100}{20}}\\);\n\\(\\frac{2^{50}}{\\binom{100}{50}}\\).",
+    "text": "Problem 3\nThe United States Senate contains two senators – one senior and one junior – from each of the \\(50\\) states.\n\nIf a committee of eight senators is selected, what is the probability that it will contain at least one of the two senators from a certain specified state?\nIf a committee of twenty senators is selected, what is the probability it will contain \\(15\\) junior senators and \\(5\\) senior senators?\nWhat is the probability that a group of \\(50\\) senators selected at random will contain one senator from each state?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\frac{\\binom{100}{8} - \\binom{98}{8}}{\\binom{100}{8}} \\approx 0.154\\);\n\\(\\frac{\\binom{50}{15}\\binom{50}{5}}{\\binom{100}{20}} \\approx 0.00890\\);\n\\(\\frac{2^{50}}{\\binom{100}{50}} \\approx 1.12 \\times 10^{-14}\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -70,7 +70,7 @@
     "href": "exams/final.html#problem-4",
     "title": "Final Exam Study Guide",
     "section": "Problem 4",
-    "text": "Problem 4\nCongratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers \\(0\\) - \\(9\\) available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).\n\nYou are fairly chill about what you want in a PIN – all you want is an even PIN, and you’re totally fine if it starts with a zero. How many possible PINs fit your preference?\nOne of your friends is a bit more persnickety – they want a PIN divisible by \\(5\\), and they cannot stand PINs starting with a zero. How many possible PINs fit this friend’s preferences?\nYour other friend has some more…particular preferences – they have an affinity for the number \\(16\\) and thus want the digits \\(1\\) and \\(6\\) to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend’s preferences?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(10^{3} \\times 5 = 5,000\\) PINs;\n\\(9 \\times 10^{2} \\times 2 = 1,800\\) PINs;\n\\(10^{2} + 2 \\times 9 \\times 10 = 280\\) PINs.",
+    "text": "Problem 4\nCongratulations! You and two of your friends are now proud owners of brand-new library cards. In order to use your new cards, all you and your friends need to do is create four-digit PINs, with numbers \\(0\\) - \\(9\\) available (in theory) at each position. Predictably, all of you have different ideas of what an acceptable PIN is (odd or even, leading zeros or not, etc.).\n\nYou are fairly chill about what you want in a PIN – all you want is an even PIN, and you’re totally fine if it starts with a zero. How many possible PINs fit your preference?\nOne of your friends is a bit more persnickety – they want a PIN divisible by \\(5\\), and they cannot stand PINs starting with a zero. How many possible PINs fit this friend’s preferences?\nYour other friend has some more…particular preferences – they have an affinity for the number \\(16\\) and thus want the digits \\(1\\) and \\(6\\) to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend’s preferences?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(10^{3} \\times 5 = 5,000\\) PINs;\n\\(9 \\times 10^{2} \\times 2 = 1,800\\) PINs;\n\\(10^{2} + 2 \\times 9 \\times 10 - 1 = 279\\) PINs.",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -92,7 +92,7 @@
     "href": "exams/final.html#problem-5",
     "title": "Final Exam Study Guide",
     "section": "Problem 5",
-    "text": "Problem 5\nAn urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 reside in a box. A ticket is drawn at random from the box, and that number of balls is randomly chosen from the urn, without replacement.\n\nWhat is the probability that all of the balls drawn are white?\nIf we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\frac{1}{4}\\sum_{x = 1}^{4}{\\frac{\\binom{5}{x}}{\\binom{15}{x}}}\\);\n\\(\\frac{\\frac{\\binom{5}{3}}{\\binom{15}{3}}}{\\sum_{x = 1}^{4}{\\frac{\\binom{5}{x}}{\\binom{15}{x}}}}\\).",
+    "text": "Problem 5\nAn urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 reside in a box. A ticket is drawn at random from the box, and that number of balls is randomly chosen from the urn, without replacement.\n\nWhat is the probability that all of the balls drawn are white?\nIf we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\frac{1}{4}\\sum_{x = 1}^{4}{\\frac{\\binom{5}{x}}{\\binom{15}{x}}} \\approx 0.114\\);\n\\(\\frac{\\frac{\\binom{5}{3}}{\\binom{15}{3}}}{\\sum_{x = 1}^{4}{\\frac{\\binom{5}{x}}{\\binom{15}{x}}}} \\approx 0.0484\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -103,7 +103,7 @@
     "href": "exams/final.html#problem-6",
     "title": "Final Exam Study Guide",
     "section": "Problem 6",
-    "text": "Problem 6\n\nLet \\(S\\) be the set of all permutations of \\(a\\), \\(b\\), \\(c\\), together with the triples \\(aaa\\), \\(bbb\\), and \\(ccc\\). Imagine we draw an outcome randomly from this set. Define the event \\(A_k=\\{\\text{the kth spot is occupied by the letter a}\\}\\) for \\(k=1,\\,2,\\,3\\). Compute the probabilities \\(P(A_k)\\), \\(P(A_i\\cap A_j)\\), \\(P(A_1\\cap A_2\\cap A_3)\\), and comment on the independence of the three of events;\nImagine we roll two fair, six-sided die. Consider the events \\[\n\\begin{aligned}\nA&=\\text{first die is 1, 2, 3}\\\\\nB&=\\text{first die is 3, 4, 5}\\\\\nC&=\\text{the sum of the two rolls is 9}.\n\\end{aligned}\n\\] Compute \\(P(A)\\), \\(P(B)\\), \\(P(C)\\), \\(P(A\\cap B)\\), \\(P(A\\cap C)\\), \\(P(B\\cap C)\\), \\(P(A\\cap B\\cap C)\\), and comment on the independence of the three events.\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(P\\left(A_{k}\\right) = \\frac{1}{3}\\text{ for all }k \\in \\{1, 2, 3\\}\\); \\(P\\left(A_{i} \\cap A_{j}\\right) = \\begin{cases}\\frac{1}{9} & i \\neq j \\\\ \\frac{1}{3} & i = j\\end{cases}\\); \\(P\\left(A_{1} \\cap A_{2} \\cap A_{3}\\right) = \\frac{1}{9}\\); the events are pairwise independent, but not mutually independent.\n\\(f_X(x)=xe^{-x^2/2}\\) for \\(x\\geq 0\\).",
+    "text": "Problem 6\n\nLet \\(S\\) be the set of all permutations of \\(a\\), \\(b\\), \\(c\\), together with the triples \\(aaa\\), \\(bbb\\), and \\(ccc\\). Imagine we draw an outcome randomly from this set. Define the event \\(A_k=\\{\\text{the kth spot is occupied by the letter a}\\}\\) for \\(k=1,\\,2,\\,3\\). Compute the probabilities \\(P(A_k)\\), \\(P(A_i\\cap A_j)\\), \\(P(A_1\\cap A_2\\cap A_3)\\), and comment on the independence of the three of events;\nImagine we roll two fair, six-sided die. Consider the events \\[\n\\begin{aligned}\nA&=\\text{first die is 1, 2, 3}\\\\\nB&=\\text{first die is 3, 4, 5}\\\\\nC&=\\text{the sum of the two rolls is 9}.\n\\end{aligned}\n\\] Compute \\(P(A)\\), \\(P(B)\\), \\(P(C)\\), \\(P(A\\cap B)\\), \\(P(A\\cap C)\\), \\(P(B\\cap C)\\), \\(P(A\\cap B\\cap C)\\), and comment on the independence of the three events.\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(P\\left(A_{k}\\right) = \\frac{1}{3}\\text{ for all }k \\in \\{1, 2, 3\\}\\); \\(P\\left(A_{i} \\cap A_{j}\\right) = \\begin{cases}\\frac{1}{9} & i \\neq j \\\\ \\frac{1}{3} & i = j\\end{cases}\\); \\(P\\left(A_{1} \\cap A_{2} \\cap A_{3}\\right) = \\frac{1}{9}\\); the events are pairwise independent, but not mutually independent.\n\\(P(A) = P(B) = \\frac{1}{2}\\); \\(P(C) = \\frac{1}{9}\\); \\(P(A \\cap B) = \\frac{1}{6}\\); \\(P(A \\cap C) = \\frac{1}{36}\\); \\(P(B \\cap C) = \\frac{1}{12}\\); \\(P(A \\cap B \\cap C) = \\frac{1}{36}\\); the events are neither pairwise nor mutually independent.",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -125,7 +125,7 @@
     "href": "exams/final.html#problem-7",
     "title": "Final Exam Study Guide",
     "section": "Problem 7",
-    "text": "Problem 7\nLet \\(A_1\\), \\(A_2\\), \\(A_3\\), \\(A_4\\), \\(A_5\\), and \\(A_6\\) be events in some sample space, each with the same probability \\(0&lt;p&lt;1/6\\). Define the indicator random variables\n\\[\nI_k\n=\n\\begin{cases}\n0 & \\text{if }A_k^c\\text{ happens}\\\\\n1 & \\text{if }A_k\\text{ happens},\n\\end{cases}\n\\]\nand let \\(X\\) be their sum\n\\[\nX = I_1 + I_2 + I_3 + I_4+I_5+I_6.\n\\]\n\nAssume the events \\(A_i\\) are mutually disjoint and compute…\n\n\\(E(X)\\).\n\\(P(X=1)\\).\n\\(P(X=3)\\).\n\nAssume the \\(A_i\\) are independent and compute…\n\n\\(E(X)\\).\n\\(P(X=1)\\).\n\\(P(X=3)\\).",
+    "text": "Problem 7\nLet \\(A_1\\), \\(A_2\\), \\(A_3\\), \\(A_4\\), \\(A_5\\), and \\(A_6\\) be events in some sample space, each with the same probability \\(0&lt;p&lt;1/6\\). Define the indicator random variables\n\\[\nI_k\n=\n\\begin{cases}\n0 & \\text{if }A_k^c\\text{ happens}\\\\\n1 & \\text{if }A_k\\text{ happens},\n\\end{cases}\n\\]\nand let \\(X\\) be their sum\n\\[\nX = I_1 + I_2 + I_3 + I_4+I_5+I_6.\n\\]\n\nAssume the events \\(A_i\\) are mutually disjoint and compute…\n\n\\(E(X)\\).\n\\(P(X=1)\\).\n\\(P(X=3)\\).\n\nAssume the \\(A_i\\) are independent and compute…\n\n\\(E(X)\\).\n\\(P(X=1)\\).\n\\(P(X=3)\\).\n\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(E(X) = 6p\\); \\(P(X = 1) = 6p\\); \\(P(X = 3) = 0\\);\n\\(E(X) = 6p\\); \\(P(X = 1) = 6p(1 - p)^{5}\\); \\(P(X = 3) = 20p^{3}(1 - p)^{3}\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -136,7 +136,7 @@
     "href": "exams/final.html#problem-8",
     "title": "Final Exam Study Guide",
     "section": "Problem 8",
-    "text": "Problem 8\nSignore Fibonacci has created a a balanced, six-sided die whose faces are labeled, naturally, 1, 2, 3, 5, 8, 13. He gives a pair to Enzo, who rolls them repeatedly, eager to get double 13s. Let \\(X\\) be the number of times he has to roll the pair of dice in order to see double 13s for the first time.\n\nWhat is the pmf of \\(X\\)?\nWhat is the expected value of \\(X\\)?\nFind a closed-form expression for \\(P(X\\geq m)\\).",
+    "text": "Problem 8\nSignore Fibonacci has created a a balanced, six-sided die whose faces are labeled, naturally, 1, 2, 3, 5, 8, 13. He gives a pair to Enzo, who rolls them repeatedly, eager to get double 13s. Let \\(X\\) be the number of times he has to roll the pair of dice in order to see double 13s for the first time.\n\nWhat is the pmf of \\(X\\)?\nWhat is the expected value of \\(X\\)?\nFind a closed-form expression for \\(P(X\\geq m)\\).\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(P(X = x) = \\left(\\frac{35}{36}\\right)^{x - 1}\\frac{1}{36}, \\; x = 1, 2,\\dots\\) \\(\\left(X \\sim \\text{Geometric}\\left(\\frac{1}{36}\\right)\\right)\\);\n\\(E(X) = 36\\);\n\\(P(X \\geq m) = \\left(\\frac{35}{36}\\right)^{m - 1}, \\; m = 1, 2, \\dots\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -158,7 +158,7 @@
     "href": "exams/final.html#problem-9",
     "title": "Final Exam Study Guide",
     "section": "Problem 9",
-    "text": "Problem 9\nHere is a cdf for some nonnegative random variable \\(X\\):\n\\[\nF(x)\n=\n\\begin{cases}\n1-\\exp(-\\sqrt[3]{x}) & x\\geq 0 \\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\n\nWhat is \\(P(1 &lt; X &lt;8)\\)?\nWhat is the pdf of \\(X\\)?\nCompute \\(E(X^n)\\) for any \\(n\\in\\mathbb{N}\\).\nWhat is the variance of \\(X\\)?",
+    "text": "Problem 9\nHere is a cdf for some nonnegative random variable \\(X\\):\n\\[\nF(x)\n=\n\\begin{cases}\n1-\\exp(-\\sqrt[3]{x}) & x\\geq 0 \\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\n\nWhat is \\(P(1 &lt; X &lt;8)\\)?\nWhat is the pdf of \\(X\\)?\nCompute \\(E(X^n)\\) for any \\(n\\in\\mathbb{N}\\).\nWhat is the variance of \\(X\\)?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(P(1 &lt; X &lt; 8) = e^{-1} - e^{-2}\\);\n\\(f_{X}(x) = \\frac{1}{3}x^{-2/3}e^{-\\sqrt[3]{x}}, \\; x \\geq 0\\);\n\\(E\\left(X^{n}\\right) = (3n)!\\);\n\\(\\text{var}(X) = 684\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -180,7 +180,7 @@
     "href": "exams/final.html#problem-11",
     "title": "Final Exam Study Guide",
     "section": "Problem 11",
-    "text": "Problem 11\nHere is the goofy pdf of some nonnegative random variable \\(X\\):\n\\[\nf(x)\n=\ne^{1-e^x+x},\\quad x\\geq 0.\n\\]\n\nCompute the cdf of \\(X\\);\nCompute the median of \\(X\\).",
+    "text": "Problem 11\nHere is the goofy pdf of some nonnegative random variable \\(X\\):\n\\[\nf(x)\n=\ne^{1-e^x+x},\\quad x\\geq 0.\n\\]\n\nCompute the cdf of \\(X\\);\nCompute the median of \\(X\\).\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(F_{X}(x) = \\begin{cases}1 - e^{-e^{x} + 1} & x \\geq 0 \\\\ 0 & x &lt; 0 \\end{cases}\\);\n\\(q_{0.5} = \\ln(\\ln(2) + 1)\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -202,7 +202,7 @@
     "href": "exams/final.html#problem-12",
     "title": "Final Exam Study Guide",
     "section": "Problem 12",
-    "text": "Problem 12\nA certain random variable \\(X\\) has moment-generating function\n\\[\nM(t)=\\frac{e^{2t}}{1-3t},\\quad t&lt;1/3.\n\\]\n\nCompute the mean and variance of \\(X\\).\nWhat is the moment generating function of the new random variable\n\n\\[\nY=\\frac{\\pi}{2}-\\frac{X}{3}.\n\\]",
+    "text": "Problem 12\nA certain random variable \\(X\\) has moment-generating function\n\\[\nM(t)=\\frac{e^{2t}}{1-3t},\\quad t&lt;1/3.\n\\]\n\nCompute the mean and variance of \\(X\\).\nWhat is the moment generating function of the new random variable\n\n\\[\nY=\\frac{\\pi}{2}-\\frac{X}{3}.\n\\]\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(E(X) = 5\\); \\(\\text{var}(X) = 9\\);\n\\(M_{Y}(t) = \\frac{e^{\\left(\\frac{\\pi}{2} - \\frac{2}{3}\\right)t}}{1 + t}\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -213,7 +213,7 @@
     "href": "exams/final.html#problem-13",
     "title": "Final Exam Study Guide",
     "section": "Problem 13",
-    "text": "Problem 13\nThe binomial theorem says that\n\\[\n(x+y)^n=\\sum\\limits_{k=0}^n\\binom{n}{k}x^{n-k}y^k,\\quad x,\\,y\\in\\mathbb{R}\\text{ and }n\\in\\mathbb{N}.\n\\]\nIf, instead, we consider negative powers, you get this funky thing:\n\\[\n(x+y)^{-n}=\\sum\\limits_{k=0}^\\infty(-1)^k\\binom{n+k-1}{k}y^kx^{-n-k},\\quad |y|&lt;x\\text{ and }n\\in\\mathbb{N}.\n\\]\nNow, let \\(X\\) be a discrete random variable with \\(\\text{Range}(X)=\\mathbb{N}=\\{0,\\,1,\\,2,\\,...\\}\\) and pmf\n\\[\nP(X = k)\n=\n\\binom{k+r-1}{k}(1-p)^kp^r,\\quad k\\in\\mathbb{N}.\n\\]\nThis is the negative binomial distribution, denoted \\(X\\sim\\text{NB}(r,\\,p)\\), where \\(0&lt;p&lt;1\\) and \\(r=1,\\,2,\\,3,\\,...\\) are parameters.\n\nWhat is \\((1-p)^{-r}\\)?\nWhat is the mgf of \\(X\\)?\nUse the mgf to compute the mean of \\(X\\).\nLet \\(X_1\\), \\(X_2\\), …, \\(X_n\\) be independent random variables each with distribution \\(\\text{NB}(r_i,\\,p)\\). What is the distribution of \\(S_n=\\sum_{i=1}^nX_i\\)?",
+    "text": "Problem 13\nThe binomial theorem says that\n\\[\n(x+y)^n=\\sum\\limits_{k=0}^n\\binom{n}{k}x^{n-k}y^k,\\quad x,\\,y\\in\\mathbb{R}\\text{ and }n\\in\\mathbb{N}.\n\\]\nIf, instead, we consider negative powers, you get this funky thing:\n\\[\n(x+y)^{-n}=\\sum\\limits_{k=0}^\\infty(-1)^k\\binom{n+k-1}{k}y^kx^{-n-k},\\quad |y|&lt;x\\text{ and }n\\in\\mathbb{N}.\n\\]\nNow, let \\(X\\) be a discrete random variable with \\(\\text{Range}(X)=\\mathbb{N}=\\{0,\\,1,\\,2,\\,...\\}\\) and pmf\n\\[\nP(X = k)\n=\n\\binom{k+r-1}{k}(1-p)^kp^r,\\quad k\\in\\mathbb{N}.\n\\]\nThis is the negative binomial distribution, denoted \\(X\\sim\\text{NB}(r,\\,p)\\), where \\(0&lt;p&lt;1\\) and \\(r=1,\\,2,\\,3,\\,...\\) are parameters.\n\nWhat is \\((1-p)^{-r}\\)?\nWhat is the mgf of \\(X\\)?\nUse the mgf to compute the mean of \\(X\\).\nLet \\(X_1\\), \\(X_2\\), …, \\(X_n\\) be independent random variables each with distribution \\(\\text{NB}(r_i,\\,p)\\). What is the distribution of \\(S_n=\\sum_{i=1}^nX_i\\)?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\((1 - p)^{-r} = \\sum_{k = 0}^{\\infty}{\\binom{k + r - 1}{k}p^{k}}\\);\n\\(M_{X}(t) = \\left(\\frac{p}{1 - (1 - p)e^{t}}\\right)^{r}, \\; t &lt; -\\ln(1 - p)\\);\n\\(E(X) = \\frac{r(1 - p)}{p}\\);\n\\(S_{n} \\sim \\text{NB}\\left(\\sum_{i = 1}^{n}{r_{i}}, p\\right)\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -235,7 +235,7 @@
     "href": "exams/final.html#problem-14",
     "title": "Final Exam Study Guide",
     "section": "Problem 14",
-    "text": "Problem 14\nLet \\(X\\sim\\text{Gamma}(\\alpha,\\,\\beta)\\), and define a new random variable \\(Y=1/X\\)?\n\nWhat is the density of \\(Y\\)?\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\n\n\n\n\n\n\n\nNote\n\n\n\nA random variable possessing this new density is said to follow the inverse gamma distribution.",
+    "text": "Problem 14\nLet \\(X\\sim\\text{Gamma}(\\alpha,\\,\\beta)\\), and define a new random variable \\(Y=1/X\\)?\n\nWhat is the density of \\(Y\\)?\nWhat is \\(E(Y)\\)?\nWhat is \\(\\text{var}(Y)\\)?\n\n\n\n\n\n\n\nNote\n\n\n\nA random variable possessing this new density is said to follow the inverse gamma distribution.\n\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(f_{Y}(y) = \\frac{\\beta^{\\alpha}}{\\Gamma(\\alpha)}y^{-(\\alpha + 1)}e^{-\\beta / y}, \\; y &gt; 0\\);\n\\(E(Y) = \\frac{\\beta}{\\alpha - 1}, \\; \\alpha &gt; 1\\);\n\\(\\text{var}(Y) = \\frac{\\beta^{2}}{(\\alpha - 1)^{2}(\\alpha - 2)}, \\; \\alpha &gt; 2\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -246,7 +246,7 @@
     "href": "exams/final.html#problem-15",
     "title": "Final Exam Study Guide",
     "section": "Problem 15",
-    "text": "Problem 15\nLet \\(X\\) be a nonnegative continuous random variable with this density:\n\\[\nf(x\\,|\\,\\theta)=\\theta(x+1)^{-(\\theta+1)},\\quad x&gt;0.\n\\]\nTreat \\(\\theta&gt;0\\) as a constant, and define a new random variable \\(Y=\\ln(X+1)\\).\n\nWhat is the range of \\(Y\\)?\nWhat is the density of \\(Y\\)?\nIs the density of \\(Y\\) familiar?",
+    "text": "Problem 15\nLet \\(X\\) be a nonnegative continuous random variable with this density:\n\\[\nf(x\\,|\\,\\theta)=\\theta(x+1)^{-(\\theta+1)},\\quad x&gt;0.\n\\]\nTreat \\(\\theta&gt;0\\) as a constant, and define a new random variable \\(Y=\\ln(X+1)\\).\n\nWhat is the range of \\(Y\\)?\nWhat is the density of \\(Y\\)?\nIs the density of \\(Y\\) familiar?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\text{Range}(Y) = (0, \\infty)\\);\n\\(f_{Y}(y) = \\theta e^{-\\theta y}, \\; y &gt; 0\\);\n\\(Y \\sim \\text{Exponential}(\\theta) \\stackrel{\\text{d}}{=} \\text{Gamma}(1, \\theta)\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -257,7 +257,7 @@
     "href": "exams/final.html#problem-16",
     "title": "Final Exam Study Guide",
     "section": "Problem 16",
-    "text": "Problem 16\nLet \\(X\\) be a continuous random variable with this density:\n\\[\nf(x\\,|\\,\\theta)\n=\n\\frac{1}{2\\theta}\\exp\\left(-\\frac{|x|}{\\theta}\\right), \\quad -\\infty&lt;x&lt;\\infty.\n\\]\nTreat \\(\\theta&gt;0\\) as a constant, and define a new random variable \\(Y=|X|\\).\n\nSketch what this density looks like for \\(\\theta=1\\).\nWhat is the range of \\(Y\\)?\nWhat is the density of \\(Y\\)?\nIs the density of \\(Y\\) familiar?",
+    "text": "Problem 16\nLet \\(X\\) be a continuous random variable with this density:\n\\[\nf(x\\,|\\,\\theta)\n=\n\\frac{1}{2\\theta}\\exp\\left(-\\frac{|x|}{\\theta}\\right), \\quad -\\infty&lt;x&lt;\\infty.\n\\]\nTreat \\(\\theta&gt;0\\) as a constant, and define a new random variable \\(Y=|X|\\).\n\nSketch what this density looks like for \\(\\theta=1\\).\nWhat is the range of \\(Y\\)?\nWhat is the density of \\(Y\\)?\nIs the density of \\(Y\\) familiar?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n[sketch];\n\\(\\text{Range}(Y) = [0, \\infty)\\);\n\\(f_{Y}(y) = \\frac{1}{\\theta}e^{-y/\\theta}, \\; y \\geq 0\\);\n\\(Y \\sim \\text{Exponential}\\left(\\frac{1}{\\theta}\\right) \\stackrel{\\text{d}}{=} \\text{Gamma}\\left(1, \\frac{1}{\\theta}\\right)\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -279,7 +279,7 @@
     "href": "exams/final.html#problem-17",
     "title": "Final Exam Study Guide",
     "section": "Problem 17",
-    "text": "Problem 17\nHere is the joint density for a random pair:\n\\[\nf_{XY}(x,\\,y)\n=\n\\frac{24}{7}\nx(2-y),\\quad 0&lt;x&lt;1\\text{ and }0&lt;y&lt;1-x.\n\\]\n\nSketch the joint range of \\((X,\\,Y)\\).\nFind the marginal density of \\(Y\\).\nFind the marginal density of \\(X\\).\nFind the conditional density of \\(X\\) given \\(Y=y\\).\nUse this to compute \\(P(X&gt;1/2\\,|\\,Y=1/3)\\).\nWhat is \\(E(X\\,|\\,Y=y\\)?",
+    "text": "Problem 17\nHere is the joint density for a random pair:\n\\[\nf_{XY}(x,\\,y)\n=\n\\frac{24}{7}\nx(2-y),\\quad 0&lt;x&lt;1\\text{ and }0&lt;y&lt;1-x.\n\\]\n\nSketch the joint range of \\((X,\\,Y)\\).\nFind the marginal density of \\(Y\\).\nFind the marginal density of \\(X\\).\nFind the conditional density of \\(X\\) given \\(Y=y\\).\nUse this to compute \\(P(X&gt;1/2\\,|\\,Y=1/3)\\).\nWhat is \\(E(X\\,|\\,Y=y)\\)?\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n[sketch];\n\\(f_{Y}(y) = \\frac{12}{7}(2 - y)(1 - y)^{2}, \\; 0 &lt; y &lt; 1\\);\n\\(f_{X}(x) = \\frac{12}{7}\\left(-x^{3} - 2x^{2} + 3x\\right), \\; 0 &lt; x &lt; 1\\).\n\\(f_{X \\mid Y = y}(x \\mid y) = \\frac{2x}{(1 - y)^{2}}, \\; 0 &lt; x &lt; 1 - y\\);\n\\(P(X &gt; 1/2 \\mid Y = 1/3) = \\frac{7}{16}\\);\n\\(E(X \\mid Y = y) = \\frac{2}{3}(1 - y)\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -312,7 +312,7 @@
     "href": "exams/final.html#problem-19",
     "title": "Final Exam Study Guide",
     "section": "Problem 19",
-    "text": "Problem 19\nLet \\(X_1\\), \\(X_2\\), …, \\(X_n\\) be iid from some member of the parametric family that you studied in Problem 15 above:\n\\[\nf(x\\,|\\,\\theta)=\\theta(x+1)^{-(\\theta+1)},\\quad x&gt;0.\n\\]\n\nWhat is the maximum likelihood estimator of \\(\\theta&gt;0\\)?\nWhat is the sampling distribution of the estimator? Problem 14 might be helpful here.\nWhat is the MSE of the estimator?\nState the bounds of a 90% confidence interval for \\(\\theta\\).",
+    "text": "Problem 19\nLet \\(X_1\\), \\(X_2\\), …, \\(X_n\\) be iid from some member of the parametric family that you studied in Problem 15 above:\n\\[\nf(x\\,|\\,\\theta)=\\theta(x+1)^{-(\\theta+1)},\\quad x&gt;0.\n\\]\n\nWhat is the maximum likelihood estimator of \\(\\theta&gt;0\\)?\nWhat is the sampling distribution of the estimator? Problem 14 might be helpful here.\nWhat is the MSE of the estimator?\nState the bounds of a 90% confidence interval for \\(\\theta\\).\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\hat{\\theta}_{n} = \\frac{n}{\\sum_{i = 1}^{n}{\\ln\\left(X_{i} + 1\\right)}}\\);\n\\(\\hat{\\theta}_{n} \\sim \\text{Inverse-Gamma}(n, n\\theta)\\);\n\\(\\text{MSE}\\left(\\hat{\\theta}_{n}\\right) = \\frac{(n + 2)\\theta^{2}}{(n - 1)(n - 2)}\\);\n\\(\\left[\\hat{\\theta}_{n} \\cdot G_{n, n}(0.05), \\hat{\\theta}_{n} \\cdot G_{n, n}(0.95)\\right]\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
@@ -323,7 +323,7 @@
     "href": "exams/final.html#problem-20",
     "title": "Final Exam Study Guide",
     "section": "Problem 20",
-    "text": "Problem 20\nLet \\(X_1\\), \\(X_2\\), …, \\(X_n\\) be iid from some member of the parametric family that you studied in Problem 16 above:\n\\[\nf(x\\,|\\,\\theta)\n=\n\\frac{1}{2\\theta}\\exp\\left(-\\frac{|x|}{\\theta}\\right), \\quad -\\infty&lt;x&lt;\\infty.\n\\]\n\nWhat is the maximum likelihood estimator of \\(\\theta&gt;0\\)?\nWhat is the sampling distribution of the estimator?\nWhat is the MSE of the estimator?\nState the bounds of a 75% confidence interval for \\(\\theta\\).",
+    "text": "Problem 20\nLet \\(X_1\\), \\(X_2\\), …, \\(X_n\\) be iid from some member of the parametric family that you studied in Problem 16 above:\n\\[\nf(x\\,|\\,\\theta)\n=\n\\frac{1}{2\\theta}\\exp\\left(-\\frac{|x|}{\\theta}\\right), \\quad -\\infty&lt;x&lt;\\infty.\n\\]\n\nWhat is the maximum likelihood estimator of \\(\\theta&gt;0\\)?\nWhat is the sampling distribution of the estimator?\nWhat is the MSE of the estimator?\nState the bounds of a 75% confidence interval for \\(\\theta\\).\n\n\n\n\n\n\n\nAnswers\n\n\n\n\n\n\n\\(\\hat{\\theta}_{n} = \\frac{1}{n}\\sum_{i = 1}^{n}{\\left|X_{i}\\right|}\\);\n\\(\\hat{\\theta}_{n} \\sim \\text{Gamma}\\left(n, \\frac{n}{\\theta}\\right)\\);\n\\(\\text{MSE}\\left(\\hat{\\theta}_{n}\\right) = \\frac{\\theta^{2}}{n}\\);\n\\(\\left[\\frac{\\hat{\\theta}_{n}}{G_{n, n}(0.875)}, \\frac{\\hat{\\theta}_{n}}{G_{n, n}(0.125)}\\right]\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
