@@ -28,7 +28,6 @@ Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ a
 ## Answer
 
 $P(A) + P(B) = 1$ -- that is, $A$ and $B$ partition the sample space.
-
 :::
 
 ## Problem 2
@@ -40,8 +39,6 @@ b.  Use the three basic set operations (union, intersection, and complement) to 
 c.  Show that
 
 $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).$$
-
-
 
 ## Need more review on this?
 
@@ -64,10 +61,9 @@ c.  What is the probability that a group of $50$ senators selected at random wil
 ::: {.callout-tip collapse="true"}
 ## Answers
 
-a. $\frac{\binom{100}{8} - \binom{98}{8}}{\binom{100}{8}}$;
-b. $\frac{\binom{50}{15}\binom{50}{5}}{\binom{100}{20}}$;
-c. $\frac{2^{50}}{\binom{100}{50}}$.
-
+a.  $\frac{\binom{100}{8} - \binom{98}{8}}{\binom{100}{8}}$;
+b.  $\frac{\binom{50}{15}\binom{50}{5}}{\binom{100}{20}}$;
+c.  $\frac{2^{50}}{\binom{100}{50}}$.
 :::
 
 ## Problem 4
@@ -81,10 +77,9 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 ::: {.callout-tip collapse="true"}
 ## Answers
 
-a. $10^{3} \times 5 = 5,000$ PINs;
-b. $9 \times 10^{2} \times 2 = 1,800$ PINs;
-c. $10^{2} + 2 \times 9 \times 10 = 280$ PINs.
-
+a.  $10^{3} \times 5 = 5,000$ PINs;
+b.  $9 \times 10^{2} \times 2 = 1,800$ PINs;
+c.  $10^{2} + 2 \times 9 \times 10 = 280$ PINs.
 :::
 
 ## Need more review on this?
@@ -104,14 +99,13 @@ An urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 
 a.  What is the probability that all of the balls drawn are white?
 b.  If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?
 
-
 ::: {.callout-tip collapse="true"}
 ## Answers
 
-a. $\frac{1}{4}\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}$;
-b. $\frac{\frac{\binom{5}{3}}{\binom{15}{3}}}{\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}}$.
-
+a.  $\frac{1}{4}\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}$;
+b.  $\frac{\frac{\binom{5}{3}}{\binom{15}{3}}}{\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}}$.
 :::
+
 ## Problem 6
 
 a.  Let $S$ be the set of all permutations of $a$, $b$, $c$, together with the triples $aaa$, $bbb$, and $ccc$. Imagine we draw an outcome randomly from this set. Define the event $A_k=\{\text{the kth spot is occupied by the letter a}\}$ for $k=1,\,2,\,3$. Compute the probabilities $P(A_k)$, $P(A_i\cap A_j)$, $P(A_1\cap A_2\cap A_3)$, and comment on the independence of the three of events;
@@ -127,9 +121,8 @@ b.  Imagine we roll two fair, six-sided die. Consider the events $$
 ::: {.callout-tip collapse="true"}
 ## Answers
 
-a. $P\left(A_{k}\right) = \frac{1}{3}\text{ for all }k \in \{1, 2, 3\}$; $P\left(A_{i} \cap A_{j}\right) = \begin{cases}\frac{1}{9} & i \neq j \\ \frac{1}{3} & i = j\end{cases}$; $P\left(A_{1} \cap A_{2} \cap A_{3}\right) = \frac{1}{9}$; the events are *pairwise* independent, but not *mutually* independent.
-b. $f_X(x)=xe^{-x^2/2}$ for $x\geq 0$.
-
+a.  $P\left(A_{k}\right) = \frac{1}{3}\text{ for all }k \in \{1, 2, 3\}$; $P\left(A_{i} \cap A_{j}\right) = \begin{cases}\frac{1}{9} & i \neq j \\ \frac{1}{3} & i = j\end{cases}$; $P\left(A_{1} \cap A_{2} \cap A_{3}\right) = \frac{1}{9}$; the events are *pairwise* independent, but not *mutually* independent.
+b.  $f_X(x)=xe^{-x^2/2}$ for $x\geq 0$.
 :::
 
 ## Need more review on this?
@@ -220,7 +213,19 @@ F(x) = \begin{cases}
 \end{cases}
 $$
 
-Assume $g(x)$ is a continuous function. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF)? Give three examples of functions $g(x)$ that satisfy these properties.
+Assume $g(x)$ is continuous. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF)? Give three examples of functions $g(x)$ that satisfy these properties.
+
+::: {.callout-tip collapse="true"}
+## Answer
+$g$ must satisfy...
+
+- nondecreasing
+- nonnegative
+- $g(0)=0$
+- $g(x)\to\infty$ as $x\to\infty$.
+
+Examples are $x^a$, $e^x-1$, $\ln(x + 1)$.
+:::
 
 ## Problem 11
 
@@ -311,6 +316,7 @@ c.  What is $\text{var}(Y)$?
 A random variable possessing this new density is said to follow the **inverse gamma distribution**.
 :::
 
+
 ## Problem 15
 
 Let $X$ be a nonnegative continuous random variable with this density:
@@ -388,6 +394,41 @@ $$
 
 This means that $Y$ has the ***F*****-distribution**.
 
+::: {.callout-tip collapse="true"}
+## Answer
+  Fix $y>0$, and let the hilarity ensue:
+$$
+  \begin{aligned}
+      f_Y(y)&=\int_0^\infty f_{X, Y}(x,\,y)\,\text{d} x\\
+      &=\int_0^\infty f_{Y\,|\, X}(y\,|\, x)f_X(x)\,\text{d} x\\
+      &=\int_0^\infty \frac{\left(\frac{d_1}{2}\right)^{d_1/2}x^{d_1/2}}{\Gamma\left(\frac{d_1}{2}\right)}y^{\frac{d_1}{2}-1}e^{-\frac{d_1}{2}xy}\frac{\left(\frac{d_2}{2}\right)^{d_2/2}}{\Gamma\left(\frac{d_2}{2}\right)}x^{\frac{d_2}{2}-1}e^{-\frac{d_2}{2}x}\,\text{d} x\\
+      &=\frac{\left(\frac{d_1}{2}\right)^{d_1/2}\left(\frac{d_2}{2}\right)^{d_2/2}}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}y^{\frac{d_1}{2}-1}\int_0^\infty \underbrace{x^{\frac{d_1}{2}+\frac{d_2}{2}-1}e^{-\left(\frac{d_2}{2}+\frac{d_1}{2}y\right)x}}_{\text{kernel of }\textrm{Gamma}\left(\alpha\,=\,\frac{d_1}{2}+\frac{d_2}{2},\,\beta\,=\, \frac{d_2}{2}+\frac{d_1}{2}y\right)}\,\text{d} x\\
+      &=\frac{\left(\frac{d_1}{2}\right)^{d_1/2}\left(\frac{d_2}{2}\right)^{d_2/2}}
+      {\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}
+      y^{\frac{d_1}{2}-1}
+      \frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}
+      {\left(\frac{d_2}{2}+\frac{d_1}{2}y\right)^{\frac{d_1}{2}+\frac{d_2}{2}}}\\
+      &=
+      \frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}
+      {\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}
+      \left(\frac{d_1}{2}\right)^{d_1/2}
+      \left(\frac{d_2}{2}\right)^{d_2/2}
+      y^{\frac{d_1}{2}-1}
+      \left(\frac{d_2}{2}+\frac{d_1}{2}y\right)^{-\frac{d_1+d_2}{2}}\\
+      &=
+      \frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}
+      {\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}
+      \left(\frac{d_1}{\cancel{2}}\right)^{d_1/2}
+      \cancel{\left(\frac{d_2}{2}\right)^{d_2/2}}
+      y^{\frac{d_1}{2}-1}
+      \left(\frac{d_2}{\cancel{2}}\right)^{-\frac{d_1}{2}}
+      \cancel{\left(\frac{d_2}{2}\right)^{-\frac{d_2}{2}}}
+      \left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}}\\
+      &=\frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}y^{\frac{d_1}{2}-1}\left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}},\quad y>0.
+  \end{aligned}
+$$
+:::
+
 ## Need more review on this?
 
 -   [Part 5 on Problem Set 5](https://sta240-s25.github.io/psets/pset_5.html#part-5-joint-distributions);
@@ -447,6 +488,17 @@ a.  What is the posterior distribution?
 b.  Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.
 c.  State an 82% credible interval for $p$.
 
+::: {.callout-tip collapse="true"}
+## Answer
+$$
+\begin{aligned}
+p\,|\,x_{1:n}&\sim\text{Beta}(a_n,\,b_n)\\
+a_n&=a_0+n\\
+b_n&=b_0+\sum_{i=1}^nx_i
+\end{aligned}
+$$
+:::
+
 ## Problem 22
 
 Recall this family of distributions from Problems 15 and 19 above:
@@ -467,6 +519,19 @@ $$
 a.  What is the posterior distribution of $\theta$?
 b.  Compute the posterior mean and show that it is a convex combination of the prior mean and the mle.
 c.  State a 90% credible interval for $\theta$.
+
+::: {.callout-tip collapse="true"}
+## Answer
+
+$$
+\begin{aligned}
+\theta\,|\,x_{1:n}&\sim\text{Gamma}(a_n,\,b_n)\\
+a_n&=a_0+n\\
+b_n&=b_0+\sum_{i=1}^n\ln(x_i+1)
+\end{aligned}
+$$
+
+:::
 
 ## Need more review on this?
 
