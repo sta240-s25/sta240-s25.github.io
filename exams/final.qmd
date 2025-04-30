@@ -540,6 +540,15 @@ b.  What is the sampling distribution of the estimator? Problem 14 might be help
 c.  What is the MSE of the estimator?
 d.  State the bounds of a 90% confidence interval for $\theta$.
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  $\hat{\theta}_{n} = \frac{n}{\sum_{i = 1}^{n}{\ln\left(X_{i} + 1\right)}}$;
+b.  $\hat{\theta}_{n} \sim \text{Inverse-Gamma}(n, n\theta)$;
+c.  $\text{MSE}\left(\hat{\theta}_{n}\right) = \frac{(n + 2)\theta^{2}}{(n - 1)(n - 2)}$;
+d.  $\left[\hat{\theta}_{n} \cdot G_{n, n}(0.05), \hat{\theta}_{n} \cdot G_{n, n}(0.95)\right]$.
+:::
+
 ## Problem 20
 
 Let $X_1$, $X_2$, ..., $X_n$ be iid from some member of the parametric family that you studied in Problem 16 above:
@@ -554,6 +563,15 @@ a.  What is the maximum likelihood estimator of $\theta>0$?
 b.  What is the sampling distribution of the estimator?
 c.  What is the MSE of the estimator?
 d.  State the bounds of a 75% confidence interval for $\theta$.
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  $\hat{\theta}_{n} = \frac{1}{n}\sum_{i = 1}^{n}{\left|X_{i}\right|}$;
+b.  $\hat{\theta}_{n} \sim \text{Gamma}\left(n, \frac{n}{\theta}\right)$;
+c.  $\text{MSE}\left(\hat{\theta}_{n}\right) = \frac{\theta^{2}}{n}$;
+d.  $\left[\frac{\hat{\theta}_{n}}{G_{n, n}(0.875)}, \frac{\hat{\theta}_{n}}{G_{n, n}(0.125)}\right]$.
+:::
 
 ## Need more review on this?
 
