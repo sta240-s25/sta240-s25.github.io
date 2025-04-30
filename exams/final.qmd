@@ -371,6 +371,13 @@ c.  What is $\text{var}(Y)$?
 A random variable possessing this new density is said to follow the **inverse gamma distribution**.
 :::
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  $f_{Y}(y) = \frac{\beta^{\alpha}}{\Gamma(\alpha)}y^{-(\alpha + 1)}e^{-\beta / y}, \; y > 0$;
+b.  $E(Y) = \frac{\beta}{\alpha - 1}, \; \alpha > 1$;
+c.  $\text{var}(Y) = \frac{\beta^{2}}{(\alpha - 1)^{2}(\alpha - 2)}, \; \alpha > 2$.
+:::
 
 ## Problem 15
 
@@ -385,6 +392,14 @@ Treat $\theta>0$ as a constant, and define a new random variable $Y=\ln(X+1)$.
 a.  What is the range of $Y$?
 b.  What is the density of $Y$?
 c.  Is the density of $Y$ familiar?
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  $\text{Range}(Y) = (0, \infty)$;
+b.  $f_{Y}(y) = \theta e^{-\theta y}, \; y > 0$;
+c.  $Y \sim \text{Exponential}(\theta) \stackrel{\text{d}}{=} \text{Gamma}(1, \theta)$.
+:::
 
 ## Problem 16
 
@@ -402,6 +417,15 @@ a.  Sketch what this density looks like for $\theta=1$.
 b.  What is the range of $Y$?
 c.  What is the density of $Y$?
 d.  Is the density of $Y$ familiar?
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  [sketch];
+b.  $\text{Range}(Y) = [0, \infty)$;
+c.  $f_{Y}(y) = \frac{1}{\theta}e^{-y/\theta}, \; y \geq 0$;
+d.  $Y \sim \text{Exponential}\left(\frac{1}{\theta}\right) \stackrel{\text{d}}{=} \text{Gamma}\left(1, \frac{1}{\theta}\right)$.
+:::
 
 ## Need more review on this?
 
