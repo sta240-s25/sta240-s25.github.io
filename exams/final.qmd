@@ -40,6 +40,14 @@ c.  Show that
 
 $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).$$
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  [sketch];
+b.  $D = \left(A \cap B^{c} \cap C^{c}\right) \cup \left(A^{c} \cap B \cap C^{c}\right) \cup \left(A^{c} \cap B^{c} \cap C\right)$;
+c.  [proof].
+:::
+
 ## Need more review on this?
 
 -   Worked examples in [my notes](https://sta240-s25.github.io/notes/sta240-02-probability-fundamentals.pdf);
@@ -61,9 +69,9 @@ c.  What is the probability that a group of $50$ senators selected at random wil
 ::: {.callout-tip collapse="true"}
 ## Answers
 
-a.  $\frac{\binom{100}{8} - \binom{98}{8}}{\binom{100}{8}}$;
-b.  $\frac{\binom{50}{15}\binom{50}{5}}{\binom{100}{20}}$;
-c.  $\frac{2^{50}}{\binom{100}{50}}$.
+a.  $\frac{\binom{100}{8} - \binom{98}{8}}{\binom{100}{8}} \approx 0.154$;
+b.  $\frac{\binom{50}{15}\binom{50}{5}}{\binom{100}{20}} \approx 0.00890$;
+c.  $\frac{2^{50}}{\binom{100}{50}} \approx 1.12 \times 10^{-14}$.
 :::
 
 ## Problem 4
@@ -102,8 +110,8 @@ b.  If we learn that all balls drawn from the urn are white, what is the conditi
 ::: {.callout-tip collapse="true"}
 ## Answers
 
-a.  $\frac{1}{4}\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}$;
-b.  $\frac{\frac{\binom{5}{3}}{\binom{15}{3}}}{\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}}$.
+a.  $\frac{1}{4}\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}} \approx 0.114$;
+b.  $\frac{\frac{\binom{5}{3}}{\binom{15}{3}}}{\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}} \approx 0.0484$.
 :::
 
 ## Problem 6
@@ -122,7 +130,7 @@ b.  Imagine we roll two fair, six-sided die. Consider the events $$
 ## Answers
 
 a.  $P\left(A_{k}\right) = \frac{1}{3}\text{ for all }k \in \{1, 2, 3\}$; $P\left(A_{i} \cap A_{j}\right) = \begin{cases}\frac{1}{9} & i \neq j \\ \frac{1}{3} & i = j\end{cases}$; $P\left(A_{1} \cap A_{2} \cap A_{3}\right) = \frac{1}{9}$; the events are *pairwise* independent, but not *mutually* independent.
-b.  $f_X(x)=xe^{-x^2/2}$ for $x\geq 0$.
+b.  $P(A) = P(B) = \frac{1}{2}$; $P(C) = \frac{1}{9}$; $P(A \cap B) = \frac{1}{6}$; $P(A \cap C) = \frac{1}{36}$; $P(B \cap C) = \frac{1}{12}$; $P(A \cap B \cap C) = \frac{1}{36}$; the events are neither pairwise nor mutually independent.
 :::
 
 ## Need more review on this?
