@@ -454,6 +454,17 @@ d.  Find the conditional density of $X$ given $Y=y$.
 e.  Use this to compute $P(X>1/2\,|\,Y=1/3)$.
 f.  What is $E(X\,|\,Y=y$?
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  [sketch];
+b.  $f_{Y}(y) = \frac{12}{7}(2 - y)(1 - y)^{2}, \; 0 < y < 1$;
+c.  $f_{X}(x) = \frac{12}{7}\left(-x^{3} - 2x^{2} + 3x\right), \; 0 < x < 1$.
+d.  $f_{X \mid Y = y}(x \mid y) = \frac{2x}{(1 - y)^{2}}, \; 0 < x < 1 - y$;
+e.  $P(X > 1/2 \mid Y = 1/3) = \frac{7}{16}$;
+f.  $E(X \mid Y = y) = \frac{2}{3}(1 - y)$.
+:::
+
 ## Problem 18
 
 Consider the joint distribution of random variables $X$ and $Y$, written in hierarchical form:
