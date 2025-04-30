@@ -304,6 +304,13 @@ $$
 Y=\frac{\pi}{2}-\frac{X}{3}.
 $$
 
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  $E(X) = 5$; $\text{var}(X) = 9$;
+b.  $M_{Y}(t) = \frac{e^{\left(\frac{\pi}{2} - \frac{2}{3}\right)t}}{1 + t}$.
+:::
+
 ## Problem 13
 
 The **binomial theorem** says that
@@ -332,6 +339,15 @@ a.  What is $(1-p)^{-r}$?
 b.  What is the mgf of $X$?
 c.  Use the mgf to compute the mean of $X$.
 d.  Let $X_1$, $X_2$, ..., $X_n$ be independent random variables each with distribution $\text{NB}(r_i,\,p)$. What is the distribution of $S_n=\sum_{i=1}^nX_i$?
+
+::: {.callout-tip collapse="true"}
+## Answers
+
+a.  $(1 - p)^{-r} = \sum_{k = 0}^{\infty}{\binom{k + r - 1}{k}p^{k}}$;
+b.  $M_{X}(t) = \left(\frac{p}{1 - (1 - p)e^{t}}\right)^{r}, \; t < -\ln(1 - p)$;
+c.  $E(X) = \frac{r(1 - p)}{p}$;
+d.  $S_{n} \sim \text{NB}\left(\sum_{i = 1}^{n}{r_{i}}, p\right)$.
+:::
 
 ## Need more review on this?
 
