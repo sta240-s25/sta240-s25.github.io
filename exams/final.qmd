@@ -87,7 +87,7 @@ c.  Your other friend has some more...particular preferences -- they have an aff
 
 a.  $10^{3} \times 5 = 5,000$ PINs;
 b.  $9 \times 10^{2} \times 2 = 1,800$ PINs;
-c.  $10^{2} + 2 \times 9 \times 10 = 280$ PINs.
+c.  $10^{2} + 2 \times 9 \times 10 - 1 = 279$ PINs.
 :::
 
 ## Need more review on this?
