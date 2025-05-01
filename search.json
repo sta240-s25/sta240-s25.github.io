@@ -169,7 +169,7 @@
     "href": "exams/final.html#problem-10",
     "title": "Final Exam Study Guide",
     "section": "Problem 10",
-    "text": "Problem 10\nConsider this function:\n\\[\nF(x) = \\begin{cases}\n1 - e^{-g(x)} & x\\geq 0\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nAssume \\(g(x)\\) is continuous. What properties must \\(g(x)\\) satisfy in order for \\(F(x)\\) to be a valid cumulative distribution function (CDF)? Give three examples of functions \\(g(x)\\) that satisfy these properties.\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\\(g\\) must satisfy…\n\nnondecreasing\nnonnegative\n\\(g(0)=0\\)\n\\(g(x)\\to\\infty\\) as \\(x\\to\\infty\\).\n\nExamples are \\(x^a\\), \\(e^x-1\\), \\(\\ln(x + 1)\\).",
+    "text": "Problem 10\nConsider this function:\n\\[\nF(x) = \\begin{cases}\n1 - e^{-g(x)} & x\\geq 0\\\\\n0 & \\text{else}.\n\\end{cases}\n\\]\nAssume \\(g(x)\\) is continuous. What properties must \\(g(x)\\) satisfy in order for \\(F(x)\\) to be a valid cumulative distribution function (CDF) for a continuous random variable? Give three examples of functions \\(g(x)\\) that satisfy these properties.\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\\(g\\) must satisfy…\n\nnondecreasing\nnonnegative\n\\(g(x)\\to\\infty\\) as \\(x\\to\\infty\\)\n\\(g(0)=0\\)\n\nExamples are \\(x^a\\), \\(e^x-1\\), \\(\\ln(x + 1)\\).",
     "crumbs": [
       "Exam review",
       "Final exam"
