@@ -245,7 +245,7 @@ F(x) = \begin{cases}
 \end{cases}
 $$
 
-Assume $g(x)$ is continuous. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF)? Give three examples of functions $g(x)$ that satisfy these properties.
+Assume $g(x)$ is continuous. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF) for a *continuous* random variable? Give three examples of functions $g(x)$ that satisfy these properties.
 
 ::: {.callout-tip collapse="true"}
 ## Answer
@@ -253,8 +253,8 @@ $g$ must satisfy...
 
 - nondecreasing
 - nonnegative
+- $g(x)\to\infty$ as $x\to\infty$
 - $g(0)=0$
-- $g(x)\to\infty$ as $x\to\infty$.
 
 Examples are $x^a$, $e^x-1$, $\ln(x + 1)$.
 :::
