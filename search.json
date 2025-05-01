@@ -345,7 +345,7 @@
     "href": "exams/final.html#problem-21",
     "title": "Final Exam Study Guide",
     "section": "Problem 21",
-    "text": "Problem 21\nConsider the following Bayesian model:\n\\[\n\\begin{aligned}\np&\\sim\\text{Beta}(a_0,\\,b_0)&& \\text{(prior)}\\\\\nX_1,\\,X_2,\\,...,\\,X_n\\,|\\,p&\\overset{\\text{iid}}{\\sim}\\text{Geometric}(p).&& \\text{(likelihood)}\n\\end{aligned}\n\\]\n\nWhat is the posterior distribution?\nCompute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.\nState an 82% credible interval for \\(p\\).\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\\[\n\\begin{aligned}\np\\,|\\,x_{1:n}&\\sim\\text{Beta}(a_n,\\,b_n)\\\\\na_n&=a_0+n\\\\\nb_n&=b_0+\\sum_{i=1}^nx_i\n\\end{aligned}\n\\]",
+    "text": "Problem 21\nConsider the following Bayesian model:\n\\[\n\\begin{aligned}\np&\\sim\\text{Beta}(a_0,\\,b_0)&& \\text{(prior)}\\\\\nX_1,\\,X_2,\\,...,\\,X_n\\,|\\,p&\\overset{\\text{iid}}{\\sim}\\text{Geometric}(p).&& \\text{(likelihood)}\n\\end{aligned}\n\\]\n\nWhat is the posterior distribution?\nCompute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.\nState an 82% credible interval for \\(p\\).\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\n\\[\n\\begin{aligned}\np\\,|\\,x_{1:n}&\\sim\\text{Beta}(a_n,\\,b_n)\\\\\na_n&=a_0+n\\\\\nb_n&=b_0-n+\\sum_{i=1}^nx_i\n\\end{aligned}\n\\]",
     "crumbs": [
       "Exam review",
       "Final exam"
