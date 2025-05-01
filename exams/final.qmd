@@ -602,7 +602,7 @@ $$
 \begin{aligned}
 p\,|\,x_{1:n}&\sim\text{Beta}(a_n,\,b_n)\\
 a_n&=a_0+n\\
-b_n&=b_0+\sum_{i=1}^nx_i
+b_n&=b_0-n+\sum_{i=1}^nx_i
 \end{aligned}
 $$
 :::
