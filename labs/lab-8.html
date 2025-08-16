@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.42">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>STA 240 Spring 2025 - Lab 8</title>
+
+
+<title>Lab 8 – STA 240 Spring 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -53,6 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,10 +70,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fa1d8026083a9bddc52b4aafc7f818e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-b639af5aeb128e34535eae9cd04c60ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -95,7 +100,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -121,29 +131,41 @@ window.Quarto = {
   typesetMath
 };
 </script>
-<meta property="og:title" content="STA 240 Spring 2025 - Lab 8">
+
+<meta property="og:title" content="Lab 8 – STA 240 Spring 2025">
 <meta property="og:description" content="Due Thursday April 10 at 11:59 PM">
+<meta property="og:image" content="https://sta240-s25.github.io/labs/do_re_mi.png">
 <meta property="og:site_name" content="STA 240 Spring 2025">
+<meta property="og:image:height" content="56">
+<meta property="og:image:width" content="161">
 </head>
+
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-8.html">Lab 8</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -152,16 +174,16 @@ window.Quarto = {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Syllabus</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -204,17 +226,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Problem Sets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 0</span></a>
@@ -257,17 +279,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../labs/lab-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
@@ -322,17 +344,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Exam review</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exams/midterm-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Midterm 1</span></a>
@@ -351,28 +373,32 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#part-0---tuning-up" id="toc-part-0---tuning-up" class="nav-link active" data-scroll-target="#part-0---tuning-up">Part 0 - tuning up</a></li>
-  <li>
-<a href="#part-1---eating-spinach" id="toc-part-1---eating-spinach" class="nav-link" data-scroll-target="#part-1---eating-spinach">Part 1 - eating spinach</a>
+  <li><a href="#part-0---tuning-up" id="toc-part-0---tuning-up" class="nav-link active" data-scroll-target="#part-0---tuning-up">Part 0 - tuning up</a></li>
+  <li><a href="#part-1---eating-spinach" id="toc-part-1---eating-spinach" class="nav-link" data-scroll-target="#part-1---eating-spinach">Part 1 - eating spinach</a>
   <ul class="collapse">
-<li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
+  <li><a href="#task-1" id="toc-task-1" class="nav-link" data-scroll-target="#task-1">Task 1</a></li>
   <li><a href="#task-2" id="toc-task-2" class="nav-link" data-scroll-target="#task-2">Task 2</a></li>
   <li><a href="#task-3" id="toc-task-3" class="nav-link" data-scroll-target="#task-3">Task 3</a></li>
+  </ul></li>
   </ul>
-</li>
-  </ul></nav>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-8.html">Lab 8</a></li></ol></nav><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-8.html">Lab 8</a></li></ol></nav>
+<div class="quarto-title">
 <h1 class="title">Lab 8</h1>
 <p class="subtitle lead">Due Thursday April 10 at 11:59 PM</p>
 </div>
@@ -388,32 +414,34 @@ window.Quarto = {
   
 
 
-</header><section id="part-0---tuning-up" class="level1"><h1>Part 0 - tuning up</h1>
+</header>
+
+
+<section id="part-0---tuning-up" class="level1">
+<h1>Part 0 - tuning up</h1>
 <p>Thursday April 17 is our last lab, and to celebrate, we will do something fun and silly. In order for this to go smoothly, please download the following programs onto your personal computer if you have not already done do:</p>
 <ul>
 <li><p>R: <a href="https://cran.rstudio.com/" class="uri">https://cran.rstudio.com/</a></p></li>
 <li><p>RStudio: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p></li>
-<li>
-<p>MuseScore Studio: <a href="https://musescore.org/en" class="uri">https://musescore.org/en</a></p>
+<li><p>MuseScore Studio: <a href="https://musescore.org/en" class="uri">https://musescore.org/en</a></p>
 <ul>
 <li>select <strong>Download MuseScore Studio without MuseHub</strong>.</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 <p>Once you have downloaded these things, open RStudio, and install the <a href="https://cran.r-project.org/web/packages/gm/index.html"><code>gm</code></a> package:</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"gm"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"gm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Once you have done all of those things, copy this code into the console and try to run it:</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/flujoo/gm">gm</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">music</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="fu"><a href="https://flujoo.github.io/gm/reference/Music.html">Music</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://flujoo.github.io/gm/reference/Meter.html">Meter</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">4</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://flujoo.github.io/gm/reference/Line.html">Line</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"C5"</span>, <span class="st">"D5"</span>, <span class="st">"E5"</span>, <span class="st">"F5"</span><span class="op">)</span><span class="op">)</span></span>
-<span>  </span>
-<span><span class="fu"><a href="https://flujoo.github.io/gm/reference/show.Music.html">show</a></span><span class="op">(</span><span class="va">music</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gm)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>music <span class="ot">&lt;-</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Music</span>() <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Meter</span>(<span class="dv">4</span>, <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Line</span>(<span class="fu">c</span>(<span class="st">"C5"</span>, <span class="st">"D5"</span>, <span class="st">"E5"</span>, <span class="st">"F5"</span>))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">show</span>(music)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>If everything went according to plan, the <strong>Viewer</strong> pane in the lower right will be launched, and inside you’ll see the following:</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -429,13 +457,17 @@ Desired output
 <p><img src="do_re_mi.png" class="img-fluid"></p>
 <div class="cell">
 <div class="cell-output-display">
-<audio controls=""><source src="do_re_mi.mp3" type="audio/wav"></audio>
+<audio controls="">
+<source src="do_re_mi.mp3" type="audio/wav">
+</audio>
 </div>
 </div>
 </div>
 </div>
 <p>If that worked, you’re all set! Sit tight until next week.</p>
-</section><section id="part-1---eating-spinach" class="level1"><h1>Part 1 - eating spinach</h1>
+</section>
+<section id="part-1---eating-spinach" class="level1">
+<h1>Part 1 - eating spinach</h1>
 <p>There is nothing fun or glamorous about today’s lab. All we’re trying to do is use computer simulation to drill down on the interpretation of a classical confidence interval, which is a fundamental concept in statistics, and one that both students and “experts” alike are prone to bungle.</p>
 <p>Imagine we have a sample of iid binary data from a Bernoulli distribution with some unknown probability of success <span class="math inline">\(p_0\in[0,\,1]\)</span>:</p>
 <p><span class="math display">\[
@@ -519,7 +551,8 @@ P\left(L_n&lt;p_0&lt;U_n\right)\approx 1-\alpha
 </div>
 </div>
 <p>We see that the bounds of our interval depend on <span class="math inline">\(\hat{p}_n\)</span>, which is random. Different random samples of data will give us different point estimates and confidence intervals. So the coverage statement <span class="math inline">\(P\left(L_n&lt;p_0&lt;U_n\right)\approx 1-\alpha\)</span> refers to the behavior of the random interval bounds across repeated sampling.</p>
-<section id="task-1" class="level2"><h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
+<section id="task-1" class="level2">
+<h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
 <p>Pretend that we know for a fact that <span class="math inline">\(p_0 = 0.4\)</span>.</p>
 <ol type="a">
 <li>Use <code>rbinom</code> to simulate <span class="math inline">\(n=10\)</span> realizations from Bern(0.4) and store them in a vector.</li>
@@ -544,41 +577,44 @@ What are we driving at?
 </div>
 </div>
 </div>
-</section><section id="task-2" class="level2"><h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
+</section>
+<section id="task-2" class="level2">
+<h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
 <p>One of the main ideas in classical statistics is sampling variability. We model data as a random sample from an unknown distribution. Different random samples will give different point and interval estimates. So the point and interval estimates are themselves random quantities, and we can itemize their performance and reliability by studying their sampling distribution and seeing how the estimates vary across datasets. If they vary a little, we are comforted. If they vary a lot, we are troubled.</p>
 <ol type="a">
 <li>Fill in this function:</li>
 </ol>
 <div class="cell">
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sampling_distribution</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">p0</span>, <span class="va">n</span>, <span class="va">M</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="co"># p0: the true probability of success</span></span>
-<span>  <span class="co"># n: the sample size of each iid dataset from Bern(p0)</span></span>
-<span>  <span class="co"># M: the number of alternative datasets to generate</span></span>
-<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sampling_distribution <span class="ot">&lt;-</span> <span class="cf">function</span>(p0, n, M){</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># p0: the true probability of success</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># n: the sample size of each iid dataset from Bern(p0)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># M: the number of alternative datasets to generate</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Inside, you should have a for loop. The loop cycles through <span class="math inline">\(M\)</span> iterations, each time simulating a data set of size <span class="math inline">\(n\)</span> from <code>Bern(p0)</code>. For each of those datasets, compute the sample proportion of ones (“successes”) in that dataset. At the end, you will have a collection of <span class="math inline">\(M\)</span> estimates. So, <span class="math inline">\(M\)</span> realizations of <span class="math inline">\(\hat{p}_n\)</span>. Plot a histogram of them: I like <a href="https://profiles.rice.edu/faculty/david-scott"><code>breaks = "Scott"</code></a> as you know, make sure it’s a density histogram, and fix the range of the horizontal axis to <code>xlim = c(0, 1)</code>.</p>
 <ol start="2" type="a">
-<li>
-<p>Play around with your function. Adjust <code>p0</code> and <code>n</code> and see what happens to the picture. In particular, convince yourself of these facts we have proven:</p>
+<li><p>Play around with your function. Adjust <code>p0</code> and <code>n</code> and see what happens to the picture. In particular, convince yourself of these facts we have proven:</p>
 <ul>
 <li>the sampling distribution is centered on the true value;</li>
 <li>the sampling distribution’s spread (variance) shrinks as the sample size grows;</li>
 <li>the shape of the sampling distribution resembles a bell curve for large <span class="math inline">\(n\)</span>;</li>
-</ul>
-</li>
+</ul></li>
 <li><p>Here’s something true that we haven’t proven. The convergence of the sampling distribution to the normal is faster when the underlying distribution of the data is symmetric, and slower when the underlying distribution is highly skewed (this is a consequence of the Berry-Esseen theorem). What does that mean in this case? Can you use your function to illustrate that?</p></li>
-</ol></section><section id="task-3" class="level2"><h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+</ol>
+</section>
+<section id="task-3" class="level2">
+<h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
 <p>You just simulated the sampling distribution of the sample proportion. Now let’s think about the sampling distribution of the confidence interval. When you repeatedly sample new datasets and compute a new confidence interval for each one, what fraction of those intervals contain the true value?</p>
 <ol type="a">
 <li>Fill in this function. It will be similar to your function in the previous task, but in each iteration of the loop, compute a confidence interval for that dataset, and check if the true value (whatever you chose for <code>p0</code>) is included in the interval. After the loop is done, tally up the fraction of your <span class="math inline">\(M\)</span> intervals that contained the true value.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">interval_coverage</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">p0</span>, <span class="va">n</span>, <span class="va">M</span>, <span class="va">alpha</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="co"># p0: the true probability of success</span></span>
-<span>  <span class="co"># n: the sample size of each iid dataset from Bern(p0)</span></span>
-<span>  <span class="co"># M: the number of alternative datasets to generate</span></span>
-<span>  <span class="co"># alpha: confidence level of the interval</span></span>
-<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>interval_coverage <span class="ot">&lt;-</span> <span class="cf">function</span>(p0, n, M, alpha){</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># p0: the true probability of success</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># n: the sample size of each iid dataset from Bern(p0)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># M: the number of alternative datasets to generate</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># alpha: confidence level of the interval</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here is a schematic of what you’re implementing: <span class="math display">\[
 \underbrace{
@@ -619,7 +655,11 @@ What are we driving at?
 </div>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -654,18 +694,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -697,7 +726,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/sta240-s25\.github\.io\/");
@@ -705,7 +754,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -802,7 +851,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1027,7 +1075,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
       <a href="../labs/lab-7.html" class="pagination-link" aria-label="Lab 7">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 7</span>
       </a>          
@@ -1039,7 +1089,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2025 John Zito</p>
 </div>   
@@ -1051,6 +1102,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+
+
 
 
 </body></html>

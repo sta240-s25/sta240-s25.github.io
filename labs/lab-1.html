@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.42">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>STA 240 Spring 2025 - Lab 1</title>
+
+
+<title>Lab 1 – STA 240 Spring 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -53,6 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,10 +70,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fa1d8026083a9bddc52b4aafc7f818e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-b639af5aeb128e34535eae9cd04c60ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -95,7 +100,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -121,29 +131,38 @@ window.Quarto = {
   typesetMath
 };
 </script>
-<meta property="og:title" content="STA 240 Spring 2025 - Lab 1">
+
+<meta property="og:title" content="Lab 1 – STA 240 Spring 2025">
 <meta property="og:description" content="Due Friday January 17 at 5:00 PM">
 <meta property="og:site_name" content="STA 240 Spring 2025">
 </head>
+
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-1.html">Lab 1</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -152,16 +171,16 @@ window.Quarto = {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Syllabus</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../syllabus/syllabus_overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
@@ -204,17 +223,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Problem Sets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../psets/pset_0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Problem Set 0</span></a>
@@ -257,17 +276,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../labs/lab-1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 1</span></a>
@@ -322,17 +341,17 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Exam review</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exams/midterm-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Midterm 1</span></a>
@@ -351,35 +370,37 @@ window.Quarto = {
   </div>
 </li>
       </ul>
-</li>
+  </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#important-techno-babble" id="toc-important-techno-babble" class="nav-link active" data-scroll-target="#important-techno-babble">Important techno-babble</a></li>
+  <li><a href="#important-techno-babble" id="toc-important-techno-babble" class="nav-link active" data-scroll-target="#important-techno-babble">Important techno-babble</a></li>
   <li><a href="#skillz" id="toc-skillz" class="nav-link" data-scroll-target="#skillz">Skillz</a></li>
-  <li>
-<a href="#how-does-one-count-i-do-it." id="toc-how-does-one-count-i-do-it." class="nav-link" data-scroll-target="#how-does-one-count-i-do-it.">How does one count? (I do it.)</a>
+  <li><a href="#how-does-one-count-i-do-it." id="toc-how-does-one-count-i-do-it." class="nav-link" data-scroll-target="#how-does-one-count-i-do-it.">How does one count? (I do it.)</a>
   <ul class="collapse">
-<li><a href="#coin-toss" id="toc-coin-toss" class="nav-link" data-scroll-target="#coin-toss">Coin Toss</a></li>
+  <li><a href="#coin-toss" id="toc-coin-toss" class="nav-link" data-scroll-target="#coin-toss">Coin Toss</a></li>
   <li><a href="#five-card-poker-hand" id="toc-five-card-poker-hand" class="nav-link" data-scroll-target="#five-card-poker-hand">Five-Card Poker Hand</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#we-can-count-on-you-you-do-it." id="toc-we-can-count-on-you-you-do-it." class="nav-link" data-scroll-target="#we-can-count-on-you-you-do-it.">We can count on you! (You do it.)</a>
+  </ul></li>
+  <li><a href="#we-can-count-on-you-you-do-it." id="toc-we-can-count-on-you-you-do-it." class="nav-link" data-scroll-target="#we-can-count-on-you-you-do-it.">We can count on you! (You do it.)</a>
   <ul class="collapse">
-<li><a href="#the-birthday-problem" id="toc-the-birthday-problem" class="nav-link" data-scroll-target="#the-birthday-problem">The Birthday Problem</a></li>
+  <li><a href="#the-birthday-problem" id="toc-the-birthday-problem" class="nav-link" data-scroll-target="#the-birthday-problem">The Birthday Problem</a></li>
   <li><a href="#two-card-poker-hand" id="toc-two-card-poker-hand" class="nav-link" data-scroll-target="#two-card-poker-hand">Two-Card Poker Hand</a></li>
+  </ul></li>
   </ul>
-</li>
-  </ul></nav>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-1.html">Lab 1</a></li></ol></nav><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab-1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab-1.html">Lab 1</a></li></ol></nav>
+<div class="quarto-title">
 <h1 class="title">Lab 1</h1>
 <p class="subtitle lead">Due Friday January 17 at 5:00 PM</p>
 </div>
@@ -395,166 +416,195 @@ window.Quarto = {
   
 
 
-</header><section id="important-techno-babble" class="level2"><h2 class="anchored" data-anchor-id="important-techno-babble">Important techno-babble</h2>
+</header>
+
+
+<section id="important-techno-babble" class="level2">
+<h2 class="anchored" data-anchor-id="important-techno-babble">Important techno-babble</h2>
 <p>Throughout this course, it may serve you well to familiarize yourself with the following:</p>
 <ul>
-<li>
-<strong>R/RStudio</strong> for coding;</li>
-<li>
-<strong>LaTeX</strong> (or <span class="math inline">\(\LaTeX\)</span>, if you’re cool) for typesetting math;</li>
-<li>
-<strong>Quarto</strong> for synthesizing your expertly written code and your beautifully typeset math in a wonderfully legible PDF format!</li>
+<li><strong>R/RStudio</strong> for coding;</li>
+<li><strong>LaTeX</strong> (or <span class="math inline">\(\LaTeX\)</span>, if you’re cool) for typesetting math;</li>
+<li><strong>Quarto</strong> for synthesizing your expertly written code and your beautifully typeset math in a wonderfully legible PDF format!</li>
 </ul>
 <p>Of these three tools, we will focus the most on R/RStudio during lab time, though LaTeX and Quarto will certainly make incidental appearances.</p>
 <p>To use R/RStudio, you can either use the <a href="https://cmgr.oit.duke.edu/containers">Duke Container Manager</a> or download the necessary applications <a href="https://posit.co/downloads/">here</a>. Note: The R/RStudio in the containers comes with <code>TinyTeX</code> already downloaded. So, if you download the application and want to use LaTeX in your files, run the following command (and whatever subsequent commands you are prompted to run):</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tinytex</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/install_tinytex.html">install_tinytex</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>For a quick guide to useful LaTeX symbols, check out <a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">this OEIS wiki</a> or <a href="https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf">this Rice page</a>.</p>
 <p>To learn more about Quarto, visit <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-</section><section id="skillz" class="level2"><h2 class="anchored" data-anchor-id="skillz">Skillz</h2>
+</section>
+<section id="skillz" class="level2">
+<h2 class="anchored" data-anchor-id="skillz">Skillz</h2>
 <p>Besides helping you exercise your probability and statistics muscles, each lab will help you develop your understanding of and comfort with various coding concepts and skills. Although the implementation will vary from language to language, the underlying structure will remain the same!</p>
 <p>This lab exercises the following coding concepts:</p>
 <ul>
 <li>Vectors/Arrays of numbers and strings;</li>
-<li>
-<code>for</code>-loops;</li>
+<li><code>for</code>-loops;</li>
 <li>Boolean logic and operations;</li>
-<li>Base <code>R</code> functions like <code><a href="https://rdrr.io/r/base/mean.html">mean()</a></code> and <code><a href="https://rdrr.io/r/base/sample.html">sample()</a></code>.</li>
-</ul></section><section id="how-does-one-count-i-do-it." class="level2"><h2 class="anchored" data-anchor-id="how-does-one-count-i-do-it.">How does one count? (I do it.)</h2>
-<section id="coin-toss" class="level3"><h3 class="anchored" data-anchor-id="coin-toss">Coin Toss</h3>
+<li>Base <code>R</code> functions like <code>mean()</code> and <code>sample()</code>.</li>
+</ul>
+</section>
+<section id="how-does-one-count-i-do-it." class="level2">
+<h2 class="anchored" data-anchor-id="how-does-one-count-i-do-it.">How does one count? (I do it.)</h2>
+<section id="coin-toss" class="level3">
+<h3 class="anchored" data-anchor-id="coin-toss">Coin Toss</h3>
 <p>We first consider the flip of a fair coin. That is, when flipped, the coin will equiprobably come up heads or tails. Suppose we try to illustrate the fairness of a coin by physically flipping it a bunch of times. Very quickly, this becomes tedious and labor-intensive; surely, no reasonable/sane person would want to do this by hand…</p>
 <p>(Though, on the off chance that <a href="https://arxiv.org/pdf/2310.04153">somebody actually did this</a>, at least you might get co-authorship and recognition from <a href="https://www.scientificamerican.com/article/scientists-destroy-illusion-that-coin-toss-flips-are-50-50/">various</a> sectors of <a href="https://youtu.be/54pmrsCGt4o?t=239">media</a>.)</p>
 <p>At any rate, R provides a much more enticing, efficient alternative to being one of about <span class="math inline">\(50\)</span> people flipping coins thousands of times.</p>
 <p>First, let’s define a vector with the sample space – all possible outcomes – of a single coin flip. We notate heads as <code>H</code> and tails as <code>T</code>, and we call the vector <code>sides_of_coin</code>.</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sides_of_coin</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"H"</span>, <span class="st">"T"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sides_of_coin <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"H"</span>, <span class="st">"T"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>To simulate an actual coin flip, R has this nifty built-in function called <code><a href="https://rdrr.io/r/base/sample.html">sample()</a></code>.</p>
-<section id="the-sample-function" class="level4"><h4 class="anchored" data-anchor-id="the-sample-function">The <code>sample()</code> function</h4>
-<p>The <code><a href="https://rdrr.io/r/base/sample.html">sample()</a></code> function can take many arguments: a vector of elements (the sample space), a positive integer (the size), a Boolean (with or without replacement), and a vector of probabilities. So, a call to <code><a href="https://rdrr.io/r/base/sample.html">sample()</a></code> will return a random sample of the specified size from the sample space, either with or without replacement, according to the vector of probabilities.</p>
+<p>To simulate an actual coin flip, R has this nifty built-in function called <code>sample()</code>.</p>
+<section id="the-sample-function" class="level4">
+<h4 class="anchored" data-anchor-id="the-sample-function">The <code>sample()</code> function</h4>
+<p>The <code>sample()</code> function can take many arguments: a vector of elements (the sample space), a positive integer (the size), a Boolean (with or without replacement), and a vector of probabilities. So, a call to <code>sample()</code> will return a random sample of the specified size from the sample space, either with or without replacement, according to the vector of probabilities.</p>
 <p>NOTE: The <code>replace</code> Boolean defaults to <code>FALSE</code> (without replacement), and the <code>prob</code> vector defaults to equal weighting among the elements in the sample space.</p>
-</section><section id="sample-flips" class="level4"><h4 class="anchored" data-anchor-id="sample-flips">Sample flips</h4>
+</section>
+<section id="sample-flips" class="level4">
+<h4 class="anchored" data-anchor-id="sample-flips">Sample flips</h4>
 <p>We can perform a single coin flip with the following function call.</p>
 <div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">sides_of_coin</span>, <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(sides_of_coin, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "T"</code></pre>
+<pre><code>[1] "H"</code></pre>
 </div>
 </div>
-<p>If we wanted to simulate multiple coin flips in the same vector, <code><a href="https://rdrr.io/r/base/sample.html">sample()</a></code> lets us do that as well! Below is an example of a simulation of <span class="math inline">\(10\)</span> coin flips.</p>
+<p>If we wanted to simulate multiple coin flips in the same vector, <code>sample()</code> lets us do that as well! Below is an example of a simulation of <span class="math inline">\(10\)</span> coin flips.</p>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">sides_of_coin</span>, <span class="fl">10</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(sides_of_coin, <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "T" "T" "H" "H" "T" "T" "H" "T" "H" "H"</code></pre>
+<pre><code> [1] "H" "T" "T" "T" "T" "T" "T" "T" "T" "T"</code></pre>
 </div>
 </div>
 <p>We can also use a different tool to simulate multiple fair coin flips: a <code>for</code>-loop.</p>
-</section><section id="for-loops" class="level4"><h4 class="anchored" data-anchor-id="for-loops">
-<code>for</code>-loops</h4>
+</section>
+<section id="for-loops" class="level4">
+<h4 class="anchored" data-anchor-id="for-loops"><code>for</code>-loops</h4>
 <p>A <code>for</code>-loop is a great way to perform the same set of commands a fixed, known number of times or to perform the same set of commands on the different elements in a vector. The bare bones of the <code>for</code>-loop are given below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(){</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>In the parentheses <code>()</code>, you define the variable and values of iteration; in the brackets <code><a href="https://rdrr.io/r/base/Paren.html">{}</a></code>, you list the commands to be performed in each iteration.</p>
-</section><section id="simulating-the-flips" class="level4"><h4 class="anchored" data-anchor-id="simulating-the-flips">Simulating the flips</h4>
+<p>In the parentheses <code>()</code>, you define the variable and values of iteration; in the brackets <code>{}</code>, you list the commands to be performed in each iteration.</p>
+</section>
+<section id="simulating-the-flips" class="level4">
+<h4 class="anchored" data-anchor-id="simulating-the-flips">Simulating the flips</h4>
 <p>We will simulation <span class="math inline">\(5,000\)</span> independent flips of a fair coin and track whether each flip came up heads. We do this by initializing a <span class="math inline">\(5,000\)</span>-element vector of zeroes and replacing each zero with a <code>TRUE</code> or <code>FALSE</code> according to the result of the current coin flip. You may find the corresponding code below.</p>
 <div class="cell">
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">n_reps</span> <span class="op">&lt;-</span> <span class="fl">5000</span></span>
-<span><span class="va">was_it_heads</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">numeric</a></span><span class="op">(</span><span class="va">n_reps</span><span class="op">)</span></span>
-<span><span class="kw">for</span><span class="op">(</span><span class="va">m</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="va">n_reps</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="va">new_flip</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">sides_of_coin</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span>  <span class="va">was_it_heads</span><span class="op">[</span><span class="va">m</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">new_flip</span> <span class="op">==</span> <span class="st">"H"</span></span>
-<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>n_reps <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>was_it_heads <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n_reps)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(m <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_reps){</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  new_flip <span class="ot">&lt;-</span> <span class="fu">sample</span>(sides_of_coin, <span class="dv">1</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  was_it_heads[m] <span class="ot">&lt;-</span> new_flip <span class="sc">==</span> <span class="st">"H"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>To calculate the empirical probability of the coin coming up heads, we will calculate the proportion of flips in our simulation that came up heads. To do this, we can use either the <code><a href="https://rdrr.io/r/base/mean.html">mean()</a></code> or <code><a href="https://rdrr.io/r/base/sum.html">sum()</a></code> function; while those functions are typically used to average or sum vectors of numbers, they can also be used on Boolean vectors like <code>was_it_heads</code>. It will treat each <code>TRUE</code> as a one and each <code>FALSE</code> as a zero in the calculation.</p>
-<p>We use each function in the code chunk below, remembering to divide the <code><a href="https://rdrr.io/r/base/sum.html">sum()</a></code> call by the number of flips <code>n_rep</code>.</p>
+<p>To calculate the empirical probability of the coin coming up heads, we will calculate the proportion of flips in our simulation that came up heads. To do this, we can use either the <code>mean()</code> or <code>sum()</code> function; while those functions are typically used to average or sum vectors of numbers, they can also be used on Boolean vectors like <code>was_it_heads</code>. It will treat each <code>TRUE</code> as a one and each <code>FALSE</code> as a zero in the calculation.</p>
+<p>We use each function in the code chunk below, remembering to divide the <code>sum()</code> call by the number of flips <code>n_rep</code>.</p>
 <div class="cell">
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">coin_prob</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">was_it_heads</span><span class="op">)</span></span>
-<span><span class="va">coin_prob</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>coin_prob <span class="ot">&lt;-</span> <span class="fu">mean</span>(was_it_heads)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>coin_prob</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.4866</code></pre>
+<pre><code>[1] 0.4974</code></pre>
 </div>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">was_it_heads</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_reps</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(was_it_heads) <span class="sc">/</span> n_reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.4866</code></pre>
+<pre><code>[1] 0.4974</code></pre>
 </div>
 </div>
 <p>As expected, we see a proportion rather close to <span class="math inline">\(0.5\)</span>! Due to the randomness of the individual flips and the finite number of flips, you likely won’t observe a proportion exactly equal to <span class="math inline">\(0.5\)</span>. However, the closeness of the proportion to the true probability is an illustration of the frequentist phenomenon of the long-run average. If you play around with the number of flips, you’ll tend to see that the longer the run, the closer the proportion to the true probability.</p>
-</section></section><section id="five-card-poker-hand" class="level3"><h3 class="anchored" data-anchor-id="five-card-poker-hand">Five-Card Poker Hand</h3>
+</section>
+</section>
+<section id="five-card-poker-hand" class="level3">
+<h3 class="anchored" data-anchor-id="five-card-poker-hand">Five-Card Poker Hand</h3>
 <p>Suppose you are playing some sort of card game with a standard <span class="math inline">\(52\)</span>-card deck. As part of this game, you are dealt a hand of five cards, the composition of which has some bearing on your success in the game.</p>
 <p>Provided is a vector representing the deck of cards, aptly (in my humble opinion) called <code>deck_of_cards</code>.</p>
 <div class="cell">
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">deck_of_cards</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"AH"</span>, <span class="st">"2H"</span>, <span class="st">"3H"</span>, <span class="st">"4H"</span>, <span class="st">"5H"</span>, <span class="st">"6H"</span>, <span class="st">"7H"</span>, <span class="st">"8H"</span>, <span class="st">"9H"</span>, <span class="st">"10H"</span>, <span class="st">"JH"</span>, <span class="st">"QH"</span>, <span class="st">"KH"</span>, <span class="st">"AD"</span>, <span class="st">"2D"</span>, <span class="st">"3D"</span>, <span class="st">"4D"</span>, <span class="st">"5D"</span>, <span class="st">"6D"</span>, <span class="st">"7D"</span>, <span class="st">"8D"</span>, <span class="st">"9D"</span>, <span class="st">"10D"</span>, <span class="st">"JD"</span>, <span class="st">"QD"</span>, <span class="st">"KD"</span>, <span class="st">"AC"</span>, <span class="st">"2C"</span>, <span class="st">"3C"</span>, <span class="st">"4C"</span>, <span class="st">"5C"</span>, <span class="st">"6C"</span>, <span class="st">"7C"</span>, <span class="st">"8C"</span>, <span class="st">"9C"</span>, <span class="st">"10C"</span>, <span class="st">"JC"</span>, <span class="st">"QC"</span>, <span class="st">"KC"</span>, <span class="st">"AS"</span>, <span class="st">"2S"</span>, <span class="st">"3S"</span>, <span class="st">"4S"</span>, <span class="st">"5S"</span>, <span class="st">"6S"</span>, <span class="st">"7S"</span>, <span class="st">"8S"</span>, <span class="st">"9S"</span>, <span class="st">"10S"</span>, <span class="st">"JS"</span>, <span class="st">"QS"</span>, <span class="st">"KS"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>deck_of_cards <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"AH"</span>, <span class="st">"2H"</span>, <span class="st">"3H"</span>, <span class="st">"4H"</span>, <span class="st">"5H"</span>, <span class="st">"6H"</span>, <span class="st">"7H"</span>, <span class="st">"8H"</span>, <span class="st">"9H"</span>, <span class="st">"10H"</span>, <span class="st">"JH"</span>, <span class="st">"QH"</span>, <span class="st">"KH"</span>, <span class="st">"AD"</span>, <span class="st">"2D"</span>, <span class="st">"3D"</span>, <span class="st">"4D"</span>, <span class="st">"5D"</span>, <span class="st">"6D"</span>, <span class="st">"7D"</span>, <span class="st">"8D"</span>, <span class="st">"9D"</span>, <span class="st">"10D"</span>, <span class="st">"JD"</span>, <span class="st">"QD"</span>, <span class="st">"KD"</span>, <span class="st">"AC"</span>, <span class="st">"2C"</span>, <span class="st">"3C"</span>, <span class="st">"4C"</span>, <span class="st">"5C"</span>, <span class="st">"6C"</span>, <span class="st">"7C"</span>, <span class="st">"8C"</span>, <span class="st">"9C"</span>, <span class="st">"10C"</span>, <span class="st">"JC"</span>, <span class="st">"QC"</span>, <span class="st">"KC"</span>, <span class="st">"AS"</span>, <span class="st">"2S"</span>, <span class="st">"3S"</span>, <span class="st">"4S"</span>, <span class="st">"5S"</span>, <span class="st">"6S"</span>, <span class="st">"7S"</span>, <span class="st">"8S"</span>, <span class="st">"9S"</span>, <span class="st">"10S"</span>, <span class="st">"JS"</span>, <span class="st">"QS"</span>, <span class="st">"KS"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Recall that each card in a deck has one of four “suits” (<code>H</code>earts, <code>D</code>iamonds, <code>C</code>lubs, and <code>Spades</code>) and one of four ranks (<code>A</code>ce, 2-10, <code>J</code>ack, <code>Q</code>ueen, <code>K</code>ing). In the above vector, each card is thus represented as a string (sequences of characters between quotation marks) with the (abbreviated) rank and (abbreviated) suit.</p>
 <p>One hand of interest is called a “full house,” consisting of three cards of one rank and two cards of a different rank. (For example, {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, 3 of Spades} would be a full house, but {4 of Hearts, 3 of Diamonds, 4 of Spades, 4 of Clubs, Queen of Spades} would not be a full house.)</p>
 <p>So, we want to calculate the probability of getting a full house!</p>
-<section id="simulation-and-empirical-calculation" class="level4"><h4 class="anchored" data-anchor-id="simulation-and-empirical-calculation">Simulation and empirical calculation</h4>
+<section id="simulation-and-empirical-calculation" class="level4">
+<h4 class="anchored" data-anchor-id="simulation-and-empirical-calculation">Simulation and empirical calculation</h4>
 <p>Here’s a sample (hehe, see what I did there?) piece of code to simulate the dealing of a single five-card hand.</p>
 <div class="cell">
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">deck_of_cards</span>, <span class="fl">5</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(deck_of_cards, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "9D" "KH" "3C" "KC" "8S"</code></pre>
+<pre><code>[1] "10H" "10D" "6H"  "3C"  "4C" </code></pre>
 </div>
 </div>
 <p>As in the previous coin-flipping example, we will use a <code>for</code>-loop to simulate <span class="math inline">\(5,000\)</span> different five-card hands. (Imagine that, after dealing each hand, we re-incorporate the dealt hand into the deck and shuffle thoroughly before the next hand is dealt.) We keep track of whether each hand was a full house in other <span class="math inline">\(5,000\)</span>-element vector of Booleans; below are helper functions I defined in order to check whether a particular hand was a full house.</p>
 <div class="cell">
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">split_card</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">card</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/substr.html">substr</a></span><span class="op">(</span><span class="va">card</span>, <span class="fl">1</span>, <span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">card</span><span class="op">)</span> <span class="op">-</span> <span class="fl">1</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/substr.html">substr</a></span><span class="op">(</span><span class="va">card</span>, <span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">card</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">card</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="op">}</span></span>
-<span></span>
-<span><span class="va">is_full_house</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">hand</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="va">ranks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">numeric</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span></span>
-<span>  <span class="kw">for</span><span class="op">(</span><span class="va">c</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span><span class="op">{</span></span>
-<span>    <span class="va">ranks</span><span class="op">[</span><span class="va">c</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu">split_card</span><span class="op">(</span><span class="va">hand</span><span class="op">[</span><span class="va">c</span><span class="op">]</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
-<span>  <span class="op">}</span></span>
-<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html">unique</a></span><span class="op">(</span><span class="va">ranks</span><span class="op">)</span><span class="op">)</span> <span class="op">==</span> <span class="fl">2</span><span class="op">)</span></span>
-<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>split_card <span class="ot">&lt;-</span> <span class="cf">function</span>(card){</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">c</span>(<span class="fu">substr</span>(card, <span class="dv">1</span>, <span class="fu">nchar</span>(card) <span class="sc">-</span> <span class="dv">1</span>), <span class="fu">substr</span>(card, <span class="fu">nchar</span>(card), <span class="fu">nchar</span>(card))))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>is_full_house <span class="ot">&lt;-</span> <span class="cf">function</span>(hand){</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  ranks <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">5</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(c <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    ranks[c] <span class="ot">&lt;-</span> <span class="fu">split_card</span>(hand[c])[<span class="dv">1</span>]</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">length</span>(<span class="fu">unique</span>(ranks)) <span class="sc">==</span> <span class="dv">2</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We then have the following code for the simulation.</p>
 <div class="cell">
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">n_reps</span> <span class="op">&lt;-</span> <span class="fl">5000</span></span>
-<span><span class="va">was_house_full</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">numeric</a></span><span class="op">(</span><span class="va">n_reps</span><span class="op">)</span></span>
-<span><span class="kw">for</span><span class="op">(</span><span class="va">m</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="va">n_reps</span><span class="op">)</span><span class="op">{</span></span>
-<span>  <span class="va">new_hand</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">deck_of_cards</span>, <span class="fl">5</span><span class="op">)</span></span>
-<span>  <span class="va">was_house_full</span><span class="op">[</span><span class="va">m</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu">is_full_house</span><span class="op">(</span><span class="va">new_hand</span><span class="op">)</span></span>
-<span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>n_reps <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>was_house_full <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n_reps)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(m <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_reps){</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  new_hand <span class="ot">&lt;-</span> <span class="fu">sample</span>(deck_of_cards, <span class="dv">5</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  was_house_full[m] <span class="ot">&lt;-</span> <span class="fu">is_full_house</span>(new_hand)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>As before, we calculate the empirical probability using both the <code><a href="https://rdrr.io/r/base/mean.html">mean()</a></code> function and the <code><a href="https://rdrr.io/r/base/sum.html">sum()</a></code> function.</p>
+<p>As before, we calculate the empirical probability using both the <code>mean()</code> function and the <code>sum()</code> function.</p>
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fivecard_prob</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">was_house_full</span><span class="op">)</span></span>
-<span><span class="va">fivecard_prob</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>fivecard_prob <span class="ot">&lt;-</span> <span class="fu">mean</span>(was_house_full)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>fivecard_prob</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.0014</code></pre>
+<pre><code>[1] 0.0016</code></pre>
 </div>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">was_house_full</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_reps</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(was_house_full) <span class="sc">/</span> n_reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.0014</code></pre>
+<pre><code>[1] 0.0016</code></pre>
 </div>
 </div>
 <p>The true probability is approximately <span class="math inline">\(0.0014\)</span> – the long-run average simulations strike again!</p>
-</section></section></section><section id="we-can-count-on-you-you-do-it." class="level2"><h2 class="anchored" data-anchor-id="we-can-count-on-you-you-do-it.">We can count on you! (You do it.)</h2>
+</section>
+</section>
+</section>
+<section id="we-can-count-on-you-you-do-it." class="level2">
+<h2 class="anchored" data-anchor-id="we-can-count-on-you-you-do-it.">We can count on you! (You do it.)</h2>
 <p>Well, that was fun! Shame that it’s over…</p>
 <p>Wait a second. <em>gasp</em> We have two more exercises just for you to try – hurray!</p>
 <p><strong>INSTRUCTIONS:</strong> For each of the following two exercises, your mission (should you choose to accept it) is to perform simulations from which you calculate the empirical probabilities of the specified events.</p>
 <p>And no, the order in which you accomplish these tasks does not matter. :) Happy counting!</p>
-<section id="the-birthday-problem" class="level3"><h3 class="anchored" data-anchor-id="the-birthday-problem">The Birthday Problem</h3>
+<section id="the-birthday-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-birthday-problem">The Birthday Problem</h3>
 <p>We have the following vector of strings, formatted MMMDD, wherein each entry is one of <span class="math inline">\(365\)</span> days in a non-leap year.</p>
 <div class="cell">
-<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bdays</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Jan01"</span>, <span class="st">"Jan02"</span>, <span class="st">"Jan03"</span>, <span class="st">"Jan04"</span>, <span class="st">"Jan05"</span>, <span class="st">"Jan06"</span>, <span class="st">"Jan07"</span>, <span class="st">"Jan08"</span>, <span class="st">"Jan09"</span>, <span class="st">"Jan10"</span>, <span class="st">"Jan11"</span>, <span class="st">"Jan12"</span>, <span class="st">"Jan13"</span>, <span class="st">"Jan14"</span>, <span class="st">"Jan15"</span>, <span class="st">"Jan16"</span>, <span class="st">"Jan17"</span>, <span class="st">"Jan18"</span>, <span class="st">"Jan19"</span>, <span class="st">"Jan20"</span>, <span class="st">"Jan21"</span>, <span class="st">"Jan22"</span>, <span class="st">"Jan23"</span>, <span class="st">"Jan24"</span>, <span class="st">"Jan25"</span>, <span class="st">"Jan26"</span>, <span class="st">"Jan27"</span>, <span class="st">"Jan28"</span>, <span class="st">"Jan29"</span>, <span class="st">"Jan30"</span>, <span class="st">"Jan31"</span>, <span class="st">"Feb01"</span>, <span class="st">"Feb02"</span>, <span class="st">"Feb03"</span>, <span class="st">"Feb04"</span>, <span class="st">"Feb05"</span>, <span class="st">"Feb06"</span>, <span class="st">"Feb07"</span>, <span class="st">"Feb08"</span>, <span class="st">"Feb09"</span>, <span class="st">"Feb10"</span>, <span class="st">"Feb11"</span>, <span class="st">"Feb12"</span>, <span class="st">"Feb13"</span>, <span class="st">"Feb14"</span>, <span class="st">"Feb15"</span>, <span class="st">"Feb16"</span>, <span class="st">"Feb17"</span>, <span class="st">"Feb18"</span>, <span class="st">"Feb19"</span>, <span class="st">"Feb20"</span>, <span class="st">"Feb21"</span>, <span class="st">"Feb22"</span>, <span class="st">"Feb23"</span>, <span class="st">"Feb24"</span>, <span class="st">"Feb25"</span>, <span class="st">"Feb26"</span>, <span class="st">"Feb27"</span>, <span class="st">"Feb28"</span>, <span class="st">"Mar01"</span>, <span class="st">"Mar02"</span>, <span class="st">"Mar03"</span>, <span class="st">"Mar04"</span>, <span class="st">"Mar05"</span>, <span class="st">"Mar06"</span>, <span class="st">"Mar07"</span>, <span class="st">"Mar08"</span>, <span class="st">"Mar09"</span>, <span class="st">"Mar10"</span>, <span class="st">"Mar11"</span>, <span class="st">"Mar12"</span>, <span class="st">"Mar13"</span>, <span class="st">"Mar14"</span>, <span class="st">"Mar15"</span>, <span class="st">"Mar16"</span>, <span class="st">"Mar17"</span>, <span class="st">"Mar18"</span>, <span class="st">"Mar19"</span>, <span class="st">"Mar20"</span>, <span class="st">"Mar21"</span>, <span class="st">"Mar22"</span>, <span class="st">"Mar23"</span>, <span class="st">"Mar24"</span>, <span class="st">"Mar25"</span>, <span class="st">"Mar26"</span>, <span class="st">"Mar27"</span>, <span class="st">"Mar28"</span>, <span class="st">"Mar29"</span>, <span class="st">"Mar30"</span>, <span class="st">"Mar31"</span>, <span class="st">"Apr01"</span>, <span class="st">"Apr02"</span>, <span class="st">"Apr03"</span>, <span class="st">"Apr04"</span>, <span class="st">"Apr05"</span>, <span class="st">"Apr06"</span>, <span class="st">"Apr07"</span>, <span class="st">"Apr08"</span>, <span class="st">"Apr09"</span>, <span class="st">"Apr10"</span>, <span class="st">"Apr11"</span>, <span class="st">"Apr12"</span>, <span class="st">"Apr13"</span>, <span class="st">"Apr14"</span>, <span class="st">"Apr15"</span>, <span class="st">"Apr16"</span>, <span class="st">"Apr17"</span>, <span class="st">"Apr18"</span>, <span class="st">"Apr19"</span>, <span class="st">"Apr20"</span>, <span class="st">"Apr21"</span>, <span class="st">"Apr22"</span>, <span class="st">"Apr23"</span>, <span class="st">"Apr24"</span>, <span class="st">"Apr25"</span>, <span class="st">"Apr26"</span>, <span class="st">"Apr27"</span>, <span class="st">"Apr28"</span>, <span class="st">"Apr29"</span>, <span class="st">"Apr30"</span>, <span class="st">"May01"</span>, <span class="st">"May02"</span>, <span class="st">"May03"</span>, <span class="st">"May04"</span>, <span class="st">"May05"</span>, <span class="st">"May06"</span>, <span class="st">"May07"</span>, <span class="st">"May08"</span>, <span class="st">"May09"</span>, <span class="st">"May10"</span>, <span class="st">"May11"</span>, <span class="st">"May12"</span>, <span class="st">"May13"</span>, <span class="st">"May14"</span>, <span class="st">"May15"</span>, <span class="st">"May16"</span>, <span class="st">"May17"</span>, <span class="st">"May18"</span>, <span class="st">"May19"</span>, <span class="st">"May20"</span>, <span class="st">"May21"</span>, <span class="st">"May22"</span>, <span class="st">"May23"</span>, <span class="st">"May24"</span>, <span class="st">"May25"</span>, <span class="st">"May26"</span>, <span class="st">"May27"</span>, <span class="st">"May28"</span>, <span class="st">"May29"</span>, <span class="st">"May30"</span>, <span class="st">"May31"</span>, <span class="st">"Jun01"</span>, <span class="st">"Jun02"</span>, <span class="st">"Jun03"</span>, <span class="st">"Jun04"</span>, <span class="st">"Jun05"</span>, <span class="st">"Jun06"</span>, <span class="st">"Jun07"</span>, <span class="st">"Jun08"</span>, <span class="st">"Jun09"</span>, <span class="st">"Jun10"</span>, <span class="st">"Jun11"</span>, <span class="st">"Jun12"</span>, <span class="st">"Jun13"</span>, <span class="st">"Jun14"</span>, <span class="st">"Jun15"</span>, <span class="st">"Jun16"</span>, <span class="st">"Jun17"</span>, <span class="st">"Jun18"</span>, <span class="st">"Jun19"</span>, <span class="st">"Jun20"</span>, <span class="st">"Jun21"</span>, <span class="st">"Jun22"</span>, <span class="st">"Jun23"</span>, <span class="st">"Jun24"</span>, <span class="st">"Jun25"</span>, <span class="st">"Jun26"</span>, <span class="st">"Jun27"</span>, <span class="st">"Jun28"</span>, <span class="st">"Jun29"</span>, <span class="st">"Jun30"</span>, <span class="st">"Jul01"</span>, <span class="st">"Jul02"</span>, <span class="st">"Jul03"</span>, <span class="st">"Jul04"</span>, <span class="st">"Jul05"</span>, <span class="st">"Jul06"</span>, <span class="st">"Jul07"</span>, <span class="st">"Jul08"</span>, <span class="st">"Jul09"</span>, <span class="st">"Jul10"</span>, <span class="st">"Jul11"</span>, <span class="st">"Jul12"</span>, <span class="st">"Jul13"</span>, <span class="st">"Jul14"</span>, <span class="st">"Jul15"</span>, <span class="st">"Jul16"</span>, <span class="st">"Jul17"</span>, <span class="st">"Jul18"</span>, <span class="st">"Jul19"</span>, <span class="st">"Jul20"</span>, <span class="st">"Jul21"</span>, <span class="st">"Jul22"</span>, <span class="st">"Jul23"</span>, <span class="st">"Jul24"</span>, <span class="st">"Jul25"</span>, <span class="st">"Jul26"</span>, <span class="st">"Jul27"</span>, <span class="st">"Jul28"</span>, <span class="st">"Jul29"</span>, <span class="st">"Jul30"</span>, <span class="st">"Jul31"</span>, <span class="st">"Aug01"</span>, <span class="st">"Aug02"</span>, <span class="st">"Aug03"</span>, <span class="st">"Aug04"</span>, <span class="st">"Aug05"</span>, <span class="st">"Aug06"</span>, <span class="st">"Aug07"</span>, <span class="st">"Aug08"</span>, <span class="st">"Aug09"</span>, <span class="st">"Aug10"</span>, <span class="st">"Aug11"</span>, <span class="st">"Aug12"</span>, <span class="st">"Aug13"</span>, <span class="st">"Aug14"</span>, <span class="st">"Aug15"</span>, <span class="st">"Aug16"</span>, <span class="st">"Aug17"</span>, <span class="st">"Aug18"</span>, <span class="st">"Aug19"</span>, <span class="st">"Aug20"</span>, <span class="st">"Aug21"</span>, <span class="st">"Aug22"</span>, <span class="st">"Aug23"</span>, <span class="st">"Aug24"</span>, <span class="st">"Aug25"</span>, <span class="st">"Aug26"</span>, <span class="st">"Aug27"</span>, <span class="st">"Aug28"</span>, <span class="st">"Aug29"</span>, <span class="st">"Aug30"</span>, <span class="st">"Aug31"</span>, <span class="st">"Sep01"</span>, <span class="st">"Sep02"</span>, <span class="st">"Sep03"</span>, <span class="st">"Sep04"</span>, <span class="st">"Sep05"</span>, <span class="st">"Sep06"</span>, <span class="st">"Sep07"</span>, <span class="st">"Sep08"</span>, <span class="st">"Sep09"</span>, <span class="st">"Sep10"</span>, <span class="st">"Sep11"</span>, <span class="st">"Sep12"</span>, <span class="st">"Sep13"</span>, <span class="st">"Sep14"</span>, <span class="st">"Sep15"</span>, <span class="st">"Sep16"</span>, <span class="st">"Sep17"</span>, <span class="st">"Sep18"</span>, <span class="st">"Sep19"</span>, <span class="st">"Sep20"</span>, <span class="st">"Sep21"</span>, <span class="st">"Sep22"</span>, <span class="st">"Sep23"</span>, <span class="st">"Sep24"</span>, <span class="st">"Sep25"</span>, <span class="st">"Sep26"</span>, <span class="st">"Sep27"</span>, <span class="st">"Sep28"</span>, <span class="st">"Sep29"</span>, <span class="st">"Sep30"</span>, <span class="st">"Oct01"</span>, <span class="st">"Oct02"</span>, <span class="st">"Oct03"</span>, <span class="st">"Oct04"</span>, <span class="st">"Oct05"</span>, <span class="st">"Oct06"</span>, <span class="st">"Oct07"</span>, <span class="st">"Oct08"</span>, <span class="st">"Oct09"</span>, <span class="st">"Oct10"</span>, <span class="st">"Oct11"</span>, <span class="st">"Oct12"</span>, <span class="st">"Oct13"</span>, <span class="st">"Oct14"</span>, <span class="st">"Oct15"</span>, <span class="st">"Oct16"</span>, <span class="st">"Oct17"</span>, <span class="st">"Oct18"</span>, <span class="st">"Oct19"</span>, <span class="st">"Oct20"</span>, <span class="st">"Oct21"</span>, <span class="st">"Oct22"</span>, <span class="st">"Oct23"</span>, <span class="st">"Oct24"</span>, <span class="st">"Oct25"</span>, <span class="st">"Oct26"</span>, <span class="st">"Oct27"</span>, <span class="st">"Oct28"</span>, <span class="st">"Oct29"</span>, <span class="st">"Oct30"</span>, <span class="st">"Oct31"</span>, <span class="st">"Nov01"</span>, <span class="st">"Nov02"</span>, <span class="st">"Nov03"</span>, <span class="st">"Nov04"</span>, <span class="st">"Nov05"</span>, <span class="st">"Nov06"</span>, <span class="st">"Nov07"</span>, <span class="st">"Nov08"</span>, <span class="st">"Nov09"</span>, <span class="st">"Nov10"</span>, <span class="st">"Nov11"</span>, <span class="st">"Nov12"</span>, <span class="st">"Nov13"</span>, <span class="st">"Nov14"</span>, <span class="st">"Nov15"</span>, <span class="st">"Nov16"</span>, <span class="st">"Nov17"</span>, <span class="st">"Nov18"</span>, <span class="st">"Nov19"</span>, <span class="st">"Nov20"</span>, <span class="st">"Nov21"</span>, <span class="st">"Nov22"</span>, <span class="st">"Nov23"</span>, <span class="st">"Nov24"</span>, <span class="st">"Nov25"</span>, <span class="st">"Nov26"</span>, <span class="st">"Nov27"</span>, <span class="st">"Nov28"</span>, <span class="st">"Nov29"</span>, <span class="st">"Nov30"</span>, <span class="st">"Dec01"</span>, <span class="st">"Dec02"</span>, <span class="st">"Dec03"</span>, <span class="st">"Dec04"</span>, <span class="st">"Dec05"</span>, <span class="st">"Dec06"</span>, <span class="st">"Dec07"</span>, <span class="st">"Dec08"</span>, <span class="st">"Dec09"</span>, <span class="st">"Dec10"</span>, <span class="st">"Dec11"</span>, <span class="st">"Dec12"</span>, <span class="st">"Dec13"</span>, <span class="st">"Dec14"</span>, <span class="st">"Dec15"</span>, <span class="st">"Dec16"</span>, <span class="st">"Dec17"</span>, <span class="st">"Dec18"</span>, <span class="st">"Dec19"</span>, <span class="st">"Dec20"</span>, <span class="st">"Dec21"</span>, <span class="st">"Dec22"</span>, <span class="st">"Dec23"</span>, <span class="st">"Dec24"</span>, <span class="st">"Dec25"</span>, <span class="st">"Dec26"</span>, <span class="st">"Dec27"</span>, <span class="st">"Dec28"</span>, <span class="st">"Dec29"</span>, <span class="st">"Dec30"</span>, <span class="st">"Dec31"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>bdays <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Jan01"</span>, <span class="st">"Jan02"</span>, <span class="st">"Jan03"</span>, <span class="st">"Jan04"</span>, <span class="st">"Jan05"</span>, <span class="st">"Jan06"</span>, <span class="st">"Jan07"</span>, <span class="st">"Jan08"</span>, <span class="st">"Jan09"</span>, <span class="st">"Jan10"</span>, <span class="st">"Jan11"</span>, <span class="st">"Jan12"</span>, <span class="st">"Jan13"</span>, <span class="st">"Jan14"</span>, <span class="st">"Jan15"</span>, <span class="st">"Jan16"</span>, <span class="st">"Jan17"</span>, <span class="st">"Jan18"</span>, <span class="st">"Jan19"</span>, <span class="st">"Jan20"</span>, <span class="st">"Jan21"</span>, <span class="st">"Jan22"</span>, <span class="st">"Jan23"</span>, <span class="st">"Jan24"</span>, <span class="st">"Jan25"</span>, <span class="st">"Jan26"</span>, <span class="st">"Jan27"</span>, <span class="st">"Jan28"</span>, <span class="st">"Jan29"</span>, <span class="st">"Jan30"</span>, <span class="st">"Jan31"</span>, <span class="st">"Feb01"</span>, <span class="st">"Feb02"</span>, <span class="st">"Feb03"</span>, <span class="st">"Feb04"</span>, <span class="st">"Feb05"</span>, <span class="st">"Feb06"</span>, <span class="st">"Feb07"</span>, <span class="st">"Feb08"</span>, <span class="st">"Feb09"</span>, <span class="st">"Feb10"</span>, <span class="st">"Feb11"</span>, <span class="st">"Feb12"</span>, <span class="st">"Feb13"</span>, <span class="st">"Feb14"</span>, <span class="st">"Feb15"</span>, <span class="st">"Feb16"</span>, <span class="st">"Feb17"</span>, <span class="st">"Feb18"</span>, <span class="st">"Feb19"</span>, <span class="st">"Feb20"</span>, <span class="st">"Feb21"</span>, <span class="st">"Feb22"</span>, <span class="st">"Feb23"</span>, <span class="st">"Feb24"</span>, <span class="st">"Feb25"</span>, <span class="st">"Feb26"</span>, <span class="st">"Feb27"</span>, <span class="st">"Feb28"</span>, <span class="st">"Mar01"</span>, <span class="st">"Mar02"</span>, <span class="st">"Mar03"</span>, <span class="st">"Mar04"</span>, <span class="st">"Mar05"</span>, <span class="st">"Mar06"</span>, <span class="st">"Mar07"</span>, <span class="st">"Mar08"</span>, <span class="st">"Mar09"</span>, <span class="st">"Mar10"</span>, <span class="st">"Mar11"</span>, <span class="st">"Mar12"</span>, <span class="st">"Mar13"</span>, <span class="st">"Mar14"</span>, <span class="st">"Mar15"</span>, <span class="st">"Mar16"</span>, <span class="st">"Mar17"</span>, <span class="st">"Mar18"</span>, <span class="st">"Mar19"</span>, <span class="st">"Mar20"</span>, <span class="st">"Mar21"</span>, <span class="st">"Mar22"</span>, <span class="st">"Mar23"</span>, <span class="st">"Mar24"</span>, <span class="st">"Mar25"</span>, <span class="st">"Mar26"</span>, <span class="st">"Mar27"</span>, <span class="st">"Mar28"</span>, <span class="st">"Mar29"</span>, <span class="st">"Mar30"</span>, <span class="st">"Mar31"</span>, <span class="st">"Apr01"</span>, <span class="st">"Apr02"</span>, <span class="st">"Apr03"</span>, <span class="st">"Apr04"</span>, <span class="st">"Apr05"</span>, <span class="st">"Apr06"</span>, <span class="st">"Apr07"</span>, <span class="st">"Apr08"</span>, <span class="st">"Apr09"</span>, <span class="st">"Apr10"</span>, <span class="st">"Apr11"</span>, <span class="st">"Apr12"</span>, <span class="st">"Apr13"</span>, <span class="st">"Apr14"</span>, <span class="st">"Apr15"</span>, <span class="st">"Apr16"</span>, <span class="st">"Apr17"</span>, <span class="st">"Apr18"</span>, <span class="st">"Apr19"</span>, <span class="st">"Apr20"</span>, <span class="st">"Apr21"</span>, <span class="st">"Apr22"</span>, <span class="st">"Apr23"</span>, <span class="st">"Apr24"</span>, <span class="st">"Apr25"</span>, <span class="st">"Apr26"</span>, <span class="st">"Apr27"</span>, <span class="st">"Apr28"</span>, <span class="st">"Apr29"</span>, <span class="st">"Apr30"</span>, <span class="st">"May01"</span>, <span class="st">"May02"</span>, <span class="st">"May03"</span>, <span class="st">"May04"</span>, <span class="st">"May05"</span>, <span class="st">"May06"</span>, <span class="st">"May07"</span>, <span class="st">"May08"</span>, <span class="st">"May09"</span>, <span class="st">"May10"</span>, <span class="st">"May11"</span>, <span class="st">"May12"</span>, <span class="st">"May13"</span>, <span class="st">"May14"</span>, <span class="st">"May15"</span>, <span class="st">"May16"</span>, <span class="st">"May17"</span>, <span class="st">"May18"</span>, <span class="st">"May19"</span>, <span class="st">"May20"</span>, <span class="st">"May21"</span>, <span class="st">"May22"</span>, <span class="st">"May23"</span>, <span class="st">"May24"</span>, <span class="st">"May25"</span>, <span class="st">"May26"</span>, <span class="st">"May27"</span>, <span class="st">"May28"</span>, <span class="st">"May29"</span>, <span class="st">"May30"</span>, <span class="st">"May31"</span>, <span class="st">"Jun01"</span>, <span class="st">"Jun02"</span>, <span class="st">"Jun03"</span>, <span class="st">"Jun04"</span>, <span class="st">"Jun05"</span>, <span class="st">"Jun06"</span>, <span class="st">"Jun07"</span>, <span class="st">"Jun08"</span>, <span class="st">"Jun09"</span>, <span class="st">"Jun10"</span>, <span class="st">"Jun11"</span>, <span class="st">"Jun12"</span>, <span class="st">"Jun13"</span>, <span class="st">"Jun14"</span>, <span class="st">"Jun15"</span>, <span class="st">"Jun16"</span>, <span class="st">"Jun17"</span>, <span class="st">"Jun18"</span>, <span class="st">"Jun19"</span>, <span class="st">"Jun20"</span>, <span class="st">"Jun21"</span>, <span class="st">"Jun22"</span>, <span class="st">"Jun23"</span>, <span class="st">"Jun24"</span>, <span class="st">"Jun25"</span>, <span class="st">"Jun26"</span>, <span class="st">"Jun27"</span>, <span class="st">"Jun28"</span>, <span class="st">"Jun29"</span>, <span class="st">"Jun30"</span>, <span class="st">"Jul01"</span>, <span class="st">"Jul02"</span>, <span class="st">"Jul03"</span>, <span class="st">"Jul04"</span>, <span class="st">"Jul05"</span>, <span class="st">"Jul06"</span>, <span class="st">"Jul07"</span>, <span class="st">"Jul08"</span>, <span class="st">"Jul09"</span>, <span class="st">"Jul10"</span>, <span class="st">"Jul11"</span>, <span class="st">"Jul12"</span>, <span class="st">"Jul13"</span>, <span class="st">"Jul14"</span>, <span class="st">"Jul15"</span>, <span class="st">"Jul16"</span>, <span class="st">"Jul17"</span>, <span class="st">"Jul18"</span>, <span class="st">"Jul19"</span>, <span class="st">"Jul20"</span>, <span class="st">"Jul21"</span>, <span class="st">"Jul22"</span>, <span class="st">"Jul23"</span>, <span class="st">"Jul24"</span>, <span class="st">"Jul25"</span>, <span class="st">"Jul26"</span>, <span class="st">"Jul27"</span>, <span class="st">"Jul28"</span>, <span class="st">"Jul29"</span>, <span class="st">"Jul30"</span>, <span class="st">"Jul31"</span>, <span class="st">"Aug01"</span>, <span class="st">"Aug02"</span>, <span class="st">"Aug03"</span>, <span class="st">"Aug04"</span>, <span class="st">"Aug05"</span>, <span class="st">"Aug06"</span>, <span class="st">"Aug07"</span>, <span class="st">"Aug08"</span>, <span class="st">"Aug09"</span>, <span class="st">"Aug10"</span>, <span class="st">"Aug11"</span>, <span class="st">"Aug12"</span>, <span class="st">"Aug13"</span>, <span class="st">"Aug14"</span>, <span class="st">"Aug15"</span>, <span class="st">"Aug16"</span>, <span class="st">"Aug17"</span>, <span class="st">"Aug18"</span>, <span class="st">"Aug19"</span>, <span class="st">"Aug20"</span>, <span class="st">"Aug21"</span>, <span class="st">"Aug22"</span>, <span class="st">"Aug23"</span>, <span class="st">"Aug24"</span>, <span class="st">"Aug25"</span>, <span class="st">"Aug26"</span>, <span class="st">"Aug27"</span>, <span class="st">"Aug28"</span>, <span class="st">"Aug29"</span>, <span class="st">"Aug30"</span>, <span class="st">"Aug31"</span>, <span class="st">"Sep01"</span>, <span class="st">"Sep02"</span>, <span class="st">"Sep03"</span>, <span class="st">"Sep04"</span>, <span class="st">"Sep05"</span>, <span class="st">"Sep06"</span>, <span class="st">"Sep07"</span>, <span class="st">"Sep08"</span>, <span class="st">"Sep09"</span>, <span class="st">"Sep10"</span>, <span class="st">"Sep11"</span>, <span class="st">"Sep12"</span>, <span class="st">"Sep13"</span>, <span class="st">"Sep14"</span>, <span class="st">"Sep15"</span>, <span class="st">"Sep16"</span>, <span class="st">"Sep17"</span>, <span class="st">"Sep18"</span>, <span class="st">"Sep19"</span>, <span class="st">"Sep20"</span>, <span class="st">"Sep21"</span>, <span class="st">"Sep22"</span>, <span class="st">"Sep23"</span>, <span class="st">"Sep24"</span>, <span class="st">"Sep25"</span>, <span class="st">"Sep26"</span>, <span class="st">"Sep27"</span>, <span class="st">"Sep28"</span>, <span class="st">"Sep29"</span>, <span class="st">"Sep30"</span>, <span class="st">"Oct01"</span>, <span class="st">"Oct02"</span>, <span class="st">"Oct03"</span>, <span class="st">"Oct04"</span>, <span class="st">"Oct05"</span>, <span class="st">"Oct06"</span>, <span class="st">"Oct07"</span>, <span class="st">"Oct08"</span>, <span class="st">"Oct09"</span>, <span class="st">"Oct10"</span>, <span class="st">"Oct11"</span>, <span class="st">"Oct12"</span>, <span class="st">"Oct13"</span>, <span class="st">"Oct14"</span>, <span class="st">"Oct15"</span>, <span class="st">"Oct16"</span>, <span class="st">"Oct17"</span>, <span class="st">"Oct18"</span>, <span class="st">"Oct19"</span>, <span class="st">"Oct20"</span>, <span class="st">"Oct21"</span>, <span class="st">"Oct22"</span>, <span class="st">"Oct23"</span>, <span class="st">"Oct24"</span>, <span class="st">"Oct25"</span>, <span class="st">"Oct26"</span>, <span class="st">"Oct27"</span>, <span class="st">"Oct28"</span>, <span class="st">"Oct29"</span>, <span class="st">"Oct30"</span>, <span class="st">"Oct31"</span>, <span class="st">"Nov01"</span>, <span class="st">"Nov02"</span>, <span class="st">"Nov03"</span>, <span class="st">"Nov04"</span>, <span class="st">"Nov05"</span>, <span class="st">"Nov06"</span>, <span class="st">"Nov07"</span>, <span class="st">"Nov08"</span>, <span class="st">"Nov09"</span>, <span class="st">"Nov10"</span>, <span class="st">"Nov11"</span>, <span class="st">"Nov12"</span>, <span class="st">"Nov13"</span>, <span class="st">"Nov14"</span>, <span class="st">"Nov15"</span>, <span class="st">"Nov16"</span>, <span class="st">"Nov17"</span>, <span class="st">"Nov18"</span>, <span class="st">"Nov19"</span>, <span class="st">"Nov20"</span>, <span class="st">"Nov21"</span>, <span class="st">"Nov22"</span>, <span class="st">"Nov23"</span>, <span class="st">"Nov24"</span>, <span class="st">"Nov25"</span>, <span class="st">"Nov26"</span>, <span class="st">"Nov27"</span>, <span class="st">"Nov28"</span>, <span class="st">"Nov29"</span>, <span class="st">"Nov30"</span>, <span class="st">"Dec01"</span>, <span class="st">"Dec02"</span>, <span class="st">"Dec03"</span>, <span class="st">"Dec04"</span>, <span class="st">"Dec05"</span>, <span class="st">"Dec06"</span>, <span class="st">"Dec07"</span>, <span class="st">"Dec08"</span>, <span class="st">"Dec09"</span>, <span class="st">"Dec10"</span>, <span class="st">"Dec11"</span>, <span class="st">"Dec12"</span>, <span class="st">"Dec13"</span>, <span class="st">"Dec14"</span>, <span class="st">"Dec15"</span>, <span class="st">"Dec16"</span>, <span class="st">"Dec17"</span>, <span class="st">"Dec18"</span>, <span class="st">"Dec19"</span>, <span class="st">"Dec20"</span>, <span class="st">"Dec21"</span>, <span class="st">"Dec22"</span>, <span class="st">"Dec23"</span>, <span class="st">"Dec24"</span>, <span class="st">"Dec25"</span>, <span class="st">"Dec26"</span>, <span class="st">"Dec27"</span>, <span class="st">"Dec28"</span>, <span class="st">"Dec29"</span>, <span class="st">"Dec30"</span>, <span class="st">"Dec31"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We now address the Birthday Problem: Given a group of <span class="math inline">\(n\)</span> people, <strong>what is the probability that at least</strong> <span class="math inline">\(2\)</span> share a birthday? Consider <span class="math inline">\(n = 10\)</span>, <span class="math inline">\(n = 100\)</span>, and <span class="math inline">\(n = 1,000\)</span>.</p>
-<section id="helpful-suggestions" class="level4"><h4 class="anchored" data-anchor-id="helpful-suggestions">Helpful suggestions</h4>
+<section id="helpful-suggestions" class="level4">
+<h4 class="anchored" data-anchor-id="helpful-suggestions">Helpful suggestions</h4>
 <p>This is yet another counting problem! For a given <span class="math inline">\(n\)</span>, what does your sample space look like?</p>
-<p>Any of the following functions may be useful in the simulation portion of this particular exercise: <code><a href="https://rdrr.io/r/base/unique.html">unique()</a></code>, <code><a href="https://rdrr.io/r/base/duplicated.html">duplicated()</a></code>, <code><a href="https://rdrr.io/r/base/duplicated.html">anyDuplicated()</a></code>. To find out more, type <code>?&lt;function&gt;</code> in the console and the documentation will appear in the Help tab on the right-hand side of the window.</p>
-</section></section><section id="two-card-poker-hand" class="level3"><h3 class="anchored" data-anchor-id="two-card-poker-hand">Two-Card Poker Hand</h3>
+<p>Any of the following functions may be useful in the simulation portion of this particular exercise: <code>unique()</code>, <code>duplicated()</code>, <code>anyDuplicated()</code>. To find out more, type <code>?&lt;function&gt;</code> in the console and the documentation will appear in the Help tab on the right-hand side of the window.</p>
+</section>
+</section>
+<section id="two-card-poker-hand" class="level3">
+<h3 class="anchored" data-anchor-id="two-card-poker-hand">Two-Card Poker Hand</h3>
 <p>Suppose you are dealt a two-card hand; <strong>what is the probability that both cards are the same suit (i.e., Hearts, Diamonds, Clubs, Spades)?</strong> (You may use the <code>deck_of_cards</code> vector defined above to simulate this counting exercise.)</p>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -589,18 +639,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -632,7 +671,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/sta240-s25\.github\.io\/");
@@ -640,7 +699,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -737,7 +796,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -962,7 +1020,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
       <a href="../psets/pset_6.html" class="pagination-link" aria-label="Problem Set 6">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Problem Set 6</span>
       </a>          
@@ -974,7 +1034,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>© Copyright 2025 John Zito</p>
 </div>   
@@ -986,6 +1047,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
+
+
 
 
 </body></html>
