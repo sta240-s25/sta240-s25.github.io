@@ -24,11 +24,7 @@ Below are at least two practice problems for each of these ten items, as well as
 
 Suppose the events $A$ and $B$ are disjoint. Under what conditions are $A^{c}$ and $B^{c}$ also disjoint events?
 
-::: {.callout-tip collapse="true"}
-## Answer
 
-$P(A) + P(B) = 1$ -- that is, $A$ and $B$ partition the sample space.
-:::
 
 ## Problem 2
 
@@ -40,13 +36,7 @@ c.  Show that
 
 $$P(D)=P(A) + P(B) + P(C) - 2P(A \cap B) - 2P(A \cap C) - 2P(B \cap C) + 3P(A \cap B \cap C).$$
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  [sketch];
-b.  $D = \left(A \cap B^{c} \cap C^{c}\right) \cup \left(A^{c} \cap B \cap C^{c}\right) \cup \left(A^{c} \cap B^{c} \cap C\right)$;
-c.  [proof].
-:::
 
 ## Need more review on this?
 
@@ -66,13 +56,6 @@ a.  If a committee of eight senators is selected, what is the probability that i
 b.  If a committee of twenty senators is selected, what is the probability it will contain $15$ junior senators and $5$ senior senators?
 c.  What is the probability that a group of $50$ senators selected at random will contain one senator from each state?
 
-::: {.callout-tip collapse="true"}
-## Answers
-
-a.  $\frac{\binom{100}{8} - \binom{98}{8}}{\binom{100}{8}} \approx 0.154$;
-b.  $\frac{\binom{50}{15}\binom{50}{5}}{\binom{100}{20}} \approx 0.00890$;
-c.  $\frac{2^{50}}{\binom{100}{50}} \approx 1.12 \times 10^{-14}$.
-:::
 
 ## Problem 4
 
@@ -82,13 +65,7 @@ a.  You are fairly chill about what you want in a PIN -- all you want is an even
 b.  One of your friends is a bit more persnickety -- they want a PIN divisible by $5$, and they cannot stand PINs starting with a zero. How many possible PINs fit this friend's preferences?
 c.  Your other friend has some more...particular preferences -- they have an affinity for the number $16$ and thus want the digits $1$ and $6$ to appear in that exact order at some point in the PIN. Further, they also despise PINs starting with a zero. How many possible PINs fit this friend's preferences?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $10^{3} \times 5 = 5,000$ PINs;
-b.  $9 \times 10^{2} \times 2 = 1,800$ PINs;
-c.  $10^{2} + 2 \times 9 \times 10 - 1 = 279$ PINs.
-:::
 
 ## Need more review on this?
 
@@ -107,12 +84,7 @@ An urn contains 5 white and 10 black balls. Four tickets labeled 1, 2, 3, and 4 
 a.  What is the probability that all of the balls drawn are white?
 b.  If we learn that all balls drawn from the urn are white, what is the conditional probability that the #3 ticket was drawn?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $\frac{1}{4}\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}} \approx 0.114$;
-b.  $\frac{\frac{\binom{5}{3}}{\binom{15}{3}}}{\sum_{x = 1}^{4}{\frac{\binom{5}{x}}{\binom{15}{x}}}} \approx 0.0484$.
-:::
 
 ## Problem 6
 
@@ -126,12 +98,6 @@ b.  Imagine we roll two fair, six-sided die. Consider the events $$
     \end{aligned}
     $$ Compute $P(A)$, $P(B)$, $P(C)$, $P(A\cap B)$, $P(A\cap C)$, $P(B\cap C)$, $P(A\cap B\cap C)$, and comment on the independence of the three events.
 
-::: {.callout-tip collapse="true"}
-## Answers
-
-a.  $P\left(A_{k}\right) = \frac{1}{3}\text{ for all }k \in \{1, 2, 3\}$; $P\left(A_{i} \cap A_{j}\right) = \begin{cases}\frac{1}{9} & i \neq j \\ \frac{1}{3} & i = j\end{cases}$; $P\left(A_{1} \cap A_{2} \cap A_{3}\right) = \frac{1}{9}$; the events are *pairwise* independent, but not *mutually* independent.
-b.  $P(A) = P(B) = \frac{1}{2}$; $P(C) = \frac{1}{9}$; $P(A \cap B) = \frac{1}{6}$; $P(A \cap C) = \frac{1}{36}$; $P(B \cap C) = \frac{1}{12}$; $P(A \cap B \cap C) = \frac{1}{36}$; the events are neither pairwise nor mutually independent.
-:::
 
 ## Need more review on this?
 
@@ -174,12 +140,7 @@ b.  Assume the $A_i$ are independent and compute...
     ii. $P(X=1)$.
     iii. $P(X=3)$.
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $E(X) = 6p$; $P(X = 1) = 6p$; $P(X = 3) = 0$;
-b.  $E(X) = 6p$; $P(X = 1) = 6p(1 - p)^{5}$; $P(X = 3) = 20p^{3}(1 - p)^{3}$.
-:::
 
 ## Problem 8
 
@@ -189,13 +150,7 @@ a.  What is the pmf of $X$?
 b.  What is the expected value of $X$?
 c.  Find a closed-form expression for $P(X\geq m)$.
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $P(X = x) = \left(\frac{35}{36}\right)^{x - 1}\frac{1}{36}, \; x = 1, 2,\dots$ $\left(X \sim \text{Geometric}\left(\frac{1}{36}\right)\right)$;
-b.  $E(X) = 36$;
-c.  $P(X \geq m) = \left(\frac{35}{36}\right)^{m - 1}, \; m = 1, 2, \dots$.
-:::
 
 ## Need more review on this?
 
@@ -225,14 +180,7 @@ b.  What is the pdf of $X$?
 c.  Compute $E(X^n)$ for any $n\in\mathbb{N}$.
 d.  What is the variance of $X$?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $P(1 < X < 8) = e^{-1} - e^{-2}$;
-b.  $f_{X}(x) = \frac{1}{3}x^{-2/3}e^{-\sqrt[3]{x}}, \; x \geq 0$;
-c.  $E\left(X^{n}\right) = (3n)!$;
-d.  $\text{var}(X) = 684$.
-:::
 
 ## Problem 10
 
@@ -247,17 +195,7 @@ $$
 
 Assume $g(x)$ is continuous. What properties must $g(x)$ satisfy in order for $F(x)$ to be a valid cumulative distribution function (CDF) for a *continuous* random variable? Give three examples of functions $g(x)$ that satisfy these properties.
 
-::: {.callout-tip collapse="true"}
-## Answer
-$g$ must satisfy...
 
-- nondecreasing
-- nonnegative
-- $g(x)\to\infty$ as $x\to\infty$
-- $g(0)=0$
-
-Examples are $x^a$, $e^x-1$, $\ln(x + 1)$.
-:::
 
 ## Problem 11
 
@@ -272,12 +210,7 @@ $$
 a.  Compute the cdf of $X$;
 b.  Compute the median of $X$.
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $F_{X}(x) = \begin{cases}1 - e^{-e^{x} + 1} & x \geq 0 \\ 0 & x < 0 \end{cases}$;
-b.  $q_{0.5} = \ln(\ln(2) + 1)$.
-:::
 
 ## Need more review on this?
 
@@ -304,12 +237,7 @@ $$
 Y=\frac{\pi}{2}-\frac{X}{3}.
 $$
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $E(X) = 5$; $\text{var}(X) = 9$;
-b.  $M_{Y}(t) = \frac{e^{\left(\frac{\pi}{2} - \frac{2}{3}\right)t}}{1 + t}$.
-:::
 
 ## Problem 13
 
@@ -340,14 +268,7 @@ b.  What is the mgf of $X$?
 c.  Use the mgf to compute the mean of $X$.
 d.  Let $X_1$, $X_2$, ..., $X_n$ be independent random variables each with distribution $\text{NB}(r_i,\,p)$. What is the distribution of $S_n=\sum_{i=1}^nX_i$?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $(1 - p)^{-r} = \sum_{k = 0}^{\infty}{\binom{k + r - 1}{k}p^{k}}$;
-b.  $M_{X}(t) = \left(\frac{p}{1 - (1 - p)e^{t}}\right)^{r}, \; t < -\ln(1 - p)$;
-c.  $E(X) = \frac{r(1 - p)}{p}$;
-d.  $S_{n} \sim \text{NB}\left(\sum_{i = 1}^{n}{r_{i}}, p\right)$.
-:::
 
 ## Need more review on this?
 
@@ -371,13 +292,7 @@ c.  What is $\text{var}(Y)$?
 A random variable possessing this new density is said to follow the **inverse gamma distribution**.
 :::
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $f_{Y}(y) = \frac{\beta^{\alpha}}{\Gamma(\alpha)}y^{-(\alpha + 1)}e^{-\beta / y}, \; y > 0$;
-b.  $E(Y) = \frac{\beta}{\alpha - 1}, \; \alpha > 1$;
-c.  $\text{var}(Y) = \frac{\beta^{2}}{(\alpha - 1)^{2}(\alpha - 2)}, \; \alpha > 2$.
-:::
 
 ## Problem 15
 
@@ -393,13 +308,7 @@ a.  What is the range of $Y$?
 b.  What is the density of $Y$?
 c.  Is the density of $Y$ familiar?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $\text{Range}(Y) = (0, \infty)$;
-b.  $f_{Y}(y) = \theta e^{-\theta y}, \; y > 0$;
-c.  $Y \sim \text{Exponential}(\theta) \stackrel{\text{d}}{=} \text{Gamma}(1, \theta)$.
-:::
 
 ## Problem 16
 
@@ -418,14 +327,7 @@ b.  What is the range of $Y$?
 c.  What is the density of $Y$?
 d.  Is the density of $Y$ familiar?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  [sketch];
-b.  $\text{Range}(Y) = [0, \infty)$;
-c.  $f_{Y}(y) = \frac{1}{\theta}e^{-y/\theta}, \; y \geq 0$;
-d.  $Y \sim \text{Exponential}\left(\frac{1}{\theta}\right) \stackrel{\text{d}}{=} \text{Gamma}\left(1, \frac{1}{\theta}\right)$.
-:::
 
 ## Need more review on this?
 
@@ -454,16 +356,7 @@ d.  Find the conditional density of $X$ given $Y=y$.
 e.  Use this to compute $P(X>1/2\,|\,Y=1/3)$.
 f.  What is $E(X\,|\,Y=y)$?
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  [sketch];
-b.  $f_{Y}(y) = \frac{12}{7}(2 - y)(1 - y)^{2}, \; 0 < y < 1$;
-c.  $f_{X}(x) = \frac{12}{7}\left(-x^{3} - 2x^{2} + 3x\right), \; 0 < x < 1$.
-d.  $f_{X \mid Y = y}(x \mid y) = \frac{2x}{(1 - y)^{2}}, \; 0 < x < 1 - y$;
-e.  $P(X > 1/2 \mid Y = 1/3) = \frac{7}{16}$;
-f.  $E(X \mid Y = y) = \frac{2}{3}(1 - y)$.
-:::
 
 ## Problem 18
 
@@ -484,40 +377,6 @@ $$
 
 This means that $Y$ has the ***F*****-distribution**.
 
-::: {.callout-tip collapse="true"}
-## Answer
-  Fix $y>0$, and let the hilarity ensue:
-$$
-  \begin{aligned}
-      f_Y(y)&=\int_0^\infty f_{X, Y}(x,\,y)\,\text{d} x\\
-      &=\int_0^\infty f_{Y\,|\, X}(y\,|\, x)f_X(x)\,\text{d} x\\
-      &=\int_0^\infty \frac{\left(\frac{d_1}{2}\right)^{d_1/2}x^{d_1/2}}{\Gamma\left(\frac{d_1}{2}\right)}y^{\frac{d_1}{2}-1}e^{-\frac{d_1}{2}xy}\frac{\left(\frac{d_2}{2}\right)^{d_2/2}}{\Gamma\left(\frac{d_2}{2}\right)}x^{\frac{d_2}{2}-1}e^{-\frac{d_2}{2}x}\,\text{d} x\\
-      &=\frac{\left(\frac{d_1}{2}\right)^{d_1/2}\left(\frac{d_2}{2}\right)^{d_2/2}}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}y^{\frac{d_1}{2}-1}\int_0^\infty \underbrace{x^{\frac{d_1}{2}+\frac{d_2}{2}-1}e^{-\left(\frac{d_2}{2}+\frac{d_1}{2}y\right)x}}_{\text{kernel of }\textrm{Gamma}\left(\alpha\,=\,\frac{d_1}{2}+\frac{d_2}{2},\,\beta\,=\, \frac{d_2}{2}+\frac{d_1}{2}y\right)}\,\text{d} x\\
-      &=\frac{\left(\frac{d_1}{2}\right)^{d_1/2}\left(\frac{d_2}{2}\right)^{d_2/2}}
-      {\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}
-      y^{\frac{d_1}{2}-1}
-      \frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}
-      {\left(\frac{d_2}{2}+\frac{d_1}{2}y\right)^{\frac{d_1}{2}+\frac{d_2}{2}}}\\
-      &=
-      \frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}
-      {\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}
-      \left(\frac{d_1}{2}\right)^{d_1/2}
-      \left(\frac{d_2}{2}\right)^{d_2/2}
-      y^{\frac{d_1}{2}-1}
-      \left(\frac{d_2}{2}+\frac{d_1}{2}y\right)^{-\frac{d_1+d_2}{2}}\\
-      &=
-      \frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}
-      {\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}
-      \left(\frac{d_1}{\cancel{2}}\right)^{d_1/2}
-      \cancel{\left(\frac{d_2}{2}\right)^{d_2/2}}
-      y^{\frac{d_1}{2}-1}
-      \left(\frac{d_2}{\cancel{2}}\right)^{-\frac{d_1}{2}}
-      \cancel{\left(\frac{d_2}{2}\right)^{-\frac{d_2}{2}}}
-      \left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}}\\
-      &=\frac{\Gamma\left(\frac{d_1}{2}+\frac{d_2}{2}\right)}{\Gamma\left(\frac{d_1}{2}\right)\Gamma\left(\frac{d_2}{2}\right)}\left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}}y^{\frac{d_1}{2}-1}\left(1+\frac{d_1}{d_2}y\right)^{-\frac{d_1+d_2}{2}},\quad y>0.
-  \end{aligned}
-$$
-:::
 
 ## Need more review on this?
 
@@ -540,14 +399,7 @@ b.  What is the sampling distribution of the estimator? Problem 14 might be help
 c.  What is the MSE of the estimator?
 d.  State the bounds of a 90% confidence interval for $\theta$.
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $\hat{\theta}_{n} = \frac{n}{\sum_{i = 1}^{n}{\ln\left(X_{i} + 1\right)}}$;
-b.  $\hat{\theta}_{n} \sim \text{Inverse-Gamma}(n, n\theta)$;
-c.  $\text{MSE}\left(\hat{\theta}_{n}\right) = \frac{(n + 2)\theta^{2}}{(n - 1)(n - 2)}$;
-d.  $\left[\hat{\theta}_{n} \cdot G_{n, n}(0.05), \hat{\theta}_{n} \cdot G_{n, n}(0.95)\right]$.
-:::
 
 ## Problem 20
 
@@ -564,14 +416,7 @@ b.  What is the sampling distribution of the estimator?
 c.  What is the MSE of the estimator?
 d.  State the bounds of a 75% confidence interval for $\theta$.
 
-::: {.callout-tip collapse="true"}
-## Answers
 
-a.  $\hat{\theta}_{n} = \frac{1}{n}\sum_{i = 1}^{n}{\left|X_{i}\right|}$;
-b.  $\hat{\theta}_{n} \sim \text{Gamma}\left(n, \frac{n}{\theta}\right)$;
-c.  $\text{MSE}\left(\hat{\theta}_{n}\right) = \frac{\theta^{2}}{n}$;
-d.  $\left[\frac{\hat{\theta}_{n}}{G_{n, n}(0.875)}, \frac{\hat{\theta}_{n}}{G_{n, n}(0.125)}\right]$.
-:::
 
 ## Need more review on this?
 
@@ -596,16 +441,6 @@ a.  What is the posterior distribution?
 b.  Compute the posterior mean and show that it is a weighted average of the prior mean and the maximum likelihood estimator.
 c.  State an 82% credible interval for $p$.
 
-::: {.callout-tip collapse="true"}
-## Answer
-$$
-\begin{aligned}
-p\,|\,x_{1:n}&\sim\text{Beta}(a_n,\,b_n)\\
-a_n&=a_0+n\\
-b_n&=b_0-n+\sum_{i=1}^nx_i
-\end{aligned}
-$$
-:::
 
 ## Problem 22
 
@@ -628,18 +463,7 @@ a.  What is the posterior distribution of $\theta$?
 b.  Compute the posterior mean and show that it is a convex combination of the prior mean and the mle.
 c.  State a 90% credible interval for $\theta$.
 
-::: {.callout-tip collapse="true"}
-## Answer
 
-$$
-\begin{aligned}
-\theta\,|\,x_{1:n}&\sim\text{Gamma}(a_n,\,b_n)\\
-a_n&=a_0+n\\
-b_n&=b_0+\sum_{i=1}^n\ln(x_i+1)
-\end{aligned}
-$$
-
-:::
 
 ## Need more review on this?
 
