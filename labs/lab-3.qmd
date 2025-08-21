@@ -139,7 +139,6 @@ We have provided you with a pre-trained language model `kn`, a vector `midsummer
 
 ```{r}
 #| include: FALSE
-#| cache: TRUE
 
 library(kgrams)
 
@@ -227,7 +226,7 @@ Up to now we've been worrying a lot about individual words, but individual words
 So far, given the current context, the model returns a (conditional) probability $p(i)$ for each word $i\in \text{corpus}$. So far we've used these probabilities unmodified. With temperature sampling, before we draw the next word, we would first adjust the probabilities based on a user-defined tuning parameter $t>0$ called the *temperature*:
 
 $$
-p_t(i) = \frac{e^{\ln\frac{p(i)}{t}}}{\sum\limits_{i\in\text{corpus}}e^{\ln\frac{p(i)}{t}}},\quad i\in\text{corpus}.
+p_t(i) = \frac{e^{\frac{\ln p(i)}{t}}}{\sum\limits_{j\in\text{corpus}}e^{\frac{\ln p(j)}{t}}},\quad i\in\text{corpus}.
 $$
 
 If $t=1$, we're back to the original probabilities (check this!). Otherwise, to quote the $k$-grams people, "higher and lower temperatures make the original probability distribution smoother and rougher, respectively. By making a physical analogy, we can think of less probable words as states with higher energies, and the effect of higher (lower) temperatures is to make more (less) likely to excite these high energy states." Why do people do this? To the best of my knowledge, it is no deeper than "it seems to work well." In practice, adjusting the temperature seems to have a macro effect on the overall character of the *sentences*.
