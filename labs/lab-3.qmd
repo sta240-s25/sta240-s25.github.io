@@ -194,7 +194,6 @@ next_word_probs <- function(context, words = midsummer_words, model = kn, temp =
 ```
 
 ```{r}
-#| cache: TRUE
 cond_dist <- next_word_probs(context, midsummer_words, kn)
 tail(cond_dist)
 ```
